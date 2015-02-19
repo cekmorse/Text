@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  18 FEB 2015 19:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  18 FEB 2015 23:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -702,18 +702,11 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count178
 \LT@p@ftn=\toks31
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip74
-\bibsep=\skip75
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count179
-)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
-\c@@pps=\count180
-\c@@ppsavesec=\count181
-\c@@ppsaveapp=\count182
+\c@@pps=\count179
+\c@@ppsavesec=\count180
+\c@@ppsaveapp=\count181
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
@@ -730,7 +723,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \caption@hangindent=\dimen193
 )
 Package caption Info: AMS or SMF document class.
-\c@ContinuedFloat=\count183
+\c@ContinuedFloat=\count182
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
@@ -740,17 +733,246 @@ Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 ))
 (/usr/local/texlive/2014/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
-\c@subfigure=\count184
-\c@subtable=\count185
+\c@subfigure=\count183
+\c@subtable=\count184
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2011/10/22 v5.1d context-sensitive quotations
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+\etb@tempcnta=\count185
+)
+\csq@reset=\count186
+\csq@gtype=\count187
+\csq@glevel=\count188
+\csq@qlevel=\count189
+\csq@maxlvl=\count190
+\csq@tshold=\count191
+\csq@ltx@everypar=\toks32
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2011/10/22 v5.1d csquotes generic definitions
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2013/11/25 v2.8a programmable bibliographies (PK/JW/AB)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/biblatex2.sty
+Package: biblatex2 2013/11/25 v2.8a programmable bibliographies (biber) (PK/JW/
+AB)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count192
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@tabx@nest=\count193
+\c@listtotal=\count194
+\c@listcount=\count195
+\c@liststart=\count196
+\c@liststop=\count197
+\c@citecount=\count198
+\c@citetotal=\count199
+\c@multicitecount=\count200
+Normal \count register pool exhausted, switching to extended pool.
+\c@multicitetotal=\count277
+\c@instcount=\count278
+\c@maxnames=\count279
+\c@minnames=\count280
+\c@maxitems=\count281
+\c@minitems=\count282
+\c@citecounter=\count283
+\c@savedcitecounter=\count284
+\c@uniquelist=\count285
+\c@uniquename=\count286
+\c@refsection=\count287
+\c@refsegment=\count288
+\c@maxextratitle=\count289
+\c@maxextratitleyear=\count290
+\c@maxextrayear=\count291
+\c@maxextraalpha=\count292
+\c@abbrvpenalty=\count293
+\c@highnamepenalty=\count294
+\c@lownamepenalty=\count295
+\c@maxparens=\count296
+\c@parenlevel=\count297
+\blx@tempcnta=\count298
+\blx@tempcntb=\count299
+\blx@tempcntc=\count300
+\blx@maxsection=\count301
+\blx@maxsegment@0=\count302
+\blx@notetype=\count303
+\blx@parenlevel@text=\count304
+\blx@parenlevel@foot=\count305
+\blx@sectionciteorder@0=\count306
+\labelnumberwidth=\skip74
+\labelalphawidth=\skip75
+\shorthandwidth=\skip76
+\biblabelsep=\skip77
+\bibitemsep=\skip78
+\bibnamesep=\skip79
+\bibinitsep=\skip80
+\bibparsep=\skip81
+\bibhang=\skip82
+\blx@bcfin=\read2
+\blx@bcfout=\write3
+\c@mincomprange=\count307
+\c@maxcomprange=\count308
+\c@mincompwidth=\count309
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/blx-dm.def)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'authoryear-comp.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count310
+\c@savedafterword=\count311
+\c@annotator=\count312
+\c@savedannotator=\count313
+\c@author=\count314
+\c@savedauthor=\count315
+\c@bookauthor=\count316
+\c@savedbookauthor=\count317
+\c@commentator=\count318
+\c@savedcommentator=\count319
+\c@editor=\count320
+\c@savededitor=\count321
+\c@editora=\count322
+\c@savededitora=\count323
+\c@editorb=\count324
+\c@savededitorb=\count325
+\c@editorc=\count326
+\c@savededitorc=\count327
+\c@foreword=\count328
+\c@savedforeword=\count329
+\c@holder=\count330
+\c@savedholder=\count331
+\c@introduction=\count332
+\c@savedintroduction=\count333
+\c@namea=\count334
+\c@savednamea=\count335
+\c@nameb=\count336
+\c@savednameb=\count337
+\c@namec=\count338
+\c@savednamec=\count339
+\c@shortauthor=\count340
+\c@savedshortauthor=\count341
+\c@shorteditor=\count342
+\c@savedshorteditor=\count343
+\c@translator=\count344
+\c@savedtranslator=\count345
+\c@labelname=\count346
+\c@savedlabelname=\count347
+\c@institution=\count348
+\c@savedinstitution=\count349
+\c@lista=\count350
+\c@savedlista=\count351
+\c@listb=\count352
+\c@savedlistb=\count353
+\c@listc=\count354
+\c@savedlistc=\count355
+\c@listd=\count356
+\c@savedlistd=\count357
+\c@liste=\count358
+\c@savedliste=\count359
+\c@listf=\count360
+\c@savedlistf=\count361
+\c@location=\count362
+\c@savedlocation=\count363
+\c@organization=\count364
+\c@savedorganization=\count365
+\c@origlocation=\count366
+\c@savedoriglocation=\count367
+\c@origpublisher=\count368
+\c@savedorigpublisher=\count369
+\c@publisher=\count370
+\c@savedpublisher=\count371
+\c@language=\count372
+\c@savedlanguage=\count373
+\c@pageref=\count374
+\c@savedpageref=\count375
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2013/11/25 v2.8a biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 
+\c@textcitecount=\count376
+\c@textcitetotal=\count377
+\c@textcitemaxnames=\count378
+\c@biburlnumpenalty=\count379
+\c@biburlucpenalty=\count380
+\c@biburllcpenalty=\count381
+\c@smartand=\count382
+)
+Package biblatex Info: Trying to load bibliography style 'authoryear-comp'...
+Package biblatex Info: ... file 'authoryear-comp.bbx' found.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/bbx/authoryear-comp.bbx
+File: authoryear-comp.bbx 2013/11/25 v2.8a biblatex bibliography style (PK/JW/A
+B)
+Package biblatex Info: Trying to load bibliography style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.bbx' found.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
+File: authoryear.bbx 2013/11/25 v2.8a biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2013/11/25 v2.8a biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count383
+\c@bbx:relatedtotal=\count384
+)))
+Package biblatex Info: Trying to load citation style 'authoryear-comp'...
+Package biblatex Info: ... file 'authoryear-comp.cbx' found.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/cbx/authoryear-comp.cbx
+File: authoryear-comp.cbx 2013/11/25 v2.8a biblatex citation style (PK/JW/AB)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\footcites'.
+Package biblatex Info: Redefining '\footcitetexts'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)))
 (/usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count186
-\Gm@cntv=\count187
-\c@Gm@tempcnt=\count188
+\Gm@cnth=\count385
+\Gm@cntv=\count386
+\c@Gm@tempcnt=\count387
 \Gm@bindingoffset=\dimen194
 \Gm@wd@mp=\dimen195
 \Gm@odd@mp=\dimen196
@@ -760,22 +982,19 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layouthoffset=\dimen200
 Normal \dimen register pool exhausted, switching to extended pool.
 \Gm@layoutvoffset=\dimen256
-\Gm@dimlist=\toks32
+\Gm@dimlist=\toks33
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/todonotes/todonotes.sty
 Package: todonotes 2012/07/25 .dtx Todonotes source and documentation.
 Package: todonotes 2012/07/25
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
-)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/05/09 v2.6d package option processing (HA)
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-\XKV@toks=\toks33
-\XKV@tempa@toks=\toks34
-\XKV@depth=\count189
+\XKV@toks=\toks34
+\XKV@tempa@toks=\toks35
+\XKV@depth=\count388
 File: xkeyval.tex 2014/05/09 v2.6d key=value parser (HA)
 ))
 (/usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/xcolor.sty
@@ -801,7 +1020,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
-\pgfutil@everybye=\toks35
+\pgfutil@everybye=\toks36
 \pgfutil@tempdima=\dimen257
 \pgfutil@tempdimb=\dimen258
 
@@ -821,12 +1040,12 @@ Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks36
-\pgfkeys@temptoks=\toks37
+\pgfkeys@pathtoks=\toks37
+\pgfkeys@temptoks=\toks38
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
 ode.tex
-\pgfkeys@tmptoks=\toks38
+\pgfkeys@tmptoks=\toks39
 ))
 \pgf@x=\dimen259
 \pgf@y=\dimen260
@@ -836,15 +1055,15 @@ ode.tex
 \pgf@yb=\dimen264
 \pgf@xc=\dimen265
 \pgf@yc=\dimen266
-\w@pgf@writea=\write3
-\r@pgf@reada=\read2
-\c@pgf@counta=\count190
-\c@pgf@countb=\count191
-\c@pgf@countc=\count192
-\c@pgf@countd=\count193
-\t@pgf@toka=\toks39
-\t@pgf@tokb=\toks40
-\t@pgf@tokc=\toks41
+\w@pgf@writea=\write4
+\r@pgf@reada=\read3
+\c@pgf@counta=\count389
+\c@pgf@countb=\count390
+\c@pgf@countc=\count391
+\c@pgf@countd=\count392
+\t@pgf@toka=\toks40
+\t@pgf@tokb=\toks41
+\t@pgf@tokc=\toks42
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
@@ -862,8 +1081,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count194
-\pgfsyssoftpath@bigbuffer@items=\count195
+\pgfsyssoftpath@smallbuffer@items=\count393
+\pgfsyssoftpath@bigbuffer@items=\count394
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -876,11 +1095,11 @@ Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen267
-\pgfmath@count=\count196
+\pgfmath@count=\count395
 \pgfmath@box=\box63
-\pgfmath@toks=\toks42
-\pgfmath@stack@operand=\toks43
-\pgfmath@stack@operation=\toks44
+\pgfmath@toks=\toks43
+\pgfmath@stack@operand=\toks44
+\pgfmath@stack@operation=\toks45
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
 tex
@@ -901,7 +1120,7 @@ code.tex)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)))
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count197
+\c@pgfmathroundto@lastzeros=\count396
 ))
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
@@ -939,7 +1158,7 @@ File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
 \pgfpic=\box64
 \pgf@hbox=\box65
 \pgf@layerbox@main=\box66
-\pgf@picture@serial@count=\count198
+\pgf@picture@serial@count=\count397
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
@@ -974,7 +1193,7 @@ File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
 e.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen291
-\pgf@sys@shading@range@num=\count199
+\pgf@sys@shading@range@num=\count398
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -1027,8 +1246,8 @@ Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen294
 \pgffor@skip=\dimen295
-\pgffor@stack=\toks45
-\pgffor@toks=\toks46
+\pgffor@stack=\toks46
+\pgffor@toks=\toks47
 ))
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
 e.tex
@@ -1037,7 +1256,7 @@ Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
-\pgf@plot@mark@count=\count200
+\pgf@plot@mark@count=\count399
 \pgfplotmarksize=\dimen296
 )
 \tikz@lastx=\dimen297
@@ -1050,20 +1269,19 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
 \tikz@figbox@bg=\box70
 \tikz@tempbox=\box71
 \tikz@tempbox@bg=\box72
-Normal \count register pool exhausted, switching to extended pool.
-\tikztreelevel=\count277
-\tikznumberofchildren=\count278
-\tikznumberofcurrentchild=\count279
-\tikz@fig@count=\count280
+\tikztreelevel=\count400
+\tikznumberofchildren=\count401
+\tikznumberofcurrentchild=\count402
+\tikz@fig@count=\count403
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count281
-\pgfmatrixcurrentcolumn=\count282
-\pgf@matrix@numberofcolumns=\count283
+\pgfmatrixcurrentrow=\count404
+\pgfmatrixcurrentcolumn=\count405
+\pgf@matrix@numberofcolumns=\count406
 )
-\tikz@expandcount=\count284
+\tikz@expandcount=\count407
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -1073,20 +1291,28 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
 s/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
 )
-\c@@todonotes@numberoftodonotes=\count285
+\c@@todonotes@numberoftodonotes=\count408
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip76
-\f@ncyO@elh=\skip77
-\f@ncyO@erh=\skip78
-\f@ncyO@olh=\skip79
-\f@ncyO@orh=\skip80
-\f@ncyO@elf=\skip81
-\f@ncyO@erf=\skip82
-\f@ncyO@olf=\skip83
-\f@ncyO@orf=\skip84
+\fancy@headwidth=\skip83
+\f@ncyO@elh=\skip84
+\f@ncyO@erh=\skip85
+\f@ncyO@olh=\skip86
+\f@ncyO@orh=\skip87
+\f@ncyO@elf=\skip88
+\f@ncyO@erf=\skip89
+\f@ncyO@olf=\skip90
+\f@ncyO@orf=\skip91
 ))
-(./MorseThesis.aux (./CH02-StudyRegion.aux))
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... none found.
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2013/11/25 v2.8a biblatex localization (PK/JW/AB)
+)
+(./MorseThesis.aux (./CH02-StudyRegion.aux) (./CH03-DataCollection.aux))
 \openout1 = `MorseThesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -1115,17 +1341,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count286
+\scratchcounter=\count409
 \scratchdimen=\dimen303
 \scratchbox=\box73
-\nofMPsegments=\count287
-\nofMParguments=\count288
-\everyMPshowfont=\toks47
-\MPscratchCnt=\count289
+\nofMPsegments=\count410
+\nofMParguments=\count411
+\everyMPshowfont=\toks48
+\MPscratchCnt=\count412
 \MPscratchDim=\dimen304
-\MPnumerator=\count290
-\makeMPintoPDFobject=\count291
-\everyMPtoPDFconversion=\toks48
+\MPnumerator=\count413
+\makeMPintoPDFobject=\count414
+\everyMPtoPDFconversion=\toks49
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1149,15 +1375,15 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count292
+\c@section@level=\count415
 )
 LaTeX Info: Redefining \ref on input line 15.
 LaTeX Info: Redefining \pageref on input line 15.
 LaTeX Info: Redefining \nameref on input line 15.
 
 (./MorseThesis.out) (./MorseThesis.out)
-\@outlinefile=\write4
-\openout4 = `MorseThesis.out'.
+\@outlinefile=\write5
+\openout5 = `MorseThesis.out'.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translato
@@ -1170,6 +1396,17 @@ File: siunitx-abbreviations.cfg 2013/07/31 v2.5s siunitx: Abbreviated units
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+Package biblatex Info: No input encoding detected.
+(biblatex)             Assuming 'ascii'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'ascii'.
+\openout3 = `MorseThesis.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'MorseThesis.bbl' found.
+ (./MorseThesis.bbl)
+Package biblatex Info: Reference section=0 on input line 15.
+Package biblatex Info: Reference segment=0 on input line 15.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1206,8 +1443,8 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-\c__siunitx_mathsf_int=\count293
-\c__siunitx_mathtt_int=\count294
+\c__siunitx_mathsf_int=\count416
+\c__siunitx_mathtt_int=\count417
 \openout2 = `CH02-StudyRegion.aux'.
 
  (./CH02-StudyRegion.tex
@@ -1224,7 +1461,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<"Figures/Map/LARV".pdf, id=41, 650.43pt x 361.35pt>
+<"Figures/Map/LARV".pdf, id=61, 650.43pt x 361.35pt>
 File: "Figures/Map/LARV".pdf Graphic file (type pdf)
 
 <use "Figures/Map/LARV".pdf>
@@ -1251,14 +1488,12 @@ Package Fancyhdr Warning: \headheight is too small (8.0pt):
 
 
 
-] <"Figures/Map/USSeMap".pdf, id=76, 329.55121pt x 677.16992pt>
+] <"Figures/Map/USSeMap".pdf, id=99, 329.55121pt x 677.16992pt>
 File: "Figures/Map/USSeMap".pdf Graphic file (type pdf)
 
 <use "Figures/Map/USSeMap".pdf>
-Package pdftex.def Info: "Figures/Map/USSeMap".pdf used on input line 49.
+Package pdftex.def Info: "Figures/Map/USSeMap".pdf used on input line 47.
 (pdftex.def)             Requested size: 296.59332pt x 609.44731pt.
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 62.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1279,11 +1514,11 @@ Package Fancyhdr Warning: \headheight is too small (8.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [5 <./Figures/Map/USSeMap.pdf>]
-<Figures/Map/LARVRainfall.pdf, id=117, 650.43pt x 361.35pt>
+<Figures/Map/LARVRainfall.pdf, id=130, 650.43pt x 361.35pt>
 File: Figures/Map/LARVRainfall.pdf Graphic file (type pdf)
 
 <use Figures/Map/LARVRainfall.pdf>
-Package pdftex.def Info: Figures/Map/LARVRainfall.pdf used on input line 69.
+Package pdftex.def Info: Figures/Map/LARVRainfall.pdf used on input line 67.
 (pdftex.def)             Requested size: 650.43pt x 361.37668pt.
 
 
@@ -1307,28 +1542,6 @@ Package Fancyhdr Warning: \headheight is too small (8.0pt):
 
 
 ]
-Overfull \hbox (3.64462pt too wide) in paragraph at lines 76--76
-\OT1/cmr/m/n/12 transpiration 
- []
-
-
-Overfull \hbox (3.64462pt too wide) in paragraph at lines 76--76
-\OT1/cmr/m/n/12 transpiration 
- []
-
-
-Overfull \hbox (3.64462pt too wide) in paragraph at lines 76--76
-\OT1/cmr/m/n/12 transpiration 
- []
-
-
-Overfull \hbox (3.64462pt too wide) in paragraph at lines 76--76
-\OT1/cmr/m/n/12 transpiration 
- []
-
-
-LaTeX Warning: Marginpar on page 8 moved.
-
 
 Package Fancyhdr Warning: \headheight is too small (8.0pt): 
  Make it at least 14.0pt.
@@ -1337,16 +1550,12 @@ Package Fancyhdr Warning: \headheight is too small (8.0pt):
 
 [8]
 
-LaTeX Warning: Reference `sec:River Survey' on page 9 undefined on input line 1
-01.
+LaTeX Warning: Reference `sec:River Survey' on page 9 undefined on input line 9
+6.
 
 
 LaTeX Warning: Reference `sec:River Volume Change' on page 9 undefined on input
- line 101.
-
-
-LaTeX Warning: Reference `sec:field data collection' on page 9 undefined on inp
-ut line 103.
+ line 96.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1360,11 +1569,11 @@ Package Fancyhdr Warning: \headheight is too small (8.0pt):
 
 [9
 
-] <Figures/Map/USR.pdf, id=160, 650.43pt x 361.35pt>
+] <Figures/Map/USR.pdf, id=179, 650.43pt x 361.35pt>
 File: Figures/Map/USR.pdf Graphic file (type pdf)
 
 <use Figures/Map/USR.pdf>
-Package pdftex.def Info: Figures/Map/USR.pdf used on input line 104.
+Package pdftex.def Info: Figures/Map/USR.pdf used on input line 99.
 (pdftex.def)             Requested size: 650.43pt x 361.37668pt.
 
 
@@ -1387,16 +1596,16 @@ Package Fancyhdr Warning: \headheight is too small (8.0pt):
 
 
 
-] <Figures/LineDiagram/USRLineDiagram.pdf, id=175, 722.7pt x 542.025pt>
+] <Figures/LineDiagram/USRLineDiagram.pdf, id=193, 722.7pt x 542.025pt>
 File: Figures/LineDiagram/USRLineDiagram.pdf Graphic file (type pdf)
 
 <use Figures/LineDiagram/USRLineDiagram.pdf>
 Package pdftex.def Info: Figures/LineDiagram/USRLineDiagram.pdf used on input l
-ine 129.
+ine 124.
 (pdftex.def)             Requested size: 650.43pt x 487.82625pt.
 
 
-LaTeX Warning: Float too large for page by 43.07124pt on input line 129.
+LaTeX Warning: Float too large for page by 43.07124pt on input line 124.
 
 
 Package Fancyhdr Warning: \headheight is too small (8.0pt): 
@@ -1427,11 +1636,11 @@ Package Fancyhdr Warning: \headheight is too small (8.0pt):
 
 [14
 
-] <Figures/Map/DSR.pdf, id=211, 650.43pt x 361.35pt>
+] <Figures/Map/DSR.pdf, id=230, 650.43pt x 361.35pt>
 File: Figures/Map/DSR.pdf Graphic file (type pdf)
 
 <use Figures/Map/DSR.pdf>
-Package pdftex.def Info: Figures/Map/DSR.pdf used on input line 165.
+Package pdftex.def Info: Figures/Map/DSR.pdf used on input line 160.
 (pdftex.def)             Requested size: 650.43pt x 361.37668pt.
 
 
@@ -1441,16 +1650,16 @@ Package Fancyhdr Warning: \headheight is too small (8.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [15 <./Figures/Map/DSR.pdf>]
-<Figures/LineDiagram/DSRLineDiagram.pdf, id=221, 722.7pt x 542.025pt>
+<Figures/LineDiagram/DSRLineDiagram.pdf, id=240, 722.7pt x 542.025pt>
 File: Figures/LineDiagram/DSRLineDiagram.pdf Graphic file (type pdf)
 
 <use Figures/LineDiagram/DSRLineDiagram.pdf>
 Package pdftex.def Info: Figures/LineDiagram/DSRLineDiagram.pdf used on input l
-ine 165.
+ine 160.
 (pdftex.def)             Requested size: 650.43pt x 487.82625pt.
 
 
-LaTeX Warning: Float too large for page by 43.07124pt on input line 165.
+LaTeX Warning: Float too large for page by 43.07124pt on input line 160.
 
 
 Package Fancyhdr Warning: \headheight is too small (8.0pt): 
@@ -1459,10 +1668,6 @@ Package Fancyhdr Warning: \headheight is too small (8.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [16 <./Figures/LineDiagram/DSRLineDiagram.pdf>]
-
-Package lineno Warning: Linenumber reference failed, 
-(lineno)                rerun to get it right.
-
 
 Package Fancyhdr Warning: \headheight is too small (8.0pt): 
  Make it at least 14.0pt.
@@ -1476,27 +1681,21 @@ Package Fancyhdr Warning: \headheight is too small (8.0pt):
 
 
 
-]) (./MorseThesis.bbl
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no “ in font cmr12!
+])
+\openout2 = `CH03-DataCollection.aux'.
 
+ (./CH03-DataCollection.tex
+Chapter 3
 
-Package Fancyhdr Warning: \headheight is too small (8.0pt): 
- Make it at least 14.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[18
+ [18
+
 
 
 
 
 ]
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no “ in font cmr12!
-)
 
 Package Fancyhdr Warning: \headheight is too small (8.0pt): 
  Make it at least 14.0pt.
@@ -1504,44 +1703,668 @@ Package Fancyhdr Warning: \headheight is too small (8.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [19]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 74.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
- (./MorseThesis.aux (./CH02-StudyRegion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 74.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 74.
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21] <Figures/Map/USRSample.pdf, id=292, 650.43pt x 361.35pt>
+File: Figures/Map/USRSample.pdf Graphic file (type pdf)
+
+<use Figures/Map/USRSample.pdf>
+Package pdftex.def Info: Figures/Map/USRSample.pdf used on input line 173.
+(pdftex.def)             Requested size: 650.4284pt x 361.34912pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22 <./Figures/Map/USRSample.pdf>]
+<Figures/Map/DSRSample.pdf, id=302, 650.43pt x 361.35pt>
+File: Figures/Map/DSRSample.pdf Graphic file (type pdf)
+
+<use Figures/Map/DSRSample.pdf>
+Package pdftex.def Info: Figures/Map/DSRSample.pdf used on input line 173.
+(pdftex.def)             Requested size: 650.4284pt x 361.34912pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23 <./Figures/Map/DSRSample.pdf>]
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24
+
+
+
+
+
+
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 180.
+
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 180.
+
+<Figures/Photo/PeristalticPump.pdf, id=317, 218.0145pt x 164.5347pt>
+File: Figures/Photo/PeristalticPump.pdf Graphic file (type pdf)
+
+<use Figures/Photo/PeristalticPump.pdf>
+Package pdftex.def Info: Figures/Photo/PeristalticPump.pdf used on input line 1
+91.
+(pdftex.def)             Requested size: 180.67499pt x 136.36288pt.
+
+<Figures/Photo/ysi.jpg, id=318, 376.40625pt x 376.40625pt>
+File: Figures/Photo/ysi.jpg Graphic file (type jpg)
+
+<use Figures/Photo/ysi.jpg>
+Package pdftex.def Info: Figures/Photo/ysi.jpg used on input line 192.
+(pdftex.def)             Requested size: 180.67499pt x 180.67868pt.
+
+Underfull \hbox (badness 3128) in paragraph at lines 192--192
+\OT1/cmr/m/n/10.95 reduction po-ten-tial, and dis-solved
+ []
+
+<Figures/Photo/SampleVehicle.jpg, id=319, 3083.52pt x 2312.64pt>
+File: Figures/Photo/SampleVehicle.jpg Graphic file (type jpg)
+
+<use Figures/Photo/SampleVehicle.jpg>
+Package pdftex.def Info: Figures/Photo/SampleVehicle.jpg used on input line 200
+.
+(pdftex.def)             Requested size: 289.07999pt x 216.80946pt.
+
+Underfull \vbox (badness 6961) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26 <./Figures/Photo/PeristalticPump.pdf> <./Figures/Photo/ysi.jpg> <./Figures/
+Photo/SampleVehicle.jpg>]
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 209.
+
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[27]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28] <Figures/SampleLog.pdf, id=361, 614.295pt x 517.935pt>
+File: Figures/SampleLog.pdf Graphic file (type pdf)
+
+<use Figures/SampleLog.pdf>
+Package pdftex.def Info: Figures/SampleLog.pdf used on input line 218.
+(pdftex.def)             Requested size: 433.62pt x 365.60258pt.
+
+<Figures/Photo/SampleFromBridge.jpg, id=362, 682.2288pt x 1025.2704pt>
+File: Figures/Photo/SampleFromBridge.jpg Graphic file (type jpg)
+
+<use Figures/Photo/SampleFromBridge.jpg>
+Package pdftex.def Info: Figures/Photo/SampleFromBridge.jpg used on input line 
+226.
+(pdftex.def)             Requested size: 180.67499pt x 271.52327pt.
+
+<Figures/Photo/SampleAtSmallTrib.jpg, id=363, 682.2288pt x 1025.2704pt>
+File: Figures/Photo/SampleAtSmallTrib.jpg Graphic file (type jpg)
+
+<use Figures/Photo/SampleAtSmallTrib.jpg>
+Package pdftex.def Info: Figures/Photo/SampleAtSmallTrib.jpg used on input line
+ 227.
+(pdftex.def)             Requested size: 180.67499pt x 271.52327pt.
+
+<Figures/SampleLogFilled.pdf, id=364, 503.96278pt x 413.3844pt>
+File: Figures/SampleLogFilled.pdf Graphic file (type pdf)
+
+<use Figures/SampleLogFilled.pdf>
+Package pdftex.def Info: Figures/SampleLogFilled.pdf used on input line 235.
+(pdftex.def)             Requested size: 433.62pt x 355.69919pt.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 242.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[30 <./Figures/SampleLog.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[31 <./Figures/Photo/SampleFromBridge.jpg> <./Figures/Photo/SampleAtSmallTrib.j
+pg>]
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32 <./Figures/SampleLogFilled.pdf>]
+<Figures/Photo/TotalStation.jpg, id=406, 2746.26pt x 3661.68pt>
+File: Figures/Photo/TotalStation.jpg Graphic file (type jpg)
+
+<use Figures/Photo/TotalStation.jpg>
+Package pdftex.def Info: Figures/Photo/TotalStation.jpg used on input line 345.
+
+(pdftex.def)             Requested size: 180.67499pt x 240.86707pt.
+
+<Figures/Photo/SubMeterGPS2.jpg, id=407, 2746.26pt x 3661.68pt>
+File: Figures/Photo/SubMeterGPS2.jpg Graphic file (type jpg)
+
+<use Figures/Photo/SubMeterGPS2.jpg>
+Package pdftex.def Info: Figures/Photo/SubMeterGPS2.jpg used on input line 346.
+
+(pdftex.def)             Requested size: 180.67499pt x 240.86707pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[33
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34]
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[35 <./Figures/Photo/TotalStation.jpg> <./Figures/Photo/SubMeterGPS2.jpg>]
+<Figures/Map/USRSurvey.pdf, id=425, 650.43pt x 361.35pt>
+File: Figures/Map/USRSurvey.pdf Graphic file (type pdf)
+
+<use Figures/Map/USRSurvey.pdf>
+Package pdftex.def Info: Figures/Map/USRSurvey.pdf used on input line 352.
+(pdftex.def)             Requested size: 650.4284pt x 361.34912pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36
+
+
+ <./Figures/Map/USRSurvey.pdf>]
+<Figures/Map/DSRSurvey.pdf, id=435, 650.43pt x 361.35pt>
+File: Figures/Map/DSRSurvey.pdf Graphic file (type pdf)
+
+<use Figures/Map/DSRSurvey.pdf>
+Package pdftex.def Info: Figures/Map/DSRSurvey.pdf used on input line 352.
+(pdftex.def)             Requested size: 650.4284pt x 361.34912pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[37
+
+
+
+ <./Figures/Map/DSRSurvey.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[38
+
+]
+<Figures/LineDiagram/SurveyMeasurements.pdf, id=455, 403.88391pt x 145.3443pt>
+File: Figures/LineDiagram/SurveyMeasurements.pdf Graphic file (type pdf)
+
+<use Figures/LineDiagram/SurveyMeasurements.pdf>
+Package pdftex.def Info: Figures/LineDiagram/SurveyMeasurements.pdf used on inp
+ut line 360.
+(pdftex.def)             Requested size: 403.88292pt x 145.34393pt.
+
+Underfull \vbox (badness 1852) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[39 <./Figures/LineDiagram/SurveyMeasurements.pdf>]
+<Figures/Photo/ControlPoint.jpg, id=484, 3661.68pt x 2746.26pt>
+File: Figures/Photo/ControlPoint.jpg Graphic file (type jpg)
+
+<use Figures/Photo/ControlPoint.jpg>
+Package pdftex.def Info: Figures/Photo/ControlPoint.jpg used on input line 394.
+
+(pdftex.def)             Requested size: 216.81pt x 162.58945pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[40 <./Figures/Photo/ControlPoint.jpg>]
+<Figures/LineDiagram/SurveyPlanView.pdf, id=492, 404.76219pt x 166.6225pt>
+File: Figures/LineDiagram/SurveyPlanView.pdf Graphic file (type pdf)
+
+<use Figures/LineDiagram/SurveyPlanView.pdf>
+Package pdftex.def Info: Figures/LineDiagram/SurveyPlanView.pdf used on input l
+ine 404.
+(pdftex.def)             Requested size: 433.62pt x 178.5055pt.
+
+<Figures/LineDiagram/USS1Trim.pdf, id=493, 603.21362pt x 92.5056pt>
+File: Figures/LineDiagram/USS1Trim.pdf Graphic file (type pdf)
+
+<use Figures/LineDiagram/USS1Trim.pdf>
+Package pdftex.def Info: Figures/LineDiagram/USS1Trim.pdf used on input line 41
+2.
+(pdftex.def)             Requested size: 433.62pt x 66.49953pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[41 <./Figures/LineDiagram/SurveyPlanView.pdf>]
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[42 <./Figures/LineDiagram/USS1Trim.pdf>]
+
+LaTeX Warning: Reference `tab:DSRGauges' on page 43 undefined on input line 426
+.
+
+<Figures/Photo/GaugeSite1.jpg, id=532, 3083.52pt x 2312.64pt>
+File: Figures/Photo/GaugeSite1.jpg Graphic file (type jpg)
+
+<use Figures/Photo/GaugeSite1.jpg>
+Package pdftex.def Info: Figures/Photo/GaugeSite1.jpg used on input line 512.
+(pdftex.def)             Requested size: 209.58255pt x 157.17274pt.
+
+<Figures/Photo/GaugeSite2.jpg, id=533, 3083.52pt x 2312.64pt>
+File: Figures/Photo/GaugeSite2.jpg Graphic file (type jpg)
+
+<use Figures/Photo/GaugeSite2.jpg>
+Package pdftex.def Info: Figures/Photo/GaugeSite2.jpg used on input line 518.
+(pdftex.def)             Requested size: 209.58255pt x 157.17274pt.
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 510--521
+ [][] [] 
+ []
+
+<Figures/Photo/GaugeSite3.jpg, id=534, 3083.52pt x 2312.64pt>
+File: Figures/Photo/GaugeSite3.jpg Graphic file (type jpg)
+
+<use Figures/Photo/GaugeSite3.jpg>
+Package pdftex.def Info: Figures/Photo/GaugeSite3.jpg used on input line 524.
+(pdftex.def)             Requested size: 209.58255pt x 157.17274pt.
+
+<Figures/Photo/GaugeSite4.jpg, id=535, 3661.68pt x 2746.26pt>
+File: Figures/Photo/GaugeSite4.jpg Graphic file (type jpg)
+
+<use Figures/Photo/GaugeSite4.jpg>
+Package pdftex.def Info: Figures/Photo/GaugeSite4.jpg used on input line 530.
+(pdftex.def)             Requested size: 209.58255pt x 157.18378pt.
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 522--533
+ [][] [] 
+ []
+
+<Figures/Photo/GaugeSite6.jpg, id=536, 107.6823pt x 72.27pt>
+File: Figures/Photo/GaugeSite6.jpg Graphic file (type jpg)
+
+<use Figures/Photo/GaugeSite6.jpg>
+Package pdftex.def Info: Figures/Photo/GaugeSite6.jpg used on input line 536.
+(pdftex.def)             Requested size: 209.58255pt x 140.67226pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[43
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[44]
+Underfull \vbox (badness 5260) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[45 <./Figures/Photo/GaugeSite1.jpg> <./Figures/Photo/GaugeSite2.jpg> <./Figure
+s/Photo/GaugeSite3.jpg> <./Figures/Photo/GaugeSite4.jpg> <./Figures/Photo/Gauge
+Site6.jpg>] <Figures/Map/USRGauge.pdf, id=558, 650.43pt x 361.35pt>
+File: Figures/Map/USRGauge.pdf Graphic file (type pdf)
+
+<use Figures/Map/USRGauge.pdf>
+Package pdftex.def Info: Figures/Map/USRGauge.pdf used on input line 544.
+(pdftex.def)             Requested size: 650.4284pt x 361.34912pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[46
+
+
+ <./Figures/Map/USRGauge.pdf>]
+<Figures/Map/DSRGauge.pdf, id=568, 650.43pt x 361.35pt>
+File: Figures/Map/DSRGauge.pdf Graphic file (type pdf)
+
+<use Figures/Map/DSRGauge.pdf>
+Package pdftex.def Info: Figures/Map/DSRGauge.pdf used on input line 544.
+(pdftex.def)             Requested size: 650.4284pt x 361.34912pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[47
+
+
+
+ <./Figures/Map/DSRGauge.pdf>]
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[48
+
+]
+<Figures/LineDiagram/XSectionSimple.pdf, id=585, 393.75677pt x 159.73964pt>
+File: Figures/LineDiagram/XSectionSimple.pdf Graphic file (type pdf)
+
+<use Figures/LineDiagram/XSectionSimple.pdf>
+Package pdftex.def Info: Figures/LineDiagram/XSectionSimple.pdf used on input l
+ine 585.
+(pdftex.def)             Requested size: 433.62pt x 175.91154pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[49 <./Figures/LineDiagram/XSectionSimple.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[50] <Figures/Photo/CoagmetStation.jpg, id=624, 803.0pt x 602.25pt>
+File: Figures/Photo/CoagmetStation.jpg Graphic file (type jpg)
+
+<use Figures/Photo/CoagmetStation.jpg>
+Package pdftex.def Info: Figures/Photo/CoagmetStation.jpg used on input line 60
+1.
+(pdftex.def)             Requested size: 289.07999pt x 216.80983pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[51]
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[52 <./Figures/Photo/CoagmetStation.jpg>]
+<Figures/Map/USRCoAgMet.pdf, id=639, 650.43pt x 361.35pt>
+File: Figures/Map/USRCoAgMet.pdf Graphic file (type pdf)
+
+<use Figures/Map/USRCoAgMet.pdf>
+Package pdftex.def Info: Figures/Map/USRCoAgMet.pdf used on input line 610.
+(pdftex.def)             Requested size: 650.4284pt x 361.34912pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[53
+
+ <./Figures/Map/USRCoAgMet.pdf>]
+<Figures/Map/DSRCoAgMet.pdf, id=649, 650.43pt x 361.35pt>
+File: Figures/Map/DSRCoAgMet.pdf Graphic file (type pdf)
+
+<use Figures/Map/DSRCoAgMet.pdf>
+Package pdftex.def Info: Figures/Map/DSRCoAgMet.pdf used on input line 619.
+(pdftex.def)             Requested size: 650.4284pt x 361.34912pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[54
+
+
+ <./Figures/Map/DSRCoAgMet.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[55
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[56]
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[57])
+References
+[58
+
+
+
+
+
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[59]
+
+Package Fancyhdr Warning: \headheight is too small (8.0pt): 
+ Make it at least 14.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[60]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 78.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 78.
+ (./MorseThesis.aux (./CH02-StudyRegion.aux) (./CH03-DataCollection.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 78.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 78.
 Package rerunfilecheck Info: File `MorseThesis.out' has not changed.
-(rerunfilecheck)             Checksum: 7AE2BFDA168320AD9372CA50F8D09519;408.
+(rerunfilecheck)             Checksum: 45C5F17BB86904757BBA0D8735375599;728.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 74.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 78.
+Package logreq Info: Writing requests to 'MorseThesis.run.xml'.
+\openout1 = `MorseThesis.run.xml'.
+
  ) 
 Here is how much of TeX's memory you used:
- 27549 strings out of 493117
- 545091 string characters out of 6135433
- 582246 words of memory out of 5000000
- 30371 multiletter control sequences out of 15000+600000
- 13857 words of font info for 54 fonts, out of 8000000 for 9000
+ 33279 strings out of 493117
+ 648688 string characters out of 6135433
+ 1048824 words of memory out of 5000000
+ 35904 multiletter control sequences out of 15000+600000
+ 16085 words of font info for 63 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 66i,11n,84p,10522b,1021s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
-l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
-ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
-e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on MorseThesis.pdf (19 pages, 8304917 bytes).
+ 66i,11n,87p,10522b,1592s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
+2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on MorseThesis.pdf (60 pages, 60144017 bytes).
 PDF statistics:
- 315 PDF objects out of 1000 (max. 8388607)
- 256 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 500000)
- 88 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 779 PDF objects out of 1000 (max. 8388607)
+ 614 compressed objects within 7 object streams
+ 146 named destinations out of 1000 (max. 500000)
+ 260 words of extra memory for PDF output out of 10000 (max. 10000000)
 

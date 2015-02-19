@@ -24,7 +24,7 @@
 
 %\include{CH01-LitReview}
 \include{CH02-StudyRegion}
-%\include{CH03-DataCollection}
+\include{CH03-DataCollection}
 %\include{CH04-WaterBalanceModel}
 %\include{CH05-MassBalanceModel}
 %\include{CH06-SensitivityAnalysis}
@@ -44,8 +44,12 @@
 \backmatter
 \small\normalsize
 \newpage
-\bibliographystyle{chicago} % choose your bib sytle here. Check natbib documentation for info.
-\bibliography{BibRef}
+% this is the method for using the natbib package
+%\bibliographystyle{chicago} % choose your bib sytle here. Check natbib documentation for info.
+%\bibliography{BibRef}
+
+% use this one for biblatex
+\printbibliography[title=References]
 
 %\begin{appendix}
 %\captionsetup[figure]{list=no}

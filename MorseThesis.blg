@@ -1,57 +1,13 @@
-This is BibTeX, Version 0.99d (TeX Live 2014)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: MorseThesis.aux
-A level-1 auxiliary file: CH02-StudyRegion.aux
-A level-1 auxiliary file: CH03-DataCollection.aux
-The style file: chicago.bst
-Database file #1: BibRef.bib
-Warning--entry type for "Csu2012" isn't style-file defined
---line 335 of file BibRef.bib
-Warning--entry type for "Wolock2003" isn't style-file defined
---line 1973 of file BibRef.bib
-Warning--I didn't find a database entry for "Bailey2013"
-Warning--no volume for Bailey2015
-Warning--no volume for Morway2013
-Warning--there's a number but no series in EPA1992
-You've used 17 entries,
-            2861 wiz_defined-function locations,
-            724 strings with 8347 characters,
-and the built_in function-call counts, 10922 in all, are:
-= -- 871
-> -- 892
-< -- 5
-+ -- 268
-- -- 296
-* -- 939
-:= -- 2104
-add.period$ -- 52
-call.type$ -- 17
-change.case$ -- 128
-chr.to.int$ -- 16
-cite$ -- 20
-duplicate$ -- 288
-empty$ -- 600
-format.name$ -- 332
-if$ -- 1987
-int.to.chr$ -- 2
-int.to.str$ -- 0
-missing$ -- 9
-newline$ -- 88
-num.names$ -- 168
-pop$ -- 101
-preamble$ -- 1
-purify$ -- 225
-quote$ -- 0
-skip$ -- 306
-stack$ -- 0
-substring$ -- 431
-swap$ -- 86
-text.length$ -- 5
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 306
-warning$ -- 3
-while$ -- 142
-width$ -- 0
-write$ -- 234
-(There were 6 warnings)
+[0] Config.pm:318> INFO - This is Biber 1.8
+[0] Config.pm:321> INFO - Logfile is 'MorseThesis.blg'
+[54] biber-darwin:275> INFO - === Wed Feb 18, 2015, 23:33:01
+[54] Biber.pm:333> INFO - Reading 'MorseThesis.bcf'
+[102] Biber.pm:630> INFO - Found 25 citekeys in bib section 0
+[118] Biber.pm:3053> INFO - Processing section 0
+[134] Biber.pm:3190> INFO - Looking for bibtex format file 'BibRef.bib' for section 0
+[145] bibtex.pm:812> INFO - Found BibTeX data source 'BibRef.bib'
+[293] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[293] Biber.pm:2945> INFO - Sorting 'entry' list 'nyt' keys
+[293] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[353] bbl.pm:482> INFO - Writing 'MorseThesis.bbl' with encoding 'ascii'
+[357] bbl.pm:555> INFO - Output to MorseThesis.bbl

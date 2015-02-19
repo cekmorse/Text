@@ -15,13 +15,18 @@
 %\usepackage[parfill]{parskip} % helps with spacing
 \usepackage{siunitx} % fairly simple method to add units to values.  Consistent standardized useage
 \usepackage{booktabs, longtable} % publication quality tables.  Longtable allows for tables to span multiple pages
-\usepackage{natbib} % bibliography package.  Lots of options.
 \usepackage[toc,page]{appendix} % add appendicies to document.
 \usepackage{array} % extends implementation of the array and tabular environments
 \usepackage{caption} % customize captions in float environments
 \usepackage{subcaption} % caption sub figures in a figure
 \usepackage{setspace} % support for setting spacing between lines in a document
 \usepackage{afterpage} % allows for starting a command (especially a float) after the next page break.
+% BIBLIOGRAPY PACKAGE AND SETUP
+%\usepackage{natbib} % Old bibliography package. only use if you have to
+%newer bibliography package. setup follows.
+\usepackage{csquotes} % better smart quotes.  Especially usefull for humanities
+\usepackage[style=authoryear-comp, url=true, backend=biber]{biblatex} % This has a TON of options.
+\addbibresource{BibRef.bib}
 %%% End packages
 
 %%% margins and spacing
@@ -42,14 +47,14 @@
 \setlength{\intextsep}{12pt plus 2pt minus 2pt} %spacing above+below a figure/table that has text above and below it
 \setlength{\textfloatsep}{12pt plus 2pt minus 2pt} %spacing below/above a figure or table at the top/bottom of a page.
 \renewcommand{\bibname}{References} % change the bibliography title.  Works Cited, Bibliography,  'Stuff I Read'
-\renewcommand{\bibsection}{  % Typeset the bibliography title.  Don't mess with this.
-	\ifsmallcapsok
-	\centering {\large \scshape \bibname}
-	\else
-	\centering {\large \MakeUppercase{\bibname}}
-	\fi
-	\addcontentsline{toc}{chapter}{\bibname}}
-\setlength{\bibsep}{0mm plus .5\baselineskip}
+%\renewcommand{\bibsection}{  % Typeset the bibliography title.  Don't mess with this.
+%	\ifsmallcapsok
+%	\centering {\large \scshape \bibname}
+%	\else
+%	\centering {\large \MakeUppercase{\bibname}}
+%	\fi
+%	\addcontentsline{toc}{chapter}{\bibname}}
+%\setlength{\bibsep}{0mm plus .5\baselineskip}
 %%% end margins and spacing
 
 %%% preferences
