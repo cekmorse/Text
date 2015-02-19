@@ -1,0 +1,609 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\begin{document}
+\[\renewcommand{\thechapter}{8}
+\chapter{Intermediate Results}
+\label{chap:Intermediate Results}
+
+\section{Introduction to Intermediate Results}
+\label{sec:Introduction to Intermediate Results}
+
+Comparing deterministic and stochastic model must be performed and described with great care.  Deterministic models of time series events are one-dimensional models (1-D) as they vary only with respect to time.  These results are calculated as a vector with each position in the vector representing a specific time step.  Stochastic models are two-dimensional (2-D); they vary with time depending on the realized input variables.  These results are calculated as a matrix with each row representing a specific time step and each column representing a specific realization.  Each time step in the deterministic models correspond to the same time step in the stochastic models.
+
+Results from the deterministic time series models are graphically presented as time series with one value for each time step.  Simplified results are also presented.  The mean, 2.5th, and 97.5th percentile of the time series values are calculated.  The 2.5th and 97.5th percentile represent the upper and lower bounds of the 95th central inter-percentile range (CIR).  The mean value represents the most likely value throughout the entire study period. Most of the input variables fit a normal distribution, therefore using the mean as the expected value is acceptable.  Deviations from this case will be discussed.
+
+Results from the stochastic time series models are graphically presented as a time series.  The stochastic models have more than one possible realized value or result for each time step.  This presents a problem when comparing the deterministic and stochastic models.  To solve this issue, the mean, 2.5th, and 97.5th percentile are calculated for each time step.  This provides three 1-D time series representations of the stochastic model.  The 1-D stochastic mean time series represents the most likely values for each time step.  The 2.5th and 97.5th percentile 1-D time series represent the upper and lower bounds of the 95th inter-percentile range.  When plotted together they provide the most likely value and the range of probable values.
+
+As with the deterministic model, summary statistics are generated to describe the 1-D stochastic mean time series model.  The mean, 2.5th, and 97.5th percentile are calculated and compared to the equivalent values from the deterministic model.  This method of comparing the various deterministic and stochastic values and results is dependent on the distribution of values within each time step of the stochastic model.  If the values are normal or near normally distributed, then this analysis will be valid.  Deviations from the normal distribution will be discussed.
+
+\clearpage
+\section{Stochastic Model Variables}
+\label{sec:Stochastic Model Variable}
+
+%Values and figures presented in this section are the results from calculations described in chapter \ref{chap:models and uncertainty}.  The purpose of this analysis is to determine how well the values generated for the stochastic models fit the reported values used in the deterministic models.
+
+%Figure \ref{fig:ExampleDensity} is an example of the plots used to perform visual analysis of the stochastic model input variables.  This figure presents the distribution of the flow values at ARKCATCO, the USR upstream stream gauge.  The reported values are depicted by the histogram and the black kernel density estimate (KDE) curve.  The red curve depicts the KDE of the 1-D stochastic mean time series values.  This figure shows how the 1-D stochastic model mean values compare to the deterministic model values.  Similar figures for all variables are presented in appendix \ref{App:VarDensity}.
+
+%\begin{figure}[htbp]
+%\centering
+%	\includegraphics[width=6in]{"Figures/Results_USR/V density qin"}
+%	\caption[Deterministic and stochastic model input variable distributions.]{Deterministic and stochastic model input variable distributions.  This is an example figure presenting the results for the variable $Q_{ARKCATCO}$.  Additional figures for the other USR and DSR input variables are provided in the appendix noted in the text.  The histogram and the black KDE present the deterministic model input variable values.  The red dashed KDE presents the distribution of the 1-D stochastic mean time series distribution.}
+%	\label{fig:ExampleDensity}
+%\end{figure}
+
+%Goodness-of-fit is measured by visual comparison of the 1-D stochastic model and deterministic model KDE curves and the mean of the distributions.  Ideally, the 1-D stochastic mean model distribution and mean should be near the deterministic model distribution and mean.  All of the input variables used in the USR water balance and mass balance models meet this idealism.
+
+%The distribution of the differences between the generated values and the expected values was another evaluation performed.  An example of these analyses is shown in figure \ref{fig:ExampleDifference}.  This figure shows data from the analysis of the variable $Q_{ARKCATCO}$.  Histograms are not presented in these figures for clarity.  The KDE in figure \ref{sub:diff} is the distribution of the difference between the deterministic and 1-D stochastic mean time series.  Figure \ref{sub:pdiff} is the percent difference between the two time series.  The solid vertical line is at the mean of the distribution and the dashed vertical lines are at the 2.5th and 97.5th percentile of the distribution.  This range corresponds to the 95\% CIR.  Figures for all variables similar to figure \ref{fig:ExamplePDifference} are presented in appendix \ref{App:VarPDiff}.
+
+%\begin{figure}[htbp]
+%\centering
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/V dev diff qin"}
+%		\caption{Difference Distribution}
+%		\label{sub:diff}
+%	\end{subfigure}%
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/V dev pdiff qin"}
+%		\caption{Percent Difference Distribution}
+%		\label{sub:pdiff}
+%	\end{subfigure}
+%	\caption[Difference and percent difference between the stochastic and deterministic model input variables.]{Difference and percent difference between the stochastic and deterministic model input variables.  This is an example figure presenting the results for the variable $Q_{ARKCATCO}$.  Additional figures for the other USR and DSR input variables are provided in the appendix noted in the text.}
+%	\label{fig:ExampleDifference}
+%\end{figure}
+
+%As with the previous figures, goodness-of-fit is measured by visual analysis.  The differences and percent differences should be mostly contained within the boundaries defined by the vertical dashed lines.  All input variables fit reasonably within the set limits.
+
+%The generated stochastic values were also compared against the expected values on a time step by time step basis.  The difference and percent difference were calculated between the 1-D stochastic mean time series and the expected value for a given time step.  The largest and smallest differences and percent differences were graphed and are presented as shown on the example figures, \ref{fig:ExampleMinMaxDiff} and \ref{fig:ExampleMinMaxPDiff}, respectively.  Similar figures for all input variables are found in appendix \ref{App:VarMinMaxDiff}.  These figures show data from the analysis of the variable $Q_{ARKCATCO}$.  Both figures show two graphs.  The upper graph shows the highest difference or percent difference.  The lower graph shows the lowest difference or percent difference.  Each graph in each figure shows only one time step.  The time steps were chosen by their status as the highest or lowest difference or percent difference.  Intermediate time steps were not investigated.  The existence of similarities between the time of the chosen time steps was not investigated.  All of the presented graphs show the KDE of the 1-D stochastic mean time series values for the investigated time step in units of the investigated variable.  The black vertical line shows the mean of the distribution and the red vertical line shows the expected value for the investigated time step.  The reported differences are given in units of the investigated variable for both the difference and percent difference investigations.  
+
+%\begin{figure}[htbp]
+%\centering
+%	\includegraphics[width=6in]{"Figures/Results_USR/V min-max diff qin"}
+%	\caption[Highest and lowest difference between the input variable stochastic distribution and the expected value.]{Highest and lowest difference between the input variable stochastic distribution and the expected value.  This is an example figure presenting the results for the variable $Q_{ARKCATCO}$.  Additional figures for the other USR and DSR input variables are provided in the appendix noted in the text.  The lowest difference is presented in the top graph and the highest difference is presented in the bottom graph.}
+%	\label{fig:ExampleMinMaxDiff}
+%\end{figure}
+
+%\begin{figure}[htbp]
+%\centering
+%	\includegraphics[width=6in]{"Figures/Results_USR/V min-max pdiff qin"}
+%	\caption[Highest and lowest percent difference between the input variable stochastic distribution and the expected value.]{Highest and lowest percent difference between the input variable stochastic distribution and the expected value.  This is an example figure presenting the results for the variable $Q_{ARKCATCO}$.  Additional figures for the other USR and DSR input variables are provided in the appendix noted in the text.  The lowest difference is presented in the top graph and the highest difference is presented in the bottom graph.}
+%	\label{fig:ExampleMinMaxPDiff}
+%\end{figure}
+
+%Goodness-of-fit for this pair of figure types is defined by both the distribution of the differences and percent differences and the difference between the mean of the distribution and the expected value.  These figures represent the extreme range of the differences.  Even at the extremes, the differences are acceptable.
+
+%The input variable values were compared between the deterministic and stochastic models and are reported in tables \ref{tab:USRVarResults} and \ref{tab:DSRVarResults} for the USR and DSR, respectively.  The mean, 2.5th, and 97.5th percentile were calculated from the deterministic model input variable values.  As previously discussed, the 1-D stochastic mean time series values are assumed to approximate the deterministic model values.  The mean, 2.5th, and 97.5th percentile were calculated from the 1-D stochastic mean time series and are reported in the same tables.  Also included in the tables is a column that presents the percent difference between the mean of the 1-D stochastic mean time series values and the deterministic time series values.  
+
+%\begin{table}[htbp]
+%\centering
+%\caption[USR deterministic and stochastic model input variable analysis results.]{USR deterministic and stochastic model input variable analysis results.  Stochastic mean values are calculated as the mean of the realizations for each time step.  All values are in units corresponding to the input variables as reported in table \ref{tab:USRvars}.}
+%\label{tab:USRVarResults}
+%    \begin{tabular}{l|ccc|ccc|c}
+%    \toprule
+%    \multirow{2}[0]{*}{Variable} & \multicolumn{3}{c}{Deterministic} & \multicolumn{3}{c}{Stochastic Mean} & \% Diff\\\cline{2-4} \cline{5-7}
+%    & 2.5\% & Mean & 97.5\% & 2.5\% & Mean & 97.5\% & Mean\\
+%    \midrule
+%    \midrule
+%	$Q_{ARKCATCO}$&		1.699&	15.29&	53.66&	1.681&	15.29&	53.5&	0\\                            
+%	$Q_{CANSWKCO}$&		0.0538&	0.4575&	1.189&	0.05265&	0.4574&	1.214&	-0.0219\\                  
+%	$Q_{CONDITCO}$&		0&	1.251&	3.531&	0&	1.251&	3.555&	0\\                                    
+%	$Q_{FLSCANCO}$&		0&	2.542&	11.77&	0&	2.543&	12.35&	0.0393\\                               
+%	$Q_{FLYCANCO}$&		0&	8.501&	26.18&	0&	8.501&	26.43&	0\\                                    
+%	$Q_{HOLCANCO}$&		0&	1.962&	9.838&	0&	1.962&	10&	0\\                                        
+%	$Q_{HRC194CO}$&		0.09345&	0.2906&	0.8778&	0.08812&	0.2906&	0.8963&	0\\                    
+%	$Q_{RFDMANCO}$&		0&	0.9073&	1.669&	0&	0.9073&	1.826&	0\\                                    
+%	$Q_{RFDRETCO}$&		0&	0.4271&	0.7592&	0&	0.4271&	0.8641&	0\\                                    
+%	$Q_{TIMSWICO}$&		0.3681&	1.864&	4.163&	0.3435&	1.864&	4.258&	0\\                            
+%	$Q_{La Junta WWTP}$&0.05421&	0.08081&	0.1245&	0.05097&	0.08081&	0.1287&	0\\            
+%	$Q_{ARKLASCO}$&		0.9061&	7.136&	26.75&	0.9069&	7.136&	26.76&	0\\                            
+%	$EC_{ARKCATCO}$&	0.4893&	1.026&	1.58&	0.4882&	1.026&	1.59&	0\\                            
+%	$EC_{ARKLASCO}$&	0.8772&	1.894&	2.79&	0.8636&	1.894&	2.796&	0\\                            
+%	$T_{ARKCATCO}$&		0.193&	12.86&	25.1&	0.2768&	12.86&	25.14&	0\\                            
+%	$T_{ARKLASCO}$&		0.5075&	13.4&	25.95&	0.4622&	13.4&	25.99&	0\\                            
+%	$h_{A}$&			0.2286&	0.566&	1.155&	0.2168&	0.5663&	1.159&	0.053\\                        
+%	$h_{B}$&			0.1798&	0.4473&	0.9707&	0.1958&	0.4805&	0.9495&	7.42\\                         
+%	$h_{C}$&			0.1646&	0.4175&	0.823&	0.1649&	0.4205&	0.8352&	0.719\\                        
+%	$h_{D}$&			0.1615&	0.4461&	1.11&	0.1656&	0.4489&	1.11&	0.628\\                        
+%	$h_{E}$&			0.2286&	0.5433&	1.088&	0.2233&	0.5435&	1.091&	0.0368\\                       
+%	$ET_{Ref}$&			0.001103&	0.00571&	0.01169&	0.0009105&	0.005712&	0.01176&	0.035\\
+%	$P$&				0&	0.000832&	0.007963&	0&	0.000832&	0.008015&	0\\                    
+%	$RH_{Min}$&			7.1&	27.67&	74.52&	6.917&	27.67&	74.85&	0\\                            
+%	$U_{2}$&			0.9731&	2.265&	5.29&	0.8067&	2.265&	5.328&	0\\                            
+%    \bottomrule
+%    \end{tabular}
+%\end{table}
+
+%\begin{table}[htbp]
+%  \centering
+%  \caption[DSR deterministic and stochastic model input variable analysis results.]{DSR deterministic and stochastic model input variable analysis results.  Stochastic mean values are calculated as the mean of the realizations for each time step.  All values are in units corresponding to the input variables as reported in table \ref{tab:DSRvars}.}
+%  \label{tab:DSRVarResults}
+%    \begin{tabular}{l|ccc|ccc|c}
+%    \toprule
+%    \multirow{2}[0]{*}{Variable} & \multicolumn{3}{c}{Deterministic} & \multicolumn{3}{c}{Stochastic Mean} & \% Diff\\\cline{2-4} \cline{5-7}
+%    & 2.5\% & Mean & 97.5\% & 2.5\% & Mean & 97.5\% & Mean\\
+%    \midrule
+%    \midrule
+%	$Q_{ARKLASCO}$&	0.2209&	2.104&	19.37&	0.2092&	2.104&	19.74&	0\\                             
+%	$Q_{BIGLAMCO}$&	0.1416&	0.3618&	0.7362&	0.135&	0.3618&	0.7643&	0\\                             
+%	$Q_{BUFDITCO}$&	0&	0.9934&	2.142&	0&	0.9961&	2.278&	0.272\\                                 
+%	$Q_{FRODITKS}$&	0&	0.3186&	0.9911&	0&	0.3185&	1.047&	-0.0314\\                               
+%	$Q_{WILDHOCO}$&	0&	0.1982&	1.388&	0&	0.1982&	1.388&	0\\                                     
+%	$Q_{ARKCOOKS}$&	1.614&	4.286&	17.53&	1.571&	4.286&	17.47&	0\\                             
+%	$EC_{ARKJMRCO}$&1.19&	1.924&	2.39&	1.171&	1.924&	2.645&	0\\                             
+%	$EC_{ARKCOOKS}$&1.98&	3.799&	4.39&	1.926&	3.799&	4.616&	0\\                             
+%	$T_{ARKJMRCO}$&	0.1&	12.85&	25.3&	0.3172&	12.86&	25.37&	0.0778\\                        
+%	$T_{ARKCOOKS}$&	1.593&	13.6&	25.42&	1.585&	13.6&	25.45&	0\\                             
+%	$h_{F}$&		0.1556&	0.3475&	1.158&	0.1563&	0.3576&	1.172&	2.91\\                          
+%	$h{_G}$&		0.548&	0.787&	1.469&	0.5264&	0.7865&	1.465&	-0.0635\\                       
+%	$ET_{Ref}$&		0.00108&	0.006347&	0.01398&	0.0009319&	0.006349&	0.01406&	0.0315\\
+%	$P$&			0&	0.0009441&	0.009805&	0&	0.0009441&	0.009889&	0\\                     
+%	$RH_{Min}$&		6.886&	26.67&	64.78&	6.706&	26.67&	65.05&	0\\                             
+%	$U_{2}$&		1.493&	3.289&	6.96&	1.384&	3.289&	7.036&	0\\                             
+%    \bottomrule
+%    \end{tabular}
+%\end{table}
+
+%Goodness-of-fit is measured by visual comparison of the 1-D stochastic model and deterministic model KDE curves and the mean of the distributions.  Ideally, the 1-D stochastic mean model distribution and mean should be near the deterministic model distribution and mean.  All of the input variables used in the USR water balance and mass balance models meet this idealism.
+
+%The input variable analyses contained in this section show that the realized values calculated for the stochastic model are realistic.  They also show that the deterministic model input values represent the expected value of the stochastic model input variable values.
+
+\clearpage
+\section{River Geometry}
+\label{sec:River Geometry}
+Values and figures presented in this section are the results from calculations performed as described in sections \ref{sec:River Volume Change} and all other precursor calculations.  The primary purpose of this analysis was to determine if the computational code and assumptions used to generate the stochastic distributions of river segment daily surface area and river segment daily water volume change were performed correctly.
+
+The depths and top widths were visually compared to confirm that the calculation results were reasonable.  Figure \ref{fig:ExampleTWandH} shows an example of the flow depths and river top widths.  The flow depths and widths presented are the 1-D stochastic mean time series values.  This particular figure is for segment A in the USR.  Similar figures for all segments are included in appendix \ref{App:TwandH}.
+
+\begin{figure}[htbp]
+\centering
+	\includegraphics[width=6in]{"Figures/Results_USR/G d&w Today A"}
+	\caption[River segment flow depth and top width results comparison.]{River segment flow depth and top width results comparison.  This is an example figure presenting the results for river segment A in the USR.  Additional figures for the other USR and DSR river segments are provided in the appendix noted in the text.}
+	\label{fig:ExampleTWandH}
+\end{figure}
+
+Goodness-of-fit is not an analysis performed on this type of figure.  Analysis is restricted to verifying that the 1-D stochastic mean flow depth and calculated top width are within acceptable ranges.  Flow depth values should be between 0.15 m and 1.5 m (0.5 ft and 5 ft).  All figures show that this is true.
+
+An example time series plot of all four stochastic geometric parameters for each study region river section segment is presented in figure \ref{fig:GeoTS}.  This particular figure presents the stochastic data for segment A.  The black lines indicate the 1-D stochastic mean time series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values as defined by the 1-D stohastic 2.5th percentile and 1-D stochastic 97.5th percentile time series.  The red dashed line in the flow depth portion of the figure indicates the reported flow depth values.  It is plotted under the 1-D stochastic mean time series line and as such is only visible when either the 1-D stochastic mean time series value was not calculated due to missing data or when the two values deviate.  Similar figures for each segment are included in appendix \ref{App:GeoTS}.
+
+\begin{figure}[htbp]
+\centering
+	\includegraphics[width=6in]{"Figures/Results_USR/G TS A"}
+	\caption[Stochastic geometric parameter time series.]{Stochastic geometric parameter time series.  This is an example figure presenting the results for river segment A in the USR.  Additional figures for the other USR and DSR river segments are provided in the appendix noted in the text.  The black lines indicate the 1-D stochastic mean time series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.  The red dashed line in the flow depth portion of the figure indicates the reported flow depth values.}
+	\label{fig:GeoTS}
+\end{figure}
+
+This figure does not have a corresponding goodness-of-fit test.  The figures were analyzed to verify that direct correlations existed between the flow depth and the calculated geometric parameters.  Top width and surface area should increase and decrease in proportion with the increase and decrease in flow depth.  Volume changes are based on two flow depth values and do not have a direct correlation to the flow depth displayed in the figure.  All of the river sections show the correct correlations between flow depth and the calculated river geometric parameters.
+
+%The average river top with, surface area, and volume change values were compared between the deterministic and 1-D stochastic mean time series models and are reported in table \ref{tab:WAVResults} for both the USR and DSR.  This table is presented in the same fashion as previous tables in this chapter.  Flow depth, which is an input variable, is discussed and presented in section \ref{sec:InStreamData}.
+
+%\begin{table}[htbp]
+%  \centering
+%  \caption[Stochastic and deterministic model river geometry statistics.]{Stochastic and deterministic model river geometry statistics.  Average river segment top width ($Tw$) is given in \si{\meter}.  Average river segment surface area ($As$) is given in \si{\hectare}.  River segment volume change between time steps ($V$) is given in \si{\hectare\meter}.}
+%  \label{tab:WAVResults}
+%    \begin{tabular}{l|ccc|ccc|c}
+%   \toprule
+%    \multirow{2}[0]{*}{Variable} & \multicolumn{3}{c}{Deterministic} & \multicolumn{3}{c}{Stochastic Mean} & \% Diff\\\cline{2-4} \cline{5-7}
+%    & 2.5\% & Mean & 97.5\% & 2.5\% & Mean & 97.5\% & Mean\\
+%    \midrule
+%    \midrule
+%	$Tw_{A}$ (m)&	42.97&	51.28&	60.56&	17.1&	52.64&	89.34&	2.65\\         
+%	$Tw_{B}$&		40.84&	48.59&	58.37&	16.52&	50.43&	86.7&	3.79\\         
+%	$Tw_{C}$&		40.08&	47.92&	56.36&	14.49&	48.91&	84.84&	2.07\\         
+%	$Tw_{D}$&		39.93&	48.23&	60.05&	14.69&	49.05&	85.99&	1.7\\          
+%	$Tw_{E}$&		42.97&	50.97&	59.8&	16.32&	51.39&	88.17&	0.824\\        
+%	$Tw_{F}$&		8.4&	13.26&	31&	6.513&	18.55&	41.09&	39.9\\             
+%	$Tw_{G}$&		19.06&	23.95&	36.21&	11.71&	27.49&	46.54&	14.8\\         
+%	\midrule        
+%	$As_{A}$ (ha)&	53.94&	64.37&	76.02&	21.46&	66.08&	112.1&	2.66\\         
+%	$As_{B}$&		15.78&	18.77&	22.54&	6.381&	19.48&	33.49&	3.78\\         
+%	$As_{C}$&		151&	182.4&	227.1&	55.57&	185.5&	325.2&	1.7\\          
+%	$As_{D}$&		151&	182.4&	227.1&	55.57&	185.5&	325.2&	1.7\\          
+%	$As_{E}$&		61.55&	73&	85.65&	23.38&	73.61&	126.3&	0.836\\            
+%	$As_{F}$&		31.63&	49.92&	116.8&	24.53&	69.85&	154.8&	39.9\\         
+%	$As_{G}$&		47.54&	59.75&	90.31&	29.21&	68.59&	116.1&	14.8\\         
+%	\midrule        
+%	$V_{A}$ (ha m)&	-9.535&	0.01075&	11.59&	-13.07&	0.01142&	14.23&	6.23\\ 
+%	$V_{B}$&		-2.395&	-0.01&	2.672&	-3.236&	-0.005911&	3.472&	-40.9\\    
+%	$V_{C}$&		-38.88&	-0.1476&	50.93&	-46.96&	-0.126&	54.02&	-14.6\\    
+%	$V_{D}$&		-38.88&	-0.1476&	50.93&	-46.96&	-0.126&	54.02&	-14.6\\    
+%	$V_{E}$&		-9.254&	-0.008378&	12.9&	-13.42&	-0.008277&	15.09&	-1.21\\
+%	$V_{F}$&		-6.872&	-0.08825&	6.359&	-13&	-0.1035&	12.55&	17.3\\ 
+%	$V_{G}$&		-3.528&	-0.00924&	4.122&	-9.494&	-0.009359&	9.611&	1.29\\ 
+%    \bottomrule
+%    \end{tabular}
+%\end{table}
+
+%The values in these tables are analyzed for goodness-of-fit by observation of the percent difference column.  Values should be low, indicating that the deterministic model is not only a sub-set of the 1-D stochastic mean values, but represent the expected value with relatively high certainty.  In all cases, presented in the table, this is true.
+\clearpage
+
+\section{Evaporation and Precipitation}
+\label{sec:Evaporation and Precipitation}
+
+%Values and figures presented in this section are the results from calculations performed as described in sections \ref{sec:River Volume Change} and all other precursor calculations.  The primary purpose of this analysis was to determine if the computational code and assumptions used to generate the stochastic distributions of evaporation and precipitation were performed correctly.  
+
+%Figures \ref{fig:USREvap} and\ref{fig:DSREvap} show the deterministic and stochastic model time series of evaporation in the USR and DSR respectively.  The left and right sub-figures present the deterministic and stochastic models of evaporation, respectively.  In the stochastic sub-figure, the black line is the 1-D stochastic mean time series and the blue band is the 97.5\% CIR.
+
+%\begin{figure}[htbp]
+%\centering
+%	\begin{subfigure}{0.5\textwidth}
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DUSR/A Evap"}
+%		\caption{Deterministic Model.}
+%		\label{sub:USREvapD}
+%	\end{subfigure}%
+%	\begin{subfigure}{0.5\textwidth}
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/A Evap"}
+%		\caption{Stochastic Model.}
+%		\label{sub:USREvapS}
+%	\end{subfigure}
+%	\caption[USR deterministic and stochastic time series of evaporation.]{USR deterministic and stochastic time series of evaporation.}
+%	\label{fig:USREvap}
+%\end{figure}
+
+%\begin{figure}[htbp]
+%\centering
+%	\begin{subfigure}{0.5\textwidth}
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DDSR/A Evap"}
+%		\caption{Deterministic Model.}
+%		\label{sub:DSREvapD}	
+%	\end{subfigure}%
+%	\begin{subfigure}{0.5\textwidth}
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/A Evap"}
+%		\caption{Stochasticstic Model.}
+%		\label{sub:DSREvapS}
+%	\end{subfigure}
+%	\caption[DSR deterministic and stochastic time series of evaporation.]{DSR deterministic and stochastic time series of evaporation.}
+%	\label{fig:DSREvap}
+%\end{figure}
+
+%Figures \ref{fig:USRPrecip} and\ref{fig:DSRPrecip} show the deterministic and stochastic model time series of precipitation in the USR and DSR respectively.  The left and right sub-figures present the deterministic and stochastic models of evaporation, respectively.  In the stochastic sub-figure, the black line is the 1-D stochastic mean time series and the blue band is the 97.5\% CIR.  
+
+%\begin{figure}[htbp]
+%\centering
+%	\begin{subfigure}{0.5\textwidth}
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DUSR/A Precip"}
+%		\caption{Deterministic Model.}
+%		\label{sub:USRPrecipD}
+%	\end{subfigure}%
+%	\begin{subfigure}{0.5\textwidth}
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/A Precip"}
+%		\caption{Stochastic Model.}
+%		\label{sub:USRPrecipS}
+%	\end{subfigure}
+%	\caption[USR deterministic and stochastic time series of precipitation.]{USR deterministic and stochastic time series of precipitation.}
+%	\label{fig:USRPrecip}
+%\end{figure}
+
+%Figure \ref{fig:DSRPrecip} shows the deterministic and stochastic model time series of precipitation in the USR.  Values are presented in units of mm.  These figures are presented in the same fashion as other deterministic and stochastic time series figures in this chapter
+
+%\begin{figure}[htbp]
+%\centering
+%	\begin{subfigure}{0.5\textwidth}
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DDSR/A Precip"}
+%		\caption{Deterministic Model.}
+%		\label{sub:DSRPrecipD}
+%	\end{subfigure}%
+%	\begin{subfigure}{0.5\textwidth}
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/A Precip"}
+%		\caption{Stochastic Model.}
+%		\label{sub:DSRPrecipS}
+%	\end{subfigure}
+%	\caption[DSR deterministic and stochastic time series of precipitation.]{DSR deterministic and stochastic time series of precipitation.}
+%	\label{fig:DSRPrecip}
+%\end{figure}
+
+%The blue band in both precipitation figures is very small and is nearly indistinguishable from the 1-D stochastic mean values.  This is another indication that the precipitation measurement uncertainty is very small.  A cyclical pattern is easily noted when observing the evaporation and precipitation values in both the USR and DSR.  We note that both daily total evaporation and precipitation are higher during warmer months and lower during cold months.  The cyclical nature of the daily evaporation agrees with common knowledge where evaporation rates are higher with higher average temperatures.  The cyclical nature of the daily precipitation agrees with climatological analyses by the National Weather Service which state that most of the precipitation in the LARB occurs with thunder storms during the warmer months.
+
+%It is interesting to note that during the 4 year time span calculated in this study annual average evaporation rates appear to increase and annual average precipitation rates appear to decrease.  The time frame of this study is too short to conclude anything about the long term climate of the region.  This observation may be useful when observing other results produced in this study.
+
+%Tables \ref{tab:USRAtmResults} and \ref{tab:DSRAtmResults} present summary statistics of the evaporation and the precursor values and precipitation for the USR and DSR, respectively.
+
+%\begin{table}[htbp]
+%  \centering
+%  \caption[USR evaporation and precipitation results.]{USR evaporation and precipitation results.  $ET_{Ref}$, evaporation, and precipitation values are presented in units of \si{mm}.  $K_w$ values are unitless.}
+%  \label{tab:USRAtmResults}
+%    \begin{tabular}{l|ccc|ccc|c}
+%    \toprule
+%    \multirow{2}[0]{*}{Variable} & \multicolumn{3}{c}{Deterministic} & \multicolumn{3}{c}{Stochastic Mean} & \% Diff\\\cline{2-4} \cline{5-7}
+%    & 2.5\% & Mean & 97.5\% & 2.5\% & Mean & 97.5\% & Mean\\
+%    \midrule
+%    \midrule
+%	$ET_{Ref}$ (mm)&	1.103	&5.71	&11.69	&0.9105	&5.712	&11.76	&0.035	\\
+%	$K_{w}$&	0.9564	&1.002	&1.056	&0.9557	&1.002	&1.057	&0	\\
+%	Evap. $(E)$ (mm)&	1.164	&5.701	&11.42	&0.948	&5.703	&11.55	&0.0351	\\
+%	Precip. $(P)$ (mm)&	0	&0.832	&7.963	&0	&0.832	&8.015	&0	\\
+%    \bottomrule
+%    \end{tabular}
+%\end{table}
+
+%\begin{table}[htbp]
+%  \centering
+%  \caption[DSR evaporation and precipitation results.]{DSR evaporation and precipitation results.  $ET_{Ref}$, evaporation, and precipitation values are presented in units of \si{mm}.  $K_w$ values are unitless.}
+%  \label{tab:DSRAtmResults}
+%    \begin{tabular}{l|ccc|ccc|c}
+%    \toprule
+%    \multirow{2}[0]{*}{Variable} & \multicolumn{3}{c}{Deterministic} & \multicolumn{3}{c}{Stochastic Mean} & \% Diff\\\cline{2-4} \cline{5-7}
+%    & 2.5\% & Mean & 97.5\% & 2.5\% & Mean & 97.5\% & Mean\\
+%    \midrule
+%    \midrule
+%	$ET_{Ref}$&	1.080	&6.347	&13.98	&0.9319	&6.349	&14.06	&0.0315	\\
+%	$K_{w}$&	0.9412	&0.9892	&1.038	&0.9408	&0.9892	&1.039	&0	\\
+%	Evap. $(E)$&	1.134	&6.257	&13.65	&0.9585	&6.259	&13.66	&0.032	\\
+%	Precip. $(P)$&	0	&0.9441	&9.805	&0	&0.9441	&9.889	&0	\\
+%    \bottomrule
+%    \end{tabular}
+%\end{table}
+%\clearpage
+
+%The percent difference of the mean of the 1-D stochastic mean values and the mean of the deterministic values is very low for all evaporation and precipitation input, intermediate, and final values in both the USR and DSR.  This indicates that the deterministic model accurately represents the expected value of the stochastic model.
+
+\section{Dissolved Selenium Concentration}
+\label{sec:Dissolved Selenium Concetration}
+
+%Values and figures presented in this section are the results from calculations performed as described in chapter \ref{chap:Average Daily Selenium Concentrations Estimation} and all other precursor calculations.  The primary purpose of this analysis was to determine if the computational code and assumptions used to generate the stochastic distributions of dissolved selenium concentrations were performed correctly.
+
+%The first analysis was to compare the calculated dissolved selenium concentration values to the measured results from the collected field samples.  Figure \ref{fig:BoxMUSR} is a box plot of the sampled selenium concentrations at the various sampling locations along the main stem of the river and the tributaries in the USR.  The sample locations are arranged with the upstream on the left and the downstream on the right, in order.  The value "n" above each sample location is the number of samples collected at each site.  Concentrations are measured and reported in \si{\micro\gram\per\liter} of dissolved selenium.  The boxes encompass the first to the third quartile.  The whiskers extend to 1.5 times the inter quartile range.  Blue tinted boxes indicate dissolved selenium concentrations within tributaries all other boxes are from samples collected within the main stem of the Ark R.
+
+%Concentrations for the Rocky Ford Return Ditch in the USR and Frontier Ditch in the DSR are not included.  Both ditches are assumed to have the same dissolved selenium concentration as a nearby calculated location.  The Rocky Ford Return Ditch (RFDRETCO) uses the same concentration as the Rocky Ford Ditch (RFDCANCO) as it returns water from the main ditch to the Arkansas R. less than \SI{1}{\kilo\meter} downstream of the main ditch head gate.  The Frontier Ditch (FRODITKS) diverts water near the downstream end of the DSR and uses the concentrations calculated for this point.
+
+%\begin{figure}[htbp]
+%\centering
+%	\includegraphics[width=6in]{"Figures/Results_USR/c BOX Measure CSe"}
+%	\caption[Measured Dissolved Selenium Concentrations in the USR.]{Measured Dissolved Selenium Concentrations in the USR.}
+%	\label{fig:BoxMUSR}
+%\end{figure}
+
+%Figure \ref{fig:BoxCUSR} is a box plot of the calculated estimated selenium concentration at the various key points in the USR mass balance model.  The value "n" indicates the number of steps in the time series.  The values used in the box plot are from the 1-D mean stochastic model.  The blue tinted boxes indicate calculated dissolved selenium concentrations within tributaries and the tan tinted boxes indicate calculated dissolved selenium concentrations at the irrigation canal head gates.
+
+%\begin{figure}[htbp]
+%\centering
+%	\includegraphics[width=6in]{"Figures/Results_USR/c BOX Estimated CSe"}
+%	\caption[Calculated Dissolved Selenium Concentrations in the USR.]{Calculated Dissolved Selenium Concentrations in the USR.}
+%	\label{fig:BoxCUSR}
+%\end{figure}
+
+%Figure \ref{fig:BoxMDSR} is a box plot of the measured dissolved selenium concentrations at sample points in the main stem of the river and its main tributaries in the DSR.  This plot is similar in fashion to figure \ref{fig:BoxMUSR}.
+
+%\begin{figure}[htbp]
+%\centering
+%	\includegraphics[width=6in]{"Figures/Results_DSR/c BOX Measure CSe"}
+%	\caption[Measured Dissolved Selenium Concentrations in the DSR.]{Measured Dissolved Selenium Concentrations in the DSR.}
+%	\label{fig:BoxMDSR}
+%\end{figure}
+
+%Figure \ref{fig:BoxCDSR} is a box plot of the measured dissolved selenium concentrations at sample points in the main stem of the river and its main tributaries in the DSR.  This plot is similar in fashion to figure \ref{fig:BoxCUSR}.
+
+%\begin{figure}[htbp]
+%\centering
+%	\includegraphics[width=6in]{"Figures/Results_DSR/c BOX Estimated CSe"}
+%	\caption[Calculated Dissolved Selenium Concentrations in the DSR.]{Calculated Dissolved Selenium Concentrations in the DSR.}
+%	\label{fig:BoxCDSR}
+%\end{figure}
+%These four figures (\ref{fig:BoxMUSR} to \ref{fig:BoxCDSR}) compare the measured dissolved selenium concentration values with the estimated values.  These figures are used along with tables \ref{tab:USRlocinfo} and \ref{tab:DSRlocinfo} in chapter \ref{chap:study regions} to make this comparison.  Study region sample locations along the Arkansas R. are not necessarily located at the same places where calculated dissolved selenium concentrations are required.
+
+%In all cases but one, the graphs support the statement that the calculated selenium concentration values are representative of the actual recorded values.  Timpas Creek (TIMSWICO) in the USR appears to be the only exception.  Here it appears that the calculated dissolved selenium concentrations are far lower than the measured values.  
+
+%This is possibly caused by three factors.  The first is the sampling frequency.  The sample results represented in figure \ref{fig:BoxMUSR} are not a uniform representation of the possible concentration values throughout a calendar year.  The sample values more heavily consider three months, March, May, and July, and either minimal consider or ignore all other months.  The second is the nature of flows within Timpas Creek.  The lower portion of the creek serves as a return flow channel for field irrigation runoff.  The selenium concentration of the runoff and the effects of other water constituents are not known.  
+
+%The second analysis was to compare the results between the deterministic and 1-D stochastic mean time series results to determine if there is any unacceptable variance between the models.  The distributions of the dissolved selenium concentrations calculated for both the deterministic and stochastic models were graphically compared.  Figure \ref{fig:ExCSeDist} is an example of one of these figures.  This particular figures presents the deterministic and stochastic dissolved selenium concentration distributions for the upstream end of the USR.  The histogram and the black KDE are of the calculated deterministic model values.  The red dashed KDE represents the distribution of the 1-D stochastic mean time series.  Similar figures for all calculated concentrations are provided in appendix \ref{app:conc}.  The third factor is the uncertainty with which dissolved selenium concentrations were calculated for Timpas Creek.  This is discussed in chapter \ref{chap:Dissolved Selenium Concentration}.
+
+%\begin{figure}[htbp]
+%\centering
+%	\includegraphics[width=6in]{"Figures/Results_USR/c d&s est U201"}
+%	\caption[Dissolved selenium concentration distribution analysis.]{Dissolved selenium concentration distribution analysis.  This is an example figure presenting the results for the upstream end of the USR.  Additional figures for the other USR and DSR calculated points are provided in the appendix noted in the text.  The histogram and the black KDE are of the calculated deterministic model values.  The red dashed KDE represents the distribution of the 1-D stochastic mean time series.}
+%	\label{fig:ExCSeDist}
+%\end{figure}
+
+%These figures show that the values used for the stochastic model and the deterministic model have very similar distributions.  In some cases there are slight deviations between the two distributions at lower concentration values.  This is due to the uncertainty assigned to the stochastic concentration estimates being more noticeable at lower calculated concentrations.
+
+%Time series plots of the concentration results from both the deterministic and stochastic models were prepared to visually analyze the relationship between the dissolved selenium concentration and the calendar date.  Figure \ref{fig:ExCSeTS} is an example of one of these figures.  This particular figure presents the dissolved selenium concentration time series for the upstream end of the USR.  Two sub-figures are provided.  Sub-figure a is the deterministic model time series and sub-figure b is the stochastic model time series.  The line is the mean of the realizations and the blue band is the 97.5th CIR.  Similar figures for all calculated concentrations are provided in appendix \ref{app:conc}.
+
+%\begin{figure}[htbp]
+%\centering
+%	\begin{subfigure}{0.5\textwidth}
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DUSR/c TS U163"}
+%		\caption{Deterministic Model.}
+%		\label{sub:ExDCSeTS}
+%	\end{subfigure}%
+%	\begin{subfigure}{0.5\textwidth}
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/c TS U163"}
+%		\caption{Stochastic Model.}
+%		\label{sub:ExSCSeTS}
+%	\end{subfigure}
+%	\caption[Deterministic and Stochastic Time Series of Dissolved Selenium Concentration.]{Deterministic and Stochastic Time Series of Dissolved Selenium Concentration.  This is an example figure presenting the results for the upstream end of the USR.  Additional figures for the other USR and DSR calculated points are provided in the appendix noted in the text.  For sub-figure b, the line is the mean of the realizations and the blue band is the 97.5th CIR.}
+%	\label{fig:ExCSeTS}
+%\end{figure}
+
+%These figures show a definite cyclical pattern for concentrations within the main stem of the Arkansas R.  Although the pattern varies, it is interesting to note that higher concentrations are calculated during the colder months in all cases.
+
+There were not any significant discrepancies between the calculated data and the measured data nor between the deterministic and stochastic models.  The results and comparison of the results are presented in tables \ref{tab:USRConcResults} and \ref{tab:DSRConcResults} for the USR and DSR, respectively.  These tables present the mean, 2.5th, and 97.5th percentile of the deterministic time series results.  These tables also present the mean, 2.5th, and 97.5th percentile of the 1-D stochastic mean time series results.  The last column provides the percent difference between the two calculated mean values.  Again, the stochastic and deterministic calculated dissolved selenium concentration resluts are not significantly different.
+
+\begin{table}[htbp]
+  \centering
+  \caption[USR Dissolved Selenium Concentration Results Table]{USR Dissolved Selenium Concentration Results Table.  Values are in units of \si{\micro\gram\per\liter}.}
+  \label{tab:USRConcResults}
+    \begin{tabular}{l|ccc|ccc|c}
+    \toprule
+    \multirow{2}[0]{*}{Variable} & \multicolumn{3}{c}{Deterministic} & \multicolumn{3}{c}{Stochastic Mean} & \% Diff\\\cline{2-4} \cline{5-7}
+    & 2.5\% & Mean & 97.5\% & 2.5\% & Mean & 97.5\% & Mean\\
+    \midrule
+    \midrule
+	$C_{Inlet}$&		3.488	&10.25	&16.27	&3.327	&10.26	&16.57	&0.0976	\\
+	$C_{CANSWKCO}$&		3.31	&11.88	&18.63	&3.882	&11.91	&19.35	&0.253	\\
+	$C_{CONDITCO}$&		5.346	&11.66	&15.92	&4.691	&11.6	&16.8	&-0.515	\\
+	$C_{FLSCANCO}$&		3.834	&10.15	&14.41	&3.222	&10.09	&15.29	&-0.591	\\
+	$C_{FLYCANCO}$&		4.512	&10.82	&15.08	&3.858	&10.76	&15.97	&-0.555	\\
+	$C_{HOLCANCO}$&		3.749	&10.06	&14.32	&3.138	&10.01	&15.2	&-0.497	\\
+	$C_{HRC194CO}$&		4.825	&15.36	&18.75	&5.619	&15.38	&19.94	&0.13	\\
+	$C_{RFDCANCO}$&		3.254	&10.44	&15.11	&3.064	&10.47	&15.48	&0.287	\\
+	$C_{TIMSWICO}$&		3.98	&10.98	&21.34	&4.142	&11.27	&21.95	&2.64	\\
+	$C_{La Junta WWTP}$&	16.09	&19.73	&25.04	&9.941	&19.4	&29.52	&-1.67	\\
+	$C_{Outlet}$&		3.809	&10.91	&13.73	&3.867	&10.92	&14.62	&0.0917	\\
+	$C_{A}$&			3.74	&10.13	&15.29	&3.536	&10.11	&15.63	&-0.197	\\
+	$C_{B}$&			3.792	&10.1	&14.36	&3.403	&10.05	&14.92	&-0.495	\\
+	$C_{C}$&			4.173	&10.48	&14.75	&3.76	&10.43	&15.3	&-0.477	\\
+	$C_{D}$&			4.929	&11.24	&15.5	&4.491	&11.18	&16.06	&-0.534	\\
+	$C_{E}$&			4.686	&11.32	&14.69	&4.539	&11.3	&15.28	&-0.177	\\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+  \centering
+  \caption[DSR Dissolved Selenium Concentration Results Table.]{DSR Dissolved Selenium Concentration Results Table.  Values are in units of \si{\micro\gram\per\liter}.}
+  \label{tab:DSRConcResults}
+    \begin{tabular}{l|ccc|ccc|c}
+    \toprule
+    \multirow{2}[0]{*}{Variable} & \multicolumn{3}{c}{Deterministic} & \multicolumn{3}{c}{Stochastic Mean} & \% Diff\\\cline{2-4} \cline{5-7}
+    & 2.5\% & Mean & 97.5\% & 2.5\% & Mean & 97.5\% & Mean\\
+    \midrule
+    \midrule
+	$C_{Inlet}$&	3.073	&10.48	&13.56	&3.19	&10.63	&17.04	&1.43	\\
+	$C_{BIGLAMCO}$&	6.195	&18.24	&26.42	&6.36	&18.57	&31.69	&1.81	\\
+	$C_{BUFDITCO}$&	6.914	&11.45	&13.29	&6.034	&11.47	&15.73	&0.175	\\
+	$C_{WILDHOCO}$&	1.73	&13.05	&27.24	&2.871	&13.12	&28.72	&0.536	\\
+	$C_{Outlet}$&	10.51	&14.58	&16.4	&7.244	&14.68	&21.89	&0.686	\\
+	$C_{F}$&	5.041	&10.97	&13.38	&5.088	&11.05	&15.44	&0.729	\\
+	$C_{G}$&	8.771	&12.96	&14.74	&7.767	&13.02	&17.52	&0.463	\\
+    \bottomrule
+    \end{tabular}
+\end{table}
+\clearpage
+
+\section{River Segment Dissolved Selenium Mass Storage Change}
+\label{sec:River Segment Dissolved Selenium Mass Storage Change}
+
+%Values and figures presented in this section are the results from calculations performed as described in chapter \ref{chap:Model Development} and all other precursor calculations.  The primary purpose of this analysis was to determine if the computational code and assumptions used to generate the stochastic distributions of river segment dissolved selenium mass storage changes were performed correctly.
+
+%Figure \ref{fig:ExampleSeMassChange} is an example figure that shows the deterministic and stochastic time series of the mass storage change within a river segment.  This particular figure presents data for segment A in the USR.  Two sub-figures are provided.  Sub-figure a is the deterministic model time series and sub-figure b is the stochastic model time series.  The line is the mean of the realizations and the blue band is the 97.5th CIR.  Similar figures were created for all segments in both study region river reaches and are presented in appendix \ref{App:SeS}.
+
+%Results in these figures and associated tables are presented in units of \si{\kilo\gram\per\day\per\kilo\meter}.  Standardizing values to mass storage per unit length allows for comparison between all river segments in both study reaches.  This also allows for comparison between the mass storage change components and the mass transport components of the mass balance models.
+
+%\begin{figure}[htbp]
+%\centering
+%	\begin{subfigure}{0.5\textwidth}
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DUSR/f Segment A"}
+%		\caption{Deterministic Model.}
+%		\label{sub:ExampleDSeMassChange}
+%	\end{subfigure}%
+%	\begin{subfigure}{0.5\textwidth}
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/f Segment A"}
+%		\caption{Stochastic Model.}
+%		\label{sub:ExampleSSeMassChange}
+%	\end{subfigure}
+%	\caption[River segment deterministic and stochastic dissolved selenium mass storage change time series.]{River segment deterministic and stochastic dissolved selenium mass storage change time series.  This is an example figure presenting the results for the upstream end of the USR.  Additional figures for the other USR and DSR calculated points are provided in the appendix noted in the text.  For sub-figure b, the line is the mean of the realizations and the blue band is the 97.5th CIR.}
+%	\label{fig:ExampleSeMassChange}
+%\end{figure}
+
+%Comparing the sub-figures provides for a visual goodness-of-fit analysis between the deterministic and stochastic models.  All USR river segment stochastic models agree with the deterministic models.  It should be noted that there is quite a fair amount of uncertainty associated with the values calculated for the stochastic model.  This is the compounding of uncertainties from the multiple input variables.  This is as expected for a complex multi-variate model.
+
+%The calculated selenium storage change values for each reach were compared between the deterministic and stochastic models and are reported in table \ref{tab:ReachSeStore} for both the USR and DSR.  All selenium storage change values in the figures and tables are presented in units of \si{\kilo\gram\per\day\per\kilo\meter}.  This table is presented in a similar fashion to other comparison tables in this chapter.
+
+%\begin{table}[htbp]
+%\centering
+%\caption[River segment deterministic and stochastic model selenium storage changes.]{River segment deterministic and stochastic model selenium storage changes.  All values are in \si{\kilo\gram\per\day\per\kilo\meter}.}
+%\label{tab:ReachSeStore}
+%    \begin{tabular}{l|ccc|ccc|c}
+%    \toprule
+%    \multirow{2}[0]{*}{Variable} & \multicolumn{3}{c}{Deterministic} & \multicolumn{3}{c}{Stochastic Mean} & \% Diff\\\cline{2-4} \cline{5-7}
+%    & 2.5\% & Mean & 97.5\% & 2.5\% & Mean & 97.5\% & Mean\\
+%    \midrule
+%    \midrule
+%	$\Delta M_A$&	-0.6816&	-0.004268&	0.7999&	-1.134&	-0.004609&	1.176&	7.99\\         
+%	$\Delta M_B$&	-0.1665&	-0.00004847&	0.1995&	-0.2201&	0.002345&	0.2627&	-4940\\
+%	$\Delta M_C$&	-1.3&	0.01262&	1.491&	-2.112&	0.01238&	2.278&	-1.9\\             
+%	$\Delta M_D$&	-3.393&	-0.04352&	4.231&	-4.175&	-0.04125&	4.583&	-5.22\\            
+%	$\Delta M_E$&	-0.9114&	-0.02073&	0.8795&	-1.356&	-0.02047&	1.362&	-1.25\\        
+%	$\Delta M_F$&	-0.5934&	-0.02879&	0.4908&	-1.164&	-0.03031&	1.087&	5.28\\         
+%	$\Delta M_G$&	-0.415&	-0.006064&	0.4856&	-1.247&	-0.006501&	1.26&	7.21\\             
+%	\bottomrule
+%	\end{tabular}
+%\end{table}
+
+%This table shows that the deviation between the deterministic and 1-D stochastic mean models is low, but higher than the values calculated for the individual input variables.  This is most likely indicative of the compounding of input variable uncertainties.  The percent deviation between the models for segment B in the USR is deceptive.  Both the deterministic model mean value and the 1-D stochastic mean model mean value are near zero.  This causes any deviation to appear large.
+
+\clearpage
+\section{River Surface Water Dissolved Selenium Flux}
+\label{River Surface Water Dissolved Selenium Flux}
+
+%Values and figures presented in this section are the results from calculations performed as described in chapter \ref{chap:Model Development} and all other precursor calculations.  The primary purpose of this analysis was to determine if the computational code and assumptions used to generate the stochastic distributions of dissolved selenium river mass transport changes due to surface water flows were performed correctly.
+
+%All selenium mass transport rates in the surface waters are calculated as positive values regardless of whether they discharge to or receive selenium from the main stem of the river.  Figure \ref{fig:ExampleSeFlux} is an example figure that shows the deterministic and stochastic time series of the mass transport at each calculation point.  This particular figure presents data for the upstream end of the USR.  Two sub-figures are provided.  Sub-figure a is the deterministic model time series and sub-figure b is the stochastic model time series.  The line is the mean of the realizations and the blue band is the 97.5th CIR.  Similar figures were created for all segments in both study region river reaches and are presented in appendix \ref{App:SeF-S}.
+
+%Results in these figures and associated tables are presented in units of \si{\kilo\gram\per\day\per\kilo\meter}.  Standardizing values to mass storage per unit length allows for comparison between all river segments in both study reaches.  This also allows for comparison between the mass storage change components and the mass transport components of the mass balance models.
+
+%\begin{figure}[htbp]
+%\centering
+%	\begin{subfigure}{0.5\textwidth}
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DUSR/f U163"}
+%		\caption{Deterministic Model.}
+%		\label{sub:ExampleDSeFlux}
+%	\end{subfigure}%
+%	\begin{subfigure}{0.5\textwidth}
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/f U163"}
+%		\caption{Stochastic Model.}
+%		\label{sub:ExampleSSeFlux}
+%	\end{subfigure}
+%	\caption[River surface water deterministic and stochastic dissolved selenium mass transport time series.]{River surface water deterministic and stochastic dissolved selenium mass transport time series.  This is an example figure presenting the results for the upstream end of the USR.  Additional figures for the other USR and DSR calculated points are provided in the appendix noted in the text.  For sub-figure b, the line is the mean of the realizations and the blue band is the 97.5th CIR.}
+%	\label{fig:ExampleSeFlux}
+%\end{figure}
+
+%Comparing the sub-figures provides for a visual goodness-of-fit analysis between the deterministic and stochastic models.  All USR mass transport stochastic models agree with the deterministic models.  It should be noted that there is quite a fair amount of uncertainty associated with the values calculated for the stochastic model.  This is the compounding of uncertainties from the multiple input variables.  This is as expected for a complex multi-variate model.
+
+%These figures all show a cyclical nature to selenium transport.  This is due to the variability of flow rates and concentrations through a year.  Some figures, especially those for the upstream and downstream end of the study regions, seem to show a double cycle within a calendar year.  The cause of this phenomenon is unknown.
+
+%The calculated selenium surface transport values for each calculated tributary and canal were compared between the deterministic and stochastic models and are reported in tables \ref{tab:USRGaugeSeFlow} and \ref{tab:DSRGaugeSeFlow} for the USR and DSR, respectively.  All selenium surface transport values in the figures and tables are presented in units of \si{\kilo\gram\per\day\per\kilo\meter}. 
+
+%\begin{table}[htbp]
+%\centering
+%\caption[USR stream gauge point selenium surface transport rates.]{USR stream gauge point selenium surface transport rates.  Stochastic mean values are calculated as the mean of the realizations for each time step.  All values are in \si{\kilo\gram\per\day\per\kilo\meter}.}
+%\label{tab:USRGaugeSeFlow}
+%    \begin{tabular}{l|ccc|ccc|c}
+%    \toprule
+%    \multirow{2}[0]{*}{Variable} & \multicolumn{3}{c}{Deterministic} & \multicolumn{3}{c}{Stochastic Mean} & \% Diff\\\cline{2-4} \cline{5-7}
+%    & 2.5\% & Mean & 97.5\% & 2.5\% & Mean & 97.5\% & Mean\\
+%    \midrule
+%    \midrule
+%	$\dot{M}_{Inlet}$&	1.871	&9.561	&22.77	&1.84	&9.569	&22.94	&0.0837	\\
+%	$\dot{M}_{CANSWKCO}$&	0.06308	&0.4108	&1.193	&0.06259	&0.4133	&1.262	&0.609	\\
+%	$\dot{M}_{CONDITCO}$&	0	&0.9395	&2.168	&0	&0.9339	&2.324	&-0.596	\\
+%	$\dot{M}_{FLSCANCO}$&	0	&2.853	&12.21	&0	&2.839	&12.7	&-0.491	\\
+%	$\dot{M}_{FLYCANCO}$&	0	&5.567	&18.42	&0	&5.53	&18.63	&-0.665	\\
+%	$\dot{M}_{HOLCANCO}$&	0	&1.025	&5.012	&0	&1.021	&5.073	&-0.39	\\
+%	$\dot{M}_{HRC194CO}$&	0.1514	&0.3085	&0.5055	&0.1412	&0.3097	&0.5597	&0.389	\\
+%	$\dot{M}_{RFDCANCO}$&	0	&0.3087	&0.7616	&0	&0.3098	&0.81	&0.356	\\
+%	$\dot{M}_{RFDRETCO}$&	0	&0.3087	&0.7616	&0	&0.3098	&0.81	&0.356	\\
+%	$\dot{M}_{TIMSWICO}$&	0.5702	&1.174	&2.115	&0.5358	&1.256	&2.456	&6.98	\\
+%	$\dot{M}_{La Junta WWTP}$&	0.07535	&0.1427	&0.2695	&0.05031	&0.1407	&0.2993	&-1.4	\\
+%	$\dot{M}_{Outlet}$&	1.027	&5.203	&10.29	&0.9957	&5.236	&11.21	&0.634	\\
+%	\bottomrule
+%	\end{tabular}
+%\end{table}
+%	
+%\begin{table}[htbp]
+%\centering
+%\caption[DSR river section selenium gains and losses from surface flows.]{DSR river section selenium gains and losses from surface flows  All values are in \si{\kilo\gram\per\day\per\kilo\meter}.  Mean values are presented for each category.}
+%\label{tab:DSRGaugeSeFlow}
+%	\begin{tabular}{l|ccc|ccc|c}
+%	\toprule
+%    \multirow{2}[0]{*}{Variable} & \multicolumn{3}{c}{Deterministic} & \multicolumn{3}{c}{Stochastic Mean} & \% Diff\\\cline{2-4} \cline{5-7}
+%    & 2.5\% & Mean & 97.5\% & 2.5\% & Mean & 97.5\% & Mean\\
+%    \midrule
+%    \midrule
+%	$\dot{M}_{Inlet}$&	0.1971	&1.024	&5.571	&0.16	&1.191	&8.256	&16.3	\\
+%	$\dot{M}_{BIGLAMCO}$&	0.242	&0.5302	&0.841	&0.2041	&0.5436	&1.061	&2.53	\\
+%	$\dot{M}_{BUFDITCO}$&	0	&0.916	&1.95	&0	&0.9211	&2.206	&0.557	\\
+%	$\dot{M}_{FRODITKS}$&	0	&0.358	&1.142	&0	&0.3615	&1.342	&0.978	\\
+%	$\dot{M}_{WILDHOCO}$&	0	&0.2849	&2.465	&0	&0.2878	&2.507	&1.02	\\
+%	$\dot{M}_{Outlet}$&	2.035	&5.069	&16.39	&1.656	&5.117	&17.64	&0.947	\\
+%	\bottomrule
+%	\end{tabular}
+%\end{table}
+
+%Both of these tables show that the difference between the deterministic models mean and the 1-D stochastic mean models are quite low.  This indicates that the deterministic model is representative of the stochastic model. 
+\clearpage
+\]
+\end{document}

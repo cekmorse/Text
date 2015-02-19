@@ -1,0 +1,39 @@
+Analysis of Selenium Concentrations at TIMSWICO
+
+Summary of Analysis
+
+Call:
+lm(formula = cse ~ ec.in + q.x, data = db, na.action = na.exclude)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.2400 -0.6789  0.2435  0.6999  3.8438 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  4.46133    1.76637   2.526   0.0242 *  
+ec.in       10.93342    1.34462   8.131 1.13e-06 ***
+q.x         -0.06625    0.05482  -1.208   0.2469    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Residual standard error: 1.575 on 14 degrees of freedom
+Multiple R-squared: 0.8683,	Adjusted R-squared: 0.8495 
+F-statistic: 46.17 on 2 and 14 DF,  p-value: 6.857e-07 
+
+
+
+Residual Statistics
+   max             = 3.84 
+   97.5th quantile = 2.65 
+   mean            = 0 
+   2.5th quantile  = -2.62 
+   min             = -3.24 
+   standard dev    = 1.47 
+   skewness        = 0.36 
+   kurtosis        = 4.82
+
+Residuals
+ [1] -0.4830870 -1.7021097 -0.6788734  0.8433786  0.2854742  0.8667885 -0.3163464
+ [8]  0.8352120 -1.0258973 -3.2399946  0.2434908  0.6805330 -0.9865998  3.8438353
+[15] -0.4133059  0.6998847  0.5476170

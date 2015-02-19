@@ -1,0 +1,45 @@
+Analysis of Selenium Concentrations at D101C
+
+Summary of Analysis
+
+Call:
+lm(formula = cse ~ ec.in + ec.in:t.in + ec.in:q.in, data = x, 
+    na.action = na.exclude)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-4.8344 -1.6088  0.2114  1.4910  6.1509 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  6.354835   2.089457   3.041 0.004253 ** 
+ec.in        3.429481   0.921875   3.720 0.000642 ***
+ec.in:t.in  -0.075810   0.032082  -2.363 0.023347 *  
+ec.in:q.in  -0.005623   0.001861  -3.021 0.004486 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Residual standard error: 2.553 on 38 degrees of freedom
+  (1 observation deleted due to missingness)
+Multiple R-squared: 0.5472,	Adjusted R-squared: 0.5114 
+F-statistic: 15.31 on 3 and 38 DF,  p-value: 1.098e-06 
+
+
+
+Residual Statistics
+   max           = 6.15 
+   97.5th quantile = 4.6 
+   mean          = 0 
+   2.5th quantile = -4.19 
+   min           = -4.83 
+   standard dev  = 2.46 
+   skewness      = 0.17 
+   kurtosis      = 2.82
+
+Residuals
+ [1] -4.1924188 -2.7328712 -3.0574639  0.2159542  0.4767889 -3.0367634  0.2068293
+ [8] -0.8276013 -1.4196040 -1.3214934 -1.0303014  1.0685290  0.4484243 -3.1292015
+[15]  0.1141243 -3.1127509 -1.6718011 -0.2930294 -3.9137293 -2.4384871  0.2176301
+[22]  0.7417285 -4.8343575  6.1508869 -2.1778537  1.5142648  1.2865701  0.9748430
+[29] -0.4275210  0.2363515  2.0164800  0.2045839 -0.7053886  2.1268012  2.4299835
+[36]  1.4212519  2.2278568  1.6762547  2.2204054  3.2875292  4.4574055  4.6011604

@@ -1,0 +1,49 @@
+Analysis of Selenium Concentrations at BIGLAMCO
+
+Summary of Analysis
+
+Call:
+lm(formula = cse ~ q.x + q.in + q.out + q.x:q.in + q.x:q.out, 
+    data = db, na.action = na.exclude)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-12.9479  -3.8750  -0.7944   4.7172  10.0482 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 36.956635   2.270107  16.280  < 2e-16 ***
+q.x         -1.376477   0.343279  -4.010 0.000283 ***
+q.in         0.089515   0.034461   2.598 0.013395 *  
+q.out       -0.099248   0.028751  -3.452 0.001409 ** 
+q.x:q.in    -0.007387   0.003252  -2.272 0.029013 *  
+q.x:q.out    0.006882   0.002219   3.102 0.003671 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Residual standard error: 5.701 on 37 degrees of freedom
+  (3 observations deleted due to missingness)
+Multiple R-squared: 0.5819,	Adjusted R-squared: 0.5254 
+F-statistic:  10.3 on 5 and 37 DF,  p-value: 3.05e-06 
+
+
+
+Residual Statistics
+   max             = 10.05 
+   97.5th quantile = 8.75 
+   mean            = 0 
+   2.5th quantile  = -8.7 
+   min             = -12.95 
+   standard dev    = 5.35 
+   skewness        = -0.03 
+   kurtosis        = 2.35
+
+Residuals
+ [1]   2.44153014   7.01079038   5.16372919   3.84329691   8.33489605   5.88102496
+ [7]  10.04822081  -1.11246343   5.28235683   5.95664444   0.05704839   4.27074891
+[13]  -2.52641651  -1.10122861  -5.12757187  -4.00424218   1.13430932 -12.94790900
+[19]  -3.11415758  -8.79300306   4.07174510  -0.32746659  -6.08782189  -6.88937965
+[25]  -3.47473259   5.41209901  -0.79438222  -2.10998867  -3.75577075   8.77490044
+[31]   6.56878031  -2.06081887   7.74388551  -5.50370147  -6.43863323  -6.52211535
+[37]   2.74592829  -2.68070098  -0.88094812  -0.31586065   0.32469323  -3.99417151
+[43]  -4.50314346

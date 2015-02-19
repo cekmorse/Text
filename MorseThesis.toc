@@ -1,0 +1,45 @@
+\contentsline {chapter}{Abstract}{ii}{Doc-Start}
+\contentsline {chapter}{Acknowledgements}{iv}{Doc-Start}
+\contentsline {chapter}{\tocchapter {Chapter}{1}{Literature Review and Research Overview}}{1}{chapter.1}
+\contentsline {section}{\tocsection {}{1.1}{The Environmental Selenium Problem}}{1}{section.1.1}
+\contentsline {section}{\tocsection {}{1.2}{Major Selenium Cycle Processes in the Environment}}{7}{section.1.2}
+\contentsline {section}{\tocsection {}{1.3}{Water Balance Methods for Estimating NPS Return Flows to Streams}}{10}{section.1.3}
+\contentsline {section}{\tocsection {}{1.4}{Mass Balance Methods for Estimating NPS Solute Loading to Streams}}{10}{section.1.4}
+\contentsline {section}{\tocsection {}{1.5}{Previous Related Studies in Colorado's Lower Arkansas River Valley}}{10}{section.1.5}
+\contentsline {section}{\tocsection {}{1.6}{Goals and Objectives of this Study}}{10}{section.1.6}
+\contentsline {section}{\tocsection {}{1.7}{--Keep for other chapters--}}{11}{section.1.7}
+\contentsline {chapter}{\tocchapter {Chapter}{2}{Study Regions}}{12}{chapter.2}
+\contentsline {section}{\tocsection {}{2.1}{Overview of the Lower Arkansas River Valley in Colorado}}{12}{section.2.1}
+\contentsline {section}{\tocsection {}{2.2}{Upstream Study Reach and Surrounding Region}}{17}{section.2.2}
+\contentsline {section}{\tocsection {}{2.3}{Downstream Study Reach and Surrounding Region}}{23}{section.2.3}
+\contentsline {chapter}{\tocchapter {Chapter}{3}{Data Collection and Compilation}}{31}{chapter.3}
+\contentsline {section}{\tocsection {}{3.1}{Water Quality Data Collection}}{31}{section.3.1}
+\contentsline {section}{\tocsection {}{3.2}{River Cross-Section Geometry Survey}}{40}{section.3.2}
+\contentsline {section}{\tocsection {}{3.3}{Data Compiled from Other Sources}}{41}{section.3.3}
+\contentsline {chapter}{\tocchapter {Chapter}{4}{Evaluation of NPS Return Flow to the River Using a Water Balance Model}}{50}{chapter.4}
+\contentsline {section}{\tocsection {}{4.1}{Water Balance Model Applied to the LARV}}{50}{section.4.1}
+\contentsline {section}{\tocsection {}{4.2}{Stochastic and Deterministic Models}}{50}{section.4.2}
+\contentsline {section}{\tocsection {}{4.3}{River Storage Change}}{50}{section.4.3}
+\contentsline {section}{\tocsection {}{4.4}{Gauged Stream Flows and Diverted Canal Flows}}{50}{section.4.4}
+\contentsline {section}{\tocsection {}{4.5}{Atmospheric Contributions to Flow Balance}}{50}{section.4.5}
+\contentsline {section}{\tocsection {}{4.6}{Results of Calculated Unaccounted for Return Flows}}{50}{section.4.6}
+\contentsline {chapter}{\tocchapter {Chapter}{5}{Evaluation of NPS Selenium Loading to the River Using a Mass Balance Model}}{51}{chapter.5}
+\contentsline {section}{\tocsection {}{5.1}{Mass Balance Model Applied to the LARV}}{51}{section.5.1}
+\contentsline {section}{\tocsection {}{5.2}{Mass Storage Change}}{51}{section.5.2}
+\contentsline {section}{\tocsection {}{5.3}{River Storage Change}}{51}{section.5.3}
+\contentsline {subsection}{\tocsubsection {}{5.3.1}{Solute Concentration Models}}{51}{subsection.5.3.1}
+\contentsline {subsection}{\tocsubsection {}{5.3.2}{Describing Uncertainty Distributions}}{51}{subsection.5.3.2}
+\contentsline {subsection}{\tocsubsection {}{5.3.3}{Uncertainty of Lab $C_{Se}$}}{51}{subsection.5.3.3}
+\contentsline {subsection}{\tocsubsection {}{5.3.4}{Mass Storage Change Results}}{51}{subsection.5.3.4}
+\contentsline {section}{\tocsection {}{5.4}{Mass Transport in Gauged Streams and Diverted Canals}}{51}{section.5.4}
+\contentsline {section}{\tocsection {}{5.5}{Results of Calculated Unaccounted for Return Loading}}{51}{section.5.5}
+\contentsline {chapter}{\tocchapter {Chapter}{6}{Sensitivity Analysis}}{52}{chapter.6}
+\contentsline {section}{\tocsection {}{6.1}{Purpose and Scope of Analysis}}{52}{section.6.1}
+\contentsline {section}{\tocsection {}{6.2}{Sensitivity Analysis Method}}{52}{section.6.2}
+\contentsline {section}{\tocsection {}{6.3}{Sensitivity Analysis Results}}{52}{section.6.3}
+\contentsline {chapter}{\tocchapter {Chapter}{7}{Conclusion and Recommendations}}{53}{chapter.7}
+\contentsline {section}{\tocsection {}{7.1}{Unaccounted for Return Flow Conclusions}}{53}{section.7.1}
+\contentsline {section}{\tocsection {}{7.2}{Unaccounted for Return Mass Loading Conclusions}}{53}{section.7.2}
+\contentsline {section}{\tocsection {}{7.3}{Unaccounted for Return Flow and Mass Loading Conclusion and Hypotheses}}{53}{section.7.3}
+\contentsline {section}{\tocsection {}{7.4}{Recommendations}}{53}{section.7.4}
+\contentsline {chapter}{References}{54}{section.7.4}

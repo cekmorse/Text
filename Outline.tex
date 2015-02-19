@@ -1,0 +1,240 @@
+\documentclass[12pt]{article}
+
+\usepackage[top=1in,bottom=1in,left=1in,right=1in]{geometry}
+\usepackage{float}
+\usepackage{outlines}
+\linespread{1.5}
+
+\begin{document}
+\begin{center}
+STOCHASTIC ESTIMATION OF GROUNDWATER RETURN FLOW AND DISSOLVED SELENIUM LOADING TO TWO REACHES OF THE ARKANSAS RIVER IN COLORADO
+\end{center}
+Title Page\\
+Abstract\\
+Acknowledgements\\
+Table of Contents\\
+List of Tables\\
+List of Figures\\
+\begin{outline}[enumerate]
+	\1 \underline{Literature Review and Research Overview}
+		\2 \underline{The Environmental Se Problem}
+			\3 Describe Se, chemistry and biochem
+			\3 Effects on humans w/ recorded cases
+			\3 Effects on mammals (livestock) w/ recorded cases
+			\3 Effects on avian and aquatic life w/ recorded cases
+			\3 Se sources, both natural and anthropomorphic
+			
+		\2 \underline{Major Se Cycle Processes in the Environment}
+			\3 Solution and dissolution
+			\3 ad/absorption
+			\3 volitalization and biomethylation
+			\3 storage and transport in soil pore water
+
+		\2 \underline{Water Balance Methods for Estimating NPS Return Flows to Streams}
+			\3 What is the method
+			\3 Recorded use cases (International, domestic, Colorado)
+
+		\2 \underline{Mass Balance Methods for Estimating NPS Solute Loading to Streams}
+			\3 What is the method
+			\3 Recorded use cases (international, domestic, Colorado)
+
+		\2 \underline{Previous Related Studies in Colorado's Lower Arkansas River Valley}
+			\3 List of all known studies with main methods used and  conclusions
+			
+		\2 \underline{Goal and Objective of this Study}
+
+	\1 \underline{Study Region Description}
+		\2 \underline{Overview of the Lower Arkansas River Valley in Colorado}
+			\3 Geographic location and limits
+			\3 Description of the geology and alluvial aquifer and its connection to the stream system
+			\3 Discussion of the general hydrology of the LARV
+			\3 Discuss current land use, major crops, and irrigation practices
+			\3 Irrigation flows induce high concentrations of salt, Se, U, and nutrients
+			\3 Sources of Se in the LARV and how irrigation practices affect the mobilization of Se from sources
+
+		\2 \underline{Upstream Study Reach and Surrounding Region}
+			\3 Geographic location and limits
+			\3 Study reach segmentation
+			\3 Description of canals, tribs, drains
+			\3 Location of existing stream gauges
+			\3 Location and description of surface water quality sampling sites
+			\3 Location and description of river cross section survey sites
+
+		\2 \underline{Downstream Study Reach and Surrounding Region}
+			\3 Geographic location and limits
+			\3 Study reach segmentation
+			\3 Description of canals, tribs, drains
+			\3 Location of existing stream gauges
+			\3 Location and description of surface water quality sampling sites
+			\3 Location and description of river cross section survey sites
+
+	\1 \underline{Data Collection and Compilation}
+		\2 \underline{Water Quality Data Collection}
+			\3 Sampling period, frequency, and quantity description
+			\3 Sampling preparation description
+			\3 Description of sample types taken
+			\3 Description of field sampling methodology and equipment
+			\3 Describe how lab results were handled
+
+		\2 \underline{River Cross-section Geometry Survey}
+			\3 Description of locations
+			\3 Description of general method and equipment used
+			\3 Description of data collected
+			\3 Method of closing errors
+			\3 converting survey data to cross section geometry
+
+		\2 \underline{Data Compiled from Other Sources}
+			\3 Flow gauge data
+			\3 Continious in-situ water quality data
+			\3 ET(ref) and related data ($u_2$ and $RH_{min}$)
+			\3 precipitation
+			
+		\2 \underline{Relationships between variables}
+			\3 correlations
+			\3 real-world relationships
+
+	\1 \underline{Evaluation of NPS Return Flow to the River Using a Water Balance Model}
+		\2 \underline{Flow Balance Model Applied to the LARV}\\
+		$Q_{U}=\frac{\Delta S}{\Delta t}-Q_{Surface}-Q_{Atmosphere} $ -- for each $\Delta t$ \\
+			\3 Describe derivation of equation from 'standard' equation
+			\3 Justify use of the equation in this form
+			\3 Define $Q_U$ constituents
+		
+		\2 \underline{Stochastic and Deterministic Models}
+			\3 Define uncertainty and it's sources
+			\3 Define true value vs measured value
+			\3 Define univariate probability distributions as estimate description of an uncertainty parameter
+			\3 Define parametric and non-parametric distribution and their uses
+		
+		\2 \underline{River Storage Change}\\
+			$\frac{\Delta S}{\Delta t}$
+			\3 define the time step
+			\3 define calculation of storage change\\
+			$\Delta S = \frac{y_2-y_1}{2} \cdot \frac{Tw_1+Tw_2}{2}$ (as the area of trapezoid)
+			\3 define flow depth ($y$) from stream gauge height ($h$)
+				\4 present source document defining stream gauge height uncertainty
+				\4 describe stream gauge height pre-defined parametric univariate uncertainty
+			\3 define calculation of flow depth from stream gauge height based on survey data
+				\4 define uncertainty of flow depth vs. stream gauge height relationship.  Based on personal observations.
+				\4 present river segment flow depth results - tables and graphs
+			\3 define calculation of top width from flow depth ($Tw=\beta_1 y^{\beta_2}$)
+				\4 define non-linear regression used to estimate $\beta_1$ and $\beta_2$
+				\4 describe residuals as model uncertainty
+				\4 define method of determining parametric univariate uncertainty distribution from regression residuals
+				\4 define distribution goodness-of-fit and tests (i.e. A-D, K-S, and visual)
+				\4 test non-linear regression uncertainty distribution against original data
+				\4 define distributions of $\beta_1$ and $\beta_2$
+				\4 test uncertainty distributions against original data
+				\4 present $\beta_1$ and $\beta_2$ uncertainty distributions - tables and graphs
+				\4 analysis and comments on distributions
+			\3 present river segment $\frac{\Delta S}{\Delta t}$ results - tables and graphs
+			\3 present river reach $\frac{\Delta S}{\Delta t}$ results - tables and graphs
+			\3 analysis and comments on segment and reach results
+
+		\2 \underline{Gauged Stream Flows and Diverted Canal Flows}\\
+			 $Q_{Surface} = Q_{US}-Q{DS}+Q{in}-Q_{out}$
+			\3 Define the variables - which flow variable belongs to which $Q$.
+			\3 Define the reported flow rate uncertainty distribution - for each flow variable
+				\4 USGS and CDWR defined uncertainty
+			\3 present $Q$ results for each source/sink - tables and graphs
+			\3 present river segment $Q_{Surface}$ results - tables and graphs
+			\3 present river reach $Q_{Surface}$ results - tables and graphs
+			\3 analysis and comments on segment and reach results
+		
+		\2 \underline{Atmospheric Contributions to Flow Balance}\\
+			$Q_{Atmosphere} = Q_{P}-Q{E}$
+			\3 Define relationship between total E and ET(ref) ($E=ET_{ref} \cdot A_{river~surface}$)
+			\3 Define how to convert reported ET(ref) to Evap
+				\4 define the uncertainty distribution of ET(ref) as per Dr. Chavez
+				\4 define the uncertainty distributions of the additional variables used to convert from ET(ref) to E
+			\3 Define river surface area
+				\4 State the use of $Tw$ from water storage calculations
+				\4 State the use of the same uncertainty used in water storage calculations
+			\3 present river segment total E results - tables and graphs
+			\3 present river reach total E results - tables and graphs
+			\3 define relationship between P measured at weather stations and P realized on the river's surface
+			\3 define the uncertainty of measured P values
+			\3 present river segment P results - tables and graphs
+			\3 present river reach P results - tables and graphs
+			\3 present river segment $Q_{Atmosphere}$ results - tables and graphs
+			\3 present river reach $Q_{Atmosphere}$ results - tables and graphs
+			\3 analysis and comments on segment and reach results
+			
+		\2 \underline{Results of Calculated Unaccounted for Return Flows}
+			\3 Present river segment $Q_{U}$ results - tables and graphs		
+			\3 Present river reach $Q_{U}$ results - tables and graphs
+			\3 analysis and comments on segment and reach results
+
+	\1 \underline{Evaluation of NPS Selenium Loading to the River Using a Mass Balance Model}
+		\2 \underline{Mass balance model applied to the LARV}\\
+		$\dot{M}_U = \frac{\delta M_S}{\Delta t} - \dot{M}_{Surface}$
+			\3 Describe derivation of equation from standard flow balance equation and $\dot{M}=QC$
+			\3 Justify use of the equation in this form
+			\3 Define $\dot{M}_U$ constituents
+
+		\2 \underline{Mass Storage Change}\\
+			$\frac{\Delta M_S}{\Delta t}$
+			\3 Define the time step
+			\3 Define relationship between water storage change and mass storage change
+			\3 \underline{Solute concentration models}
+				\4 define points/locations where $C_{Se}$ is calculated
+				\4 define linear regression (ordinary least squares)
+				\4 define independent variables used
+				\4 method used to optimize models
+				\4 test optimized models 
+				\4 presentation of optimized models - tables and graphs
+			\3 \underline{Describing uncertainty distributions}
+				\4 describe residuals as linear regression uncertainty
+				\4 distribution forms tested
+				\4 method used to determine best fit (goodness-of-fit)
+				\4 test best fit distributions
+				\4 presentation of best fit $C_{Se}$ distributions of residuals
+			\3 \underline{Uncertainty of lab $C_{Se}$ values}
+				\4 Define the uncertainty constituents
+				\4 Data source
+				\4 Calculation method
+				\4 Test distribution
+				\4 presentation of best fit lab $C_{Se}$ uncertainty distribution
+			\3 \underline{Mass Storage Change Results}
+				\4 present river sement $\frac{\Delta M_S}{\Delta t}$ results - tables and graphs
+				\4 present river reach $\frac{\Delta M_S}{\Delta t}$ results - tables and graphs
+				\4 analysis and comments on river segment and reach results
+			
+		\2 \underline{Mass Transport in Gauged Streams and Diverted Canals}\\
+			$\dot{M}_{Surface}=\dot{M}_{US}-\dot{DS}_{out}+\dot{M}_{in}-\dot{M}_{out}$
+			\3 Define the relationship between $Q_{Surface}$ and $\dot{M}_{Surface}$
+			\3 State which solute concentration models used with which gauged flows
+			\3 Present source/sink $\dot{M}$ results - tables and graphs
+			\3 Present river segment $\dot{M}$ results - tables and graphs
+			\3 Present river reach $\dot{M}$ results - tables and graphs
+			\3 analysis and comments on river segment and reach results
+		\2 \underline{Results of the Calculated Unaccounted for Return Loading}
+			\3 Present river segment $\dot{M}_U$ results - tables and graphs
+			\3 Present river reach $\dot{M}_U$ results - tables and graphs
+			\3 Analysis and comments on river segment and reach results
+		
+	\1 \underline{Sensitivity Analysis}
+		\2 Purpose of analysis
+		\2 Scope of analysis
+		\2 Method of analysis
+			\3 Which variables are perturbed...by how much...and why
+			\3 State use of only the deterministic models for analysis
+		\2 Present analysis results - tables
+		\2 Analysis and comments on analysis results			
+			
+	\1 \underline{Conclusion and Recommendations}
+		\2 Unaccounted for return flow conclusions as supported by results
+		\2 Unaccounted for return loading conclusions as supported by results
+		\2 Unaccounted for flow and mass transport conclusions and hypothoses
+			\3 comparison of unaccounted for Se concentrations to observed Se concentrations in surfacewater and groundwater
+			\3 possible effects of bank ecology with natural remediation of Se concentrations
+			\3 Discuss how results can be used to guide calibration of GW flow and mass transport models
+		\2 Recommendations
+			\3 additional Se samples to verify the models.
+			\3 Se volitalization study on the Ark
+			\3 Studies of Se sorption and chem. reduction in bed and bank sediments
+			
+\end{outline}
+Sources cited/Bibliography\\
+Appendicies
+\end{document}

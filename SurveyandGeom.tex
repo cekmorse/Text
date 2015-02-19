@@ -1,0 +1,317 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\begin{document}
+\[\renewcommand{\thechapter}{6}
+\chapter{Estimating River Volume Change}
+\section{River Survey}
+\label{sec:River Survey}
+%River cross-sections were surveyed at twenty-one and thirteen locations in the USR and DSR, respectively.  The cross-sections are not equally spaced along the river segments.  Cross-sections were surveyed at the extreme upstream and downstream end of each river segment.  Intermediate cross-sections were located where both the landowner permitted access and the river was reasonably accessible.  Additionally, the intermediate cross-sections were located where different cross-section profiles existed.  This was done to capture a broader range of possible cross-section profiles, thereby allowing for a more realistic characterization of the river geometry.
+
+%All data was collected with a total station and hand recorded into survey log books.  Two back-sights were used at every surveyed cross-section.  Both back-sights and the instrument location were located by using a hand held global positioning satellite (GPS) receiver.  The receiver was capable of determining the horizontal location to within $\pm1$ m and the vertical location to within $\pm$2 m.  Licensed surveyors were not hired, retained, or consulted for this study.
+
+%Higher location and orientation accuracy could have been obtained by using survey grade GPS equipment or by referencing the instrument survey to an established benchmark.  For almost all surveyed cross-sections, benchmarks were not located within a reasonable distance.  Attempting to tie into these benchmarks would results in a significant increase in the time required to complete the survey.  There were also doubts as to whether the horizontal and vertical accuracy could be maintained due to the distance between the nearest benchmarks and the survey sites and the surveyor's skill.  Survey grade GPS equipment could have been used, but would have required either a larger team or a significantly increased risk of equipment tampering or theft.  The available survey grade GPS base station also had a limited range compared to the range required to access many of the locations.  The goal of the survey was to determine the relationship between the depth and width of the river.  Locating and orienting the survey data was a secondary goal. For these reasons, it was determined that the level of location and orientation accuracy obtained by using the hand held GPS receiver would be sufficient.
+
+%The data was collected in the form of horizontal angle, vertical angle, sight distance from the instrument to the rod, rod height and instrument height.  The survey data was downloaded from the total station and entered into a spreadsheet for conversion to horizontal and vertical location relative to the instrument.  Values in the spreadsheet were checked against the survey log book.  Points collected but not used to calculate the cross-section, such as the back-sight points, were marked so that they were not used in the cross-section analysis.  These excluded points were used for other survey related calculations.  The rod height for each measurement and the instrument height for the survey was transferred from the log book to the spreadsheet.  
+
+%Coordinate geometry (COGO) techniques were used to convert from angle, sight distance, rod height, and instrument height measurements to horizontal and vertical distance measurements relative to the instrument.  Vertical angles were measured using decimal degrees such that zero degrees (\SI{0}{\degree}) was located above the instrument and \SI{90}{\degree} was horizontal.  Horizontal angles were measured using decimal degrees such that \SI{0}{\degree} was located when the instrument was facing the first back-sight and positive angles were measured clockwise when viewed from above.  The sight distance was measured using the instruments integrated laser distance measuring tool from the optics of the instrument to the rod prism with sub-millimeter accuracy.  Horizontal and vertical distance to the ground location of the survey point from the ground location of the instrument was calculated as shown in equations \ref{eq:horizontal} and \ref{eq:vertical}, respectively.  Northing and easting location was calculated with the line between the instrument and the first back-sight as the reference.  Northing and easting distances were calculated as shown in equations \ref{eq:northing} and \ref{eq:easting}, respectively.
+
+%\begin{align}
+%	d_h=&d_s \cdot sin(\theta_v) \label{eq:horizontal} \\
+%	d_v=&h_i-h_r+d_s \cdot cos(\theta_v) \label{eq:vertical} \\
+%	d_N=&d_h \cdot cos(\theta_h) \label{eq:northing} \\
+%	d_E=&d_h \cdot sin(\theta_h) \label{eq:easting}
+%\end{align}
+%\begin{tabular}{r l}
+%	$d_h$ =&Horizontal distance from the instrument to the surveyed point.\\
+%	$d_v$ =&Vertical distance from the instrument to the surveyed point. \\
+%	$d_N$ =&Horizontal distance from the instrument to the surveyed point as projected on the \\
+%	& East-West line passing through the instrument (northing).\\
+%	$d_E$ =&Horizontal distance from the instrument to the surveyed point as projected on the \\
+%	& North-South line passing through the instrument (easting).\\
+%	$d_s$ =&Sight distance from the instrument optics to the rod prism.\\
+%	$\theta_v$ =&Vertical angle from the sight optics to the rod prism\\
+%	$\theta_h $ = & Horizontal angle from the sight optics to the rod prism\\
+%\end{tabular} \\
+
+%GPS location data for the instrument and back-sights was collected in the form of northing, easting, and elevation.  Colorado State Plane-South, North American Datum 1983 (NAD83), U.S. feet was used as the horizontal datum and North American Vertical Datum 1988 (NAVD88) was used as the vertical datum.  All survey units are U.S. Feet.  Survey data points were translated from their position relative to the instrument to their position relative to the State Plane coordinate system by adding the northing, easting, and elevation values collected by the GPS receiver at the instrument site.  Orientation error corrections to make instrument North coincide with true North were made by adding a positive horizontal correction angle such that the corrected angle to the first back-sight, which was the zero back-sight, matched the angle between the two corresponding GPS northing and easting coordinate sets.  
+
+%Each surveyed point had two location value sets.  The first set being relative to the instrument without location and orientation corrections.  The second set being relative to the State Plane with corrections for location, orientation, and elevation.  The two data sets shall be referred to as relative location and State Plane location, respectively.  The State Plane location for each point is directly derived from the relative location.  All survey error corrections were applied to the relative locations before converting the data to State Plane locations.
+
+%Survey errors, also known as closing errors, were corrected for all points.  Most survey locations were on soft soils.  It was assumed that survey error would primarily consist of instrument location drift.  Measurements were taken to both back-sights at the beginning an end of the site survey.  The northing, easting, and elevation difference between the measurements taken at the beginning and end of the site survey were spread equally and successively among all points.  Since two back-sights were used, the total closing error was taken as the average of the closing errors for the two back-sights.  
+
+%At each cross-section, surveyed point elevations were shifted such that the lowest surveyed point in the river channel had an elevation of zero (0).  This would allow the surveyed data to fit Equation \ref{eq:AR} without adding an additional vertical shift term to the equation
+
+%Location errors due to GPS accuracy issues were corrected by comparing the State Plane location of the two back-sights to the GPS surveyed location at those sights.  The average difference in northing, easting, and elevation between the GPS back-sight coordinates and the instrument surveyed coordinates was used to shift the State Plane location of the instrument.  The State Plane location of all points was re-calculated after performing this correction.
+
+%Correction of closing errors was required to obtain accurate stream depth and river top width values.  Location and orientation error correction was not required and was only performed as a manner of good survey practice.  Final survey locations should always have the most correct location and elevation relative to a given datum.  Both the back-sights and instrument location were marked with steel reinforcement bar (re-bar) and plastic caps, it may be possible for future surveys to be conducted at the same locations with the same back-sights.
+
+%A least squares fit linear regression equation was fit to the relative location of all points along the surveyed cross-section.  It was reasoned that a straight line through the data points would allow for a better approximation of the river's cross-section than connecting the points.  The straight line would represent a true cross-section, whereas connecting the points would exaggerate the distance across the cross-section.  The relative locations of the points as projected onto the best-fit line were entered into computer aided design and drafting (CADD) software.  Horizontal lines, spaced 0.03 m (0.1 ft) apart from the bottom of the channel to 1.5 m (5 ft) from the bottom, were drawn from edge of bank to edge of bank.  The vertical location of these lines was taken as the flow depth and the length of the line was taken as the river top width.  
+
+\clearpage
+\section{River Volume Change}
+\label{sec:River Volume Change}
+%The river volume change is used in the water balance and selenium mass balance models.  The river is modeled as a trapezoidal prism with a constant length and with a cross-section that does not vary with respect to location.  It was reasoned that this simplistic model would best approximate the average channel shape.  
+
+%River reach volume changes are calculated between two consecutive time steps.  Reach volume changes are calculated as the sum of the volume changes within the segments that compose the reach.  River segment volume change between time steps is calculated as shown in equation \ref{eq:volumesimple} and depicted in figure \ref{fig:segment model}.
+%\begin{equation}
+%	\Delta V_x=L_x \cdot \Delta A_{x}
+%	\label{eq:volumesimple}
+%\end{equation}
+%\begin{tabular}{r l}
+%	Where:&\\
+%	$\Delta V_x$ =&River reach volume change from previous time step $(volume)$.\\
+%	$L_x$ =&River segment length $(length)$.\\
+%	$\Delta A_{x}$ =& River segment cross-section area change between time steps $(area)$.\\
+%\end{tabular}\\
+
+%\begin{figure}[htbp]
+%	\begin{center}
+%		\includegraphics[scale=1]{"Figures/SEGMENT small"}
+%		\caption[River Segment Model.]{River Segment Model.}
+%		\label{fig:segment model}
+%	\end{center}
+%\end{figure}
+
+%River segment length ($L_x$) was measured to the nearest \SI{0.1}{\kilo\meter} using geographical information system (GIS) software.  Rough validation of these measurements was performed in the field.
+
+%River segment cross-sectional area change calculation is based on the trapezoidal area that is composed by the difference between the cross-sectional area at two different flow depths as depicted in \ref{fig:XSArea} and in equation \ref{eq:XSArea}.
+
+%\begin{figure}[htbp]
+%\begin{center}
+%	\includegraphics[width=6in]{"Figures/XSArea"}
+%	\caption[Average River Segment Cross-Section Area Change.]{Average River Segment Cross-Section Area Change.}
+%	\label{fig:XSArea}
+%\end{center}
+%\end{figure}
+
+%\begin{align}
+%	\Delta A= & \overline{Tw}\cdot \Delta h \nonumber \\
+%	\Delta A= & \frac{Tw_{t=i} + Tw_{t=i-1}}{2} \cdot \left( h_{t=i} - h_{t=i-1} \right) \label{eq:XSArea}
+%\end{align}
+%\begin{tabular}{rl}
+%	Where: & \\
+%	subscript $_{t=i}$ = & Current time step. \\
+%	subscript $_{t=i-1}$ = & Previous time step. \\
+%	$\Delta A$ = & Cross-section area change (\si{\meter\squared}).\\
+%	$\overline{Tw}$ = & Average river top width (\si{\meter}).\\
+%	$\Delta h$ = & Change in flow depth from the previous time step (\si{\meter}). \\
+%	$Tw$ = & River top width (\si{\meter}). \\
+%	$h$ = & River flow depth (\si{\meter}). \\
+%\end{tabular}\\
+
+%Flow depth values used in the model are perturbed by two independent error terms as shown in equation \ref{eq:herror}.
+%\begin{equation}
+%	h_{model}=h_{reported}+\beta_{h1}+\beta_{h2}
+%	\label{eq:herror}
+%\end{equation}
+%\begin{tabular}{rl}
+%	Where: & \\
+%	$h_{model}$ = & River section flow depth used in the models.\\
+%	$h_{reported}$ = & Reported river section flow depth.\\
+%	$\beta_{h1}$ = & Measurement error.\\
+%	$\beta_{h2}$ = & Spatial variation.\\
+%\end{tabular}\\
+
+%The error associated with flow depth measurement ($\varepsilon_{h1}$) is as described in section \ref{sec:uncertainty of in stream data}.  These measurements and their associated error are only valid at the gauge site.  The stream depth recorded by the gauges may or may not be representative of the average stream depth within a given river segment.  An additional error term, $\varepsilon_{h2}$, was included to account for this possibility.  This error term is based on personal observations of the flow depth changes within the river segments.  The collected survey data was used to validate the assumptions.  Cross-sections immediately above and below the drop structures were not included as these cross-sections represent the depth extremes within a given river segment.  Based on these observations and the collected survey data, an additional error of \SI{\pm 0.076}{\meter} (\SI{\pm 0.25}{\foot}).  This error is to be normally distributed with the stated error range defining the 95\% central inter-percentile range.
+
+%There is the possibility that $\varepsilon_{h1}$ could cause the storage change between the time steps to change from a storage gain to a storage loss, or vise versa.  This is acceptable as it is within the measurement limits of the instruments.  Once $h+\varepsilon_{h1}$ has been calculated for the two successive time steps, the relationship between the two time steps is fixed.  If the river segment flow depth rises between time steps after this calculation, then that relationship must continue throughout the rest of the calculation for $V_x$.
+
+%To facilitate this, it is assumed that $\varepsilon_{h2}$ does not vary significantly within the study time frame and does not vary within a realization.  The Arkansas R. channel is sufficiently stable between consecutive days that this assumption is valid.  A new $\varepsilon_{h2}$ is drawn for each realization and remains constant for all time steps within the study time frame.
+
+%River segment B in the USR does not have a flow gauge within its boundaries and therefore has no reported flow depths. This segment has an additional irrigation diversion check structure within its boundaries, thereby sub-dividing segment B into two sub-segments, each with its own un-gauged flow depth.  Due to segment B being the shortest, composing only 3.9\% of the USR's total length, and the additional variability of the possible flow depth, the average daily flow depth within segment B is taken as the mean of the reported flow depths in segment A and C.  Top width and volume change calculation follows the previously described methodology.
+
+%River top width measurements are only recorded during manual stream gauging performed to update the stage-discharge rating table associated with the gauge.  These measured values are only valid for a specific location and a specific flow depth.  The flow depth to river top width relationship is described as a power function of the river depth as shown in equation \ref{eq:AR} \citep{Buhman2002,Gates1996}.  
+%\begin{equation}
+%	Tw=\beta_{1} \cdot h^{\beta_{2}}
+%	\label{eq:AR}
+%\end{equation}
+%\begin{tabular}{rl}
+%	Where: & \\
+%	$Tw$ =&River top width. \\
+%	$h$ =&River flow depth. \\
+%	$\beta_{1}$ and $\beta_{2}$ =&Fitting parameters 1 and 2. \\
+%\end{tabular} \\
+
+%Equation \ref{eq:AR} was expanded to include error terms as shown in equation \ref{eq:ARcomplete}
+%\begin{equation}
+%	\label{eq:ARcomplete}
+%	Tw=\beta_1 \big( h+\varepsilon_{h_1} + \varepsilon_{h_2} \big) ^ {\beta_2}
+%\end{equation}
+%\begin{tabular}{r l}
+%	Where:&\\
+%	$\varepsilon_{h1}=$& Measurement error at the stream gauge.\\
+%	$\varepsilon_{h2}=$& Spatial error in the reported flow depth.\\
+%\end{tabular}\\
+
+%Values $\beta_1$ and $\beta_2$ are drawn from probability distributions.  Calculated flow depth and river top width data pairs developed in section \ref{sec:River Survey} were used to determine the distributions from which $\beta_1$ and $\beta_2$ in equation \ref{eq:ARcomplete} were drawn.  These distributions were developed using non-linear, least-squares regression.  Values below \SI{0.15}{\meter} (\SI{0.5}{\foot}) were removed from the regression analysis.  Flow values below this depth are not common and it was determined that these points would not allow for an accurate representation of the flow depth to river top width relationship for the range of known flow depths.  Values above \SI{1.52}{\meter} (\SI{5.0}{\foot}) were also removed from the regression analysis.  Flow depths above this depth are above the banks of the primary river channel and are within the inner flood plain.  Table \ref{tab:alphabetavals} gives the resulting $\beta_1$ and $\beta_2$ values for each surveyed cross-section.  Figure \ref{fig:exampleTwVsH} is an example of the surveyed flow depth and river top width relationships and the derived non-linear relationship for cross-section 1 in river segment A of the USR.  Similar relationship plots for the other surveyed cross-sections are found in appendix \ref{App:TwVsH}.  
+
+%\begin{table}[htbp]
+%  \centering
+%  \caption[Arkansas R. surface width estimating coefficients and residual distribution type.]{Arkansas R. surface width estimating coefficients and residual distribution type.}
+%  \label{tab:alphabetavals}
+%  \begin{tabular}{cccccc}
+%    \toprule
+%    Study & River & Cross- & \multicolumn{2}{c}{Fitting Parameter} & Root Mean\\\cline{4-5}
+%    Region & Segment & Section & $\beta_1$ & $\beta_2$ & Squared Error\\
+%    \midrule
+%    \midrule
+%    \multirow{21}{*}{USR}& \multirow{3}{*}{A} 		& 1 & 101.8	& 0.4546	& 11.43	\\
+%    						&						& 2 & 61.96	& 0.02487	& 0.1710	\\
+%    						&						& 3 & 77.29	& 0.1736	& 8.363	\\\cline{2-6}
+%          					& \multirow{3}{*}{B}	& 4 & 69.40	& 0.06101	& 0.7084	\\
+%          					&						& 5 & 51.77	& 0.9319	& 1.924	\\
+%          					&						& 6 & 63.93	& 0.03910	& 2.152	\\\cline{2-6}
+%          					& \multirow{6}{*}{C} 	& 7 & 50.13	& 0.7839	& 2.562	\\
+%          					&						& 8 & 71.04	& 0.4024	& 2.900	\\
+%          					&						& 9 & 71.36	& 0.1684	& 4.719	\\
+%          					&						& 10& 87.08	& 0.02590	& 0.5928	\\
+%          					&						& 11& 61.49	& 0.09547	& 4.631	\\
+%          					&						& 12& 72.67	& 0.5591	& 3.487	\\\cline{2-6}
+%					        & \multirow{7}{*}{D} 	& 13& 45.97	& 0.6918	& 4.568	\\
+%					        &						& 14& 45.71	& 0.6290	& 3.034	\\
+%					        &						& 15& 86.75	& 0.5579	& 4.701	\\
+%					        &						& 16& 20.71	& 0.1360	& 1.244	\\
+%					        &						& 17& 51.74	& 0.1889	& 2.375	\\
+%					        &						& 18& 27.97	& 0.3204	& 1.807	\\
+%					        &						& 19& 36.29	& 0.07383	& 0.1955	\\\cline{2-6}		        
+%          					& \multirow{2}{*}{E} 	& 20& 33.00	& 0.6961	& 1.533	\\
+%          					&						& 21& 182.0	& 1.270	& 1.916	\\
+%    \midrule
+%    \multirow{13}{*}{DSR}& \multirow{7}{*}{F} & 1 & 22.48 & 0.4006 & 0.8139\\
+%    						&						& 2 & 41.61 & 1.390 & 3.953\\
+%    						&						& 3 & 29.82 & 0.2265 & 1.821\\
+%          					& 						& 4 & 21.46 & 0.3801 & 2.541\\
+%          					&						& 5 & 22.78 & 0.8004 & 5.715\\
+%          					&						& 6 & 26.21 & 0.4153 & 1.681\\
+%          					&						& 7 & 41.92 & 1.487 & 3.299\\ \cline{2-6}
+%          					& \multirow{7}[2]{*}{G} & 8 & 23.49 & 1.504 & 2.344\\
+%          					&						& 9 & 33.54 & 1.106 & 3.676\\
+%          					&						& 10& 28.03 & 0.5790 & 2.003\\
+%          					&						& 11& 24.16 & 0.2103 & 1.693\\
+%          					&						& 12& 24.74 & 0.8992 & 2.617\\
+%					        &						& 13& 52.68 & 1.1850 & 5.757\\
+%					        &						& 14& 24.18 & 0.4764 & 0.9259\\
+%    \bottomrule
+%    \end{tabular}
+%\end{table}
+
+%\begin{figure}[htbp]
+%\begin{center}
+%	\includegraphics[width=6in]{"Figures/Results_USR/Survey Tw vs H-Section 2"}
+%	\caption[Example Flow Depth vs. River Top Width Relationship.]{Example Flow Depth vs. River Top Width Relationship.  The non-linear best fit line of the form in Equation \ref{eq:AR} is red.  The values are the two non-linear regression fitting parameters ($\beta_1$ and $\beta_2$) and the residual standard error for the fitting equation ($\sigma$).  Similar figures for all cross-sections are found in appendix \ref{App:TwVsH}.}
+%	\label{fig:exampleTwVsH}
+%\end{center}
+%\end{figure}
+
+%Figure \ref{fig:B1B2} shows the distributions of $\beta_1$ and $\beta_2$ values and the various best-fit distributions in both the USR and DSR.  Logistic, normal, exponential, Weibull, and log-normal distributions were fitted to the data.  Vertical tick marks in the x-axis margin are at the data values.  Kernel density estimations were used as an alternative means to graphically represent the data density.  Kernel density estimations are non-parametric and when paired with histograms of the same data, they are used to assist in visual data analysis and comparison to parametric density functions.  The Kolmogorov-Smirnov (K-S) goodness-of-fit statistics, presented in table \ref{tab:B1B2 distribution results}, were calculated for the fitted distributions and known data.
+
+%\begin{figure}[htbp]
+%\centering
+%\begin{subfigure}{0.5\textwidth}
+%	\centering
+%	\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/USR B1 Dist"}
+%	\caption{USR $\beta_1$}
+%	\label{sub b1}
+%\end{subfigure}%
+%\begin{subfigure}{0.5\textwidth}
+%	\centering
+%	\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/USR B2 Dist"}
+%	\caption{USR $\beta_2$}
+%	\label{sub b2}
+%\end{subfigure}
+%\begin{subfigure}{0.5\textwidth}
+%	\centering
+%	\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/DSR B1 Dist"}
+%	\caption{DSR $\beta_1$}
+%	\label{sub b1}
+%\end{subfigure}%
+%\begin{subfigure}{0.5\textwidth}
+%	\centering
+%	\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/DSR B2 Dist"}
+%	\caption{DSR $\beta_2$}
+%	\label{sub b2}
+%\end{subfigure}
+%\caption[$Tw$ Versus $h$ Fitting Parameter $\beta_1$ and $\beta_2$ Distributions.]{$Tw$ Versus $h$ Fitting Parameter $\beta_1$ and $\beta_2$ Distributions.  The black dashed line is a kernel density plot representing a histogram where the bin size approaches zero.  The colored curves are the best fit for the particular distribution type.  Vertical tick marks in the x-axis are at the data values.}
+%\label{fig:B1B2}
+%\end{figure}
+
+%\begin{table}[htbp]
+%	\centering
+%	\caption[River $\beta_1$ and $\beta_2$ distribution test results.]{River $\beta_1$ and $\beta_2$ distribution test results.}
+%	\label{tab:B1B2 distribution results}
+%	\begin{tabular}{clc}
+%		\toprule
+%	Fitting parameter &Distribution & K-S Statistic\\
+%		\midrule
+%		\midrule
+%	\multirow{5}{*}{USR $\beta_1$} & Logistic & 0.1211\\
+%	& Normal & 		0.2092\\
+%	& Exponential & 0.3178\\
+%	& Weibull & 	1.0000\\
+%	& Log-normal & 	0.1236\\
+%		\midrule
+%	\multirow{5}{*}{USR $\beta_2$} & Logistic & 0.1837\\
+%	& Normal & 		0.2040\\
+%	& Exponential & 0.1379\\
+%	& Weibull & 	0.3412\\
+%	& Log-normal & 	0.1570\\
+%		\midrule
+%	\multirow{5}{*}{DSR $\beta_1$} & Logistic & 0.1999\\
+%	& Normal & 		0.2258\\
+%	& Exponential & 0.5134\\
+%	& Weibull & 	1.0000\\
+%	& Log-normal & 	0.2086\\
+%		\midrule
+%	\multirow{5}{*}{DSR $\beta_2$} & Logistic & 0.1657\\
+%	& Normal & 		0.1839\\
+%	& Exponential & 0.2391\\
+%	& Weibull & 	0.4326\\
+%	& Log-normal & 	0.1486\\
+%		\bottomrule
+%	\end{tabular}
+%\end{table}
+
+%Combining the river cross-section analyses to create single distributions of $\beta_1$ and $\beta_2$ was a necessary step as there was an insufficient number of cross-sections within each river segment to provide for a statistically significant data set.  The resulting river shape parameter distributions are valid for the river segment for which they were calculated.  Each river segment draws values from the shape parameter distributions independently.  Only one pair of shape parameters is drawn for each realization.  It is assumed that the river geometry does not significantly change within the study time frame.  Channel variability is modeled between the realizations.
+
+%Residuals from the non-linear regression analyses were combined into a single data set for error analysis.  Combining this data set was a logical step following the combination of the data that generated the residuals.  Residuals were tested using the same tools and techniques used to test the river shape parameter distributions.  USR and DSR channel shape residuals were found to have a log-normal distribution.  Figure \ref{fig:B1B2 Error} presents the distribution analyses for the USR and DSR.  These figures are of the same type as those used to analyze the river shape parameter distributions, figure \ref{fig:B1B2}.
+
+%\begin{figure}[htbp]
+%\centering
+%\begin{subfigure}{0.5\textwidth}
+%	\centering
+%	\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/USR AB Error Dist"}
+%	\caption{USR Residuals}
+%	\label{sub b1}
+%\end{subfigure}%
+%\begin{subfigure}{0.5\textwidth}
+%	\centering
+%	\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/DSR AB Error Dist"}
+%	\caption{DSR Residuals}
+%	\label{sub b2}
+%\end{subfigure}
+%\caption[$Tw$ Versus $H$ Residuals Distribution.]{$Tw$ versus $H$ Residuals Distribution.  The black dashed line is a kernel density plot representing a histogram where the bin size approaches zero.  The colored curves are the best fit for the particular distribution type.  Vertical tick marks in the x-axis are at the data values.}
+%\label{fig:B1B2 Error}
+%\end{figure}
+
+\clearpage
+\section{River Surface Area Calculation}
+\label{sec:River Surface Area Calculation}
+%The river surface area is used to for determining evaporation loss and direct gains from precipitation in the water balance models.  River volume change and river surface area are calculated from a common methodology. 
+
+%Water evaporation volume is dependent on the available surface area in contact with the atmosphere.  Surface area ($As$) is estimated for each river segment using equation \ref{eq:surfacearea}.  The river model is the same used for the volume change calculation, depicted in figure \ref{fig:segment model}.  As with the river volume change, the length of each segment is treated as a constant and the top width for each segment is calculated using equation \ref{eq:ARcomplete}.  The $Tw_{t=i}$ used for surface area calculations is the same value for river section volume change.  No new calculation is performed to obtain $Tw_{t=1}$ for surface area calculations.  It was reasoned that since the volume is based on a calculated $Tw$, then the surface area should use the same value to maintain continuity.  If a different set of fitting parameters and error terms are drawn from their respective distributions, then a significantly different $Tw$ could be calculated for volume and surface area.  This would add an additional error to the final stochastic models that could not be quantified.
+
+%\begin{equation}
+%	As_x= Tw_{x,t=i} \cdot L_x
+%	\label{eq:surfacearea}
+%\end{equation}
+%\begin{tabular}{rl}
+%	Where: & \\
+%	$As_x$ = & River section surface area.\\
+%	$Tw_{x,t=i}$ = & River section top width.\\
+%	$L_x$ = & River section length.\\
+%\end{tabular}
+\clearpage{}\]
+\end{document}

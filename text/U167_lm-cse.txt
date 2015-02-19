@@ -1,0 +1,41 @@
+Analysis of Selenium Concentrations at U167
+
+Summary of Analysis
+
+Call:
+lm(formula = cse ~ q.out + ec.out + t.out, data = y, na.action = na.exclude)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.18386 -0.31792  0.03496  0.36339  1.02892 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 21.154643   1.733108  12.206 2.49e-07 ***
+q.out       -0.010019   0.001762  -5.688 0.000202 ***
+ec.out      -2.020795   0.686133  -2.945 0.014655 *  
+t.out       -0.330604   0.033183  -9.963 1.64e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Residual standard error: 0.7016 on 10 degrees of freedom
+  (3 observations deleted due to missingness)
+Multiple R-squared: 0.9684,	Adjusted R-squared: 0.9589 
+F-statistic: 102.1 on 3 and 10 DF,  p-value: 8.443e-08 
+
+
+
+Residual Statistics
+   max             = 1.03 
+   97.5th quantile = 0.98 
+   mean            = 0 
+   2.5th quantile  = -1.1 
+   min             = -1.18 
+   standard dev    = 0.62 
+   skewness        = -0.21 
+   kurtosis        = 2.62
+
+Residuals
+ [1] -1.18385990  0.12892647  0.41652707 -0.36666137 -0.91356948  0.88980767
+ [7] -0.43791889 -0.05900513  0.13005422  1.02891756  0.37859836 -0.17169605
+[13]  0.31776297 -0.15788349

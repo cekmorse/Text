@@ -1,0 +1,35 @@
+Test Statistics for Residuals from U163
+
+
+Logistic distribution
+
+Kolmogorov-Smirnov statistic:  0.1065643 
+Kolmogorov-Smirnov test: not calculated 
+Cramer-von Mises statistic:  0.02178089 
+Cramer-von Mises test:  not rejected 
+Anderson-Darling statistic:  0.1507737 
+Anderson-Darling test:  not rejected 
+
+Normal distribution
+
+Kolmogorov-Smirnov statistic:  0.1159976 
+Kolmogorov-Smirnov test: not calculated 
+Cramer-von Mises statistic:  0.02827489 
+Cramer-von Mises test:  not rejected 
+Anderson-Darling statistic:  0.1971483 
+Anderson-Darling test:  not rejected 
+
+
+Chosen distribution  -  Logistic
+
+Fitting of the distribution ' logis ' by maximum likelihood 
+Parameters : 
+            estimate Std. Error
+location 0.005723866 0.12511539
+scale    0.281014027 0.06122215
+Loglikelihood:  -11.01042   AIC:  26.02084   BIC:  27.43694 
+Correlation matrix:
+            location       scale
+location  1.00000000 -0.01011921
+scale    -0.01011921  1.00000000
+

@@ -1,0 +1,39 @@
+Test Statistics for Scaled Residuals from DSR Diversions
+
+
+Logistic distribution
+
+Kolmogorov-Smirnov statistic:  0.04018207 
+Kolmogorov-Smirnov test:  not rejected 
+   The result of this test may be too conservative as it  
+   assumes that the distribution parameters are known
+Cramer-von Mises statistic:  0.01951093 
+Cramer-von Mises test:  not rejected 
+Anderson-Darling statistic:  0.1118016 
+Anderson-Darling test:  not rejected 
+
+Normal distribution
+
+Kolmogorov-Smirnov statistic:  0.04265205 
+Kolmogorov-Smirnov test:  not rejected 
+   The result of this test may be too conservative as it  
+   assumes that the distribution parameters are known
+Cramer-von Mises statistic:  0.04982298 
+Cramer-von Mises test:  not rejected 
+Anderson-Darling statistic:  0.3194668 
+Anderson-Darling test:  not rejected 
+
+
+Chosen distribution  -  Logistic
+
+Fitting of the distribution ' logis ' by maximum likelihood 
+Parameters : 
+           estimate Std. Error
+location 0.01214223 0.12714172
+scale    0.93636606 0.06130327
+Loglikelihood:  -315.0544   AIC:  634.1087   BIC:  640.2962 
+Correlation matrix:
+             location        scale
+location 1.0000000000 0.0001320184
+scale    0.0001320184 1.0000000000
+

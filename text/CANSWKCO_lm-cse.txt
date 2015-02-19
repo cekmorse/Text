@@ -1,0 +1,45 @@
+Analysis of Selenium Concentrations at CANSWKCO
+
+Summary of Analysis
+
+Call:
+lm(formula = cse ~ ec.in + q.x + q.out + t.out + q.x:q.in + q.x:q.out, 
+    data = db, na.action = na.exclude)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.61211 -0.33413  0.08163  0.30232  1.74472 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  3.940e+01  3.450e+00  11.422 4.64e-07 ***
+ec.in       -1.301e+01  2.171e+00  -5.994 0.000133 ***
+q.x         -4.645e-01  7.260e-02  -6.398 7.85e-05 ***
+q.out       -2.893e-02  3.656e-03  -7.913 1.30e-05 ***
+t.out       -4.132e-01  7.778e-02  -5.313 0.000341 ***
+q.x:q.in    -2.517e-04  3.140e-05  -8.016 1.16e-05 ***
+q.x:q.out    1.662e-03  1.638e-04  10.151 1.39e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Residual standard error: 0.9868 on 10 degrees of freedom
+  (1 observation deleted due to missingness)
+Multiple R-squared: 0.9501,	Adjusted R-squared: 0.9202 
+F-statistic: 31.74 on 6 and 10 DF,  p-value: 5.964e-06 
+
+
+
+Residual Statistics
+   max             = 1.74 
+   97.5th quantile = 1.5 
+   mean            = 0 
+   2.5th quantile  = -1.42 
+   min             = -1.61 
+   standard dev    = 0.78 
+   skewness        = 0.09 
+   kurtosis        = 3.56
+
+Residuals
+ [1]  0.541733767  0.302318198 -1.612109801  0.178514544 -0.192659690  1.121898094
+ [7]  0.081626853 -0.448477807 -0.015998169  0.360876275 -0.009390939  0.104786602
+[13]  0.097796613 -0.334125580 -1.141255241  1.744717006 -0.780250725

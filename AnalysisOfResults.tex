@@ -1,0 +1,497 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\begin{document}
+\[\section{Impact of Storage Changes, Evaporation, and Precipitation}
+\label{sec:Impact of Storage Changes, Evaporation, and Precipitation}
+
+%Figure \ref{fig:USRWaterContrib} and \ref{fig:USRMassContrib} present the model results as fractions of the components of the USR water balance and selenium mass balance, respectively.  Values are presented as percent of the total.  Total values are calculated as the sum of the respective constituent components.  The combined sub-figure combines the other sub-figures as a overlapping comparison.  The mass balance model does not contain an atmospheric component.
+
+%\begin{figure}[htbp]
+%\centering
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/M Water Contrib 1"}
+%		\caption{Surface Water Portion.}
+%		\label{sub:USRWSurf}
+%	\end{subfigure}%
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/M Water Contrib 3"}
+%		\caption{Storage Change Portion.}
+%		\label{sub:USRWStore}
+%	\end{subfigure}
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/M Water Contrib 2"}
+%		\caption{Preip. \& Evap. Portion.}
+%		\label{sub:USRWAtm}
+%	\end{subfigure}%
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/M Water Contrib 4"}
+%		\caption{Combined Contributions.}
+%		\label{sub:USRWComb}
+%	\end{subfigure}
+%	\caption[Time series of the major USR Arkansas R. contributions to the water model.]{Time series of the major USR Arkansas R. contributions to the water model.}
+%	\label{fig:USRWaterContrib}
+%\end{figure}
+
+%\begin{figure}[htbp]
+%\centering
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/M Mass Contrib 1"}
+%		\caption{Surface Water Portion.}
+%		\label{sub:USRMSurf}
+%	\end{subfigure}%
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/M Mass Contrib 2"}
+%		\caption{Storage Change Portion.}
+%		\label{sub:USRMStore}
+%	\end{subfigure}
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/M Mass Contrib 3"}
+%		\caption{Combined Contributions.}
+%		\label{sub:USRMComb}
+%	\end{subfigure}
+%	\caption[Time series of the major USR Arkansas R. contributions to the mass balance model.]{Time series of the major USR Arkansas R. contributions to the mass balance model.}
+%	\label{fig:USRMassContrib}
+%\end{figure}
+
+%With both figures, the respective flow or flux component is the more significant contributor to the respective models.  This graphical presentation shows that it is unreasonable to assume that water storage and mass storage changes can be neglected.  The atmospheric component of the water balance model, while less significant, cannot be neglected either.  The percent contribution is fairly low but not insignificant.
+
+%Table \ref{tab:USRImpact} presents the percent contribution distributions for each major model component.  The values presented are from the 1-D stochastic mean model with the mean, 2.5th, and 97.5th percentile taken from this time series.  This table shows that the respective contribution fractions have a large variation.  The storage component and flow components are nearly equal contributors to the water balance model.  This isn't the case with the mass balance model where the selenium transport component accounts for the majority of the model.  The water balance atmospheric component, while small, is still significant enough to warrant its inclusion in the model.
+
+%\begin{table}[htbp]
+%\centering
+%\caption[Major Portion Contributions to the USR Models.]{Major Portion Contributions to the USR Models.}
+%\label{tab:USRImpact}
+%\begin{tabular}{c|ccc}
+%	\multicolumn{4}{c}{Water Balance Model} \\
+%	\toprule
+%	Model Portion	& 2.5\% & Mean & 97.5\% \\
+%	\midrule
+%	\midrule
+%	Storage		& 8.7	&34.5	&64.1\\
+%	Flow		& 29.3	&59.6	&85.3\\
+%	Atmosperic 	& 2.7	&5.91	&13.8\\
+%	\bottomrule
+%	\multicolumn{4}{c}{} \\
+%	\multicolumn{4}{c}{Mass Balance Model} \\
+%	\toprule
+%	Model Portion	& 2.5\% & Mean & 97.5\% \\
+%	\midrule
+%	\midrule
+%	Se Storage		& 5.6	&27.7	&58.6\\
+%	Se Transport	& 41.4	&72.3	&94.4  \\
+%	\bottomrule
+%\end{tabular}
+%\end{table}
+
+%Figure \ref{fig:DSRWaterContrib} and \ref{fig:DSRMassContrib} present the model results as fractions of the components of the DSR water balance and selenium mass balance, respectively.  Values are presented as percent of the total.  Total values are calculated as the sum of the respective constituent components.  The combined sub-figure combines the other sub-figures as a overlapping comparison.  The mass balance model does not contain an atmospheric component.
+
+%\begin{figure}[htbp]
+%\centering
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/M Water Contrib 1"}
+%		\caption{Surface Water Portion.}
+%		\label{sub:DSRWSurf}
+%	\end{subfigure}%
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/M Water Contrib 3"}
+%		\caption{Storage Change Portion.}
+%		\label{sub:DSRWStore}
+%	\end{subfigure}
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/M Water Contrib 2"}
+%		\caption{Preip. \& Evap. Portion.}
+%		\label{sub:DSRWAtm}
+%	\end{subfigure}%
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/M Water Contrib 4"}
+%		\caption{Combined Contributions.}
+%		\label{sub:DSRWComb}
+%	\end{subfigure}
+%	\caption[Time series of the major DSR Arkansas R. contributions to the water model.]{Time series of the major DSR Arkansas R. contributions to the water model.}
+%	\label{fig:DSRWaterContrib}
+%\end{figure}
+
+%\begin{figure}[htbp]
+%\centering
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/M Mass Contrib 1"}
+%		\caption{Surface Water Portion.}
+%		\label{sub:DSRMSurf}
+%	\end{subfigure}%
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/M Mass Contrib 2"}
+%		\caption{Storage Change Portion.}
+%		\label{sub:DSRMStore}
+%	\end{subfigure}
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/M Mass Contrib 3"}
+%		\caption{Combined Contributions.}
+%		\label{sub:DSRMComb}
+%	\end{subfigure}
+%	\caption[Time series of the major USR Arkansas R. contributions to the mass balance model.]{Time series of the major USR Arkansas R. contributions to the mass balance model.}
+%	\label{fig:DSRMassContrib}
+%\end{figure}
+
+%The DSR figures show same pattern as with the USR results.  Water storage component, mass storage component, and water model atmospheric components are significant, but not negligible.  The flow and flux component contribution fractions are larger when compared to the USR fractions.  This shows that river size and geometry is an important factor.  Studies which investigate wider river should consider adding storage change components to their models.  The USR and DSR are different in length, but final calculations were performed to standardize the results with respect to a unit length of river reach.
+
+%\begin{table}[htbp]
+%\centering
+%\caption[Major Portion Contributions to the DSR Models.]{Major Portion Contributions to the DSR Models.}
+%\label{tab:DSRImpact}
+%\begin{tabular}{c|ccc}
+%	\multicolumn{4}{c}{Water Balance Model} \\
+%	\toprule
+%	Model Portion	& 2.5\% & Mean & 97.5\% \\
+%	\midrule
+%	\midrule
+%	Storage Change		& 1.5	&16.1	&38.5\\
+%	Surface Flow		& 58	&80.8	&95.8\\
+%	Precip. \& Evap. 	& 1.39	&3.02	&6.53\\
+%	\bottomrule
+%	\multicolumn{4}{c}{} \\
+%	\multicolumn{4}{c}{Mass Balance Model} \\
+%	\toprule
+%	Model Portion	& 2.5\% & Mean & 97.5\% \\
+%	\midrule
+%	\midrule
+%	Storage Change		& 1.27	&13.3	&37.5\\
+%	Surface Flow		& 62.5	&86.7	&98.7\\
+%	\bottomrule
+%\end{tabular}
+%\end{table}
+%\clearpage
+
+%\section{Effects of Negating Storage Changes, Evaporation, and Precipitation.}
+%\label{sec:effects of negating}
+%The typical method for calculating a river water balance includes negating daily storage change and negating the effects of evaporation and precipitation.  This study assumed that these assumptions were false for the LARB and included major portions of the total effort to calculating daily changes in storage and the daily effects of evaporation and precipitation.  Tables \ref{tab:USRNegate} and \ref{tab:DSRNegate} present the percent difference when major components of the USR and DSR models are negated, respectively.  The values are presented as percent change from the complete model.  Calculations were performed by calculating the models without the neglected components and comparing the time series with the complete model.  The values presented are the 1-D stochastic mean of the calculated percent difference.
+
+%\begin{table}[htbp]
+%\centering
+%\caption[Effects of Negating Major Portions of the USR Models.]{Effects of Negating Major Portions of the USR Models.  Values are percent change from complete model.}
+%\label{tab:USRNegate}
+%\begin{tabular}{c|ccc}
+%	\multicolumn{4}{c}{Water Balance Model} \\
+%	\toprule
+%	Portion Negated	& 2.5\% & Mean & 97.5\% \\
+%	\midrule
+%	\midrule
+%	Storage&			-650&	-9.61&	637\\
+%	Atmos.&				-83.1&	-7.73&	72.5\\
+%	Storage \& Atmos.&	-645&	-17.3&	618\\
+%	\bottomrule
+%	\multicolumn{4}{c}{} \\
+%	\multicolumn{4}{c}{Mass Balance Model} \\
+%	\toprule
+%	Portion Negated	& 2.5\% & Mean & 97.5\% \\
+%	\midrule
+%	\midrule
+%	Se Storage&			-350&	33.2&	360\\
+%	\bottomrule
+%\end{tabular}
+%\end{table}
+
+%\begin{table}[htbp]
+%\centering
+%\caption[Effects of Negating Major Portions of the DSR Models.]{Effects of Negating Major Portions of the DSR Models.  Values are percent change from complete model.}
+%\label{tab:DSRNegate}
+%\begin{tabular}{c|ccc}
+%	\multicolumn{4}{c}{Water Balance Model} \\
+%	\toprule
+%	Portion Negated	& 2.5\% & Mean & 97.5\% \\
+%	\midrule
+%	\midrule
+%	Storage&			-66.6&	12.3&	145\\
+%	Atmos.&				-18.4&	-0.437&	13.4\\
+%	Storage \& Atmos.&	-70.5&	11.9&	141\\
+%	\bottomrule
+%	\multicolumn{4}{c}{} \\
+%	\multicolumn{4}{c}{Mass Balance Model} \\
+%	\toprule
+%	Portion Negated	& 2.5\% & Mean & 97.5\% \\
+%	\midrule
+%	\midrule
+%	Storage& 			-51.9&	8.91&	82.9\\
+%	\bottomrule
+%\end{tabular}
+%\end{table}
+
+%Neglecting the storage change component of the USR mass balance causes the largest change.  Neglecting the atmospheric component would result in much smaller, but significant variations.  In the DSR, only the atmospheric component is small enough that it could, but shouldn't be neglected.  The mean difference calculated when the DSR atmospheric component is neglected is small, but the extremes calculated as the 2.5th and 97.5th percentile are not insignificant.  The major difference between the USR and DSR reaches is the average annual top width.  The DSR passes much lower flows which translates to lower flow depths and smaller river top widths.  Top width values are the major contributors to the atmospheric component.
+
+%Comparing the USR and DSR water balance model results shows that the unaccounted for flow are approximately equal between the study regions.  Since the major assumption is that the unaccounted for flows are primarily groundwater flows, then we compare the two results as if they are groundwater flows.  
+
+%This is directly observable in the DSR where the flow rate at the upstream end of the reach is visibly typically less than or equal to the flow rate at the downstream end.  It has also been observed that there are flows present at the upstream end of the DSR when John Martin Reservoir, which is approximately 16 km (10 mi) upstream, is not actively discharging water to the river.  There are no points along the river between the reservoir and the upstream end of the DSR where water is discharged into the river channel.  The water passing the upstream end of the DSR must be coming from groundwater sources.
+
+%Groundwater flows that are within an order of magnitude of each other are within acceptable limits.  Groundwater flow rates are calculated as the product of the soil permeability and the head difference between two points.  The major variation occurs with the conductivity of soils.  Nearly identical sandy soils, such as those found in the LARB can have permeability values that are an order of magnitude different.  This is evidenced by tables of permeability of typical soils found in many groundwater texts.
+
+%The difference between the study regions is nearly negligible when looking at the mass balance models.  these models have mean values that are nearly identical.  This allows us to conclude that the selenium dissolution and transport processes that are active in the USR are equal or approximately equal in magnitude to those in the DSR.
+\clearpage
+
+\section{Concentration of Unaccounted for Flow}
+\label{sec:concentration of unaccounted}
+%When the mass equation (\ref{eq:mxport}) is transformed to calculate the concentration from the known mass transport and flow rate, as shown in equation \ref{eq:calcC}, the average concentration discharged by the unaccounted for flows into the Arkansas R. can be calculated.
+
+%\begin{equation}
+%	C=\frac{\dot{M}}{Q} \cdot K_{units}
+%	\label{eq:calcC}
+%\end{equation}
+%\begin{tabular}{rl}
+%Where&\\
+%	$\dot{M}$ =&Mass transport $(mass \cdot time^{-1})$\\
+%	$Q$=&Water flow rate $(volume \cdot time^{-1})$\\
+%	$C$=&Constituent concentration $(mass \cdot volume^{-1})$\\
+%	$K_{units}$=&Unit conversion factor (\si{\kilo\gram\second\per\cubic\meter\per\day} to \si{\micro\gram\per\liter}) = 11.574
+%\end{tabular}\\
+
+%Figures \ref{fig:USRC} and \ref{fig:DSRC} and tables \ref{tab:USRUnknownC} and \ref{tab:DSRUnknownC} present the time series results of equation \ref{eq:calcC} when applied to the USR and DSR.  The left sub-figure is the results of the deterministic model and the right sub-figure is the result of the stochastic model.  The black line in the stochastic model is the mean of all realizations for each time step.  The blue band is the 2.5th and 97.5th percentile for each time step.  Tables present the mean and the 95th CIR for the deterministic model and the three calculated 1-D stochastic models.  The percent difference values presented in the tables are the mean and 95th CIR of the daily percent differences between the deterministic and 1-D stochastic mean models.
+
+%\begin{figure}[htbp]
+%\centering
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DUSR/Balance C"}
+%		\caption{Deterministic Model.}
+%	\end{subfigure}%
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/Balance C"}
+%		\caption{Stochastic Model.}
+%	\end{subfigure}
+%	\caption[Time series of the concentration of USR unaccounted for mass transport.]{Time series of the concentration of USR unaccounted for mass transport.}
+%	\label{fig:USRC}
+%\end{figure}
+
+%\begin{figure}[htbp]
+%\centering
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DDSR/Balance C"}
+%		\caption{Deterministic Model.}
+%	\end{subfigure}%
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Balance C"}
+%		\caption{Stochastic Model.}
+%	\end{subfigure}
+%	\caption[Time series of the concentration of DSR unaccounted for mass transport.]{Time series of the concentration of DSR unaccounted for mass transport.}
+%	\label{fig:DSRC}
+%\end{figure}
+
+%\begin{table}[htbp]
+%\centering
+%\caption[Concentration of USR unaccounted for mass transport.]{Concentration of USR unaccounted for mass transport.  Model values are in \si{\micro\gram\per\liter}.  \% Diff. Means values are the mean and 95th CIR of the daily percent differences between the deterministic and 1-D stochastic mean models}
+%\label{tab:USRUnknownC}
+%\begin{tabular}{c|ccc}
+%	\toprule
+%	Model& 2.5\% & Mean & 97.5\% \\
+%	\midrule
+%	\midrule
+%	Deterministic&		-51.3&	11.69&	95.34\\
+%	\midrule			                               
+%	Stochastic 2.5\%&	-368.4&	-72.45&	9.747\\
+%	Stochastic Mean&	-66.54&	22.73&	76.7\\ 
+%	Stochastic 97.5\%&	6.728&	97.44&	380.8\\
+%	\midrule                                           
+%	\% Diff. Means &	-559.5&	-17.71&	437.4\\
+%	\bottomrule
+%\end{tabular}
+%\end{table}
+
+%\begin{table}[htbp]
+%\centering
+%\caption[Concentration of DSR unaccounted for mass transport.]{Concentration of DSR unaccounted for mass transport.  Model values are in \si{\micro\gram\per\liter}.  \% Diff. Means values are the mean and 95th CIR of the daily percent differences between the deterministic and 1-D stochastic mean models}
+%\label{tab:DSRUnknownC}
+%\begin{tabular}{c|ccc}
+%	\toprule
+%	Model& 2.5\% & Mean & 97.5\% \\
+%	\midrule
+%	\midrule
+%	Deterministic&		-167&	-3.707&	98.78\\
+%	\midrule			                               
+%	Stochastic 2.5\%&	-781.5&	-74.51&	8.479\\
+%	Stochastic Mean&	-45.31&	7.782&	100.1\\
+%	Stochastic 97.5\%&	15.8&	101.8&	817.2\\
+%	\midrule                                           
+%	\% Diff. Means &	-36.22&	-4.362&	118.9\\
+%	\bottomrule
+%\end{tabular}
+%\end{table}
+
+%Both figures \ref{fig:USRC} and \ref{fig:DSRC} show negative concentrations, which are impossible.  The negative concentrations are due to the flow moving out of the river channel into unaccounted for sinks.  The absolute value of the negative values indicates the dissolved selenium concentration leaving the river channel.
+%\clearpage
+
+%Figures \ref{fig:USRCin} through \ref{fig:DSRCout} and tables \ref{tab:USRUnknownCin} through \ref{tab:DSRUnknownCout} present the unaccounted for concentration results into two sub-groups.  The distribution of concentration values within any given time step tends to span across both positive and negative values.  It was assumed that the mean value for each time step would indicate the flow direction.  Positive values indicate that flow is moving into the river channel and negative values indicate the contrary.  Statistics were taken from the inflow and outflow subsets without altering data within the time steps.  Figures showing in-flow results present values greater than zero.  Figures showing out-flow results present the absolute value of the values less than zero.
+
+%\begin{figure}[htbp]
+%\centering
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DUSR/Balance Cin"}
+%		\caption{Deterministic Model.}
+%	\end{subfigure}%
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/Balance Cin"}
+%		\caption{Stochastic Model.}
+%	\end{subfigure}
+%	\caption[Time series of the concentration of USR unaccounted for river reach inflow dissolved selenium concentration.]{Time series of the concentration of USR unaccounted for river reach inflow dissolved selenium concentration.}
+%	\label{fig:USRCin}
+%\end{figure}
+
+%\begin{figure}[htbp]
+%\centering
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DDSR/Balance Cin"}
+%		\caption{Deterministic Model.}
+%	\end{subfigure}%
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Balance Cin"}
+%		\caption{Stochastic Model.}
+%	\end{subfigure}
+%	\caption[Time series of the concentration of DSR unaccounted for river reach inflow dissolved selenium concentration.]{Time series of the concentration of DSR unaccounted for river reach inflow dissolved selenium concentration.}
+%	\label{fig:DSRCin}
+%\end{figure}
+
+%\begin{table}[htbp]
+%\centering
+%\caption[Concentration of USR unaccounted for river reach inflow dissolved selenium concentration..]{Concentration of USR unaccounted for river reach inflow dissolved selenium concentration.  Model values are in \si{\micro\gram\per\liter}.  \% Diff. Means values are the mean and 95th CIR of the daily percent differences between the deterministic and 1-D stochastic mean models}
+%\label{tab:USRUnknownCin}
+%\begin{tabular}{c|ccc}
+%	\toprule
+%	Model& 2.5\% & Mean & 97.5\% \\
+%	\midrule
+%	\midrule
+%	Deterministic&		2.385&	24.82&	99.24\\
+%	\midrule			                               
+%	Stochastic 2.5\%&	-348.3&	-58.98&	10.05\\
+%	Stochastic Mean&	1.306&	37.05&	83.74\\
+%	Stochastic 97.5\%&	9.989&	86.71&	362.7\\
+%	\midrule                                           
+%	\% Diff. Means &	-689.5&	-91.49&	91.11\\
+%	\bottomrule
+%\end{tabular}
+%\end{table}
+
+%\begin{table}[htbp]
+%\centering
+%\caption[Concentration of DSR unaccounted for river reach inflow dissolved selenium concentration.]{Concentration of DSR unaccounted for river reach inflow dissolved selenium concentration.  Model values are in \si{\micro\gram\per\liter}.  \% Diff. Means values are the mean and 95th CIR of the daily percent differences between the deterministic and 1-D stochastic mean models}
+%\label{tab:DSRUnknownCin}
+%\begin{tabular}{c|ccc}
+%	\toprule
+%	Model& 2.5\% & Mean & 97.5\% \\
+%	\midrule
+%	\midrule
+%	Deterministic&		8.006&	23.44&	99.77\\
+%	\midrule			                               
+%	Stochastic 2.5\%&	-702.3&	-48.91&	8.514\\
+%	Stochastic Mean&	7.928&	25.7&	102  \\
+%	Stochastic 97.5\%&	17&	79.79&	735.2    \\
+%	\midrule                                           
+%	\% Diff. Means &	-31.25&	-3.703&	48.03\\
+%	\bottomrule
+%\end{tabular}
+%\end{table}
+
+%The USR and DSR deterministic model inflow dissolved concentration values are nearly equal.  This leads us to conclude that the groundwater chemistry in the two regions are very similar.  The stochastic model values are quite similar considering the range of uncertainty associated with the calculations.  The USR shows a tendency toward higher average dissolved selenium concentrations than the DSR and the DSR shows a tendency toward higher single day concentrations than in the USR.  The negative values in the figures and tables show some of the combined effects of uncertainty on the water and mass balance models.
+%\clearpage
+
+%\begin{figure}[htbp]
+%\centering
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DUSR/Balance Cout"}
+%		\caption{Deterministic Model.}
+%	\end{subfigure}%
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/Balance Cout"}
+%		\caption{Stochastic Model.}
+%	\end{subfigure}
+%	\caption[Time series of the concentration of USR unaccounted for river reach outflow dissolved selenium concentration.]{Time series of the concentration of USR unaccounted for river reach outflow dissolved selenium concentration.}
+%	\label{fig:USRCout}
+%\end{figure}
+
+%\begin{figure}[htbp]
+%\centering
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DDSR/Balance Cout"}
+%		\caption{Deterministic Model.}
+%	\end{subfigure}%
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Balance Cout"}
+%		\caption{Stochastic Model.}
+%	\end{subfigure}
+%	\caption[Time series of the concentration of DSR unaccounted for river reach outflow dissolved selenium concentration.]{Time series of the concentration of DSR unaccounted for river reach outflow dissolved selenium concentration.}
+%	\label{fig:DSRCout}
+%\end{figure}
+
+%\begin{table}[htbp]
+%\centering
+%\caption[Concentration of USR unaccounted for river reach outflow dissolved selenium concentration.]{Concentration of USR unaccounted for river reach outflow dissolved selenium concentration.  Model values are in \si{\micro\gram\per\liter}.  \% Diff. Means values are the mean and 95th CIR of the daily percent differences between the deterministic and 1-D stochastic mean models}
+%\label{tab:USRUnknownCout}
+%\begin{tabular}{c|ccc}
+%	\toprule
+%	Model& 2.5\% & Mean & 97.5\% \\
+%	\midrule
+%	\midrule
+%	Deterministic&		849.5&	77.25&	0.657\\
+%	\midrule			                               
+%	Stochastic 2.5\%&	402.6&	149.2&	5.956\\ 
+%	Stochastic Mean&	280&	58.8&	0.2844\\
+%	Stochastic 97.5\%&	-0.9703&-158.6&	-464.8\\
+%	\midrule                                           
+%	\% Diff. Means &	102.7&	271.9&	913.4\\
+%	\bottomrule
+%\end{tabular}
+%\end{table}
+
+%\begin{table}[htbp]
+%\centering
+%\caption[Concentration of DSR unaccounted for river reach outflow dissolved selenium concentration.]{Concentration of DSR unaccounted for river reach outflow dissolved selenium concentration. Model values are in \si{\micro\gram\per\liter}.  \% Diff. Means values are the mean and 95th CIR of the daily percent differences between the deterministic and 1-D stochastic mean models}
+%\label{tab:DSRUnknownCout}
+%\begin{tabular}{c|ccc}
+%	\toprule
+%	Model& 2.5\% & Mean & 97.5\% \\
+%	\midrule
+%	\midrule
+%	Deterministic&		1429&	382.5&	6.868\\
+%	\midrule			                               
+%	Stochastic 2.5\%&	1006&	441.2&	17.63 \\
+%	Stochastic Mean&	1140&	248.9&	3.027 \\
+%	Stochastic 97.5\%&	-6.002&	-417.4&	-997.2\\
+%	\midrule               
+%	\% Diff. Means &	109.4&	370.6&	1997\\
+%	\bottomrule
+%\end{tabular}
+%\end{table}
+
+%The USR and DSR river reach out flow concentrations are difficult to interpret.  There are very few values in these data sub-sets.  These values could be indicative of either the low volume of data or could be and indicator of the effects of uncertainty on the water and mass balance models.  Theoretically, these values should be near the dissolved selenium values collected in the field and calculated in the concentration estimation models.  
+
+%These values do not indicate that there are significant flaws in the water and mass balance models.  There are too few values included in this data sub-set to come to this conclusion.  The figures agree with convention where there are more unaccounted for outflows during the hottest portions of the year.
+
+%We can only speculate on the source of the higher dissolved selenium concentration.  Discussions others familiar with the LARB selenium issue have added to the pool of possible sources.  There is the possibility that John Martin Reservoir may be a combined source and sink.  Selenium may be dissolved from the USR, concentrated within the reservoir through evaporation of water, and discharged at a higher concentration to the DSR.  This has a couple problems as the reservoir is normally not discharging water to the DSR.  There is the possibility that the concentrated solution may be seeping through the ground under the dam and into the DSR riparian aquifer.
+
+%Another possibility is that the higher concentration may be a cumulative effect of evaporation as water moves down the LARB from the USR to the DSR.  Some have even speculated that sediment transport may play a significant role.  Others have suggested that the bedrock beneath the riparian aquifer, which is the ultimate source of selenium in the LARB, may be more rich in selenium in the DSR than the USR.
+
+\clearpage\]
+\end{document}

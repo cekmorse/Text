@@ -1,0 +1,39 @@
+Test Statistics for Residuals from BIGLAMCO
+
+
+Logistic distribution
+
+Kolmogorov-Smirnov statistic:  0.1032584 
+Kolmogorov-Smirnov test:  not rejected 
+   The result of this test may be too conservative as it  
+   assumes that the distribution parameters are known
+Cramer-von Mises statistic:  0.08185454 
+Cramer-von Mises test:  not rejected 
+Anderson-Darling statistic:  0.5082658 
+Anderson-Darling test:  not rejected 
+
+Normal distribution
+
+Kolmogorov-Smirnov statistic:  0.09188257 
+Kolmogorov-Smirnov test:  not rejected 
+   The result of this test may be too conservative as it  
+   assumes that the distribution parameters are known
+Cramer-von Mises statistic:  0.0730432 
+Cramer-von Mises test:  not rejected 
+Anderson-Darling statistic:  0.4259881 
+Anderson-Darling test:  not rejected 
+
+
+Chosen distribution  -  Normal
+
+Fitting of the distribution ' norm ' by maximum likelihood 
+Parameters : 
+         estimate Std. Error
+mean 4.361922e-16  0.8064970
+sd   5.288554e+00  0.5702794
+Loglikelihood:  -132.6328   AIC:  269.2656   BIC:  272.788 
+Correlation matrix:
+     mean sd
+mean    1  0
+sd      0  1
+
