@@ -19,627 +19,366 @@
 
 \refsection{0}
   \sortlist{entry}{nyt}
-    \entry{Abbott1985}{report}{}
-      \name{labelname}{1}{}{%
-        {{uniquename=0,hash=ef71a17da6344d0969bcd9a0a205575e}{Abbott}{A\bibinitperiod}{P.O.}{P\bibinitperiod}{}{}{}{}}%
+    \entry{Allen2011}{article}{}
+      \name{labelname}{4}{uniquelist=3}{%
+        {{uniquename=2,hash=a1f8ecedc339346aa73023401be45d78}{Allen}{A\bibinitperiod}{Richard\bibnamedelima G.}{R\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=709c1cdc971abe9488c842551d6adb7d}{Pereira}{P\bibinitperiod}{Luis\bibnamedelima S.}{L\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=7efaa6192189c029e8efb9788972a329}{Howell}{H\bibinitperiod}{Terry\bibnamedelima A.}{T\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=072059eed00232ab4ac71d5cfd2b2a6a}{Jensen}{J\bibinitperiod}{Marvin\bibnamedelima E.}{M\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
       }
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=ef71a17da6344d0969bcd9a0a205575e}{Abbott}{A\bibinitperiod}{P.O.}{P\bibinitperiod}{}{}{}{}}%
+      \name{author}{4}{uniquelist=3}{%
+        {{uniquename=2,hash=a1f8ecedc339346aa73023401be45d78}{Allen}{A\bibinitperiod}{Richard\bibnamedelima G.}{R\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=709c1cdc971abe9488c842551d6adb7d}{Pereira}{P\bibinitperiod}{Luis\bibnamedelima S.}{L\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=7efaa6192189c029e8efb9788972a329}{Howell}{H\bibinitperiod}{Terry\bibnamedelima A.}{T\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=072059eed00232ab4ac71d5cfd2b2a6a}{Jensen}{J\bibinitperiod}{Marvin\bibnamedelima E.}{M\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
       }
-      \list{institution}{1}{%
-        {U.S. Geological Society}%
-      }
-      \strng{namehash}{ef71a17da6344d0969bcd9a0a205575e}
-      \strng{fullhash}{ef71a17da6344d0969bcd9a0a205575e}
+      \strng{namehash}{a180bb1ca707dd8ef28b31164f58c4b9}
+      \strng{fullhash}{6c94ad3e19c9d8db743b491409bbe26e}
       \field{sortinit}{A}
-      \field{labelyear}{1985}
+      \field{labelyear}{2011}
       \field{datelabelsource}{}
-      \field{labeltitle}{Description of water-systems operations in the arkansas river basin, colorado. Water resources Investigations report 85-4092}
-      \field{title}{Description of water-systems operations in the arkansas river basin, colorado. Water resources Investigations report 85-4092}
-      \field{type}{techreport}
-      \field{year}{1985}
-    \endentry
-    \entry{Andales2009}{report}{}
-      \name{labelname}{3}{}{%
-        {{uniquename=0,hash=90cfbf8a5636ef38dc53f6e6343e5f5f}{Andales}{A\bibinitperiod}{A.A.}{A\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=2003cff76ce09891b18954ac1c49139c}{Bauder}{B\bibinitperiod}{T.A.}{T\bibinitperiod}{}{}{}{}}%
-        {{uniquename=1,hash=e81cbc74b5670889a6006d80e9affcfa}{Doesken}{D\bibinitperiod}{N.J.}{N\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{3}{}{%
-        {{uniquename=0,hash=90cfbf8a5636ef38dc53f6e6343e5f5f}{Andales}{A\bibinitperiod}{A.A.}{A\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=2003cff76ce09891b18954ac1c49139c}{Bauder}{B\bibinitperiod}{T.A.}{T\bibinitperiod}{}{}{}{}}%
-        {{uniquename=1,hash=e81cbc74b5670889a6006d80e9affcfa}{Doesken}{D\bibinitperiod}{N.J.}{N\bibinitperiod}{}{}{}{}}%
-      }
-      \list{institution}{1}{%
-        {Colorado State University}%
-      }
-      \strng{namehash}{5022449f05219e12f1aa586b95e886ae}
-      \strng{fullhash}{5022449f05219e12f1aa586b95e886ae}
-      \field{sortinit}{A}
-      \field{labelyear}{2009}
-      \field{labelmonth}{10}
-      \field{datelabelsource}{}
-      \field{labeltitle}{The Colorado Agricultural Meteorological Network ({CoAgMet}) and Crop ET Reports}
-      \field{month}{10}
-      \field{title}{The Colorado Agricultural Meteorological Network ({CoAgMet}) and Crop ET Reports}
-      \field{type}{Fact Sheet No. 4.723}
-      \field{year}{2009}
-    \endentry
-    \entry{Bailey2015}{article}{}
-      \name{labelname}{3}{}{%
-        {{uniquename=2,hash=d4c6eb30eb676e28caf3b0c59f706232}{Bailey}{B\bibinitperiod}{R.\bibnamedelimi T.}{R\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=72dd17afeaf7b832e37b560923d9ba6f}{Romero}{R\bibinitperiod}{E.\bibnamedelimi C.}{E\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
-        {{uniquename=2,hash=999cd5214e15da4eae26d78a1c3cfdf0}{Gates}{G\bibinitperiod}{T.\bibnamedelimi K.}{T\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{3}{}{%
-        {{uniquename=2,hash=d4c6eb30eb676e28caf3b0c59f706232}{Bailey}{B\bibinitperiod}{R.\bibnamedelimi T.}{R\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=72dd17afeaf7b832e37b560923d9ba6f}{Romero}{R\bibinitperiod}{E.\bibnamedelimi C.}{E\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
-        {{uniquename=2,hash=999cd5214e15da4eae26d78a1c3cfdf0}{Gates}{G\bibinitperiod}{T.\bibnamedelimi K.}{T\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{eb76258d9a51e728c1f5483f69b8ed5c}
-      \strng{fullhash}{eb76258d9a51e728c1f5483f69b8ed5c}
-      \field{sortinit}{B}
-      \field{labelyear}{2015}
-      \field{datelabelsource}{}
-      \field{labeltitle}{Assessing best managment practices for remediation of selenium loading in groundwater streams in an irrigated region.}
-      \field{journaltitle}{Journal of Hydrolog}
-      \field{number}{521}
-      \field{title}{Assessing best managment practices for remediation of selenium loading in groundwater streams in an irrigated region.}
-      \field{year}{2015}
-      \field{pages}{341\bibrangedash 359}
-    \endentry
-    \entry{Bailey2012Phd}{thesis}{}
-      \name{labelname}{1}{}{%
-        {{uniquename=2,hash=43b9e3649c8e8e4a6c2b92d1e5fb3c7f}{Bailey}{B\bibinitperiod}{Ryan\bibnamedelima T.}{R\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{uniquename=2,hash=43b9e3649c8e8e4a6c2b92d1e5fb3c7f}{Bailey}{B\bibinitperiod}{Ryan\bibnamedelima T.}{R\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
-      }
-      \list{institution}{1}{%
-        {Colorado State University}%
-      }
-      \strng{namehash}{43b9e3649c8e8e4a6c2b92d1e5fb3c7f}
-      \strng{fullhash}{43b9e3649c8e8e4a6c2b92d1e5fb3c7f}
-      \field{sortinit}{B}
-      \field{labelyear}{2012}
-      \field{datelabelsource}{}
-      \field{labeltitle}{Regional Selenium Cycling In An Irrigated Agricultural Groundwater System: Conceptualization, Modeling, And Mitigation}
-      \field{title}{Regional Selenium Cycling In An Irrigated Agricultural Groundwater System: Conceptualization, Modeling, And Mitigation}
-      \field{type}{Ph.D.}
-      \field{year}{2012}
-    \endentry
-    \entry{Bailey2012}{article}{}
-      \name{labelname}{3}{}{%
-        {{uniquename=2,hash=df6a34908d4f9fb3e5a5863a036bacf8}{Bailey}{B\bibinitperiod}{Ryan\bibnamedelima T}{R\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=37f2d3387f51a1a9249ac5748d3bdb0d}{Hunter}{H\bibinitperiod}{William\bibnamedelima J}{W\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
-        {{uniquename=2,hash=eb627762db11c4a02267b95e554b2503}{Gates}{G\bibinitperiod}{Timothy\bibnamedelima K}{T\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{3}{}{%
-        {{uniquename=2,hash=df6a34908d4f9fb3e5a5863a036bacf8}{Bailey}{B\bibinitperiod}{Ryan\bibnamedelima T}{R\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=37f2d3387f51a1a9249ac5748d3bdb0d}{Hunter}{H\bibinitperiod}{William\bibnamedelima J}{W\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
-        {{uniquename=2,hash=eb627762db11c4a02267b95e554b2503}{Gates}{G\bibinitperiod}{Timothy\bibnamedelima K}{T\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{2}{%
-        {The American Society of Agronomy, Crop Science Society of America,}%
-        {Soil Science Society of America, Inc.}%
-      }
-      \strng{namehash}{aec5802dd1c31f2bf7059941b1357dcd}
-      \strng{fullhash}{aec5802dd1c31f2bf7059941b1357dcd}
-      \field{sortinit}{B}
-      \field{labelyear}{2012}
-      \field{datelabelsource}{}
-      \field{labeltitle}{The influence of nitrate on selenium in irrigated agricultural groundwater systems}
-      \field{journaltitle}{Journal of environmental quality}
-      \field{number}{3}
-      \field{title}{The influence of nitrate on selenium in irrigated agricultural groundwater systems}
-      \field{volume}{41}
-      \field{year}{2012}
-      \field{pages}{783\bibrangedash 792}
-    \endentry
-    \entry{cain1985}{report}{}
-      \name{labelname}{1}{}{%
-        {{uniquename=0,hash=f4342e4d6518da9b7ba987accc10692c}{Cain}{C\bibinitperiod}{Doug}{D\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=f4342e4d6518da9b7ba987accc10692c}{Cain}{C\bibinitperiod}{Doug}{D\bibinitperiod}{}{}{}{}}%
-      }
-      \list{institution}{1}{%
-        {United States Geological Survey}%
-      }
-      \strng{namehash}{f4342e4d6518da9b7ba987accc10692c}
-      \strng{fullhash}{f4342e4d6518da9b7ba987accc10692c}
-      \field{sortinit}{C}
-      \field{labelyear}{1985}
-      \field{datelabelsource}{}
-      \field{labeltitle}{Quality of the Arkansas River and irrigation-return flows in the lower Arkansas River Valley, Colorado}
-      \field{title}{Quality of the Arkansas River and irrigation-return flows in the lower Arkansas River Valley, Colorado}
-      \field{type}{techreport}
-      \field{year}{1985}
-    \endentry
-    \entry{clifford2009}{book}{}
-      \name{labelname}{2}{}{%
-        {{uniquename=0,hash=413a36af3e7c3af755f79c61e1b8e8f8}{Clifford}{C\bibinitperiod}{W\bibnamedelima Austin}{W\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
-        {{uniquename=1,hash=819d7ddb5092e34fe550c59b5f78d70d}{Doesken}{D\bibinitperiod}{Nolan\bibnamedelima J}{N\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{2}{}{%
-        {{uniquename=0,hash=413a36af3e7c3af755f79c61e1b8e8f8}{Clifford}{C\bibinitperiod}{W\bibnamedelima Austin}{W\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
-        {{uniquename=1,hash=819d7ddb5092e34fe550c59b5f78d70d}{Doesken}{D\bibinitperiod}{Nolan\bibnamedelima J}{N\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {Colorado Water Institute, Colorado State University}%
-      }
-      \strng{namehash}{56caa959d4dcb4a19a8efb12cdd3059c}
-      \strng{fullhash}{56caa959d4dcb4a19a8efb12cdd3059c}
-      \field{sortinit}{C}
-      \field{labelyear}{2009}
-      \field{datelabelsource}{}
-      \field{labeltitle}{Detecting trends in evapotranspiration in Colorado}
-      \field{title}{Detecting trends in evapotranspiration in Colorado}
-      \field{year}{2009}
-    \endentry
-    \entry{Csu2012}{online}{}
-      \name{labelname}{1}{}{%
-        {{uniquename=0,hash=8308a2a1cef18fe5ae24a1505a76471c}{{Colorado\bibnamedelimb Climate\bibnamedelimb Center}}{C\bibinitperiod}{}{}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=8308a2a1cef18fe5ae24a1505a76471c}{{Colorado\bibnamedelimb Climate\bibnamedelimb Center}}{C\bibinitperiod}{}{}{}{}{}{}}%
-      }
-      \list{organization}{1}{%
-        {Colorado State University}%
-      }
-      \strng{namehash}{8308a2a1cef18fe5ae24a1505a76471c}
-      \strng{fullhash}{8308a2a1cef18fe5ae24a1505a76471c}
-      \field{sortinit}{C}
-      \field{labelyear}{2012}
-      \field{datelabelsource}{}
-      \field{labeltitle}{About {CoAgMet}}
-      \field{howpublished}{\url{http://www.coagmet.colostate.edu/about.php}}
-      \field{title}{About {CoAgMet}}
-      \field{year}{2012}
-      \verb{url}
-      \verb http://www.coagmet.colostate.edu/about.php
-      \endverb
-    \endentry
-    \entry{darton1906}{book}{}
-      \name{labelname}{1}{}{%
-        {{uniquename=0,hash=98e55916099a7ab32d9e858b5d3b2760}{Darton}{D\bibinitperiod}{Nelson\bibnamedelima Horatio}{N\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=98e55916099a7ab32d9e858b5d3b2760}{Darton}{D\bibinitperiod}{Nelson\bibnamedelima Horatio}{N\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {US Government Printing Office}%
-      }
-      \strng{namehash}{98e55916099a7ab32d9e858b5d3b2760}
-      \strng{fullhash}{98e55916099a7ab32d9e858b5d3b2760}
-      \field{sortinit}{D}
-      \field{labelyear}{1906}
-      \field{datelabelsource}{}
-      \field{labeltitle}{Geology of the Bighorn Mountains}
-      \field{title}{Geology of the Bighorn Mountains}
-      \field{volume}{51}
-      \field{year}{1906}
-    \endentry
-    \entry{gates2009}{article}{}
-      \name{labelname}{6}{}{%
-        {{uniquename=2,hash=eb627762db11c4a02267b95e554b2503}{Gates}{G\bibinitperiod}{Timothy\bibnamedelima K}{T\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=3aa82b6a51163e15db4d08eb52bcfb8b}{Cody}{C\bibinitperiod}{Brent\bibnamedelima M}{B\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=2225cea94e5a2060ae23b8b6156440fc}{Donnelly}{D\bibinitperiod}{Joseph\bibnamedelima P}{J\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=ca00388e01cf38df2f9296050dd0e555}{Herting}{H\bibinitperiod}{Alexander\bibnamedelima W}{A\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=df6a34908d4f9fb3e5a5863a036bacf8}{Bailey}{B\bibinitperiod}{Ryan\bibnamedelima T}{R\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=5af473c9516170a473142340c0c09be4}{Mueller\bibnamedelima Price}{M\bibinitperiod\bibinitdelim P\bibinitperiod}{Jennifer}{J\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{6}{}{%
-        {{uniquename=2,hash=eb627762db11c4a02267b95e554b2503}{Gates}{G\bibinitperiod}{Timothy\bibnamedelima K}{T\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=3aa82b6a51163e15db4d08eb52bcfb8b}{Cody}{C\bibinitperiod}{Brent\bibnamedelima M}{B\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=2225cea94e5a2060ae23b8b6156440fc}{Donnelly}{D\bibinitperiod}{Joseph\bibnamedelima P}{J\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=ca00388e01cf38df2f9296050dd0e555}{Herting}{H\bibinitperiod}{Alexander\bibnamedelima W}{A\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=df6a34908d4f9fb3e5a5863a036bacf8}{Bailey}{B\bibinitperiod}{Ryan\bibnamedelima T}{R\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=5af473c9516170a473142340c0c09be4}{Mueller\bibnamedelima Price}{M\bibinitperiod\bibinitdelim P\bibinitperiod}{Jennifer}{J\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {American Society of Agronomy, Crop Science Society of America, Soil Science Society}%
-      }
-      \strng{namehash}{1949a20f366de2e2a6deb7e7b471a2f1}
-      \strng{fullhash}{e6fe1598fb3f4775ca3cd5814528c1e9}
-      \field{sortinit}{G}
-      \field{labelyear}{2009}
-      \field{datelabelsource}{}
-      \field{labeltitle}{Assessing selenium contamination in the irrigated stream--aquifer system of the Arkansas River, Colorado}
-      \field{journaltitle}{Journal of environmental quality}
+      \field{labeltitle}{Evapotranspiration information reporting: I. Factors governing measurement accuracy}
+      \field{issn}{0378-3774}
+      \field{journaltitle}{Agricultural Water Management}
       \field{number}{6}
-      \field{title}{Assessing selenium contamination in the irrigated stream--aquifer system of the Arkansas River, Colorado}
-      \field{volume}{38}
-      \field{year}{2009}
-      \field{pages}{2344\bibrangedash 2356}
+      \field{title}{Evapotranspiration information reporting: I. Factors governing measurement accuracy}
+      \field{volume}{98}
+      \field{year}{2011}
+      \field{pages}{899\bibrangedash 920}
     \endentry
-    \entry{konikow1974}{article}{}
-      \name{labelname}{2}{}{%
-        {{uniquename=0,hash=b805530ea3d2b546c5d6560a78fce0cb}{Konikow}{K\bibinitperiod}{Leonard\bibnamedelima F}{L\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=89b63b74a361028c4290dbc288d6e64e}{Bredehoeft}{B\bibinitperiod}{John\bibnamedelima D}{J\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+    \entry{FAO56}{book}{}
+      \name{labelname}{4}{uniquelist=3}{%
+        {{uniquename=2,hash=a1f8ecedc339346aa73023401be45d78}{Allen}{A\bibinitperiod}{Richard\bibnamedelima G.}{R\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=709c1cdc971abe9488c842551d6adb7d}{Pereira}{P\bibinitperiod}{Luis\bibnamedelima S.}{L\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9d528b5787f56cc335c3cc3ac9a996dd}{Raes}{R\bibinitperiod}{Dirk}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=320c6e39898db73a6e775795c847f07f}{Smith}{S\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
       }
-      \name{author}{2}{}{%
-        {{uniquename=0,hash=b805530ea3d2b546c5d6560a78fce0cb}{Konikow}{K\bibinitperiod}{Leonard\bibnamedelima F}{L\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=89b63b74a361028c4290dbc288d6e64e}{Bredehoeft}{B\bibinitperiod}{John\bibnamedelima D}{J\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {Wiley Online Library}%
-      }
-      \strng{namehash}{d905903243f3fb0553a233b7270eddcc}
-      \strng{fullhash}{d905903243f3fb0553a233b7270eddcc}
-      \field{sortinit}{K}
-      \field{labelyear}{1974}
-      \field{datelabelsource}{}
-      \field{labeltitle}{Modeling flow and chemical quality changes in an irrigated stream-aquifer system}
-      \field{journaltitle}{Water Resources Research}
-      \field{number}{3}
-      \field{title}{Modeling flow and chemical quality changes in an irrigated stream-aquifer system}
-      \field{volume}{10}
-      \field{year}{1974}
-      \field{pages}{546\bibrangedash 562}
-    \endentry
-    \entry{Miller2010}{report}{}
-      \name{labelname}{4}{}{%
-        {{uniquename=0,hash=726529197e448e974e0ff21f4ac1c3d5}{Miller}{M\bibinitperiod}{Lisa\bibnamedelima D.}{L\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=e311914d4c6cdca1da2d6f010a52bdca}{Watts}{W\bibinitperiod}{Kenneth\bibnamedelima R.}{K\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=2b4a84fcd5ec7ba61dfebaf9855f6b2c}{Ortiz}{O\bibinitperiod}{Roderick\bibnamedelima F.}{R\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=3568bed0e29441a520a7c20d4a8afef4}{Ivahnenko}{I\bibinitperiod}{Tamara}{T\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{4}{}{%
-        {{uniquename=0,hash=726529197e448e974e0ff21f4ac1c3d5}{Miller}{M\bibinitperiod}{Lisa\bibnamedelima D.}{L\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=e311914d4c6cdca1da2d6f010a52bdca}{Watts}{W\bibinitperiod}{Kenneth\bibnamedelima R.}{K\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=2b4a84fcd5ec7ba61dfebaf9855f6b2c}{Ortiz}{O\bibinitperiod}{Roderick\bibnamedelima F.}{R\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=3568bed0e29441a520a7c20d4a8afef4}{Ivahnenko}{I\bibinitperiod}{Tamara}{T\bibinitperiod}{}{}{}{}}%
-      }
-      \list{institution}{1}{%
-        {US Geological Survey}%
-      }
-      \strng{namehash}{c45daad78b4eaea6e617c9d2292f9490}
-      \strng{fullhash}{ab209915a54c775f7b44dd4c4653ba71}
-      \field{sortinit}{M}
-      \field{labelyear}{2010}
-      \field{datelabelsource}{}
-      \field{labeltitle}{Occurrence and Distribution of Dissolved Solids, Selenium, and Uranium in Groundwater and Surface Water in the {A}rkansas {R}iver Basin from the Headwaters to {C}oolidge, {K}ansas, 1970-2009: {U.S. Geological Survey} Scientific Investigation Report 2010-5069}
-      \field{title}{Occurrence and Distribution of Dissolved Solids, Selenium, and Uranium in Groundwater and Surface Water in the {A}rkansas {R}iver Basin from the Headwaters to {C}oolidge, {K}ansas, 1970-2009: {U.S. Geological Survey} Scientific Investigation Report 2010-5069}
-      \field{type}{techreport}
-      \field{year}{2010}
-    \endentry
-    \entry{moore1967}{article}{}
-      \name{labelname}{2}{}{%
-        {{uniquename=0,hash=042cebae5e73684193b32272ca44e4dc}{Moore}{M\bibinitperiod}{John\bibnamedelima E}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=422bbeba6346c42f98c7b6361af212d1}{Wood}{W\bibinitperiod}{Leonard\bibnamedelima A}{L\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{2}{}{%
-        {{uniquename=0,hash=042cebae5e73684193b32272ca44e4dc}{Moore}{M\bibinitperiod}{John\bibnamedelima E}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=422bbeba6346c42f98c7b6361af212d1}{Wood}{W\bibinitperiod}{Leonard\bibnamedelima A}{L\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {Wiley Online Library}%
-      }
-      \strng{namehash}{2ada55fc1f9a69bb7e9e7ef54f3cfcb6}
-      \strng{fullhash}{2ada55fc1f9a69bb7e9e7ef54f3cfcb6}
-      \field{sortinit}{M}
-      \field{labelyear}{1967}
-      \field{datelabelsource}{}
-      \field{labeltitle}{Data Requirements and Preliminary Results of an Analog-Model Evaluation---Arkansas River Valley in Eastern Coloradoa}
-      \field{journaltitle}{Groundwater}
-      \field{number}{1}
-      \field{title}{Data Requirements and Preliminary Results of an Analog-Model Evaluation---Arkansas River Valley in Eastern Coloradoa}
-      \field{volume}{5}
-      \field{year}{1967}
-      \field{pages}{20\bibrangedash 23}
-    \endentry
-    \entry{Morway2013}{article}{}
-      \name{labelname}{5}{}{%
-        {{uniquename=0,hash=645667e4bd99944192c649fed0d4de5d}{Morway}{M\bibinitperiod}{Eric\bibnamedelima D.}{E\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=d975dc7bc1759772682d8d81f4545eac}{Niswonger}{N\bibinitperiod}{Richard\bibnamedelima G.}{R\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=27e44a6c3c9a0ef6133b5930fd14ee8e}{Langevin}{L\bibinitperiod}{Christian\bibnamedelima D.}{C\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=43b9e3649c8e8e4a6c2b92d1e5fb3c7f}{Bailey}{B\bibinitperiod}{Ryan\bibnamedelima T.}{R\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=5b49ec84123344b9e2c960f25632f9f7}{Healy}{H\bibinitperiod}{Richard\bibnamedelima W.}{R\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{5}{}{%
-        {{uniquename=0,hash=645667e4bd99944192c649fed0d4de5d}{Morway}{M\bibinitperiod}{Eric\bibnamedelima D.}{E\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=d975dc7bc1759772682d8d81f4545eac}{Niswonger}{N\bibinitperiod}{Richard\bibnamedelima G.}{R\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=27e44a6c3c9a0ef6133b5930fd14ee8e}{Langevin}{L\bibinitperiod}{Christian\bibnamedelima D.}{C\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=43b9e3649c8e8e4a6c2b92d1e5fb3c7f}{Bailey}{B\bibinitperiod}{Ryan\bibnamedelima T.}{R\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=5b49ec84123344b9e2c960f25632f9f7}{Healy}{H\bibinitperiod}{Richard\bibnamedelima W.}{R\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{3af2a4cc124e5734a8720a9294ee9704}
-      \strng{fullhash}{150c29835aa1c95892900bd81f1ffead}
-      \field{sortinit}{M}
-      \field{labelyear}{2013}
-      \field{datelabelsource}{}
-      \field{labeltitle}{Modeling variably saturated subsurface solute transport with MODFLOW-UZF and MT3DMS.}
-      \field{journaltitle}{Groundwater}
-      \field{number}{51}
-      \field{title}{Modeling variably saturated subsurface solute transport with MODFLOW-UZF and MT3DMS.}
-      \field{year}{2013}
-      \field{pages}{237\bibrangedash 251}
-    \endentry
-    \entry{Nagler2010a}{inbook}{}
-      \name{labelname}{4}{}{%
-        {{uniquename=0,hash=94146b9dea8991cc04ed3e7ca72894a2}{Nagler}{N\bibinitperiod}{Pamela\bibnamedelima L.}{P\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=9167f5bbfdeb7c6a2f6e3d46f42d851a}{Glenn}{G\bibinitperiod}{Edward\bibnamedelima P.}{E\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=1432f01744ba744d9659fb5f173374c7}{Jarnevich}{J\bibinitperiod}{Catherine\bibnamedelima S.}{C\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=8db92bfaab20b4f1edc083a95c1910bd}{Shafroth}{S\bibinitperiod}{Patrick\bibnamedelima B.}{P\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{4}{}{%
-        {{uniquename=0,hash=94146b9dea8991cc04ed3e7ca72894a2}{Nagler}{N\bibinitperiod}{Pamela\bibnamedelima L.}{P\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=9167f5bbfdeb7c6a2f6e3d46f42d851a}{Glenn}{G\bibinitperiod}{Edward\bibnamedelima P.}{E\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=1432f01744ba744d9659fb5f173374c7}{Jarnevich}{J\bibinitperiod}{Catherine\bibnamedelima S.}{C\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=8db92bfaab20b4f1edc083a95c1910bd}{Shafroth}{S\bibinitperiod}{Patrick\bibnamedelima B.}{P\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {U.S. Geological Survey}%
-      }
-      \strng{namehash}{e454944eae1c555506217c7e11e7c9ef}
-      \strng{fullhash}{c3dc210e0f071a91bc316c42af435fa4}
-      \field{sortinit}{N}
-      \field{labelyear}{2010}
-      \field{datelabelsource}{}
-      \field{labeltitle}{Distribution and Abundance of Saltcedar and Russian Olive in the Western United States}
-      \field{chapter}{2}
-      \field{journaltitle}{Saltcedar and Russian Olive control demonstraction act science assessment}
-      \field{title}{Distribution and Abundance of Saltcedar and Russian Olive in the Western United States}
-      \field{year}{2010}
-      \field{pages}{7\bibrangedash 32}
-    \endentry
-    \entry{Painter1940}{book}{}
-      \name{labelname}{1}{}{%
-        {{uniquename=0,hash=2ffc17ae12e77219e9bc5fa389fd3936}{Painter}{P\bibinitperiod}{Edgar\bibnamedelima Page}{E\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=2ffc17ae12e77219e9bc5fa389fd3936}{Painter}{P\bibinitperiod}{Edgar\bibnamedelima Page}{E\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {North Dakota State University}%
-      }
-      \strng{namehash}{2ffc17ae12e77219e9bc5fa389fd3936}
-      \strng{fullhash}{2ffc17ae12e77219e9bc5fa389fd3936}
-      \field{sortinit}{P}
-      \field{labelyear}{1940}
-      \field{datelabelsource}{}
-      \field{labeltitle}{The Chemistry And Toxicity Of Selenium Compounds, With Special Reference To The Selenium Problem}
-      \field{title}{The Chemistry And Toxicity Of Selenium Compounds, With Special Reference To The Selenium Problem}
-      \field{year}{1940}
-    \endentry
-    \entry{USGS1982a}{report}{}
-      \true{morelabelname}
-      \name{labelname}{1}{}{%
-        {{uniquename=0,hash=f068bde203c5e9951018957b0c6331cd}{Rantz}{R\bibinitperiod}{S.\bibnamedelimi E.}{S\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
-      }
-      \true{moreauthor}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=f068bde203c5e9951018957b0c6331cd}{Rantz}{R\bibinitperiod}{S.\bibnamedelimi E.}{S\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
-      }
-      \list{institution}{1}{%
-        {U.S.G.S.}%
-      }
-      \strng{namehash}{b3231cb877d9c7ed892f20ecced2bc4f}
-      \strng{fullhash}{b3231cb877d9c7ed892f20ecced2bc4f}
-      \field{sortinit}{R}
-      \field{extrayear}{1}
-      \field{labelyear}{1982}
-      \field{datelabelsource}{}
-      \field{labeltitle}{Measurement and Computation of Streamflow: Volume 1. Measurement of Stage and Discharge}
-      \field{number}{2175}
-      \field{title}{Measurement and Computation of Streamflow: Volume 1. Measurement of Stage and Discharge}
-      \field{type}{Geological Survey Water-Supply Paper}
-      \field{year}{1982}
-    \endentry
-    \entry{USGS1982b}{report}{}
-      \true{morelabelname}
-      \name{labelname}{1}{}{%
-        {{uniquename=0,hash=f068bde203c5e9951018957b0c6331cd}{Rantz}{R\bibinitperiod}{S.\bibnamedelimi E.}{S\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
-      }
-      \true{moreauthor}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=f068bde203c5e9951018957b0c6331cd}{Rantz}{R\bibinitperiod}{S.\bibnamedelimi E.}{S\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
-      }
-      \list{institution}{1}{%
-        {U.S.G.S.}%
-      }
-      \strng{namehash}{b3231cb877d9c7ed892f20ecced2bc4f}
-      \strng{fullhash}{b3231cb877d9c7ed892f20ecced2bc4f}
-      \field{sortinit}{R}
-      \field{extrayear}{2}
-      \field{labelyear}{1982}
-      \field{datelabelsource}{}
-      \field{labeltitle}{Measurement and Computation of Streamflow: Volume 2. Computatio of Discharge}
-      \field{number}{2175}
-      \field{title}{Measurement and Computation of Streamflow: Volume 2. Computatio of Discharge}
-      \field{type}{Geological Survey Water-Supply Paper}
-      \field{year}{1982}
-    \endentry
-    \entry{USGS2010TWRI}{report}{}
-      \name{labelname}{2}{}{%
-        {{uniquename=0,hash=ce10978088d8ce0bc1188d12499aa7c4}{Sauer}{S\bibinitperiod}{Vernon\bibnamedelima B.}{V\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=c62d8f88a30800c7cf67a6e8480e8e6e}{Turnipseed}{T\bibinitperiod}{D.\bibnamedelimi Phil}{D\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{2}{}{%
-        {{uniquename=0,hash=ce10978088d8ce0bc1188d12499aa7c4}{Sauer}{S\bibinitperiod}{Vernon\bibnamedelima B.}{V\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=c62d8f88a30800c7cf67a6e8480e8e6e}{Turnipseed}{T\bibinitperiod}{D.\bibnamedelimi Phil}{D\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
-      }
-      \list{institution}{1}{%
-        {USGS}%
-      }
-      \strng{namehash}{6d57d2ee09c35b65eea0fdaedc8d9030}
-      \strng{fullhash}{6d57d2ee09c35b65eea0fdaedc8d9030}
-      \field{sortinit}{S}
-      \field{labelyear}{2010}
-      \field{datelabelsource}{}
-      \field{labeltitle}{Stage Measurement at Gaging Stations, Techniques and Methods 3--A7}
-      \field{title}{Stage Measurement at Gaging Stations, Techniques and Methods 3--A7}
-      \field{type}{techreport}
-      \field{year}{2010}
-    \endentry
-    \entry{2014Smith}{report}{}
-      \name{labelname}{5}{}{%
-        {{uniquename=0,hash=401d4e0059052f4b87256a357d367843}{Smith}{S\bibinitperiod}{David\bibnamedelima B.}{D\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=08c6f57e8951f1ea65758ab7b739aebf}{Cannon}{C\bibinitperiod}{William\bibnamedelima F.}{W\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=2a51fbf8a76cee7fa87c40f0a5c177f3}{Woodruff}{W\bibinitperiod}{Laurel\bibnamedelima G.}{L\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=a61cb769b0a78eaff0683979cb2b9672}{Solano}{S\bibinitperiod}{Federico}{F\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=6e407807361b99c40c3847465013a0cc}{Ellefsen}{E\bibinitperiod}{Karl\bibnamedelima J.}{K\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{5}{}{%
-        {{uniquename=0,hash=401d4e0059052f4b87256a357d367843}{Smith}{S\bibinitperiod}{David\bibnamedelima B.}{D\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=08c6f57e8951f1ea65758ab7b739aebf}{Cannon}{C\bibinitperiod}{William\bibnamedelima F.}{W\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=2a51fbf8a76cee7fa87c40f0a5c177f3}{Woodruff}{W\bibinitperiod}{Laurel\bibnamedelima G.}{L\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=a61cb769b0a78eaff0683979cb2b9672}{Solano}{S\bibinitperiod}{Federico}{F\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=6e407807361b99c40c3847465013a0cc}{Ellefsen}{E\bibinitperiod}{Karl\bibnamedelima J.}{K\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
-      }
-      \list{institution}{1}{%
-        {U.S. Geological Survey}%
-      }
-      \list{publisher}{1}{%
-        {U.S. Geological Survey}%
-      }
-      \strng{namehash}{b379c5e9c1e69f0e1055dc2ce65e5df1}
-      \strng{fullhash}{b4558a8815822e8ae9642b9d6c139b10}
-      \field{sortinit}{S}
-      \field{labelyear}{2014}
-      \field{datelabelsource}{}
-      \field{labeltitle}{Geochemical and Mineralogical Maps for Soils of the Conterminous United States, Open-File Report 2014-1082}
-      \field{title}{Geochemical and Mineralogical Maps for Soils of the Conterminous United States, Open-File Report 2014-1082}
-      \field{type}{techreport}
-      \field{year}{2014}
-    \endentry
-    \entry{sutherland1988}{article}{}
-      \name{labelname}{2}{}{%
-        {{uniquename=0,hash=baf8892920e852823dbaaf9adbfc32bd}{Sutherland}{S\bibinitperiod}{P\bibnamedelima Lorenz}{P\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=5de6ab8b2457b9e4ef44af1217623a05}{Knapp}{K\bibinitperiod}{John\bibnamedelima A}{J\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{2}{}{%
-        {{uniquename=0,hash=baf8892920e852823dbaaf9adbfc32bd}{Sutherland}{S\bibinitperiod}{P\bibnamedelima Lorenz}{P\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=5de6ab8b2457b9e4ef44af1217623a05}{Knapp}{K\bibinitperiod}{John\bibnamedelima A}{J\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      \name{author}{4}{uniquelist=3}{%
+        {{uniquename=2,hash=a1f8ecedc339346aa73023401be45d78}{Allen}{A\bibinitperiod}{Richard\bibnamedelima G.}{R\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=709c1cdc971abe9488c842551d6adb7d}{Pereira}{P\bibinitperiod}{Luis\bibnamedelima S.}{L\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9d528b5787f56cc335c3cc3ac9a996dd}{Raes}{R\bibinitperiod}{Dirk}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=320c6e39898db73a6e775795c847f07f}{Smith}{S\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
       }
       \list{publisher}{2}{%
-        {Soil}%
-        {Water Conservation Society}%
+        {Food}%
+        {Agriculture Organization of the United Nations}%
       }
-      \strng{namehash}{7e1191b21566f70c432e51bfa6d5ee0b}
-      \strng{fullhash}{7e1191b21566f70c432e51bfa6d5ee0b}
-      \field{sortinit}{S}
+      \strng{namehash}{88207128afefb33a7e18f8eaebbea950}
+      \strng{fullhash}{c7e6c4f6634a5c3ba7e8e507f0946d5a}
+      \field{sortinit}{A}
       \field{labelyear}{1988}
       \field{datelabelsource}{}
-      \field{labeltitle}{The impacts of limited water: A Colorado case study}
-      \field{journaltitle}{Journal of Soil and Water Conservation}
-      \field{number}{4}
-      \field{title}{The impacts of limited water: A Colorado case study}
-      \field{volume}{43}
+      \field{labeltitle}{Crop Evapotranspiration - guideguide for computing crop water requirements}
+      \field{series}{FAO Irrigation and Drainage Paper No. 56}
+      \field{title}{Crop Evapotranspiration - guideguide for computing crop water requirements}
       \field{year}{1988}
-      \field{pages}{294\bibrangedash 298}
     \endentry
-    \entry{EPA1992}{book}{}
-      \name{labelname}{1}{}{%
-        {{uniquename=0,hash=f5627235f7755f36aacdeda188b7ba6f}{USEPA}{U\bibinitperiod}{}{}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=f5627235f7755f36aacdeda188b7ba6f}{USEPA}{U\bibinitperiod}{}{}{}{}{}{}}%
-      }
-      \list{institution}{1}{%
-        {U.S.E.P.A}%
-      }
-      \list{organization}{2}{%
-        {Office of Solid Waste}%
-        {Emergency Response}%
-      }
-      \list{publisher}{1}{%
-        {U.S. Government Printing Office}%
-      }
-      \strng{namehash}{f5627235f7755f36aacdeda188b7ba6f}
-      \strng{fullhash}{f5627235f7755f36aacdeda188b7ba6f}
-      \field{sortinit}{U}
-      \field{labelyear}{1992}
-      \field{labelmonth}{12}
-      \field{datelabelsource}{}
-      \field{labeltitle}{Specifications and Guidance for Contaminant-Free Sample Containers}
-      \field{month}{12}
-      \field{number}{Publication 9240.0-05A, EPA540/R-93/051, PB93-953316}
-      \field{title}{Specifications and Guidance for Contaminant-Free Sample Containers}
-      \field{year}{1992}
-    \endentry
-    \entry{Wolock2003}{online}{}
-      \name{labelname}{1}{}{%
-        {{uniquename=0,hash=f2601e0093958c630ae133982e5a7fa3}{Wolock}{W\bibinitperiod}{D.M.}{D\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=f2601e0093958c630ae133982e5a7fa3}{Wolock}{W\bibinitperiod}{D.M.}{D\bibinitperiod}{}{}{}{}}%
-      }
-      \list{organization}{1}{%
-        {U.S. Geological Society}%
-      }
-      \strng{namehash}{f2601e0093958c630ae133982e5a7fa3}
-      \strng{fullhash}{f2601e0093958c630ae133982e5a7fa3}
-      \field{sortinit}{W}
-      \field{labelyear}{2003}
-      \field{datelabelsource}{}
-      \field{labeltitle}{Infiltration-excess overland flow estimated by TOPMODEL for the conterminous United States: U.S. Geological Survey Open-File Report 03-310}
-      \field{title}{Infiltration-excess overland flow estimated by TOPMODEL for the conterminous United States: U.S. Geological Survey Open-File Report 03-310}
-      \field{year}{2003}
-      \verb{url}
-      \verb http://water.usgs.gov/GIS/metadata/usgswrd/XML/ieof48.xml
-      \endverb
-    \endentry
-    \entry{zielinski1995}{article}{}
+    \entry{Buhman2002}{article}{}
       \name{labelname}{3}{}{%
-        {{uniquename=0,hash=46ec0828ffda3ee2af5388774a25a3bc}{Zielinski}{Z\bibinitperiod}{RA}{R\bibinitperiod}{}{}{}{}}%
-        {{uniquename=2,hash=4f61790272893d194423c599dc3d86f4}{Asher-Bolinder}{A\bibinithyphendelim B\bibinitperiod}{Sigrid}{S\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=05ad9194860ff701b65b50474eafbc6a}{Meier}{M\bibinitperiod}{AL}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=6ff40ee93680c7995f34d4ac9a3856ec}{Buhman}{B\bibinitperiod}{Daniel\bibnamedelima L.}{D\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=fcc580849cc197f351412ef9d9e56453}{Gates}{G\bibinitperiod}{Timmothy\bibnamedelima K.}{T\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b26f2771f190b65434aadf9e60ed6916}{Watson}{W\bibinitperiod}{Chester\bibnamedelima C.}{C\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{3}{}{%
-        {{uniquename=0,hash=46ec0828ffda3ee2af5388774a25a3bc}{Zielinski}{Z\bibinitperiod}{RA}{R\bibinitperiod}{}{}{}{}}%
-        {{uniquename=2,hash=4f61790272893d194423c599dc3d86f4}{Asher-Bolinder}{A\bibinithyphendelim B\bibinitperiod}{Sigrid}{S\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=05ad9194860ff701b65b50474eafbc6a}{Meier}{M\bibinitperiod}{AL}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=6ff40ee93680c7995f34d4ac9a3856ec}{Buhman}{B\bibinitperiod}{Daniel\bibnamedelima L.}{D\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=fcc580849cc197f351412ef9d9e56453}{Gates}{G\bibinitperiod}{Timmothy\bibnamedelima K.}{T\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b26f2771f190b65434aadf9e60ed6916}{Watson}{W\bibinitperiod}{Chester\bibnamedelima C.}{C\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
       }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{8aeb4830539ba46a4a0994a8c7d3ab0e}
-      \strng{fullhash}{8aeb4830539ba46a4a0994a8c7d3ab0e}
-      \field{sortinit}{Z}
-      \field{labelyear}{1995}
+      \strng{namehash}{261c188d3e8148f8d848aed61027ed99}
+      \strng{fullhash}{261c188d3e8148f8d848aed61027ed99}
+      \field{sortinit}{B}
+      \field{labelyear}{2002}
+      \field{labelmonth}{04}
       \field{datelabelsource}{}
-      \field{labeltitle}{Uraniferous waters of the Arkansas River valley, Colorado, USA: a function of geology and land use}
-      \field{journaltitle}{Applied geochemistry}
-      \field{number}{2}
-      \field{title}{Uraniferous waters of the Arkansas River valley, Colorado, USA: a function of geology and land use}
-      \field{volume}{10}
-      \field{year}{1995}
-      \field{pages}{133\bibrangedash 144}
+      \field{labeltitle}{Stochastic Variability of Fluvial Hydraulic Geometry: Mississippi and Red Rivers}
+      \field{journaltitle}{Journal of Hydraulic Engineering}
+      \field{month}{04}
+      \field{number}{4}
+      \field{title}{Stochastic Variability of Fluvial Hydraulic Geometry: Mississippi and Red Rivers}
+      \field{volume}{128}
+      \field{year}{2002}
+      \field{pages}{426\bibrangedash 437}
     \endentry
-    \entry{zielinski1997}{article}{}
-      \name{labelname}{5}{uniquelist=2}{%
-        {{uniquename=0,hash=46ec0828ffda3ee2af5388774a25a3bc}{Zielinski}{Z\bibinitperiod}{RA}{R\bibinitperiod}{}{}{}{}}%
-        {{uniquename=2,hash=ff4d754c5b4afa3bcf79ceef7ef5e162}{Asher-Bolinder}{A\bibinithyphendelim B\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=05ad9194860ff701b65b50474eafbc6a}{Meier}{M\bibinitperiod}{AL}{A\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=fc0ab38027c2c1953ba7c18cf9864479}{Johnson}{J\bibinitperiod}{CA}{C\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=460327242ef24f2dc29053436aa00293}{Szabo}{S\bibinitperiod}{BJ}{B\bibinitperiod}{}{}{}{}}%
+    \entry{Gates1996}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=fcc580849cc197f351412ef9d9e56453}{Gates}{G\bibinitperiod}{Timmothy\bibnamedelima K.}{T\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0dc6c6a8698edab09bb01223f0665871}{Al-Zahrani}{A\bibinithyphendelim Z\bibinitperiod}{Muhammad\bibnamedelima A.}{M\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
       }
-      \name{author}{5}{uniquelist=2}{%
-        {{uniquename=0,hash=46ec0828ffda3ee2af5388774a25a3bc}{Zielinski}{Z\bibinitperiod}{RA}{R\bibinitperiod}{}{}{}{}}%
-        {{uniquename=2,hash=ff4d754c5b4afa3bcf79ceef7ef5e162}{Asher-Bolinder}{A\bibinithyphendelim B\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=05ad9194860ff701b65b50474eafbc6a}{Meier}{M\bibinitperiod}{AL}{A\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=fc0ab38027c2c1953ba7c18cf9864479}{Johnson}{J\bibinitperiod}{CA}{C\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=460327242ef24f2dc29053436aa00293}{Szabo}{S\bibinitperiod}{BJ}{B\bibinitperiod}{}{}{}{}}%
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=fcc580849cc197f351412ef9d9e56453}{Gates}{G\bibinitperiod}{Timmothy\bibnamedelima K.}{T\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0dc6c6a8698edab09bb01223f0665871}{Al-Zahrani}{A\bibinithyphendelim Z\bibinitperiod}{Muhammad\bibnamedelima A.}{M\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{1985d33daf2a00dcd0c265a98541deda}
+      \strng{fullhash}{1985d33daf2a00dcd0c265a98541deda}
+      \field{sortinit}{G}
+      \field{labelyear}{1996}
+      \field{labelmonth}{11}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Spatiotemporal Stochastic Open-Channel Flow. I: Model And Its Parameter Data}
+      \field{journaltitle}{Journal of Hydraulic Engineering}
+      \field{month}{11}
+      \field{number}{11}
+      \field{title}{Spatiotemporal Stochastic Open-Channel Flow. I: Model And Its Parameter Data}
+      \field{volume}{122}
+      \field{year}{1996}
+      \field{pages}{641\bibrangedash 651}
+    \endentry
+    \entry{spiess2010evaluation}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=d86e6f058839cf1db6a9a88e859e22aa}{Spiess}{S\bibinitperiod}{Andrej-Nikolai}{A\bibinithyphendelim N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8cca887abcf25dd33fba50a9a399bed9}{Neumeyer}{N\bibinitperiod}{Natalie}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=d86e6f058839cf1db6a9a88e859e22aa}{Spiess}{S\bibinitperiod}{Andrej-Nikolai}{A\bibinithyphendelim N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8cca887abcf25dd33fba50a9a399bed9}{Neumeyer}{N\bibinitperiod}{Natalie}{N\bibinitperiod}{}{}{}{}}%
       }
       \list{publisher}{1}{%
-        {Elsevier}%
+        {BioMed Central Ltd}%
       }
-      \strng{namehash}{990bcb3919a106aca64cb1bda307a2cf}
-      \strng{fullhash}{acf2254fa05a4ada9f23797fc385d8d2}
-      \field{sortinit}{Z}
+      \strng{namehash}{537615991e8f1e8503a2e265df2a925b}
+      \strng{fullhash}{537615991e8f1e8503a2e265df2a925b}
+      \field{sortinit}{S}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labeltitle}{An evaluation of R2 as an inadequate measure for nonlinear models in pharmacological and biochemical research: a Monte Carlo approach}
+      \field{journaltitle}{BMC pharmacology}
+      \field{number}{1}
+      \field{title}{An evaluation of R2 as an inadequate measure for nonlinear models in pharmacological and biochemical research: a Monte Carlo approach}
+      \field{volume}{10}
+      \field{year}{2010}
+      \field{pages}{6}
+    \endentry
+    \entry{USGS2006NWIS}{online}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{c331da575c7eb6f801042d5153adc8a3}
+      \strng{fullhash}{c331da575c7eb6f801042d5153adc8a3}
+      \field{sortinit}{U}
+      \field{labelyear}{2006}
+      \field{datelabelsource}{}
+      \field{labeltitle}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{title}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{year}{2006}
+      \verb{url}
+      \verb http://waterdata.usgs.gov/nwis/
+      \endverb
+    \endentry
+    \entry{USGS2007NWIS}{online}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {U.S.Geological Society}%
+      }
+      \strng{namehash}{c331da575c7eb6f801042d5153adc8a3}
+      \strng{fullhash}{c331da575c7eb6f801042d5153adc8a3}
+      \field{sortinit}{U}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{}
+      \field{labeltitle}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{howpublished}{Internet}
+      \field{title}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{year}{2007}
+      \verb{url}
+      \verb http://waterdata.usgs.gov/nwis/
+      \endverb
+    \endentry
+    \entry{USGS2008NWIS}{online}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {U.S.Geological Society}%
+      }
+      \strng{namehash}{c331da575c7eb6f801042d5153adc8a3}
+      \strng{fullhash}{c331da575c7eb6f801042d5153adc8a3}
+      \field{sortinit}{U}
+      \field{labelyear}{2008}
+      \field{datelabelsource}{}
+      \field{labeltitle}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{howpublished}{Internet}
+      \field{title}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{year}{2008}
+      \verb{url}
+      \verb http://waterdata.usgs.gov/nwis/
+      \endverb
+    \endentry
+    \entry{USGS2009NWIS}{online}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{c331da575c7eb6f801042d5153adc8a3}
+      \strng{fullhash}{c331da575c7eb6f801042d5153adc8a3}
+      \field{sortinit}{U}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labeltitle}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{title}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{year}{2009}
+      \verb{url}
+      \verb http://waterdata.usgs.gov/nwis/
+      \endverb
+    \endentry
+    \entry{USGS2010NWIS}{online}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{c331da575c7eb6f801042d5153adc8a3}
+      \strng{fullhash}{c331da575c7eb6f801042d5153adc8a3}
+      \field{sortinit}{U}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labeltitle}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{title}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{year}{2010}
+      \verb{url}
+      \verb http://waterdata.usgs.gov/nwis/
+      \endverb
+    \endentry
+    \entry{USGS2011NWIS}{online}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{c331da575c7eb6f801042d5153adc8a3}
+      \strng{fullhash}{c331da575c7eb6f801042d5153adc8a3}
+      \field{sortinit}{U}
+      \field{labelyear}{2011}
+      \field{datelabelsource}{}
+      \field{labeltitle}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{title}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{year}{2011}
+      \verb{url}
+      \verb http://waterdata.usgs.gov/nwis/
+      \endverb
+    \endentry
+    \entry{USGS2012NWIS}{online}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{c331da575c7eb6f801042d5153adc8a3}
+      \strng{fullhash}{c331da575c7eb6f801042d5153adc8a3}
+      \field{sortinit}{U}
+      \field{labelyear}{2012}
+      \field{datelabelsource}{}
+      \field{labeltitle}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{title}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://waterdata.usgs.gov/nwis/
+      \endverb
+    \endentry
+    \entry{USGS2014}{online}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {U.S. Geoloical Survey}%
+      }
+      \strng{namehash}{c331da575c7eb6f801042d5153adc8a3}
+      \strng{fullhash}{c331da575c7eb6f801042d5153adc8a3}
+      \field{sortinit}{U}
+      \field{labelyear}{2014}
+      \field{labelmonth}{02}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Explanation for the national water conditions}
+      \field{howpublished}{Internet}
+      \field{month}{02}
+      \field{title}{Explanation for the national water conditions}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://water.usgs.gov/nwc/explain_data.html
+      \endverb
+    \endentry
+    \entry{walter2000asce}{inproceedings}{}
+      \true{morelabelname}
+      \name{labelname}{10}{}{%
+        {{uniquename=0,hash=f7756235c453d162ab057e21c23a497a}{Walter}{W\bibinitperiod}{Ivan\bibnamedelima A}{I\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=2,hash=309bab14ffa71f83d199d3bd30dc0804}{Allen}{A\bibinitperiod}{Richard\bibnamedelima G}{R\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=3ca95a4de8dc8a89a7c3f7a0bd2311f4}{Elliott}{E\bibinitperiod}{Ronald}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b043da7068fc868697541ee507ac55b9}{Jensen}{J\bibinitperiod}{ME}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=c438efd78af257616f5a32a25e8ad59b}{Itenfisu}{I\bibinitperiod}{D}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d9c2c9af2f5a92db2b40ba607bd9e599}{Mecham}{M\bibinitperiod}{B}{B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=a54c710973763d3934b85a792825c0bd}{Howell}{H\bibinitperiod}{TA}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=032573b6c362c9e58cdf6497783f7cfd}{Snyder}{S\bibinitperiod}{R}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4729a261378d835b1c7fbde98d5f1407}{Brown}{B\bibinitperiod}{P}{P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=91baf4a69b7513514eeb0c4627c0b63f}{Echings}{E\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \true{moreauthor}
+      \name{author}{10}{}{%
+        {{uniquename=0,hash=f7756235c453d162ab057e21c23a497a}{Walter}{W\bibinitperiod}{Ivan\bibnamedelima A}{I\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=2,hash=309bab14ffa71f83d199d3bd30dc0804}{Allen}{A\bibinitperiod}{Richard\bibnamedelima G}{R\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=3ca95a4de8dc8a89a7c3f7a0bd2311f4}{Elliott}{E\bibinitperiod}{Ronald}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b043da7068fc868697541ee507ac55b9}{Jensen}{J\bibinitperiod}{ME}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=c438efd78af257616f5a32a25e8ad59b}{Itenfisu}{I\bibinitperiod}{D}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d9c2c9af2f5a92db2b40ba607bd9e599}{Mecham}{M\bibinitperiod}{B}{B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=a54c710973763d3934b85a792825c0bd}{Howell}{H\bibinitperiod}{TA}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=032573b6c362c9e58cdf6497783f7cfd}{Snyder}{S\bibinitperiod}{R}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4729a261378d835b1c7fbde98d5f1407}{Brown}{B\bibinitperiod}{P}{P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=91baf4a69b7513514eeb0c4627c0b63f}{Echings}{E\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b80d40764d8fe246eec0c03e766eb633}
+      \strng{fullhash}{3b3a63b669b11526f7e64581a67e70ea}
+      \field{sortinit}{W}
+      \field{labelyear}{2000}
+      \field{datelabelsource}{}
+      \field{labeltitle}{ASCE's standardized reference evapotranspiration equation}
+      \field{booktitle}{Proc. of the Watershed Management 2000 Conference, June}
+      \field{title}{ASCE's standardized reference evapotranspiration equation}
+      \field{year}{2000}
+    \endentry
+    \entry{wanielista1997}{book}{}
+      \true{morelabelname}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=7c62684df18107df1a7c2427d6f97279}{Wanielista}{W\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0b7e43b32ce1669bda6d7c02f7569ee8}{Kersten}{K\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b15824b77b24156027836c1a4d5f18b2}{Eaglin}{E\bibinitperiod}{Ron}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \true{moreauthor}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=7c62684df18107df1a7c2427d6f97279}{Wanielista}{W\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0b7e43b32ce1669bda6d7c02f7569ee8}{Kersten}{K\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b15824b77b24156027836c1a4d5f18b2}{Eaglin}{E\bibinitperiod}{Ron}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{2}{%
+        {John Wiley}%
+        {Sons}%
+      }
+      \strng{namehash}{2a897aa7f6f280c04ba0f38b0744bbfa}
+      \strng{fullhash}{8ecc200b738983139dc31b1780897060}
+      \field{sortinit}{W}
       \field{labelyear}{1997}
       \field{datelabelsource}{}
-      \field{labeltitle}{Natural or fertilizer-derived uranium in irrigation drainage: A case study in southeastern Colorado, USA}
-      \field{journaltitle}{Applied Geochemistry}
-      \field{number}{1}
-      \field{title}{Natural or fertilizer-derived uranium in irrigation drainage: A case study in southeastern Colorado, USA}
-      \field{volume}{12}
+      \field{labeltitle}{Hydrology: Water quantity and quality control.}
+      \field{title}{Hydrology: Water quantity and quality control.}
       \field{year}{1997}
-      \field{pages}{9\bibrangedash 21}
     \endentry
   \endsortlist
+  \missing{Wiki:RMSE}
 \endrefsection
 \endinput
 

@@ -1,3 +1,4 @@
+\renewcommand{\thechapter}{4}
 \chapter{Evaluation of NPS Return Flow to the River Using a Water Balance Model}
 \label{chap:WaterBalanceModel}
 
@@ -5,51 +6,57 @@
 \section{Water Balance Model Applied to the LARV}
 \label{sec:AppliedWaterModel}
 
-\emph{I - Describe derivation of equation from 'standard' equation}\\
-The water balance equation is used to determine the volume of unaccounted for water in each reach.  If we assume that all flows moving into or out of the river reach are known or can be reasonably well estimated, then the volume of water being stored during any time step is the sum of the flows being added to the river reach minus the flows being removed from the river reach.  This model accounts for flows moving through two cross sections of the river reach, the contributions from tributaries and precipitation or contributions to irrigation canals and evapo-transpiration (ET).  It also accounts for measured, known point sources.  It does not account for unknown and unmeasured surface water flows, or the flux of water between the river channel and the riparian aquifer.  The complete water balance equation form used for both study reaches was developed by expanding the basic water balance equation (\ref{eq:qbalbasic}) to include all known, measurable values.
-
+\subsection*{Water Balance Model Equation.}
+%\emph{II - Justify use of equation}\\
+The purpose of the water balance model is to determine the volume of unaccounted for water in each reach.  We begin with a basic water balance model as describe in most hydrology texts \parencite{wanielista1997}.
 \begin{equation}
-	\frac{\Delta S}{\Delta t}=\sum{Q_{inflow}}-\sum{Q_{outflow}}+P-E+\sum{Q_{NPS}}
-	\label{eq:qbalbasic}
-\end{equation}
-\begin{tabular}{rl}
-$\frac{\Delta S}{\Delta t}$ =&Stored volume change between time steps $(volume \cdot time^{-1})$\\
-$\sum{Q_{inflow}}$=&Sum of measured flows entering the river section $(volume \cdot time^{-1})$\\
-$\sum{Q_{outflow}}$=&Sum of measured flows leaving the river section $(volume \cdot time^{-1})$\\
-$P$=&Precipitation in units of $volume \cdot time^{-1}$\\
-$E$=&Evaporation in units of $volume \cdot time^{-1}$\\
-$\sum{Q_{NPS}}$=&Sum of all flow rates to or from non-point sources $(volume \cdot time^{-1})$\\
-\end{tabular}\\
-
-The variable $\sum{Q_{UNPS}}$ is intended to capture all of the gains from and losses to the unaccounted for non-point sources and sinks and the riparian aquifer.  It is assumed that the unaccounted for non-point sources and sinks are relatively minor and intermittent.  They can include, but are not limited to, surface runoff from storm events, irrigation water returning directly from fields to the river, and groundwater.  Flows from the sum of the non-point sources $(Q_{UNPS})$ can be either added to or taken from the river reach.  The equation assumes that these flows are added to the river.  As such, positive values indicate that the river is gaining water from non-point sources and negative values indicate the river is losing water to non-point sinks.  For this study, we are assuming that the non-point source flows are dominated by groundwater interactions with the river channel.  Changing the unknown flow variable to only consider groundwater, rearranging the flow equation variables results in equation~\ref{eq:qbalbasic2}.
-
-\begin{equation}
-	Q_{GW}=\frac{\Delta S}{\Delta t}-\sum{Q_{inflow}}+\sum{Q_{outflow}}-P+E
-	\label{eq:qbalbasic2}
+	\textnormal{change in storage = inputs - outputs} \nonumber
 \end{equation}
 
-Groundwater flows are not shown as a sum of flows like the measured inflow and outflows.  Considering them as a sum value implies that there is a way to separate them in some manner.  Groundwater contributions to the flow equation, either gains or losses, are variable along any river segment.  Grouping the variables by type produces equation~\ref{eq:qbalbasic3}, which is used as the final step of the computations.  All computations prior to this assume all storage changes, flows, precipitation, and evaporation are positive.  This step was used to help with book keeping.
-
+Adding the variables, both known and unknown, present in the LARV we have the following equation:
 \begin{equation}
-	Q_{GW}=\frac{\Delta S}{\Delta t}-Q_{Surface}-Q_{Atmosphere}
-	\label{eq:qbalbasic3}
+	\frac{\Delta S}{\Delta t} = Q_{in,US} + \sum Q_{in} + P + R + B - Q_{out,DS} - \sum Q_{out} - E - T - F 
 \end{equation}
-Where\\
-\begin{tabular}{rl}
-$Q_{Surface} =$& $\sum{Q_{inflow}} - \sum{Q_{outflow}}$ Cumulative water flow rate.\\
-$Q_{Atmosphere} =$&$P-E$ Cumulative effects of precipitation and evaporation.\\
-\end{tabular}\\
+\begin{longtable}{rl}
+%\begin{tabularx}{6in}{rX}
+	Where: \\
+	$\frac{\Delta S}{\Delta t}$ =&Stored volume change between time steps.\\
+	$ Q_{in,US} $ = & Flow in the river entering the study reach at the upstream end.\\
+	$ \sum Q_{in} $ = & Flow gained by the river from tributaries and other gauged sources.\\
+	$ P $ = & Volume of water gained to the river due to precipitation falling directly on the river's surface.\\
+	$ R $ = & Volume of water gained to the river due to precipitation runoff from adjacent land. \\
+	$ B $ = & Volume of water gained to the river due to subsurface flow. \\
+	$ Q_{out,DS} $ = & Flow in the river leaving the study reach at the downstream end.\\
+	$ \sum Q_{out} $ & Flow lost from the river to canals and other gauged sinks.\\
+	$ E $ = & Volume of water lost from the river due to direct evaporation from the water's surface.\\
+	$ T $ = & Volume of water lost from the river due to plant transpiration.\\
+	$ F $ = & Volume of water lost from the river due to infiltration into the subsurface flow.\\
+%\end{tabularx}
+\end{longtable}
 
-\emph{II - Justify use of equation}\\
+If we combine the terms that are unknown or unmeasured, we arive at the following equation:
+\begin{equation}\label{eq:water01}
+	\frac{\Delta S}{\Delta t} = Q_{in,US} + \sum Q_{in} + P - Q_{out,DS} - \sum Q_{out} - E + Q_{NPS} + X
+\end{equation}
+\begin{tabularx}{6in}{rX}
+	Where: \\
+	$ Q_{NPS} $ = & The sum of the gains and losses from/to non-point sources and sinks (NPS).\\ 
+	$ X $ = & The unknown gains and losses from/to unknown sources and sinks.\\
+\end{tabularx}\\
 
-\emph{III - define $Q_U$ constituents}\\
+%\emph{III - define $Q_U$ constituents}\\
+$ Q_{NPS} $ includes the non-point source gains from groundwater sources($ B $), non-point source losses to groudwater sinks {}$ F $), transpiration losses from plants in the river channel ($ T $), and gains from precipitation runoff from adjacent land ($ R $).  Additionally, this term includes ungauged flows leaving and entering the river.  Ungauged gains to the river are suspected to be primarily in the form of irrigation drainage from adjacent farmland.  Other sources could be due to errors in underestimating flows entering the river or overestimating flows leaving the river.  Ungauged losses from the river are suspected to be primarily in the form of minor or unauthorized witdrawls from the river channel.  Of the ungauged flows, irrigation drainage from adjacent farmlands is assumed to be the largest contributor.
 
-The eight computational models presented in the preceding list have one characteristic in common; all eight are time series models.  The reference time frames are identical for all eight models.  The time frame spans from 1 October 2006 to 30 September 2010.  The start and end dates are concurrent with the start of the 2007 water year and the end of the 2010 water year as defined by the USGS, respectively \citep{USGS2014}.
+There are studies that have demonstrated water loss due to aquatic vegitation.  The models in this thesis do not include the riparian area.  They only extend to the interface between the physical soil/water boundary.  While it has been shown that native and non-native vegitation within the riparian zone contribute significantly to water loss within a slow moving or stagnant water body, there is no known study to determine the temporal and spatial relationship between these plants and a stream or river with a hydraulically connected aquifer.  The relationship between the river and aquifer is assumed to change with time and location along the channel.  At different places and times, plants within the riparian zone may be consuming water from the river before it enters the aquifer and at other times may be intercepting groundwater before it reaches the river channel.  Therefore, there is insufficient information to allow even a reasonable assumption on the role of riparian plant transpiration on stream flow.
 
-Since most of the data was readily available in average daily form, it seemed reasonable to set the time step within the time frame equal to one day.  The added benefit is that the results could be used to help calibrate MODFLOW and RT3D models developed under the same project for the same study regions as described in this thesis.
+Within the river channel, it has been observed that there is very little rooted plant life.  There is undoubtably suspended microbial life that performs many biological functions within the river channel.  Again, the effect of this life on transpiration within the channel is unknown, but we assume it is a minor to insignificant contributor to $ U_{NPS} $.
 
-Not all time steps with the time frame were found to be suitable for analysis.  A time step was deemed suitable only if all of the data points required for the respective selenium mass balance deterministic model were available.  It was determined that attempting to calculate with any number of missing data points or attempting to estimate the missing data points for a given time step would add additional immeasurable uncertainty to the results.  The number of required variables is 23 for the USR and 14 for the DSR.  For the USR, 1,085 of 1,461 days, or approximately 74\%, were found to be suitable for inclusion in the analysis.  For the DSR, 838 days, or approximately 57\% were found to be suitable.
+The term $ X $ in equation \ref{eq:water01} is very valuable.  While the $ Q_{NPS} $ encompasses all of the known values that cannot be accounted for, the $ X $ term accounts for all of the unknown values that cannot be accounted for.  Combined, both terms account for known-unknowns and unknown-unknowns.  There are three reasonable methods to account for $ X $.  In one, we can assume that the value for $ X $ is insignificant and ignore it from the equation.  The second does not make the assumption that $ X $ is insignificant and concludes that it must be included.  The third assumes that there is no reasonable way to discerne between $ X $ and $ U_{NPS} $ from the results.  Therefore the two terms must be combined into a single term.  Since $ U_{NPS} $ already explicitly denotes an unknown quantity, we will continue to use this term to describe both the known-unknowns ($ Q_{NPS} $) and the unknown-unknowns ($ X $).
 
+Re-arrangeing equation \ref{eq:water01} to solve for the unknown values produces equation \ref{water02}.  Due to the nearly identical method of calculating flow ($ Q $) and it's associated error and uncertainty, these terms were associated with each other.  Likewise, the precipitation ($ P $) and evaporation ($ E $) terms were associated with each other.
+\begin{equation}\
+Q_{NPS} = \left( Q_{out,DS} + \sum Q_{out} - Q_{in,US} - \sum Q_{in} \right) - \frac{\Delta S}{\Delta t} - \left( P + E \right)\\ \label{water02}
+\end{equation}
 
 
 \clearpage{}
@@ -57,6 +64,14 @@ Not all time steps with the time frame were found to be suitable for analysis.  
 \label{sec:StochAndDetermModels}
 
 \emph{0 - define deterministic and stochastic model}\\
+
+-- intro --- Determinsitic and stochastic models are used in both the unaccounted for water and mass balance models.
+
+--- determinsitic models are ---
+
+--- stochastic models are ---
+
+
 The stochastic models use Monte Carlo (MC) simulation techniques.  The first model was created such that solutions for individual realizations were calculated individually.  This model's computational form was extremely slow in producing fairly acceptable results.  It took approximately 2.5 days to calculate a little over 7,500 realizations with only five of the six monitored statistics reaching the desired point.  For some reason, the final change in skewness between successive groups of realizations was 3-5\% based on five model runs.  A second model was created such that the solutions were calculated in a batch format using matrix math.  Many sources with extensive and diverse computer code development knowledge stated that matrix math operations complete computations many orders of magnitude faster than the one calculation at a time method used in the first model.  This proved to be true as a 5,000 realization model was completed in just under 2.25 hours.
 
 One run was of the second stochastic model form was performed at 500 realizations to determine the minimum number of required realizations.  The mean, 2.5th and 97.5th percentile, variance, skewness, and kurtosis were the monitored statistics.  The statistics were considered acceptable when the change between calculations of the 1 to $r$ realization and the 1 to $r-1$ realization was less than 0.1\%.  It was found that these variables were acceptable or nearly acceptable shortly before the 500th realization.  A large factor of safety was added to this and 5000 realizations were performed.
@@ -66,6 +81,14 @@ Deterministic models used the reported values from the input variables.  In all 
 The stochastic models were derived from the deterministic models with the addition of error terms.  The stochastic model was then converted into a computational stochastic model.  This models was debugged and validated by testing the random error distributions and comparing the final results to previous studies.  The computational deterministic models were then derived from the computational stochastic models by removing all of the error distributions from the computational code.  The deterministic models were then compared to the original spreadsheet models.
 
 \emph{I - Define  uncertainty and its sources}\\
+--- what is uncertainty ---
+
+--- what is error ---
+
+--- how are they different/the same ---
+
+--- what are the sources of uncertainty and error ---
+
 Defining uncertainty is quite cumbersome as each uncertainty term comes with its own distinct definition.  The definitions usually come in the form of a distribution type with associated factors with each distribution type having its own particular mathematical definition with its own factors.  Distributions require as few as one factor.  When a distribution had more than one definition, only standard, accepted definition was used.  This thesis does not discuss the computations of the different distributions.  The primary concern regarding distributions is to determine which of the well established distributions best fit the data.
 
 \emph{II - Define true value vs. measured value}\\
@@ -76,12 +99,12 @@ The true value of the parameter is not directly observable and is only valid for
 \label{eq:error}
 mv=tv+\varepsilon
 \end{equation}
-\begin{tabular}{r l}
+\begin{tabularx}{6in}{r X}
 Where:&\\
 mv = & measured value\\
 tv = & true value\\
 $\varepsilon$ = & error\\
-\end{tabular}\\
+\end{tabularx}\\
 
 If the true value were known, then it would be a simple matter of algebra to determine the error from any measured value.  This practice is used in manufacturing when a part or item is designed to a specific dimension.  The measured values incorporate a certain amount of error due to manufacturing variances and measurement error.  In this case, the sought after value is the error value to determine the efficiency of the manufacturing process.
 
@@ -155,6 +178,8 @@ $\sum Q_{Canals} =$& Cumulative water flow rate for all canal flows leaving the 
 \end{tabular}\\
 
 \emph{I - define the time step}\\
+
+With $ \Delta t $, equation \ref{eq:water01} describes a discrete time step.  For the purposes of this thesis, the time step is one caledar day.
 
 \emph{II - define calculation of storage change}\\
 The river volume change is used in the water balance and selenium mass balance models.  The river is modeled as a trapezoidal prism with a constant length and with a cross-section that does not vary with respect to location.  It was reasoned that this simplistic model would best approximate the average channel shape.  
@@ -230,12 +255,12 @@ River segment B in the USR does not have a flow gauge within its boundaries and 
 
 \emph{IV - define calculation of flow depth from stream gauge height based on survey data}\\
 
-Non-linear regression models are those models where the function of the predictor variable, $f_i$, contains a fitting parameter, $\beta_i$.  Non-linear regression models were used only when a specific model form could be determined from known physical or geometrical relationships.  R-squared values were not used to determine goodness-of-fit for non-linear regression models.  These models can have valid values that are negative or greater than one \citep{spiess2010evaluation} and as such are outside of the boundary for comparing linear models.  Pseudo or modified r-squared calculations are available.  These computations result in values that are comparable to the r-squared value for linear models, but have slightly different interpretations (reference).  Since non-linear regression models were used only when specific model forms could be pre-determined, there was no need to compare different model forms estimating the same result.
+Non-linear regression models are those models where the function of the predictor variable, $f_i$, contains a fitting parameter, $\beta_i$.  Non-linear regression models were used only when a specific model form could be determined from known physical or geometrical relationships.  R-squared values were not used to determine goodness-of-fit for non-linear regression models.  These models can have valid values that are negative or greater than one \parencite{spiess2010evaluation} and as such are outside of the boundary for comparing linear models.  Pseudo or modified r-squared calculations are available.  These computations result in values that are comparable to the r-squared value for linear models, but have slightly different interpretations (reference).  Since non-linear regression models were used only when specific model forms could be pre-determined, there was no need to compare different model forms estimating the same result.
 
-In order to define non-linear regression model goodness-of-fit, the root mean squared error (RMSE) value was calculated.  The RMSE "represents the standard deviation of the differences between he predicted and observed values" \citep{Wiki:RMSE}.  The RMSE is scale dependent as the units are the same as the observed value.  The RMSE is also known as the standard deviation.  This would cause an issue if models for different observed value units and scales were compared against each other.  In this study, non-linear regression models are only used to estimate the cross-sectional width of a river segment.  The development and discussion of this calculation will be discussed in later sections.  This thesis does not contain any other non-linear regression models.  This allows us to compare the residual errors associated with the various cross sections without needing to consider scale or units.
+In order to define non-linear regression model goodness-of-fit, the root mean squared error (RMSE) value was calculated.  The RMSE "represents the standard deviation of the differences between he predicted and observed values" \parencite{Wiki:RMSE}.  The RMSE is scale dependent as the units are the same as the observed value.  The RMSE is also known as the standard deviation.  This would cause an issue if models for different observed value units and scales were compared against each other.  In this study, non-linear regression models are only used to estimate the cross-sectional width of a river segment.  The development and discussion of this calculation will be discussed in later sections.  This thesis does not contain any other non-linear regression models.  This allows us to compare the residual errors associated with the various cross sections without needing to consider scale or units.
 
 \emph{V - define calculation of top width from fow depth}\\
-River top width measurements are only recorded during manual stream gauging performed to update the stage-discharge rating table associated with the gauge.  These measured values are only valid for a specific location and a specific flow depth.  The flow depth to river top width relationship is described as a power function of the river depth as shown in equation \ref{eq:AR} \citep{Buhman2002,Gates1996}.  
+River top width measurements are only recorded during manual stream gauging performed to update the stage-discharge rating table associated with the gauge.  These measured values are only valid for a specific location and a specific flow depth.  The flow depth to river top width relationship is described as a power function of the river depth as shown in equation \ref{eq:AR} \parencite{Buhman2002,Gates1996}.  
 \begin{equation}
 	Tw=\beta_{1} \cdot h^{\beta_{2}}
 	\label{eq:AR}
@@ -693,7 +718,7 @@ The mean of the percent difference between the deterministic and 1-D stochastic 
 \emph{II - define the reported flow rate uncertainty distributions}\\
 The U.S. Geological Survey (USGS) and the Colorado Department of Water Resources (CDWR) provides data for stream flow, water temperature, and specific conductance measurements required for the mass balance analysis.  Each data set they provide has its own uncertainty distribution.  The USGS has a standardized methodology to characterize the uncertainty with specific data sets.  This methodology was adopted by the Colorado Department of Water Resources.
 
-Stream flow data is provided in either 15-minute increments or average daily flow format, where average daily flow is the average of all of the 15-minute increment measurements taken during a calendar day.  The USGS provides three specific uncertainty distributions for average daily stream flow data which are described in every annual water data report \citep{USGS2006NWIS, USGS2007NWIS, USGS2008NWIS, USGS2009NWIS, USGS2010NWIS, USGS2011NWIS, USGS2012NWIS}.  The USGS calls these uncertainty distributions "ratings of accuracy".  These ratings are "excellent", "good", and "fair".  The "excellent" rating indicates that "95 percent of the daily discharges are within 5 percent of the true value".  The distributions expand to 10\% and 15\% for "good" and "fair" ratings, respectively.  There is a fourth rating used on some average daily stream flow data gathered in the LARB; "poor".  This rating is not specific as it states that 95 percent of the values are more than 15\% of the true value.  For this thesis, we have assumed that the "poor" rating indicates that 95 percent of the values are within 20 percent of the true value.
+Stream flow data is provided in either 15-minute increments or average daily flow format, where average daily flow is the average of all of the 15-minute increment measurements taken during a calendar day.  The USGS provides three specific uncertainty distributions for average daily stream flow data which are described in every annual water data report \parencite{USGS2006NWIS, USGS2007NWIS, USGS2008NWIS, USGS2009NWIS, USGS2010NWIS, USGS2011NWIS, USGS2012NWIS}.  The USGS calls these uncertainty distributions "ratings of accuracy".  These ratings are "excellent", "good", and "fair".  The "excellent" rating indicates that "95 percent of the daily discharges are within 5 percent of the true value".  The distributions expand to 10\% and 15\% for "good" and "fair" ratings, respectively.  There is a fourth rating used on some average daily stream flow data gathered in the LARB; "poor".  This rating is not specific as it states that 95 percent of the values are more than 15\% of the true value.  For this thesis, we have assumed that the "poor" rating indicates that 95 percent of the values are within 20 percent of the true value.
 
 Average daily stream flow is calculated using equation \ref{eq:flow and error1}.   
 \begin{equation}
@@ -1107,7 +1132,7 @@ The mean of the percent difference between the deterministic and 1-D stochastic 
 
 $ET_{ref}$ and precipitation were calculated with respect to the surface of the Arkansas R.  Storm runoff, evaporation from bank evaporation, and evapotranspiration from plant life within the river channel were not included in the calculation.  Storm runoff is difficult to estimate on a regional basis for a non-uniform rainfall event.  It was assumed that for the vast majority of rainfall events, surface runoff into the river would be negligible.  Evaporative losses from bank evaporation were neglected because this evaporation is outside of the study boundary.  While there are areas where vegetation is within the river's boundaries, transpiration losses are neglected because their magnitude and effect on the study region are not known.  All three of these neglected quantities are included in the unaccounted for flow definition in section
 
-CoAgMet uses the ASCE EWRI tall crop reference equation to calculate $ET_{ref}$ from weather data.  This equation is identical to the FAO Penman-Montieth equation \citep{walter2000asce,FAO56}:
+CoAgMet uses the ASCE EWRI tall crop reference equation to calculate $ET_{ref}$ from weather data.  This equation is identical to the FAO Penman-Montieth equation \parencite{walter2000asce,FAO56}:
 \begin{equation}
 \label{eq:ET}
 	ET_{ref}=\frac{0.408\Delta(R_n-G)+\gamma\frac{C_n}{T+273}u_2(e_s-e_a)}{\Delta+\gamma(1+0.34u_2)}
@@ -1164,7 +1189,7 @@ $K_w$ = & Open water coefficient\\
 $ET_{ref}$ = & ASCE EWRI Standardized Reference Evapotranspiration Equation, Tall value\\
 \end{tabular}\\
 
-$K_w$ was developed for the short reference crop $ET_ref$ equation.  Use of crop coefficients developed for the short crop reference equation with the tall crop (alfalfa) reference equation is prohibited  \citep{FAO56, Allen2011}.  Equation \ref{eq:ET Kconversion} is used to convert crop coefficients for use between the two ET reference equation results \citep{FAO56}
+$K_w$ was developed for the short reference crop $ET_ref$ equation.  Use of crop coefficients developed for the short crop reference equation with the tall crop (alfalfa) reference equation is prohibited  \parencite{FAO56, Allen2011}.  Equation \ref{eq:ET Kconversion} is used to convert crop coefficients for use between the two ET reference equation results \parencite{FAO56}
 \begin{equation}
 \label{eq:ET Kconversion}
 	K_{w}=K_\mathsf{ratio} \cdot K_{wt}

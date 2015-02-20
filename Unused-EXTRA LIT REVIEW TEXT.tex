@@ -43,3 +43,51 @@ None of the input variables used in this study can be removed without compromisi
 \citeauthor{Mueller2008} and this study use Monte Carlo simulation to determine a series of likely realities.  Statistics are taken of these likely realities to determine a probable range for the simulation results.  Another simultation method, Markov Chain Monte Carlo (MCMC), was not used in either study.  MCMC relies on the state of the variables in the previous time step to estimate a parameter in the new time step.  Since variable states in this system are independent of the previous time step, otherwise known as memoryless, MCMC is not used.
 
 \citet{Spanou2001} has performed a similar study using an object-oriented framework to predict multiple water quality constituents.  As with \citet{Mueller2008}, the data size is small compared to the data set used for this study.  Spanou's model works in a similar manner to the models developed in this study.  Part of his focus was to develop a software package that could be used for various scenarios and locations.  The purpose of this study was much more focused.  We only need to provide results for a single constituent over a specified, but large, time frame.  Once results are obtained, the likelihood that the model developed in this study will ever be run again is uncertain.
+
+
+
+
+UNUSED WATER BALANCE TEXT
+
+%If we assume that all flows moving into or out of the river reach are known or can be reasonably well estimated, then the volume of water being stored during any time step is the sum of the flows being added to the river reach minus the flows being removed from the river reach.  This model accounts for flows moving through two cross sections of the river reach, the contributions from tributaries and precipitation or contributions to irrigation canals and evapo-transpiration (ET).  It also accounts for measured, known point sources.  It does not account for unknown and unmeasured surface water flows, or the flux of water between the river channel and the riparian aquifer.  The complete water balance equation form used for both study reaches was developed by expanding the basic water balance equation (\ref{eq:qbalbasic}) to include all known, measurable values.
+
+%\begin{equation}
+%	\frac{\Delta S}{\Delta t}=\sum{Q_{inflow}}-\sum{Q_{outflow}}+P-E+\sum{Q_{NPS}}
+%	\label{eq:qbalbasic}
+%\end{equation}
+%\begin{tabular}{rl}
+%$\frac{\Delta S}{\Delta t}$ =&Stored volume change between time steps $(volume \cdot time^{-1})$\\
+%$\sum{Q_{inflow}}$=&Sum of measured flows entering the river section $(volume \cdot time^{-1})$\\
+%$\sum{Q_{outflow}}$=&Sum of measured flows leaving the river section $(volume \cdot time^{-1})$\\
+%$P$=&Precipitation in units of $volume \cdot time^{-1}$\\
+%$E$=&Evaporation in units of $volume \cdot time^{-1}$\\
+%$\sum{Q_{NPS}}$=&Sum of all flow rates to or from non-point sources $(volume \cdot time^{-1})$\\
+%\end{tabular}\\
+
+%The variable $\sum{Q_{UNPS}}$ is intended to capture all of the gains from and losses to the unaccounted for non-point sources and sinks and the riparian aquifer.  It is assumed that the unaccounted for non-point sources and sinks are relatively minor and intermittent.  They can include, but are not limited to, surface runoff from storm events, irrigation water returning directly from fields to the river, and groundwater.  Flows from the sum of the non-point sources $(Q_{UNPS})$ can be either added to or taken from the river reach.  The equation assumes that these flows are added to the river.  As such, positive values indicate that the river is gaining water from non-point sources and negative values indicate the river is losing water to non-point sinks.  For this study, we are assuming that the non-point source flows are dominated by groundwater interactions with the river channel.  Changing the unknown flow variable to only consider groundwater, rearranging the flow equation variables results in equation~\ref{eq:qbalbasic2}.
+
+%\begin{equation}
+%	Q_{GW}=\frac{\Delta S}{\Delta t}-\sum{Q_{inflow}}+\sum{Q_{outflow}}-P+E
+%	\label{eq:qbalbasic2}
+%\end{equation}
+%
+%Groundwater flows are not shown as a sum of flows like the measured inflow and outflows.  Considering them as a sum value implies that there is a way to separate them in some manner.  Groundwater contributions to the flow equation, either gains or losses, are variable along any river segment.  Grouping the variables by type produces equation~\ref{eq:qbalbasic3}, which is used as the final step of the computations.  All computations prior to this assume all storage changes, flows, precipitation, and evaporation are positive.  This step was used to help with book keeping.
+%
+%\begin{equation}
+%	Q_{GW}=\frac{\Delta S}{\Delta t}-Q_{Surface}-Q_{Atmosphere}
+%	\label{eq:qbalbasic3}
+%\end{equation}
+%Where\\
+%\begin{tabular}{rl}
+%$Q_{Surface} =$& $\sum{Q_{inflow}} - \sum{Q_{outflow}}$ Cumulative water flow rate.\\
+%$Q_{Atmosphere} =$&$P-E$ Cumulative effects of precipitation and evaporation.\\
+%\end{tabular}\\
+%
+%
+%
+%The eight computational models presented in the preceding list have one characteristic in common; all eight are time series models.  The reference time frames are identical for all eight models.  The time frame spans from 1 October 2006 to 30 September 2010.  The start and end dates are concurrent with the start of the 2007 water year and the end of the 2010 water year as defined by the USGS, respectively \parencite{USGS2014}.
+%
+%Since most of the data was readily available in average daily form, it seemed reasonable to set the time step within the time frame equal to one day.  The added benefit is that the results could be used to help calibrate MODFLOW and RT3D models developed under the same project for the same study regions as described in this thesis.
+%
+%Not all time steps with the time frame were found to be suitable for analysis.  A time step was deemed suitable only if all of the data points required for the respective selenium mass balance deterministic model were available.  It was determined that attempting to calculate with any number of missing data points or attempting to estimate the missing data points for a given time step would add additional immeasurable uncertainty to the results.  The number of required variables is 23 for the USR and 14 for the DSR.  For the USR, 1,085 of 1,461 days, or approximately 74\%, were found to be suitable for inclusion in the analysis.  For the DSR, 838 days, or approximately 57\% were found to be suitable.
+
