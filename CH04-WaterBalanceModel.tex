@@ -8,7 +8,7 @@
 
 \subsection*{Water Balance Model Equation.}
 %\emph{II - Justify use of equation}\\
-The purpose of the water balance model is to determine the volume of unaccounted for water in each reach.  We begin with a basic water balance model as describe in most hydrology texts \parencite{wanielista1997}.
+The purpose of the water balance model is to determine the volume of unaccounted for water in each reach.  We begin with a basic water balance model as describe in most hydrology texts --- \ref{chap:test} \parencite{wanielista1997}.
 \begin{equation}
 	\textnormal{change in storage = inputs - outputs} \nonumber
 \end{equation}
@@ -40,24 +40,23 @@ If we combine the terms that are unknown or unmeasured, we arive at the followin
 \end{equation}
 \begin{tabularx}{6in}{rX}
 	Where: \\
-	$ Q_{NPS} $ = & The sum of the gains and losses from/to non-point sources and sinks (NPS).\\ 
+	\Qnps = & The sum of gains from non-point sources and losses to non-point sinks $ \left( Q_{NPS} = R + B - T - F \right) $.\\ 
 	$ X $ = & The unknown gains and losses from/to unknown sources and sinks.\\
 \end{tabularx}\\
 
 %\emph{III - define $Q_U$ constituents}\\
-$ Q_{NPS} $ includes the non-point source gains from groundwater sources($ B $), non-point source losses to groudwater sinks {}$ F $), transpiration losses from plants in the river channel ($ T $), and gains from precipitation runoff from adjacent land ($ R $).  Additionally, this term includes ungauged flows leaving and entering the river.  Ungauged gains to the river are suspected to be primarily in the form of irrigation drainage from adjacent farmland.  Other sources could be due to errors in underestimating flows entering the river or overestimating flows leaving the river.  Ungauged losses from the river are suspected to be primarily in the form of minor or unauthorized witdrawls from the river channel.  Of the ungauged flows, irrigation drainage from adjacent farmlands is assumed to be the largest contributor.
+There is no reasonable method for differentiating the components of \Qnps, therefore the abbreviation NPS in this thesis refers to both non-point sources and non-point sinks.   \Qnps includes the non-point source gains from groundwater sources($ B $), non-point source losses to groudwater sinks {}$ F $), transpiration losses from plants in the river channel ($ T $), and gains from precipitation runoff from adjacent land ($ R $).  Additionally, this term includes ungauged flows leaving and entering the river.  Ungauged gains to the river are suspected to be primarily in the form of irrigation drainage from adjacent farmland.  Other sources could be due to errors in underestimating flows entering the river or overestimating flows leaving the river.  Ungauged losses from the river are suspected to be primarily in the form of minor or unauthorized witdrawls from the river channel.  Of the ungauged flows, irrigation drainage from adjacent farmlands is assumed to be the largest contributor.
 
 There are studies that have demonstrated water loss due to aquatic vegitation.  The models in this thesis do not include the riparian area.  They only extend to the interface between the physical soil/water boundary.  While it has been shown that native and non-native vegitation within the riparian zone contribute significantly to water loss within a slow moving or stagnant water body, there is no known study to determine the temporal and spatial relationship between these plants and a stream or river with a hydraulically connected aquifer.  The relationship between the river and aquifer is assumed to change with time and location along the channel.  At different places and times, plants within the riparian zone may be consuming water from the river before it enters the aquifer and at other times may be intercepting groundwater before it reaches the river channel.  Therefore, there is insufficient information to allow even a reasonable assumption on the role of riparian plant transpiration on stream flow.
 
-Within the river channel, it has been observed that there is very little rooted plant life.  There is undoubtably suspended microbial life that performs many biological functions within the river channel.  Again, the effect of this life on transpiration within the channel is unknown, but we assume it is a minor to insignificant contributor to $ U_{NPS} $.
+Within the river channel, it has been observed that there is very little rooted plant life.  There is undoubtably suspended microbial life that performs many biological functions within the river channel.  Again, the effect of this life on transpiration within the channel is unknown, but we assume it is a minor to insignificant contributor to \Qnps.
 
-The term $ X $ in equation \ref{eq:water01} is very valuable.  While the $ Q_{NPS} $ encompasses all of the known values that cannot be accounted for, the $ X $ term accounts for all of the unknown values that cannot be accounted for.  Combined, both terms account for known-unknowns and unknown-unknowns.  There are three reasonable methods to account for $ X $.  In one, we can assume that the value for $ X $ is insignificant and ignore it from the equation.  The second does not make the assumption that $ X $ is insignificant and concludes that it must be included.  The third assumes that there is no reasonable way to discerne between $ X $ and $ U_{NPS} $ from the results.  Therefore the two terms must be combined into a single term.  Since $ U_{NPS} $ already explicitly denotes an unknown quantity, we will continue to use this term to describe both the known-unknowns ($ Q_{NPS} $) and the unknown-unknowns ($ X $).
+The term $ X $ in equation \ref{eq:water01} is very valuable.  While the \Qnps encompasses all of the known values that cannot be accounted for, the $ X $ term accounts for all of the unknown values that cannot be accounted for.  Combined, both terms account for known-unknowns and unknown-unknowns.  There are three reasonable methods to account for $ X $.  In one, we can assume that the value for $ X $ is insignificant and ignore it from the equation.  The second does not make the assumption that $ X $ is insignificant and concludes that it must be included.  The third assumes that there is no reasonable way to discerne between $ X $ and \Qnps from the results.  Therefore the two terms must be combined into a single term.  Since \Qnps already explicitly denotes an unknown quantity, we will continue to use this term to describe both the known-unknowns (\Qnps) and the unknown-unknowns ($ X $).
 
 Re-arrangeing equation \ref{eq:water01} to solve for the unknown values produces equation \ref{water02}.  Due to the nearly identical method of calculating flow ($ Q $) and it's associated error and uncertainty, these terms were associated with each other.  Likewise, the precipitation ($ P $) and evaporation ($ E $) terms were associated with each other.
 \begin{equation}\
 Q_{NPS} = \left( Q_{out,DS} + \sum Q_{out} - Q_{in,US} - \sum Q_{in} \right) - \frac{\Delta S}{\Delta t} - \left( P + E \right)\\ \label{water02}
 \end{equation}
-
 
 \clearpage{}
 \section{Stochastic and Deterministic Models}
