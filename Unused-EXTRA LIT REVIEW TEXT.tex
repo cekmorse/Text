@@ -91,3 +91,17 @@ UNUSED WATER BALANCE TEXT
 %
 %Not all time steps with the time frame were found to be suitable for analysis.  A time step was deemed suitable only if all of the data points required for the respective selenium mass balance deterministic model were available.  It was determined that attempting to calculate with any number of missing data points or attempting to estimate the missing data points for a given time step would add additional immeasurable uncertainty to the results.  The number of required variables is 23 for the USR and 14 for the DSR.  For the USR, 1,085 of 1,461 days, or approximately 74\%, were found to be suitable for inclusion in the analysis.  For the DSR, 838 days, or approximately 57\% were found to be suitable.
 
+
+
+
+Stoch and Determ models
+
+This model was run for 10,000 itterations
+
+.  The first model was created such that solutions for individual realizations were calculated individually.  This model's computational form was extremely slow in producing fairly acceptable results.  It took approximately 2.5 days to calculate a little over 7,500 realizations with only five of the six monitored statistics reaching the desired point.  For some reason, the final change in skewness between successive groups of realizations was 3-5\% based on five model runs.  A second model was created such that the solutions were calculated in a batch format using matrix math.  Many sources with extensive and diverse computer code development knowledge stated that matrix math operations complete computations many orders of magnitude faster than the one calculation at a time method used in the first model.  This proved to be true as a 5,000 realization model was completed in just under 2.25 hours.
+
+One run was of the second stochastic model form was performed at 500 realizations to determine the minimum number of required realizations.  The mean, 2.5th and 97.5th percentile, variance, skewness, and kurtosis were the monitored statistics.  The statistics were considered acceptable when the change between calculations of the 1 to $r$ realization and the 1 to $r-1$ realization was less than 0.1\%.  It was found that these variables were acceptable or nearly acceptable shortly before the 500th realization.  A large factor of safety was added to this and 5000 realizations were performed.
+
+Deterministic models used the reported values from the input variables.  In all cases, the reported values were considered the expected values.  Therefore, the terms deterministic model value, reported value, and expected value were used interchangeably in this study as they all refer to the same values.  Stochastic model input variables were defined from distributions of the reported values.  They were generated as $t$ rows by $r$ columns matrices where $t$ was the number of time steps in the study time frame and $r$ was the number of realizations.
+
+The stochastic models were derived from the deterministic models with the addition of error terms.  The stochastic model was then converted into a computational stochastic model.  This models was debugged and validated by testing the random error distributions and comparing the final results to previous studies.  The computational deterministic models were then derived from the computational stochastic models by removing all of the error distributions from the computational code.  The deterministic models were then compared to the original spreadsheet models.

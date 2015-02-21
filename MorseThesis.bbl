@@ -190,6 +190,31 @@
       \field{year}{2012}
       \field{pages}{783\bibrangedash 792}
     \endentry
+    \entry{Besser1989}{article}{}
+      \name{labelname}{4}{}{%
+        {{uniquename=0,hash=959104ba5cd949435ec5772594547364}{Besser}{B\bibinitperiod}{John\bibnamedelima M.}{J\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=409e012b4a91b9df6df3cd532a9693e5}{Huckins}{H\bibinitperiod}{James\bibnamedelima N.}{J\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d011da109e3a0ae985b4ecbd0f869f27}{Little}{L\bibinitperiod}{Edward\bibnamedelima E.}{E\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1189b38671d7537b76c8a2538fb2f9ec}{La\bibnamedelima Point}{L\bibinitperiod\bibinitdelim P\bibinitperiod}{Thomas\bibnamedelima W.}{T\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=959104ba5cd949435ec5772594547364}{Besser}{B\bibinitperiod}{John\bibnamedelima M.}{J\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=409e012b4a91b9df6df3cd532a9693e5}{Huckins}{H\bibinitperiod}{James\bibnamedelima N.}{J\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d011da109e3a0ae985b4ecbd0f869f27}{Little}{L\bibinitperiod}{Edward\bibnamedelima E.}{E\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1189b38671d7537b76c8a2538fb2f9ec}{La\bibnamedelima Point}{L\bibinitperiod\bibinitdelim P\bibinitperiod}{Thomas\bibnamedelima W.}{T\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{447427c5a7f490804a46b5c455038ed3}
+      \strng{fullhash}{7c03646250cf6af9b9a3cd7889890a80}
+      \field{sortinit}{B}
+      \field{labelyear}{1989}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Distribution and Bioaccumulation of Seleniumin Aquatic Microcosms}
+      \field{journaltitle}{Environmental Pollution}
+      \field{title}{Distribution and Bioaccumulation of Seleniumin Aquatic Microcosms}
+      \field{volume}{62}
+      \field{year}{1989}
+      \field{pages}{1\bibrangedash 12}
+    \endentry
     \entry{Buhman2002}{article}{}
       \name{labelname}{3}{}{%
         {{uniquename=0,hash=6ff40ee93680c7995f34d4ac9a3856ec}{Buhman}{B\bibinitperiod}{Daniel\bibnamedelima L.}{D\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
@@ -257,6 +282,50 @@
       \field{title}{Detecting trends in evapotranspiration in Colorado}
       \field{year}{2009}
     \endentry
+    \entry{Clifton1989}{book}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=6f48206659d04783870add47414992b0}{Clifton}{C\bibinitperiod}{Daphne\bibnamedelima G.}{D\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=5faf49380ff7d5eeafb390d14b666d6a}{Gilliom}{G\bibinitperiod}{Robert\bibnamedelima J.}{R\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=6f48206659d04783870add47414992b0}{Clifton}{C\bibinitperiod}{Daphne\bibnamedelima G.}{D\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=5faf49380ff7d5eeafb390d14b666d6a}{Gilliom}{G\bibinitperiod}{Robert\bibnamedelima J.}{R\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {U.S. Geological Survey}%
+      }
+      \strng{namehash}{66727326311efd9f2043ef9cf4e60a5d}
+      \strng{fullhash}{66727326311efd9f2043ef9cf4e60a5d}
+      \field{sortinit}{C}
+      \field{labelyear}{1989}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Sources and concentrations of dissolved solids and selenium in the San Joaquin River and its tributaries, California, October 1985 to March 1987}
+      \field{number}{88-4217}
+      \field{series}{Water-Resources Investigations Report}
+      \field{title}{Sources and concentrations of dissolved solids and selenium in the San Joaquin River and its tributaries, California, October 1985 to March 1987}
+      \field{year}{1989}
+      \field{pages}{pages}
+    \endentry
+    \entry{2010Cody}{thesis}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=5895243111fc222207f2e64044d01275}{Cody}{C\bibinitperiod}{Brent\bibnamedelima M.}{B\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=5895243111fc222207f2e64044d01275}{Cody}{C\bibinitperiod}{Brent\bibnamedelima M.}{B\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Colorado State University}%
+      }
+      \strng{namehash}{5895243111fc222207f2e64044d01275}
+      \strng{fullhash}{5895243111fc222207f2e64044d01275}
+      \field{sortinit}{C}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Sources, Occurrence, And Mobilization Of Selenium In Colorado's Lower Arkansas River Valley}
+      \field{title}{Sources, Occurrence, And Mobilization Of Selenium In Colorado's Lower Arkansas River Valley}
+      \field{type}{phdthesis}
+      \field{year}{2010}
+    \endentry
     \entry{Csu2012}{online}{}
       \name{labelname}{1}{}{%
         {{uniquename=0,hash=8308a2a1cef18fe5ae24a1505a76471c}{{Colorado\bibnamedelimb Climate\bibnamedelimb Center}}{C\bibinitperiod}{}{}{}{}{}{}}%
@@ -299,6 +368,29 @@
       \field{title}{Geology of the Bighorn Mountains}
       \field{volume}{51}
       \field{year}{1906}
+    \endentry
+    \entry{2005Donnelly}{inproceedings}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=2225cea94e5a2060ae23b8b6156440fc}{Donnelly}{D\bibinitperiod}{Joseph\bibnamedelima P}{J\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=2,hash=eb627762db11c4a02267b95e554b2503}{Gates}{G\bibinitperiod}{Timothy\bibnamedelima K}{T\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=2225cea94e5a2060ae23b8b6156440fc}{Donnelly}{D\bibinitperiod}{Joseph\bibnamedelima P}{J\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=2,hash=eb627762db11c4a02267b95e554b2503}{Gates}{G\bibinitperiod}{Timothy\bibnamedelima K}{T\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {ASCE}%
+      }
+      \strng{namehash}{6ddb649845c8a9bfb065a81cfdaa0064}
+      \strng{fullhash}{6ddb649845c8a9bfb065a81cfdaa0064}
+      \field{sortinit}{D}
+      \field{labelyear}{2005}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Assessing irrigation-induced selenium and iron in the Lower Arkansas River Valley in Colorado}
+      \field{booktitle}{Impacts of Global Climate Change}
+      \field{title}{Assessing irrigation-induced selenium and iron in the Lower Arkansas River Valley in Colorado}
+      \field{year}{2005}
+      \field{pages}{1\bibrangedash 12}
     \endentry
     \entry{Gates1996}{article}{}
       \name{labelname}{2}{}{%
@@ -357,6 +449,142 @@
       \field{year}{2009}
       \field{pages}{2344\bibrangedash 2356}
     \endentry
+    \entry{Gersberg2006}{report}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=e08a2ed623d6fec41ca669e046884cec}{Gersberg}{G\bibinitperiod}{Richard\bibnamedelima M.}{R\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=e08a2ed623d6fec41ca669e046884cec}{Gersberg}{G\bibinitperiod}{Richard\bibnamedelima M.}{R\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{3}{%
+        {Southwest Consortium for Environmental Research}%
+        {Policy}%
+        {San Diego State University}%
+      }
+      \strng{namehash}{e08a2ed623d6fec41ca669e046884cec}
+      \strng{fullhash}{e08a2ed623d6fec41ca669e046884cec}
+      \field{sortinit}{G}
+      \field{labelyear}{2006}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Selenium in the New River and an Evaluation of Human Health Risk Reduction by the Brawley and Imperial Constructed Wetlands Demonstration Project}
+      \field{number}{W-06-3}
+      \field{title}{Selenium in the New River and an Evaluation of Human Health Risk Reduction by the Brawley and Imperial Constructed Wetlands Demonstration Project}
+      \field{type}{Summary and Final Report}
+      \field{year}{2006}
+    \endentry
+    \entry{gillespie1986}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=fbfc92ee30c2d5a854fc7dad3f86fd82}{Gillespie}{G\bibinitperiod}{Robert\bibnamedelima B}{R\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=160bf8adaa130369b03c4b82f67496ce}{Baumann}{B\bibinitperiod}{Paul\bibnamedelima C}{P\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=fbfc92ee30c2d5a854fc7dad3f86fd82}{Gillespie}{G\bibinitperiod}{Robert\bibnamedelima B}{R\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=160bf8adaa130369b03c4b82f67496ce}{Baumann}{B\bibinitperiod}{Paul\bibnamedelima C}{P\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{07a0cb7d6ce8e1125cdf6a39df3a6999}
+      \strng{fullhash}{07a0cb7d6ce8e1125cdf6a39df3a6999}
+      \field{sortinit}{G}
+      \field{labelyear}{1986}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Effects of high tissue concentrations of selenium on reproduction by bluegills}
+      \field{journaltitle}{Transactions of the American Fisheries Society}
+      \field{number}{2}
+      \field{title}{Effects of high tissue concentrations of selenium on reproduction by bluegills}
+      \field{volume}{115}
+      \field{year}{1986}
+      \field{pages}{208\bibrangedash 213}
+    \endentry
+    \entry{Hamilton1999}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=4f8d91d88948c7336ad48a20d77cbfda}{Hamilton}{H\bibinitperiod}{S.J.}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=c33e808c81b4614c8cc239658860ac72}{Lemly}{L\bibinitperiod}{A.D.}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=4f8d91d88948c7336ad48a20d77cbfda}{Hamilton}{H\bibinitperiod}{S.J.}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=c33e808c81b4614c8cc239658860ac72}{Lemly}{L\bibinitperiod}{A.D.}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{0b1768ebc4b8cab0cbaff08994c5e4b3}
+      \strng{fullhash}{0b1768ebc4b8cab0cbaff08994c5e4b3}
+      \field{sortinit}{H}
+      \field{labelyear}{1999}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Water-sediment controversy in setting environmental standards for selenium.}
+      \field{issn}{0147-6513}
+      \field{journaltitle}{Ecotoxicology and Environmental Safety}
+      \field{number}{3}
+      \field{title}{Water-sediment controversy in setting environmental standards for selenium.}
+      \field{volume}{44}
+      \field{year}{1999}
+      \field{pages}{227\bibrangedash 35}
+    \endentry
+    \entry{1999Jensen}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=1,hash=bc49e215939baa6204511e9ec33f5503}{Jensen}{J\bibinitperiod}{L.}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=1,hash=bc49e215939baa6204511e9ec33f5503}{Jensen}{J\bibinitperiod}{L.}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{bc49e215939baa6204511e9ec33f5503}
+      \strng{fullhash}{bc49e215939baa6204511e9ec33f5503}
+      \field{sortinit}{J}
+      \field{labelyear}{1999}
+      \field{datelabelsource}{}
+      \field{labeltitle}{History and importance of selenium for poultry}
+      \field{journaltitle}{A.L.Moxon Honorary Lecture}
+      \field{title}{History and importance of selenium for poultry}
+      \field{year}{1999}
+    \endentry
+    \entry{johnson2009}{article}{}
+      \name{labelname}{4}{}{%
+        {{uniquename=0,hash=24c3a216eab94193db2daacaca1dd7f1}{Johnson}{J\bibinitperiod}{Paula\bibnamedelima I}{P\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=66bd5d40759d9a24459d9ba041108020}{Gersberg}{G\bibinitperiod}{Richard\bibnamedelima M}{R\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=85c901075e28e2751c9242774b265cfc}{Rigby}{R\bibinitperiod}{Mark}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1c22b62d87a65730a5e37dcb70ff4d88}{Roy}{R\bibinitperiod}{Sujoy}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=24c3a216eab94193db2daacaca1dd7f1}{Johnson}{J\bibinitperiod}{Paula\bibnamedelima I}{P\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=66bd5d40759d9a24459d9ba041108020}{Gersberg}{G\bibinitperiod}{Richard\bibnamedelima M}{R\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=85c901075e28e2751c9242774b265cfc}{Rigby}{R\bibinitperiod}{Mark}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1c22b62d87a65730a5e37dcb70ff4d88}{Roy}{R\bibinitperiod}{Sujoy}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{f4403233675551bbdbbfe4ef31c65530}
+      \strng{fullhash}{461daa04787026590c49c0e5dd2da55e}
+      \field{sortinit}{J}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labeltitle}{The fate of selenium in the Imperial and Brawley constructed wetlands in the Imperial Valley (California)}
+      \field{journaltitle}{Ecological Engineering}
+      \field{number}{5}
+      \field{title}{The fate of selenium in the Imperial and Brawley constructed wetlands in the Imperial Valley (California)}
+      \field{volume}{35}
+      \field{year}{2009}
+      \field{pages}{908\bibrangedash 913}
+    \endentry
+    \entry{2014Kansas303d}{misc}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=6d914877b873ad0c20ed20104b29f459}{{Kansas\bibnamedelimb Department\bibnamedelimb of\bibnamedelimb Health\bibnamedelimb and\bibnamedelimb Environment}}{K\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=6d914877b873ad0c20ed20104b29f459}{{Kansas\bibnamedelimb Department\bibnamedelimb of\bibnamedelimb Health\bibnamedelimb and\bibnamedelimb Environment}}{K\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {State of Kansas}%
+      }
+      \strng{namehash}{6d914877b873ad0c20ed20104b29f459}
+      \strng{fullhash}{6d914877b873ad0c20ed20104b29f459}
+      \field{sortinit}{K}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labeltitle}{2014 Kansas 303(d) List}
+      \field{title}{2014 Kansas 303(d) List}
+      \field{year}{2014}
+    \endentry
     \entry{konikow1974}{article}{}
       \name{labelname}{2}{}{%
         {{uniquename=0,hash=b805530ea3d2b546c5d6560a78fce0cb}{Konikow}{K\bibinitperiod}{Leonard\bibnamedelima F}{L\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
@@ -381,6 +609,120 @@
       \field{volume}{10}
       \field{year}{1974}
       \field{pages}{546\bibrangedash 562}
+    \endentry
+    \entry{Lawson2001}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=4206e2a4db0d066730746fb993527060}{Lawson}{L\bibinitperiod}{N.M.}{N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7a1addcee33b437f63863218ff0815bb}{Mason}{M\bibinitperiod}{R.P.}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=4206e2a4db0d066730746fb993527060}{Lawson}{L\bibinitperiod}{N.M.}{N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7a1addcee33b437f63863218ff0815bb}{Mason}{M\bibinitperiod}{R.P.}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{886bdf8a02e70e0323408d85e231ed10}
+      \strng{fullhash}{886bdf8a02e70e0323408d85e231ed10}
+      \field{sortinit}{L}
+      \field{labelyear}{2001}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Concentration of mercury, methylmercury, cadmium, lead, arsenic, and selenium in the rain and stream water of two contrasting watersheds in western Maryland.}
+      \field{issn}{0043-1354}
+      \field{journaltitle}{Water research}
+      \field{number}{17}
+      \field{title}{Concentration of mercury, methylmercury, cadmium, lead, arsenic, and selenium in the rain and stream water of two contrasting watersheds in western Maryland.}
+      \field{volume}{35}
+      \field{year}{2001}
+      \field{pages}{4039\bibrangedash 52}
+    \endentry
+    \entry{Lemly1993}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=2,hash=253c1a457b68205eb5c5e09e39239a20}{Lemly}{L\bibinitperiod}{A.\bibnamedelimi Dennis}{A\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=2,hash=253c1a457b68205eb5c5e09e39239a20}{Lemly}{L\bibinitperiod}{A.\bibnamedelimi Dennis}{A\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{253c1a457b68205eb5c5e09e39239a20}
+      \strng{fullhash}{253c1a457b68205eb5c5e09e39239a20}
+      \field{sortinit}{L}
+      \field{labelyear}{1993}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Metabolic stress during winter increases the toxicity of selenium to fish}
+      \field{issn}{0166-445X}
+      \field{journaltitle}{Aquatic Toxicology}
+      \field{number}{1{\^a}\x{fffd}\x{fffd}\x{fffd}\x{fffd}\x{fffd}\x{fffd}\x{fffd}\x{fffd}2}
+      \field{title}{Metabolic stress during winter increases the toxicity of selenium to fish}
+      \field{volume}{27}
+      \field{year}{1993}
+      \field{pages}{133\bibrangedash 158}
+      \keyw{Selenium}
+    \endentry
+    \entry{Lemly2002}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=2,hash=7a4fc1459ff1ddf417d6d750f9774686}{Lemly}{L\bibinitperiod}{A\bibnamedelima Dennis}{A\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=2,hash=7a4fc1459ff1ddf417d6d750f9774686}{Lemly}{L\bibinitperiod}{A\bibnamedelima Dennis}{A\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{7a4fc1459ff1ddf417d6d750f9774686}
+      \strng{fullhash}{7a4fc1459ff1ddf417d6d750f9774686}
+      \field{sortinit}{L}
+      \field{labelyear}{2002}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Symptoms and implications of selenium toxicity in fish: the Belews Lake case example}
+      \field{journaltitle}{Aquatic Toxicology}
+      \field{number}{1}
+      \field{title}{Symptoms and implications of selenium toxicity in fish: the Belews Lake case example}
+      \field{volume}{57}
+      \field{year}{2002}
+      \field{pages}{39\bibrangedash 49}
+    \endentry
+    \entry{Lemly1988}{book}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=1,hash=c33e808c81b4614c8cc239658860ac72}{Lemly}{L\bibinitperiod}{A.D.}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=dc9253f26681d2ab9ff8b0e8ab9dbc30}{Smith}{S\bibinitperiod}{G.J.}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=1,hash=c33e808c81b4614c8cc239658860ac72}{Lemly}{L\bibinitperiod}{A.D.}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=dc9253f26681d2ab9ff8b0e8ab9dbc30}{Smith}{S\bibinitperiod}{G.J.}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{623677108cefc2f057a159937e76aafb}
+      \strng{fullhash}{623677108cefc2f057a159937e76aafb}
+      \field{sortinit}{L}
+      \field{labelyear}{1988}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Aquatic cycling of selenium: implications for fish and wildlife}
+      \field{abstract}{Selenium, a non-metallic trace element, is readily accumulated by aquatic organisms. The degree of mobility or cycling rate of selenium in an aquatic ecosystem will largely determine whether toxicity occurs and how long the environmental hazard remains. The selenium cycle is made up of immobilization and mobilization processes that move the element between organisms, water, and sediment, with kinetics determined by chemical and physical factors related to the type of habitat present and its spatial variability. Because of its ability to bioaccumulate and cause adverse reproductive effects at low environmental concentrations, selenium should be recognized as a contaminant with the potential to severely impact fish and wildlife populations.}
+      \field{month}{01}
+      \field{title}{Aquatic cycling of selenium: implications for fish and wildlife}
+      \field{year}{1988}
+    \endentry
+    \entry{2000luoma}{book}{}
+      \name{labelname}{4}{}{%
+        {{uniquename=0,hash=8d60411a4c105d51ab3b05b795ade167}{Luoma}{L\bibinitperiod}{Samuel\bibnamedelima N}{S\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=289da26fc53523bcefcf97c865987d26}{Presser}{P\bibinitperiod}{TS}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0e03d215949ca644f8a1ce0c5b3f4594}{County}{C\bibinitperiod}{Contra\bibnamedelima Costa}{C\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=21a4faf4c50b0bb931511576830e9bd6}{District}{D\bibinitperiod}{Contra\bibnamedelimb Costa\bibnamedelima Water}{C\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=8d60411a4c105d51ab3b05b795ade167}{Luoma}{L\bibinitperiod}{Samuel\bibnamedelima N}{S\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=289da26fc53523bcefcf97c865987d26}{Presser}{P\bibinitperiod}{TS}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0e03d215949ca644f8a1ce0c5b3f4594}{County}{C\bibinitperiod}{Contra\bibnamedelima Costa}{C\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=21a4faf4c50b0bb931511576830e9bd6}{District}{D\bibinitperiod}{Contra\bibnamedelimb Costa\bibnamedelima Water}{C\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {US Department of the Interior, US Geological Survey}%
+      }
+      \strng{namehash}{457953983b913ced2a91abc290820e1e}
+      \strng{fullhash}{e542f442d332a057ba745d9b3e52c0de}
+      \field{sortinit}{L}
+      \field{labelyear}{2000}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Forecasting selenium discharges to the San Francisco Bay-Delta Estuary: ecological effects of a proposed San Luis Drain extension}
+      \field{title}{Forecasting selenium discharges to the San Francisco Bay-Delta Estuary: ecological effects of a proposed San Luis Drain extension}
+      \field{year}{2000}
     \endentry
     \entry{Miller2010}{report}{}
       \name{labelname}{4}{}{%
@@ -460,6 +802,55 @@
       \field{year}{2013}
       \field{pages}{237\bibrangedash 251}
     \endentry
+    \entry{Mueller2008}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=23921ccbd5ce25192a2915047d33b2f6}{Mueller-Price}{M\bibinithyphendelim P\bibinitperiod}{Jennifer}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=2,hash=fcc580849cc197f351412ef9d9e56453}{Gates}{G\bibinitperiod}{Timmothy\bibnamedelima K.}{T\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=23921ccbd5ce25192a2915047d33b2f6}{Mueller-Price}{M\bibinithyphendelim P\bibinitperiod}{Jennifer}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=2,hash=fcc580849cc197f351412ef9d9e56453}{Gates}{G\bibinitperiod}{Timmothy\bibnamedelima K.}{T\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f8525c96409b8cbff8ac8799294e9711}
+      \strng{fullhash}{f8525c96409b8cbff8ac8799294e9711}
+      \field{sortinit}{M}
+      \field{labelyear}{2008}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Assessing uncertainty in mass balance calculation of river nonpoint source loads}
+      \field{issn}{0733-9372}
+      \field{journaltitle}{Journal of Environmental Engineering}
+      \field{number}{4}
+      \field{title}{Assessing uncertainty in mass balance calculation of river nonpoint source loads}
+      \field{volume}{134}
+      \field{year}{2008}
+      \field{pages}{247\bibrangedash 258}
+    \endentry
+    \entry{2008naftz}{article}{}
+      \name{labelname}{5}{}{%
+        {{uniquename=0,hash=41d4f4687b4709d51da0fe5ea40b6fcf}{Naftz}{N\bibinitperiod}{David\bibnamedelima L}{D\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b155a308f71221bc87dd0cc36c9103df}{Johnson}{J\bibinitperiod}{William\bibnamedelima P}{W\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=43dcf45716011132f79a4309e6868510}{Freeman}{F\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=25ae764063e5dd843fe68e955f9053ab}{Beisner}{B\bibinitperiod}{Kimberly}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ddd74e6bf813c3f67f80935d285b8dc8}{Diez}{D\bibinitperiod}{X}{X\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{uniquename=0,hash=41d4f4687b4709d51da0fe5ea40b6fcf}{Naftz}{N\bibinitperiod}{David\bibnamedelima L}{D\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b155a308f71221bc87dd0cc36c9103df}{Johnson}{J\bibinitperiod}{William\bibnamedelima P}{W\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=43dcf45716011132f79a4309e6868510}{Freeman}{F\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=25ae764063e5dd843fe68e955f9053ab}{Beisner}{B\bibinitperiod}{Kimberly}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ddd74e6bf813c3f67f80935d285b8dc8}{Diez}{D\bibinitperiod}{X}{X\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{def47d864c68846c37444b3bb3b0a642}
+      \strng{fullhash}{81098daae01f8c2cdf66f56434e6e65a}
+      \field{sortinit}{N}
+      \field{labelyear}{2008}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Estimation of selenium loads entering the south arm of Great Salt Lake, Utah}
+      \field{journaltitle}{US Geological Survey scientific investigations report}
+      \field{title}{Estimation of selenium loads entering the south arm of Great Salt Lake, Utah}
+      \field{volume}{5069}
+      \field{year}{2008}
+    \endentry
     \entry{Nagler2010a}{inbook}{}
       \name{labelname}{4}{}{%
         {{uniquename=0,hash=94146b9dea8991cc04ed3e7ca72894a2}{Nagler}{N\bibinitperiod}{Pamela\bibnamedelima L.}{P\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
@@ -487,6 +878,118 @@
       \field{title}{Distribution and Abundance of Saltcedar and Russian Olive in the Western United States}
       \field{year}{2010}
       \field{pages}{7\bibrangedash 32}
+    \endentry
+    \entry{navarro2000}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=5cb96fc79e543b9f5c5cfd40616fcb16}{Navarro-Alarc{\'o}n}{N\bibinithyphendelim A\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b6d6666438c01c576d825846d44894b3}{L{\'o}pez-Mart{\'\i}nez}{L\bibinithyphendelim M\bibinitperiod}{MC}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=5cb96fc79e543b9f5c5cfd40616fcb16}{Navarro-Alarc{\'o}n}{N\bibinithyphendelim A\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b6d6666438c01c576d825846d44894b3}{L{\'o}pez-Mart{\'\i}nez}{L\bibinithyphendelim M\bibinitperiod}{MC}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{4bdf1daee56b858e783544b33dac5556}
+      \strng{fullhash}{4bdf1daee56b858e783544b33dac5556}
+      \field{sortinit}{N}
+      \field{labelyear}{2000}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Essentiality of selenium in the human body: relationship with different diseases}
+      \field{journaltitle}{Science of the Total Environment}
+      \field{number}{1}
+      \field{title}{Essentiality of selenium in the human body: relationship with different diseases}
+      \field{volume}{249}
+      \field{year}{2000}
+      \field{pages}{347\bibrangedash 371}
+    \endentry
+    \entry{Ohlendorf1986}{article}{}
+      \name{labelname}{4}{}{%
+        {{uniquename=0,hash=062a361024fd6cb1533a32e46956af71}{Ohlendorf}{O\bibinitperiod}{Harry\bibnamedelima M.}{H\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=86880f14326d261083253afcb7cffcde}{Hoffman}{H\bibinitperiod}{David\bibnamedelima J.}{D\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9094ea9bfc376bf637100ea46641ef6c}{Saiki}{S\bibinitperiod}{Michael\bibnamedelima K.}{M\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8246d4f69c3f248a3ee7703d546c1c9a}{Aldrich}{A\bibinitperiod}{Thomas\bibnamedelima W.}{T\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=062a361024fd6cb1533a32e46956af71}{Ohlendorf}{O\bibinitperiod}{Harry\bibnamedelima M.}{H\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=86880f14326d261083253afcb7cffcde}{Hoffman}{H\bibinitperiod}{David\bibnamedelima J.}{D\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9094ea9bfc376bf637100ea46641ef6c}{Saiki}{S\bibinitperiod}{Michael\bibnamedelima K.}{M\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8246d4f69c3f248a3ee7703d546c1c9a}{Aldrich}{A\bibinitperiod}{Thomas\bibnamedelima W.}{T\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{5b1a3d71a7e256f6d5a2275db9c600da}
+      \strng{fullhash}{440f2dc8f0474557a5703dd990874e93}
+      \field{sortinit}{O}
+      \field{labelyear}{1986}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Embryonic mortality and abnormalities of aquatic birds: Apparent impacts of selenium from irrigation drainwater}
+      \field{issn}{0048-9697}
+      \field{journaltitle}{Science of The Total Environment}
+      \field{number}{1{\^a}\x{fffd}\x{fffd}\x{fffd}\x{fffd}\x{fffd}\x{fffd}\x{fffd}\x{fffd}2}
+      \field{title}{Embryonic mortality and abnormalities of aquatic birds: Apparent impacts of selenium from irrigation drainwater}
+      \field{volume}{52}
+      \field{year}{1986}
+      \field{pages}{49\bibrangedash 63}
+    \endentry
+    \entry{oliver2009}{article}{}
+      \name{labelname}{5}{}{%
+        {{uniquename=0,hash=17a12126a34885c2f45c9fda102a8240}{Oliver}{O\bibinitperiod}{Wade}{W\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=017d3c8b32f1f93918f89296dcc61075}{Fuller}{F\bibinitperiod}{Christopher}{C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=41d4f4687b4709d51da0fe5ea40b6fcf}{Naftz}{N\bibinitperiod}{David\bibnamedelima L}{D\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b155a308f71221bc87dd0cc36c9103df}{Johnson}{J\bibinitperiod}{William\bibnamedelima P}{W\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=5217b84857452222fa632083606126b9}{Diaz}{D\bibinitperiod}{Ximena}{X\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{uniquename=0,hash=17a12126a34885c2f45c9fda102a8240}{Oliver}{O\bibinitperiod}{Wade}{W\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=017d3c8b32f1f93918f89296dcc61075}{Fuller}{F\bibinitperiod}{Christopher}{C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=41d4f4687b4709d51da0fe5ea40b6fcf}{Naftz}{N\bibinitperiod}{David\bibnamedelima L}{D\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b155a308f71221bc87dd0cc36c9103df}{Johnson}{J\bibinitperiod}{William\bibnamedelima P}{W\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=5217b84857452222fa632083606126b9}{Diaz}{D\bibinitperiod}{Ximena}{X\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{264047b2b4849e11622eac89be13edfc}
+      \strng{fullhash}{0fdc6d614f69640cfffc3a71695b4481}
+      \field{sortinit}{O}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Estimating selenium removal by sedimentation from the Great Salt Lake, Utah}
+      \field{journaltitle}{Applied Geochemistry}
+      \field{number}{5}
+      \field{title}{Estimating selenium removal by sedimentation from the Great Salt Lake, Utah}
+      \field{volume}{24}
+      \field{year}{2009}
+      \field{pages}{936\bibrangedash 949}
+    \endentry
+    \entry{Oram2008}{article}{}
+      \name{labelname}{5}{}{%
+        {{uniquename=0,hash=5c46f335dff7b4471bdf060ea49ea149}{Oram}{O\bibinitperiod}{Libbie\bibnamedelima L.}{L\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=f90c81641ba6977552303903375e215b}{Strawn}{S\bibinitperiod}{Daniel\bibnamedelima G.}{D\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=27c565841c3add47a6401b821562fc8c}{Marcus}{M\bibinitperiod}{Matthew\bibnamedelima A.}{M\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=dad2308914e7ef55fe005232ff255d07}{Fakra}{F\bibinitperiod}{Sirine\bibnamedelima C.}{S\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7665cfaddac2e5ebaad63d3d03acba5e}{M{\"o}ller}{M\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{uniquename=0,hash=5c46f335dff7b4471bdf060ea49ea149}{Oram}{O\bibinitperiod}{Libbie\bibnamedelima L.}{L\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=f90c81641ba6977552303903375e215b}{Strawn}{S\bibinitperiod}{Daniel\bibnamedelima G.}{D\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=27c565841c3add47a6401b821562fc8c}{Marcus}{M\bibinitperiod}{Matthew\bibnamedelima A.}{M\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=dad2308914e7ef55fe005232ff255d07}{Fakra}{F\bibinitperiod}{Sirine\bibnamedelima C.}{S\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7665cfaddac2e5ebaad63d3d03acba5e}{M{\"o}ller}{M\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{78ded3d5a86f509c5383e53b40ba3c10}
+      \strng{fullhash}{1ce2678cfbf6628028bd401fdf050f19}
+      \field{sortinit}{O}
+      \field{labelyear}{2008}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Macro- and Microscale Investigation of Selenium Speciation in Blackfoot River, Idaho Sediments}
+      \field{issn}{0013-936X}
+      \field{journaltitle}{Environ. Sci. Technol. Environmental Science \& Technology}
+      \field{number}{18}
+      \field{title}{Macro- and Microscale Investigation of Selenium Speciation in Blackfoot River, Idaho Sediments}
+      \field{volume}{42}
+      \field{year}{2008}
+      \field{pages}{6830\bibrangedash 6836}
     \endentry
     \entry{Painter1940}{book}{}
       \name{labelname}{1}{}{%
@@ -555,6 +1058,128 @@
       \field{type}{Geological Survey Water-Supply Paper}
       \field{year}{1982}
     \endentry
+    \entry{rayman2000}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=95952ed1f6833bbf53315fdc9eccfcc3}{Rayman}{R\bibinitperiod}{Margaret\bibnamedelima P}{M\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=95952ed1f6833bbf53315fdc9eccfcc3}{Rayman}{R\bibinitperiod}{Margaret\bibnamedelima P}{M\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{95952ed1f6833bbf53315fdc9eccfcc3}
+      \strng{fullhash}{95952ed1f6833bbf53315fdc9eccfcc3}
+      \field{sortinit}{R}
+      \field{labelyear}{2000}
+      \field{datelabelsource}{}
+      \field{labeltitle}{The importance of selenium to human health}
+      \field{journaltitle}{The lancet}
+      \field{number}{9225}
+      \field{title}{The importance of selenium to human health}
+      \field{volume}{356}
+      \field{year}{2000}
+      \field{pages}{233\bibrangedash 241}
+    \endentry
+    \entry{Rohwer1931}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=6f4060acdfbf4a48be4c697951dfe4b3}{Rohwer}{R\bibinitperiod}{Carl}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=6f4060acdfbf4a48be4c697951dfe4b3}{Rohwer}{R\bibinitperiod}{Carl}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {U.S. Department of Agriculture}%
+      }
+      \strng{namehash}{6f4060acdfbf4a48be4c697951dfe4b3}
+      \strng{fullhash}{6f4060acdfbf4a48be4c697951dfe4b3}
+      \field{sortinit}{R}
+      \field{labelyear}{1931}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Evaporation From Free Water Surfaces. Technical Bulletin No. 271}
+      \field{journaltitle}{Bureau of Agricultural Engineering}
+      \field{title}{Evaporation From Free Water Surfaces. Technical Bulletin No. 271}
+      \field{year}{1931}
+    \endentry
+    \entry{roman2014}{article}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=57da853944b026c2bdd17a8167f937fc}{Roman}{R\bibinitperiod}{Marco}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b641f0b8b9837e7deefdb16efa975ce5}{Jitaru}{J\bibinitperiod}{Petru}{P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=696515a45cc25f15970627f2e77f13d9}{Barbante}{B\bibinitperiod}{Carlo}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=57da853944b026c2bdd17a8167f937fc}{Roman}{R\bibinitperiod}{Marco}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b641f0b8b9837e7deefdb16efa975ce5}{Jitaru}{J\bibinitperiod}{Petru}{P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=696515a45cc25f15970627f2e77f13d9}{Barbante}{B\bibinitperiod}{Carlo}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Royal Society of Chemistry}%
+      }
+      \strng{namehash}{a57866faf4e6bb678bfda0d600f26841}
+      \strng{fullhash}{a57866faf4e6bb678bfda0d600f26841}
+      \field{sortinit}{R}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Selenium biochemistry and its role for human health}
+      \field{journaltitle}{Metallomics}
+      \field{number}{1}
+      \field{title}{Selenium biochemistry and its role for human health}
+      \field{volume}{6}
+      \field{year}{2014}
+      \field{pages}{25\bibrangedash 54}
+    \endentry
+    \entry{Saiki1993}{article}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=9094ea9bfc376bf637100ea46641ef6c}{Saiki}{S\bibinitperiod}{Michael\bibnamedelima K.}{M\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b7a849b09601d774664228d2c8cf0c7c}{Jennings}{J\bibinitperiod}{Mark\bibnamedelima R.}{M\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b3cc3989ad5213cc2016f8b52a56573a}{Brumbaugh}{B\bibinitperiod}{William\bibnamedelima G.}{W\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=9094ea9bfc376bf637100ea46641ef6c}{Saiki}{S\bibinitperiod}{Michael\bibnamedelima K.}{M\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b7a849b09601d774664228d2c8cf0c7c}{Jennings}{J\bibinitperiod}{Mark\bibnamedelima R.}{M\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b3cc3989ad5213cc2016f8b52a56573a}{Brumbaugh}{B\bibinitperiod}{William\bibnamedelima G.}{W\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8e2d2163216b74d68a12ec6d27e5d89b}
+      \strng{fullhash}{8e2d2163216b74d68a12ec6d27e5d89b}
+      \field{sortinit}{S}
+      \field{labelyear}{1993}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Boron, Molybdenum, and Selenium in Aquatic Food Chains from the Lower San Joaquin River and Its Tributaries, California}
+      \field{journaltitle}{Archives of Environmental Contamination and Toxicology}
+      \field{title}{Boron, Molybdenum, and Selenium in Aquatic Food Chains from the Lower San Joaquin River and Its Tributaries, California}
+      \field{volume}{24}
+      \field{year}{1993}
+      \field{pages}{307\bibrangedash 319}
+    \endentry
+    \entry{Saltelli2004}{book}{}
+      \name{labelname}{4}{}{%
+        {{uniquename=0,hash=40222053beb161f856f5eea1c63522f9}{Saltelli}{S\bibinitperiod}{Andrea}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=31a88c2ce810172e651132ba1ae0cd6c}{Tarantola}{T\bibinitperiod}{Stefano}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=f0ea0d2b6145cbab09a9668234d4d631}{Campolongo}{C\bibinitperiod}{Francesca}{F\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=6ca2956f7c035175028804cc31f1791b}{Ratto}{R\bibinitperiod}{Marco}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=40222053beb161f856f5eea1c63522f9}{Saltelli}{S\bibinitperiod}{Andrea}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=31a88c2ce810172e651132ba1ae0cd6c}{Tarantola}{T\bibinitperiod}{Stefano}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=f0ea0d2b6145cbab09a9668234d4d631}{Campolongo}{C\bibinitperiod}{Francesca}{F\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=6ca2956f7c035175028804cc31f1791b}{Ratto}{R\bibinitperiod}{Marco}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Halsted Press}%
+      }
+      \strng{namehash}{6bf91641f4c7b586ec8db024e8a3b0fe}
+      \strng{fullhash}{2cc3070ec5d4209ec354fec737f6230b}
+      \field{sortinit}{S}
+      \field{labelyear}{2004}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Sensitivity Analysis in Practice: A Guide to Assessing Scientific Models}
+      \field{isbn}{0470870931}
+      \field{title}{Sensitivity Analysis in Practice: A Guide to Assessing Scientific Models}
+      \field{year}{2004}
+    \endentry
     \entry{USGS2010TWRI}{report}{}
       \name{labelname}{2}{}{%
         {{uniquename=0,hash=ce10978088d8ce0bc1188d12499aa7c4}{Sauer}{S\bibinitperiod}{Vernon\bibnamedelima B.}{V\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
@@ -577,16 +1202,93 @@
       \field{type}{techreport}
       \field{year}{2010}
     \endentry
+    \entry{schwarz1957}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=00d0cd8739b90e48d5cfcc4dd755a728}{Schwarz}{S\bibinitperiod}{Klaus}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0c752f350d2ae1743cf1f14115da24f5}{Foltz}{F\bibinitperiod}{Calvin\bibnamedelima M}{C\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=00d0cd8739b90e48d5cfcc4dd755a728}{Schwarz}{S\bibinitperiod}{Klaus}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0c752f350d2ae1743cf1f14115da24f5}{Foltz}{F\bibinitperiod}{Calvin\bibnamedelima M}{C\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {ACS Publications}%
+      }
+      \strng{namehash}{82aeb60d8d6c58b0cd9d40cbe8698a50}
+      \strng{fullhash}{82aeb60d8d6c58b0cd9d40cbe8698a50}
+      \field{sortinit}{S}
+      \field{labelyear}{1957}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Selenium as an integral part of factor 3 against dietary necrotic liver degeneration}
+      \field{journaltitle}{Journal of the American Chemical Society}
+      \field{number}{12}
+      \field{title}{Selenium as an integral part of factor 3 against dietary necrotic liver degeneration}
+      \field{volume}{79}
+      \field{year}{1957}
+      \field{pages}{3292\bibrangedash 3293}
+    \endentry
+    \entry{scott1973}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=dfafaa83369daab89c3bbbced9a6706a}{Scott}{S\bibinitperiod}{ML}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=dfafaa83369daab89c3bbbced9a6706a}{Scott}{S\bibinitperiod}{ML}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Am Soc Nutrition}%
+      }
+      \strng{namehash}{dfafaa83369daab89c3bbbced9a6706a}
+      \strng{fullhash}{dfafaa83369daab89c3bbbced9a6706a}
+      \field{sortinit}{S}
+      \field{labelyear}{1973}
+      \field{datelabelsource}{}
+      \field{labeltitle}{The selenium dilemma}
+      \field{journaltitle}{The Journal of nutrition}
+      \field{number}{6}
+      \field{title}{The selenium dilemma}
+      \field{volume}{103}
+      \field{year}{1973}
+      \field{pages}{803\bibrangedash 810}
+    \endentry
+    \entry{scott1967}{article}{}
+      \name{labelname}{4}{uniquelist=1}{%
+        {{uniquename=0,hash=dfafaa83369daab89c3bbbced9a6706a}{Scott}{S\bibinitperiod}{ML}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=924d58421a9ef81b479cbadd1ee32b6e}{Olson}{O\bibinitperiod}{G}{G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=5d6ddbcd3748a68f5256e6d3570ecc99}{Krook}{K\bibinitperiod}{L}{L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=3b8c6f3b9323d2e1aa73423c2e0b9f07}{Brown}{B\bibinitperiod}{WR}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{uniquelist=1}{%
+        {{uniquename=0,hash=dfafaa83369daab89c3bbbced9a6706a}{Scott}{S\bibinitperiod}{ML}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=924d58421a9ef81b479cbadd1ee32b6e}{Olson}{O\bibinitperiod}{G}{G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=5d6ddbcd3748a68f5256e6d3570ecc99}{Krook}{K\bibinitperiod}{L}{L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=3b8c6f3b9323d2e1aa73423c2e0b9f07}{Brown}{B\bibinitperiod}{WR}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Am Soc Nutrition}%
+      }
+      \strng{namehash}{35a7b7dee2d30c753258f2a613f1a722}
+      \strng{fullhash}{b5dee369b66cfbefae0599e908cff96e}
+      \field{sortinit}{S}
+      \field{labelyear}{1967}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Selenium-responsive myopathies of myocardium and of smooth muscle in the young poult}
+      \field{journaltitle}{The Journal of nutrition}
+      \field{number}{4}
+      \field{title}{Selenium-responsive myopathies of myocardium and of smooth muscle in the young poult}
+      \field{volume}{91}
+      \field{year}{1967}
+      \field{pages}{573\bibrangedash 583}
+    \endentry
     \entry{2014Smith}{report}{}
       \name{labelname}{5}{}{%
-        {{uniquename=0,hash=401d4e0059052f4b87256a357d367843}{Smith}{S\bibinitperiod}{David\bibnamedelima B.}{D\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=401d4e0059052f4b87256a357d367843}{Smith}{S\bibinitperiod}{David\bibnamedelima B.}{D\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=08c6f57e8951f1ea65758ab7b739aebf}{Cannon}{C\bibinitperiod}{William\bibnamedelima F.}{W\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=2a51fbf8a76cee7fa87c40f0a5c177f3}{Woodruff}{W\bibinitperiod}{Laurel\bibnamedelima G.}{L\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=a61cb769b0a78eaff0683979cb2b9672}{Solano}{S\bibinitperiod}{Federico}{F\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=6e407807361b99c40c3847465013a0cc}{Ellefsen}{E\bibinitperiod}{Karl\bibnamedelima J.}{K\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{5}{}{%
-        {{uniquename=0,hash=401d4e0059052f4b87256a357d367843}{Smith}{S\bibinitperiod}{David\bibnamedelima B.}{D\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=401d4e0059052f4b87256a357d367843}{Smith}{S\bibinitperiod}{David\bibnamedelima B.}{D\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=08c6f57e8951f1ea65758ab7b739aebf}{Cannon}{C\bibinitperiod}{William\bibnamedelima F.}{W\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=2a51fbf8a76cee7fa87c40f0a5c177f3}{Woodruff}{W\bibinitperiod}{Laurel\bibnamedelima G.}{L\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=a61cb769b0a78eaff0683979cb2b9672}{Solano}{S\bibinitperiod}{Federico}{F\bibinitperiod}{}{}{}{}}%
@@ -607,6 +1309,78 @@
       \field{title}{Geochemical and Mineralogical Maps for Soils of the Conterminous United States, Open-File Report 2014-1082}
       \field{type}{techreport}
       \field{year}{2014}
+    \endentry
+    \entry{Sorensen2009}{article}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=d7d237c706b836d8df90b5c07ff04849}{Sorensen}{S\bibinitperiod}{Mary\bibnamedelima A.}{M\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=328264350f15c664abadc2365c4afdaf}{Parker}{P\bibinitperiod}{David\bibnamedelima R.}{D\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=233a96bceb87576c85296d9253554045}{Trumble}{T\bibinitperiod}{John\bibnamedelima T.}{J\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=d7d237c706b836d8df90b5c07ff04849}{Sorensen}{S\bibinitperiod}{Mary\bibnamedelima A.}{M\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=328264350f15c664abadc2365c4afdaf}{Parker}{P\bibinitperiod}{David\bibnamedelima R.}{D\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=233a96bceb87576c85296d9253554045}{Trumble}{T\bibinitperiod}{John\bibnamedelima T.}{J\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{cb955095efc845a069914b69d99d2efb}
+      \strng{fullhash}{cb955095efc845a069914b69d99d2efb}
+      \field{sortinit}{S}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Effects of pollutant accumulation by the invasive weed saltcedar (Tamarix ramosissima) on the biological control agent Diorhabda elongata (Coleoptera: Chrysomelidae)}
+      \field{issn}{0269-7491}
+      \field{journaltitle}{Environmental Pollution Environmental Pollution}
+      \field{number}{2}
+      \field{title}{Effects of pollutant accumulation by the invasive weed saltcedar (Tamarix ramosissima) on the biological control agent Diorhabda elongata (Coleoptera: Chrysomelidae)}
+      \field{volume}{157}
+      \field{year}{2009}
+      \field{pages}{384\bibrangedash 391}
+    \endentry
+    \entry{2002Spallholz}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=b0ecc1662cbe6c3d3d4342b22b5e4cf3}{Spallholz}{S\bibinitperiod}{Julian\bibnamedelima E}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7040f992564e94a3cd5e2073fc2fc681}{Hoffman}{H\bibinitperiod}{David\bibnamedelima J}{D\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=b0ecc1662cbe6c3d3d4342b22b5e4cf3}{Spallholz}{S\bibinitperiod}{Julian\bibnamedelima E}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7040f992564e94a3cd5e2073fc2fc681}{Hoffman}{H\bibinitperiod}{David\bibnamedelima J}{D\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{7d86a383464b1d52aede23ae9fd146c1}
+      \strng{fullhash}{7d86a383464b1d52aede23ae9fd146c1}
+      \field{sortinit}{S}
+      \field{labelyear}{2002}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Selenium toxicity: cause and effects in aquatic birds}
+      \field{issn}{0166-445X}
+      \field{journaltitle}{Aquatic Toxicology}
+      \field{note}{State of Science and Future Needs for Selenium Aquatic Criteria}
+      \field{number}{1{\^a}\x{fffd}\x{fffd}\x{fffd}\x{fffd}\x{fffd}\x{fffd}\x{fffd}\x{fffd}2}
+      \field{title}{Selenium toxicity: cause and effects in aquatic birds}
+      \field{volume}{57}
+      \field{year}{2002}
+      \field{pages}{27\bibrangedash 37}
+      \keyw{Selenium toxicity}
+    \endentry
+    \entry{Spanou2001}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=26b3d9c47c87068dd66bf257b0d2d399}{Spanou}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=20cca183f63a6c0e940c18ba4a81deac}{Chen}{C\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=26b3d9c47c87068dd66bf257b0d2d399}{Spanou}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=20cca183f63a6c0e940c18ba4a81deac}{Chen}{C\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b56e387858c6f8d4c783f22a004cff6f}
+      \strng{fullhash}{b56e387858c6f8d4c783f22a004cff6f}
+      \field{sortinit}{S}
+      \field{labelyear}{2001}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Water-quality modelling of the Upper Mersey river system using an object-oriented framework}
+      \field{issn}{1464-7141}
+      \field{journaltitle}{Journal Of Hydroinformatics}
+      \field{title}{Water-quality modelling of the Upper Mersey river system using an object-oriented framework}
+      \field{volume}{3}
+      \field{year}{2001}
+      \field{pages}{173\bibrangedash 194}
     \endentry
     \entry{spiess2010evaluation}{article}{}
       \name{labelname}{2}{}{%
@@ -633,6 +1407,57 @@
       \field{year}{2010}
       \field{pages}{6}
     \endentry
+    \entry{5CCR1002-93}{misc}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=ffb2765c655890240294e7efaa692de6}{{State\bibnamedelimb of\bibnamedelimb Colorado}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=ffb2765c655890240294e7efaa692de6}{{State\bibnamedelimb of\bibnamedelimb Colorado}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{ffb2765c655890240294e7efaa692de6}
+      \strng{fullhash}{ffb2765c655890240294e7efaa692de6}
+      \field{sortinit}{S}
+      \field{labelyear}{2012}
+      \field{datelabelsource}{}
+      \field{labeltitle}{5 CCR 1002-93. Regulation No. 93 - Colorado's Section 303(d) List of Impaired Waters and Monitoring and Evaluation List}
+      \field{journaltitle}{Colorado Revised Statues}
+      \field{title}{5 CCR 1002-93. Regulation No. 93 - Colorado's Section 303(d) List of Impaired Waters and Monitoring and Evaluation List}
+      \field{year}{2012}
+    \endentry
+    \entry{5CCR1002-31}{misc}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=ffb2765c655890240294e7efaa692de6}{{State\bibnamedelimb of\bibnamedelimb Colorado}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=ffb2765c655890240294e7efaa692de6}{{State\bibnamedelimb of\bibnamedelimb Colorado}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{ffb2765c655890240294e7efaa692de6}
+      \strng{fullhash}{ffb2765c655890240294e7efaa692de6}
+      \field{sortinit}{S}
+      \field{labelyear}{2013}
+      \field{datelabelsource}{}
+      \field{labeltitle}{5 CCR 1002-31. Regulation No. 31 - The basic standards and methodologies for surface water}
+      \field{journaltitle}{Colorado Revised Statues}
+      \field{title}{5 CCR 1002-31. Regulation No. 31 - The basic standards and methodologies for surface water}
+      \field{year}{2013}
+    \endentry
+    \entry{5CCR1002-32}{misc}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=ffb2765c655890240294e7efaa692de6}{{State\bibnamedelimb of\bibnamedelimb Colorado}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=ffb2765c655890240294e7efaa692de6}{{State\bibnamedelimb of\bibnamedelimb Colorado}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{ffb2765c655890240294e7efaa692de6}
+      \strng{fullhash}{ffb2765c655890240294e7efaa692de6}
+      \field{sortinit}{S}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labeltitle}{5 CCR 1002-32. Regulation No. 32 - Classifications and numeric standards for Arkansas River Basin}
+      \field{journaltitle}{Colorado Revised Statues}
+      \field{title}{5 CCR 1002-32. Regulation No. 32 - Classifications and numeric standards for Arkansas River Basin}
+      \field{year}{2014}
+    \endentry
     \entry{sutherland1988}{article}{}
       \name{labelname}{2}{}{%
         {{uniquename=0,hash=baf8892920e852823dbaaf9adbfc32bd}{Sutherland}{S\bibinitperiod}{P\bibnamedelima Lorenz}{P\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
@@ -658,6 +1483,149 @@
       \field{volume}{43}
       \field{year}{1988}
       \field{pages}{294\bibrangedash 298}
+    \endentry
+    \entry{Takayanagi1984}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=dc24dd5ef0deabec6132735bf6a64d3c}{Takayanagi}{T\bibinitperiod}{Kazufumi}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=56f36016a709935f33ead530b47f3f19}{Wong}{W\bibinitperiod}{George\bibnamedelima T.F.}{G\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=dc24dd5ef0deabec6132735bf6a64d3c}{Takayanagi}{T\bibinitperiod}{Kazufumi}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=56f36016a709935f33ead530b47f3f19}{Wong}{W\bibinitperiod}{George\bibnamedelima T.F.}{G\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{4c5e351cb30f2f423747f248dff7ea4e}
+      \strng{fullhash}{4c5e351cb30f2f423747f248dff7ea4e}
+      \field{sortinit}{T}
+      \field{labelyear}{1984}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Total selenium and selenium (IV) in the James River estuary and southern Chesapeake Bay}
+      \field{issn}{0272-7714}
+      \field{journaltitle}{Estuarine, Coastal and Shelf Science Estuarine, Coastal and Shelf Science}
+      \field{number}{1}
+      \field{title}{Total selenium and selenium (IV) in the James River estuary and southern Chesapeake Bay}
+      \field{volume}{18}
+      \field{year}{1984}
+      \field{pages}{113\bibrangedash 119}
+    \endentry
+    \entry{1996Thomson}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=2dee09e92c34bc5170ef69e54a9e645f}{Thomson}{T\bibinitperiod}{CD}{C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b78259ec81a4a9f4de5256fae07f224f}{Robinson}{R\bibinitperiod}{MF}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=2dee09e92c34bc5170ef69e54a9e645f}{Thomson}{T\bibinitperiod}{CD}{C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b78259ec81a4a9f4de5256fae07f224f}{Robinson}{R\bibinitperiod}{MF}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8e6364d8f639a83233eefe4a3abdfd54}
+      \strng{fullhash}{8e6364d8f639a83233eefe4a3abdfd54}
+      \field{sortinit}{T}
+      \field{labelyear}{1996}
+      \field{labelmonth}{02}
+      \field{datelabelsource}{}
+      \field{labeltitle}{The changing selenium status of New Zealand residents}
+      \field{issn}{0954-3007}
+      \field{journaltitle}{European journal of clinical nutrition}
+      \field{month}{02}
+      \field{number}{2}
+      \field{title}{The changing selenium status of New Zealand residents}
+      \field{volume}{50}
+      \field{year}{1996}
+      \field{pages}{107{\^a}\x{fffd}\x{fffd}\x{fffd}\x{fffd}\x{fffd}\x{fffd}\x{fffd}\x{fffd}114}
+    \endentry
+    \entry{Tinggi2003}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=bcbda392c9e8475db9d8687e825ad8b5}{Tinggi}{T\bibinitperiod}{Ujang}{U\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=bcbda392c9e8475db9d8687e825ad8b5}{Tinggi}{T\bibinitperiod}{Ujang}{U\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{bcbda392c9e8475db9d8687e825ad8b5}
+      \strng{fullhash}{bcbda392c9e8475db9d8687e825ad8b5}
+      \field{sortinit}{T}
+      \field{labelyear}{2003}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Essentiality and toxicity of selenium and its status in Australia: a review}
+      \field{abstract}{Selenium (Se) is an essential trace element for animals and humans because of its role in an antioxidant enzyme glutathione peroxidase. This enzyme protects cell membranes from damage caused by the peroxidation of lipids. The paper provides an overview of the effects of Se toxicity and deficiency in humans and animals. It is well established that Se deficiency causes health implications in humans and animals. Se is also very toxic and can cause Se poisoning (selenosis) in humans and animals. In Australia, Se deficiency has caused health problem to livestock; however, the problems were eliminated after the introduction of Se supplementation. Se toxicity has also been reported in some regions of Australia as a result of livestock feeding on Se accumulative plant species. The major source of Se is diet, and in many regions of the world the levels of Se in the soils generally reflect the Se status in human populations. In foods, the bioavailability and toxicity of Se depend on its chemical forms. Generally, organic forms of Se are more bioavailable and less toxic than the inorganic forms (selenites, selenates). The Se status in the Australian population and how this is compared with the rest of the world is also discussed.}
+      \field{issn}{0378-4274}
+      \field{journaltitle}{Toxicology Letters}
+      \field{number}{1{\^a}\x{fffd}\x{fffd}\x{fffd}\x{fffd}\x{fffd}\x{fffd}\x{fffd}\x{fffd}2}
+      \field{title}{Essentiality and toxicity of selenium and its status in Australia: a review}
+      \field{volume}{137}
+      \field{year}{2003}
+      \field{pages}{103\bibrangedash 110}
+      \keyw{Selenium}
+    \endentry
+    \entry{2008USBR}{report}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=cabad7b5208ff0b1f517a7bab2176383}{USBoR}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=cabad7b5208ff0b1f517a7bab2176383}{USBoR}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=5c8c087e5c7bfe92b719c2833b9f7eb2}{Reclamation}{R\bibinitperiod}{US\bibnamedelima Bureau}{U\bibinitperiod\bibinitdelim B\bibinitperiod}{of}{o\bibinitperiod}{}{}}%
+      }
+      \list{institution}{1}{%
+        {US Bureau of Reclamation}%
+      }
+      \list{publisher}{1}{%
+        {US Bureau of Reclamation}%
+      }
+      \strng{namehash}{cabad7b5208ff0b1f517a7bab2176383}
+      \strng{fullhash}{cabad7b5208ff0b1f517a7bab2176383}
+      \field{sortinit}{U}
+      \field{labelyear}{2008}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Programmatic Biological Assessment: Gunnison River Basin, Colorado: Operations Of The Wayne N. Aspinall Unit; Operations And Depletions Of Existing Reclamation Projects; And Operations And Depletions Of Non-federal Water Development}
+      \field{title}{Programmatic Biological Assessment: Gunnison River Basin, Colorado: Operations Of The Wayne N. Aspinall Unit; Operations And Depletions Of Existing Reclamation Projects; And Operations And Depletions Of Non-federal Water Development}
+      \field{type}{techreport}
+      \field{year}{2008}
+    \endentry
+    \entry{2006USDA}{online}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=1dce21b99538cb1e5db84128636259ab}{{USDA,\bibnamedelimb Agricultural\bibnamedelimb Research\bibnamedelimb Service}}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=1dce21b99538cb1e5db84128636259ab}{{USDA,\bibnamedelimb Agricultural\bibnamedelimb Research\bibnamedelimb Service}}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {U.S.D.A.}%
+      }
+      \strng{namehash}{1dce21b99538cb1e5db84128636259ab}
+      \strng{fullhash}{1dce21b99538cb1e5db84128636259ab}
+      \field{sortinit}{U}
+      \field{labelyear}{2006}
+      \field{labelmonth}{02}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Selenium-Accumulating Plants}
+      \field{month}{02}
+      \field{title}{Selenium-Accumulating Plants}
+      \field{year}{2006}
+      \verb{url}
+      \verb http://www.ars.usda.gov/Research/docs.htm?docid=9979
+      \endverb
+    \endentry
+    \entry{USDA2010}{book}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=96b6352f0feb7beef6ead98c27472286}{USDA}{U\bibinitperiod}{}{}{}{}{}{}}%
+        {{uniquename=0,hash=86c716fb6eb7496281053f6ed6ce8f18}{USDHHS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=96b6352f0feb7beef6ead98c27472286}{USDA}{U\bibinitperiod}{}{}{}{}{}{}}%
+        {{uniquename=0,hash=86c716fb6eb7496281053f6ed6ce8f18}{USDHHS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {U.S. Government Printing Office}%
+      }
+      \strng{namehash}{00da22930d96f41a21591d0290e23634}
+      \strng{fullhash}{00da22930d96f41a21591d0290e23634}
+      \field{sortinit}{U}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Dietary Guidleines for Americans, 2010.}
+      \field{edition}{7th}
+      \field{title}{Dietary Guidleines for Americans, 2010.}
+      \field{year}{2010}
     \endentry
     \entry{EPA1992}{book}{}
       \name{labelname}{1}{}{%
@@ -687,6 +1655,77 @@
       \field{number}{Publication 9240.0-05A, EPA540/R-93/051, PB93-953316}
       \field{title}{Specifications and Guidance for Contaminant-Free Sample Containers}
       \field{year}{1992}
+    \endentry
+    \entry{EPA-Se}{report}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=f5627235f7755f36aacdeda188b7ba6f}{USEPA}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=f5627235f7755f36aacdeda188b7ba6f}{USEPA}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {USEPA}%
+      }
+      \list{organization}{1}{%
+        {U.S. Environmental Protection Agency}%
+      }
+      \strng{namehash}{f5627235f7755f36aacdeda188b7ba6f}
+      \strng{fullhash}{f5627235f7755f36aacdeda188b7ba6f}
+      \field{sortinit}{U}
+      \field{labelyear}{2009}
+      \field{labelmonth}{1999}
+      \field{datelabelsource}{}
+      \field{labeltitle}{National Recommended Water Quality Criteria}
+      \field{month}{1999}
+      \field{title}{National Recommended Water Quality Criteria}
+      \field{type}{techreport}
+      \field{year}{2009}
+    \endentry
+    \entry{EPA2014}{report}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=f5627235f7755f36aacdeda188b7ba6f}{{USEPA}}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=f5627235f7755f36aacdeda188b7ba6f}{{USEPA}}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {USEPA}%
+      }
+      \strng{namehash}{f5627235f7755f36aacdeda188b7ba6f}
+      \strng{fullhash}{f5627235f7755f36aacdeda188b7ba6f}
+      \field{sortinit}{U}
+      \field{extrayear}{1}
+      \field{labelyear}{2014}
+      \field{labelmonth}{02}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Coal Combustion Residual Beneficial Use Evaluation: Fly Ash Concrete and FGD Gypsum Wallboard}
+      \field{month}{02}
+      \field{title}{Coal Combustion Residual Beneficial Use Evaluation: Fly Ash Concrete and FGD Gypsum Wallboard}
+      \field{type}{techreport}
+      \field{year}{2014}
+    \endentry
+    \entry{2014USEPA}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=f5627235f7755f36aacdeda188b7ba6f}{USEPA}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=f5627235f7755f36aacdeda188b7ba6f}{USEPA}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=f5627235f7755f36aacdeda188b7ba6f}{USEPA}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {U.S. Government Printing Office}%
+      }
+      \strng{namehash}{f5627235f7755f36aacdeda188b7ba6f}
+      \strng{fullhash}{f5627235f7755f36aacdeda188b7ba6f}
+      \field{sortinit}{U}
+      \field{extrayear}{2}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labeltitle}{External Peer Review Draft Aquatic Life Ambient Water Quality Criterion for Selenium -- Freshwater 2014}
+      \field{title}{External Peer Review Draft Aquatic Life Ambient Water Quality Criterion for Selenium -- Freshwater 2014}
+      \field{year}{2014}
     \endentry
     \entry{USGS2006NWIS}{online}{}
       \name{labelname}{1}{}{%
@@ -835,7 +1874,7 @@
         {{uniquename=0,hash=f7756235c453d162ab057e21c23a497a}{Walter}{W\bibinitperiod}{Ivan\bibnamedelima A}{I\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
         {{uniquename=2,hash=309bab14ffa71f83d199d3bd30dc0804}{Allen}{A\bibinitperiod}{Richard\bibnamedelima G}{R\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=3ca95a4de8dc8a89a7c3f7a0bd2311f4}{Elliott}{E\bibinitperiod}{Ronald}{R\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=b043da7068fc868697541ee507ac55b9}{Jensen}{J\bibinitperiod}{ME}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=b043da7068fc868697541ee507ac55b9}{Jensen}{J\bibinitperiod}{ME}{M\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=c438efd78af257616f5a32a25e8ad59b}{Itenfisu}{I\bibinitperiod}{D}{D\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=d9c2c9af2f5a92db2b40ba607bd9e599}{Mecham}{M\bibinitperiod}{B}{B\bibinitperiod}{}{}{}{}}%
         {{uniquename=1,hash=a54c710973763d3934b85a792825c0bd}{Howell}{H\bibinitperiod}{TA}{T\bibinitperiod}{}{}{}{}}%
@@ -848,7 +1887,7 @@
         {{uniquename=0,hash=f7756235c453d162ab057e21c23a497a}{Walter}{W\bibinitperiod}{Ivan\bibnamedelima A}{I\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
         {{uniquename=2,hash=309bab14ffa71f83d199d3bd30dc0804}{Allen}{A\bibinitperiod}{Richard\bibnamedelima G}{R\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=3ca95a4de8dc8a89a7c3f7a0bd2311f4}{Elliott}{E\bibinitperiod}{Ronald}{R\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=b043da7068fc868697541ee507ac55b9}{Jensen}{J\bibinitperiod}{ME}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=b043da7068fc868697541ee507ac55b9}{Jensen}{J\bibinitperiod}{ME}{M\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=c438efd78af257616f5a32a25e8ad59b}{Itenfisu}{I\bibinitperiod}{D}{D\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=d9c2c9af2f5a92db2b40ba607bd9e599}{Mecham}{M\bibinitperiod}{B}{B\bibinitperiod}{}{}{}{}}%
         {{uniquename=1,hash=a54c710973763d3934b85a792825c0bd}{Howell}{H\bibinitperiod}{TA}{T\bibinitperiod}{}{}{}{}}%
@@ -914,6 +1953,56 @@
       \verb http://water.usgs.gov/GIS/metadata/usgswrd/XML/ieof48.xml
       \endverb
     \endentry
+    \entry{world1996}{article}{}
+      \true{morelabelname}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=5d292a222024f1b13e98a059c94a9b75}{{World\bibnamedelimb Health\bibnamedelimb Organization}}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \true{moreauthor}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=5d292a222024f1b13e98a059c94a9b75}{{World\bibnamedelimb Health\bibnamedelimb Organization}}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Geneva: World Health Organization}%
+      }
+      \strng{namehash}{305fc7fbb6c9b2aca5d2745533c57538}
+      \strng{fullhash}{305fc7fbb6c9b2aca5d2745533c57538}
+      \field{sortinit}{W}
+      \field{labelyear}{1996}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Trace elements in human nutrition and health}
+      \field{title}{Trace elements in human nutrition and health}
+      \field{year}{1996}
+    \endentry
+    \entry{yang1983}{article}{}
+      \name{labelname}{4}{}{%
+        {{uniquename=0,hash=4517feb98f6d90a3c4729a45a54b8edd}{Yang}{Y\bibinitperiod}{GQ}{G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=999e7e11c4199ad36de975832e431dd7}{Wang}{W\bibinitperiod}{SZ}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=57f56c32f4d37e1fe1a9c8f9f024a607}{Zhou}{Z\bibinitperiod}{RH}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=60bcedb742752cee932fec7f8acd269d}{Sun}{S\bibinitperiod}{SZ}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=4517feb98f6d90a3c4729a45a54b8edd}{Yang}{Y\bibinitperiod}{GQ}{G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=999e7e11c4199ad36de975832e431dd7}{Wang}{W\bibinitperiod}{SZ}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=57f56c32f4d37e1fe1a9c8f9f024a607}{Zhou}{Z\bibinitperiod}{RH}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=60bcedb742752cee932fec7f8acd269d}{Sun}{S\bibinitperiod}{SZ}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Am Soc Nutrition}%
+      }
+      \strng{namehash}{9537bec77cfd5d82ee84b4c6ca0a9d08}
+      \strng{fullhash}{f8b63a6328213d55bd8acda8dc9d1869}
+      \field{sortinit}{Y}
+      \field{labelyear}{1983}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Endemic selenium intoxication of humans in China.}
+      \field{journaltitle}{The American journal of clinical nutrition}
+      \field{number}{5}
+      \field{title}{Endemic selenium intoxication of humans in China.}
+      \field{volume}{37}
+      \field{year}{1983}
+      \field{pages}{872\bibrangedash 881}
+    \endentry
     \entry{zielinski1995}{article}{}
       \name{labelname}{3}{}{%
         {{uniquename=0,hash=46ec0828ffda3ee2af5388774a25a3bc}{Zielinski}{Z\bibinitperiod}{RA}{R\bibinitperiod}{}{}{}{}}%
@@ -973,7 +2062,9 @@
       \field{pages}{9\bibrangedash 21}
     \endentry
   \endsortlist
+  \missing{2012Bailey}
   \missing{Wiki:RMSE}
+  \missing{5CCR1002}
 \endrefsection
 \endinput
 
