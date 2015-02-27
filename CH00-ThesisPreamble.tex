@@ -1,56 +1,122 @@
 % This is the preamble document that contains the author editable preferences for creating a Thesis.  The thesis class document (csuthesis.cls) is required for this to work properly.  Make sure you make a backup and have reference documents before making changes to the class document.  Minor changes can make the final document ususable.
 
-
-%% Packages %%
+% Packages %
 % package description in comments
 % refer to package documentation for more info
 % comment out (don't delete) packages you don't want to use or don't need
-\usepackage{pdflscape} % allows for landscape orientation of figures
-\usepackage{graphicx} % enhanced support for graphics.  Image scaling, etc.
-\usepackage{multirow} % create tabular cells spanning multiple rows (row-wise merge in a column)
-%\usepackage{wrapfig} % produces figures which text can flow around.
-\usepackage[pagewise, modulo]{lineno} % adds line numbers.  Sometimes helps reviewers.
-\usepackage{amssymb} % extends math symbols.  includes registered and copyright symbols.
-\usepackage{attachfile} % attach files to document.  Easier to manage multiple chapter, sections, etc.
-\usepackage[parfill]{parskip} % helps with spacing.  Need this for Table of Contents.
-\usepackage{siunitx} % fairly simple method to add units to values.  Consistent standardized useage
-\usepackage{booktabs, longtable} % publication quality tables.  Longtable allows for tables to span multiple pages
-\usepackage[toc,page]{appendix} % add appendicies to document.
-\usepackage{array} % extends implementation of the array and tabular environments
-\usepackage{caption} % customize captions in float environments
-\usepackage{subcaption} % caption sub figures in a figure
-\usepackage{setspace} % support for setting spacing between lines in a document
-\usepackage{afterpage} % allows for starting a command (especially a float) after the next page break.
-\usepackage{tabularx}
-\usepackage{csquotes} % better smart quotes.  Especially usefull for humanities
-% BIBLIOGRAPY PACKAGE AND SETUP
-%\usepackage{natbib} % Old bibliography package. only use if you have to
-%  Highly recommended that the newer biblatex package is used. 
-\usepackage[style=authoryear-comp, url=true,backend=biber]{biblatex}
-\addbibresource{BibRef.bib}
-%%% End packages
 
-%%% margins and spacing
-\usepackage[top=1in,bottom=1in,left=0.5in,right=1.5in]{geometry}  % use if you want more room for rh margin notes.
-%\usepackage[top=1in,bottom=1in,left=1in,right=1in]{geometry}  % Use this when you're ready for final(ish) production
+% Specifies file encoding, specifically for the bibliography.
+%\usepackage[utf8]{inputenc}
+
+% specify the main language of the document
+\usepackage[american]{babel}  
+
+% allows for landscape orientation of figures
+\usepackage{pdflscape} 
+
+% enhanced support for graphics.  Image scaling, etc.
+\usepackage{graphicx} 
+
+% create tabular cells spanning multiple rows (row-wise merge in a column)
+\usepackage{multirow}
+
+% produces figures which text can flow around floats.
+%\usepackage{wrapfig} 
+
+% adds line numbers.  Sometimes helps reviewers.
+\usepackage[pagewise, modulo]{lineno}
+
+% extends math symbols.  includes registered and copyright symbols.
+\usepackage{amssymb} 
+
+% attach files to document.  Easier to manage multiple chapter, sections, etc.
+\usepackage{attachfile} 
+
+% helps with spacing.  Need this for Table of Contents.
+\usepackage[parfill]{parskip} 
+
+% fairly simple method to add units to values.  Consistent standardized useage
+\usepackage{siunitx} 
+
+% publication quality tables.  Longtable allows for tables to span multiple pages
+\usepackage{booktabs, longtable} 
+
+% add appendicies to document.
+\usepackage[toc,page]{appendix} 
+
+% extends implementation of the array and tabular environments
+\usepackage{array} 
+
+% customize captions in float environments
+\usepackage{caption} 
+
+% caption sub figures in a figure
+\usepackage{subcaption} 
+
+% support for setting spacing between lines in a document
+\usepackage{setspace} 
+
+% allows for starting a command (especially a float) after the next page break.
+\usepackage{afterpage} 
+
+% fancier tables.  allows text wrapping in a cell
+\usepackage{tabularx}
+
+% better smart quotes.  Especially usefull for humanities
+\usepackage{csquotes}
+
+% Bibliography
+
+% Old bibliography package. only use if you have to
+%\usepackage{natbib} 
+
+%  Highly recommended that the newer biblatex package is used.
+\usepackage[style=authoryear-comp, url=true, backend=biber]{biblatex} %bibencoding=utf8
+\addbibresource{BibRef.bib}
+
+%  -----  End packages  -----  
+
+%  -----  Margins and spacing  -----  
+
+% use if you want more room for rh margin notes.
+\usepackage[top=1in,bottom=1in,left=0.5in,right=1.5in]{geometry}  
+
+% Use this when you're ready for final(ish) production
+%\usepackage[top=1in,bottom=1in,left=1in,right=1in]{geometry}  
 \makeatletter
-\usepackage[textwidth=1in]{todonotes} % highlighted margin notes for 'todo' items
-\renewcommand{\todo}[2][]{\@todo[caption={#2}, #1]{\begin{spacing}{0.5}#2\end{spacing}}} % make todo notes single spaced
+
+% highlighted margin notes for 'todo' items
+\usepackage[textwidth=1in]{todonotes}
+
+% make todo notes single spaced
+\renewcommand{\todo}[2][]{\@todo[caption={#2}, #1]{\begin{spacing}{0.5}#2\end{spacing}}}
 \makeatother
 
-%\usepackage{fancyhdr}  %  'draft' header and today's date.  Remove for production
-%\pagestyle{fancy} % allow use of fancyhdr
-%\renewcommand{\headrulewidth}{0pt}  % defines the width of the line between the header and text.
-%\lhead{} % left header contents
-%\chead{--- DRAFT ---} % center header contents
-%\rhead{\today} % right header contents.  This is the current date.
+%  'draft' header and today's date.  Remove for production
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\renewcommand{\headrulewidth}{0pt}
+%\lhead{}
+%\chead{--- DRAFT ---} 
+%\rhead{\today}
 
-\footskip 0.5in % page number location
-\setstretch{1.95} % line spacing.  1.95 works better than 2
-\setlength{\intextsep}{12pt plus 2pt minus 2pt} %spacing above+below a figure/table that has text above and below it
-\setlength{\textfloatsep}{12pt plus 2pt minus 2pt} %spacing below/above a figure or table at the top/bottom of a page.
-\renewcommand{\bibname}{References} % change the bibliography title.  Works Cited, Bibliography,  'Stuff I Read'
-%\renewcommand{\bibsection}{  % Typeset the bibliography title.  Don't mess with this.
+% page number location
+\footskip 0.5in 
+
+% line spacing.  1.95 works better than 2
+\setstretch{1.95} 
+
+%spacing above+below a figure/table that has text above and below it
+\setlength{\intextsep}{12pt plus 2pt minus 2pt} 
+
+%spacing below/above a figure or table at the top/bottom of a page.
+\setlength{\textfloatsep}{12pt plus 2pt minus 2pt}
+
+% change the bibliography title.  Works Cited, Bibliography,  'Stuff I Read'
+\renewcommand{\bibname}{References} 
+
+% This is to typeset the bibliography title in the older bibtex packages.  Don't mess with this.
+%\renewcommand{\bibsection}{  
 %	\ifsmallcapsok
 %	\centering {\large \scshape \bibname}
 %	\else
@@ -58,11 +124,16 @@
 %	\fi
 %	\addcontentsline{toc}{chapter}{\bibname}}
 %\setlength{\bibsep}{0mm plus .5\baselineskip}
-%%% end margins and spacing
 
-%%% preferences
-\graphicspath{ {./Figures/} }  % location of the graphics files.  Recommend a single folder for all images
-\DeclareGraphicsExtensions{.pdf,.png,.jpg,.jpeg}  % the file extensions for graphics used in this document
+%  -----  End margins and spacing  -----  
+
+%  -----  Preferences  -----  
+
+% location of the graphics files.  Recommend a single folder for all images
+\graphicspath{ {./Figures/} }
+
+% the file extensions for graphics used in this document
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.jpeg}  
 \captionsetup{margin=10pt, font=small, labelfont=bf} % figure and table captions.
 %%% end preferences
 
@@ -83,11 +154,12 @@
 \def\selenate{$SeO_4^{2-}$}
 \def\selenite{$SeO_3^{2-}$}
 \def\sulfate{$SO_4^{2-}$}
-\def\Qnps{$ Q_{NPS} $}
+\def\Qnps{$ Q_{UNPS} $}
 \def\Wstorage{$ \frac{\Delta S}{\Delta t} $}
 \def\todoc{\todo{cite}}
 \def\todoe{\todo{eq}}
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}} % help define table column widths when required
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-%%% End Custom Commands
+
+%  -----  End Custom Commands  -----  

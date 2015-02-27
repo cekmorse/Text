@@ -1965,22 +1965,6 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">wanielista1997</bcf:citekey>
-    <bcf:citekey order="2">spiess2010evaluation</bcf:citekey>
-    <bcf:citekey order="3">Wiki:RMSE</bcf:citekey>
-    <bcf:citekey order="4">Buhman2002</bcf:citekey>
-    <bcf:citekey order="4">Gates1996</bcf:citekey>
-    <bcf:citekey order="5">USGS2006NWIS</bcf:citekey>
-    <bcf:citekey order="5">USGS2007NWIS</bcf:citekey>
-    <bcf:citekey order="5">USGS2008NWIS</bcf:citekey>
-    <bcf:citekey order="5">USGS2009NWIS</bcf:citekey>
-    <bcf:citekey order="5">USGS2010NWIS</bcf:citekey>
-    <bcf:citekey order="5">USGS2011NWIS</bcf:citekey>
-    <bcf:citekey order="5">USGS2012NWIS</bcf:citekey>
-    <bcf:citekey order="6">walter2000asce</bcf:citekey>
-    <bcf:citekey order="6">FAO56</bcf:citekey>
-    <bcf:citekey order="7">FAO56</bcf:citekey>
-    <bcf:citekey order="7">Allen2011</bcf:citekey>
-    <bcf:citekey order="8">FAO56</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="nyt">
   <bcf:sorting>

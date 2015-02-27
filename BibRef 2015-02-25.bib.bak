@@ -6,7 +6,10 @@
   Title                    = {Description of water-systems operations in the arkansas river basin, colorado. Water resources Investigations report 85-4092},
   Author                   = {P.O. Abbott},
   Institution              = {U.S. Geological Society},
-  Year                     = {1985}
+  Year                     = {1985},
+
+  Owner                    = {KMorse},
+  Timestamp                = {2014.07.07}
 }
 
 @Article{Adkinson2009,
@@ -19,9 +22,14 @@
   Pages                    = {198--205},
   Volume                   = {19},
 
+  Bdsk-url-1               = {http://dx.doi.org/10.1890/07-1641.1},
+  Booktitle                = {Ecological Applications},
   Comment                  = {doi: 10.1890/07-1641.1},
+  Date-modified            = {2015-02-19 04:34:58 +0000},
   Journal                  = {Ecological Applications},
-  Publisher                = {Ecological Society of America}
+  Owner                    = {KMorse},
+  Publisher                = {Ecological Society of America},
+  Timestamp                = {2014.07.07}
 }
 
 @Article{Alcamo1987,
@@ -43,7 +51,10 @@
   Pages                    = {899-920},
   Volume                   = {98},
 
-  Journal                  = {Agricultural Water Management}
+  Journal                  = {Agricultural Water Management},
+  Owner                    = {Keith},
+  Refid                    = {4803933470},
+  Timestamp                = {2012.10.09}
 }
 
 @Book{FAO56,
@@ -51,7 +62,11 @@
   Author                   = {Richard G. Allen and Luis S. Pereira and Dirk Raes and Martin Smith},
   Year                     = {1988},
   Publisher                = {Food and Agriculture Organization of the United Nations},
-  Series                   = {FAO Irrigation and Drainage Paper No. 56}
+  Series                   = {FAO Irrigation and Drainage Paper No. 56},
+
+  Bdsk-url-1               = {http://www.fao.org/docrep/x0490e/x0490e00.htm},
+  Date-modified            = {2015-02-19 04:34:58 +0000},
+  Timestamp                = {2014.05.27}
 }
 
 @Article{AlSaleh2000154,
@@ -63,6 +78,10 @@
   Pages                    = {154 - 160},
   Volume                   = {14},
 
+  Abstract                 = {Summary Selenium (Se) is a naturally occurring trace element that is essential for animal and human nutrition, but the range between dietary requirements and toxic levels is relatively narrow. In this review, we are interested in the beneficial effects of selenium and we report on a number of studies of the selenium status of different populations in Saudi Arabia. The Status reflectes the geographical area inhabited by the populations. Apart from the few available studies reviewed here, no data on the human status of Se in Saudi Arabia has been obteined. A further objective of this paper is throw some the light on the direction of future studies. },
+  Bdsk-url-1               = {http://www.sciencedirect.com/science/article/pii/S0946672X00800048},
+  Bdsk-url-2               = {http://dx.doi.org/10.1016/S0946-672X(00)80004-8},
+  Date-modified            = {2015-02-19 04:34:58 +0000},
   Journal                  = {Journal of Trace Elements in Medicine and Biology}
 }
 
@@ -72,7 +91,10 @@
   Institution              = {Colorado State University},
   Year                     = {2009},
   Month                    = {October},
-  Type                     = {Fact Sheet No. 4.723}
+  Type                     = {Fact Sheet No. 4.723},
+
+  Owner                    = {KMorse},
+  Timestamp                = {2014.07.07}
 }
 
 @Article{AN9952000841,
@@ -83,6 +105,9 @@
   Pages                    = {841-843},
   Volume                   = {120},
 
+  Abstract                 = {The Se concentration of foods can be increased by supplementing fertilizers with soluble Se compounds. In Finland the availability of soil Se for plants is poor owing to the relatively low Se concentration{,} low pH and high iron content of the soil. Since 1984 multimineral fertilizers have been supplemented with Se (16 mg kg to fertilizers for grain production and 6 mg kg to those for fodder production) in the form of sodium selenate. Within two years a three-fold increase of mean Se intake was observed. The supplementation affected the Se content of all major food groups with the exception of fish. The concomitant human serum Se concentration increased by 70\%. In 1990 the amount of Se that was supplemented was reduced to 6 mg kg for all fertilizers. This reduced the mean Se intake by 30\% and the serum Se concentration decreased by 25\% from the highest levels observed in 1989. Plants take up part of the supplemented selenate and transform it into organic Se compounds{,} mainly selenomethionine. This affects human nutrition by increasing the Se content of foods of both animal and vegetable origin. According to data obtained in Finland{,} supplementation of fertilizers with Se is a safe and effective means of increasing the Se intake of both animals and humans that is feasible in countries with relatively uniform geochemical conditions. This kind of intervention requires careful monitoring of the effects on both animal and human nutrition and the environment.},
+  Bdsk-url-1               = {http://dx.doi.org/10.1039/AN9952000841},
+  Date-modified            = {2015-02-19 04:34:58 +0000},
   Journal                  = {Analyst},
   Publisher                = {The Royal Society of Chemistry}
 }
@@ -104,7 +129,9 @@
   Year                     = {2012},
   Type                     = {Ph.D.},
 
-  School                   = {Colorado State University}
+  Owner                    = {keithmorse},
+  School                   = {Colorado State University},
+  Timestamp                = {2014.08.28}
 }
 
 @Article{Bailey2012,
@@ -126,7 +153,9 @@
   Number                   = {521},
   Pages                    = {341-359},
 
-  Journal                  = {Journal of Hydrolog}
+  Journal                  = {Journal of Hydrolog},
+  Owner                    = {Keith},
+  Timestamp                = {2015.01.08}
 }
 
 @Article{Banuelos2007,
@@ -145,17 +174,22 @@
   Author                   = {Florent Baty and M. L. Delignette-Muller and Sandrine Charles and Jean-Pierre Flandrois and Christian Ritz},
   Year                     = {2013},
 
-  Month                    = {September}
+  Month                    = {September},
+  Owner                    = {Keith},
+  Timestamp                = {2013.10.14}
 }
 
 @Article{Beck1987,
   Title                    = {Water quality modeling: A review of the analysis of uncertainty.},
   Author                   = {Beck, M.B.},
   Year                     = {1987},
+  Month                    = jan,
   Number                   = {8},
   Pages                    = {1393-1442},
   Volume                   = {23},
 
+  Bdsk-url-1               = {http://dx.doi.org/10.1029/WR023i008p01393},
+  Date-modified            = {2015-02-19 04:34:58 +0000},
   Journal                  = {Water Resources Research}
 }
 
@@ -184,6 +218,7 @@
   Author                   = {J.G. Boon and J. Pinter and L. Somlyody},
   Booktitle                = {Closing the Gap Between Theory and Practice (Proceedings of the Baltimore Symposium, May 1989)},
   Year                     = {1989},
+  Month                    = may,
   Number                   = {180},
   Pages                    = {141-149}
 }
@@ -194,6 +229,7 @@
   Year                     = {2011},
 
   Address                  = {San Diego, Calif.},
+  Publisher                = {San Diego State University]},
   School                   = {San Diego State University}
 }
 
@@ -208,10 +244,13 @@
   Title                    = {Stochastic Variability of Fluvial Hydraulic Geometry: Mississippi and Red Rivers},
   Author                   = {Daniel L. Buhman and Timmothy K. Gates and Chester C. Watson},
   Year                     = {2002},
+  Month                    = apr,
   Number                   = {4},
   Pages                    = {426-437},
   Volume                   = {128},
 
+  Bdsk-url-1               = {http://dx.doi.org/10.1061/~ASCE!0733-9429~2002!128:4~426!},
+  Date-modified            = {2015-02-19 04:34:58 +0000},
   Journal                  = {Journal of Hydraulic Engineering}
 }
 
@@ -230,13 +269,30 @@
   Month                    = {October},
   Organization             = {Chemicool.com},
 
-  HowPublished             = {Web}
+  Bdsk-url-1               = {http://www.chemicool.com/elements/selenium.html},
+  Date-modified            = {2015-02-19 04:34:59 +0000},
+  HowPublished             = {Web},
+  Owner                    = {Keith},
+  Timestamp                = {2015.01.22}
+}
+
+@Article{Chen2012,
+  Title                    = {A {Bayes}ian Approach For Calculating Variable Total Maximum Daily Loads And Uncertainty Assessment},
+  Author                   = {Dingjiang Chen and Randy A. Dahlgren and Yena Shen and Jun Lu},
+  Year                     = {2012},
+  Pages                    = {59-67},
+  Volume                   = {430},
+
+  Bdsk-url-1               = {http://dx.doi.org/10.1016/j.scitotenv.2012.04.042},
+  Date-modified            = {2015-02-19 04:34:58 +0000},
+  Journal                  = {Science of the Total Environment},
+  Keywords                 = {Bayesian statistics}
 }
 
 @Conference{Christensen2011,
   Title                    = {In-stream Water-quality Estimation: Case Studies In Real-time Stream And Lake Monitoring In The Central Usa},
   Author                   = {Victoria G. Christensen and Andrew C. Ziegler and Jennifer L. Graham and Rachel A. Esralew},
-  Booktitle                = {International Symposium for 19th Anniversary of World Water Day Seoul, Korea 21 March 2011},
+  Booktitle                = {International Symposium for 19\textsuperscript{th} Anniversary of World Water Day Seoul, Korea 21 March 2011},
   Year                     = {2011}
 }
 
@@ -252,8 +308,13 @@
   Author                   = {Clifton, Daphne G. and Gilliom, Robert J.},
   Year                     = {1989},
   Number                   = {88-4217},
+  Pages                    = {-},
   Publisher                = {U.S. Geological Survey},
-  Series                   = {Water-Resources Investigations Report}
+  Series                   = {Water-Resources Investigations Report},
+
+  Owner                    = {Keith},
+  Refid                    = {4434892853},
+  Timestamp                = {2012.10.10}
 }
 
 @Electronic{USGSPL89,
@@ -267,7 +328,9 @@
   Date-modified            = {2015-02-19 04:34:58 +0000},
   HowPublished             = {Policy Letter},
   Institution              = {Office of Surface Water},
-  Journal                  = {Policy Statement 89.08.}
+  Journal                  = {Policy Statement 89.08.},
+  Owner                    = {Keith},
+  Timestamp                = {2013.09.20}
 }
 
 @Phdthesis{2010Cody,
@@ -275,7 +338,9 @@
   Author                   = {Brent M. Cody},
   Year                     = {2010},
 
-  School                   = {Colorado State University}
+  Owner                    = {keithmorse},
+  School                   = {Colorado State University},
+  Timestamp                = {2014.08.28}
 }
 
 @Article{Cohen2001,
@@ -285,7 +350,11 @@
   Pages                    = {35-48},
   Volume                   = {49},
 
-  Journal                  = {Journal of Arid Environments}
+  Bdsk-url-1               = {http://dx.doi.org/10.1006/jare.2001.0834},
+  Date-modified            = {2015-02-19 04:34:58 +0000},
+  Journal                  = {Journal of Arid Environments},
+  Owner                    = {Tschan},
+  Timestamp                = {2013.01.11}
 }
 
 @Electronic{CCC2012StationDescription,
@@ -294,7 +363,11 @@
   Url                      = {http://www.coagmet.colostate.edu/station_description.php},
   Year                     = {2012},
 
-  HowPublished             = {World Wide Web}
+  Bdsk-url-1               = {http://www.coagmet.colostate.edu/station_description.php},
+  Date-modified            = {2015-02-19 04:34:58 +0000},
+  HowPublished             = {World Wide Web},
+  Owner                    = {keithmorse},
+  Timestamp                = {2014.07.07}
 }
 
 @Electronic{Csu2012,
@@ -302,14 +375,26 @@
   Author                   = {{Colorado Climate Center}},
   Url                      = {http://www.coagmet.colostate.edu/about.php},
   Year                     = {2012},
-  Organization             = {Colorado State University}
+  Organization             = {Colorado State University},
+
+  Bdsk-url-1               = {http://www.coagmet.colostate.edu/about.php},
+  Date-modified            = {2015-02-19 04:40:59 +0000},
+  HowPublished             = {\url{http://www.coagmet.colostate.edu/about.php}},
+  Owner                    = {KMorse},
+  Timestamp                = {2014.07.07}
 }
 
 @Book{CSBI1979,
   Title                    = {The story of Colorado farming,mining,manufacturing},
   Author                   = {{Colorado State Board of Immigration}},
   Year                     = {1979},
-  Publisher                = {Brock-Hoffner Press}
+  Language                 = {English},
+  Publisher                = {Brock-Hoffner Press},
+
+  Catalog-url              = {http://discovery.library.colostate.edu/Record/.b11439117},
+  Contents                 = {1.Northwestern Colorado.-2.Western Slope.-3.The San Luis Valley.-4.Arkansas Valley.-5.Eastern Colorado.-6.North-Central Colorado.-7.Southwestern Colorado.},
+  Subjects                 = {Industries},
+  Type                     = {Book}
 }
 
 @Article{Cooke1987,
@@ -319,7 +404,10 @@
   Pages                    = {1214-1219},
   Volume                   = {21:12},
 
-  Journal                  = {Environ. Sci. Technol.}
+  Journal                  = {Environ. Sci. Technol.},
+  Owner                    = {Keith},
+  Refid                    = {4433373919},
+  Timestamp                = {2012.10.09}
 }
 
 @Book{Crowfoot2002,
@@ -342,20 +430,30 @@
 @Manual{Laure2012,
   Title                    = {Fitting parametric univariate distributions to non censored or censored data using the R fitdistrplus package},
   Author                   = {M. L. Delignette-Muller and Christophe Dutang},
-  Year                     = {2012}
+  Year                     = {2012},
+
+  Bdsk-url-1               = {http://cran.r-project.org/web/packages/fitdistrplus/vignettes/intro2fitdistrplus.pdf},
+  Date-modified            = {2015-02-19 04:34:58 +0000},
+  Month                    = mar
 }
 
 @Manual{fitdistrplus,
   Title                    = {Package 'fitdistrplus'},
   Author                   = {M. L. Delignette-Muller and Regis Pouillot and Jean-Baptiste Denis and Christophe Dutang},
-  Year                     = {2012}
+  Year                     = {2012},
+  Note                     = {R package version 0.1-3},
+
+  Month                    = {March}
 }
 
 @Techreport{NCDC2003,
   Title                    = {Climatography of the United State No. 60},
   Author                   = {Doesken, Nolan J. and Pielke, Roger A. Sr. and Bliss, Odilia A.P. Bliss},
   Institution              = {National Climatic Data Center},
-  Year                     = {2003}
+  Year                     = {2003},
+
+  Owner                    = {Tschan},
+  Timestamp                = {2012.12.18}
 }
 
 @Inproceedings{2005Donnelly,
@@ -372,7 +470,9 @@
   Author                   = {M. Dowle and T. Short and S. Lianoglou and A. Srinivasan and R Saporta},
   Year                     = {2013},
 
-  Month                    = {September}
+  Month                    = {September},
+  Owner                    = {Keith},
+  Timestamp                = {2013.10.14}
 }
 
 @Article{1960Drake,
@@ -383,6 +483,8 @@
   Pages                    = {7-10},
   Volume                   = {8},
 
+  Bdsk-url-1               = {http://dx.doi.org/10.1080/00480169.1960.33364},
+  Date-modified            = {2015-02-19 04:34:58 +0000},
   Journal                  = {New Zealand Veterinary Journal}
 }
 
@@ -393,7 +495,9 @@
   Pages                    = {2771-2778},
   Volume                   = {15},
 
-  Journal                  = {Hydrological Processes}
+  Journal                  = {Hydrological Processes},
+  Owner                    = {Keith},
+  Timestamp                = {2014.01.22}
 }
 
 @Article{Frappart2008,
@@ -417,6 +521,8 @@
   Pages                    = {387-399},
   Volume                   = {99},
 
+  Bdsk-url-1               = {http://dx.doi.org/10.1016/j.rse.2005.08.016},
+  Date-modified            = {2015-02-19 04:34:58 +0000},
   Journal                  = {Remote Sensing of the Environment},
   Keywords                 = {Remote sensing; Hydrology; Altimetry; Water level and water volume variation}
 }
@@ -430,7 +536,10 @@
   Pages                    = {468-472},
   Volume                   = {6},
 
-  Journal                  = {Canadian Journal of Civil Engineering}
+  Journal                  = {Canadian Journal of Civil Engineering},
+  Owner                    = {Keith},
+  Refid                    = {4637453276},
+  Timestamp                = {2012.10.09}
 }
 
 @Article{Gardner1981,
@@ -440,18 +549,25 @@
   Pages                    = {173-190},
   Volume                   = {12},
 
-  Journal                  = {Ecological Modelling}
+  Journal                  = {Ecological Modelling},
+  Owner                    = {Tschan},
+  Timestamp                = {2012.12.22}
 }
 
 @Article{Gates1996,
   Title                    = {Spatiotemporal Stochastic Open-Channel Flow. I: Model And Its Parameter Data},
   Author                   = {Gates, Timmothy K. and Al-Zahrani, Muhammad A.},
   Year                     = {1996},
+  Month                    = nov,
   Number                   = {11},
   Pages                    = {641-651},
   Volume                   = {122},
 
-  Journal                  = {Journal of Hydraulic Engineering}
+  Bdsk-url-1               = {http://dx.doi.org/10.1061/(ASCE)0733-9429(1996)122:11(641)},
+  Date-modified            = {2015-02-19 04:34:58 +0000},
+  Journal                  = {Journal of Hydraulic Engineering},
+  Owner                    = {Keith},
+  Timestamp                = {2013.01.16}
 }
 
 @Article{gates2009,
@@ -471,7 +587,11 @@
   Author                   = {Gates, Timothy K. and Garcia, Luis A. and Labadie, John W. and Institute., Colorado Water Resources Research and Station., Colorado Agricultural Experiment},
   Year                     = {2006},
   Pages                    = {-},
-  Publisher                = {Colorado Water Resources, Research Institute : Colorado Agricultural Experiment Station}
+  Publisher                = {Colorado Water Resources, Research Institute : Colorado Agricultural Experiment Station},
+
+  Owner                    = {Keith},
+  Refid                    = {70807002},
+  Timestamp                = {2012.10.09}
 }
 
 @Techreport{Gersberg2006,
@@ -480,7 +600,11 @@
   Institution              = {Southwest Consortium for Environmental Research and Policy and San Diego State University},
   Year                     = {2006},
   Number                   = {W-06-3},
-  Type                     = {Summary and Final Report}
+  Type                     = {Summary and Final Report},
+
+  Comment                  = {http://scerpfiles.org/cont_mgt/doc_files/W_06_3.pdf},
+  Owner                    = {Keith},
+  Timestamp                = {2012.03.15}
 }
 
 @Techreport{Gersberg2009,
@@ -489,7 +613,11 @@
   Institution              = {Southwest Consortium for Environmental Research and Policy and San Diego State University},
   Year                     = {2009},
   Number                   = {W-09-01},
-  Type                     = {Summary and Final Report}
+  Type                     = {Summary and Final Report},
+
+  Comment                  = {http://scerpfiles.org/cont_mgt/doc_files/W-09-01.pdf},
+  Owner                    = {Tschan},
+  Timestamp                = {2013.01.11}
 }
 
 @Article{gillespie1986,
@@ -512,8 +640,13 @@
   Pages                    = {121--126},
   Volume                   = {19},
 
+  Bdsk-url-1               = {http://dx.doi.org/10.1016/j.tree.2003.11.004},
+  Booktitle                = {Trends in Ecology \& Evolution},
+  Date-modified            = {2015-02-19 04:34:58 +0000},
   Journal                  = {Trends in Ecology \& Evolution},
-  Publisher                = {Elsevier}
+  Owner                    = {KMorse},
+  Publisher                = {Elsevier},
+  Timestamp                = {2014.07.07}
 }
 
 @Article{Ham1990,
@@ -525,7 +658,10 @@
   Pages                    = {287-301},
   Volume                   = {52},
 
-  Journal                  = {Agricultural and Forest Meteorology Agricultural and Forest Meteorology}
+  Journal                  = {Agricultural and Forest Meteorology Agricultural and Forest Meteorology},
+  Owner                    = {Keith},
+  Refid                    = {4634938866},
+  Timestamp                = {2012.10.09}
 }
 
 @Article{Hamilton1999,
@@ -537,7 +673,10 @@
   Pages                    = {227-35},
   Volume                   = {44},
 
-  Journal                  = {Ecotoxicology and Environmental Safety}
+  Journal                  = {Ecotoxicology and Environmental Safety},
+  Owner                    = {Keith},
+  Refid                    = {117186819},
+  Timestamp                = {2012.10.09}
 }
 
 @Article{Hamilton20041,
@@ -545,10 +684,32 @@
   Author                   = {Steven J. Hamilton},
   Year                     = {2004},
   ISSN                     = {0048-9697},
+  Number                   = {1{\^a}¬Ä¬ì3},
   Pages                    = {1 - 31},
   Volume                   = {326},
 
+  Abstract                 = {In many environmental contaminant situations selenium has become the primary element of concern because of its bioaccumulative nature in food webs. Initial concerns about selenium were related to fish kills at Belews Lake, NC, Martin Lake, TX, and Kesterson Reservoir, CA, and to bird deformities at Kesterson Reservoir. Additional concerns were identified under the National Irrigation Water Quality Program at Salton Sea, CA, Kendrick, WY, Stewart Lake, UT, and Grand Valley and Uncompahgre Valley, CO. Recent studies have raised concerns about selenium impacts on aquatic resources in Southeastern Idaho and British Columbia. The growing discomfort among the scientific community with a waterborne criterion has lead the \{US\} Environment Protection Agency to consider a tissue-based criterion for selenium. Some aquatic ecosystems have been slow to recover from selenium contamination episodes. In recent years, non-governmental researchers have been proposing relatively high selenium thresholds in diet and tissue relative to those proposed by governmental researchers. This difference in opinions is due in part to the selection of datasets and caveats in selecting scientific literature. In spite of the growing selenium literature, there are needs for additional research on neglected organisms. This review also discusses the interaction of selenium with other elements, inconsistent effects of selenium on survival and growth of fish, and differences in depuration rates and sensitivity among species. },
+  Bdsk-url-1               = {http://www.sciencedirect.com/science/article/pii/S0048969704000609},
+  Bdsk-url-2               = {http://dx.doi.org/10.1016/j.scitotenv.2004.01.019},
+  Date-modified            = {2015-02-19 04:34:58 +0000},
   Journal                  = {Science of The Total Environment},
+  Keywords                 = {Selenium}
+}
+
+@Article{Hefnawy2010,
+  Title                    = {The importance of selenium and the effects of its deficiency in animal health},
+  Author                   = {Abd El Ghany Hefnawy and J.L. Tórtora-Pérez},
+  Year                     = {2010},
+  ISSN                     = {0921-4488},
+  Note                     = {Special Issue: Plenary papers of the 9th International Conference on Goats},
+  Number                   = {2{\^a}¬Ä¬ì3},
+  Pages                    = {185 - 192},
+  Volume                   = {89},
+
+  Bdsk-url-1               = {http://www.sciencedirect.com/science/article/pii/S0921448809003149},
+  Bdsk-url-2               = {http://dx.doi.org/10.1016/j.smallrumres.2009.12.042},
+  Date-modified            = {2015-02-19 04:34:58 +0000},
+  Journal                  = {Small Ruminant Research},
   Keywords                 = {Selenium}
 }
 
@@ -556,7 +717,11 @@
   Title                    = {Statistical Methods in Water Resources},
   Author                   = {D.R. Helsel and R.M. Hirsch},
   Year                     = {1992},
-  Publisher                = {U.S. Geological Survey}
+  Publisher                = {U.S. Geological Survey},
+
+  Owner                    = {kmorse},
+  Quality                  = {1},
+  Timestamp                = {2014.01.21}
 }
 
 @Techreport{Hem1985,
@@ -565,7 +730,11 @@
   Institution              = {U.S. Geologial Society},
   Year                     = {1985},
   Number                   = {2254},
-  Type                     = {Water-Supply Paper}
+  Type                     = {Water-Supply Paper},
+
+  Owner                    = {kmorse},
+  Quality                  = {1},
+  Timestamp                = {2014.01.21}
 }
 
 @Article{Hung1995,
@@ -578,25 +747,40 @@
   Pages                    = {pp. 234-240},
   Volume                   = {18},
 
+  Abstract                 = {Analytical methods of dissolved Se species in river water and seawater were established and applied to study dissolved Se speciation in the Kaoping and Erhjen rivers and estuaries, southwestern Taiwan. The Kaoping and Erhjen rivers and estuaries were respectively in relatively oxygenated and oxygen-deficient conditions as revealed from the distributions of dissolved oxygen, DOC, nutrients, and dissolved Mn. Concentrations of dissolved total Se increased downstream in the riverine sections, ranging from 0.6 nM to 1.2 nM for the Kaoping River and from 0.8 nM to 1.05 nM for the Erhjen River. The dissolved total Se was only slightly higher in the Erhjen middle estuary than in the Kaoping middle estuary in spite of heavier pollution in the former. The dissolved total Se behaved rather conservatively in the Kaoping estuary but nonconservatively in the Erhjen estuary resulting from anthropogenic inputs, and in this respect showed similarities with the behavior of redox-sensitive Mn. The predominant species of selenium were Se(VI) and organic Se in the Kaoping River and Se(VI) in the Kaoping estuary. The elevated concentration of Se(VI) in the Kaoping estuary may stem from the degradation of organic Se and oxidation of Se(IV). On the other hand, Se(IV) and organic Se were equally dominant in the Erhjen River, and Se(IV) was predominant through most of the Erhjen estuary. The elevated distribution of Se(IV) in the Erhjen middle estuary may result mostly from partial decomposition of organic Se, but further oxidation of Se(IV) was inhibited in reducing waters. However, Se(VI) became dominant at Erhjen outer estuary where water was oxygenated by the replacement of intruded coastal seawater. Apparently, the speciation of dissolved Se was mainly controlled by the biological and redox processes in the Kaoping and Erhjen rivers and estuaries.},
+  Bdsk-url-1               = {http://www.jstor.org/stable/1352633},
+  Copyright                = {Copyright {\copyright} 1995 Coastal and Estuarine Research Federation},
+  Date-modified            = {2015-02-19 04:34:58 +0000},
   Journal                  = {Estuaries},
+  Jstor_articletype        = {research-article},
+  Jstor_formatteddate      = {Mar., 1995},
+  Jstor_issuetitle         = {Part B},
   Publisher                = {Coastal and Estuarine Research Federation}
 }
 
 @Manual{msm,
   Title                    = {Package 'msm'},
   Author                   = {Christopher Jackson},
-  Year                     = {2013}
+  Year                     = {2013},
+
+  Month                    = {May},
+  Owner                    = {Keith},
+  Timestamp                = {2013.10.13}
 }
 
 @Article{Jain1996,
-  Title                    = {Application of chemical mass balance to upstream-downstream river monitoring data},
+  Title                    = {Application of chemical mass balance to upstream/downstream river monitoring data},
   Author                   = {Jain, C. K.},
   Year                     = {1996},
   ISSN                     = {0022-1694},
+  Number                   = {1/4},
   Pages                    = {105-115},
   Volume                   = {182},
 
-  Journal                  = {JOURNAL OF HYDROLOGY -AMSTERDAM-}
+  Journal                  = {JOURNAL OF HYDROLOGY -AMSTERDAM-},
+  Owner                    = {Keith},
+  Refid                    = {208116091},
+  Timestamp                = {2012.10.10}
 }
 
 @Article{1999Jensen,
@@ -604,7 +788,10 @@
   Author                   = {L. Jensen},
   Year                     = {1999},
 
-  Journal                  = {A.L.Moxon Honorary Lecture}
+  Abstract                 = {Jensen,L (1999) History and importance of selenium for poultry. A.L.Moxon Honorary Lecture, Ohio State Special Circular #167-99.},
+  Journal                  = {A.L.Moxon Honorary Lecture},
+  Owner                    = {Keith},
+  Timestamp                = {2015.01.25}
 }
 
 @Conference{Jensen2010,
@@ -613,11 +800,13 @@
   Booktitle                = {Evapotranspiration Workshop: Using the Best Science to Estimate Consumptive Use},
   Year                     = {2010},
   Month                    = mar,
-  Organization             = {{CSU/ARS} Evapotranspiration Workshop},
+  Organization             = {CSU/ARS Evapotranspiration Workshop},
   Publisher                = {Colorado State University and USDA ARS},
   Series                   = {Evapotranspiration Workshop: Using the Best Science to Estimate Consumptive Use},
 
-  Comment                  = {Presented at the {CSU/ARS} Evapotranspiration Workshop, Fort Collins, CO, 15-Mar-2010.}
+  Comment                  = {Presented at the CSU/ARS Evapotranspiration Workshop, Fort Collins, CO, 15-Mar-2010.},
+  Owner                    = {Keith},
+  Timestamp                = {2012.10.09}
 }
 
 @Article{johnson2009,
@@ -648,8 +837,13 @@
   Pages                    = {625-641},
   Volume                   = {173},
 
+  Bdsk-url-1               = {http://dx.doi.org/10.1007/s10661-010-1411-x},
+  Date-modified            = {2015-02-19 04:34:58 +0000},
   Journal                  = {Environmental Monitoring and Assessment},
-  Publisher                = {Springer}
+  Owner                    = {Keith},
+  Publisher                = {Springer},
+  Refid                    = {696469905},
+  Timestamp                = {2012.10.09}
 }
 
 @Misc{2014Kansas303d,
@@ -669,7 +863,10 @@
   Pages                    = {959-978},
   Volume                   = {24},
 
-  Journal                  = {Water Resour. Manage. Water Resources Management}
+  Journal                  = {Water Resour. Manage. Water Resources Management},
+  Owner                    = {Keith},
+  Refid                    = {630623969},
+  Timestamp                = {2012.10.09}
 }
 
 @Manual{Komsta2012,
@@ -703,7 +900,10 @@
   Pages                    = {4039-52},
   Volume                   = {35},
 
-  Journal                  = {Water research}
+  Journal                  = {Water research},
+  Owner                    = {Keith},
+  Refid                    = {119920607},
+  Timestamp                = {2012.10.09}
 }
 
 @Book{Lemly1988,
@@ -711,6 +911,7 @@
   Author                   = {Lemly, A.D. and Smith, G.J.},
   Year                     = {1988},
 
+  Abstract                 = {Selenium, a non-metallic trace element, is readily accumulated by aquatic organisms. The degree of mobility or cycling rate of selenium in an aquatic ecosystem will largely determine whether toxicity occurs and how long the environmental hazard remains. The selenium cycle is made up of immobilization and mobilization processes that move the element between organisms, water, and sediment, with kinetics determined by chemical and physical factors related to the type of habitat present and its spatial variability. Because of its ability to bioaccumulate and cause adverse reproductive effects at low environmental concentrations, selenium should be recognized as a contaminant with the potential to severely impact fish and wildlife populations.},
   Month                    = {Jan}
 }
 
@@ -731,9 +932,13 @@
   Author                   = {A. Dennis Lemly},
   Year                     = {1993},
   ISSN                     = {0166-445X},
+  Number                   = {1{\^a}¬Ä¬ì2},
   Pages                    = {133 - 158},
   Volume                   = {27},
 
+  Bdsk-url-1               = {http://www.sciencedirect.com/science/article/pii/0166445X93900512},
+  Bdsk-url-2               = {http://dx.doi.org/10.1016/0166-445X(93)90051-2},
+  Date-modified            = {2015-02-19 04:34:58 +0000},
   Journal                  = {Aquatic Toxicology},
   Keywords                 = {Selenium}
 }
@@ -742,9 +947,13 @@
   Title                    = {River channel patterns: braided, meandering, and straight,},
   Author                   = {Leopold, Luna B. and Wolman, M. Gordon and (U.S.), Geological Survey},
   Year                     = {1957},
+  Pages                    = {-},
   Publisher                = {U.S. Govt. Print. Off.},
 
-  Address                  = {Washington}
+  Address                  = {Washington},
+  Owner                    = {Keith},
+  Refid                    = {64077},
+  Timestamp                = {2012.10.09}
 }
 
 @Article{Li2010a,
@@ -756,7 +965,10 @@
   Pages                    = {1051-1058},
   Volume                   = {181},
 
-  Journal                  = {Journal of Hazardous Materials Journal of Hazardous Materials}
+  Journal                  = {Journal of Hazardous Materials Journal of Hazardous Materials},
+  Owner                    = {Keith},
+  Refid                    = {4639299389},
+  Timestamp                = {2012.10.09}
 }
 
 @Article{Li2010b,
@@ -768,7 +980,10 @@
   Pages                    = {579-588},
   Volume                   = {176},
 
-  Journal                  = {J. Hazard. Mater. Journal of Hazardous Materials}
+  Journal                  = {J. Hazard. Mater. Journal of Hazardous Materials},
+  Owner                    = {Keith},
+  Refid                    = {503097664},
+  Timestamp                = {2012.10.09}
 }
 
 @Book{2000luoma,
@@ -782,9 +997,13 @@
   Title                    = {Elemental mass-balance of material carried by major world rivers},
   Author                   = {J.M. Martin and M. Meybeck},
   Year                     = {1979},
+  Pages                    = {-},
   Volume                   = {7},
 
-  Journal                  = {Marine Chemistry}
+  Journal                  = {Marine Chemistry},
+  Owner                    = {Keith},
+  Refid                    = {770392499},
+  Timestamp                = {2012.10.09}
 }
 
 @Article{Masscheleyn1990,
@@ -822,7 +1041,11 @@
   Title                    = {Occurrence and Distribution of Dissolved Solids, Selenium, and Uranium in Groundwater and Surface Water in the {A}rkansas {R}iver Basin from the Headwaters to {C}oolidge, {K}ansas, 1970-2009: {U.S. Geological Survey} Scientific Investigation Report 2010-5069},
   Author                   = {Lisa D. Miller and Kenneth R. Watts and Roderick F. Ortiz and Tamara Ivahnenko},
   Institution              = {US Geological Survey},
-  Year                     = {2010}
+  Year                     = {2010},
+
+  Owner                    = {kmorse},
+  Quality                  = {1},
+  Timestamp                = {2013.01.09}
 }
 
 @Article{moore1967,
@@ -838,7 +1061,7 @@
 }
 
 @Article{Morway2013,
-  Title                    = {Modeling variably saturated subsurface solute transport with {MODFLOW-UZF} and {MT3DMS}.},
+  Title                    = {Modeling variably saturated subsurface solute transport with MODFLOW-UZF and MT3DMS.},
   Author                   = {Eric D. Morway and Richard G. Niswonger and Christian D. Langevin and Ryan T. Bailey and Richard W. Healy},
   Year                     = {2013},
   Number                   = {51},
@@ -846,7 +1069,9 @@
 
   Bdsk-url-1               = {http://dx.doi.org/10.1111/j.1745-6584.2012.00971.x},
   Date-modified            = {2015-02-19 04:34:58 +0000},
-  Journal                  = {Groundwater}
+  Journal                  = {Groundwater},
+  Owner                    = {Keith},
+  Timestamp                = {2015.01.08}
 }
 
 @Article{Mueller2008,
@@ -858,7 +1083,10 @@
   Pages                    = {247-258},
   Volume                   = {134},
 
-  Journal                  = {Journal of Environmental Engineering}
+  Journal                  = {Journal of Environmental Engineering},
+  Owner                    = {Keith},
+  Refid                    = {281878868},
+  Timestamp                = {2012.10.09}
 }
 
 @Article{2008naftz,
@@ -878,7 +1106,9 @@
   Pages                    = {7-32},
   Publisher                = {U.S. Geological Survey},
 
-  Journal                  = {Saltcedar and Russian Olive control demonstraction act science assessment}
+  Journal                  = {Saltcedar and Russian Olive control demonstraction act science assessment},
+  Owner                    = {Tschan},
+  Timestamp                = {2012.12.17}
 }
 
 @Inbook{Nagler2010b,
@@ -889,7 +1119,9 @@
   Pages                    = {33-48},
   Publisher                = {U.S. Geological Survey},
 
-  Journal                  = {Saltcedar and Russian Olive control demonstraction act science assessment}
+  Journal                  = {Saltcedar and Russian Olive control demonstraction act science assessment},
+  Owner                    = {Tschan},
+  Timestamp                = {2012.12.17}
 }
 
 @Article{navarro2000,
@@ -913,7 +1145,10 @@
   Pages                    = {129-136},
   Volume                   = {260},
 
-  Journal                  = {Desalination Desalination}
+  Journal                  = {Desalination Desalination},
+  Owner                    = {Keith},
+  Refid                    = {681554134},
+  Timestamp                = {2012.10.09}
 }
 
 @Techreport{USGS2007,
@@ -922,7 +1157,10 @@
   Institution              = {USGS},
   Year                     = {2007},
   Number                   = {2007-1426},
-  Type                     = {Open-File Report}
+  Type                     = {Open-File Report},
+
+  Owner                    = {Keith},
+  Timestamp                = {2013.06.24}
 }
 
 @Article{ONeill1982,
@@ -961,6 +1199,7 @@
   Author                   = {Harry M. Ohlendorf and David J. Hoffman and Michael K. Saiki and Thomas W. Aldrich},
   Year                     = {1986},
   ISSN                     = {0048-9697},
+  Number                   = {1{\^a}¬Ä¬ì2},
   Pages                    = {49 - 63},
   Volume                   = {52},
 
@@ -991,7 +1230,10 @@
   Pages                    = {6830-6836},
   Volume                   = {42},
 
-  Journal                  = {Environ. Sci. Technol. Environmental Science \& Technology}
+  Journal                  = {Environ. Sci. Technol. Environmental Science \& Technology},
+  Owner                    = {Keith},
+  Refid                    = {4665960051},
+  Timestamp                = {2012.10.09}
 }
 
 @Article{Oram2010,
@@ -1003,7 +1245,10 @@
   Pages                    = {4176-4183},
   Volume                   = {44},
 
-  Journal                  = {Environ. Sci. Technol. Environmental Science \& Technology}
+  Journal                  = {Environ. Sci. Technol. Environmental Science \& Technology},
+  Owner                    = {Keith},
+  Refid                    = {4665967554},
+  Timestamp                = {2012.10.09}
 }
 
 @Book{Painter1940,
@@ -1028,19 +1273,25 @@
 @Techreport{USGS1982a,
   Title                    = {Measurement and Computation of Streamflow: Volume 1. Measurement of Stage and Discharge},
   Author                   = {S. E. Rantz and others},
-  Institution              = {USGS},
+  Institution              = {U.S.G.S.},
   Year                     = {1982},
   Number                   = {2175},
-  Type                     = {Geological Survey Water-Supply Paper}
+  Type                     = {Geological Survey Water-Supply Paper},
+
+  Owner                    = {Tschan},
+  Timestamp                = {2013.06.24}
 }
 
 @Techreport{USGS1982b,
   Title                    = {Measurement and Computation of Streamflow: Volume 2. Computatio of Discharge},
   Author                   = {S. E. Rantz and others},
-  Institution              = {USGS},
+  Institution              = {U.S.G.S.},
   Year                     = {1982},
   Number                   = {2175},
-  Type                     = {Geological Survey Water-Supply Paper}
+  Type                     = {Geological Survey Water-Supply Paper},
+
+  Owner                    = {Tschan},
+  Timestamp                = {2013.06.24}
 }
 
 @Article{Rauch1998,
@@ -1051,7 +1302,9 @@
   Pages                    = {237-244},
   Volume                   = {38},
 
-  Journal                  = {Water Science Technology}
+  Journal                  = {Water Science Technology},
+  Owner                    = {Tschan},
+  Timestamp                = {2013.01.11}
 }
 
 @Article{rayman2000,
@@ -1062,7 +1315,7 @@
   Pages                    = {233--241},
   Volume                   = {356},
 
-  Journal                  = {The Lancet},
+  Journal                  = {The lancet},
   Publisher                = {Elsevier}
 }
 
@@ -1076,7 +1329,10 @@
   Volume                   = {72},
 
   Bdsk-url-1               = {http://dx.doi.org/10.1016/0304-3800(94)90143-0},
-  Journal                  = {Ecological Modelling}
+  Date-modified            = {2015-02-19 04:34:58 +0000},
+  Journal                  = {Ecological Modelling},
+  Owner                    = {Tschan},
+  Timestamp                = {2013.01.11}
 }
 
 @Booklet{Ricci2005,
@@ -1096,7 +1352,9 @@
   Author                   = {Brian Ripley and Bill Venables and Douglas M. Bates and Kurt Hornik and Albrecht Gebhardt and Davit Firth},
   Year                     = {2013},
 
-  Month                    = {August}
+  Month                    = {August},
+  Owner                    = {Keith},
+  Timestamp                = {2013.10.14}
 }
 
 @Book{Ritz2008,
@@ -1104,7 +1362,15 @@
   Author                   = {Ritz, Christian and Streibig, Jens Carl},
   Year                     = {2008},
   ISBN                     = {0387096167; 9780387096162},
-  Publisher                = {Springer}
+  Language                 = {English},
+  Pages                    = {Array},
+  Publisher                = {Springer},
+
+  Bdsk-url-1               = {http://dx.doi.org/10.1007/978-0-387-09616-2},
+  Catalog-url              = {http://discovery.library.colostate.edu/Record/.b33291767},
+  Date-modified            = {2015-02-19 04:34:58 +0000},
+  Subjects                 = {Nonlinear theories;R (Computer program language);Regression analysis},
+  Type                     = {E-Book}
 }
 
 @Article{Robertson2000,
@@ -1116,7 +1382,10 @@
   Pages                    = {689-695},
   Volume                   = {38},
 
-  Journal                  = {Ground Water Ground Water}
+  Journal                  = {Ground Water Ground Water},
+  Owner                    = {Keith},
+  Refid                    = {4634385189},
+  Timestamp                = {2012.10.09}
 }
 
 @Article{Rohwer1931,
@@ -1145,7 +1414,12 @@
   Author                   = {Roy, Sujoy and Munson, Ron and Rigby, Mark and Clark, Don, and Brownie, Bill},
   Institution              = {Tetra Tech, Inc.},
   Year                     = {2006},
-  Month                    = mar
+  Month                    = mar,
+
+  Bdsk-url-1               = {http://www.newriverwetlands.com/images/pilotfinalreport.pdf},
+  Date-modified            = {2015-02-19 04:34:58 +0000},
+  Owner                    = {Tschan},
+  Timestamp                = {2013.01.11}
 }
 
 @Article{Saiki1993,
@@ -1227,7 +1501,10 @@
   Title                    = {Nonlinear Regression},
   Author                   = {Seber, G.A.F. and Wild, C.J.},
   Year                     = {2005},
-  Publisher                = {Hohn Wiley \& Sons, Inc.}
+  Publisher                = {Hohn Wiley \& Sons, Inc.},
+
+  Owner                    = {Tschan},
+  Timestamp                = {2012.12.18}
 }
 
 @Book{Sheather2009,
@@ -1235,7 +1512,15 @@
   Author                   = {Sheather, Simon J.},
   Year                     = {2009},
   ISBN                     = {0387096086; 9780387096087},
-  Publisher                = {Springer}
+  Language                 = {English},
+  Pages                    = {Array},
+  Publisher                = {Springer},
+
+  Bdsk-url-1               = {http://dx.doi.org/10.1007/978-0-387-09608-7},
+  Catalog-url              = {http://discovery.library.colostate.edu/Record/.b33292334},
+  Date-modified            = {2015-02-19 04:34:59 +0000},
+  Subjects                 = {R (Computer program language);Regression analysis},
+  Type                     = {E-Book}
 }
 
 @Incollection{1991Skorupa,
@@ -1245,7 +1530,12 @@
   Editor                   = {Dinar, Ariel and Zilberman, David},
   Year                     = {1991},
   ISBN                     = {978-1-4613-6801-4},
-  Publisher                = {Springer US}
+  Language                 = {English},
+  Pages                    = {345-368},
+  Publisher                = {Springer US},
+
+  Bdsk-url-1               = {http://dx.doi.org/10.1007/978-1-4615-4028-1_18},
+  Date-modified            = {2015-02-19 04:34:59 +0000}
 }
 
 @Article{1998skorupa,
@@ -1265,7 +1555,9 @@
   Institution              = {U.S. Geological Survey},
   Year                     = {2014},
 
-  Publisher                = {U.S. Geological Survey}
+  Owner                    = {Keith},
+  Publisher                = {U.S. Geological Survey},
+  Timestamp                = {2015.01.22}
 }
 
 @Article{Sorensen2009,
@@ -1277,7 +1569,10 @@
   Pages                    = {384-391},
   Volume                   = {157},
 
-  Journal                  = {Environmental Pollution Environmental Pollution}
+  Journal                  = {Environmental Pollution Environmental Pollution},
+  Owner                    = {Keith},
+  Refid                    = {4659558545},
+  Timestamp                = {2012.10.09}
 }
 
 @Article{2002Spallholz,
@@ -1286,10 +1581,15 @@
   Year                     = {2002},
   ISSN                     = {0166-445X},
   Note                     = {State of Science and Future Needs for Selenium Aquatic Criteria},
+  Number                   = {1{\^a}¬Ä¬ì2},
   Pages                    = {27 - 37},
   Volume                   = {57},
 
-  Journal                  = {Aquatic Toxicology}
+  Bdsk-url-1               = {http://www.sciencedirect.com/science/article/pii/S0166445X01002685},
+  Bdsk-url-2               = {http://dx.doi.org/10.1016/S0166-445X(01)00268-5},
+  Date-modified            = {2015-02-19 04:34:59 +0000},
+  Journal                  = {Aquatic Toxicology},
+  Keywords                 = {Selenium toxicity}
 }
 
 @Article{Spanou2001,
@@ -1300,7 +1600,10 @@
   Pages                    = {173-194},
   Volume                   = {3},
 
-  Journal                  = {Journal Of Hydroinformatics}
+  Journal                  = {Journal Of Hydroinformatics},
+  Owner                    = {Keith},
+  Refid                    = {208572945},
+  Timestamp                = {2012.10.09}
 }
 
 @Article{Spencer2001,
@@ -1350,7 +1653,7 @@
 }
 
 @Misc{CRS37-84,
-  Title                    = {{37 CCR 84. Irrigation - Responsibility of User/Owner}},
+  Title                    = {37 CCR 84. Irrigation - Responsibility of User/Owner},
   Author                   = {{State of Colorado}},
   Year                     = {2012},
 
@@ -1378,7 +1681,10 @@
   Pages                    = {113-119},
   Volume                   = {18},
 
-  Journal                  = {Estuarine, Coastal and Shelf Science Estuarine, Coastal and Shelf Science}
+  Journal                  = {Estuarine, Coastal and Shelf Science Estuarine, Coastal and Shelf Science},
+  Owner                    = {Keith},
+  Refid                    = {4634269969},
+  Timestamp                = {2012.10.09}
 }
 
 @Article{1996Thomson,
@@ -1388,9 +1694,11 @@
   ISSN                     = {0954-3007},
   Month                    = {February},
   Number                   = {2},
-  Pages                    = {107-114},
+  Pages                    = {107{\^a}¬Ä¬î114},
   Volume                   = {50},
 
+  Bdsk-url-1               = {http://europepmc.org/abstract/MED/8641246},
+  Date-modified            = {2015-02-19 04:34:59 +0000},
   Journal                  = {European journal of clinical nutrition}
 }
 
@@ -1399,9 +1707,14 @@
   Author                   = {Ujang Tinggi},
   Year                     = {2003},
   ISSN                     = {0378-4274},
+  Number                   = {1{\^a}¬Ä¬ì2},
   Pages                    = {103 - 110},
   Volume                   = {137},
 
+  Abstract                 = {Selenium (Se) is an essential trace element for animals and humans because of its role in an antioxidant enzyme glutathione peroxidase. This enzyme protects cell membranes from damage caused by the peroxidation of lipids. The paper provides an overview of the effects of Se toxicity and deficiency in humans and animals. It is well established that Se deficiency causes health implications in humans and animals. Se is also very toxic and can cause Se poisoning (selenosis) in humans and animals. In Australia, Se deficiency has caused health problem to livestock; however, the problems were eliminated after the introduction of Se supplementation. Se toxicity has also been reported in some regions of Australia as a result of livestock feeding on Se accumulative plant species. The major source of Se is diet, and in many regions of the world the levels of Se in the soils generally reflect the Se status in human populations. In foods, the bioavailability and toxicity of Se depend on its chemical forms. Generally, organic forms of Se are more bioavailable and less toxic than the inorganic forms (selenites, selenates). The Se status in the Australian population and how this is compared with the rest of the world is also discussed.},
+  Bdsk-url-1               = {http://www.sciencedirect.com/science/article/pii/S0378427402003843},
+  Bdsk-url-2               = {http://dx.doi.org/10.1016/S0378-4274(02)00384-3},
+  Date-modified            = {2015-02-19 04:34:59 +0000},
   Journal                  = {Toxicology Letters},
   Keywords                 = {Selenium}
 }
@@ -1420,7 +1733,10 @@
   Institution              = {US Bureau of Reclamation},
   Year                     = {2008},
 
-  Publisher                = {US Bureau of Reclamation}
+  Editor                   = {US Bureau of Reclamation},
+  Owner                    = {keithmorse},
+  Publisher                = {US Bureau of Reclamation},
+  Timestamp                = {2014.08.29}
 }
 
 @Book{USDA2010,
@@ -1428,7 +1744,10 @@
   Author                   = {USDA and USDHHS},
   Year                     = {2010},
   Edition                  = {7th},
-  Publisher                = {U.S. Government Printing Office}
+  Publisher                = {U.S. Government Printing Office},
+
+  Owner                    = {Keith},
+  Timestamp                = {2015.01.21}
 }
 
 @Electronic{2006USDA,
@@ -1437,7 +1756,11 @@
   Url                      = {http://www.ars.usda.gov/Research/docs.htm?docid=9979},
   Year                     = {2006},
   Month                    = {Feb.},
-  Organization             = {USDA}
+  Organization             = {U.S.D.A.},
+
+  Date-modified            = {2015-02-19 04:44:20 +0000},
+  Owner                    = {Keith},
+  Timestamp                = {2015.01.22}
 }
 
 @Book{2014USEPA,
@@ -1445,7 +1768,10 @@
   Author                   = {USEPA},
   Year                     = {2014},
   Editor                   = {USEPA},
-  Publisher                = {U.S. Government Printing Office}
+  Publisher                = {U.S. Government Printing Office},
+
+  Owner                    = {keithmorse},
+  Timestamp                = {2014.08.28}
 }
 
 @Techreport{EPA2014,
@@ -1453,7 +1779,10 @@
   Author                   = {{USEPA}},
   Institution              = {USEPA},
   Year                     = {2014},
-  Month                    = {Feb.}
+  Month                    = {Feb.},
+
+  Owner                    = {Keith},
+  Timestamp                = {2015.01.26}
 }
 
 @Techreport{EPA-Se,
@@ -1465,7 +1794,9 @@
 
   Bdsk-url-1               = {http://water.epa.gov/scitech/swguidance/standards/criteria/current/index.cfm},
   Date-modified            = {2015-02-19 04:34:59 +0000},
-  Organization             = {U.S. Environmental Protection Agency}
+  Organization             = {U.S. Environmental Protection Agency},
+  Owner                    = {keithmorse},
+  Timestamp                = {2014.08.28}
 }
 
 @Book{EPA1992,
@@ -1475,9 +1806,11 @@
   Number                   = {Publication 9240.0-05A, EPA540/R-93/051, PB93-953316},
   Publisher                = {U.S. Government Printing Office},
 
-  Institution              = {USEPA},
+  Institution              = {U.S.E.P.A},
   Month                    = {December},
-  Organization             = {Office of Solid Waste and Emergency Response}
+  Organization             = {Office of Solid Waste and Emergency Response},
+  Owner                    = {Keith},
+  Timestamp                = {2015.01.14}
 }
 
 @Techreport{EPA1989,
@@ -1499,7 +1832,9 @@
 
   Bdsk-url-1               = {http://water.usgs.gov/nwc/explain_data.html},
   Date-modified            = {2015-02-19 04:34:59 +0000},
-  HowPublished             = {Internet}
+  HowPublished             = {Internet},
+  Owner                    = {KMorse},
+  Timestamp                = {2014.07.07}
 }
 
 @Electronic{USGS2012NWIS,
@@ -1509,7 +1844,9 @@
   Year                     = {2012},
 
   Bdsk-url-1               = {http://waterdata.usgs.gov/nwis/},
-  Date-modified            = {2015-02-19 04:34:59 +0000}
+  Date-modified            = {2015-02-19 04:34:59 +0000},
+  Owner                    = {Keith},
+  Timestamp                = {2013.01.28}
 }
 
 @Electronic{USGS2011NWIS,
@@ -1519,7 +1856,9 @@
   Year                     = {2011},
 
   Bdsk-url-1               = {http://waterdata.usgs.gov/nwis/},
-  Date-modified            = {2015-02-19 04:34:59 +0000}
+  Date-modified            = {2015-02-19 04:34:59 +0000},
+  Owner                    = {Keith},
+  Timestamp                = {2013.01.28}
 }
 
 @Electronic{USGS2010NWIS,
@@ -1529,7 +1868,9 @@
   Year                     = {2010},
 
   Bdsk-url-1               = {http://waterdata.usgs.gov/nwis/},
-  Date-modified            = {2015-02-19 04:34:59 +0000}
+  Date-modified            = {2015-02-19 04:34:59 +0000},
+  Owner                    = {keithmorse},
+  Timestamp                = {2014.07.07}
 }
 
 @Electronic{USGS2009NWIS,
@@ -1539,7 +1880,9 @@
   Year                     = {2009},
 
   Bdsk-url-1               = {http://waterdata.usgs.gov/nwis/},
-  Date-modified            = {2015-02-19 04:42:00 +0000}
+  Date-modified            = {2015-02-19 04:42:00 +0000},
+  Owner                    = {Keith},
+  Timestamp                = {2013.01.28}
 }
 
 @Electronic{USGS2008NWIS,
@@ -1551,7 +1894,9 @@
 
   Bdsk-url-1               = {http://wdr.water.usgs.gov/wy2008},
   Date-modified            = {2015-02-19 04:34:59 +0000},
-  HowPublished             = {Internet}
+  HowPublished             = {Internet},
+  Owner                    = {Keith},
+  Timestamp                = {2013.01.28}
 }
 
 @Electronic{USGS2007NWIS,
@@ -1563,7 +1908,9 @@
 
   Bdsk-url-1               = {http://waterdata.usgs.gov/nwis/},
   Date-modified            = {2015-02-19 04:34:59 +0000},
-  HowPublished             = {Internet}
+  HowPublished             = {Internet},
+  Owner                    = {Keith},
+  Timestamp                = {2013.01.28}
 }
 
 @Electronic{USGS2006NWIS,
@@ -1573,7 +1920,9 @@
   Year                     = {2006},
 
   Bdsk-url-1               = {http://waterdata.usgs.gov/nwis/},
-  Date-modified            = {2015-02-19 04:34:59 +0000}
+  Date-modified            = {2015-02-19 04:34:59 +0000},
+  Owner                    = {Keith},
+  Timestamp                = {2013.01.28}
 }
 
 @Article{Vance2009,
@@ -1605,7 +1954,10 @@
   Pages                    = {311-313},
   Volume                   = {125},
 
-  Journal                  = {Journal of Water Resources Planning and Management}
+  Journal                  = {Journal of Water Resources Planning and Management},
+  Owner                    = {kmorse},
+  Quality                  = {1},
+  Timestamp                = {2014.01.21}
 }
 
 @Article{Vrugt2008,
@@ -1656,7 +2008,9 @@
 
   Bdsk-url-1               = {http://dx.doi.org/10.1016/j.chemosphere.2007.01.084},
   Date-modified            = {2015-02-19 04:34:59 +0000},
-  Journal                  = {Chemosphe}
+  Journal                  = {Chemosphe},
+  Owner                    = {Tschan},
+  Timestamp                = {2013.01.11}
 }
 
 @Book{Waskom1994,
@@ -1692,7 +2046,9 @@
   Author                   = {Hadley Wickham},
   Year                     = {2013},
 
-  Month                    = {August}
+  Month                    = {August},
+  Owner                    = {Keith},
+  Timestamp                = {2013.10.14}
 }
 
 @Electronic{wiki:RMSE,
@@ -1723,7 +2079,9 @@
   Year                     = {2013},
   Organization             = {CRAN},
 
-  Month                    = {August}
+  Month                    = {August},
+  Owner                    = {Keith},
+  Timestamp                = {2013.09.28}
 }
 
 @Electronic{Wolock2003,
@@ -1731,10 +2089,12 @@
   Author                   = {D.M. Wolock},
   Url                      = {http://water.usgs.gov/GIS/metadata/usgswrd/XML/ieof48.xml},
   Year                     = {2003},
-  Organization             = {USGS},
+  Organization             = {U.S. Geological Society},
 
   Bdsk-url-1               = {http://water.usgs.gov/GIS/metadata/usgswrd/XML/ieof48.xml},
-  Date-modified            = {2015-02-19 04:42:55 +0000}
+  Date-modified            = {2015-02-19 04:42:55 +0000},
+  Owner                    = {KMorse},
+  Timestamp                = {2014.07.07}
 }
 
 @Article{world1996,
@@ -1772,7 +2132,9 @@
   Author                   = {Achim Zeileis and Gabor Grothendieck and Jeffrey A. Ryan and Felix Andrews},
   Year                     = {2013},
 
-  Month                    = {August}
+  Month                    = {August},
+  Owner                    = {Keith},
+  Timestamp                = {2013.10.14}
 }
 
 @Article{Zhang1997,
@@ -1784,7 +2146,10 @@
   Pages                    = {511-517},
   Volume                   = {31},
 
-  Journal                  = {ENVIRONMENTAL SCIENCE AND TECHNOLOGY -WASHINGTON DC-}
+  Journal                  = {ENVIRONMENTAL SCIENCE AND TECHNOLOGY -WASHINGTON DC-},
+  Owner                    = {Keith},
+  Refid                    = {196547972},
+  Timestamp                = {2012.10.09}
 }
 
 @Article{zielinski1995,
@@ -1826,7 +2191,10 @@
 @Proceedings{2009SCOTUS,
   Title                    = {Kansas v. Colorado},
   Editor                   = {{United States Supreme Court}},
-  Year                     = {2009}
+  Year                     = {2009},
+
+  Owner                    = {keithmorse},
+  Timestamp                = {2014.08.28}
 }
 
 @comment{jabref-meta: selector_review:}

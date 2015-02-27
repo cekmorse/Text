@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  21 FEB 2015 10:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  25 FEB 2015 21:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -159,6 +159,21 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \openout2 = `CH00-ThesisPreamble.aux'.
 
 (./CH00-ThesisPreamble.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2014/03/24 3.9k The Babel package
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2014/03/24 3.9k Babel common definitions
+\babel@savecnt=\count102
+\U@D=\dimen114
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
 (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
 
@@ -178,27 +193,27 @@ Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
 \KV@toks@=\toks28
 )
-\Gin@req@height=\dimen114
-\Gin@req@width=\dimen115
+\Gin@req@height=\dimen115
+\Gin@req@width=\dimen116
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/multirow/multirow.sty
-\bigstrutjot=\dimen116
+\bigstrutjot=\dimen117
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count102
+\linenopenalty=\count103
 \output=\toks29
-\linenoprevgraf=\count103
-\linenumbersep=\dimen117
-\linenumberwidth=\dimen118
-\c@linenumber=\count104
-\c@pagewiselinenumber=\count105
-\c@LN@truepage=\count106
-\c@internallinenumber=\count107
-\c@internallinenumbers=\count108
-\quotelinenumbersep=\dimen119
-\bframerule=\dimen120
-\bframesep=\dimen121
+\linenoprevgraf=\count104
+\linenumbersep=\dimen118
+\linenumberwidth=\dimen119
+\c@linenumber=\count105
+\c@pagewiselinenumber=\count106
+\c@LN@truepage=\count107
+\c@internallinenumber=\count108
+\c@internallinenumbers=\count109
+\quotelinenumbersep=\dimen120
+\bframerule=\dimen121
+\bframesep=\dimen122
 \bframebox=\box34
 LaTeX Info: Redefining \\ on input line 3056.
 )
@@ -210,15 +225,15 @@ Package: attachfile 2011/03/27 v1.5b PDF 1.3+ file attachment
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count109
-\calc@Bcount=\count110
-\calc@Adimen=\dimen122
-\calc@Bdimen=\dimen123
+\calc@Acount=\count110
+\calc@Bcount=\count111
+\calc@Adimen=\dimen123
+\calc@Bdimen=\dimen124
 \calc@Askip=\skip51
 \calc@Bskip=\skip52
 LaTeX Info: Redefining \setlength on input line 75.
 LaTeX Info: Redefining \addtolength on input line 76.
-\calc@Ccount=\count111
+\calc@Ccount=\count112
 \calc@Cskip=\skip53
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
@@ -282,14 +297,14 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen124
-\Hy@linkcounter=\count112
-\Hy@pagecounter=\count113
+\@linkdim=\dimen125
+\Hy@linkcounter=\count113
+\Hy@pagecounter=\count114
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count114
+\Hy@SavedSpaceFactor=\count115
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -301,17 +316,17 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count115
+\c@Hy@tempcnt=\count116
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen125
-\Fld@menulength=\count116
-\Field@Width=\dimen126
-\Fld@charsize=\dimen127
+\XeTeXLinkMargin=\dimen126
+\Fld@menulength=\count117
+\Field@Width=\dimen127
+\Fld@charsize=\dimen128
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -321,17 +336,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count117
-\c@Item=\count118
-\c@Hfootnote=\count119
+\Hy@abspage=\count118
+\c@Item=\count119
+\c@Hfootnote=\count120
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count120
-\c@bookmark@seq@number=\count121
+\Fld@listcount=\count121
+\c@bookmark@seq@number=\count122
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -340,7 +355,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip54
 )
-\c@atfi@tmp=\count122
+\c@atfi@tmp=\count123
 \atfi@appearancewidth=\skip55
 \atfi@appearanceheight=\skip56
 \atfi@appearancedepth=\skip57
@@ -363,7 +378,7 @@ L3 Module: l3bootstrap 2014/05/16 v4782 L3 Bootstrap code
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/etex-pkg/etex.sty
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
-\et@xins=\count123
+\et@xins=\count124
 )
 L3 Module: l3names 2014/05/04 v4728 L3 Namespace for primitives
 L3 Module: l3basics 2014/05/04 v4728 L3 Basic definitions
@@ -371,31 +386,31 @@ L3 Module: l3expan 2014/04/30 v4712 L3 Argument expansion
 L3 Module: l3tl 2014/05/04 v4728 L3 Token lists
 L3 Module: l3seq 2014/04/30 v4712 L3 Sequences and stacks
 L3 Module: l3int 2014/05/16 v4776 L3 Integers
-\c_max_int=\count124
-\l_tmpa_int=\count125
-\l_tmpb_int=\count126
-\g_tmpa_int=\count127
-\g_tmpb_int=\count128
+\c_max_int=\count125
+\l_tmpa_int=\count126
+\l_tmpb_int=\count127
+\g_tmpa_int=\count128
+\g_tmpb_int=\count129
 L3 Module: l3quark 2014/05/04 v4728 L3 Quarks
 L3 Module: l3prg 2014/05/04 v4728 L3 Control structures
-\g__prg_map_int=\count129
+\g__prg_map_int=\count130
 L3 Module: l3clist 2014/05/04 v4728 L3 Comma separated lists
 L3 Module: l3token 2014/05/04 v4728 L3 Experimental token manipulation
 L3 Module: l3prop 2014/04/30 v4712 L3 Property lists
 L3 Module: l3msg 2014/05/04 v4728 L3 Messages
 L3 Module: l3file 2014/05/05 v4737 L3 File and I/O operations
-\l_iow_line_count_int=\count130
-\l__iow_target_count_int=\count131
-\l__iow_current_line_int=\count132
-\l__iow_current_word_int=\count133
-\l__iow_current_indentation_int=\count134
+\l_iow_line_count_int=\count131
+\l__iow_target_count_int=\count132
+\l__iow_current_line_int=\count133
+\l__iow_current_word_int=\count134
+\l__iow_current_indentation_int=\count135
 L3 Module: l3skip 2014/05/05 v4738 L3 Dimensions and skips
-\c_zero_dim=\dimen128
-\c_max_dim=\dimen129
-\l_tmpa_dim=\dimen130
-\l_tmpb_dim=\dimen131
-\g_tmpa_dim=\dimen132
-\g_tmpb_dim=\dimen133
+\c_zero_dim=\dimen129
+\c_max_dim=\dimen130
+\l_tmpa_dim=\dimen131
+\l_tmpb_dim=\dimen132
+\g_tmpa_dim=\dimen133
+\g_tmpb_dim=\dimen134
 \c_zero_skip=\skip58
 \c_max_skip=\skip59
 \l_tmpa_skip=\skip60
@@ -409,18 +424,18 @@ L3 Module: l3skip 2014/05/05 v4738 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip16
 \g_tmpb_muskip=\muskip17
 L3 Module: l3keys 2014/05/08 v4753 L3 Key-value interfaces
-\g__keyval_level_int=\count135
-\l_keys_choice_int=\count136
+\g__keyval_level_int=\count136
+\l_keys_choice_int=\count137
 L3 Module: l3fp 2014/04/30 v4712 L3 Floating points
-\c__fp_leading_shift_int=\count137
-\c__fp_middle_shift_int=\count138
-\c__fp_trailing_shift_int=\count139
-\c__fp_big_leading_shift_int=\count140
-\c__fp_big_middle_shift_int=\count141
-\c__fp_big_trailing_shift_int=\count142
-\c__fp_Bigg_leading_shift_int=\count143
-\c__fp_Bigg_middle_shift_int=\count144
-\c__fp_Bigg_trailing_shift_int=\count145
+\c__fp_leading_shift_int=\count138
+\c__fp_middle_shift_int=\count139
+\c__fp_trailing_shift_int=\count140
+\c__fp_big_leading_shift_int=\count141
+\c__fp_big_middle_shift_int=\count142
+\c__fp_big_trailing_shift_int=\count143
+\c__fp_Bigg_leading_shift_int=\count144
+\c__fp_Bigg_middle_shift_int=\count145
+\c__fp_Bigg_trailing_shift_int=\count146
 L3 Module: l3box 2014/05/04 v4728 L3 Experimental boxes
 \c_empty_box=\box36
 \l_tmpa_box=\box37
@@ -429,13 +444,13 @@ L3 Module: l3box 2014/05/04 v4728 L3 Experimental boxes
 \g_tmpb_box=\box40
 L3 Module: l3coffins 2014/05/04 v4728 L3 Coffin code layer
 \l__coffin_internal_box=\box41
-\l__coffin_internal_dim=\dimen134
-\l__coffin_offset_x_dim=\dimen135
-\l__coffin_offset_y_dim=\dimen136
-\l__coffin_x_dim=\dimen137
-\l__coffin_y_dim=\dimen138
-\l__coffin_x_prime_dim=\dimen139
-\l__coffin_y_prime_dim=\dimen140
+\l__coffin_internal_dim=\dimen135
+\l__coffin_offset_x_dim=\dimen136
+\l__coffin_offset_y_dim=\dimen137
+\l__coffin_x_dim=\dimen138
+\l__coffin_y_dim=\dimen139
+\l__coffin_x_prime_dim=\dimen140
+\l__coffin_y_prime_dim=\dimen141
 \c_empty_coffin=\box42
 \l__coffin_aligned_coffin=\box43
 \l__coffin_aligned_internal_coffin=\box44
@@ -444,45 +459,45 @@ L3 Module: l3coffins 2014/05/04 v4728 L3 Coffin code layer
 \l__coffin_display_coffin=\box47
 \l__coffin_display_coord_coffin=\box48
 \l__coffin_display_pole_coffin=\box49
-\l__coffin_display_offset_dim=\dimen141
-\l__coffin_display_x_dim=\dimen142
-\l__coffin_display_y_dim=\dimen143
+\l__coffin_display_offset_dim=\dimen142
+\l__coffin_display_x_dim=\dimen143
+\l__coffin_display_y_dim=\dimen144
 L3 Module: l3color 2014/04/30 v4712 L3 Experimental color support
 L3 Module: l3luatex 2014/04/30 v4712 L3 Experimental LuaTeX-specific functions
-\g__cctab_allocate_int=\count146
-\g__cctab_stack_int=\count147
+\g__cctab_allocate_int=\count147
+\g__cctab_stack_int=\count148
 L3 Module: l3candidates 2014/05/04 v4734 L3 Experimental additions to l3kernel
-\l__box_top_dim=\dimen144
-\l__box_bottom_dim=\dimen145
-\l__box_left_dim=\dimen146
-\l__box_right_dim=\dimen147
-\l__box_top_new_dim=\dimen148
-\l__box_bottom_new_dim=\dimen149
-\l__box_left_new_dim=\dimen150
-\l__box_right_new_dim=\dimen151
+\l__box_top_dim=\dimen145
+\l__box_bottom_dim=\dimen146
+\l__box_left_dim=\dimen147
+\l__box_right_dim=\dimen148
+\l__box_top_new_dim=\dimen149
+\l__box_bottom_new_dim=\dimen150
+\l__box_left_new_dim=\dimen151
+\l__box_right_new_dim=\dimen152
 \l__box_internal_box=\box50
-\l__coffin_bounding_shift_dim=\dimen152
-\l__coffin_left_corner_dim=\dimen153
-\l__coffin_right_corner_dim=\dimen154
-\l__coffin_bottom_corner_dim=\dimen155
-\l__coffin_top_corner_dim=\dimen156
-\l__coffin_scaled_total_height_dim=\dimen157
-\l__coffin_scaled_width_dim=\dimen158
+\l__coffin_bounding_shift_dim=\dimen153
+\l__coffin_left_corner_dim=\dimen154
+\l__coffin_right_corner_dim=\dimen155
+\l__coffin_bottom_corner_dim=\dimen156
+\l__coffin_top_corner_dim=\dimen157
+\l__coffin_scaled_total_height_dim=\dimen158
+\l__coffin_scaled_width_dim=\dimen159
 ))
 (/usr/local/texlive/2014/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2014/05/05 v4740 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count148
-\l__xparse_m_args_int=\count149
-\l__xparse_mandatory_args_int=\count150
-\l__xparse_processor_int=\count151
-\l__xparse_v_nesting_int=\count152
+\l__xparse_current_arg_int=\count149
+\l__xparse_m_args_int=\count150
+\l__xparse_mandatory_args_int=\count151
+\l__xparse_processor_int=\count152
+\l__xparse_v_nesting_int=\count153
 )
 Package: siunitx 2013/07/31 v2.5s A comprehensive (SI) units package
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen159
-\extrarowheight=\dimen160
+\col@sep=\dimen160
+\extrarowheight=\dimen161
 \NC@list=\toks30
 \extratabsurround=\skip64
 \backup@length=\skip65
@@ -492,42 +507,42 @@ Package: l3keys2e 2014/05/05 v4740 LaTeX2e option processing using LaTeX3 keys
 )
 Variant \tl_if_blank:VTF already defined; not changing it on line 50
 \l__siunitx_tmp_box=\box51
-\l__siunitx_tmp_dim=\dimen161
-\l__siunitx_tmp_int=\count153
+\l__siunitx_tmp_dim=\dimen162
+\l__siunitx_tmp_int=\count154
 Variant \prop_get:NVNT already defined; not changing it on line 371
 Variant \prop_get:NVNF already defined; not changing it on line 372
 Variant \prop_get:NVNTF already defined; not changing it on line 373
-\l__siunitx_number_mantissa_length_int=\count154
-\l__siunitx_number_uncert_length_int=\count155
-\l__siunitx_round_int=\count156
-\l__siunitx_process_decimal_int=\count157
-\l__siunitx_process_uncertainty_int=\count158
-\l__siunitx_process_fixed_int=\count159
-\l__siunitx_process_integer_min_int=\count160
-\l__siunitx_process_precision_int=\count161
-\l__siunitx_group_min_int=\count162
+\l__siunitx_number_mantissa_length_int=\count155
+\l__siunitx_number_uncert_length_int=\count156
+\l__siunitx_round_int=\count157
+\l__siunitx_process_decimal_int=\count158
+\l__siunitx_process_uncertainty_int=\count159
+\l__siunitx_process_fixed_int=\count160
+\l__siunitx_process_integer_min_int=\count161
+\l__siunitx_process_precision_int=\count162
+\l__siunitx_group_min_int=\count163
 \l__siunitx_angle_marker_box=\box52
 \l__siunitx_angle_unit_box=\box53
-\l__siunitx_angle_marker_dim=\dimen162
-\l__siunitx_angle_unit_dim=\dimen163
-\l__siunitx_unit_int=\count163
-\l__siunitx_unit_denominator_int=\count164
-\l__siunitx_unit_numerator_int=\count165
-\l__siunitx_unit_prefix_int=\count166
-\l__siunitx_unit_prefix_base_int=\count167
-\l__siunitx_unit_prefix_gram_int=\count168
-\l__siunitx_number_product_int=\count169
+\l__siunitx_angle_marker_dim=\dimen163
+\l__siunitx_angle_unit_dim=\dimen164
+\l__siunitx_unit_int=\count164
+\l__siunitx_unit_denominator_int=\count165
+\l__siunitx_unit_numerator_int=\count166
+\l__siunitx_unit_prefix_int=\count167
+\l__siunitx_unit_prefix_base_int=\count168
+\l__siunitx_unit_prefix_gram_int=\count169
+\l__siunitx_number_product_int=\count170
 \c__siunitx_one_fill_skip=\skip66
 \l__siunitx_table_unit_align_skip=\skip67
-\l__siunitx_table_exponent_dim=\dimen164
-\l__siunitx_table_integer_dim=\dimen165
-\l__siunitx_table_mantissa_dim=\dimen166
-\l__siunitx_table_marker_dim=\dimen167
-\l__siunitx_table_result_dim=\dimen168
-\l__siunitx_table_uncert_dim=\dimen169
-\l__siunitx_table_fill_pre_dim=\dimen170
-\l__siunitx_table_fill_post_dim=\dimen171
-\l__siunitx_table_fill_mid_dim=\dimen172
+\l__siunitx_table_exponent_dim=\dimen165
+\l__siunitx_table_integer_dim=\dimen166
+\l__siunitx_table_mantissa_dim=\dimen167
+\l__siunitx_table_marker_dim=\dimen168
+\l__siunitx_table_result_dim=\dimen169
+\l__siunitx_table_uncert_dim=\dimen170
+\l__siunitx_table_fill_pre_dim=\dimen171
+\l__siunitx_table_fill_post_dim=\dimen172
+\l__siunitx_table_fill_mid_dim=\dimen173
 \l__siunitx_table_pre_box=\box54
 \l__siunitx_table_post_box=\box55
 \l__siunitx_table_mantissa_box=\box56
@@ -673,23 +688,23 @@ Package: translator 2010/06/12 ver 1.10
 uage-mappings.tex)))
 (/usr/local/texlive/2014/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen173
-\lightrulewidth=\dimen174
-\cmidrulewidth=\dimen175
-\belowrulesep=\dimen176
-\belowbottomsep=\dimen177
-\aboverulesep=\dimen178
-\abovetopsep=\dimen179
-\cmidrulesep=\dimen180
-\cmidrulekern=\dimen181
-\defaultaddspace=\dimen182
-\@cmidla=\count170
-\@cmidlb=\count171
-\@aboverulesep=\dimen183
-\@belowrulesep=\dimen184
-\@thisruleclass=\count172
-\@lastruleclass=\count173
-\@thisrulewidth=\dimen185
+\heavyrulewidth=\dimen174
+\lightrulewidth=\dimen175
+\cmidrulewidth=\dimen176
+\belowrulesep=\dimen177
+\belowbottomsep=\dimen178
+\aboverulesep=\dimen179
+\abovetopsep=\dimen180
+\cmidrulesep=\dimen181
+\cmidrulekern=\dimen182
+\defaultaddspace=\dimen183
+\@cmidla=\count171
+\@cmidlb=\count172
+\@aboverulesep=\dimen184
+\@belowrulesep=\dimen185
+\@thisruleclass=\count173
+\@lastruleclass=\count174
+\@thisrulewidth=\dimen186
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
@@ -697,23 +712,23 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTright=\skip71
 \LTpre=\skip72
 \LTpost=\skip73
-\LTchunksize=\count174
-\LTcapwidth=\dimen186
+\LTchunksize=\count175
+\LTcapwidth=\dimen187
 \LT@head=\box58
 \LT@firsthead=\box59
 \LT@foot=\box60
 \LT@lastfoot=\box61
-\LT@cols=\count175
-\LT@rows=\count176
-\c@LT@tables=\count177
-\c@LT@chunks=\count178
+\LT@cols=\count176
+\LT@rows=\count177
+\c@LT@tables=\count178
+\c@LT@chunks=\count179
 \LT@p@ftn=\toks31
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
-\c@@pps=\count179
-\c@@ppsavesec=\count180
-\c@@ppsaveapp=\count181
+\c@@pps=\count180
+\c@@ppsavesec=\count181
+\c@@ppsaveapp=\count182
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
@@ -721,16 +736,16 @@ Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen187
-\captionmargin@=\dimen188
-\captionwidth=\dimen189
-\caption@tempdima=\dimen190
-\caption@indent=\dimen191
-\caption@parindent=\dimen192
-\caption@hangindent=\dimen193
+\captionmargin=\dimen188
+\captionmargin@=\dimen189
+\captionwidth=\dimen190
+\caption@tempdima=\dimen191
+\caption@indent=\dimen192
+\caption@parindent=\dimen193
+\caption@hangindent=\dimen194
 )
 Package caption Info: AMS or SMF document class.
-\c@ContinuedFloat=\count182
+\c@ContinuedFloat=\count183
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
@@ -740,20 +755,20 @@ Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 ))
 (/usr/local/texlive/2014/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
-\c@subfigure=\count183
-\c@subtable=\count184
+\c@subfigure=\count184
+\c@subtable=\count185
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2014/05/13 v2.10 `tabularx' package (DPC)
-\TX@col@width=\dimen194
-\TX@old@table=\dimen195
-\TX@old@col=\dimen196
-\TX@target=\dimen197
-\TX@delta=\dimen198
-\TX@cols=\count185
+\TX@col@width=\dimen195
+\TX@old@table=\dimen196
+\TX@old@col=\dimen197
+\TX@target=\dimen198
+\TX@delta=\dimen199
+\TX@cols=\count186
 \TX@ftn=\toks32
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/csquotes/csquotes.sty
@@ -761,14 +776,14 @@ Package: csquotes 2011/10/22 v5.1d context-sensitive quotations
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
-\etb@tempcnta=\count186
+\etb@tempcnta=\count187
 )
-\csq@reset=\count187
-\csq@gtype=\count188
-\csq@glevel=\count189
-\csq@qlevel=\count190
-\csq@maxlvl=\count191
-\csq@tshold=\count192
+\csq@reset=\count188
+\csq@gtype=\count189
+\csq@glevel=\count190
+\csq@qlevel=\count191
+\csq@maxlvl=\count192
+\csq@tshold=\count193
 \csq@ltx@everypar=\toks33
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/csquotes/csquotes.def
@@ -789,7 +804,7 @@ AB)
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count193
+\lrq@indent=\count194
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -797,45 +812,45 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count194
-\c@listtotal=\count195
-\c@listcount=\count196
-\c@liststart=\count197
-\c@liststop=\count198
-\c@citecount=\count199
-\c@citetotal=\count200
+\c@tabx@nest=\count195
+\c@listtotal=\count196
+\c@listcount=\count197
+\c@liststart=\count198
+\c@liststop=\count199
+\c@citecount=\count200
 Normal \count register pool exhausted, switching to extended pool.
-\c@multicitecount=\count277
-\c@multicitetotal=\count278
-\c@instcount=\count279
-\c@maxnames=\count280
-\c@minnames=\count281
-\c@maxitems=\count282
-\c@minitems=\count283
-\c@citecounter=\count284
-\c@savedcitecounter=\count285
-\c@uniquelist=\count286
-\c@uniquename=\count287
-\c@refsection=\count288
-\c@refsegment=\count289
-\c@maxextratitle=\count290
-\c@maxextratitleyear=\count291
-\c@maxextrayear=\count292
-\c@maxextraalpha=\count293
-\c@abbrvpenalty=\count294
-\c@highnamepenalty=\count295
-\c@lownamepenalty=\count296
-\c@maxparens=\count297
-\c@parenlevel=\count298
-\blx@tempcnta=\count299
-\blx@tempcntb=\count300
-\blx@tempcntc=\count301
-\blx@maxsection=\count302
-\blx@maxsegment@0=\count303
-\blx@notetype=\count304
-\blx@parenlevel@text=\count305
-\blx@parenlevel@foot=\count306
-\blx@sectionciteorder@0=\count307
+\c@citetotal=\count277
+\c@multicitecount=\count278
+\c@multicitetotal=\count279
+\c@instcount=\count280
+\c@maxnames=\count281
+\c@minnames=\count282
+\c@maxitems=\count283
+\c@minitems=\count284
+\c@citecounter=\count285
+\c@savedcitecounter=\count286
+\c@uniquelist=\count287
+\c@uniquename=\count288
+\c@refsection=\count289
+\c@refsegment=\count290
+\c@maxextratitle=\count291
+\c@maxextratitleyear=\count292
+\c@maxextrayear=\count293
+\c@maxextraalpha=\count294
+\c@abbrvpenalty=\count295
+\c@highnamepenalty=\count296
+\c@lownamepenalty=\count297
+\c@maxparens=\count298
+\c@parenlevel=\count299
+\blx@tempcnta=\count300
+\blx@tempcntb=\count301
+\blx@tempcntc=\count302
+\blx@maxsection=\count303
+\blx@maxsegment@0=\count304
+\blx@notetype=\count305
+\blx@parenlevel@text=\count306
+\blx@parenlevel@foot=\count307
+\blx@sectionciteorder@0=\count308
 \labelnumberwidth=\skip74
 \labelalphawidth=\skip75
 \shorthandwidth=\skip76
@@ -847,9 +862,9 @@ Normal \count register pool exhausted, switching to extended pool.
 \bibhang=\skip82
 \blx@bcfin=\read2
 \blx@bcfout=\write3
-\c@mincomprange=\count308
-\c@maxcomprange=\count309
-\c@mincompwidth=\count310
+\c@mincomprange=\count309
+\c@maxcomprange=\count310
+\c@mincompwidth=\count311
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -858,72 +873,72 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'authoryear-comp.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count311
-\c@savedafterword=\count312
-\c@annotator=\count313
-\c@savedannotator=\count314
-\c@author=\count315
-\c@savedauthor=\count316
-\c@bookauthor=\count317
-\c@savedbookauthor=\count318
-\c@commentator=\count319
-\c@savedcommentator=\count320
-\c@editor=\count321
-\c@savededitor=\count322
-\c@editora=\count323
-\c@savededitora=\count324
-\c@editorb=\count325
-\c@savededitorb=\count326
-\c@editorc=\count327
-\c@savededitorc=\count328
-\c@foreword=\count329
-\c@savedforeword=\count330
-\c@holder=\count331
-\c@savedholder=\count332
-\c@introduction=\count333
-\c@savedintroduction=\count334
-\c@namea=\count335
-\c@savednamea=\count336
-\c@nameb=\count337
-\c@savednameb=\count338
-\c@namec=\count339
-\c@savednamec=\count340
-\c@shortauthor=\count341
-\c@savedshortauthor=\count342
-\c@shorteditor=\count343
-\c@savedshorteditor=\count344
-\c@translator=\count345
-\c@savedtranslator=\count346
-\c@labelname=\count347
-\c@savedlabelname=\count348
-\c@institution=\count349
-\c@savedinstitution=\count350
-\c@lista=\count351
-\c@savedlista=\count352
-\c@listb=\count353
-\c@savedlistb=\count354
-\c@listc=\count355
-\c@savedlistc=\count356
-\c@listd=\count357
-\c@savedlistd=\count358
-\c@liste=\count359
-\c@savedliste=\count360
-\c@listf=\count361
-\c@savedlistf=\count362
-\c@location=\count363
-\c@savedlocation=\count364
-\c@organization=\count365
-\c@savedorganization=\count366
-\c@origlocation=\count367
-\c@savedoriglocation=\count368
-\c@origpublisher=\count369
-\c@savedorigpublisher=\count370
-\c@publisher=\count371
-\c@savedpublisher=\count372
-\c@language=\count373
-\c@savedlanguage=\count374
-\c@pageref=\count375
-\c@savedpageref=\count376
+\c@afterword=\count312
+\c@savedafterword=\count313
+\c@annotator=\count314
+\c@savedannotator=\count315
+\c@author=\count316
+\c@savedauthor=\count317
+\c@bookauthor=\count318
+\c@savedbookauthor=\count319
+\c@commentator=\count320
+\c@savedcommentator=\count321
+\c@editor=\count322
+\c@savededitor=\count323
+\c@editora=\count324
+\c@savededitora=\count325
+\c@editorb=\count326
+\c@savededitorb=\count327
+\c@editorc=\count328
+\c@savededitorc=\count329
+\c@foreword=\count330
+\c@savedforeword=\count331
+\c@holder=\count332
+\c@savedholder=\count333
+\c@introduction=\count334
+\c@savedintroduction=\count335
+\c@namea=\count336
+\c@savednamea=\count337
+\c@nameb=\count338
+\c@savednameb=\count339
+\c@namec=\count340
+\c@savednamec=\count341
+\c@shortauthor=\count342
+\c@savedshortauthor=\count343
+\c@shorteditor=\count344
+\c@savedshorteditor=\count345
+\c@translator=\count346
+\c@savedtranslator=\count347
+\c@labelname=\count348
+\c@savedlabelname=\count349
+\c@institution=\count350
+\c@savedinstitution=\count351
+\c@lista=\count352
+\c@savedlista=\count353
+\c@listb=\count354
+\c@savedlistb=\count355
+\c@listc=\count356
+\c@savedlistc=\count357
+\c@listd=\count358
+\c@savedlistd=\count359
+\c@liste=\count360
+\c@savedliste=\count361
+\c@listf=\count362
+\c@savedlistf=\count363
+\c@location=\count364
+\c@savedlocation=\count365
+\c@organization=\count366
+\c@savedorganization=\count367
+\c@origlocation=\count368
+\c@savedoriglocation=\count369
+\c@origpublisher=\count370
+\c@savedorigpublisher=\count371
+\c@publisher=\count372
+\c@savedpublisher=\count373
+\c@language=\count374
+\c@savedlanguage=\count375
+\c@pageref=\count376
+\c@savedpageref=\count377
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -935,13 +950,13 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 
-\c@textcitecount=\count377
-\c@textcitetotal=\count378
-\c@textcitemaxnames=\count379
-\c@biburlnumpenalty=\count380
-\c@biburlucpenalty=\count381
-\c@biburllcpenalty=\count382
-\c@smartand=\count383
+\c@textcitecount=\count378
+\c@textcitetotal=\count379
+\c@textcitemaxnames=\count380
+\c@biburlnumpenalty=\count381
+\c@biburlucpenalty=\count382
+\c@biburllcpenalty=\count383
+\c@smartand=\count384
 )
 Package biblatex Info: Trying to load bibliography style 'authoryear-comp'...
 Package biblatex Info: ... file 'authoryear-comp.bbx' found.
@@ -959,8 +974,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2013/11/25 v2.8a biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count384
-\c@bbx:relatedtotal=\count385
+\c@bbx:relatedcount=\count385
+\c@bbx:relatedtotal=\count386
 )))
 Package biblatex Info: Trying to load citation style 'authoryear-comp'...
 Package biblatex Info: ... file 'authoryear-comp.cbx' found.
@@ -987,18 +1002,18 @@ File: biblatex.cfg
 )))
 (/usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count386
-\Gm@cntv=\count387
-\c@Gm@tempcnt=\count388
-\Gm@bindingoffset=\dimen199
-\Gm@wd@mp=\dimen200
+\Gm@cnth=\count387
+\Gm@cntv=\count388
+\c@Gm@tempcnt=\count389
+\Gm@bindingoffset=\dimen200
 Normal \dimen register pool exhausted, switching to extended pool.
-\Gm@odd@mp=\dimen256
-\Gm@even@mp=\dimen257
-\Gm@layoutwidth=\dimen258
-\Gm@layoutheight=\dimen259
-\Gm@layouthoffset=\dimen260
-\Gm@layoutvoffset=\dimen261
+\Gm@wd@mp=\dimen256
+\Gm@odd@mp=\dimen257
+\Gm@even@mp=\dimen258
+\Gm@layoutwidth=\dimen259
+\Gm@layoutheight=\dimen260
+\Gm@layouthoffset=\dimen261
+\Gm@layoutvoffset=\dimen262
 \Gm@dimlist=\toks34
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/todonotes/todonotes.sty
@@ -1011,7 +1026,7 @@ Package: xkeyval 2014/05/09 v2.6d package option processing (HA)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 \XKV@toks=\toks35
 \XKV@tempa@toks=\toks36
-\XKV@depth=\count389
+\XKV@depth=\count390
 File: xkeyval.tex 2014/05/09 v2.6d key=value parser (HA)
 ))
 (/usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/xcolor.sty
@@ -1038,8 +1053,8 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
 \pgfutil@everybye=\toks37
-\pgfutil@tempdima=\dimen262
-\pgfutil@tempdimb=\dimen263
+\pgfutil@tempdima=\dimen263
+\pgfutil@tempdimb=\dimen264
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
 sts.tex))
@@ -1064,20 +1079,20 @@ Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
 ode.tex
 \pgfkeys@tmptoks=\toks40
 ))
-\pgf@x=\dimen264
-\pgf@y=\dimen265
-\pgf@xa=\dimen266
-\pgf@ya=\dimen267
-\pgf@xb=\dimen268
-\pgf@yb=\dimen269
-\pgf@xc=\dimen270
-\pgf@yc=\dimen271
+\pgf@x=\dimen265
+\pgf@y=\dimen266
+\pgf@xa=\dimen267
+\pgf@ya=\dimen268
+\pgf@xb=\dimen269
+\pgf@yb=\dimen270
+\pgf@xc=\dimen271
+\pgf@yc=\dimen272
 \w@pgf@writea=\write4
 \r@pgf@reada=\read3
-\c@pgf@counta=\count390
-\c@pgf@countb=\count391
-\c@pgf@countc=\count392
-\c@pgf@countd=\count393
+\c@pgf@counta=\count391
+\c@pgf@countb=\count392
+\c@pgf@countc=\count393
+\c@pgf@countd=\count394
 \t@pgf@toka=\toks41
 \t@pgf@tokb=\toks42
 \t@pgf@tokc=\toks43
@@ -1098,8 +1113,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count394
-\pgfsyssoftpath@bigbuffer@items=\count395
+\pgfsyssoftpath@smallbuffer@items=\count395
+\pgfsyssoftpath@bigbuffer@items=\count396
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -1111,8 +1126,8 @@ Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen272
-\pgfmath@count=\count396
+\pgfmath@dimen=\dimen273
+\pgfmath@count=\count397
 \pgfmath@box=\box63
 \pgfmath@toks=\toks44
 \pgfmath@stack@operand=\toks45
@@ -1137,37 +1152,37 @@ code.tex)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)))
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count397
+\c@pgfmathroundto@lastzeros=\count398
 ))
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen273
-\pgf@picmaxx=\dimen274
-\pgf@picminy=\dimen275
-\pgf@picmaxy=\dimen276
-\pgf@pathminx=\dimen277
-\pgf@pathmaxx=\dimen278
-\pgf@pathminy=\dimen279
-\pgf@pathmaxy=\dimen280
-\pgf@xx=\dimen281
-\pgf@xy=\dimen282
-\pgf@yx=\dimen283
-\pgf@yy=\dimen284
-\pgf@zx=\dimen285
-\pgf@zy=\dimen286
+\pgf@picminx=\dimen274
+\pgf@picmaxx=\dimen275
+\pgf@picminy=\dimen276
+\pgf@picmaxy=\dimen277
+\pgf@pathminx=\dimen278
+\pgf@pathmaxx=\dimen279
+\pgf@pathminy=\dimen280
+\pgf@pathmaxy=\dimen281
+\pgf@xx=\dimen282
+\pgf@xy=\dimen283
+\pgf@yx=\dimen284
+\pgf@yy=\dimen285
+\pgf@zx=\dimen286
+\pgf@zy=\dimen287
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
 ruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen287
-\pgf@path@lasty=\dimen288
+\pgf@path@lastx=\dimen288
+\pgf@path@lasty=\dimen289
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
 .code.tex
 File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
-\pgf@shorten@end@additional=\dimen289
-\pgf@shorten@start@additional=\dimen290
+\pgf@shorten@end@additional=\dimen290
+\pgf@shorten@start@additional=\dimen291
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
 de.tex
@@ -1175,19 +1190,19 @@ File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
 \pgfpic=\box64
 \pgf@hbox=\box65
 \pgf@layerbox@main=\box66
-\pgf@picture@serial@count=\count398
+\pgf@picture@serial@count=\count399
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
 File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
-\pgflinewidth=\dimen291
+\pgflinewidth=\dimen292
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
 ations.code.tex
 File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
-\pgf@pt@x=\dimen292
-\pgf@pt@y=\dimen293
-\pgf@pt@temp=\dimen294
+\pgf@pt@x=\dimen293
+\pgf@pt@y=\dimen294
+\pgf@pt@temp=\dimen295
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
 e.tex
@@ -1204,13 +1219,13 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
 de.tex
 File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
-\pgfarrowsep=\dimen295
+\pgfarrowsep=\dimen296
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
 e.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen296
-\pgf@sys@shading@range@num=\count399
+\pgf@max=\dimen297
+\pgf@sys@shading@range@num=\count400
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -1245,8 +1260,8 @@ File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen297
-\pgf@nodesepend=\dimen298
+\pgf@nodesepstart=\dimen298
+\pgf@nodesepend=\dimen299
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -1-18.sty
@@ -1261,8 +1276,8 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen299
-\pgffor@skip=\dimen300
+\pgffor@iter=\dimen300
+\pgffor@skip=\dimen301
 \pgffor@stack=\toks47
 \pgffor@toks=\toks48
 ))
@@ -1273,32 +1288,32 @@ Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
-\pgf@plot@mark@count=\count400
-\pgfplotmarksize=\dimen301
+\pgf@plot@mark@count=\count401
+\pgfplotmarksize=\dimen302
 )
-\tikz@lastx=\dimen302
-\tikz@lasty=\dimen303
-\tikz@lastxsaved=\dimen304
-\tikz@lastysaved=\dimen305
-\tikzleveldistance=\dimen306
-\tikzsiblingdistance=\dimen307
+\tikz@lastx=\dimen303
+\tikz@lasty=\dimen304
+\tikz@lastxsaved=\dimen305
+\tikz@lastysaved=\dimen306
+\tikzleveldistance=\dimen307
+\tikzsiblingdistance=\dimen308
 \tikz@figbox=\box69
 \tikz@figbox@bg=\box70
 \tikz@tempbox=\box71
 \tikz@tempbox@bg=\box72
-\tikztreelevel=\count401
-\tikznumberofchildren=\count402
-\tikznumberofcurrentchild=\count403
-\tikz@fig@count=\count404
+\tikztreelevel=\count402
+\tikznumberofchildren=\count403
+\tikznumberofcurrentchild=\count404
+\tikz@fig@count=\count405
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count405
-\pgfmatrixcurrentcolumn=\count406
-\pgf@matrix@numberofcolumns=\count407
+\pgfmatrixcurrentrow=\count406
+\pgfmatrixcurrentcolumn=\count407
+\pgf@matrix@numberofcolumns=\count408
 )
-\tikz@expandcount=\count408
+\tikz@expandcount=\count409
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -1308,78 +1323,24 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
 s/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
 )
-\c@@todonotes@numberoftodonotes=\count409
+\c@@todonotes@numberoftodonotes=\count410
 ))
 Package csquotes Info: Checking for multilingual support...
-Package csquotes Info: ... none found.
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'american'.
+Package biblatex Info: Trying to load language 'american'...
+Package biblatex Info: ... file 'american.lbx' found.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/lbx/american.lbx
+File: american.lbx 2013/11/25 v2.8a biblatex localization (PK/JW/AB)
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2013/11/25 v2.8a biblatex localization (PK/JW/AB)
-)
-(./MorseThesis.aux (./CH04-WaterBalanceModel.aux
-
-LaTeX Warning: Label `sub b1' multiply defined.
-
-
-LaTeX Warning: Label `sub@sub b1' multiply defined.
-
-
-LaTeX Warning: Label `sub b2' multiply defined.
-
-
-LaTeX Warning: Label `sub@sub b2' multiply defined.
-
-
-LaTeX Warning: Label `sub b1' multiply defined.
-
-
-LaTeX Warning: Label `sub@sub b1' multiply defined.
-
-
-LaTeX Warning: Label `sub b2' multiply defined.
-
-
-LaTeX Warning: Label `sub@sub b2' multiply defined.
-
-
-LaTeX Warning: Label `sub:USRWaterStoreD' multiply defined.
-
-
-LaTeX Warning: Label `sub@sub:USRWaterStoreD' multiply defined.
-
-
-LaTeX Warning: Label `sub:USRWaterStoreS' multiply defined.
-
-
-LaTeX Warning: Label `sub@sub:USRWaterStoreS' multiply defined.
-
-
-LaTeX Warning: Label `fig:USRWaterStore' multiply defined.
-
-
-LaTeX Warning: Label `sub:DSRWaterStoreD' multiply defined.
-
-
-LaTeX Warning: Label `sub@sub:DSRWaterStoreD' multiply defined.
-
-
-LaTeX Warning: Label `sub:DSRWaterStoreS' multiply defined.
-
-
-LaTeX Warning: Label `sub@sub:DSRWaterStoreS' multiply defined.
-
-
-LaTeX Warning: Label `fig:DSRWaterStore' multiply defined.
-
-
-LaTeX Warning: Label `tab:USRWaterStore' multiply defined.
-
-
-LaTeX Warning: Label `tab:DSRWaterStore' multiply defined.
-
 ))
+(./MorseThesis.aux (./CH04-WaterBalanceModel.aux))
 \openout1 = `MorseThesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -1397,7 +1358,8 @@ LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Try loading font information for U+msa on input line 14.
- (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 14.
@@ -1407,16 +1369,16 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count410
-\scratchdimen=\dimen308
+\scratchcounter=\count411
+\scratchdimen=\dimen309
 \scratchbox=\box73
-\nofMPsegments=\count411
-\nofMParguments=\count412
+\nofMPsegments=\count412
+\nofMParguments=\count413
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count413
-\MPscratchDim=\dimen309
-\MPnumerator=\count414
-\makeMPintoPDFobject=\count415
+\MPscratchCnt=\count414
+\MPscratchDim=\dimen310
+\MPnumerator=\count415
+\makeMPintoPDFobject=\count416
 \everyMPtoPDFconversion=\toks50
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -1441,7 +1403,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count416
+\c@section@level=\count417
 )
 LaTeX Info: Redefining \ref on input line 14.
 LaTeX Info: Redefining \pageref on input line 14.
@@ -1470,29 +1432,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'MorseThesis.bbl' found.
- (./MorseThesis.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                2012Bailey
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Wiki:RMSE
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                5CCR1002
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+ (./MorseThesis.bbl)
 Package biblatex Info: Reference section=0 on input line 14.
 Package biblatex Info: Reference segment=0 on input line 14.
 
@@ -1531,17 +1471,14 @@ Package biblatex Info: Reference segment=0 on input line 14.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-\c__siunitx_mathsf_int=\count417
-\c__siunitx_mathtt_int=\count418
+\c__siunitx_mathsf_int=\count418
+\c__siunitx_mathtt_int=\count419
 \openout2 = `CH04-WaterBalanceModel.aux'.
 
  (./CH04-WaterBalanceModel.tex
 Chapter 4
 
-LaTeX Warning: Reference `chap:test' on page 1 undefined on input line 11.
-
-
-Overfull \hbox (82.59088pt too wide) in alignment at lines 20--35
+Overfull \hbox (82.59088pt too wide) in alignment at lines 21--36
  [] [] 
  []
 
@@ -1559,29 +1496,46 @@ een already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.35 \end{longtable}
+l.36 \end{longtable}
                     ]
-Underfull \hbox (badness 10000) in paragraph at lines 40--46
+Underfull \hbox (badness 10000) in paragraph at lines 41--46
+
+ []
+
+[2] [3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4
+
+]
+[5]
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 77.
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
 
-Underfull \vbox (badness 2343) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
- [2]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ []
 
- [3]
-[4]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
-]
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
-Underfull \hbox (badness 10000) in paragraph at lines 102--109
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--105
 
  []
 
@@ -1589,1975 +1543,69 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--109
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
-<"Figures/TV-MV Error".pdf, id=93, 433.62pt x 433.62pt>
+<"Figures/TV-MV Error".pdf, id=88, 433.62pt x 433.62pt>
 File: "Figures/TV-MV Error".pdf Graphic file (type pdf)
 
 <use "Figures/TV-MV Error".pdf>
-Package pdftex.def Info: "Figures/TV-MV Error".pdf used on input line 117.
+Package pdftex.def Info: "Figures/TV-MV Error".pdf used on input line 116.
 (pdftex.def)             Requested size: 433.62pt x 433.63878pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9 <./Figures/TV-MV Error.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10]
-<"Figures/Example KDE".pdf, id=124, 433.62pt x 433.62pt>
-File: "Figures/Example KDE".pdf Graphic file (type pdf)
-
-<use "Figures/Example KDE".pdf>
-Package pdftex.def Info: "Figures/Example KDE".pdf used on input line 140.
-(pdftex.def)             Requested size: 433.62pt x 433.63878pt.
- [11 <./Figures/Example KDE.pdf>]
-
-LaTeX Warning: Reference `sec:RiverGeometry' on page 12 undefined on input line
- 151.
-
-
-Overfull \hbox (10.57092pt too wide) in paragraph at lines 156--162
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--162
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--180
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [12
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 181--182
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 192--199
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13]
-<"Figures/SEGMENT small".pdf, id=155, 397.485pt x 137.0721pt>
-File: "Figures/SEGMENT small".pdf Graphic file (type pdf)
-
-<use "Figures/SEGMENT small".pdf>
-Package pdftex.def Info: "Figures/SEGMENT small".pdf used on input line 202.
-(pdftex.def)             Requested size: 397.48402pt x 137.07175pt.
-
-<Figures/LineDiagram/XSection.pdf, id=158, 419.06882pt x 136.6033pt>
-File: Figures/LineDiagram/XSection.pdf Graphic file (type pdf)
-
-<use Figures/LineDiagram/XSection.pdf>
-Package pdftex.def Info: Figures/LineDiagram/XSection.pdf used on input line 21
-4.
-(pdftex.def)             Requested size: 433.62pt x 141.34705pt.
- [14 <./Figures/SEGMENT small.pdf> <./Figures/LineDiagram/XSection.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./Figures/LineDiagram/XSection.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
->]
-Underfull \hbox (badness 10000) in paragraph at lines 223--234
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 240--248
-
- []
-
-
-LaTeX Warning: Reference `sec:uncertainty of in stream data' on page 15 undefin
-ed on input line 249.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [15]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16]
-Underfull \hbox (badness 10000) in paragraph at lines 257--258
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [17]
-Underfull \hbox (badness 10000) in paragraph at lines 268--275
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 280--286
-
- []
-
-
-LaTeX Warning: Reference `sec:River Survey' on page 18 undefined on input line 
-288.
-
-
-LaTeX Warning: Reference `App:TwVsH' on page 18 undefined on input line 288.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18]
-<"Figures/Results_USR/Survey Tw vs H-Section 2".pdf, id=230, 433.62pt x 433.62p
-t>
-File: "Figures/Results_USR/Survey Tw vs H-Section 2".pdf Graphic file (type pdf
-)
- <use "Figures/Results_USR/Survey Tw vs H-Section 2".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Survey Tw vs H-Section 2".pdf use
-d on input line 342.
-(pdftex.def)             Requested size: 433.62pt x 433.63878pt.
-
-
-LaTeX Warning: Reference `App:TwVsH' on page 19 undefined on input line 343.
-
-
-LaTeX Warning: Reference `App:TwVsH' on page 19 undefined on input line 343.
-
-<"Figures/Results_USR/USR B1 Dist".pdf, id=235, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/USR B1 Dist".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/USR B1 Dist".pdf>
-Package pdftex.def Info: "Figures/Results_USR/USR B1 Dist".pdf used on input li
-ne 354.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_USR/USR B2 Dist".pdf, id=236, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/USR B2 Dist".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/USR B2 Dist".pdf>
-Package pdftex.def Info: "Figures/Results_USR/USR B2 Dist".pdf used on input li
-ne 360.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DSR/DSR B1 Dist".pdf, id=237, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/DSR B1 Dist".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/DSR B1 Dist".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/DSR B1 Dist".pdf used on input li
-ne 366.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DSR/DSR B2 Dist".pdf, id=238, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/DSR B2 Dist".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/DSR B2 Dist".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/DSR B2 Dist".pdf used on input li
-ne 372.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [20]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21 <./Figures/Results_USR/Survey Tw vs H-Section 2.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [22 <./Figures/Results_USR/USR B1 Dist.pdf> <./Figures/Results_USR/USR B2 Dist
-.pdf> <./Figures/Results_DSR/DSR B1 Dist.pdf> <./Figures/Results_DSR/DSR B2 Dis
-t.pdf>]
-<"Figures/Results_USR/USR AB Error Dist".pdf, id=295, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/USR AB Error Dist".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/USR AB Error Dist".pdf>
-Package pdftex.def Info: "Figures/Results_USR/USR AB Error Dist".pdf used on in
-put line 424.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DSR/DSR AB Error Dist".pdf, id=296, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/DSR AB Error Dist".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/DSR AB Error Dist".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/DSR AB Error Dist".pdf used on in
-put line 430.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 438--439
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 440--441
-
- []
-
-
-LaTeX Warning: Reference `sec:River Volume Change' on page 23 undefined on inpu
-t line 443.
-
-[23]
-
-LaTeX Warning: Reference `App:TwandH' on page 24 undefined on input line 445.
-
-<"Figures/Results_USR/G d&w Today A".pdf, id=303, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/G d&w Today A".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/G d&w Today A".pdf>
-Package pdftex.def Info: "Figures/Results_USR/G d&w Today A".pdf used on input 
-line 449.
-(pdftex.def)             Requested size: 433.62pt x 433.63878pt.
-
-
-LaTeX Warning: Reference `App:GeoTS' on page 24 undefined on input line 456.
-
-
-Underfull \vbox (badness 3333) has occurred while \output is active []
-
- [24 <./Figures/Results_USR/USR AB Error Dist.pdf> <./Figures/Results_DSR/DSR A
-B Error Dist.pdf>]
-Underfull \vbox (badness 4832) has occurred while \output is active []
-
- [25 <./Figures/Results_USR/G d&w Today A.pdf>]
-<"Figures/Results_USR/G TS A".pdf, id=333, 433.62pt x 505.89pt>
-File: "Figures/Results_USR/G TS A".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/G TS A".pdf>
-Package pdftex.def Info: "Figures/Results_USR/G TS A".pdf used on input line 46
-0.
-(pdftex.def)             Requested size: 433.62pt x 505.9119pt.
- [26 <./Figures/Results_USR/G TS A.pdf>]
-
-LaTeX Warning: Reference `sec:InStreamData' on page 27 undefined on input line 
-467.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 469--470
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 471--472
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 473--474
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 475--476
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 477--478
-
- []
-
-
-LaTeX Warning: Reference `sec:InStreamData' on page 27 undefined on input line 
-480.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [27]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [28]
-<"Figures/Results_DUSR/Balance Water - storage".pdf, id=361, 433.62pt x 433.62p
-t>
-File: "Figures/Results_DUSR/Balance Water - storage".pdf Graphic file (type pdf
-)
- <use "Figures/Results_DUSR/Balance Water - storage".pdf>
-Package pdftex.def Info: "Figures/Results_DUSR/Balance Water - storage".pdf use
-d on input line 531.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_USR/Balance Water - storage".pdf, id=362, 433.62pt x 433.62pt
->
-File: "Figures/Results_USR/Balance Water - storage".pdf Graphic file (type pdf)
-
- <use "Figures/Results_USR/Balance Water - storage".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Balance Water - storage".pdf used
- on input line 537.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DDSR/Balance Water - storage".pdf, id=363, 433.62pt x 433.62p
-t>
-File: "Figures/Results_DDSR/Balance Water - storage".pdf Graphic file (type pdf
-)
- <use "Figures/Results_DDSR/Balance Water - storage".pdf>
-Package pdftex.def Info: "Figures/Results_DDSR/Balance Water - storage".pdf use
-d on input line 549.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DSR/Balance Water - storage".pdf, id=364, 433.62pt x 433.62pt
->
-File: "Figures/Results_DSR/Balance Water - storage".pdf Graphic file (type pdf)
-
- <use "Figures/Results_DSR/Balance Water - storage".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Balance Water - storage".pdf used
- on input line 555.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29]
-Underfull \vbox (badness 3058) has occurred while \output is active []
-
- [30 <./Figures/Results_DUSR/Balance Water - storage.pdf> <./Figures/Results_US
-R/Balance Water - storage.pdf> <./Figures/Results_DDSR/Balance Water - storage.
-pdf> <./Figures/Results_DSR/Balance Water - storage.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [31]
-Underfull \vbox (badness 1460) has occurred while \output is active []
-
- [32]
-Underfull \hbox (badness 10000) in paragraph at lines 615--616
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [33]
-File: "Figures/Results_DUSR/Balance Water - storage".pdf Graphic file (type pdf
-)
-
-<use "Figures/Results_DUSR/Balance Water - storage".pdf>
-Package pdftex.def Info: "Figures/Results_DUSR/Balance Water - storage".pdf use
-d on input line 627.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-File: "Figures/Results_USR/Balance Water - storage".pdf Graphic file (type pdf)
-
-
-<use "Figures/Results_USR/Balance Water - storage".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Balance Water - storage".pdf used
- on input line 633.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-File: "Figures/Results_DDSR/Balance Water - storage".pdf Graphic file (type pdf
-)
-
-<use "Figures/Results_DDSR/Balance Water - storage".pdf>
-Package pdftex.def Info: "Figures/Results_DDSR/Balance Water - storage".pdf use
-d on input line 645.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-File: "Figures/Results_DSR/Balance Water - storage".pdf Graphic file (type pdf)
-
-
-<use "Figures/Results_DSR/Balance Water - storage".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Balance Water - storage".pdf used
- on input line 651.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [34]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [35]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [36]
-Underfull \hbox (badness 10000) in paragraph at lines 711--712
-
- []
-
-[37]
-Underfull \hbox (badness 10000) in paragraph at lines 717--718
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [38
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 728--735
-
- []
-
-<"Figures/USGS_error_table".pdf, id=468, 531.18451pt x 359.9046pt>
-File: "Figures/USGS_error_table".pdf Graphic file (type pdf)
-
-<use "Figures/USGS_error_table".pdf>
-Package pdftex.def Info: "Figures/USGS_error_table".pdf used on input line 743.
-
-(pdftex.def)             Requested size: 433.62pt x 293.81116pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [39]
-Underfull \vbox (badness 2443) has occurred while \output is active []
-
- [40 <./Figures/USGS_error_table.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 751--759
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [41]
-
-LaTeX Warning: Reference `chap:models and uncertainty' on page 42 undefined on 
-input line 782.
-
-
-LaTeX Warning: Reference `App:VarDensity' on page 42 undefined on input line 78
-4.
-
-<"Figures/Results_USR/V density qin".pdf, id=498, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/V density qin".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/V density qin".pdf>
-Package pdftex.def Info: "Figures/Results_USR/V density qin".pdf used on input 
-line 788.
-(pdftex.def)             Requested size: 433.62pt x 433.63878pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [42]
-
-LaTeX Warning: Reference `fig:ExamplePDifference' on page 43 undefined on input
- line 795.
-
-
-LaTeX Warning: Reference `App:VarPDiff' on page 43 undefined on input line 795.
-
-
-
-Underfull \vbox (badness 7907) has occurred while \output is active []
-
- [43 <./Figures/Results_USR/V density qin.pdf>]
-<"Figures/Results_USR/V dev diff qin".pdf, id=519, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/V dev diff qin".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/V dev diff qin".pdf>
-Package pdftex.def Info: "Figures/Results_USR/V dev diff qin".pdf used on input
- line 801.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_USR/V dev pdiff qin".pdf, id=520, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/V dev pdiff qin".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/V dev pdiff qin".pdf>
-Package pdftex.def Info: "Figures/Results_USR/V dev pdiff qin".pdf used on inpu
-t line 807.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-
-LaTeX Warning: Reference `App:VarMinMaxDiff' on page 44 undefined on input line
- 817.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [44 <./Figures/Results_USR/V dev diff qin.pdf> <./Figures/Results_USR/V dev pd
-iff qin.pdf>] <"Figures/Results_USR/V min-max diff qin".pdf, id=538, 433.62pt x
- 433.62pt>
-File: "Figures/Results_USR/V min-max diff qin".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/V min-max diff qin".pdf>
-Package pdftex.def Info: "Figures/Results_USR/V min-max diff qin".pdf used on i
-nput line 821.
-(pdftex.def)             Requested size: 433.62pt x 433.63878pt.
-
-<"Figures/Results_USR/V min-max pdiff qin".pdf, id=539, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/V min-max pdiff qin".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/V min-max pdiff qin".pdf>
-Package pdftex.def Info: "Figures/Results_USR/V min-max pdiff qin".pdf used on 
-input line 828.
-(pdftex.def)             Requested size: 433.62pt x 433.63878pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [45]
-
-LaTeX Warning: Reference `tab:USRvars' on page 46 undefined on input line 839.
-
-
-LaTeX Warning: Reference `tab:USRvars' on page 46 undefined on input line 839.
-
-
-LaTeX Warning: Reference `tab:DSRvars' on page 46 undefined on input line 878.
-
-
-LaTeX Warning: Reference `tab:DSRvars' on page 46 undefined on input line 878.
-
-
-Underfull \vbox (badness 7907) has occurred while \output is active []
-
- [46 <./Figures/Results_USR/V min-max diff qin.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 908--910
-
- []
-
-
-Underfull \vbox (badness 7907) has occurred while \output is active []
-
- [47 <./Figures/Results_USR/V min-max pdiff qin.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 911--912
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 913--914
-
- []
-
-
-LaTeX Warning: Reference `sec:River Volume Change' on page 48 undefined on inpu
-t line 915.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [48]
-<"Figures/Results_DUSR/A Evap".pdf, id=577, 433.62pt x 433.62pt>
-File: "Figures/Results_DUSR/A Evap".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DUSR/A Evap".pdf>
-Package pdftex.def Info: "Figures/Results_DUSR/A Evap".pdf used on input line 9
-22.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_USR/A Evap".pdf, id=578, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/A Evap".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/A Evap".pdf>
-Package pdftex.def Info: "Figures/Results_USR/A Evap".pdf used on input line 92
-7.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DDSR/A Evap".pdf, id=579, 433.62pt x 433.62pt>
-File: "Figures/Results_DDSR/A Evap".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DDSR/A Evap".pdf>
-Package pdftex.def Info: "Figures/Results_DDSR/A Evap".pdf used on input line 9
-38.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DSR/A Evap".pdf, id=580, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/A Evap".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/A Evap".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/A Evap".pdf used on input line 94
-3.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DUSR/A Precip".pdf, id=583, 433.62pt x 433.62pt>
-File: "Figures/Results_DUSR/A Precip".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DUSR/A Precip".pdf>
-Package pdftex.def Info: "Figures/Results_DUSR/A Precip".pdf used on input line
- 956.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_USR/A Precip".pdf, id=584, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/A Precip".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/A Precip".pdf>
-Package pdftex.def Info: "Figures/Results_USR/A Precip".pdf used on input line 
-961.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [49]
-<"Figures/Results_DDSR/A Precip".pdf, id=595, 433.62pt x 433.62pt>
-File: "Figures/Results_DDSR/A Precip".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DDSR/A Precip".pdf>
-Package pdftex.def Info: "Figures/Results_DDSR/A Precip".pdf used on input line
- 974.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DSR/A Precip".pdf, id=596, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/A Precip".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/A Precip".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/A Precip".pdf used on input line 
-979.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [50 <./Figures/Results_DUSR/A Evap.pdf> <./Figures/Results_USR/A Evap.pdf> <./
-Figures/Results_DDSR/A Evap.pdf> <./Figures/Results_DSR/A Evap.pdf>]
-Underfull \vbox (badness 2608) has occurred while \output is active []
-
- [51 <./Figures/Results_DUSR/A Precip.pdf> <./Figures/Results_USR/A Precip.pdf>
- <./Figures/Results_DDSR/A Precip.pdf> <./Figures/Results_DSR/A Precip.pdf>] [5
-2] [53]
-<"Figures/Results_DUSR/Balance Water - flow".pdf, id=671, 433.62pt x 433.62pt>
-File: "Figures/Results_DUSR/Balance Water - flow".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DUSR/Balance Water - flow".pdf>
-Package pdftex.def Info: "Figures/Results_DUSR/Balance Water - flow".pdf used o
-n input line 1042.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_USR/Balance Water - flow".pdf, id=672, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Balance Water - flow".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Balance Water - flow".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Balance Water - flow".pdf used on
- input line 1048.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DDSR/Balance Water - flow".pdf, id=673, 433.62pt x 433.62pt>
-File: "Figures/Results_DDSR/Balance Water - flow".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DDSR/Balance Water - flow".pdf>
-Package pdftex.def Info: "Figures/Results_DDSR/Balance Water - flow".pdf used o
-n input line 1060.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DSR/Balance Water - flow".pdf, id=674, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/Balance Water - flow".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/Balance Water - flow".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Balance Water - flow".pdf used on
- input line 1066.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [54
-
-]
-Underfull \vbox (badness 3058) has occurred while \output is active []
-
- [55 <./Figures/Results_DUSR/Balance Water - flow.pdf> <./Figures/Results_USR/B
-alance Water - flow.pdf> <./Figures/Results_DDSR/Balance Water - flow.pdf> <./F
-igures/Results_DSR/Balance Water - flow.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [56]
-[57]
-Underfull \hbox (badness 10000) in paragraph at lines 1126--1127
-
- []
-
-[58]
-Underfull \hbox (badness 10000) in paragraph at lines 1132--1133
-
- []
-
-
-Overfull \hbox (11.69077pt too wide) in paragraph at lines 1140--1159
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1140--1159
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [59
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 1160--1161
-
- []
-
-
-LaTeX Warning: Reference `sec:data collected by other sources' on page 60 undef
-ined on input line 1162.
-
-
-LaTeX Warning: Reference `sec:uncertainty of atmospheric data' on page 60 undef
-ined on input line 1162.
-
-
-LaTeX Warning: Reference `sec:RiverGeometry' on page 60 undefined on input line
- 1162.
-
-
-LaTeX Warning: Reference `sec:uncertainty of atmospheric data' on page 60 undef
-ined on input line 1162.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [60]
-Overfull \hbox (187.9437pt too wide) in paragraph at lines 1167--1180
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1167--1180
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [61]
-Underfull \hbox (badness 10000) in paragraph at lines 1185--1192
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1197--1204
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1208--1213
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [62]
-Underfull \hbox (badness 10000) in paragraph at lines 1220--1221
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [63]
-Underfull \hbox (badness 10000) in paragraph at lines 1224--1225
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1229
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [64]
-Underfull \hbox (badness 10000) in paragraph at lines 1245--1246
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1247--1248
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [65]
-Underfull \hbox (badness 10000) in paragraph at lines 1249--1250
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1251--1252
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [66]
-<"Figures/Results_DUSR/Balance Water - atm".pdf, id=795, 433.62pt x 433.62pt>
-File: "Figures/Results_DUSR/Balance Water - atm".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DUSR/Balance Water - atm".pdf>
-Package pdftex.def Info: "Figures/Results_DUSR/Balance Water - atm".pdf used on
- input line 1263.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_USR/Balance Water - atm".pdf, id=796, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Balance Water - atm".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Balance Water - atm".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Balance Water - atm".pdf used on 
-input line 1269.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DDSR/Balance Water - atm".pdf, id=797, 433.62pt x 433.62pt>
-File: "Figures/Results_DDSR/Balance Water - atm".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DDSR/Balance Water - atm".pdf>
-Package pdftex.def Info: "Figures/Results_DDSR/Balance Water - atm".pdf used on
- input line 1281.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DSR/Balance Water - atm".pdf, id=798, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/Balance Water - atm".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/Balance Water - atm".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Balance Water - atm".pdf used on 
-input line 1287.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [67 <./Figures/Results_DUSR/Balance Water - atm.pdf> <./Figures/Results_USR/Ba
-lance Water - atm.pdf> <./Figures/Results_DDSR/Balance Water - atm.pdf> <./Figu
-res/Results_DSR/Balance Water - atm.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [68]
-Underfull \vbox (badness 1460) has occurred while \output is active []
-
- [69]
-Underfull \hbox (badness 10000) in paragraph at lines 1345--1346
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1351--1352
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1353--1354
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [70]
-Underfull \hbox (badness 10000) in paragraph at lines 1355--1356
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1357--1358
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1359--1360
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1361--1362
-
- []
-
-[71]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [72
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 1374--1375
-
- []
-
-
-LaTeX Warning: Reference `chap:Model Development' on page 73 undefined on input
- line 1378.
-
-
-LaTeX Warning: Reference `App:SeF-S' on page 73 undefined on input line 1380.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [73]
-<"Figures/Results_DUSR/f U163".pdf, id=865, 433.62pt x 433.62pt>
-File: "Figures/Results_DUSR/f U163".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DUSR/f U163".pdf>
-Package pdftex.def Info: "Figures/Results_DUSR/f U163".pdf used on input line 1
-387.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_USR/f U163".pdf, id=866, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/f U163".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/f U163".pdf>
-Package pdftex.def Info: "Figures/Results_USR/f U163".pdf used on input line 13
-92.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [74 <./Figures/Results_DUSR/f U163.pdf> <./Figures/Results_USR/f U163.pdf>]
-Underfull \vbox (badness 4132) has occurred while \output is active []
-
- [75]
-Underfull \hbox (badness 10000) in paragraph at lines 1454--1455
-
- []
-
-
-LaTeX Warning: Reference `fig:DUSRFlow' on page 76 undefined on input line 1456
-.
-
-
-LaTeX Warning: Reference `fig:USRFlow' on page 76 undefined on input line 1456.
-
-
-
-LaTeX Warning: Reference `fig:' on page 76 undefined on input line 1456.
-
-<"Figures/Results_DUSR/Balance Water".pdf, id=895, 433.62pt x 433.62pt>
-File: "Figures/Results_DUSR/Balance Water".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DUSR/Balance Water".pdf>
-Package pdftex.def Info: "Figures/Results_DUSR/Balance Water".pdf used on input
- line 1462.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_USR/Balance Water".pdf, id=896, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Balance Water".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Balance Water".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Balance Water".pdf used on input 
-line 1468.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DDSR/Balance Water".pdf, id=897, 433.62pt x 433.62pt>
-File: "Figures/Results_DDSR/Balance Water".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DDSR/Balance Water".pdf>
-Package pdftex.def Info: "Figures/Results_DDSR/Balance Water".pdf used on input
- line 1480.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DSR/Balance Water".pdf, id=898, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/Balance Water".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/Balance Water".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Balance Water".pdf used on input 
-line 1486.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
- [76]
-Underfull \vbox (badness 3058) has occurred while \output is active []
-
- [77 <./Figures/Results_DUSR/Balance Water.pdf> <./Figures/Results_USR/Balance 
-Water.pdf> <./Figures/Results_DDSR/Balance Water.pdf> <./Figures/Results_DSR/Ba
-lance Water.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [78]
-Underfull \hbox (badness 10000) in paragraph at lines 1542--1543
-
- []
-
-<"Figures/Results_USR/M Water Contrib 1".pdf, id=950, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/M Water Contrib 1".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/M Water Contrib 1".pdf>
-Package pdftex.def Info: "Figures/Results_USR/M Water Contrib 1".pdf used on in
-put line 1550.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_USR/M Water Contrib 3".pdf, id=951, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/M Water Contrib 3".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/M Water Contrib 3".pdf>
-Package pdftex.def Info: "Figures/Results_USR/M Water Contrib 3".pdf used on in
-put line 1556.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_USR/M Water Contrib 2".pdf, id=952, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/M Water Contrib 2".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/M Water Contrib 2".pdf>
-Package pdftex.def Info: "Figures/Results_USR/M Water Contrib 2".pdf used on in
-put line 1562.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_USR/M Water Contrib 4".pdf, id=953, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/M Water Contrib 4".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/M Water Contrib 4".pdf>
-Package pdftex.def Info: "Figures/Results_USR/M Water Contrib 4".pdf used on in
-put line 1568.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_USR/M Mass Contrib 1".pdf, id=954, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/M Mass Contrib 1".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/M Mass Contrib 1".pdf>
-Package pdftex.def Info: "Figures/Results_USR/M Mass Contrib 1".pdf used on inp
-ut line 1580.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_USR/M Mass Contrib 2".pdf, id=955, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/M Mass Contrib 2".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/M Mass Contrib 2".pdf>
-Package pdftex.def Info: "Figures/Results_USR/M Mass Contrib 2".pdf used on inp
-ut line 1586.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_USR/M Mass Contrib 3".pdf, id=956, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/M Mass Contrib 3".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/M Mass Contrib 3".pdf>
-Package pdftex.def Info: "Figures/Results_USR/M Mass Contrib 3".pdf used on inp
-ut line 1592.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [79]
-Underfull \vbox (badness 1701) has occurred while \output is active []
-
- [80 <./Figures/Results_USR/M Water Contrib 1.pdf> <./Figures/Results_USR/M Wat
-er Contrib 3.pdf> <./Figures/Results_USR/M Water Contrib 2.pdf> <./Figures/Resu
-lts_USR/M Water Contrib 4.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [81 <./Figures/Results_USR/M Mass Contrib 1.pdf> <./Figures/Results_USR/M Mass
- Contrib 2.pdf> <./Figures/Results_USR/M Mass Contrib 3.pdf>]
-<"Figures/Results_DSR/M Water Contrib 1".pdf, id=1032, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/M Water Contrib 1".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/M Water Contrib 1".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/M Water Contrib 1".pdf used on in
-put line 1636.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DSR/M Water Contrib 3".pdf, id=1033, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/M Water Contrib 3".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/M Water Contrib 3".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/M Water Contrib 3".pdf used on in
-put line 1642.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DSR/M Water Contrib 2".pdf, id=1034, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/M Water Contrib 2".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/M Water Contrib 2".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/M Water Contrib 2".pdf used on in
-put line 1648.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DSR/M Water Contrib 4".pdf, id=1035, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/M Water Contrib 4".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/M Water Contrib 4".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/M Water Contrib 4".pdf used on in
-put line 1654.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DSR/M Mass Contrib 1".pdf, id=1036, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/M Mass Contrib 1".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/M Mass Contrib 1".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/M Mass Contrib 1".pdf used on inp
-ut line 1666.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DSR/M Mass Contrib 2".pdf, id=1037, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/M Mass Contrib 2".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/M Mass Contrib 2".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/M Mass Contrib 2".pdf used on inp
-ut line 1672.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DSR/M Mass Contrib 3".pdf, id=1038, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/M Mass Contrib 3".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/M Mass Contrib 3".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/M Mass Contrib 3".pdf used on inp
-ut line 1678.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
- [82] [83 <./Figures/Results_DSR/M Water Contrib 1.pdf> <./Figures/Results_DSR/
-M Water Contrib 3.pdf> <./Figures/Results_DSR/M Water Contrib 2.pdf> <./Figures
-/Results_DSR/M Water Contrib 4.pdf>] [84 <./Figures/Results_DSR/M Mass Contrib 
-1.pdf> <./Figures/Results_DSR/M Mass Contrib 2.pdf> <./Figures/Results_DSR/M Ma
-ss Contrib 3.pdf>] [85]
-Underfull \vbox (badness 2142) has occurred while \output is active []
-
- [86
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [87]
-[88])
+ [9 <./Figures/TV-MV Error.pdf>] [10])
 References
-[89
+[11
 
 
 
 
 
 
-] [90] [91]
-! Undefined control sequence.
-<argument> 1{\^a}\x 
-                    {fffd}\x {fffd}\x {fffd}\x {fffd}\x {fffd}\x {fffd}\x {f...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> 1{\^a}\x {fffd}\x 
-                             {fffd}\x {fffd}\x {fffd}\x {fffd}\x {fffd}\x {f...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> 1{\^a}\x {fffd}\x {fffd}\x 
-                                      {fffd}\x {fffd}\x {fffd}\x {fffd}\x {f...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> 1{\^a}\x {fffd}\x {fffd}\x {fffd}\x 
-                                               {fffd}\x {fffd}\x {fffd}\x {f...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...{fffd}\x {fffd}\x {fffd}\x {fffd}\x 
-                                                  {fffd}\x {fffd}\x {fffd}\x...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...{fffd}\x {fffd}\x {fffd}\x {fffd}\x 
-                                                  {fffd}\x {fffd}\x {fffd}2
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...{fffd}\x {fffd}\x {fffd}\x {fffd}\x 
-                                                  {fffd}\x {fffd}2
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...{fffd}\x {fffd}\x {fffd}\x {fffd}\x 
-                                                  {fffd}2
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[92]
-! Undefined control sequence.
-<argument> 1{\^a}\x 
-                    {fffd}\x {fffd}\x {fffd}\x {fffd}\x {fffd}\x {fffd}\x {f...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> 1{\^a}\x {fffd}\x 
-                             {fffd}\x {fffd}\x {fffd}\x {fffd}\x {fffd}\x {f...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> 1{\^a}\x {fffd}\x {fffd}\x 
-                                      {fffd}\x {fffd}\x {fffd}\x {fffd}\x {f...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> 1{\^a}\x {fffd}\x {fffd}\x {fffd}\x 
-                                               {fffd}\x {fffd}\x {fffd}\x {f...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...{fffd}\x {fffd}\x {fffd}\x {fffd}\x 
-                                                  {fffd}\x {fffd}\x {fffd}\x...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...{fffd}\x {fffd}\x {fffd}\x {fffd}\x 
-                                                  {fffd}\x {fffd}\x {fffd}2
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...{fffd}\x {fffd}\x {fffd}\x {fffd}\x 
-                                                  {fffd}\x {fffd}2
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...{fffd}\x {fffd}\x {fffd}\x {fffd}\x 
-                                                  {fffd}2
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[93] [94]
-! Undefined control sequence.
-<argument> 1{\^a}\x 
-                    {fffd}\x {fffd}\x {fffd}\x {fffd}\x {fffd}\x {fffd}\x {f...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> 1{\^a}\x {fffd}\x 
-                             {fffd}\x {fffd}\x {fffd}\x {fffd}\x {fffd}\x {f...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> 1{\^a}\x {fffd}\x {fffd}\x 
-                                      {fffd}\x {fffd}\x {fffd}\x {fffd}\x {f...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> 1{\^a}\x {fffd}\x {fffd}\x {fffd}\x 
-                                               {fffd}\x {fffd}\x {fffd}\x {f...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...{fffd}\x {fffd}\x {fffd}\x {fffd}\x 
-                                                  {fffd}\x {fffd}\x {fffd}\x...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...{fffd}\x {fffd}\x {fffd}\x {fffd}\x 
-                                                  {fffd}\x {fffd}\x {fffd}2
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...{fffd}\x {fffd}\x {fffd}\x {fffd}\x 
-                                                  {fffd}\x {fffd}2
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...{fffd}\x {fffd}\x {fffd}\x {fffd}\x 
-                                                  {fffd}2
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<to be read again> \edef \blx@tempa {107{\^A}\x 
-                                                {FFFD}\x {FFFD}\x {FFFD}\x {...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<to be read again> ...@tempa {107{\^A}\x {FFFD}\x 
-                                                  {FFFD}\x {FFFD}\x {FFFD}\x...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<to be read again> ...07{\^A}\x {FFFD}\x {FFFD}\x 
-                                                  {FFFD}\x {FFFD}\x {FFFD}\x...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<to be read again> ... {FFFD}\x {FFFD}\x {FFFD}\x 
-                                                  {FFFD}\x {FFFD}\x {FFFD}\x...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<to be read again> ... {FFFD}\x {FFFD}\x {FFFD}\x 
-                                                  {FFFD}\x {FFFD}\x {FFFD}\x...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<to be read again> ... {FFFD}\x {FFFD}\x {FFFD}\x 
-                                                  {FFFD}\x {FFFD}\x {FFFD}114}
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<to be read again> ... {FFFD}\x {FFFD}\x {FFFD}\x 
-                                                  {FFFD}\x {FFFD}114}
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<to be read again> ... {FFFD}\x {FFFD}\x {FFFD}\x 
-                                                  {FFFD}114}
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.1 %%%{\^A}\x
-               {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\...
-l.51 \printbibliography[title=References]
-                                         ^^M
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.1 %%%{\^A}\x {FFF%}\x
-                        {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\...
-l.51 \printbibliography[title=References]
-                                         ^^M
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.1 %%%{\^A}\x {FFF%}\x {FFF%}\x
-                                 {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\...
-l.51 \printbibliography[title=References]
-                                         ^^M
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.1 %%%{\^A}\x {FFF%}\x {FFF%}\x {FFF%}\x
-                                          {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\...
-l.51 \printbibliography[title=References]
-                                         ^^M
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.1 %%%{\^A}\x {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x
-                                                   {FFF%}\x {FFF%}\x {FFF%}\...
-l.51 \printbibliography[title=References]
-                                         ^^M
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.1 ...FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x
-                                                   {FFF%}\x {FFF%}\x {FFF%}%%%
-l.51 \printbibliography[title=References]
-                                         ^^M
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.1 ...FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x
-                                                   {FFF%}\x {FFF%}%%%
-l.51 \printbibliography[title=References]
-                                         ^^M
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.1 ...FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x
-                                                   {FFF%}%%%
-l.51 \printbibliography[title=References]
-                                         ^^M
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<to be read again> \edef \blx@tempa {107{\^A}\x 
-                                                {FFFD}\x {FFFD}\x {FFFD}\x {...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<to be read again> ...@tempa {107{\^A}\x {FFFD}\x 
-                                                  {FFFD}\x {FFFD}\x {FFFD}\x...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<to be read again> ...07{\^A}\x {FFFD}\x {FFFD}\x 
-                                                  {FFFD}\x {FFFD}\x {FFFD}\x...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<to be read again> ... {FFFD}\x {FFFD}\x {FFFD}\x 
-                                                  {FFFD}\x {FFFD}\x {FFFD}\x...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<to be read again> ... {FFFD}\x {FFFD}\x {FFFD}\x 
-                                                  {FFFD}\x {FFFD}\x {FFFD}\x...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<to be read again> ... {FFFD}\x {FFFD}\x {FFFD}\x 
-                                                  {FFFD}\x {FFFD}\x {FFFD}114}
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<to be read again> ... {FFFD}\x {FFFD}\x {FFFD}\x 
-                                                  {FFFD}\x {FFFD}114}
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<to be read again> ... {FFFD}\x {FFFD}\x {FFFD}\x 
-                                                  {FFFD}114}
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.1 %%%{\^A}\x
-               {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\...
-l.51 \printbibliography[title=References]
-                                         ^^M
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.1 %%%{\^A}\x {FFF%}\x
-                        {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\...
-l.51 \printbibliography[title=References]
-                                         ^^M
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.1 %%%{\^A}\x {FFF%}\x {FFF%}\x
-                                 {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\...
-l.51 \printbibliography[title=References]
-                                         ^^M
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.1 %%%{\^A}\x {FFF%}\x {FFF%}\x {FFF%}\x
-                                          {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\...
-l.51 \printbibliography[title=References]
-                                         ^^M
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.1 %%%{\^A}\x {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x
-                                                   {FFF%}\x {FFF%}\x {FFF%}\...
-l.51 \printbibliography[title=References]
-                                         ^^M
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.1 ...FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x
-                                                   {FFF%}\x {FFF%}\x {FFF%}%%%
-l.51 \printbibliography[title=References]
-                                         ^^M
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.1 ...FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x
-                                                   {FFF%}\x {FFF%}%%%
-l.51 \printbibliography[title=References]
-                                         ^^M
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.1 ...FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x {FFF%}\x
-                                                   {FFF%}%%%
-l.51 \printbibliography[title=References]
-                                         ^^M
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> 107{\^a}\x 
-                      {fffd}\x {fffd}\x {fffd}\x {fffd}\x {fffd}\x {fffd}\x ...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> 107{\^a}\x {fffd}\x 
-                               {fffd}\x {fffd}\x {fffd}\x {fffd}\x {fffd}\x ...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> 107{\^a}\x {fffd}\x {fffd}\x 
-                                        {fffd}\x {fffd}\x {fffd}\x {fffd}\x ...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> 107{\^a}\x {fffd}\x {fffd}\x {fffd}\x 
-                                                 {fffd}\x {fffd}\x {fffd}\x ...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...{fffd}\x {fffd}\x {fffd}\x {fffd}\x 
-                                                  {fffd}\x {fffd}\x {fffd}\x...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...{fffd}\x {fffd}\x {fffd}\x {fffd}\x 
-                                                  {fffd}\x {fffd}\x {fffd}114
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...{fffd}\x {fffd}\x {fffd}\x {fffd}\x 
-                                                  {fffd}\x {fffd}114
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...{fffd}\x {fffd}\x {fffd}\x {fffd}\x 
-                                                  {fffd}114
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[95]
-! Undefined control sequence.
-<argument> 1{\^a}\x 
-                    {fffd}\x {fffd}\x {fffd}\x {fffd}\x {fffd}\x {fffd}\x {f...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> 1{\^a}\x {fffd}\x 
-                             {fffd}\x {fffd}\x {fffd}\x {fffd}\x {fffd}\x {f...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> 1{\^a}\x {fffd}\x {fffd}\x 
-                                      {fffd}\x {fffd}\x {fffd}\x {fffd}\x {f...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> 1{\^a}\x {fffd}\x {fffd}\x {fffd}\x 
-                                               {fffd}\x {fffd}\x {fffd}\x {f...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...{fffd}\x {fffd}\x {fffd}\x {fffd}\x 
-                                                  {fffd}\x {fffd}\x {fffd}\x...
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...{fffd}\x {fffd}\x {fffd}\x {fffd}\x 
-                                                  {fffd}\x {fffd}\x {fffd}2
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...{fffd}\x {fffd}\x {fffd}\x {fffd}\x 
-                                                  {fffd}\x {fffd}2
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...{fffd}\x {fffd}\x {fffd}\x {fffd}\x 
-                                                  {fffd}2
-l.51 \printbibliography[title=References]
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[96] [97] [98]
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
  (./MorseThesis.aux (./CH04-WaterBalanceModel.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 77.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 77.
 Package rerunfilecheck Info: File `MorseThesis.out' has not changed.
-(rerunfilecheck)             Checksum: 168DD776679870EA737396E8E970F1D5;698.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: 8564EED76F374CCCC0B5F671194B2575;411.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 77.
 Package logreq Info: Writing requests to 'MorseThesis.run.xml'.
 \openout1 = `MorseThesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33657 strings out of 493117
- 658081 string characters out of 6135433
- 1033022 words of memory out of 5000000
- 36170 multiletter control sequences out of 15000+600000
- 15748 words of font info for 62 fonts, out of 8000000 for 9000
+ 33009 strings out of 493117
+ 642054 string characters out of 6135433
+ 1019762 words of memory out of 5000000
+ 35788 multiletter control sequences out of 15000+600000
+ 13252 words of font info for 52 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 66i,16n,77p,10522b,1588s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,12n,77p,10408b,1469s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
-/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
-al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
-/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
-4/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on MorseThesis.pdf (98 pages, 1757094 bytes).
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on MorseThesis.pdf (11 pages, 171190 bytes).
 PDF statistics:
- 1381 PDF objects out of 1440 (max. 8388607)
- 1120 compressed objects within 12 object streams
- 273 named destinations out of 1000 (max. 500000)
- 372 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 168 PDF objects out of 1000 (max. 8388607)
+ 139 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 58 words of extra memory for PDF output out of 10000 (max. 10000000)
 
