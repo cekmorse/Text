@@ -71,15 +71,78 @@ It was determined that for the sake of simplicity, all of the models calculated 
 \section{Error and Uncertainty.}
 \label{sec:ErrorAndUncertainty}
 
+types of uncertainty
+	parameter uncertainty
+	model uncertainty
+
+Types of parameter uncertainties (Vicens et al. 1975)
+	parameter uncertainty
+	Model uncertainty
+	Spatial variability
+	Temporal variability
+	
+Parameter estimates should be strictly treated as random variables and parameters that are functions of random variables should be treated themselves as random variables (Haan 1977)
+	
+	Systematic errors - introduce bias into measurements.  Only reduced through proper methodology and frequency of equipment calibration and proper equipment operation.
+	
+	random errors - Introduce noise into the measurements.  have mean of 0 and are equally distributed on either side of 0.  repeated measurements can reduce but not eliminate random error.  Repeated meaurements in a dynamic system introduce temporal variability.
+	
+	true value vs. measured value discussion w/ plots
+
+Source of model uncertainty
+	hydrologic processes cannot be conceptually or mathematically represented with total accuracy and completeness.  Most hydrologic math models are emperical.  This is due to the highly variable, complex, and incompletely understood processes that exist at every part of the hydrologic cycle.
+	
+	While there is a much better understanding of hyraulic processes, these are also subject to uncertainty in natural channels due to the unstable nature of these channels.
+	
+
+Spatiotemporal uncertainty is the result of systems that vary over time and space.  
+Spatial variability
+Data can be collected at given point in space, but that data may not be representative of the physical area that it is assumed to represent due to variability in physical conditions.  
+
+Temporal variability
+Similarly, data can be collected at a given point in time, but changes in the system over time causes the measured parameter value to change (T. K. Gates and Al-Zahrani 1996b). 
+	
+The widely-accepted standard for quantifying measurement uncertainty is the ISO’s Guide to Expression of Uncertainty in Measurement (GUM) (ISO 1995).  GUM classifies uncertainty evaluations as either being “Type A” or “Type B” and does not differentiate errors as being random or systematic (Cox et al. 2003; Reginald W. Herschy 2009).  Type A evaluations are used to estimate a value using a probability distribution that was developed from repeated measurements, and Type B evaluations use standard deviations and assumed probability distributions obtained from scientific judgment, available information, and possible variability of a measurement (Cox et al. 2003; R. W. Herschy 2004).  For example, the uncertainty evaluation used for a single river discharge measurement would be Type B if the error range and probability distribution of the measurement equipment and procedure is assumed from previous studies and scientific judgment, and because a single measurement is taken at a given point in time such that a probability distribution of measurement could not be developed (i.e. due to temporal variations in flow rate).
+The root mean square method is widely accepted for estimating the uncertainty related to measurement of water quantity and water quality (Harmel and Smith 2007; ISO 1995; Sauer et al. 1992), as presented in ISO (1995).  Harmel and Smith (2007) describe this measurement uncertainty as the “probably error range”, and quantify upper and lower uncertainty boundaries for measured data points as the following when attempting to specify an expected range of expected values:
+(1.3)
+and
+(1.4)
+Where:	 = upper uncertainty boundary
+= lower uncertainty boundary
+Oi = measured data point
+PERi = probable error range for measured data point Oi, (+/- %)
+This approach for describing the probable error range (Harmel and Smith 2007) is applicable for PERi that is known or assumed because no data is available to develop a probability distribution (i.e. Type B uncertainty evaluations).
+
+
+
 --- from Martin MS thesis --- re-word and re-work
-Any water resources problem contains two fundamental types of informational uncertainties: (1) parameter uncertainty and (2) model uncertainty (Vicens et al. 1975).  Parameter uncertainty is derived, in part, from measurement error or the difference between true and measured values (R.W. Herschy 2002).  It is also derived from spatial and temporal variability.  Even if a parameter value could be measured perfectly at a given point in space and time only a very limited number of points can be measured.  Hence, the true space-time distribution of parameter values cannot be known with certainty.  Due to this error and variability and the inability to know what the “true” values are, parameters estimates strictly should be treated as random variables (Haan 1989) and parameters that are functions of random variables should be treated themselves as random variables (Haan 1977).
-Model uncertainty stems from the fact that hydrologic processes cannot be represented or approximated in a conceptual physical or mathematical form with total accuracy and completeness (Haan 1989) due to the complexities of natural systems. In relation to the mass balance equation used to estimate canal seepage loss, modeling free-water evaporation rates from the water surface of the canal is performed using an equation that does not completely account for all factors that affect evaporation rates.  Evaporation is a complex process in that it is dependent upon numerous atmospheric conditions, so equations are simplified because of lack of availability of data or the inability to measure all components that affect evaporation rates.  Free-water evaporation equations implement atmospheric components such as relative humidity, wind speed, solar radiation, etc. but the equations themselves provide merely an estimate of evaporation (even if every variable within the equation could be measured with complete accuracy) due to the lack of completeness of the equation.  The same is true for groundwater inflows into a canal, because they cannot be measured directly or completely along the entire study reach of the canal.  As such, the model has to make certain assumptions about groundwater inflows which lead to incompleteness of the model.  
+Any water resources problem contains two fundamental types of informational uncertainties: (1) parameter uncertainty and (2) model uncertainty (Vicens et al. 1975).  
+Parameter uncertainty is derived, in part, from measurement error or the difference between true and measured values (R.W. Herschy 2002).  
+It is also derived from spatial and temporal variability.  
+Even if a parameter value could be measured perfectly at a given point in space and time only a very limited number of points can be measured.  
+Hence, the true space-time distribution of parameter values cannot be known with certainty.  
+Due to this error and variability and the inability to know what the “true” values are, parameters estimates strictly should be treated as random variables (Haan 1989) and parameters that are functions of random variables should be treated themselves as random variables (Haan 1977).
+
+Model uncertainty stems from the fact that hydrologic processes cannot be represented or approximated in a conceptual physical or mathematical form with total accuracy and completeness (Haan 1989) due to the complexities of natural systems. 
+In relation to the mass balance equation used to estimate canal seepage loss, modeling free-water evaporation rates from the water surface of the canal is performed using an equation that does not completely account for all factors that affect evaporation rates.  
+Evaporation is a complex process in that it is dependent upon numerous atmospheric conditions, so equations are simplified because of lack of availability of data or the inability to measure all components that affect evaporation rates.  
+Free-water evaporation equations implement atmospheric components such as relative humidity, wind speed, solar radiation, etc. but the equations themselves provide merely an estimate of evaporation (even if every variable within the equation could be measured with complete accuracy) due to the lack of completeness of the equation.  
+The same is true for groundwater inflows into a canal, because they cannot be measured directly or completely along the entire study reach of the canal.  
+As such, the model has to make certain assumptions about groundwater inflows which lead to incompleteness of the model.  
+
+Standard errors cannot be easily assessed (Harmel and Smith 2007) but often are related to equipment’s ability to make a measurement with accuracy or with random operation errors.  Measurement repetition reduces standard errors as the mean of the repeated measurements becomes closer to the true value (Bell 1999; ISO 1973), as long as the measurement error is scattered around the true mean.
+Systematic errors typically are either positive or negative throughout a measurement set, and likely are caused by equipment bias or user bias (Bell 1999; Harmel and Smith 2007).  As opposed to standard errors, repeated measurements will not reduce the uncertainty of systematic errors since the errors are biased in a given direction (ISO 1973).  As such, the only ways to reduce systematic errors are through equipment calibration and proper equipment operation.
+
+In addition to direct measurement error, uncertainties also stem from the procedures used to perform a measurement or used to calculate a value from measurements (Harmel and Smith 2007).  Model uncertainty is related to the inability to adequately represent natural systems due to their complexity, dynamic nature, and the modeler's lack of understanding of the modeled system.  It is also related to the methods, equations, and procedures used to calculate given parameters.  Even if random scatter errors and systematic errors did not exist (i.e. sub-parameters could be measured with 100\% accuracy) there is still uncertainty related to the equations and procedures used to attempt to quantify a given parameter.  For example, when estimating free-water evaporation, if temperature, relative humidity, wind speed, solar radiation, and all other required components for a given equation were all measured with 100\% accuracy, the estimation of free-water evaporation still would not be equivalent to the true value due to imperfections in the equation being used.
+
+
 Seepage Measurement Error and Uncertainty
 The inflow-outflow seepage measurement procedure was adopted for the analysis presented in this thesis.  As such, literature review of the parameters associated with this method will be discussed herein, including the uncertainty of estimating parameters values.  Major components of uncertainty in seepage measurement using the inflow-outflow procedure include discharge measurements, free-water evaporation estimates, water stage measurements, and measurements of canal hydraulic geometry.
 All physical measurements have a degree of uncertainty due to either random scatter errors (a.k.a. “standard errors”) or systematic errors (Harmel and Smith 2007; ISO 1973).  Errors related to computational procedures and measurement techniques can be classified as random scatter errors if they create scatter around the true mean, but if they cause a uni-directional bias in estimates then they are classified as systematic errors.
-Standard errors cannot be easily assessed (Harmel and Smith 2007) but often are related to equipment’s ability to make a measurement with accuracy or with random operation errors.  Measurement repetition reduces standard errors as the mean of the repeated measurements becomes closer to the true value (Bell 1999; ISO 1973), as long as the measurement error is scattered around the true mean.
-Systematic errors typically are either positive or negative throughout a measurement set, and likely are caused by equipment bias or user bias (Bell 1999; Harmel and Smith 2007).  As opposed to standard errors, repeated measurements will not reduce the uncertainty of systematic errors since the errors are biased in a given direction (ISO 1973).  As such, the only ways to reduce systematic errors are through equipment calibration and proper equipment operation.
-In addition to direct measurement error, uncertainties also stem from the procedures used to perform a measurement or used to calculate a value from measurements (Harmel and Smith 2007).  Model uncertainty is related to the inability to adequately represent natural systems due to their complexity, dynamic nature, and the modeler's lack of understanding of the modeled system.  It is also related to the methods, equations, and procedures used to calculate given parameters.  Even if random scatter errors and systematic errors did not exist (i.e. sub-parameters could be measured with 100% accuracy) there is still uncertainty related to the equations and procedures used to attempt to quantify a given parameter.  For example, when estimating free-water evaporation, if temperature, relative humidity, wind speed, solar radiation, and all other required components for a given equation were all measured with 100% accuracy, the estimation of free-water evaporation still would not be equivalent to the true value due to imperfections in the equation being used.  
+
+  
+
+
 Spatiotemporal uncertainty is the result of systems that vary over time and space.  Data can be collected at given point in space, but that data may not be representative of the physical area that it is assumed to represent due to variability in physical conditions.  Similarly, data can be collected at a given point in time, but changes in the system over time causes the measured parameter value to change (T. K. Gates and Al-Zahrani 1996b).  For example, when using the velocity-area method to measure river discharge, water velocity is not measured at every location within a cross section so average velocity cannot truly be known but only estimated, which leads to spatial variability.  Water velocity at a given location also changes temporally during a measurement leading to temporal variability.
 Discharge Measurement Error and Uncertainty
 The most common method for estimating stream flows is the velocity-area method (R. Herschy 1993).  This method typically is conducted by summing the products of measured velocity and the corresponding flow area for a series of measurements within a channel cross-section (ISO 1979).  Inflow-outflow seepage measurements can be conducted using Acoustic Doppler flow meters and other technologies that utilize the velocity-area method to measure upstream and downstream flow rates relatively quickly Kinzli et al. (2010).  Additional descriptions of the velocity-area method for flow measurement with ADVs and ADCPs are provides in Section 3.1.1.  Adoption of error ranges and probability distributions related to flow rate measurement with ADVs and ADCPs are discussed in Section 5.2.  The sub-sections that immediately follow present a literature review of studies related to the measurement error and uncertainty of these flow measurement technologies.  
