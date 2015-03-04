@@ -1,5 +1,5 @@
 % This file was created with JabRef 2.10.
-% Encoding: UTF8
+% Encoding: ISO8859_1
 
 
 @Techreport{Abbott1985,
@@ -14,7 +14,7 @@
   Author                   = {Adkison, Milo D.},
   Year                     = {2009},
   ISSN                     = {1051-0761},
-  Month                    = jan,
+  Month                    = {jan},
   Number                   = {1},
   Pages                    = {198--205},
   Volume                   = {19},
@@ -516,6 +516,26 @@
   Publisher                = {Elsevier}
 }
 
+@Article{haan2002,
+  Title                    = {Statistical methods in hydrology},
+  Author                   = {Haan, Charles Thomas},
+  Year                     = {2002},
+
+  Publisher                = {The Iowa State University Press}
+}
+
+@Article{haan1989,
+  Title                    = {Parametric Uncertainty in Hydrologic Modeling},
+  Author                   = {C. T. Haan},
+  Year                     = {1989},
+  Number                   = {1},
+  Pages                    = {0137--0146},
+  Volume                   = {32},
+
+  Journal                  = {Transactions of the {ASAE}},
+  Publisher                = {American Society of Agricultural and Biological Engineers ({ASABE})}
+}
+
 @Article{Ham1990,
   Title                    = {Determination of soil water evaporation and transpiration from energy balance and stem flow measurements},
   Author                   = {Ham, Jay M. and Heilman, J.L. and Lascano, R.J.},
@@ -566,6 +586,18 @@
   Year                     = {1985},
   Number                   = {2254},
   Type                     = {Water-Supply Paper}
+}
+
+@Article{herschy2002,
+  Title                    = {The uncertainty in a current meter measurement},
+  Author                   = {Herschy, RW},
+  Year                     = {2002},
+  Number                   = {5},
+  Pages                    = {281--284},
+  Volume                   = {13},
+
+  Journal                  = {Flow Measurement and Instrumentation},
+  Publisher                = {Elsevier}
 }
 
 @Article{Hung1995,
@@ -1583,6 +1615,18 @@
   Volume                   = {6},
 
   Journal                  = {New York Times}
+}
+
+@Article{vicens1975,
+  Title                    = {Bayesian generation of synthetic streamflows},
+  Author                   = {Vicens, Guillermo J and Rodr{\'\i}guez-Iturbe, Ignacio and Schaake, John C},
+  Year                     = {1975},
+  Number                   = {6},
+  Pages                    = {827--838},
+  Volume                   = {11},
+
+  Journal                  = {Water Resources Research},
+  Publisher                = {Wiley Online Library}
 }
 
 @Article{vinceti2001,
