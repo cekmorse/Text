@@ -19,6 +19,225 @@
 
 \refsection{0}
   \sortlist{entry}{nyt}
+    \entry{DAgostino1986}{book}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=90064786d449458da387e7956118801f}{D'Agostino}{D\bibinitperiod}{Ralph\bibnamedelima B.}{R\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b9ce3c2fd9c2e0116dc9a2b8aae00558}{Stephens}{S\bibinitperiod}{Michael\bibnamedelima A.}{M\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{2}{}{%
+        {{uniquename=0,hash=90064786d449458da387e7956118801f}{D'Agostino}{D\bibinitperiod}{Ralph\bibnamedelima B.}{R\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b9ce3c2fd9c2e0116dc9a2b8aae00558}{Stephens}{S\bibinitperiod}{Michael\bibnamedelima A.}{M\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Dekker}%
+      }
+      \strng{namehash}{3e41d5c3a1f369f1be76b5a68f4fed41}
+      \strng{fullhash}{3e41d5c3a1f369f1be76b5a68f4fed41}
+      \field{sortinit}{D}
+      \field{labelyear}{1986}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Goodness-of-fit-techniques (Statistics: a Series of Textbooks and Monographs, Vol. 68)}
+      \field{edition}{1}
+      \field{isbn}{9780824774875}
+      \field{title}{Goodness-of-fit-techniques (Statistics: a Series of Textbooks and Monographs, Vol. 68)}
+      \field{year}{1986}
+    \endentry
+    \entry{delignette2014}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=954438103bb8031869c7a6d74ade6b5b}{Delignette-Muller}{D\bibinithyphendelim M\bibinitperiod}{Marie\bibnamedelima Laure}{M\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8ae6ac31605a8d32a5193be33fdc6001}{Dutang}{D\bibinitperiod}{Christophe}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=954438103bb8031869c7a6d74ade6b5b}{Delignette-Muller}{D\bibinithyphendelim M\bibinitperiod}{Marie\bibnamedelima Laure}{M\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8ae6ac31605a8d32a5193be33fdc6001}{Dutang}{D\bibinitperiod}{Christophe}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{793d62d137d5dfeb20bfecac907d3b4c}
+      \strng{fullhash}{793d62d137d5dfeb20bfecac907d3b4c}
+      \field{sortinit}{D}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labeltitle}{fitdistrplus: An R Package for Fitting Distributions}
+      \field{title}{fitdistrplus: An R Package for Fitting Distributions}
+      \field{year}{2014}
+    \endentry
+    \entry{Gates1996}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=fcc580849cc197f351412ef9d9e56453}{Gates}{G\bibinitperiod}{Timmothy\bibnamedelima K.}{T\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0dc6c6a8698edab09bb01223f0665871}{Al-Zahrani}{A\bibinithyphendelim Z\bibinitperiod}{Muhammad\bibnamedelima A.}{M\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=fcc580849cc197f351412ef9d9e56453}{Gates}{G\bibinitperiod}{Timmothy\bibnamedelima K.}{T\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0dc6c6a8698edab09bb01223f0665871}{Al-Zahrani}{A\bibinithyphendelim Z\bibinitperiod}{Muhammad\bibnamedelima A.}{M\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{1985d33daf2a00dcd0c265a98541deda}
+      \strng{fullhash}{1985d33daf2a00dcd0c265a98541deda}
+      \field{sortinit}{G}
+      \field{labelyear}{1996}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Spatiotemporal Stochastic Open-Channel Flow. I: Model And Its Parameter Data}
+      \field{journaltitle}{Journal of Hydraulic Engineering}
+      \field{number}{11}
+      \field{title}{Spatiotemporal Stochastic Open-Channel Flow. I: Model And Its Parameter Data}
+      \field{volume}{122}
+      \field{year}{1996}
+      \field{pages}{641\bibrangedash 651}
+    \endentry
+    \entry{haan1989}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=2,hash=a3d6870b1a0e557694ef48cb7b1f591e}{Haan}{H\bibinitperiod}{C.\bibnamedelimi T.}{C\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=2,hash=a3d6870b1a0e557694ef48cb7b1f591e}{Haan}{H\bibinitperiod}{C.\bibnamedelimi T.}{C\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{2}{%
+        {American Society of Agricultural}%
+        {Biological Engineers ({ASABE})}%
+      }
+      \strng{namehash}{a3d6870b1a0e557694ef48cb7b1f591e}
+      \strng{fullhash}{a3d6870b1a0e557694ef48cb7b1f591e}
+      \field{sortinit}{H}
+      \field{labelyear}{1989}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Parametric Uncertainty in Hydrologic Modeling}
+      \field{journaltitle}{Transactions of the {ASAE}}
+      \field{number}{1}
+      \field{title}{Parametric Uncertainty in Hydrologic Modeling}
+      \field{volume}{32}
+      \field{year}{1989}
+      \field{pages}{0137\bibrangedash 0146}
+    \endentry
+    \entry{haan2002}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=2,hash=8d16d495ea361c51c5c35193414068c9}{Haan}{H\bibinitperiod}{Charles\bibnamedelima Thomas}{C\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=2,hash=8d16d495ea361c51c5c35193414068c9}{Haan}{H\bibinitperiod}{Charles\bibnamedelima Thomas}{C\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {The Iowa State University Press}%
+      }
+      \strng{namehash}{8d16d495ea361c51c5c35193414068c9}
+      \strng{fullhash}{8d16d495ea361c51c5c35193414068c9}
+      \field{sortinit}{H}
+      \field{labelyear}{2002}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Statistical methods in hydrology}
+      \field{title}{Statistical methods in hydrology}
+      \field{year}{2002}
+    \endentry
+    \entry{harmel2007}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=4d98cd54eb067d3856d540476982f595}{Harmel}{H\bibinitperiod}{R\bibnamedelima Daren}{R\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9cff560f46abbad05e4d34fba0084d63}{Smith}{S\bibinitperiod}{Patricia\bibnamedelima K}{P\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=4d98cd54eb067d3856d540476982f595}{Harmel}{H\bibinitperiod}{R\bibnamedelima Daren}{R\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9cff560f46abbad05e4d34fba0084d63}{Smith}{S\bibinitperiod}{Patricia\bibnamedelima K}{P\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{4e12ac1e250fa6a313a56448c3ba84af}
+      \strng{fullhash}{4e12ac1e250fa6a313a56448c3ba84af}
+      \field{sortinit}{H}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Consideration of measurement uncertainty in the evaluation of goodness-of-fit in hydrologic and water quality modeling}
+      \field{journaltitle}{Journal of Hydrology}
+      \field{number}{3}
+      \field{title}{Consideration of measurement uncertainty in the evaluation of goodness-of-fit in hydrologic and water quality modeling}
+      \field{volume}{337}
+      \field{year}{2007}
+      \field{pages}{326\bibrangedash 336}
+    \endentry
+    \entry{herschy2002}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=e63cb2a3cc9fcdc4100ba35eebd7feb9}{Herschy}{H\bibinitperiod}{RW}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=e63cb2a3cc9fcdc4100ba35eebd7feb9}{Herschy}{H\bibinitperiod}{RW}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{e63cb2a3cc9fcdc4100ba35eebd7feb9}
+      \strng{fullhash}{e63cb2a3cc9fcdc4100ba35eebd7feb9}
+      \field{sortinit}{H}
+      \field{labelyear}{2002}
+      \field{datelabelsource}{}
+      \field{labeltitle}{The uncertainty in a current meter measurement}
+      \field{journaltitle}{Flow Measurement and Instrumentation}
+      \field{number}{5}
+      \field{title}{The uncertainty in a current meter measurement}
+      \field{volume}{13}
+      \field{year}{2002}
+      \field{pages}{281\bibrangedash 284}
+    \endentry
+    \entry{gum2008}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=5b512ee8a59deb284ad0a6a035ba10b1}{ISO}{I\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=5b512ee8a59deb284ad0a6a035ba10b1}{ISO}{I\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \strng{fullhash}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \field{sortinit}{I}
+      \field{labelyear}{2008}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Guide to the Expression of Uncertainty in Measurement, (1995), with Supplement 1, Evaluation of measurement data, JCGM 101: 2008}
+      \field{journaltitle}{Organization for Standardization, Geneva, Switzerland}
+      \field{title}{Guide to the Expression of Uncertainty in Measurement, (1995), with Supplement 1, Evaluation of measurement data, JCGM 101: 2008}
+      \field{year}{2008}
+    \endentry
+    \entry{venables2002}{book}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=f11cb9dda63c04a0bc541123c6fe17fe}{Venables}{V\bibinitperiod}{William\bibnamedelima N}{W\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d0e4856c04d9f79a9f431edc5b1de58e}{Ripley}{R\bibinitperiod}{Brian\bibnamedelima D}{B\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=f11cb9dda63c04a0bc541123c6fe17fe}{Venables}{V\bibinitperiod}{William\bibnamedelima N}{W\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d0e4856c04d9f79a9f431edc5b1de58e}{Ripley}{R\bibinitperiod}{Brian\bibnamedelima D}{B\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science \& Business Media}%
+      }
+      \strng{namehash}{7ee59c72371ded243e104f573113d296}
+      \strng{fullhash}{7ee59c72371ded243e104f573113d296}
+      \field{sortinit}{V}
+      \field{labelyear}{2002}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Modern applied statistics with S}
+      \field{title}{Modern applied statistics with S}
+      \field{year}{2002}
+    \endentry
+    \entry{vicens1975}{article}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=b717f78d8033cda21093f576ba8a4b24}{Vicens}{V\bibinitperiod}{Guillermo\bibnamedelima J.}{G\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b7954583600fe53b9399cc76cb3372a3}{Rodr\'{i}guez-Iturbe}{R\bibinithyphendelim I\bibinitperiod}{Ignacio}{I\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=34c1cdbe44a288b3ea4b3ff866cda2fa}{Schaake}{S\bibinitperiod}{John\bibnamedelima C}{J\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=b717f78d8033cda21093f576ba8a4b24}{Vicens}{V\bibinitperiod}{Guillermo\bibnamedelima J.}{G\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b7954583600fe53b9399cc76cb3372a3}{Rodr\'{i}guez-Iturbe}{R\bibinithyphendelim I\bibinitperiod}{Ignacio}{I\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=34c1cdbe44a288b3ea4b3ff866cda2fa}{Schaake}{S\bibinitperiod}{John\bibnamedelima C}{J\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{6048f4e37a5fef810a7cf335748f042f}
+      \strng{fullhash}{6048f4e37a5fef810a7cf335748f042f}
+      \field{sortinit}{V}
+      \field{labelyear}{1975}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Bayesian generation of synthetic streamflows}
+      \field{journaltitle}{Water Resources Research}
+      \field{number}{6}
+      \field{title}{Bayesian generation of synthetic streamflows}
+      \field{volume}{11}
+      \field{year}{1975}
+      \field{pages}{827\bibrangedash 838}
+    \endentry
     \entry{wanielista1997}{book}{}
       \true{morelabelname}
       \name{labelname}{3}{}{%

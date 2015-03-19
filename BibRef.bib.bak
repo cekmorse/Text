@@ -1,5 +1,5 @@
 % This file was created with JabRef 2.10.
-% Encoding: ISO8859_1
+% Encoding: UTF8
 
 
 @Techreport{Abbott1985,
@@ -339,15 +339,15 @@
   Volume                   = {51}
 }
 
-@Manual{Laure2012,
-  Title                    = {Fitting parametric univariate distributions to non censored or censored data using the R fitdistrplus package},
-  Author                   = {M. L. Delignette-Muller and Christophe Dutang},
-  Year                     = {2012}
+@Article{delignette2014,
+  Title                    = {fitdistrplus: An R Package for Fitting Distributions},
+  Author                   = {Delignette-Muller, Marie Laure and Dutang, Christophe},
+  Year                     = {2014}
 }
 
-@Manual{fitdistrplus,
-  Title                    = {Package 'fitdistrplus'},
-  Author                   = {M. L. Delignette-Muller and Regis Pouillot and Jean-Baptiste Denis and Christophe Dutang},
+@Manual{delignette2012,
+  Title                    = {Fitting parametric univariate distributions to non censored or censored data using the R fitdistrplus package},
+  Author                   = {M. L. Delignette-Muller and Christophe Dutang},
   Year                     = {2012}
 }
 
@@ -398,7 +398,7 @@
 
 @Article{Frappart2008,
   Title                    = {Interannual Variations of River Water Storage in the Rio Negro River basin from a Multiple Satellite Approach},
-  Author                   = {Frédéric Frappart and Fabrice Papa and James S. Famiglietti and Catherine Prigent and William B. Rossow and Frédérique Seyler},
+  Author                   = {FrÃ©dÃ©ric Frappart and Fabrice Papa and James S. Famiglietti and Catherine Prigent and William B. Rossow and FrÃ©dÃ©rique Seyler},
   Year                     = {2008},
   Month                    = nov,
   Number                   = {21},
@@ -410,7 +410,7 @@
 
 @Article{Frappart2005,
   Title                    = {Floodplain water storage in the Negro River basin estimated from microwave remote sensing of inundation area and water levels},
-  Author                   = {Frédéric Frappart and Fré́dé́rique Seyler and Jean-Michel Martinez and Juan G. León and Anny Cazenave},
+  Author                   = {FrÃ©dÃ©ric Frappart and FrÃ©ÌdÃ©Ìrique Seyler and Jean-Michel Martinez and Juan G. LeoÌn and Anny Cazenave},
   Year                     = {2005},
   Month                    = dec,
   Number                   = {4},
@@ -572,6 +572,18 @@
   Keywords                 = {Selenium}
 }
 
+@Article{harmel2007,
+  Title                    = {Consideration of measurement uncertainty in the evaluation of goodness-of-fit in hydrologic and water quality modeling},
+  Author                   = {Harmel, R Daren and Smith, Patricia K},
+  Year                     = {2007},
+  Number                   = {3},
+  Pages                    = {326--336},
+  Volume                   = {337},
+
+  Journal                  = {Journal of Hydrology},
+  Publisher                = {Elsevier}
+}
+
 @Book{Helsel1992,
   Title                    = {Statistical Methods in Water Resources},
   Author                   = {D.R. Helsel and R.M. Hirsch},
@@ -612,6 +624,14 @@
 
   Journal                  = {Estuaries},
   Publisher                = {Coastal and Estuarine Research Federation}
+}
+
+@Article{gum2008,
+  Title                    = {Guide to the Expression of Uncertainty in Measurement, (1995), with Supplement 1, Evaluation of measurement data, JCGM 101: 2008},
+  Author                   = {ISO},
+  Year                     = {2008},
+
+  Journal                  = {Organization for Standardization, Geneva, Switzerland}
 }
 
 @Manual{msm,
@@ -926,7 +946,7 @@
 
 @Article{navarro2000,
   Title                    = {Essentiality of selenium in the human body: relationship with different diseases},
-  Author                   = {M. Navarro-Alarcón and M.C. Lópex-Martínez},
+  Author                   = {M. Navarro-Alarc\'{o}n and M.C. L\'{o}pez-Mart\'{i}nez},
   Year                     = {2000},
   Number                   = {1},
   Pages                    = {347--371},
@@ -1016,7 +1036,7 @@
 
 @Article{Oram2008,
   Title                    = {Macro- and Microscale Investigation of Selenium Speciation in Blackfoot River, Idaho Sediments},
-  Author                   = {Oram, Libbie L. and Strawn, Daniel G. and Marcus, Matthew A. and Fakra, Sirine C. and Möller, Gregory},
+  Author                   = {Oram, Libbie L. and Strawn, Daniel G. and Marcus, Matthew A. and Fakra, Sirine C. and M\"{o}ller, Gregory},
   Year                     = {2008},
   ISSN                     = {0013-936X},
   Number                   = {18},
@@ -1028,7 +1048,7 @@
 
 @Article{Oram2010,
   Title                    = {Selenium Biogeochemical Cycling and Fluxes in the Hyporheic Zone of a Mining-Impacted Stream},
-  Author                   = {Oram, Libbie L. and Strawn, Daniel G. and Morra, Matthew J. and Möller, Gregory},
+  Author                   = {Oram, Libbie L. and Strawn, Daniel G. and Morra, Matthew J. and M\"{o}ller, Gregory},
   Year                     = {2010},
   ISSN                     = {0013-936X},
   Number                   = {11},
@@ -1046,8 +1066,8 @@
 }
 
 @Article{Quilbe2005,
-  Title                    = {Selecting a calculation method to estimate sediment and nutrient loads in streams: Application to the Beaurivage River (Que¬¥bec, Canada)},
-  Author                   = {Renaud Quilbé and Alain N. Rousseau and Marc Duchemin and Annie Poulin andGeorges Gangbazo and Jean-Pierre Villeneuve},
+  Title                    = {Selecting a calculation method to estimate sediment and nutrient loads in streams: Application to the Beaurivage River (Qu\'{e}bec, Canada)},
+  Author                   = {Renaud Quilb\'{e} and Alain N. Rousseau and Marc Duchemin and Annie Poulin andGeorges Gangbazo and Jean-Pierre Villeneuve},
   Year                     = {2005},
   Pages                    = {295-310},
   Volume                   = {326},
@@ -1617,9 +1637,16 @@
   Journal                  = {New York Times}
 }
 
+@Book{venables2002,
+  Title                    = {Modern applied statistics with S},
+  Author                   = {Venables, William N and Ripley, Brian D},
+  Year                     = {2002},
+  Publisher                = {Springer Science \& Business Media}
+}
+
 @Article{vicens1975,
   Title                    = {Bayesian generation of synthetic streamflows},
-  Author                   = {Vicens, Guillermo J and Rodr{\'\i}guez-Iturbe, Ignacio and Schaake, John C},
+  Author                   = {Guillermo J. Vicens and Rodr\'{i}guez-Iturbe, Ignacio and Schaake, John C},
   Year                     = {1975},
   Number                   = {6},
   Pages                    = {827--838},
@@ -1865,6 +1892,15 @@
 
   Journal                  = {Science of the total environment},
   Publisher                = {Elsevier}
+}
+
+@Book{DAgostino1986,
+  Title                    = {Goodness-of-fit-techniques (Statistics: a Series of Textbooks and Monographs, Vol. 68)},
+  Year                     = {1986},
+  Edition                  = {1},
+  Editor                   = {Ralph B. D'Agostino and Michael A. Stephens},
+  ISBN                     = {9780824774875},
+  Publisher                = {Dekker}
 }
 
 @Proceedings{2009SCOTUS,

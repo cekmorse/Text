@@ -1,0 +1,31 @@
+load("~/Projects/Thesis/Thesis-Calcs/USR/Models/Stochastic/m unknownMass.Rdata")
+stoch <- unknownMass
+load("~/Projects/Thesis/Thesis-Calcs/USR/Models/Deterministic/m unknownMass.Rdata")
+deter <- unknownMass
+rm(unknownMass)
+stochMean <- rowMeans(stoch, na.rm=T)
+stochUCI <- apply(stoch, 1, quantile, probs=0.975, na.rm=T)
+stochLCI <- apply(stoch, 1, quantile, probs=0.025, na.rm=T)
+plot(deter, type="l")
+lines(stochMean, col="grey50")
+lines(stochUCI, col="red")
+lines(stochLCI, col="blue")
+
+signif(cor(stochMean, deter, "complete.obs"),3)
+signif(cor(stochUCI, deter, "complete.obs"),3)
+signif(cor(stochLCI, deter, "complete.obs"),3)
+
+ds <- data.frame(cbind(stochMean, stochMean^2, deter))
+colnames(ds) <- c("s","s2","d")
+dslm <- lm(d ~ s2 + s, data=ds, na.action=na.omit)
+summary(dslm)
+
+pdf(file="~/Projects/Thesis/Communication/To Gates/Rplot Results Correlation.pdf", width=6, height=6, family="Times")
+par(mar=c(5.1,4.1,1.1,1.1))
+plot(stochMean, deter, pch=20, xlab="Stochastic", ylab="Deterministic")
+points(stochUCI, deter, pch=20, col="red")
+points(stochLCI, deter, pch=20, col="blue")
+abline(a=0, b=1)
+curve(dslm$coefficients[[2]]*x^2 + dslm$coefficients[[3]]*x + dslm$coefficients[[1]], add=TRUE, lty=2)
+legend("bottomright", legend=c("97.5th percentile", "Mean", "2.5th percentile", "1:1 correlation", "best fit"), pch=c(20,20,20,NA,NA), lty=c(NA,NA,NA,1,2), col=c("red","black","blue","black","black"))
+dev.off()

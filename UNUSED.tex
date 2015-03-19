@@ -158,3 +158,37 @@
 %Given some extreme reported value, it is possible that the distribution of possible values may exceed the range of acceptable or possible values.  The range of acceptable or possible values is calculated from the range of reported values over the study time frame where the minimum acceptable value is one-half of the minimum reported value $(0.5\cdot \textrm{min}(E))$ and the maximum acceptable value is one and one-half of the the maximum reported value $(1.5\cdot \textrm{max}(E))$.  Truncated normal distributions with these ranges were used to generate stochastic realizations of all input variables.  The [R] function 'rtnorm' was used which uses the rejection sampling algorithms and density function as described by \citet{2013Jackson}.
 %
 %The distribution of the generated stochastic realizations were visually compared to the distribution of the reported values using graphs similar to Figure \ref{fig:ExampleDensity} to verify that the [R] function performed as desired.  This particular graph shows data from the analysis of the variable $Q_{ARKCATCO}$.  Similar figures for all input variables are found in Appendix \ref{App:VarDensity}.  These figures show a histogram of the reported values.  A kernel density estimate of the reported values is superimposed as a black curve over the histogram.  Kernel density estimates (KDE) are non-parametric estimates of the probability density function and are well suited to presenting continuous data sets.  Whenever reasonable, both the histogram and the KDE of the target value are presented so that the data can be more accurately represented.  The red curve is the KDE of the generated stochastic values for all time steps $(t)$ and realizations $(r)$.  The vertical lines are located at the mean value of the respective KDEs. The generated stochastic value mean and the reported value mean are nearly identical for all input variables.  The two KDEs are very comparable for most input variables.  Variability between the two KDEs are expected, especially toward the lower end as this is where most of the truncation occurs.
+
+%\emph{II - Define true value vs. measured value}\\
+
+The true value of a parameter is not directly observable and is only valid for a specific time and location.  Any repeated measurements will be subjected to temporal variability.  Measurements taken by two identical instruments will be subjected to temporal variability.  The measured value is the value that is measured by the instrument.  The difference between the two values is uncertainty.  The relationship between measured value, true value, and uncertainty is described in equation \ref{eq:error}.
+\begin{equation}
+\label{eq:error}
+\textnormal{ mv=tv } + \varepsilon
+\end{equation}
+\begin{tabularx}{6in}{r X}
+	Where:&\\
+	mv = & measured value\\
+	tv = & true value\\
+	$\varepsilon$ = & uncertainty\\
+\end{tabularx}\\
+
+If the true value were known, then it would be a simple matter of algebra to determine the error from any measured value \ref{eq:error2}.  This second equation shows uncertainty as a positive value when, algebraically, it should be negative.  $ \varepsilon $ remains a positive term because it is assumed to be equally distributed around zero.
+
+\begin{equation}
+\label{eq:error2}
+\textnormal{tv} = \textnormal{mv} + \varepsilon
+\end{equation}
+
+Figure \ref{fig:TV-MVError} is a graphical representation of a pair of possible scenarios when considering true and measured values.  In all of the graphs, the uncertainty distribution is shown as the dashed black curve.  The vertical black line at zero indicates the error associated with the true value.  The vertical red and blue lines indicates the error for the two scenarios.  The red line error value is near the black line.  This indicates that the error is small and the measured value is near the true value.  The blue line error value is a significant distance from the true value, but is within the uncertainty distribution.  This indicates that the error is large and the measured value is significantly different than the true value.  Both scenarios are plausible as the error values are within the uncertainty distribution associated with the true value.  Graphs 1 and 2 show the red and blue scenarios.
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=6in]{"Figures/TV-MV Error"}
+		\caption[Comparison of measured value and true value]{Comparison of measured value and true value.  The black vertical line depicts the error associated with the true value.  The black dashed line is the distribution of the uncertainty of the measured value from the true value.  The red and blue vertical lines depict two measured value scenarios.  The red and blue dashed curved depict the uncertainty distributions applied to the associated measured values.  The gray area is representative of the probability that the true value and measured value are from the same distribution.}
+		\label{fig:TV-MVError}
+	\end{center}
+\end{figure}
+
+The application of equation \ref{eq:error2} can produce undesirable results.  They are shown on graphs 3 and 4 of figure \ref{fig:TV-MVError}.  In both of the scenarios, the uncertainty distribution of the true value is applied to the measured values and is depicted as dashed red and blue curves.  In the red scenario where the error is small, depicted in graph 3, the overlap of the true value uncertainty distribution and the measured value uncertainty distribution is large and are almost identical.  In the blue scenario, depicted in graph 4, the overlap is small.  The overlap areas in graphs 3 and 4 are shaded gray.  These gray areas are representative of the probability that the true value and measured value are from the same distribution.
+
+Ideally, the true value would be estimated based on the measured value and the relationship between the true value and the particular measured value.  Since the true value is not known, the only reasonable course is to estimate the true value as in equation \ref{eq:error2}.  Additional uncertainty can be attributed to this approach, but the uncertainty would be variable based on the difference between the true and measured value.  Since this difference is unknown, it is unreasonable to guess.
