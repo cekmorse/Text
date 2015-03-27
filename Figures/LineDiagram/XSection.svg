@@ -16,7 +16,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="XSection.svg">
+   sodipodi:docname="XSection.pdf">
   <defs
      id="defs4">
     <linearGradient
@@ -158,18 +158,18 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="417.28116"
-     inkscape:cy="814.81397"
+     inkscape:cx="418.80404"
+     inkscape:cy="841.44198"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:snap-page="false"
      inkscape:snap-grids="false"
      inkscape:snap-to-guides="false"
-     inkscape:window-width="1440"
-     inkscape:window-height="855"
-     inkscape:window-x="-7"
-     inkscape:window-y="0"
+     inkscape:window-width="1265"
+     inkscape:window-height="749"
+     inkscape:window-x="126"
+     inkscape:window-y="31"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata7">
@@ -179,7 +179,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -312,22 +312,22 @@
        sodipodi:nodetypes="caaaac" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:87.99999952%;letter-spacing:0.01px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:99%;letter-spacing:0.01000000000000000px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,';font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr"
        x="548.26031"
        y="289.19193"
        id="text5648"
-       sodipodi:linespacing="88%"><tspan
+       sodipodi:linespacing="99%"><tspan
          sodipodi:role="line"
          x="548.26031"
          y="289.19193"
          id="tspan5652"
-         style="font-size:10px;letter-spacing:0px;word-spacing:0px"
+         style="font-size:10px;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:'Times New Roman,';font-family:Times New Roman;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;line-height:99%"
          rotate="0 0 0 0 0 0 0 0 0 0 0 0"><tspan
    dx="0"
    dy="0"
    rotate="0 0 0 0 0 0 0"
    id="tspan5654"
-   style="font-size:10px;letter-spacing:0px;word-spacing:0px">Gauge </tspan>Datum</tspan></text>
+   style="font-size:10px;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:'Times New Roman,';font-family:Times New Roman;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;line-height:99%">Gauge </tspan>Datum</tspan></text>
     <image
        y="230.164"
        x="532.40619"
@@ -337,16 +337,16 @@
        width="11" />
     <text
        xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0.1px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:99%;letter-spacing:0.10000000000000001px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,';font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr"
        x="534.37067"
        y="239.18938"
        id="text5680"
-       sodipodi:linespacing="100%"><tspan
+       sodipodi:linespacing="99%"><tspan
          sodipodi:role="line"
          id="tspan5682"
          x="534.37067"
          y="239.18938">h<tspan
-   style="font-size:65.00091553%;baseline-shift:sub"
+   style="font-size:10px;baseline-shift:sub;-inkscape-font-specification:'Times New Roman,';font-family:Times New Roman;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;line-height:99%"
    id="tspan5684">i</tspan></tspan></text>
     <image
        y="243.29597"
@@ -357,16 +357,16 @@
        width="11" />
     <text
        xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0.1px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:99%;letter-spacing:0.10000000000000001px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,';font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr"
        x="513.15747"
        y="252.06883"
        id="text5686"
-       sodipodi:linespacing="100%"><tspan
+       sodipodi:linespacing="99%"><tspan
          sodipodi:role="line"
          id="tspan5688"
          x="513.15747"
          y="252.06883">h<tspan
-   style="font-size:65.00091553%;baseline-shift:sub"
+   style="font-size:10px;baseline-shift:sub;-inkscape-font-specification:'Times New Roman,';font-family:Times New Roman;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;line-height:99%"
    id="tspan5690">i+1</tspan></tspan></text>
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:none"
@@ -377,18 +377,18 @@
        y="223.61324" />
     <text
        xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0.1px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:99.00000095%;letter-spacing:0.1px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
        x="208.84903"
        y="233.46223"
        id="text5692"
-       sodipodi:linespacing="100%"><tspan
+       sodipodi:linespacing="99.000001%"><tspan
          sodipodi:role="line"
          id="tspan5694"
          x="208.84903"
          y="233.46223"
-         style="fill:#000000;fill-opacity:1;stroke:none">d<tspan
-   style="font-size:65.00091553%;baseline-shift:sub;fill:#000000;fill-opacity:1;stroke:none"
-   id="tspan5696">i</tspan></tspan></text>
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:99.00000095%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'">y<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan3195">i</tspan></tspan></text>
     <image
        y="235.21477"
        x="222.79448"
@@ -398,17 +398,17 @@
        width="11" />
     <text
        xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0.1px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:99.00000095%;letter-spacing:0.1px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
        x="220.71832"
        y="243.98759"
        id="text5698"
-       sodipodi:linespacing="100%"><tspan
+       sodipodi:linespacing="99.000001%"><tspan
          sodipodi:role="line"
          id="tspan5700"
          x="220.71832"
-         y="243.98759">d<tspan
-   style="font-size:65.00091553%;baseline-shift:sub"
-   id="tspan5702">i+1</tspan></tspan></text>
+         y="243.98759">y<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan3197">i+1</tspan></tspan></text>
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:none"
        id="rect5730"
@@ -425,54 +425,54 @@
        width="18.666241" />
     <text
        xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0.1px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:99%;letter-spacing:0.10000000000000001px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,';font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr"
        x="358.60419"
        y="181.35815"
        id="text5704"
-       sodipodi:linespacing="100%"><tspan
+       sodipodi:linespacing="99%"><tspan
          sodipodi:role="line"
          id="tspan5706"
          x="358.60419"
          y="181.35815">Tw<tspan
-   style="font-size:65.00091553%;baseline-shift:sub"
+   style="font-size:10px;baseline-shift:sub;-inkscape-font-specification:'Times New Roman,';font-family:Times New Roman;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;line-height:99%"
    id="tspan5708">i</tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0.1px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:99%;letter-spacing:0.10000000000000001px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,';font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr"
        x="354.311"
        y="194.49014"
        id="text5710"
-       sodipodi:linespacing="100%"><tspan
+       sodipodi:linespacing="99%"><tspan
          sodipodi:role="line"
          id="tspan5712"
          x="354.311"
          y="194.49014">Tw<tspan
-   style="font-size:65.00091553%;baseline-shift:sub"
+   style="font-size:10px;baseline-shift:sub;-inkscape-font-specification:'Times New Roman,';font-family:Times New Roman;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;line-height:99%"
    id="tspan5714">i+1</tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0.1px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-       x="604.57629"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:99.00000095%;letter-spacing:0.1px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       x="580.33264"
        y="200.04597"
        id="text5873"
-       sodipodi:linespacing="100%"><tspan
+       sodipodi:linespacing="99.000001%"><tspan
          sodipodi:role="line"
-         x="604.62628"
+         x="580.33264"
          y="200.04597"
          id="tspan5881"
-         style="text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle">Bubbler pipe</tspan><tspan
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:99.00000095%;writing-mode:lr-tb;text-anchor:start;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'">Bubbler pipe</tspan><tspan
          sodipodi:role="line"
-         x="604.62628"
-         y="210.04597"
+         x="580.33264"
+         y="209.94597"
          id="tspan5883"
-         style="text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle">to stream</tspan></text>
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:99.00000095%;writing-mode:lr-tb;text-anchor:start;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'">to stream</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0.1px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:99%;letter-spacing:0.10000000000000001px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,';font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr"
        x="615.94049"
        y="128.57768"
        id="text5887"
-       sodipodi:linespacing="100%"><tspan
+       sodipodi:linespacing="99%"><tspan
          sodipodi:role="line"
          id="tspan5889"
          x="615.94049"
@@ -483,11 +483,11 @@
          id="tspan5891">Gauge</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0.1px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:99%;letter-spacing:0.10000000000000001px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,';font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr"
        x="256.83127"
        y="271.26172"
        id="text5893"
-       sodipodi:linespacing="100%"><tspan
+       sodipodi:linespacing="99%"><tspan
          sodipodi:role="line"
          id="tspan5895"
          x="256.83127"

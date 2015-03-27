@@ -1964,29 +1964,25 @@
     <bcf:datasource type="file" datatype="bibtex">BibRef.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">EPA1992</bcf:citekey>
-    <bcf:citekey order="2">USGS2010TWRI</bcf:citekey>
-    <bcf:citekey order="3">USGS1982a</bcf:citekey>
-    <bcf:citekey order="3">USGS1982b</bcf:citekey>
-    <bcf:citekey order="4">Andales2009</bcf:citekey>
-    <bcf:citekey order="4">Csu2012</bcf:citekey>
-    <bcf:citekey order="5">Andales2009</bcf:citekey>
-    <bcf:citekey order="6">wanielista1997</bcf:citekey>
-    <bcf:citekey order="7">vicens1975</bcf:citekey>
-    <bcf:citekey order="8">herschy2002</bcf:citekey>
-    <bcf:citekey order="9">Gates1996</bcf:citekey>
-    <bcf:citekey order="10">haan1989</bcf:citekey>
-    <bcf:citekey order="10">haan2002</bcf:citekey>
-    <bcf:citekey order="11">gum2008</bcf:citekey>
-    <bcf:citekey order="12">harmel2007</bcf:citekey>
-    <bcf:citekey order="12">gum2008</bcf:citekey>
-    <bcf:citekey order="13">harmel2007</bcf:citekey>
-    <bcf:citekey order="14">harmel2007</bcf:citekey>
-    <bcf:citekey order="15">harmel2007</bcf:citekey>
-    <bcf:citekey order="16">harmel2007</bcf:citekey>
-    <bcf:citekey order="17">delignette2014</bcf:citekey>
-    <bcf:citekey order="17">venables2002</bcf:citekey>
-    <bcf:citekey order="17">DAgostino1986</bcf:citekey>
+    <bcf:citekey order="1">wanielista1997</bcf:citekey>
+    <bcf:citekey order="2">vicens1975</bcf:citekey>
+    <bcf:citekey order="3">herschy2002</bcf:citekey>
+    <bcf:citekey order="4">Gates1996</bcf:citekey>
+    <bcf:citekey order="5">haan1989</bcf:citekey>
+    <bcf:citekey order="5">haan2002</bcf:citekey>
+    <bcf:citekey order="6">gum2008</bcf:citekey>
+    <bcf:citekey order="7">harmel2007</bcf:citekey>
+    <bcf:citekey order="7">gum2008</bcf:citekey>
+    <bcf:citekey order="8">harmel2007</bcf:citekey>
+    <bcf:citekey order="9">harmel2007</bcf:citekey>
+    <bcf:citekey order="10">harmel2007</bcf:citekey>
+    <bcf:citekey order="11">harmel2007</bcf:citekey>
+    <bcf:citekey order="12">delignette2014</bcf:citekey>
+    <bcf:citekey order="12">venables2002</bcf:citekey>
+    <bcf:citekey order="12">DAgostino1986</bcf:citekey>
+    <bcf:citekey order="13">Buhman2002</bcf:citekey>
+    <bcf:citekey order="13">Gates1996</bcf:citekey>
+    <bcf:citekey order="14">spiess2010</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="nyt">
   <bcf:sorting>

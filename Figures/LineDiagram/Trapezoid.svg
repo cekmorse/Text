@@ -15,7 +15,7 @@
    id="svg6151"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="Trapezoid.svg">
+   sodipodi:docname="Trapezoid.pdf">
   <defs
      id="defs6153">
     <linearGradient
@@ -125,10 +125,10 @@
      showgrid="false"
      inkscape:snap-grids="true"
      showguides="true"
-     inkscape:window-width="1640"
-     inkscape:window-height="899"
-     inkscape:window-x="1721"
-     inkscape:window-y="145"
+     inkscape:window-width="1097"
+     inkscape:window-height="603"
+     inkscape:window-x="166"
+     inkscape:window-y="110"
      inkscape:window-maximized="0">
     <inkscape:grid
        type="xygrid"
@@ -142,7 +142,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>

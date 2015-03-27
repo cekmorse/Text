@@ -175,7 +175,7 @@ River reach volume changes are calculated between two consecutive time steps.  R
 	$\frac{\Delta A_i}{\Delta t} $ &= Segment cross-section area change.\\
 \end{tabular}\\
 
-Figure \ref{fig:segment model} shows the difference between a simplified example of a natural channel and the modeled channel.  Although the river is variable in width and depth along its entire lengths, it  is modeled as a trapezoidal prism with a constant length and with a cross-section that does not vary with respect to location.  It was reasoned that this simplistic model would best approximate the average channel shape along the entire reach.  The channel water surface elevation is assumed to be constant through each segment.  This assumption is not true in nature, but we are not concerned with the water surface elevation, but with the flow depth.  We are assuming that the flow depth remains relatively constant through a river segment.  This assumption assumes that all gains and losses to the river are accounted for either through flow gains and losses, evaporation, precipitation, or unaccounted for gains and losses as shown in equation \todo{eq ref}.
+Figure \ref{fig:segment model} shows the difference between a simplified example of a natural channel and the modeled channel.  Although the river is variable in width and depth along its entire lengths, it  is modeled as a trapezoidal prism with a constant length and with a cross-section that does not vary with respect to location.  It was reasoned that this simplistic model would best approximate the average channel shape along the entire reach.  The channel water surface elevation is assumed to be constant through each segment.  This assumption is not true in nature, but we are not concerned with the water surface elevation, but with the flow depth.  We are assuming that the flow depth remains relatively constant through a river segment.  This assumption assumes that all gains and losses to the river are accounted for either through flow gains and losses, evaporation, precipitation, or unaccounted for gains and losses as shown in equation \ref{eq:water1}.
 
 \begin{figure}[htbp]
 	\begin{center}
@@ -208,7 +208,9 @@ Segment lengths, as reported in Table \ref{tab:SegmentLength}, are sufficiently 
 	\end{tabular}
 \end{table}
 
-River segment cross-sectional area change $\left( \frac{\Delta A_i}{\Delta t} \right) $ calculation is based on the trapezoidal area that is composed by the difference between the cross-sectional area at two different flow depths as depicted in Figures \ref{fig:XSArea} \ref{fig:XSTrapezoid} and in equation \ref{eq:XSArea}.  Figure \ref{fig:XSArea} shows a simplified river cross section at a stream gauge location.  As previously discussed, stream gauges do not hold the channel bottom as their datum.  They have an arbitrarily fixed datum that does not move unless determined by the gauge owner.
+River segment cross-sectional area change $\left( \frac{\Delta A_i}{\Delta t} \right) $ calculation is based on the trapezoidal area that approximates the difference between the cross-sectional area at two different flow depths as depicted in Figures \ref{fig:XSArea} \ref{fig:XSTrapezoid} and in equation \ref{eq:XSArea}.  While the cross sectional area difference isn't exactly a trapezoid, the difference for small differences in gauge height is insignificant.  Figure \ref{fig:XSArea} shows a simplified river cross section at a stream gauge location.  As previously discussed, stream gauges do not hold the channel bottom as their datum.  They have an arbitrarily fixed datum that does not move unless determined by the gauge owner.    
+
+The difference between the stream gauge datum and the channel bottom is corrected using a constant correction factor calculated from the river survey.  The gauge datum does not have a known marker where the elevation could be directly measured.  Instead, the surveyed water surface elevation was recorded at the gauge location on both sides of the channel.  The flow depth value was calculated by finding the difference between the surveyed average water surface elevation and the surveyed channel bottom elevation.  The flow depth was then compared to the stream gauge height reported for the same date and time as when the water surface elevation was surveyed.  The difference between the reported value and the average of the surveyed values was taken as the correction factor for the gauge.  This procedure was repeated for each gauge.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -217,7 +219,6 @@ River segment cross-sectional area change $\left( \frac{\Delta A_i}{\Delta t} \r
 	\label{fig:XSArea}
 \end{center}
 \end{figure}
-\todo{change d to y}
 
 \begin{figure}
 	\begin{center}
@@ -226,24 +227,23 @@ River segment cross-sectional area change $\left( \frac{\Delta A_i}{\Delta t} \r
 		\label{fig:XSTrapezoid}
 	\end{center}
 \end{figure}
-\todo{change d to y - font}
 
 \begin{align}
-	\Delta A= & \overline{Tw}\cdot \Delta y \nonumber \\
-	\Delta A= & \frac{Tw_t + Tw_{t-1}}{2} \cdot \left( y_{t-1} - y_t \right) \label{eq:XSArea}
+	\frac{\Delta A_i}{\Delta t}= & \overline{Tw}\cdot \Delta y \nonumber \\
+	\frac{\Delta A_i}{\Delta t} = & \frac{Tw_t + Tw_{t-1}}{2} \cdot \left( y_{t-1} - y_t \right) \label{eq:XSArea}
 \end{align}
 \begin{tabular}{rl}
 	Where: & \\
-	subscript $_t$ = & Current time step. \\
-	subscript $_{t-1}$ = & Previous time step. \\
-	$\Delta A$ = & Cross-section area change.\\
+	$_t$ = & Current time step. \\
+	$_{t-1}$ = & Previous time step. \\
+	$\frac{\Delta A_i}{\Delta t}$ = & Cross-section area change at river section $ i $ between time steps.\\
 	$\overline{Tw}$ = & Average river top width.\\
 	$\Delta y$ = & Change in flow depth from the previous time step. \\
 	$Tw$ = & River top width. \\
 	$y$ = & River flow depth. \\
 \end{tabular}\\
 
-Flow depth values as reported by the USGS and CDWR are measured values with an associated probability range as calculated in equation \ref{eq:uncertainty3}.  The uncertainties are applied as shown in equation \ref{eq:herror}.  A correction factor ($ C_{i} $) is applied to each reported gauge depth to correct for the difference between the gauge datum and the channel bottom as measured during the channel cross-section survey.  Two separate uncertainties are applied.  $ \varepsilon_{h1} $ is the uncertainty distribution as described by the gauge owner.  This uncertainty is reported by the USGS and CDWR as a accuracy rating of excellent, good, fair, or poor.  Each of these designations corresponds to a uncertainty distribution as published by the USGS and show in Table \ref{tab:USGSError} which is extracted from one of the USGS annual water reports \todo{cite USGS water reports}.  These uncertainty designations and their associated distributions are valid only at the respective gauge site.  The second uncertainty term, $ \varepsilon_{h2} $, is the result of personal observation of the river channel along its entire length.  This term describes the variability in flow depth.  It was observed that the channel depth did not vary greatly along most of its length.  There were particular areas where there were deeper pools, but these areas were noted to be more prone to ponding during low flow.  It is assumed that the average effective flow depth only varies within a normal distribution with limits of \SI{0.076}[$ \pm $]{\meter} (\SI{0.25}[$ \pm $]{\foot}).
+Flow depth values as reported by the USGS and CDWR are measured values with an associated probability range as calculated in equation \ref{eq:uncertainty3}.  The uncertainties are applied as shown in equation \ref{eq:herror}.  A correction factor ($ C_{i} $) is applied to each reported gauge depth to correct for the difference between the gauge datum and the channel bottom as measured during the channel cross-section survey.  Two separate uncertainties are applied.  $ \varepsilon_{h1} $ is the uncertainty distribution as described by the gauge owner.  This uncertainty is reported by the USGS and CDWR as a accuracy rating of excellent, good, fair, or poor.  Each of these designations corresponds to a uncertainty distribution as published by the USGS and show in Table \ref{tab:USGSError} which is extracted from one of the USGS annual water reports \todo{cite USGS water reports}.  These uncertainty designations and their associated distributions are valid only at the respective gauge site.  The second uncertainty term, $ \varepsilon_{h2} $, is the result of personal observation of the river channel along its entire length.  This term describes the variability in flow depth.  It was observed that the channel depth did not vary greatly along most of its length.  There were particular areas where there were deeper pools, but these areas were noted to be more prone to ponding during low flow.  It is assumed that the average effective flow depth only varies within a normal distribution with limits of \SI{0.076}[$ \pm $]{\meter} (\SI{0.25}[$ \pm $]{\foot}).  There is the possibility that $\varepsilon_{h1}$ could cause the storage change between the time steps to change from a storage gain to a storage loss, or vise versa.  This is acceptable as it is within the measurement limits of the instruments.  Once $h+\varepsilon_{h1}$ has been calculated for the two successive time steps, the relationship between the two time steps is fixed.  If the river segment flow depth rises between time steps after this calculation, then that relationship must continue throughout the rest of the calculation for $V_x$.  To facilitate this, it is assumed that $\varepsilon_{h2}$ does not vary significantly within the study time frame and does not vary within a realization.  The Arkansas R. channel is sufficiently stable between consecutive days that this assumption is valid.  A new $\varepsilon_{h2}$ is drawn for each realization and remains constant for all time steps within the study time frame.
 
 \begin{equation}
 	y_{i,t}=h_{i,t}+C_{i}+\varepsilon_{h1}+\varepsilon_{h2}
@@ -251,11 +251,11 @@ Flow depth values as reported by the USGS and CDWR are measured values with an a
 \end{equation}
 \begin{tabular}{rl}
 	Where: & \\
-	$y_{i,t}$ = & Section $ i $ modeled flow depth at time $ t $.\\
-	$h_{i,t}$ = & Section $ i $ reported river gauge height at time $ t $.\\
-	$ C_{i} $ & Section $ i $ river gauge height to flow depth correction term\\
-	$\varepsilon_{h1}$ = & Reported river gauge data uncertainty.\\
-	$\varepsilon_{h2}$ = & Estimated flow depth uncertainty.\\
+	$y_{i,t}$  & = Section $ i $ modeled average daily flow depth at time $ t $.\\
+	$h_{i,t}$  & = Section $ i $ reported average daily river gauge height at time $ t $.\\
+	$ C_{i} $ & = Section $ i $ river gauge height to flow depth correction term.\\
+	$\varepsilon_{h1}$ & = Reported river gauge data uncertainty.\\
+	$\varepsilon_{h2}$ & = Estimated flow depth uncertainty.\\
 \end{tabular}\\
 
 \begin{table}[htbp]
@@ -264,210 +264,208 @@ Flow depth values as reported by the USGS and CDWR are measured values with an a
 	\includegraphics[width=6in]{"Figures/USGS_error_table"}
 \end{table}
 
+River top width $ \left( Tw \right)  $ is calculated using equation \ref{eq:Tw1}.  \todo{justify}  \parencite{Buhman2002,Gates1996}. The river channel does not have a fixed cross-section along it's length, therefore, the fitting parameters, $ \beta_1 $ and $ \beta_2 $ are not constant, but are from distributions of  $ \beta_1 $ and $ \beta_2 $.  Equation \ref{eq:Tw1} and the data from each survey cross-section was used to calculate a best fit equation using non-linear regression.  The $ \beta_1 $ and $ \beta_2 $ values from each cross-section were combined to determine the distribution of $ \beta_1 $ and $ \beta_2 $. The best fit distributions for $ \beta_1 $ and $ \beta_2 $ are presented in table \ref{tab:TwFitting}.  $ \beta_1 $ and $ \beta_2 $ values were analyzed for correlation.  It was found to be insignificant with a Pearson R value of 0.17.  Visual analysis of the data points showed that there was no distinguishable pattern.  Future surveys will expand the data set and may show that there is a correlation between $ \beta_1 $ and $ \beta_2 $, but the available data does not support that conclusion.  Also presented in this table is the best fit distribution for the residuals.  These distributions and the distributions for $ \beta_1 $ and $ \beta_2 $ were analyzed to determine the best fit distribution using the methodology described in Section \ref{sec:ErrorAndUncertainty}.
 
+\begin{equation}
+	\label{eq:Tw1}
+	Tw_{i,t} = \beta_1 y_{i,t} ^{\beta_2} + \varepsilon_{Tw}
+\end{equation}
 
+\begin{tabular}{r p{5in}}
+	Where: & \\
+	$ Tw_{i,t} $ =& River segment $ i $ average daily top width at time step $ t $.\\
+	$ y_{i,t} $ =& Calculated segment $ i $ average daily flow depth at time step $ t $ calculated using equation \ref{eq:herror}.\\
+	$ \beta_1 $ and $ \beta_2 $ =& fitting parameter distributions.\\
+	$ \varepsilon_{Tw}  =$ Calculated average daily flow depth uncertainty.\\
+\end{tabular}\\
 
-River segment B in the USR does not have a flow gauge within its boundaries and therefore has no reported flow depths. This segment has an additional irrigation diversion check structure within its boundaries, thereby sub-dividing segment B into two sub-segments, each with its own ungauged flow depth.  Due to segment B being the shortest, composing only 3.9\% of the USR's total length, and the additional variability of the possible flow depth, the average daily flow depth within segment B is taken as the mean of the reported flow depths in segment A and C.  Top width and volume change calculation follows the previously described methodology.
+\begin{table}[htbp]
+	\centering
+	\caption[River top width fitting parameter distributions.]{River top width fitting parameter distributions.}
+	\label{tab:TwFitting}
+	\begin{tabular}{ccccc}
+		\toprule
+		Study                & Fitting   & \multicolumn{3}{c}{Best Fit Distribution} \\ \cmidrule(r{.5em}l){3-5}
+		Reach                & Parameter & Dist. Shape      & p1*        & p2*       \\
+		\toprule
+		\multirow{3}{*}{USR} & $\beta_1$ & logistic         & 16.8       & 7.53      \\
+		& $\beta_2$ & log-normal       & -1.27      & 1.57      \\
+		& Residual  & logistic         & 1.99       & 0.99      \\
+		\midrule
+		\multirow{3}{*}{DSR} & $\beta_1$ & logistic         & 28.2       & 4.84      \\
+		& $\beta_2$ & log-normal       & -0.43      & 0.65      \\
+		& Residual  & log-normal       & 0.87       & 0.57      \\
+		\bottomrule
+		\multicolumn{5}{l}{{\footnotesize * Distribution fitting parameters.  For logistic, p1=location }}\\
+		\multicolumn{5}{l}{\footnotesize{and p2=scale.  For log-normal, p1=mean of the log scale }}\\
+		\multicolumn{5}{l}{\footnotesize{and p2=standard dev. of the log scale}}\\
+	\end{tabular}
+\end{table}
 
-%There is the possibility that $\varepsilon_{h1}$ could cause the storage change between the time steps to change from a storage gain to a storage loss, or vise versa.  This is acceptable as it is within the measurement limits of the instruments.  Once $h+\varepsilon_{h1}$ has been calculated for the two successive time steps, the relationship between the two time steps is fixed.  If the river segment flow depth rises between time steps after this calculation, then that relationship must continue throughout the rest of the calculation for $V_x$.
-%
-%To facilitate this, it is assumed that $\varepsilon_{h2}$ does not vary significantly within the study time frame and does not vary within a realization.  The Arkansas R. channel is sufficiently stable between consecutive days that this assumption is valid.  A new $\varepsilon_{h2}$ is drawn for each realization and remains constant for all time steps within the study time frame.
-%
+Non-linear regression models are those models where the function of the predictor variable, $f_i$, contains a fitting parameter, $\beta_i$.  Non-linear regression models were used only when a specific model form could be determined from known physical or geometrical relationships.  R-squared values were not used to determine goodness-of-fit for non-linear regression models.  These models can have valid values that are negative or greater than one \parencite{spiess2010} and as such are outside of the boundary for comparing linear models.  Pseudo or modified r-squared calculations are available.  These computations result in values that are comparable to the r-squared value for linear models, but have slightly different interpretations \todo{reference}.  Since non-linear regression models were used only when specific model forms could be predetermined, there was no need to compare different model forms estimating the same result.
 
-%
-%\emph{IV - define calculation of flow depth from stream gauge height based on survey data}\\
-%
-%Non-linear regression models are those models where the function of the predictor variable, $f_i$, contains a fitting parameter, $\beta_i$.  Non-linear regression models were used only when a specific model form could be determined from known physical or geometrical relationships.  R-squared values were not used to determine goodness-of-fit for non-linear regression models.  These models can have valid values that are negative or greater than one \parencite{spiess2010evaluation} and as such are outside of the boundary for comparing linear models.  Pseudo or modified r-squared calculations are available.  These computations result in values that are comparable to the r-squared value for linear models, but have slightly different interpretations (reference).  Since non-linear regression models were used only when specific model forms could be predetermined, there was no need to compare different model forms estimating the same result.
-%
-%In order to define non-linear regression model goodness-of-fit, the root mean squared error (RMSE) value was calculated.  The RMSE "represents the standard deviation of the differences between he predicted and observed values" \parencite{Wiki:RMSE}.  The RMSE is scale dependent as the units are the same as the observed value.  The RMSE is also known as the standard deviation.  This would cause an issue if models for different observed value units and scales were compared against each other.  In this study, non-linear regression models are only used to estimate the cross-sectional width of a river segment.  The development and discussion of this calculation will be discussed in later sections.  This thesis does not contain any other non-linear regression models.  This allows us to compare the residual errors associated with the various cross sections without needing to consider scale or units.
-%
-%\emph{V - define calculation of top width from flow depth}\\
-%River top width measurements are only recorded during manual stream gauging performed to update the stage-discharge rating table associated with the gauge.  These measured values are only valid for a specific location and a specific flow depth.  The flow depth to river top width relationship is described as a power function of the river depth as shown in equation \ref{eq:AR} \parencite{Buhman2002,Gates1996}.  
-%\begin{equation}
-%	Tw=\beta_{1} \cdot h^{\beta_{2}}
-%	\label{eq:AR}
-%\end{equation}
-%\begin{tabular}{rl}
-%	Where: & \\
-%	$Tw$ =&River top width. \\
-%	$h$ =&River flow depth. \\
-%	$\beta_{1}$ and $\beta_{2}$ =&Fitting parameters 1 and 2. \\
-%\end{tabular} \\
-%
-%Equation \ref{eq:AR} was expanded to include error terms as shown in equation \ref{eq:ARcomplete}
-%\begin{equation}
-%	\label{eq:ARcomplete}
-%	Tw=\beta_1 \big( h+\varepsilon_{h_1} + \varepsilon_{h_2} \big) ^ {\beta_2}
-%\end{equation}
-%\begin{tabular}{r l}
-%	Where:&\\
-%	$\varepsilon_{h1}=$& Measurement error at the stream gauge.\\
-%	$\varepsilon_{h2}=$& Spatial error in the reported flow depth.\\
-%\end{tabular}\\
-%
+Goodness-of-fit for non-linear regressions used in this theses are purely for informational purposes.  Since all non-linear models were based on known relationships, goodness-of-fit values only serve to show how well the data fits the model.  In order to define non-linear regression model goodness-of-fit, the root mean squared error (RMSE) value was calculated.  The RMSE represents the standard deviation of the differences between he predicted and observed values.  The RMSE is scale dependent as the units are the same as the observed value.  The RMSE is also known as the standard deviation.  This would cause an issue if models for different observed value units and scales were compared against each other.  In this study, non-linear regression models are only used to estimate the cross-sectional width of a river segment and to estimate the selenium concentration at one location.  Since all cross-section analyses use the same measurement units, this allows us to compare the residual errors associated with the various cross sections without needing to consider scale or units.
+
 %\textsc{A - define non-linear regression used to estimate $\beta_1$ and $\beta_2$}\\
-%Values $\beta_1$ and $\beta_2$ are drawn from probability distributions.  Calculated flow depth and river top width data pairs developed in section \ref{sec:River Survey} were used to determine the distributions from which $\beta_1$ and $\beta_2$ in equation \ref{eq:ARcomplete} were drawn.  These distributions were developed using non-linear, least-squares regression.  Values below \SI{0.15}{\meter} (\SI{0.5}{\foot}) were removed from the regression analysis.  Flow values below this depth are not common and it was determined that these points would not allow for an accurate representation of the flow depth to river top width relationship for the range of known flow depths.  Values above \SI{1.52}{\meter} (\SI{5.0}{\foot}) were also removed from the regression analysis.  Flow depths above this depth are above the banks of the primary river channel and are within the inner flood plain.  Table \ref{tab:alphabetavals} gives the resulting $\beta_1$ and $\beta_2$ values for each surveyed cross-section.  Figure \ref{fig:exampleTwVsH} is an example of the surveyed flow depth and river top width relationships and the derived non-linear relationship for cross-section 1 in river segment A of the USR.  Similar relationship plots for the other surveyed cross-sections are found in appendix \ref{App:TwVsH}.  
-%
-%\begin{table}[htbp]
-%  \centering
-%  \caption[Arkansas R. surface width estimating coefficients and residual distribution type.]{Arkansas R. surface width estimating coefficients and residual distribution type.}
-%  \label{tab:alphabetavals}
-%  \begin{tabular}{cccccc}
-%    \toprule
-%    Study & River & Cross- & \multicolumn{2}{c}{Fitting Parameter} & Root Mean\\\cline{4-5}
-%    Region & Segment & Section & $\beta_1$ & $\beta_2$ & Squared Error\\
-%    \midrule
-%    \midrule
-%    \multirow{21}{*}{USR}& \multirow{3}{*}{A} 		& 1 & 101.8	& 0.4546	& 11.43	\\
-%    						&						& 2 & 61.96	& 0.02487	& 0.1710	\\
-%    						&						& 3 & 77.29	& 0.1736	& 8.363	\\\cline{2-6}
-%          					& \multirow{3}{*}{B}	& 4 & 69.40	& 0.06101	& 0.7084	\\
-%          					&						& 5 & 51.77	& 0.9319	& 1.924	\\
-%          					&						& 6 & 63.93	& 0.03910	& 2.152	\\\cline{2-6}
-%          					& \multirow{6}{*}{C} 	& 7 & 50.13	& 0.7839	& 2.562	\\
-%          					&						& 8 & 71.04	& 0.4024	& 2.900	\\
-%          					&						& 9 & 71.36	& 0.1684	& 4.719	\\
-%          					&						& 10& 87.08	& 0.02590	& 0.5928	\\
-%          					&						& 11& 61.49	& 0.09547	& 4.631	\\
-%          					&						& 12& 72.67	& 0.5591	& 3.487	\\\cline{2-6}
-%					        & \multirow{7}{*}{D} 	& 13& 45.97	& 0.6918	& 4.568	\\
-%					        &						& 14& 45.71	& 0.6290	& 3.034	\\
-%					        &						& 15& 86.75	& 0.5579	& 4.701	\\
-%					        &						& 16& 20.71	& 0.1360	& 1.244	\\
-%					        &						& 17& 51.74	& 0.1889	& 2.375	\\
-%					        &						& 18& 27.97	& 0.3204	& 1.807	\\
-%					        &						& 19& 36.29	& 0.07383	& 0.1955	\\\cline{2-6}		        
-%          					& \multirow{2}{*}{E} 	& 20& 33.00	& 0.6961	& 1.533	\\
-%          					&						& 21& 182.0	& 1.270	& 1.916	\\
-%    \midrule
-%    \multirow{13}{*}{DSR}& \multirow{7}{*}{F} & 1 & 22.48 & 0.4006 & 0.8139\\
-%    						&						& 2 & 41.61 & 1.390 & 3.953\\
-%    						&						& 3 & 29.82 & 0.2265 & 1.821\\
-%          					& 						& 4 & 21.46 & 0.3801 & 2.541\\
-%          					&						& 5 & 22.78 & 0.8004 & 5.715\\
-%          					&						& 6 & 26.21 & 0.4153 & 1.681\\
-%          					&						& 7 & 41.92 & 1.487 & 3.299\\ \cline{2-6}
-%          					& \multirow{7}[2]{*}{G} & 8 & 23.49 & 1.504 & 2.344\\
-%          					&						& 9 & 33.54 & 1.106 & 3.676\\
-%          					&						& 10& 28.03 & 0.5790 & 2.003\\
-%          					&						& 11& 24.16 & 0.2103 & 1.693\\
-%          					&						& 12& 24.74 & 0.8992 & 2.617\\
-%					        &						& 13& 52.68 & 1.1850 & 5.757\\
-%					        &						& 14& 24.18 & 0.4764 & 0.9259\\
-%    \bottomrule
-%    \end{tabular}
-%\end{table}
-%
-%\begin{figure}[htbp]
-%\begin{center}
-%	\includegraphics[width=6in]{"Figures/Results_USR/Survey Tw vs H-Section 2"}
-%	\caption[Example Flow Depth vs. River Top Width Relationship.]{Example Flow Depth vs. River Top Width Relationship.  The non-linear best fit line of the form in Equation \ref{eq:AR} is red.  The values are the two non-linear regression fitting parameters ($\beta_1$ and $\beta_2$) and the residual standard error for the fitting equation ($\sigma$).  Similar figures for all cross-sections are found in appendix \ref{App:TwVsH}.}
-%	\label{fig:exampleTwVsH}
-%\end{center}
-%\end{figure}
-%
-%Figure \ref{fig:B1B2} shows the distributions of $\beta_1$ and $\beta_2$ values and the various best-fit distributions in both the USR and DSR.  Logistic, normal, exponential, Weibull, and log-normal distributions were fitted to the data.  Vertical tick marks in the x-axis margin are at the data values.  Kernel density estimations were used as an alternative means to graphically represent the data density.  Kernel density estimations are non-parametric and when paired with histograms of the same data, they are used to assist in visual data analysis and comparison to parametric density functions.  The Kolmogorov-Smirnov (K-S) goodness-of-fit statistics, presented in table \ref{tab:B1B2 distribution results}, were calculated for the fitted distributions and known data.
-%
-%\begin{figure}[htbp]
-%\centering
-%\begin{subfigure}{0.5\textwidth}
-%	\centering
-%	\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/USR B1 Dist"}
-%	\caption{USR $\beta_1$}
-%	\label{sub b1}
-%\end{subfigure}%
-%\begin{subfigure}{0.5\textwidth}
-%	\centering
-%	\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/USR B2 Dist"}
-%	\caption{USR $\beta_2$}
-%	\label{sub b2}
-%\end{subfigure}
-%\begin{subfigure}{0.5\textwidth}
-%	\centering
-%	\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/DSR B1 Dist"}
-%	\caption{DSR $\beta_1$}
-%	\label{sub b1}
-%\end{subfigure}%
-%\begin{subfigure}{0.5\textwidth}
-%	\centering
-%	\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/DSR B2 Dist"}
-%	\caption{DSR $\beta_2$}
-%	\label{sub b2}
-%\end{subfigure}
-%\caption[$Tw$ Versus $h$ Fitting Parameter $\beta_1$ and $\beta_2$ Distributions.]{$Tw$ Versus $h$ Fitting Parameter $\beta_1$ and $\beta_2$ Distributions.  The black dashed line is a kernel density plot representing a histogram where the bin size approaches zero.  The colored curves are the best fit for the particular distribution type.  Vertical tick marks in the x-axis are at the data values.}
-%\label{fig:B1B2}
-%\end{figure}
-%
-%\begin{table}[htbp]
-%	\centering
-%	\caption[River $\beta_1$ and $\beta_2$ distribution test results.]{River $\beta_1$ and $\beta_2$ distribution test results.}
-%	\label{tab:B1B2 distribution results}
-%	\begin{tabular}{clc}
-%		\toprule
-%	Fitting parameter &Distribution & K-S Statistic\\
-%		\midrule
-%		\midrule
-%	\multirow{5}{*}{USR $\beta_1$} & Logistic & 0.1211\\
-%	& Normal & 		0.2092\\
-%	& Exponential & 0.3178\\
-%	& Weibull & 	1.0000\\
-%	& Log-normal & 	0.1236\\
-%		\midrule
-%	\multirow{5}{*}{USR $\beta_2$} & Logistic & 0.1837\\
-%	& Normal & 		0.2040\\
-%	& Exponential & 0.1379\\
-%	& Weibull & 	0.3412\\
-%	& Log-normal & 	0.1570\\
-%		\midrule
-%	\multirow{5}{*}{DSR $\beta_1$} & Logistic & 0.1999\\
-%	& Normal & 		0.2258\\
-%	& Exponential & 0.5134\\
-%	& Weibull & 	1.0000\\
-%	& Log-normal & 	0.2086\\
-%		\midrule
-%	\multirow{5}{*}{DSR $\beta_2$} & Logistic & 0.1657\\
-%	& Normal & 		0.1839\\
-%	& Exponential & 0.2391\\
-%	& Weibull & 	0.4326\\
-%	& Log-normal & 	0.1486\\
-%		\bottomrule
-%	\end{tabular}
-%\end{table}
-%
-%Combining the river cross-section analyses to create single distributions of $\beta_1$ and $\beta_2$ was a necessary step as there was an insufficient number of cross-sections within each river segment to provide for a statistically significant data set.  The resulting river shape parameter distributions are valid for the river segment for which they were calculated.  Each river segment draws values from the shape parameter distributions independently.  Only one pair of shape parameters is drawn for each realization.  It is assumed that the river geometry does not significantly change within the study time frame.  Channel variability is modeled between the realizations.
-%
-%Residuals from the non-linear regression analyses were combined into a single data set for error analysis.  Combining this data set was a logical step following the combination of the data that generated the residuals.  Residuals were tested using the same tools and techniques used to test the river shape parameter distributions.  USR and DSR channel shape residuals were found to have a log-normal distribution.  Figure \ref{fig:B1B2 Error} presents the distribution analyses for the USR and DSR.  These figures are of the same type as those used to analyze the river shape parameter distributions, figure \ref{fig:B1B2}.
-%
-%\begin{figure}[htbp]
-%\centering
-%\begin{subfigure}{0.5\textwidth}
-%	\centering
-%	\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/USR AB Error Dist"}
-%	\caption{USR Residuals}
-%	\label{sub b1}
-%\end{subfigure}%
-%\begin{subfigure}{0.5\textwidth}
-%	\centering
-%	\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/DSR AB Error Dist"}
-%	\caption{DSR Residuals}
-%	\label{sub b2}
-%\end{subfigure}
-%\caption[$Tw$ Versus $H$ Residuals Distribution.]{$Tw$ versus $H$ Residuals Distribution.  The black dashed line is a kernel density plot representing a histogram where the bin size approaches zero.  The colored curves are the best fit for the particular distribution type.  Vertical tick marks in the x-axis are at the data values.}
-%\label{fig:B1B2 Error}
-%\end{figure}
-%
-%\textsc{B - describe residuals as model uncertainty}\\
-%
-%\textsc{C - define method of determining parametric univariate uncertainty distribution from regression residuals}\\
-%
-%\textsc{D - define distribution goodness-of-fit and tests}\\
+Values $\beta_1$ and $\beta_2$ are drawn from probability distributions.  Calculated flow depth and river top width data pairs were used to determine the distributions from which $\beta_1$ and $\beta_2$ in equation \ref{eq:Tw1} were drawn.  These distributions were developed using non-linear, least-squares regression.  Values below \SI{0.15}{\meter} (\SI{0.5}{\foot}) were removed from the regression analysis.  Flow values below this depth are not common and it was determined that these points would not allow for an accurate representation of the flow depth to river top width relationship for the range of known flow depths.  Values above \SI{1.52}{\meter} (\SI{5.0}{\foot}) were also removed from the regression analysis.  Flow depths above this depth are above the banks of the primary river channel and are within the inner flood plain.  Table \ref{tab:alphabetavals} gives the resulting $\beta_1$ and $\beta_2$ values for each surveyed cross-section.  Figure \ref{fig:exampleTwVsH} is an example of the surveyed flow depth and river top width relationships and the derived non-linear relationship for cross-section 1 in river segment A of the USR.  Similar relationship plots for the other surveyed cross-sections are found in the appendix. 
+%\ref{App:TwVsH}.  
+
+\begin{table}[htbp]
+  \centering
+  \caption[Arkansas River top width estimating coefficients.]{Arkansas River top width estimating coefficients.}
+  \label{tab:alphabetavals}
+  \begin{tabular}{cccccc}
+    \toprule
+    Study & River & Cross- & \multicolumn{2}{c}{Fitting Parameter} & Root Mean\\ \cmidrule(l{0.5em}r){4-5}
+    Region & Segment & Section & $\beta_1$ & $\beta_2$ & Squared Error\\
+    \toprule
+    \multirow{21}{*}{USR}& \multirow{3}{*}{A} 		& 1 & 101.8	& 0.4546	& 11.43	\\
+    						&						& 2 & 61.96	& 0.02487	& 0.1710	\\
+    						&						& 3 & 77.29	& 0.1736	& 8.363	\\ \cmidrule(l{0.5em}r){2-6}
+          					& \multirow{3}{*}{B}	& 4 & 69.40	& 0.06101	& 0.7084	\\
+          					&						& 5 & 51.77	& 0.9319	& 1.924	\\
+          					&						& 6 & 63.93	& 0.03910	& 2.152	\\ \cmidrule(l{0.5em}r){2-6}
+          					& \multirow{6}{*}{C} 	& 7 & 50.13	& 0.7839	& 2.562	\\
+          					&						& 8 & 71.04	& 0.4024	& 2.900	\\
+          					&						& 9 & 71.36	& 0.1684	& 4.719	\\
+          					&						& 10& 87.08	& 0.02590	& 0.5928	\\
+          					&						& 11& 61.49	& 0.09547	& 4.631	\\
+          					&						& 12& 72.67	& 0.5591	& 3.487	\\ \cmidrule(l{0.5em}r){2-6}
+					        & \multirow{7}{*}{D} 	& 13& 45.97	& 0.6918	& 4.568	\\
+					        &						& 14& 45.71	& 0.6290	& 3.034	\\
+					        &						& 15& 86.75	& 0.5579	& 4.701	\\
+					        &						& 16& 20.71	& 0.1360	& 1.244	\\
+					        &						& 17& 51.74	& 0.1889	& 2.375	\\
+					        &						& 18& 27.97	& 0.3204	& 1.807	\\
+					        &						& 19& 36.29	& 0.07383	& 0.1955	\\ \cmidrule(l{0.5em}r){2-6}
+          					& \multirow{2}{*}{E} 	& 20& 33.00	& 0.6961	& 1.533	\\
+          					&						& 21& 182.0	& 1.270	& 1.916	\\
+    \midrule
+    \multirow{13}{*}{DSR}& \multirow{7}{*}{F} & 1 & 22.48 & 0.4006 & 0.8139\\
+    						&						& 2 & 41.61 & 1.390 & 3.953\\
+    						&						& 3 & 29.82 & 0.2265 & 1.821\\
+          					& 						& 4 & 21.46 & 0.3801 & 2.541\\
+          					&						& 5 & 22.78 & 0.8004 & 5.715\\
+          					&						& 6 & 26.21 & 0.4153 & 1.681\\
+          					&						& 7 & 41.92 & 1.487 & 3.299\\ \cmidrule(l{0.5em}r){2-6}
+          					& \multirow{7}[2]{*}{G} & 8 & 23.49 & 1.504 & 2.344\\
+          					&						& 9 & 33.54 & 1.106 & 3.676\\
+          					&						& 10& 28.03 & 0.5790 & 2.003\\
+          					&						& 11& 24.16 & 0.2103 & 1.693\\
+          					&						& 12& 24.74 & 0.8992 & 2.617\\
+					        &						& 13& 52.68 & 1.1850 & 5.757\\
+					        &						& 14& 24.18 & 0.4764 & 0.9259\\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{figure}[htbp]
+\begin{center}
+	\includegraphics[width=6in]{"Figures/Results_USR/Stochastic/Survey Tw vs H-Section 2"}
+	\caption[Example Flow Depth vs. River Top Width Relationship.]{Example Flow Depth vs. River Top Width Relationship.  The non-linear best fit line of the form in Equation \ref{eq:Tw1} is red.  The values are the two non-linear regression fitting parameters ($\beta_1$ and $\beta_2$) and the residual standard error for the fitting equation ($\sigma$).  Similar figures for all cross-sections are found in the appendix.}
+	\label{fig:exampleTwVsH}
+\end{center}
+\end{figure}
+
+Figure \ref{fig:B1B2} shows the distributions of $\beta_1$ and $\beta_2$ values and the various best-fit distributions in both the USR and DSR.  Logistic, normal, exponential, Weibull, and log-normal distributions were fitted to the data.  Vertical tick marks in the x-axis margin are at the data values.  Kernel density estimations were used as an alternative means to graphically represent the data density.  Kernel density estimations are non-parametric and when paired with histograms of the same data, they are used to assist in visual data analysis and comparison to parametric density functions.  The K-S goodness-of-fit statistics, presented in table \ref{tab:B1B2 distribution results}, were calculated for the fitted distributions and known data.
+
+\begin{figure}[htbp]
+\centering
+\begin{subfigure}{0.5\textwidth}
+	\centering
+	\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/Stochastic/USR B1 Dist"}
+	\caption{USR $\beta_1$}
+	\label{sub b1}
+\end{subfigure}%
+\begin{subfigure}{0.5\textwidth}
+	\centering
+	\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/Stochastic/USR B2 Dist"}
+	\caption{USR $\beta_2$}
+	\label{sub b2}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+	\centering
+	\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Stochastic/DSR B1 Dist"}
+	\caption{DSR $\beta_1$}
+	\label{sub b1}
+\end{subfigure}%
+\begin{subfigure}{0.5\textwidth}
+	\centering
+	\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Stochastic/DSR B2 Dist"}
+	\caption{DSR $\beta_2$}
+	\label{sub b2}
+\end{subfigure}
+\caption[$Tw$ Versus $h$ Fitting Parameter $\beta_1$ and $\beta_2$ Distributions.]{$Tw$ Versus $h$ Fitting Parameter $\beta_1$ and $\beta_2$ Distributions.  The black dashed line is a kernel density plot representing a histogram where the bin size approaches zero.  The colored curves are the best fit for the particular distribution type.  Vertical tick marks in the x-axis are at the data values.}
+\label{fig:B1B2}
+\end{figure}
+
+\begin{table}[htbp]
+	\centering
+	\caption[River $\beta_1$ and $\beta_2$ distribution test results.]{River $\beta_1$ and $\beta_2$ distribution test results.}
+	\label{tab:B1B2 distribution results}
+	\begin{tabular}{clc}
+		\toprule
+	Fitting parameter &Distribution & K-S Statistic\\
+		\toprule
+	\multirow{5}{*}{USR $\beta_1$} & Logistic & 0.1211\\
+	& Normal & 		0.2092\\
+	& Exponential & 0.3178\\
+	& Weibull & 	1.0000\\
+	& Log-normal & 	0.1236\\
+		\midrule
+	\multirow{5}{*}{USR $\beta_2$} & Logistic & 0.1837\\
+	& Normal & 		0.2040\\
+	& Exponential & 0.1379\\
+	& Weibull & 	0.3412\\
+	& Log-normal & 	0.1570\\
+		\midrule
+	\multirow{5}{*}{DSR $\beta_1$} & Logistic & 0.1999\\
+	& Normal & 		0.2258\\
+	& Exponential & 0.5134\\
+	& Weibull & 	1.0000\\
+	& Log-normal & 	0.2086\\
+		\midrule
+	\multirow{5}{*}{DSR $\beta_2$} & Logistic & 0.1657\\
+	& Normal & 		0.1839\\
+	& Exponential & 0.2391\\
+	& Weibull & 	0.4326\\
+	& Log-normal & 	0.1486\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+Combining the river cross-section analyses to create single distributions of $\beta_1$ and $\beta_2$ was a necessary step as there was an insufficient number of cross-sections within each river segment to provide for a statistically significant data set.  The resulting river shape parameter distributions are valid for the river segment for which they were calculated.  Each river segment draws values from the shape parameter distributions independently.  Only one pair of shape parameters is drawn for each realization.  It is assumed that the river geometry does not significantly change within the study time frame.  Channel variability is modeled between the realizations.
+
+Residuals from the non-linear regression analyses were combined into a single data set for error analysis.  Combining this data set was a logical step following the combination of the data that generated the residuals.  Residuals were tested using the same tools and techniques used to test the river shape parameter distributions.  USR and DSR channel shape residuals were found to have a log-normal distribution.  Figure \ref{fig:B1B2 Error} presents the distribution analyses for the USR and DSR.  These figures are of the same type as those used to analyze the river shape parameter distributions, figure \ref{fig:B1B2}.
+
+\begin{figure}[htbp]
+\centering
+\begin{subfigure}{0.5\textwidth}
+	\centering
+	\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/Stochastic/USR AB Error Dist"}
+	\caption{USR Residuals}
+	\label{sub b1}
+\end{subfigure}%
+\begin{subfigure}{0.5\textwidth}
+	\centering
+	\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Stochastic/DSR AB Error Dist"}
+	\caption{DSR Residuals}
+	\label{sub b2}
+\end{subfigure}
+\caption[$Tw$ Versus $H$ Residuals Distribution.]{$Tw$ versus $H$ Residuals Distribution.  The black dashed line is a kernel density plot representing a histogram where the bin size approaches zero.  The colored curves are the best fit for the particular distribution type.  Vertical tick marks in the x-axis are at the data values.}
+\label{fig:B1B2 Error}
+\end{figure}
+
+Residuals are the collection of the difference between the calculated regression model values and the measured values.  Collectively, the distribution of the residuals describe the uncertainty of the regression model.  In this case, the distribution of residuals describe the top width estimating uncertainty $ \varepsilon_{Tw} $.  Residuals should be tested for heteroskedasticity to determine if the model does not adequately predict the data.  Heteroskedasticity is the condition where the variability of a variable, in this case the residuals, is unequal across the range of the values and is usually.  There are many tests for heteroskedasticity, but the most powerful is visual analysis of the plot of the residuals against the fitted, or calculated, values.  When a small number of values is used to perform the regression, visual and computational analysis becomes difficult since patterns may appear that don't truly exist or patterns may not appear where they do exist.  When heteroskedasticity was evident during model creation, the model was modified to remove the heteroskedasticity.  Other methods are available to account for heteroskedasticity, but the most strongly recommended is model modification.  Determining the parametric distribution that best fits the regressions is performed using the method described in section \ref{sec:ErrorAndUncertainty}.  Both visual and goodness-of-fit tests were applied to all residual regression analyses.
+
+
 %Values and figures presented in this section are the results from calculations performed as described in sections \ref{sec:River Volume Change} and all other precursor calculations.  The primary purpose of this analysis was to determine if the computational code and assumptions used to generate the stochastic distributions of river segment daily surface area and river segment daily water volume change were performed correctly.
 %
 %The depths and top widths were visually compared to confirm that the calculation results were reasonable.  Figure \ref{fig:ExampleTWandH} shows an example of the flow depths and river top widths.  The flow depths and widths presented are the 1-D stochastic mean time series values.  This particular figure is for segment A in the USR.  Similar figures for all segments are included in appendix \ref{App:TwandH}.
 %
 %\begin{figure}[htbp]
 %\centering
-%	\includegraphics[width=6in]{"Figures/Results_USR/G d&w Today A"}
+%	\includegraphics[width=6in]{"Figures/Results_USR/Stochastic/G d&w Today A"}
 %	\caption[River segment flow depth and top width results comparison.]{River segment flow depth and top width results comparison.  This is an example figure presenting the results for river segment A in the USR.  Additional figures for the other USR and DSR river segments are provided in the appendix noted in the text.}
 %	\label{fig:ExampleTWandH}
 %\end{figure}
@@ -497,6 +495,9 @@ River segment B in the USR does not have a flow gauge within its boundaries and 
 %
 %\textsc{I - analysis and comments on distributions}\\
 %
+
+River segment B in the USR does not have a flow gauge within its boundaries and therefore has no reported flow depths. This segment has an additional irrigation diversion check structure within its boundaries, thereby sub-dividing segment B into two sub-segments, each with its own ungauged flow depth.  Due to segment B being the shortest, composing only 3.9\% of the USR's total length, and the additional variability of the possible flow depth, the average daily flow depth within segment B is taken as the mean of the reported flow depths in segment A and C.  Top width and volume change calculation follows the previously described methodology.
+
 %\emph{VI - present river segment results}\\
 %The average river top with, surface area, and volume change values were compared between the deterministic and 1-D stochastic mean time series models and are reported in table \ref{tab:WAVResults} for both the USR and DSR.  This table is presented in the same fashion as previous tables in this chapter.  Flow depth, which is an input variable, is discussed and presented in section \ref{sec:InStreamData}.
 %

@@ -19,6 +19,30 @@
 
 \refsection{0}
   \sortlist{entry}{nyt}
+    \entry{Buhman2002}{article}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=6ff40ee93680c7995f34d4ac9a3856ec}{Buhman}{B\bibinitperiod}{Daniel\bibnamedelima L.}{D\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=fcc580849cc197f351412ef9d9e56453}{Gates}{G\bibinitperiod}{Timmothy\bibnamedelima K.}{T\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b26f2771f190b65434aadf9e60ed6916}{Watson}{W\bibinitperiod}{Chester\bibnamedelima C.}{C\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=6ff40ee93680c7995f34d4ac9a3856ec}{Buhman}{B\bibinitperiod}{Daniel\bibnamedelima L.}{D\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=fcc580849cc197f351412ef9d9e56453}{Gates}{G\bibinitperiod}{Timmothy\bibnamedelima K.}{T\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b26f2771f190b65434aadf9e60ed6916}{Watson}{W\bibinitperiod}{Chester\bibnamedelima C.}{C\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{261c188d3e8148f8d848aed61027ed99}
+      \strng{fullhash}{261c188d3e8148f8d848aed61027ed99}
+      \field{sortinit}{B}
+      \field{labelyear}{2002}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Stochastic Variability of Fluvial Hydraulic Geometry: Mississippi and Red Rivers}
+      \field{journaltitle}{Journal of Hydraulic Engineering}
+      \field{number}{4}
+      \field{title}{Stochastic Variability of Fluvial Hydraulic Geometry: Mississippi and Red Rivers}
+      \field{volume}{128}
+      \field{year}{2002}
+      \field{pages}{426\bibrangedash 437}
+    \endentry
     \entry{DAgostino1986}{book}{}
       \name{labelname}{2}{}{%
         {{uniquename=0,hash=90064786d449458da387e7956118801f}{D'Agostino}{D\bibinitperiod}{Ralph\bibnamedelima B.}{R\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
@@ -189,6 +213,28 @@
       \field{journaltitle}{Organization for Standardization, Geneva, Switzerland}
       \field{title}{Guide to the Expression of Uncertainty in Measurement, (1995), with Supplement 1, Evaluation of measurement data, JCGM 101: 2008}
       \field{year}{2008}
+    \endentry
+    \entry{spiess2010}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=d86e6f058839cf1db6a9a88e859e22aa}{Spiess}{S\bibinitperiod}{Andrej-Nikolai}{A\bibinithyphendelim N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8cca887abcf25dd33fba50a9a399bed9}{Neumeyer}{N\bibinitperiod}{Natalie}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=d86e6f058839cf1db6a9a88e859e22aa}{Spiess}{S\bibinitperiod}{Andrej-Nikolai}{A\bibinithyphendelim N\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8cca887abcf25dd33fba50a9a399bed9}{Neumeyer}{N\bibinitperiod}{Natalie}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{537615991e8f1e8503a2e265df2a925b}
+      \strng{fullhash}{537615991e8f1e8503a2e265df2a925b}
+      \field{sortinit}{S}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labeltitle}{An evaluation of R2 as an inadequate measure for nonlinear models in pharmacological and biochemical research: a Monte Carlo approach}
+      \field{journaltitle}{BMC pharmacology}
+      \field{number}{1}
+      \field{title}{An evaluation of R2 as an inadequate measure for nonlinear models in pharmacological and biochemical research: a Monte Carlo approach}
+      \field{volume}{10}
+      \field{year}{2010}
+      \field{pages}{6}
     \endentry
     \entry{venables2002}{book}{}
       \name{labelname}{2}{}{%
