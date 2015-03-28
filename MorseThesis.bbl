@@ -43,6 +43,35 @@
       \field{year}{2002}
       \field{pages}{426\bibrangedash 437}
     \endentry
+    \entry{USGSPL89}{online}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=af4b0d22e97f7e973c9c691d76955095}{Cobb}{C\bibinitperiod}{Ernest\bibnamedelima D.}{E\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=af4b0d22e97f7e973c9c691d76955095}{Cobb}{C\bibinitperiod}{Ernest\bibnamedelima D.}{E\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Office of Surface Water}%
+      }
+      \list{organization}{1}{%
+        {USGS}%
+      }
+      \strng{namehash}{af4b0d22e97f7e973c9c691d76955095}
+      \strng{fullhash}{af4b0d22e97f7e973c9c691d76955095}
+      \field{sortinit}{C}
+      \field{labelyear}{1989}
+      \field{labelmonth}{06}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Programs and Plans--Policy Statement on Stage Accuracy.}
+      \field{howpublished}{Policy Letter}
+      \field{journaltitle}{Policy Statement 89.08.}
+      \field{month}{06}
+      \field{title}{Programs and Plans--Policy Statement on Stage Accuracy.}
+      \field{year}{1989}
+      \verb{url}
+      \verb http://water.usgs.gov/admin/memo/SW/sw89.08.html
+      \endverb
+    \endentry
     \entry{DAgostino1986}{book}{}
       \name{labelname}{2}{}{%
         {{uniquename=0,hash=90064786d449458da387e7956118801f}{D'Agostino}{D\bibinitperiod}{Ralph\bibnamedelima B.}{R\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%

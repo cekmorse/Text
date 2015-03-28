@@ -1980,9 +1980,10 @@
     <bcf:citekey order="12">delignette2014</bcf:citekey>
     <bcf:citekey order="12">venables2002</bcf:citekey>
     <bcf:citekey order="12">DAgostino1986</bcf:citekey>
-    <bcf:citekey order="13">Buhman2002</bcf:citekey>
-    <bcf:citekey order="13">Gates1996</bcf:citekey>
-    <bcf:citekey order="14">spiess2010</bcf:citekey>
+    <bcf:citekey order="13">USGSPL89</bcf:citekey>
+    <bcf:citekey order="14">Buhman2002</bcf:citekey>
+    <bcf:citekey order="14">Gates1996</bcf:citekey>
+    <bcf:citekey order="15">spiess2010</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="nyt">
   <bcf:sorting>

@@ -243,7 +243,7 @@ The difference between the stream gauge datum and the channel bottom is correcte
 	$y$ = & River flow depth. \\
 \end{tabular}\\
 
-Flow depth values as reported by the USGS and CDWR are measured values with an associated probability range as calculated in equation \ref{eq:uncertainty3}.  The uncertainties are applied as shown in equation \ref{eq:herror}.  A correction factor ($ C_{i} $) is applied to each reported gauge depth to correct for the difference between the gauge datum and the channel bottom as measured during the channel cross-section survey.  Two separate uncertainties are applied.  $ \varepsilon_{h1} $ is the uncertainty distribution as described by the gauge owner.  This uncertainty is reported by the USGS and CDWR as a accuracy rating of excellent, good, fair, or poor.  Each of these designations corresponds to a uncertainty distribution as published by the USGS and show in Table \ref{tab:USGSError} which is extracted from one of the USGS annual water reports \todo{cite USGS water reports}.  These uncertainty designations and their associated distributions are valid only at the respective gauge site.  The second uncertainty term, $ \varepsilon_{h2} $, is the result of personal observation of the river channel along its entire length.  This term describes the variability in flow depth.  It was observed that the channel depth did not vary greatly along most of its length.  There were particular areas where there were deeper pools, but these areas were noted to be more prone to ponding during low flow.  It is assumed that the average effective flow depth only varies within a normal distribution with limits of \SI{0.076}[$ \pm $]{\meter} (\SI{0.25}[$ \pm $]{\foot}).  There is the possibility that $\varepsilon_{h1}$ could cause the storage change between the time steps to change from a storage gain to a storage loss, or vise versa.  This is acceptable as it is within the measurement limits of the instruments.  Once $h+\varepsilon_{h1}$ has been calculated for the two successive time steps, the relationship between the two time steps is fixed.  If the river segment flow depth rises between time steps after this calculation, then that relationship must continue throughout the rest of the calculation for $V_x$.  To facilitate this, it is assumed that $\varepsilon_{h2}$ does not vary significantly within the study time frame and does not vary within a realization.  The Arkansas R. channel is sufficiently stable between consecutive days that this assumption is valid.  A new $\varepsilon_{h2}$ is drawn for each realization and remains constant for all time steps within the study time frame.
+Flow depth values as reported by the USGS and CDWR are measured values with an associated probability range as calculated in equation \ref{eq:uncertainty3}.  The uncertainties are applied as shown in equation \ref{eq:herror}.  A correction factor ($ C_{i} $) is applied to each reported gauge depth to correct for the difference between the gauge datum and the channel bottom as measured during the channel cross-section survey.  Two separate uncertainties are applied.  $ \varepsilon_{h1} $ is the uncertainty distribution as described by the gauge owner.  This uncertainty is reported by both the USGS and CDWR as being normally distributed with extreme values at \SI{0.01}[$\pm$]{\foot} (\SI{0.003}[$ \pm $]{\meter}) \parencite{USGSPL89}.  The second uncertainty term, $ \varepsilon_{h2} $, is the result of personal observation of the river channel along its entire length.  This term describes the variability in flow depth.  It was observed that the channel depth did not vary greatly along most of its length.  There were particular areas where there were deeper pools, but these areas were noted to be more prone to ponding during low flow.  It is assumed that the average effective flow depth only varies within a normal distribution with limits of \SI{0.076}[$ \pm $]{\meter} (\SI{0.25}[$ \pm $]{\foot}).  There is the possibility that $\varepsilon_{h1}$ could cause the storage change between the time steps to change from a storage gain to a storage loss, or vise versa.  This is acceptable as it is within the measurement limits of the instruments.  Once $h+\varepsilon_{h1}$ has been calculated for the two successive time steps, the relationship between the two time steps is fixed.  If the river segment flow depth rises between time steps after this calculation, then that relationship must continue throughout the rest of the calculation for $V_x$.  To facilitate this, it is assumed that $\varepsilon_{h2}$ does not vary significantly within the study time frame and does not vary within a realization.  The Arkansas R. channel is sufficiently stable between consecutive days that this assumption is valid.  A new $\varepsilon_{h2}$ is drawn for each realization and remains constant for all time steps within the study time frame.
 
 \begin{equation}
 	y_{i,t}=h_{i,t}+C_{i}+\varepsilon_{h1}+\varepsilon_{h2}
@@ -254,30 +254,27 @@ Flow depth values as reported by the USGS and CDWR are measured values with an a
 	$y_{i,t}$  & = Section $ i $ modeled average daily flow depth at time $ t $.\\
 	$h_{i,t}$  & = Section $ i $ reported average daily river gauge height at time $ t $.\\
 	$ C_{i} $ & = Section $ i $ river gauge height to flow depth correction term.\\
-	$\varepsilon_{h1}$ & = Reported river gauge data uncertainty.\\
+	$\varepsilon_{h1}$ & = Reported river gauge height data uncertainty.\\
 	$\varepsilon_{h2}$ & = Estimated flow depth uncertainty.\\
 \end{tabular}\\
 
-\begin{table}[htbp]
-	\caption[USGS Measured Field Parameter Accuracy Rating Table.]{USGS Measured Field Parameter Accuracy Rating Table.  This table was taken from the USGS annual water data report. }
-	\label{tab:USGSError}
-	\includegraphics[width=6in]{"Figures/USGS_error_table"}
-\end{table}
+PRESENT RIVER SEGMENT FLOW DEPTH RESULTS
+
 
 River top width $ \left( Tw \right)  $ is calculated using equation \ref{eq:Tw1}.  \todo{justify}  \parencite{Buhman2002,Gates1996}. The river channel does not have a fixed cross-section along it's length, therefore, the fitting parameters, $ \beta_1 $ and $ \beta_2 $ are not constant, but are from distributions of  $ \beta_1 $ and $ \beta_2 $.  Equation \ref{eq:Tw1} and the data from each survey cross-section was used to calculate a best fit equation using non-linear regression.  The $ \beta_1 $ and $ \beta_2 $ values from each cross-section were combined to determine the distribution of $ \beta_1 $ and $ \beta_2 $. The best fit distributions for $ \beta_1 $ and $ \beta_2 $ are presented in table \ref{tab:TwFitting}.  $ \beta_1 $ and $ \beta_2 $ values were analyzed for correlation.  It was found to be insignificant with a Pearson R value of 0.17.  Visual analysis of the data points showed that there was no distinguishable pattern.  Future surveys will expand the data set and may show that there is a correlation between $ \beta_1 $ and $ \beta_2 $, but the available data does not support that conclusion.  Also presented in this table is the best fit distribution for the residuals.  These distributions and the distributions for $ \beta_1 $ and $ \beta_2 $ were analyzed to determine the best fit distribution using the methodology described in Section \ref{sec:ErrorAndUncertainty}.
 
 \begin{equation}
 	\label{eq:Tw1}
 	Tw_{i,t} = \beta_1 y_{i,t} ^{\beta_2} + \varepsilon_{Tw}
-\end{equation}
+\end{equation}\\
 
 \begin{tabular}{r p{5in}}
 	Where: & \\
 	$ Tw_{i,t} $ =& River segment $ i $ average daily top width at time step $ t $.\\
 	$ y_{i,t} $ =& Calculated segment $ i $ average daily flow depth at time step $ t $ calculated using equation \ref{eq:herror}.\\
 	$ \beta_1 $ and $ \beta_2 $ =& fitting parameter distributions.\\
-	$ \varepsilon_{Tw}  =$ Calculated average daily flow depth uncertainty.\\
-\end{tabular}\\
+	$ \varepsilon_{Tw} $=& Calculated average daily flow depth uncertainty.\\
+\end{tabular}
 
 \begin{table}[htbp]
 	\centering
@@ -497,6 +494,12 @@ Residuals are the collection of the difference between the calculated regression
 %
 
 River segment B in the USR does not have a flow gauge within its boundaries and therefore has no reported flow depths. This segment has an additional irrigation diversion check structure within its boundaries, thereby sub-dividing segment B into two sub-segments, each with its own ungauged flow depth.  Due to segment B being the shortest, composing only 3.9\% of the USR's total length, and the additional variability of the possible flow depth, the average daily flow depth within segment B is taken as the mean of the reported flow depths in segment A and C.  Top width and volume change calculation follows the previously described methodology.
+
+\begin{table}[htbp]
+	\caption[USGS Measured Field Parameter Accuracy Rating Table.]{USGS Measured Field Parameter Accuracy Rating Table.  This table was taken from the USGS annual water data report. }
+	\label{tab:USGSError}
+	\includegraphics[width=6in]{"Figures/USGS_error_table"}
+\end{table}
 
 %\emph{VI - present river segment results}\\
 %The average river top with, surface area, and volume change values were compared between the deterministic and 1-D stochastic mean time series models and are reported in table \ref{tab:WAVResults} for both the USR and DSR.  This table is presented in the same fashion as previous tables in this chapter.  Flow depth, which is an input variable, is discussed and presented in section \ref{sec:InStreamData}.

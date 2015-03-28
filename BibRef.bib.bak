@@ -1365,16 +1365,14 @@
   Journal                  = {Risk Analysis}
 }
 
-@Article{spiess2010evaluation,
+@Article{spiess2010,
   Title                    = {An evaluation of R2 as an inadequate measure for nonlinear models in pharmacological and biochemical research: a Monte Carlo approach},
   Author                   = {Spiess, Andrej-Nikolai and Neumeyer, Natalie},
   Year                     = {2010},
   Number                   = {1},
   Pages                    = {6},
   Volume                   = {10},
-
-  Journal                  = {BMC pharmacology},
-  Publisher                = {BioMed Central Ltd}
+  Journal                  = {BMC pharmacology}
 }
 
 @Misc{5CCR1002-32,
