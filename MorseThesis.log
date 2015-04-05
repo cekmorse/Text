@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  28 MAR 2015 15:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  3 APR 2015 14:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1544,15 +1544,15 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6]
-Underfull \hbox (badness 10000) in paragraph at lines 87--94
+Underfull \hbox (badness 10000) in paragraph at lines 85--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--106
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+Underfull \hbox (badness 10000) in paragraph at lines 99--104
 
  []
 
@@ -1560,7 +1560,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--106
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
-Underfull \hbox (badness 10000) in paragraph at lines 120--124
+Underfull \hbox (badness 10000) in paragraph at lines 118--122
 
  []
 
@@ -1568,23 +1568,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--124
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8]
-<"Figures/Example KDE".pdf, id=113, 433.62pt x 433.62pt>
+<"Figures/Example KDE".pdf, id=114, 433.62pt x 433.62pt>
 File: "Figures/Example KDE".pdf Graphic file (type pdf)
 
 <use "Figures/Example KDE".pdf>
-Package pdftex.def Info: "Figures/Example KDE".pdf used on input line 138.
+Package pdftex.def Info: "Figures/Example KDE".pdf used on input line 136.
 (pdftex.def)             Requested size: 433.62pt x 433.63878pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4832) has occurred while \output is active []
 
- [9]
-[10 <./Figures/Example KDE.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 158--164
+ [9 <./Figures/Example KDE.pdf>] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 156--162
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--177
+Underfull \hbox (badness 10000) in paragraph at lines 168--175
 
  []
 
@@ -1599,40 +1598,47 @@ File: "Figures/LineDiagram/PlanProfile".pdf Graphic file (type pdf)
 
 <use "Figures/LineDiagram/PlanProfile".pdf>
 Package pdftex.def Info: "Figures/LineDiagram/PlanProfile".pdf used on input li
-ne 182.
+ne 180.
 (pdftex.def)             Requested size: 469.75499pt x 280.88281pt.
 
 Underfull \vbox (badness 1675) has occurred while \output is active []
 
  [12 <./Figures/LineDiagram/PlanProfile.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13]
-<Figures/LineDiagram/XSection.pdf, id=178, 393.75677pt x 159.73964pt>
+<Figures/LineDiagram/XSection.pdf, id=169, 393.75677pt x 159.73964pt>
 File: Figures/LineDiagram/XSection.pdf Graphic file (type pdf)
 
 <use Figures/LineDiagram/XSection.pdf>
 Package pdftex.def Info: Figures/LineDiagram/XSection.pdf used on input line 21
-7.
+3.
 (pdftex.def)             Requested size: 433.62pt x 175.91154pt.
 
-<"Figures/LineDiagram/Trapezoid".pdf, id=179, 388.67432pt x 144.14966pt>
+<"Figures/LineDiagram/Trapezoid".pdf, id=170, 388.67432pt x 144.14966pt>
 File: "Figures/LineDiagram/Trapezoid".pdf Graphic file (type pdf)
 
 <use "Figures/LineDiagram/Trapezoid".pdf>
 Package pdftex.def Info: "Figures/LineDiagram/Trapezoid".pdf used on input line
- 225.
+ 221.
 (pdftex.def)             Requested size: 469.75499pt x 174.22804pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--245
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13]
+Underfull \hbox (badness 10000) in paragraph at lines 230--241
 
  []
 
-[14 <./Figures/LineDiagram/XSection.pdf>]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15 <./Figures/LineDiagram/Trapezoid.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 251--260
+ [14 <./Figures/LineDiagram/XSection.pdf> <./Figures/LineDiagram/Trapezoid.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./Figures/LineDiagram/Trapezoid.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]
+Underfull \hbox (badness 10000) in paragraph at lines 249--258
 
  []
 
@@ -1641,18 +1647,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16]
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 264.
-
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
-
- []
-
+ine 266.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17]
-Overfull \hbox (40.31569pt too wide) in paragraph at lines 271--278
-[][] 
+Underfull \hbox (badness 10000) in paragraph at lines 271--279
+
  []
 
 
@@ -1662,87 +1663,116 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19]
-<"Figures/Results_USR/Stochastic/Survey Tw vs H-Section 2".pdf, id=263, 433.62p
+<"Figures/Results_USR/Stochastic/Survey Tw vs H-Section 1".pdf, id=263, 433.62p
 t x 433.62pt>
-File: "Figures/Results_USR/Stochastic/Survey Tw vs H-Section 2".pdf Graphic fil
+File: "Figures/Results_USR/Stochastic/Survey Tw vs H-Section 1".pdf Graphic fil
 e (type pdf)
 
-<use "Figures/Results_USR/Stochastic/Survey Tw vs H-Section 2".pdf>
+<use "Figures/Results_USR/Stochastic/Survey Tw vs H-Section 1".pdf>
 Package pdftex.def Info: "Figures/Results_USR/Stochastic/Survey Tw vs H-Section
- 2".pdf used on input line 361.
+ 1".pdf used on input line 335.
 (pdftex.def)             Requested size: 433.62pt x 433.63878pt.
-
-<"Figures/Results_USR/Stochastic/USR B1 Dist".pdf, id=268, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Stochastic/USR B1 Dist".pdf Graphic file (type pdf)
-<use "Figures/Results_USR/Stochastic/USR B1 Dist".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/USR B1 Dist".pdf used 
-on input line 373.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_USR/Stochastic/USR B2 Dist".pdf, id=269, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Stochastic/USR B2 Dist".pdf Graphic file (type pdf)
-<use "Figures/Results_USR/Stochastic/USR B2 Dist".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/USR B2 Dist".pdf used 
-on input line 379.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DSR/Stochastic/DSR B1 Dist".pdf, id=270, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/Stochastic/DSR B1 Dist".pdf Graphic file (type pdf)
-<use "Figures/Results_DSR/Stochastic/DSR B1 Dist".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Stochastic/DSR B1 Dist".pdf used 
-on input line 385.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DSR/Stochastic/DSR B2 Dist".pdf, id=271, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/Stochastic/DSR B2 Dist".pdf Graphic file (type pdf)
-<use "Figures/Results_DSR/Stochastic/DSR B2 Dist".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Stochastic/DSR B2 Dist".pdf used 
-on input line 391.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20]
-[21]
-<"Figures/Results_USR/Stochastic/USR AB Error Dist".pdf, id=286, 433.62pt x 433
-.62pt>
-File: "Figures/Results_USR/Stochastic/USR AB Error Dist".pdf Graphic file (type
- pdf)
- <use "Figures/Results_USR/Stochastic/USR AB Error Dist".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/USR AB Error Dist".pdf
- used on input line 442.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21 <./Figures/Results_USR/Stochastic/Survey Tw vs H-Section 1.pdf>]
+<"Figures/Results_USR/Stochastic/USR B1 Dist".pdf, id=289, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/USR B1 Dist".pdf Graphic file (type pdf)
+<use "Figures/Results_USR/Stochastic/USR B1 Dist".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/USR B1 Dist".pdf used 
+on input line 412.
 (pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
 
-<"Figures/Results_DSR/Stochastic/DSR AB Error Dist".pdf, id=287, 433.62pt x 433
-.62pt>
-File: "Figures/Results_DSR/Stochastic/DSR AB Error Dist".pdf Graphic file (type
- pdf)
- <use "Figures/Results_DSR/Stochastic/DSR AB Error Dist".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Stochastic/DSR AB Error Dist".pdf
- used on input line 448.
+<"Figures/Results_USR/Stochastic/USR B2 Dist".pdf, id=290, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/USR B2 Dist".pdf Graphic file (type pdf)
+<use "Figures/Results_USR/Stochastic/USR B2 Dist".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/USR B2 Dist".pdf used 
+on input line 418.
+(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
+
+<"Figures/Results_DSR/Stochastic/DSR B1 Dist".pdf, id=291, 433.62pt x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/DSR B1 Dist".pdf Graphic file (type pdf)
+<use "Figures/Results_DSR/Stochastic/DSR B1 Dist".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/DSR B1 Dist".pdf used 
+on input line 424.
+(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
+
+<"Figures/Results_DSR/Stochastic/DSR B2 Dist".pdf, id=292, 433.62pt x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/DSR B2 Dist".pdf Graphic file (type pdf)
+<use "Figures/Results_DSR/Stochastic/DSR B2 Dist".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/DSR B2 Dist".pdf used 
+on input line 430.
 (pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22 <./Figures/Results_USR/Stochastic/Survey Tw vs H-Section 2.pdf>]
+ [22]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23 <./Figures/Results_USR/Stochastic/USR B1 Dist.pdf> <./Figures/Results_USR/
 Stochastic/USR B2 Dist.pdf> <./Figures/Results_DSR/Stochastic/DSR B1 Dist.pdf> 
 <./Figures/Results_DSR/Stochastic/DSR B2 Dist.pdf>]
+<"Figures/Results_USR/Stochastic/USR AB Error Dist".pdf, id=329, 433.62pt x 433
+.62pt>
+File: "Figures/Results_USR/Stochastic/USR AB Error Dist".pdf Graphic file (type
+ pdf)
+ <use "Figures/Results_USR/Stochastic/USR AB Error Dist".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/USR AB Error Dist".pdf
+ used on input line 446.
+(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
+
+<"Figures/Results_DSR/Stochastic/DSR AB Error Dist".pdf, id=330, 433.62pt x 433
+.62pt>
+File: "Figures/Results_DSR/Stochastic/DSR AB Error Dist".pdf Graphic file (type
+ pdf)
+ <use "Figures/Results_DSR/Stochastic/DSR AB Error Dist".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/DSR AB Error Dist".pdf
+ used on input line 452.
+(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [24]
-<"Figures/USGS_error_table".pdf, id=335, 531.18451pt x 359.9046pt>
+ [24 <./Figures/Results_USR/Stochastic/USR AB Error Dist.pdf> <./Figures/Result
+s_DSR/Stochastic/DSR AB Error Dist.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25]
+<"Figures/LineDiagram/TSDescription".pdf, id=356, 505.89pt x 505.89pt>
+File: "Figures/LineDiagram/TSDescription".pdf Graphic file (type pdf)
+
+<use "Figures/LineDiagram/TSDescription".pdf>
+Package pdftex.def Info: "Figures/LineDiagram/TSDescription".pdf used on input 
+line 468.
+(pdftex.def)             Requested size: 422.77663pt x 422.7833pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26 <./Figures/LineDiagram/TSDescription.pdf>]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ù in font cmr12!
+
+<"Figures/USGS_error_table".pdf, id=382, 531.18451pt x 359.9046pt>
 File: "Figures/USGS_error_table".pdf Graphic file (type pdf)
 
 <use "Figures/USGS_error_table".pdf>
-Package pdftex.def Info: "Figures/USGS_error_table".pdf used on input line 501.
+Package pdftex.def Info: "Figures/USGS_error_table".pdf used on input line 554.
 
 (pdftex.def)             Requested size: 433.62pt x 293.81116pt.
- [25 <./Figures/Results_USR/Stochastic/USR AB Error Dist.pdf> <./Figures/Result
-s_DSR/Stochastic/DSR AB Error Dist.pdf>]
-[26 <./Figures/USGS_error_table.pdf>])
+ [29] [30 <./Figures/USGS_error_table.pdf>])
 References
 
 Overfull \hbox (7.16972pt too wide) in paragraph at lines 50--50
@@ -1751,21 +1781,21 @@ Overfull \hbox (7.16972pt too wide) in paragraph at lines 50--50
 4875. 
  []
 
-[27
+[31
 
 
 
 
 
 
-] [28]
+] [32]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 76.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 76.
  (./MorseThesis.aux (./CH04-WaterBalanceModel.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 76.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 76.
 Package rerunfilecheck Info: File `MorseThesis.out' has not changed.
-(rerunfilecheck)             Checksum: 9D8504F9F1396DEC2B2D785C882788D3;483.
+(rerunfilecheck)             Checksum: 374C20C982AD463AD7F93FCFA88F530F;483.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1776,10 +1806,10 @@ Package logreq Info: Writing requests to 'MorseThesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33238 strings out of 493117
- 646838 string characters out of 6135433
- 1036153 words of memory out of 5000000
- 35955 multiletter control sequences out of 15000+600000
+ 33279 strings out of 493117
+ 647588 string characters out of 6135433
+ 1031592 words of memory out of 5000000
+ 35983 multiletter control sequences out of 15000+600000
  14973 words of font info for 59 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  66i,12n,77p,10408b,1601s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1800,10 +1830,10 @@ ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive
 14/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on MorseThesis.pdf (28 pages, 502808 bytes).
+Output written on MorseThesis.pdf (32 pages, 3316200 bytes).
 PDF statistics:
- 449 PDF objects out of 1000 (max. 8388607)
- 360 compressed objects within 4 object streams
- 78 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 487 PDF objects out of 1000 (max. 8388607)
+ 392 compressed objects within 4 object streams
+ 90 named destinations out of 1000 (max. 500000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
