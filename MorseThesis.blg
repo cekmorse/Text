@@ -1,14 +1,2 @@
-[0] Config.pm:318> INFO - This is Biber 1.8
-[0] Config.pm:321> INFO - Logfile is 'MorseThesis.blg'
-[54] biber-darwin:275> INFO - === Fri Mar 27, 2015, 21:09:11
-[55] Biber.pm:333> INFO - Reading 'MorseThesis.bcf'
-[109] Biber.pm:630> INFO - Found 14 citekeys in bib section 0
-[126] Biber.pm:3053> INFO - Processing section 0
-[142] Biber.pm:3190> INFO - Looking for bibtex format file 'BibRef.bib' for section 0
-[153] bibtex.pm:812> INFO - Found BibTeX data source 'BibRef.bib'
-[241] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
-[241] Biber.pm:2945> INFO - Sorting 'entry' list 'nyt' keys
-[241] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
-[275] bbl.pm:482> INFO - Writing 'MorseThesis.bbl' with encoding 'ascii'
-[275] bbl.pm:483> INFO - Converting UTF-8 to TeX macros on output to .bbl
-[286] bbl.pm:555> INFO - Output to MorseThesis.bbl
+[0] 554906f9.pm:318> INFO - This is Biber 1.8
+[0] 554906f9.pm:321> INFO - Logfile is 'MorseThesis.blg'

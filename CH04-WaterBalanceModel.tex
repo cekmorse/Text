@@ -461,101 +461,256 @@ Residuals are the collection of the difference between the calculated regression
 
 Results from the individual regression and residuals analyses are plotted with the source data to visually determine if the resulting best fit estimating equation or residuals distribution suitably fit the source data.  An example of one of these figures is Figure \ref{fig:exampleTwVsH} which plots a best fit regression equation alongside the source data.  Figure \ref{fig:B1B2 Error} is representative of how the residual analysis results are visually analyzed.  The best fit of several different distribution shapes are plotted over the histogram and KDE of the residuals or source data.  These types of figures are used throughout the analysis to visually verify that the calculated regression models and best-fit distributions actually fit the data.
 
-Results from deterministic and stochastic models are presented throughout this thesis.  While both model types present results from the same source data, stochastic models, as previously discussed, also include uncertainty in many forms.  Stochastic model results are complex.  They are time series models where each time step is an independent distribution of the results.  Figure is a very simple representation of a time series.  The top sub-figure shows a sine curve which represents the deterministic model.  The second sub-figure shows one realization of the stochastic model which is the deterministic model with uncertainty added at each time step.  For this example, the uncertainty is normally distributed within the time step.  The third sub-figure is 500 independent realizations shown on top of each other.  The fourth sub-figure shows the 500 realizations with three calculated lines representing stochastic model summary statistics time-series.
+Results from deterministic and stochastic models are presented throughout this thesis.  While both model types present results from the same source data, stochastic models, as previously discussed, also include uncertainty in many forms.  Stochastic model results are complex.  They are time-series models where each time step is an independent distribution of the results.  Figure is a very simple representation of a time-series.  The top sub-figure shows a sine curve which represents the deterministic model.  The second sub-figure shows one realization of the stochastic model which is the deterministic model with uncertainty added at each time step.  For this example, the uncertainty is normally distributed within the time step.  The third sub-figure is 500 independent realizations shown on top of each other.  The fourth sub-figure shows the 500 realizations with three calculated lines representing stochastic model summary statistics time-series.
 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.9\linewidth]{"Figures/LineDiagram/TSDescription"}
-	\caption[Stochastic model graphical results presentation description.]{Stochastic model graphical results presentation description.  The top sub-figure represents a simple deterministic time series model.  The second sub-figure represents a single stochastic time-series model.  The third sub-figure represents 500 stochastic time-series.  The fourth sub-figure shows the 500 stochastic time series with the three stochastic model summary statistics time-series.  The top line is the 97.5th percentile time-series, the middle line is the mean time-series, and the bottom line is the 2.5th percentile time-series.}
+	\caption[Stochastic model graphical results presentation description.]{Stochastic model graphical results presentation description.  The top sub-figure represents a simple deterministic time-series model.  The second sub-figure represents a single stochastic time-series model.  The third sub-figure represents 500 stochastic time-series.  The fourth sub-figure shows the 500 stochastic time-series with the three stochastic model summary statistics time-series.  The top line is the 97.5th percentile time-series, the middle line is the mean time-series, and the bottom line is the 2.5th percentile time-series.}
 	\label{fig:StochExample}
 \end{figure}
 
-The middle line is the time-series that represents the mean value calculated for each time-step.  This is the stochastic model mean time-series.  The top and bottom lines are the 97.5th and 2.5th percentile calculated for each time step.  These are the stochastic model 97.5th percentile time-series and stochastic model 2.5th percentile time series, respectively.  Collectively, these three time series are called stochastic model summary statistics time-series.  These three time-series show how the results and range of possible results vary with time.  All stochastic time-series graphs present only the three stochastic model summary statistics time-series.  Values outside of these are not plotted so as to improve understanding and readability of the graphical results
+The middle line is the time-series that represents the mean value calculated for each time-step.  This is the stochastic model mean time-series.  The top and bottom lines are the 97.5th and 2.5th percentile calculated for each time step.  These are the stochastic model 97.5th percentile time-series and stochastic model 2.5th percentile time-series, respectively.  Collectively, these three time-series are called stochastic model summary statistics time-series.  These three time-series show how the results and range of possible results vary with time.  All stochastic time-series graphs present only the three stochastic model summary statistics time-series.  Values outside of these are not plotted so as to improve understanding and readability of the graphical results
 
-Presenting individual values for stochastic model results requires further summary statistics of the calculated stochastic model summary statistics time-series.  Without this further reduction, results would contain large quantities of values which are very difficult to present.  The mean, 97.5th percentile, and 2.5th percentile are calculated for each of the summary statistics time-series to provide more readable results.  The summary statistics for each of the stochastic model summary statistics time-series indicate the most likely value and the range of possible values as presented in the example in Table \ref{tab:ExStochResultsTable}.  In this table, each row presents one of the stochastic model summary statistic time series results.  In this example, values 'd', 'e', and 'f' are the summary statistics for the stochastic model mean time-series.
+Presenting individual values for stochastic model results requires further summary statistics of the calculated stochastic model summary statistics time-series.  Without this further reduction, results would contain large quantities of values which are very difficult to present.  The mean, 97.5th percentile, and 2.5th percentile are calculated for each of the summary statistics time-series to provide more readable results.  The summary statistics for each of the stochastic model summary statistics time-series indicate the most likely value and the range of possible values as presented in the example in Table \ref{tab:ExStochResultsTable}.  In this table, each row of the bottom portion of the table presents one of the stochastic model summary statistic time-series results.  In this example, values '$ g $', '$ h $', and '$ i $' are the summary statistics for the stochastic model mean time-series.
+
+Table \ref{tab:ExStochResultsTable} also includes the deterministic time-series summary statistics values.  These values are the 2.5th percentile, mean, and 97.5th percentile calculated from the deterministic model results and are presented in the upper half of the table.  The deterministic model time-series summary statistics should be approximately the same as the stochastic model mean time-series summary statistics, which are values $ g $,  $ h $, and $ i $ in the lower half of the table.  This statement should be true if the deterministic model is a possible realization of the stochastic model and if the distribution of the combined uncertainties in the stochastic model are approximately normally distributed.
 
 \begin{table}[htbp]
 	\centering
-	\caption[Example stochastic model numerical results.]{Example stochastic model numerical results.  Each row presents the results for a specific stochastic model summary time-series.}
+	\caption[Example deterministic and stochastic model numerical results.]{Example deterministic and stochastic model numerical results.  The single row on on the deterministic model side presents the summary statistics for the deterministic model (values $ a $, $ b $, and $ c $).  Each row on the stochastic model side presents the results for a specific stochastic model summary time-series.  All values are presented in common units.  The Pearson Correlation value ($ m $) is calculated between the deterministic model time-series and the stochastic model mean time-series values at each time-step in the models.}
 	\label{tab:ExStochResultsTable}
-	\begin{tabular}{cccc}
+	\begin{tabular}{C{1.25in} C{1.4in} C{1.4in} C{1.4in}}
 		\toprule
-		Stochastic Model	& 2.5th & \multirow{2}{*}{Mean} & 97.5th     \\
-		Time Series			& Percentile &	& Percentile \\
+		\multicolumn{4}{l}{\textbf{Deterministic Model Time Series}} \\
+		& 2.5th      & \multirow{2}{*}{Mean} & 97.5th   \\
+		& Percentile &                       &            Percentile \\ \cmidrule(r{.5em}l){2-4}
+		& a			& b			&  c         \\
 		\toprule
-		97.5th Percentile	& a & b & c \\
-		Mean					& d & e & f \\
-		2.5th Percentile	& g & h & i \\
+		\multicolumn{4}{l}{\textbf{Stochastic Model Summary Statistics Time Series}} \\ 
+		& 2.5th      & \multirow{2}{*}{Mean} & 97.5th\\
+		& Percentile &                       & Percentile \\ \cmidrule(r{.5em}l){2-4}
+		97.5th Percentile	& d			& e			& f \\
+		Mean						& g			& h			& i \\
+		2.5th Percentile	& j			& k			& l \\
 		\bottomrule
+		\multicolumn{4}{l}{Pearson Correlation = m}
 	\end{tabular}
 \end{table}
 
-One goal of stochastic modeling is to have a deterministic model that resides within the stochastic.  If the deterministic model isn’t a possible realization of the stochastic model, then there are significant stochastic model issues that need to be addressed.  Ideally, the stochastic model mean time-series at each time step should be close to the deterministic model at that same time step.  To determine if this relationship is true, the Pearson correlation between the stochastic model mean time-series and the deterministic model was calculated.
+One goal of stochastic modeling is to have a deterministic model that resides within the stochastic.  If the deterministic model isn’t a possible realization of the stochastic model, then there are significant stochastic model issues that need to be addressed.  Ideally, the stochastic model mean time-series at each time step should be close to the deterministic model at that same time step.  To determine if this relationship is true, the Pearson correlation between the stochastic model mean time-series and the deterministic model was calculated and is included at the bottom of Table \ref{tab:ExStochResultsTable}.  Calculating the Pearson correlation requires assuming the two compared data sets are continuous and are linearly related.  All input values and results in this thesis are continuous, either from zero to $ +\inf $ or between $ \pm \inf $.
 
-Calculating the Pearson correlation requires making the four following assumptions about both data sets:
-\begin{enumerate}
-	\item The data is continuous.
-	\item There is a linear relationship between the two variables.
-	\item There are no significant outliers.
-	\item Both data sets are approximately normally distributed.
-\end{enumerate}
+Correlation values only provides a numerical value to describe the relationship between two values or data sets.  It does not imply causality or linearity.  We can infer causality because the deterministic model is a subset of the stochastic model.  In fact, the deterministic model was used to create the stochastic model.  We cannot infer linearity.  Figure \ attempts to answer the linearity issue through visual analysis.  The black dots are the comparison of the stochastic mean time-series and the deterministic model.  The red and blue does are the comparison of the stochastic 97.5th and 2.5th percentile time-series as compared to the deterministic model, respectively.  The solid black line follows the equation y=x.  This is where all of the black dots should lie if the stochastic mean time-series and deterministic models were in perfect agreement.  The dashed line is the quadratic best fit line through the stochastic mean time-series.
 
-The first assumption is easily accounted for.  Since the input variables and the uncertainty values are themselves continuous, it follows that the results are also continuous.  The second assumption is accounted for graphically by using a scatter-plot.  An example is provided in figure \todo{figure No} which is a subset of one of the results calculated in this thesis.  Simple, visual analysis shows if the two data sets were linearly related as they are in this figure.  The same plot was used to account for the third assumption.  With the scatter-plot, significant outliers are easily spotted.  The fourth assumption requires cursory observation of the uncertainty distributions added to the deterministic model to create the stochastic model.  Most of these distributions are normal or logistic.  Those that are not of these types, do not occur frequently enough to warrant in-depth inspection.  Confirmation of this observation is performed with the same scatter-plot used to account for the previous assumptions.  The resulting data points should show a central tendency with fewer points toward the extreme, as they are in figure \todo{figure No}.
-
-
-
-Correlation only provides a numerical value to describe the relationship between the two values or data sets.  It does not imply causality or linearity.  We can infer causality because the deterministic model is a subset of the stochastic model.  In fact, the deterministic model was used to create the stochastic model.  We cannot infer linearity.  The figure titled "Rplot Results Correlation.pdf” attempts to answer the linearity issue through visual analysis.  The black dots are the comparison of the stochastic mean time-series and the deterministic model.  The red and blue does are the comparison of the stochastic 97.5th and 2.5th percentile time-series as compared to the deterministic model, respectively.  The solid black line follows the equation y=x.  This is where all of the black dots should lie if the stochastic mean time-series and deterministic models were in perfect agreement.  The dashed line is the quadratic best fit line through the stochastic mean time-series.
-
-uncomment this later
-%Through the use of the Pearson correlation values and visual analysis, we can conclude that the deterministic model accurately represents the stochastic model mean time-series.  A quadratic function was chosen as it allows for simple curvature of the data.  The best fit quadratic function has an R-squared of 0.99, adjusted R-squared of 0.99, and a p-value of <2.2*10^-16.  The coefficients are all significant at alphas close to 0 (<0.001).
-uncomment this later
-%Values and figures presented in this section are the results from calculations performed as described in sections \ref{sec:River Volume Change} and all other precursor calculations.  The primary purpose of this analysis was to determine if the computational code and assumptions used to generate the stochastic distributions of river segment daily surface area and river segment daily water volume change were performed correctly.
-%
-%The depths and top widths were visually compared to confirm that the calculation results were reasonable.  Figure \ref{fig:ExampleTWandH} shows an example of the flow depths and river top widths.  The flow depths and widths presented are the 1-D stochastic mean time series values.  This particular figure is for segment A in the USR.  Similar figures for all segments are included in appendix \ref{App:TwandH}.
-%
-%\begin{figure}[htbp]
-%\centering
-%	\includegraphics[width=6in]{"Figures/Results_USR/Stochastic/G d&w Today A"}
-%	\caption[River segment flow depth and top width results comparison.]{River segment flow depth and top width results comparison.  This is an example figure presenting the results for river segment A in the USR.  Additional figures for the other USR and DSR river segments are provided in the appendix noted in the text.}
-%	\label{fig:ExampleTWandH}
-%\end{figure}
-%
-%Goodness-of-fit is not an analysis performed on this type of figure.  Analysis is restricted to verifying that the 1-D stochastic mean flow depth and calculated top width are within acceptable ranges.  Flow depth values should be between 0.15 m and 1.5 m (0.5 ft and 5 ft).  All figures show that this is true.
-%
-%An example time series plot of all four stochastic geometric parameters for each study region river section segment is presented in figure \ref{fig:GeoTS}.  This particular figure presents the stochastic data for segment A.  The black lines indicate the 1-D stochastic mean time series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values as defined by the 1-D stochastic 2.5th percentile and 1-D stochastic 97.5th percentile time series.  The red dashed line in the flow depth portion of the figure indicates the reported flow depth values.  It is plotted under the 1-D stochastic mean time series line and as such is only visible when either the 1-D stochastic mean time series value was not calculated due to missing data or when the two values deviate.  Similar figures for each segment are included in appendix \ref{App:GeoTS}.
-%
-%\begin{figure}[htbp]
-%\centering
-%	\includegraphics[width=6in]{"Figures/Results_USR/G TS A"}
-%	\caption[Stochastic geometric parameter time series.]{Stochastic geometric parameter time series.  This is an example figure presenting the results for river segment A in the USR.  Additional figures for the other USR and DSR river segments are provided in the appendix noted in the text.  The black lines indicate the 1-D stochastic mean time series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.  The red dashed line in the flow depth portion of the figure indicates the reported flow depth values.}
-%	\label{fig:GeoTS}
-%\end{figure}
-%
-%This figure does not have a corresponding goodness-of-fit test.  The figures were analyzed to verify that direct correlations existed between the flow depth and the calculated geometric parameters.  Top width and surface area should increase and decrease in proportion with the increase and decrease in flow depth.  Volume changes are based on two flow depth values and do not have a direct correlation to the flow depth displayed in the figure.  All of the river sections show the correct correlations between flow depth and the calculated river geometric parameters.
-%
-%The average river top with, surface area, and volume change values were compared between the deterministic and 1-D stochastic mean time series models and are reported in table \ref{tab:WAVResults} for both the USR and DSR.  This table is presented in the same fashion as previous tables in this chapter.  Flow depth, which is an input variable, is discussed and presented in section \ref{sec:InStreamData}.
-%
-%\textsc{E - test non-linear regression uncertainty distribution against original data}\\
-%
-%\textsc{F - define distributions of $\beta_1$ and $\beta_2$}\\
-%
-%\textsc{G - test uncertainty distributions against original data}\\
-%
-%\textsc{H - present $\beta_1$ and $\beta_2$}\\
-%
-%\textsc{I - analysis and comments on distributions}\\
-%
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/Stochastic/S-D Comparison-M Mass Flow"}
+	\caption[Example scatterplot comparing the deterministic model time-series and stochastic model mean time-series results.]{Example scatterplot comparing deterministic model time-series and stochastic model mean time-series results.  The solid line is drawn such that $ y=x $.  The dashed line is the best-fit quadratic equation between the deterministic model time-series and the stochastic model mean time-series and the equation is in the top right. The Pearson Correlation is the top left number.}
+	\label{fig:CorrelationExample}
+\end{figure}
 
 River segment B in the USR does not have a flow gauge within its boundaries and therefore has no reported flow depths. This segment has an additional irrigation diversion check structure within its boundaries, thereby sub-dividing segment B into two sub-segments, each with its own ungauged flow depth.  Due to segment B being the shortest, composing only 3.9\% of the USR's total length, and the additional variability of the possible flow depth, the average daily flow depth within segment B is taken as the mean of the reported flow depths in segment A and C.  Top width and volume change calculation follows the previously described methodology.
 
+\clearpage
+\subsection{River Storage Change Results}
+%The depths and top widths were visually compared to confirm that the calculation results were reasonable.  Figures \ref{fig:TWandH_USR} and \ref{fig:TWandH_DSR} show the flow depths and river top widths for river segments in the USR and DSR, respectively.  The flow depths and widths presented are the stochastic model mean time-series values.  The primary purpose of this analysis was to determine if the computational code and assumptions used to generate the stochastic distributions of river segment average daily flow depth and average daily top width were performed correctly.
+
+% Example figure option
+%\begin{figure}[htbp]
+%\centering
+%	\includegraphics[width=6in]{"Figures/Results_USR/Stochastic/G d&w Today A"}
+%	\caption[River segment flow depth and top width results comparison.]{River segment flow depth and top width results comparison.  This is an example figure presenting the results for river segment A in the USR.  Additional figures for the other USR and DSR river segments are provided in the appendix.}
+%	\label{fig:ExampleTWandH}
+%\end{figure}
+
+% These results are presented in other figures
+%\begin{figure}[htbp]
+%	\centering
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.75\linewidth]{"Figures/Results_USR/Stochastic/G d&w Today A"}
+%		\subcaption{Segment A}
+%		\label{sub:TWandH_A}
+%	\end{subfigure}%
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.75\linewidth]{"Figures/Results_USR/Stochastic/G d&w Today B"}
+%		\subcaption{Segment B}
+%		\label{sub:TWandH_B}
+%	\end{subfigure}
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.75\linewidth]{"Figures/Results_USR/Stochastic/G d&w Today C"}
+%		\subcaption{Segment C}
+%		\label{sub:TWandH_C}
+%	\end{subfigure}%
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.75\linewidth]{"Figures/Results_USR/Stochastic/G d&w Today D"}
+%		\subcaption{Segment D}
+%		\label{sub:TWandH_D}
+%	\end{subfigure}
+%	\begin{subfigure}{0.5\textwidth}
+%		\centering
+%		\includegraphics[width=0.75\linewidth]{"Figures/Results_USR/Stochastic/G d&w Today E"}
+%		\subcaption{Segment E}
+%		\label{sub:TWandH_E}
+%	\end{subfigure}
+%	\caption[River segment flow depth and top width results comparison.]{River segment flow depth and top width results comparison.}
+%	\label{fig:TWandH_USR}
+%\end{figure}
+%
+%\begin{figure}[htbp]
+%	\centering
+%	\missingfigure{figs not done in R}
+%%	\begin{subfigure}{0.5\textwidth}
+%%		\centering
+%%		\includegraphics[width=0.75\linewidth]{"Figures/Results_DSR/Stochastic/G d&w Today F"}
+%%		\subcaption{Segment F}
+%%		\label{sub:TWandH_F}
+%%	\end{subfigure}%
+%%	\begin{subfigure}{0.5\textwidth}
+%%		\centering
+%%		\includegraphics[width=0.75\linewidth]{"Figures/Results_DSR/Stochastic/G d&w Today G"}
+%%		\subcaption{Segment G}
+%%		\label{sub:TWandH_G}
+%%	\end{subfigure}
+%	\caption[River segment flow depth and top width results comparison.]{River segment flow depth and top width results comparison.}
+%	\label{fig:TWandH_DSR}
+%\end{figure}
+
+%Goodness-of-fit is not an analysis performed on the analysis presented in Figures \ref{fig:TWandH_USR} and \ref{fig:TWandH_DSR}.  Analysis is restricted to verifying that the stochastic mean time-series flow depth and calculated top width are within acceptable ranges.  Flow depth values should be between \SIrange{0.15}{1.5}{\meter} (\SIrange{0.5}{5}{\foot}).  Top width values should be within the ranges surveyed.  All figures show that this is true.
+
+The time-series plots of all four stochastic geometric parameters for each study region river section segment is presented in Figures \ref{fig:GeoTS_US} and \ref{fig:GeoTS_DS} for the USR and DSR, respectively.  The black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values as defined by the stochastic model 2.5th percentile time-series and the stochastic model 97.5th percentile time-series.  The red dashed line in the flow depth portion of the figure indicates the reported flow depth values.  It is plotted under the stochastic model mean time-series line and as such is only visible when either the stochastic model mean time-series value was not calculated due to missing data or when the two values deviate.
+
+% Example figure option
+%\begin{figure}[htbp]
+%\centering
+%	\includegraphics[width=6in]{"Figures/Results_USR/Stochastic/G TS A"}
+%	\caption[Stochastic geometric parameter time-series.]{Stochastic geometric parameter time-series.  This is an example figure presenting the results for river segment A in the USR.  Additional figures for the other USR and DSR river segments are provided in the appendix noted in the text.  The black lines indicate the 1-D stochastic mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.  The red dashed line in the flow depth portion of the figure indicates the reported flow depth values.}
+%	\label{fig:GeoTS}
+%\end{figure}
+
+\begin{landscape}
+	\begin{figure}
+		\begin{subfigure}{0.9\textwidth}
+			\centering
+			\includegraphics[width=0.9\textwidth]{"Figures/Results_USR/Stochastic/G TS A"}
+			\subcaption{Segment A}		
+			\label{sub:GeoTS_A}
+		\end{subfigure}%
+		\begin{subfigure}{0.9\textwidth}
+			\centering
+			\includegraphics[width=0.9\textwidth]{"Figures/Results_USR/Stochastic/G TS B"}
+			\subcaption{Segment B}
+			\label{sub:GeoTS_B}
+		\end{subfigure}
+	\caption[USR stochastic geometric parameter time-series.]{USR stochastic geometric parameter time-series. The black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.  The red dashed line in the flow depth portion of the figure indicates the reported flow depth values.}
+	\label{fig:GeoTS_US}
+	\end{figure}
+\end{landscape}
+
+\renewcommand{\thefigure}{\arabic{section}.\arabic{figure} (Cont)}
+\addtocounter{figure}{-1}
+
+\begin{landscape}
+	\begin{figure}
+		\begin{subfigure}{0.9\textwidth}
+			\centering
+			\includegraphics[width=0.9\textwidth]{"Figures/Results_USR/Stochastic/G TS C"}
+			\subcaption{Segment C}
+			\label{sub:GeoTS_C}	
+		\end{subfigure}%
+		\begin{subfigure}{0.9\textwidth}
+			\centering			
+			\includegraphics[width=0.9\textwidth]{"Figures/Results_USR/Stochastic/G TS D"}
+			\subcaption{Segment D}
+			\label{sub:GeoTS_D}
+		\end{subfigure}
+		\caption{Stochastic geometric parameter time-series.}
+	\end{figure}
+\end{landscape}
+
+\renewcommand{\thefigure}{\arabic{section}.\arabic{figure} (Cont)}
+\addtocounter{figure}{-1}
+
+\begin{landscape}
+	\begin{figure}
+		\begin{subfigure}{0.9\textwidth}
+			\centering
+			\includegraphics[width=0.9\textwidth]{"Figures/Results_USR/Stochastic/G TS E"}
+			\subcaption{Segment E}
+			\label{sub:GeoTS_E}	
+		\end{subfigure}
+		\caption{Stochastic geometric parameter time-series.}
+	\end{figure}
+\end{landscape}
+
+\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+\addtocounter{figure}{0}
+
+\begin{landscape}
+	\begin{figure}
+			\missingfigure{figs not done in R}
+%		\begin{subfigure}{0.9\textwidth}
+%			\centering
+%			\includegraphics[width=0.9\textwidth]{"Figures/Results_DSR/Stochastic/G TS F"}
+%			\subcaption{Segment F}		
+%			\label{sub:GeoTS_F}
+%		\end{subfigure}%
+%		\begin{subfigure}{0.9\textwidth}
+%			\centering
+%			\includegraphics[width=0.9\textwidth]{"Figures/Results_DSR/Stochastic/G TS G"}
+%			\subcaption{Segment G}
+%			\label{sub:GeoTS_G}
+%		\end{subfigure}
+		\caption[DSR stochastic geometric parameter time-series.]{DSR stochastic geometric parameter time-series. The black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.  The red dashed line in the flow depth portion of the figure indicates the reported flow depth values.}
+		\label{fig:GeoTS_DS}
+	\end{figure}
+\end{landscape}
+
+Tables \ref{tab:SegmentSurfaceArea_A} to \ref{tab:SegmentSurfaceArea_E} and Tables \ref{tab:SegmentSurfaceArea_F} and \ref{tab:SegmentSurfaceArea_G} present the river segment average daily surface area deterministic model time-series and stochastic model summary statistic time-series results for the USR and DSR, respectively.  Summary results for river segment average daily flow depth and river segment average daily top width are not included as they are not direct precursors to the final model results.  The surface area is directly used for precipitation and evaporation calculations.
+
 \begin{table}[htbp]
-	\caption[USGS Measured Field Parameter Accuracy Rating Table.]{USGS Measured Field Parameter Accuracy Rating Table.  This table was taken from the USGS annual water data report. }
-	\label{tab:USGSError}
-	\includegraphics[width=6in]{"Figures/USGS_error_table"}
+\centering
+\caption[USR river segment A surface area deterministic and stochastic model numerical results.]{USR river segment A surface area deterministic and stochastic model numerical results.  Values are in hectares (acres).}
+\label{tab:SegmentSurfaceArea_A}
+	\input{"Tables/tableAreaA.txt"}
 \end{table}
 
+\begin{table}[htbp]
+	\centering
+	\caption[USR river segment B surface area deterministic and stochastic model numerical results.]{USR river segment B surface area deterministic and stochastic model numerical results.  Values are in hectares (acres).}
+	\label{tab:SegmentSurfaceArea_B}
+		\input{"Tables/tableAreaB.txt"}
+\end{table}
+
+\begin{table}[htbp]
+	\centering
+	\caption[USR river segment C surface area deterministic and stochastic model numerical results.]{USR river segment C surface area deterministic and stochastic model numerical results.  Values are in hectares (acres).}
+	\label{tab:SegmentSurfaceArea_C}
+	\input{"Tables/tableAreaC.txt"}
+\end{table}
+
+\begin{table}[htbp]
+	\centering
+	\caption[USR river segment D surface area deterministic and stochastic model numerical results.]{USR river segment D surface area deterministic and stochastic model numerical results.  Values are in hectares (acres).}
+	\label{tab:SegmentSurfaceArea_D}
+	\input{"Tables/tableAreaD.txt"}
+\end{table}
+
+\begin{table}[htbp]
+	\centering
+	\caption[USR river segment E surface area deterministic and stochastic model numerical results.]{USR river segment E surface area deterministic and stochastic model numerical results.  Values are in hectares (acres).}
+	\label{tab:SegmentSurfaceArea_E}
+	\input{"Tables/tableAreaE.txt"}
+\end{table}
+
+Figures \ref{fig:GeoTS_US} and \ref{fig:GeoTS_DS} were analyzed to verify that direct correlations existed between the flow depth and the calculated geometric parameters.  Top width and surface area should increase and decrease in proportion with the increase and decrease in flow depth.  Volume changes are based on two flow depth values and do not have a direct correlation to the flow depth displayed in the figure.  All of the river sections show the correct correlations between flow depth and the calculated river geometric parameters.
+
+
 %\emph{VI - present river segment results}\\
-%The average river top with, surface area, and volume change values were compared between the deterministic and 1-D stochastic mean time series models and are reported in table \ref{tab:WAVResults} for both the USR and DSR.  This table is presented in the same fashion as previous tables in this chapter.  Flow depth, which is an input variable, is discussed and presented in section \ref{sec:InStreamData}.
+%The average river top with, surface area, and volume change values were compared between the deterministic and 1-D stochastic mean time-series models and are reported in table \ref{tab:WAVResults} for both the USR and DSR.  This table is presented in the same fashion as previous tables in this chapter.  Flow depth, which is an input variable, is discussed and presented in section \ref{sec:InStreamData}.
 %
 %\begin{table}[htbp]
 %  \centering
@@ -600,7 +755,7 @@ River segment B in the USR does not have a flow gauge within its boundaries and 
 %
 %Values and figures presented in this section are the storage component sub-set of the complete water balance model results.  The analyses in this section are restricted to performing a reasonability check on the results.  Results in this section are to be compared with results from the other model sub-sections from both the USR and DSR models to determine if results are acceptable.  Unacceptable results would indicate an error in the computational code or an underlying assumption.
 %
-%Figures \ref{fig:USRWaterStore} and \ref{fig:DSRWaterStore} present the sum of all river segment water storage changes in the USR and DSR, respectively, as time series plots.  The left and right sub-figures present the deterministic and stochastic time series, respectively.  The black line in the stochastic figures is the 1-D stochastic mean results with the blue band indicating the 95\% CIR.  Values in these figures and associated tables indicate the volume of water stored in the respective reach in units of \si{\cubic\meter\per\second\per\kilo\meter}.  Standardizing the results to present values in units of storage per unit length allows for comparisons to be made between the two study reaches and between water balance model components.  Positive values indicate that the reach's storage volume increase. 
+%Figures \ref{fig:USRWaterStore} and \ref{fig:DSRWaterStore} present the sum of all river segment water storage changes in the USR and DSR, respectively, as time-series plots.  The left and right sub-figures present the deterministic and stochastic time-series, respectively.  The black line in the stochastic figures is the 1-D stochastic mean results with the blue band indicating the 95\% CIR.  Values in these figures and associated tables indicate the volume of water stored in the respective reach in units of \si{\cubic\meter\per\second\per\kilo\meter}.  Standardizing the results to present values in units of storage per unit length allows for comparisons to be made between the two study reaches and between water balance model components.  Positive values indicate that the reach's storage volume increase. 
 %
 %\begin{figure}[htbp]
 %\centering
@@ -696,7 +851,7 @@ River segment B in the USR does not have a flow gauge within its boundaries and 
 %
 %Values and figures presented in this section are the storage component sub-set of the complete water balance model results.  The analyses in this section are restricted to performing a reasonability check on the results.  Results in this section are to be compared with results from the other model sub-sections from both the USR and DSR models to determine if results are acceptable.  Unacceptable results would indicate an error in the computational code or an underlying assumption.
 %
-%Figures \ref{fig:USRWaterStore} and \ref{fig:DSRWaterStore} present the sum of all river segment water storage changes in the USR and DSR, respectively, as time series plots.  The left and right sub-figures present the deterministic and stochastic time series, respectively.  The black line in the stochastic figures is the 1-D stochastic mean results with the blue band indicating the 95\% CIR.  Values in these figures and associated tables indicate the volume of water stored in the respective reach in units of \si{\cubic\meter\per\second\per\kilo\meter}.  Standardizing the results to present values in units of storage per unit length allows for comparisons to be made between the two study reaches and between water balance model components.  Positive values indicate that the reach's storage volume increase. 
+%Figures \ref{fig:USRWaterStore} and \ref{fig:DSRWaterStore} present the sum of all river segment water storage changes in the USR and DSR, respectively, as time-series plots.  The left and right sub-figures present the deterministic and stochastic time-series, respectively.  The black line in the stochastic figures is the 1-D stochastic mean results with the blue band indicating the 95\% CIR.  Values in these figures and associated tables indicate the volume of water stored in the respective reach in units of \si{\cubic\meter\per\second\per\kilo\meter}.  Standardizing the results to present values in units of storage per unit length allows for comparisons to be made between the two study reaches and between water balance model components.  Positive values indicate that the reach's storage volume increase. 
 %
 %\begin{figure}[htbp]
 %\centering
@@ -859,18 +1014,18 @@ River segment B in the USR does not have a flow gauge within its boundaries and 
 %
 %Values and figures presented in this section are the results from calculations described in chapter \ref{chap:models and uncertainty}.  The purpose of this analysis is to determine how well the values generated for the stochastic models fit the reported values used in the deterministic models.
 %
-%Figure \ref{fig:ExampleDensity} is an example of the plots used to perform visual analysis of the stochastic model input variables.  This figure presents the distribution of the flow values at ARKCATCO, the USR upstream stream gauge.  The reported values are depicted by the histogram and the black kernel density estimate (KDE) curve.  The red curve depicts the KDE of the 1-D stochastic mean time series values.  This figure shows how the 1-D stochastic model mean values compare to the deterministic model values.  Similar figures for all variables are presented in appendix \ref{App:VarDensity}.
+%Figure \ref{fig:ExampleDensity} is an example of the plots used to perform visual analysis of the stochastic model input variables.  This figure presents the distribution of the flow values at ARKCATCO, the USR upstream stream gauge.  The reported values are depicted by the histogram and the black kernel density estimate (KDE) curve.  The red curve depicts the KDE of the 1-D stochastic mean time-series values.  This figure shows how the 1-D stochastic model mean values compare to the deterministic model values.  Similar figures for all variables are presented in appendix \ref{App:VarDensity}.
 %
 %\begin{figure}[htbp]
 %\centering
 %	\includegraphics[width=6in]{"Figures/Results_USR/V density qin"}
-%	\caption[Deterministic and stochastic model input variable distributions.]{Deterministic and stochastic model input variable distributions.  This is an example figure presenting the results for the variable $Q_{ARKCATCO}$.  Additional figures for the other USR and DSR input variables are provided in the appendix noted in the text.  The histogram and the black KDE present the deterministic model input variable values.  The red dashed KDE presents the distribution of the 1-D stochastic mean time series distribution.}
+%	\caption[Deterministic and stochastic model input variable distributions.]{Deterministic and stochastic model input variable distributions.  This is an example figure presenting the results for the variable $Q_{ARKCATCO}$.  Additional figures for the other USR and DSR input variables are provided in the appendix noted in the text.  The histogram and the black KDE present the deterministic model input variable values.  The red dashed KDE presents the distribution of the 1-D stochastic mean time-series distribution.}
 %	\label{fig:ExampleDensity}
 %\end{figure}
 %
 %Goodness-of-fit is measured by visual comparison of the 1-D stochastic model and deterministic model KDE curves and the mean of the distributions.  Ideally, the 1-D stochastic mean model distribution and mean should be near the deterministic model distribution and mean.  All of the input variables used in the USR water balance and mass balance models meet this idealism.
 %
-%The distribution of the differences between the generated values and the expected values was another evaluation performed.  An example of these analyses is shown in figure \ref{fig:ExampleDifference}.  This figure shows data from the analysis of the variable $Q_{ARKCATCO}$.  Histograms are not presented in these figures for clarity.  The KDE in figure \ref{sub:diff} is the distribution of the difference between the deterministic and 1-D stochastic mean time series.  Figure \ref{sub:pdiff} is the percent difference between the two time series.  The solid vertical line is at the mean of the distribution and the dashed vertical lines are at the 2.5th and 97.5th percentile of the distribution.  This range corresponds to the 95\% CIR.  Figures for all variables similar to figure \ref{fig:ExamplePDifference} are presented in appendix \ref{App:VarPDiff}.
+%The distribution of the differences between the generated values and the expected values was another evaluation performed.  An example of these analyses is shown in figure \ref{fig:ExampleDifference}.  This figure shows data from the analysis of the variable $Q_{ARKCATCO}$.  Histograms are not presented in these figures for clarity.  The KDE in figure \ref{sub:diff} is the distribution of the difference between the deterministic and 1-D stochastic mean time-series.  Figure \ref{sub:pdiff} is the percent difference between the two time-series.  The solid vertical line is at the mean of the distribution and the dashed vertical lines are at the 2.5th and 97.5th percentile of the distribution.  This range corresponds to the 95\% CIR.  Figures for all variables similar to figure \ref{fig:ExamplePDifference} are presented in appendix \ref{App:VarPDiff}.
 %
 %\begin{figure}[htbp]
 %\centering
@@ -892,7 +1047,7 @@ River segment B in the USR does not have a flow gauge within its boundaries and 
 %
 %As with the previous figures, goodness-of-fit is measured by visual analysis.  The differences and percent differences should be mostly contained within the boundaries defined by the vertical dashed lines.  All input variables fit reasonably within the set limits.
 %
-%The generated stochastic values were also compared against the expected values on a time step by time step basis.  The difference and percent difference were calculated between the 1-D stochastic mean time series and the expected value for a given time step.  The largest and smallest differences and percent differences were graphed and are presented as shown on the example figures, \ref{fig:ExampleMinMaxDiff} and \ref{fig:ExampleMinMaxPDiff}, respectively.  Similar figures for all input variables are found in appendix \ref{App:VarMinMaxDiff}.  These figures show data from the analysis of the variable $Q_{ARKCATCO}$.  Both figures show two graphs.  The upper graph shows the highest difference or percent difference.  The lower graph shows the lowest difference or percent difference.  Each graph in each figure shows only one time step.  The time steps were chosen by their status as the highest or lowest difference or percent difference.  Intermediate time steps were not investigated.  The existence of similarities between the time of the chosen time steps was not investigated.  All of the presented graphs show the KDE of the 1-D stochastic mean time series values for the investigated time step in units of the investigated variable.  The black vertical line shows the mean of the distribution and the red vertical line shows the expected value for the investigated time step.  The reported differences are given in units of the investigated variable for both the difference and percent difference investigations.  
+%The generated stochastic values were also compared against the expected values on a time step by time step basis.  The difference and percent difference were calculated between the 1-D stochastic mean time-series and the expected value for a given time step.  The largest and smallest differences and percent differences were graphed and are presented as shown on the example figures, \ref{fig:ExampleMinMaxDiff} and \ref{fig:ExampleMinMaxPDiff}, respectively.  Similar figures for all input variables are found in appendix \ref{App:VarMinMaxDiff}.  These figures show data from the analysis of the variable $Q_{ARKCATCO}$.  Both figures show two graphs.  The upper graph shows the highest difference or percent difference.  The lower graph shows the lowest difference or percent difference.  Each graph in each figure shows only one time step.  The time steps were chosen by their status as the highest or lowest difference or percent difference.  Intermediate time steps were not investigated.  The existence of similarities between the time of the chosen time steps was not investigated.  All of the presented graphs show the KDE of the 1-D stochastic mean time-series values for the investigated time step in units of the investigated variable.  The black vertical line shows the mean of the distribution and the red vertical line shows the expected value for the investigated time step.  The reported differences are given in units of the investigated variable for both the difference and percent difference investigations.  
 %
 %\begin{figure}[htbp]
 %\centering
@@ -910,7 +1065,7 @@ River segment B in the USR does not have a flow gauge within its boundaries and 
 %
 %Goodness-of-fit for this pair of figure types is defined by both the distribution of the differences and percent differences and the difference between the mean of the distribution and the expected value.  These figures represent the extreme range of the differences.  Even at the extremes, the differences are acceptable.
 %
-%The input variable values were compared between the deterministic and stochastic models and are reported in tables \ref{tab:USRVarResults} and \ref{tab:DSRVarResults} for the USR and DSR, respectively.  The mean, 2.5th, and 97.5th percentile were calculated from the deterministic model input variable values.  As previously discussed, the 1-D stochastic mean time series values are assumed to approximate the deterministic model values.  The mean, 2.5th, and 97.5th percentile were calculated from the 1-D stochastic mean time series and are reported in the same tables.  Also included in the tables is a column that presents the percent difference between the mean of the 1-D stochastic mean time series values and the deterministic time series values.  
+%The input variable values were compared between the deterministic and stochastic models and are reported in tables \ref{tab:USRVarResults} and \ref{tab:DSRVarResults} for the USR and DSR, respectively.  The mean, 2.5th, and 97.5th percentile were calculated from the deterministic model input variable values.  As previously discussed, the 1-D stochastic mean time-series values are assumed to approximate the deterministic model values.  The mean, 2.5th, and 97.5th percentile were calculated from the 1-D stochastic mean time-series and are reported in the same tables.  Also included in the tables is a column that presents the percent difference between the mean of the 1-D stochastic mean time-series values and the deterministic time-series values.  
 %
 %\begin{table}[htbp]
 %\centering
@@ -992,7 +1147,7 @@ River segment B in the USR does not have a flow gauge within its boundaries and 
 %
 %Values and figures presented in this section are the results from calculations performed as described in sections \ref{sec:River Volume Change} and all other precursor calculations.  The primary purpose of this analysis was to determine if the computational code and assumptions used to generate the stochastic distributions of evaporation and precipitation were performed correctly.  
 %
-%Figures \ref{fig:USREvap} and\ref{fig:DSREvap} show the deterministic and stochastic model time series of evaporation in the USR and DSR respectively.  The left and right sub-figures present the deterministic and stochastic models of evaporation, respectively.  In the stochastic sub-figure, the black line is the 1-D stochastic mean time series and the blue band is the 97.5\% CIR.
+%Figures \ref{fig:USREvap} and\ref{fig:DSREvap} show the deterministic and stochastic model time-series of evaporation in the USR and DSR respectively.  The left and right sub-figures present the deterministic and stochastic models of evaporation, respectively.  In the stochastic sub-figure, the black line is the 1-D stochastic mean time-series and the blue band is the 97.5\% CIR.
 %
 %\begin{figure}[htbp]
 %\centering
@@ -1006,7 +1161,7 @@ River segment B in the USR does not have a flow gauge within its boundaries and 
 %		\caption{Stochastic Model.}
 %		\label{sub:USREvapS}
 %	\end{subfigure}
-%	\caption[USR deterministic and stochastic time series of evaporation.]{USR deterministic and stochastic time series of evaporation.}
+%	\caption[USR deterministic and stochastic time-series of evaporation.]{USR deterministic and stochastic time-series of evaporation.}
 %	\label{fig:USREvap}
 %\end{figure}
 %
@@ -1022,11 +1177,11 @@ River segment B in the USR does not have a flow gauge within its boundaries and 
 %		\caption{Stochastic Model.}
 %		\label{sub:DSREvapS}
 %	\end{subfigure}
-%	\caption[DSR deterministic and stochastic time series of evaporation.]{DSR deterministic and stochastic time series of evaporation.}
+%	\caption[DSR deterministic and stochastic time-series of evaporation.]{DSR deterministic and stochastic time-series of evaporation.}
 %	\label{fig:DSREvap}
 %\end{figure}
 %
-%Figures \ref{fig:USRPrecip} and\ref{fig:DSRPrecip} show the deterministic and stochastic model time series of precipitation in the USR and DSR respectively.  The left and right sub-figures present the deterministic and stochastic models of evaporation, respectively.  In the stochastic sub-figure, the black line is the 1-D stochastic mean time series and the blue band is the 97.5\% CIR.  
+%Figures \ref{fig:USRPrecip} and\ref{fig:DSRPrecip} show the deterministic and stochastic model time-series of precipitation in the USR and DSR respectively.  The left and right sub-figures present the deterministic and stochastic models of evaporation, respectively.  In the stochastic sub-figure, the black line is the 1-D stochastic mean time-series and the blue band is the 97.5\% CIR.  
 %
 %\begin{figure}[htbp]
 %\centering
@@ -1040,11 +1195,11 @@ River segment B in the USR does not have a flow gauge within its boundaries and 
 %		\caption{Stochastic Model.}
 %		\label{sub:USRPrecipS}
 %	\end{subfigure}
-%	\caption[USR deterministic and stochastic time series of precipitation.]{USR deterministic and stochastic time series of precipitation.}
+%	\caption[USR deterministic and stochastic time-series of precipitation.]{USR deterministic and stochastic time-series of precipitation.}
 %	\label{fig:USRPrecip}
 %\end{figure}
 %
-%Figure \ref{fig:DSRPrecip} shows the deterministic and stochastic model time series of precipitation in the USR.  Values are presented in units of mm.  These figures are presented in the same fashion as other deterministic and stochastic time series figures in this chapter
+%Figure \ref{fig:DSRPrecip} shows the deterministic and stochastic model time-series of precipitation in the USR.  Values are presented in units of mm.  These figures are presented in the same fashion as other deterministic and stochastic time-series figures in this chapter
 %
 %\begin{figure}[htbp]
 %\centering
@@ -1058,7 +1213,7 @@ River segment B in the USR does not have a flow gauge within its boundaries and 
 %		\caption{Stochastic Model.}
 %		\label{sub:DSRPrecipS}
 %	\end{subfigure}
-%	\caption[DSR deterministic and stochastic time series of precipitation.]{DSR deterministic and stochastic time series of precipitation.}
+%	\caption[DSR deterministic and stochastic time-series of precipitation.]{DSR deterministic and stochastic time-series of precipitation.}
 %	\label{fig:DSRPrecip}
 %\end{figure}
 %
@@ -1111,7 +1266,7 @@ River segment B in the USR does not have a flow gauge within its boundaries and 
 %
 %Values and figures presented in this section are the flow component sub-set of the complete water balance model results.  The analyses in this section are restricted to performing a reasonability check on the results.  Results in this section are to be compared with results from the other sub-sections from both the USR and DSR models to determine if results are acceptable.  Unacceptable results would indicate an error in the computational code or an underlying assumption.
 %
-%Figures \ref{fig:USRWaterFlow} and \ref{fig:DSRWaterFlow} present the sum of all surface flows in the USR and DSR, respectively, as time series plots.  The left and right sub-figures present the deterministic and stochastic time series, respectively.  The black line in the stochastic figures is the 1-D stochastic mean results with the blue band indicating the 95\% CIR.  Values in these figures and associated tables indicate the volume of water moving in and out of the respective reach in units of \si{\cubic\meter\per\second\per\kilo\meter}.  Standardizing the results to present values in units of storage per unit length allows for comparisons to be made between the two study reache and between water balance model components.  Positive values indicate that the reach gained water during the given time step.
+%Figures \ref{fig:USRWaterFlow} and \ref{fig:DSRWaterFlow} present the sum of all surface flows in the USR and DSR, respectively, as time-series plots.  The left and right sub-figures present the deterministic and stochastic time-series, respectively.  The black line in the stochastic figures is the 1-D stochastic mean results with the blue band indicating the 95\% CIR.  Values in these figures and associated tables indicate the volume of water moving in and out of the respective reach in units of \si{\cubic\meter\per\second\per\kilo\meter}.  Standardizing the results to present values in units of storage per unit length allows for comparisons to be made between the two study reache and between water balance model components.  Positive values indicate that the reach gained water during the given time step.
 %
 %\begin{figure}[htbp]
 %\centering
@@ -1127,7 +1282,7 @@ River segment B in the USR does not have a flow gauge within its boundaries and 
 %		\caption{Stochastic Model.}
 %		\label{sub:USRWaterFlowS}
 %	\end{subfigure}
-%	\caption[USR Arkansas River deterministic and stochastic surface water flow balance time series.]{USR Arkansas River deterministic and stochastic surface water flow balance time series.}
+%	\caption[USR Arkansas River deterministic and stochastic surface water flow balance time-series.]{USR Arkansas River deterministic and stochastic surface water flow balance time-series.}
 %	\label{fig:USRWaterFlow}
 %\end{figure}
 %
@@ -1145,7 +1300,7 @@ River segment B in the USR does not have a flow gauge within its boundaries and 
 %		\caption{Stochastic Model.}
 %		\label{sub:DSRWaterFlowS}
 %	\end{subfigure}
-%		\caption[DSR Arkansas River deterministic and stochastic surface water flow balance time series.]{DSR Arkansas River deterministic and stochastic surface water flow balance time series.}
+%		\caption[DSR Arkansas River deterministic and stochastic surface water flow balance time-series.]{DSR Arkansas River deterministic and stochastic surface water flow balance time-series.}
 %	\label{fig:DSRWaterFlow}
 %\end{figure}
 %
@@ -1332,7 +1487,7 @@ River segment B in the USR does not have a flow gauge within its boundaries and 
 %
 %Values and figures presented in this section are the atmospheric component sub-set of the complete water balance model results.  The analyses in this section are restricted to performing a reasonability check on the results.  Results in this section are to be compared with results from the other sub-sections from both the USR and DSR models to determine if results are acceptable.  Unacceptable results would indicate an error in the computational code or an underlying assumption.
 %
-%Figures \ref{fig:USRWaterAtm} and \ref{fig:DSRWaterAtm} present the precipitation gains less the evaporation losses in the USR and DSR, respectively, as time series plots.  The left and right sub-figures present the deterministic and stochastic time series, respectively.  The black line in the stochastic figures is the 1-D stochastic mean results with the blue band indicating the 95\% CIR.  Values in these figures and associated tables indicate the volume of water change due to precipitation gains and evaporation losses in units of \si{\cubic\meter\per\second\per\kilo\meter}.  Standardizing the results allows for comparisons to be made between the two study reaches and between water balance model components.  Positive values indicate that the reach gained water during the given time step.
+%Figures \ref{fig:USRWaterAtm} and \ref{fig:DSRWaterAtm} present the precipitation gains less the evaporation losses in the USR and DSR, respectively, as time-series plots.  The left and right sub-figures present the deterministic and stochastic time-series, respectively.  The black line in the stochastic figures is the 1-D stochastic mean results with the blue band indicating the 95\% CIR.  Values in these figures and associated tables indicate the volume of water change due to precipitation gains and evaporation losses in units of \si{\cubic\meter\per\second\per\kilo\meter}.  Standardizing the results allows for comparisons to be made between the two study reaches and between water balance model components.  Positive values indicate that the reach gained water during the given time step.
 %
 %\begin{figure}[htbp]
 %\centering
@@ -1348,7 +1503,7 @@ River segment B in the USR does not have a flow gauge within its boundaries and 
 %		\caption{Stochastic Model.}
 %		\label{sub:USRWaterAtmS}
 %	\end{subfigure}
-%	\caption[USR Arkansas River deterministic and stochastic evaporation and precipitation balance time series.]{USR Arkansas River deterministic and stochastic evaporation and precipitation balance time series.}
+%	\caption[USR Arkansas River deterministic and stochastic evaporation and precipitation balance time-series.]{USR Arkansas River deterministic and stochastic evaporation and precipitation balance time-series.}
 %	\label{fig:USRWaterAtm}
 %\end{figure}
 %
@@ -1366,11 +1521,11 @@ River segment B in the USR does not have a flow gauge within its boundaries and 
 %		\caption{Stochastic Model.}
 %		\label{sub:DSRWaterAtmS}
 %	\end{subfigure}
-%		\caption[DSR Arkansas River deterministic and stochastic evaporation and precipitation balance time series.]{DSR Arkansas River deterministic and stochastic evaporation and precipitation balance time series.}
+%		\caption[DSR Arkansas River deterministic and stochastic evaporation and precipitation balance time-series.]{DSR Arkansas River deterministic and stochastic evaporation and precipitation balance time-series.}
 %	\label{fig:DSRWaterAtm}
 %\end{figure}
 %
-%The figures show that there is a definite seasonal variation in the atmospheric component balance.  This temporal relationship follows the same pattern identified with the evaporation and precipitation time series values.  Losses are higher during the warmer months and lower during the colder months.  It should be noted that while the figures for the USR and DSR have the same pattern, the magnitude of the losses is very different.  This is due to the differences in river geometry.  The USR is wider therefore losing more water to evaporation than in the DSR.
+%The figures show that there is a definite seasonal variation in the atmospheric component balance.  This temporal relationship follows the same pattern identified with the evaporation and precipitation time-series values.  Losses are higher during the warmer months and lower during the colder months.  It should be noted that while the figures for the USR and DSR have the same pattern, the magnitude of the losses is very different.  This is due to the differences in river geometry.  The USR is wider therefore losing more water to evaporation than in the DSR.
 %
 %There figures appear to show that uncertainty with the atmospheric component is nearly equal to uncertainty with the storage component.  This isn't true as the storage component is orders of magnitude larger than the atmospheric component.  The low uncertainty associated with the atmospheric component is due to the efforts by Dr. Cha\'{a}vez and others to characterize evaporation and precipitation uncertainty.
 %
@@ -1441,13 +1596,13 @@ River segment B in the USR does not have a flow gauge within its boundaries and 
 %\clearpage{}
 %\section{Results of Calculated Unaccounted for Return Flows}
 %\label{sec:WaterModelResults}
-%Comparing deterministic and stochastic model must be performed and described with great care.  Deterministic models of time series events are one-dimensional models (1-D) as they vary only with respect to time.  These results are calculated as a vector with each position in the vector representing a specific time step.  Stochastic models are two-dimensional (2-D); they vary with time depending on the realized input variables.  These results are calculated as a matrix with each row representing a specific time step and each column representing a specific realization.  Each time step in the deterministic models correspond to the same time step in the stochastic models.
+%Comparing deterministic and stochastic model must be performed and described with great care.  Deterministic models of time-series events are one-dimensional models (1-D) as they vary only with respect to time.  These results are calculated as a vector with each position in the vector representing a specific time step.  Stochastic models are two-dimensional (2-D); they vary with time depending on the realized input variables.  These results are calculated as a matrix with each row representing a specific time step and each column representing a specific realization.  Each time step in the deterministic models correspond to the same time step in the stochastic models.
 %
-%Results from the deterministic time series models are graphically presented as time series with one value for each time step.  Simplified results are also presented.  The mean, 2.5th, and 97.5th percentile of the time series values are calculated.  The 2.5th and 97.5th percentile represent the upper and lower bounds of the 95th central inter-percentile range (CIR).  The mean value represents the most likely value throughout the entire study period. Most of the input variables fit a normal distribution, therefore using the mean as the expected value is acceptable.  Deviations from this case will be discussed.
+%Results from the deterministic time-series models are graphically presented as time-series with one value for each time step.  Simplified results are also presented.  The mean, 2.5th, and 97.5th percentile of the time-series values are calculated.  The 2.5th and 97.5th percentile represent the upper and lower bounds of the 95th central inter-percentile range (CIR).  The mean value represents the most likely value throughout the entire study period. Most of the input variables fit a normal distribution, therefore using the mean as the expected value is acceptable.  Deviations from this case will be discussed.
 %
-%Results from the stochastic time series models are graphically presented as a time series.  The stochastic models have more than one possible realized value or result for each time step.  This presents a problem when comparing the deterministic and stochastic models.  To solve this issue, the mean, 2.5th, and 97.5th percentile are calculated for each time step.  This provides three 1-D time series representations of the stochastic model.  The 1-D stochastic mean time series represents the most likely values for each time step.  The 2.5th and 97.5th percentile 1-D time series represent the upper and lower bounds of the 95th inter-percentile range.  When plotted together they provide the most likely value and the range of probable values.
+%Results from the stochastic time-series models are graphically presented as a time-series.  The stochastic models have more than one possible realized value or result for each time step.  This presents a problem when comparing the deterministic and stochastic models.  To solve this issue, the mean, 2.5th, and 97.5th percentile are calculated for each time step.  This provides three 1-D time-series representations of the stochastic model.  The 1-D stochastic mean time-series represents the most likely values for each time step.  The 2.5th and 97.5th percentile 1-D time-series represent the upper and lower bounds of the 95th inter-percentile range.  When plotted together they provide the most likely value and the range of probable values.
 %
-%As with the deterministic model, summary statistics are generated to describe the 1-D stochastic mean time series model.  The mean, 2.5th, and 97.5th percentile are calculated and compared to the equivalent values from the deterministic model.  This method of comparing the various deterministic and stochastic values and results is dependent on the distribution of values within each time step of the stochastic model.  If the values are normal or near normally distributed, then this analysis will be valid.  Deviations from the normal distribution will be discussed.
+%As with the deterministic model, summary statistics are generated to describe the 1-D stochastic mean time-series model.  The mean, 2.5th, and 97.5th percentile are calculated and compared to the equivalent values from the deterministic model.  This method of comparing the various deterministic and stochastic values and results is dependent on the distribution of values within each time step of the stochastic model.  If the values are normal or near normally distributed, then this analysis will be valid.  Deviations from the normal distribution will be discussed.
 %
 %\emph{I - present river segment Q results}\\
 %
@@ -1455,7 +1610,7 @@ River segment B in the USR does not have a flow gauge within its boundaries and 
 %
 %Values and figures presented in this section are the results from calculations performed as described in chapter \ref{chap:Model Development} and all other precursor calculations.  The primary purpose of this analysis was to determine if the computational code and assumptions used to generate the stochastic distributions of dissolved selenium river mass transport changes due to surface water flows were performed correctly.
 %
-%All selenium mass transport rates in the surface waters are calculated as positive values regardless of whether they discharge to or receive selenium from the main stem of the river.  Figure \ref{fig:ExampleSeFlux} is an example figure that shows the deterministic and stochastic time series of the mass transport at each calculation point.  This particular figure presents data for the upstream end of the USR.  Two sub-figures are provided.  Sub-figure a is the deterministic model time series and sub-figure b is the stochastic model time series.  The line is the mean of the realizations and the blue band is the 97.5th CIR.  Similar figures were created for all segments in both study region river reaches and are presented in appendix \ref{App:SeF-S}.
+%All selenium mass transport rates in the surface waters are calculated as positive values regardless of whether they discharge to or receive selenium from the main stem of the river.  Figure \ref{fig:ExampleSeFlux} is an example figure that shows the deterministic and stochastic time-series of the mass transport at each calculation point.  This particular figure presents data for the upstream end of the USR.  Two sub-figures are provided.  Sub-figure a is the deterministic model time-series and sub-figure b is the stochastic model time-series.  The line is the mean of the realizations and the blue band is the 97.5th CIR.  Similar figures were created for all segments in both study region river reaches and are presented in appendix \ref{App:SeF-S}.
 %
 %Results in these figures and associated tables are presented in units of \si{\kilo\gram\per\day\per\kilo\meter}.  Standardizing values to mass storage per unit length allows for comparison between all river segments in both study reaches.  This also allows for comparison between the mass storage change components and the mass transport components of the mass balance models.
 %
@@ -1471,7 +1626,7 @@ River segment B in the USR does not have a flow gauge within its boundaries and 
 %		\caption{Stochastic Model.}
 %		\label{sub:ExampleSSeFlux}
 %	\end{subfigure}
-%	\caption[River surface water deterministic and stochastic dissolved selenium mass transport time series.]{River surface water deterministic and stochastic dissolved selenium mass transport time series.  This is an example figure presenting the results for the upstream end of the USR.  Additional figures for the other USR and DSR calculated points are provided in the appendix noted in the text.  For sub-figure b, the line is the mean of the realizations and the blue band is the 97.5th CIR.}
+%	\caption[River surface water deterministic and stochastic dissolved selenium mass transport time-series.]{River surface water deterministic and stochastic dissolved selenium mass transport time-series.  This is an example figure presenting the results for the upstream end of the USR.  Additional figures for the other USR and DSR calculated points are provided in the appendix noted in the text.  For sub-figure b, the line is the mean of the realizations and the blue band is the 97.5th CIR.}
 %	\label{fig:ExampleSeFlux}
 %\end{figure}
 %
@@ -1677,7 +1832,7 @@ River segment B in the USR does not have a flow gauge within its boundaries and 
 %
 %With both figures, the respective flow or flux component is the more significant contributor to the respective models.  This graphical presentation shows that it is unreasonable to assume that water storage and mass storage changes can be neglected.  The atmospheric component of the water balance model, while less significant, cannot be neglected either.  The percent contribution is fairly low but not insignificant.
 %
-%Table \ref{tab:USRImpact} presents the percent contribution distributions for each major model component.  The values presented are from the 1-D stochastic mean model with the mean, 2.5th, and 97.5th percentile taken from this time series.  This table shows that the respective contribution fractions have a large variation.  The storage component and flow components are nearly equal contributors to the water balance model.  This isn't the case with the mass balance model where the selenium transport component accounts for the majority of the model.  The water balance atmospheric component, while small, is still significant enough to warrant its inclusion in the model.
+%Table \ref{tab:USRImpact} presents the percent contribution distributions for each major model component.  The values presented are from the 1-D stochastic mean model with the mean, 2.5th, and 97.5th percentile taken from this time-series.  This table shows that the respective contribution fractions have a large variation.  The storage component and flow components are nearly equal contributors to the water balance model.  This isn't the case with the mass balance model where the selenium transport component accounts for the majority of the model.  The water balance atmospheric component, while small, is still significant enough to warrant its inclusion in the model.
 %
 %\begin{table}[htbp]
 %\centering
@@ -1790,7 +1945,7 @@ River segment B in the USR does not have a flow gauge within its boundaries and 
 %\end{table}
 %\clearpage
 %
-%The typical method for calculating a river water balance includes negating daily storage change and negating the effects of evaporation and precipitation.  This study assumed that these assumptions were false for the LARB and included major portions of the total effort to calculating daily changes in storage and the daily effects of evaporation and precipitation.  Tables \ref{tab:USRNegate} and \ref{tab:DSRNegate} present the percent difference when major components of the USR and DSR models are negated, respectively.  The values are presented as percent change from the complete model.  Calculations were performed by calculating the models without the neglected components and comparing the time series with the complete model.  The values presented are the 1-D stochastic mean of the calculated percent difference.
+%The typical method for calculating a river water balance includes negating daily storage change and negating the effects of evaporation and precipitation.  This study assumed that these assumptions were false for the LARB and included major portions of the total effort to calculating daily changes in storage and the daily effects of evaporation and precipitation.  Tables \ref{tab:USRNegate} and \ref{tab:DSRNegate} present the percent difference when major components of the USR and DSR models are negated, respectively.  The values are presented as percent change from the complete model.  Calculations were performed by calculating the models without the neglected components and comparing the time-series with the complete model.  The values presented are the 1-D stochastic mean of the calculated percent difference.
 %
 %\begin{table}[htbp]
 %\centering
@@ -1851,6 +2006,12 @@ River segment B in the USR does not have a flow gauge within its boundaries and 
 %Groundwater flows that are within an order of magnitude of each other are within acceptable limits.  Groundwater flow rates are calculated as the product of the soil permeability and the head difference between two points.  The major variation occurs with the conductivity of soils.  Nearly identical sandy soils, such as those found in the LARB can have permeability values that are an order of magnitude different.  This is evidenced by tables of permeability of typical soils found in many groundwater texts.
 %
 %The difference between the study regions is nearly negligible when looking at the mass balance models.  these models have mean values that are nearly identical.  This allows us to conclude that the selenium dissolution and transport processes that are active in the USR are equal or approximately equal in magnitude to those in the DSR.
+
+\begin{table}[htbp]
+	\caption[USGS Measured Field Parameter Accuracy Rating Table.]{USGS Measured Field Parameter Accuracy Rating Table.  This table was taken from the USGS annual water data report. }
+	\label{tab:USGSError}
+	\includegraphics[width=6in]{"Figures/USGS_error_table"}
+\end{table}
 
 \clearpage{}
 \end{linenumbers}
