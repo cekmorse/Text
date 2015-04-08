@@ -161,5 +161,25 @@
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}} % help define table column widths when required
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-
+\def\subtabletop{
+	\renewcommand{\thetable}{\arabic{section}.\arabic{table}}
+	\addtocounter{table}{0}
+}
+\def\subtablemid{
+	\renewcommand{\thetable}{\arabic{section}.\arabic{table} (Cont)}
+	\addtocounter{table}{-1}
+}
+\def\subfiguretop{
+	\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+	\addtocounter{figure}{0}
+}
+\def\subfiguremid{
+	\renewcommand{\thefigure}{\arabic{section}.\arabic{figure} (Cont)}
+	\addtocounter{figure}{-1}
+}
+\def\tablevspace{
+	\setlength{\bigskipamount}{24pt plus 2pt minus 2pt}
+	\bigskip
+	\setlength{\bigskipamount}{12pt plus 2pt minus 2pt}
+}
 %  -----  End Custom Commands  -----  

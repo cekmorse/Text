@@ -512,96 +512,20 @@ Correlation values only provides a numerical value to describe the relationship 
 River segment B in the USR does not have a flow gauge within its boundaries and therefore has no reported flow depths. This segment has an additional irrigation diversion check structure within its boundaries, thereby sub-dividing segment B into two sub-segments, each with its own ungauged flow depth.  Due to segment B being the shortest, composing only 3.9\% of the USR's total length, and the additional variability of the possible flow depth, the average daily flow depth within segment B is taken as the mean of the reported flow depths in segment A and C.  Top width and volume change calculation follows the previously described methodology.
 
 \clearpage
-\subsection{River Storage Change Results}
-%The depths and top widths were visually compared to confirm that the calculation results were reasonable.  Figures \ref{fig:TWandH_USR} and \ref{fig:TWandH_DSR} show the flow depths and river top widths for river segments in the USR and DSR, respectively.  The flow depths and widths presented are the stochastic model mean time-series values.  The primary purpose of this analysis was to determine if the computational code and assumptions used to generate the stochastic distributions of river segment average daily flow depth and average daily top width were performed correctly.
-
-% Example figure option
-%\begin{figure}[htbp]
-%\centering
-%	\includegraphics[width=6in]{"Figures/Results_USR/Stochastic/G d&w Today A"}
-%	\caption[River segment flow depth and top width results comparison.]{River segment flow depth and top width results comparison.  This is an example figure presenting the results for river segment A in the USR.  Additional figures for the other USR and DSR river segments are provided in the appendix.}
-%	\label{fig:ExampleTWandH}
-%\end{figure}
-
-% These results are presented in other figures
-%\begin{figure}[htbp]
-%	\centering
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.75\linewidth]{"Figures/Results_USR/Stochastic/G d&w Today A"}
-%		\subcaption{Segment A}
-%		\label{sub:TWandH_A}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.75\linewidth]{"Figures/Results_USR/Stochastic/G d&w Today B"}
-%		\subcaption{Segment B}
-%		\label{sub:TWandH_B}
-%	\end{subfigure}
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.75\linewidth]{"Figures/Results_USR/Stochastic/G d&w Today C"}
-%		\subcaption{Segment C}
-%		\label{sub:TWandH_C}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.75\linewidth]{"Figures/Results_USR/Stochastic/G d&w Today D"}
-%		\subcaption{Segment D}
-%		\label{sub:TWandH_D}
-%	\end{subfigure}
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.75\linewidth]{"Figures/Results_USR/Stochastic/G d&w Today E"}
-%		\subcaption{Segment E}
-%		\label{sub:TWandH_E}
-%	\end{subfigure}
-%	\caption[River segment flow depth and top width results comparison.]{River segment flow depth and top width results comparison.}
-%	\label{fig:TWandH_USR}
-%\end{figure}
-%
-%\begin{figure}[htbp]
-%	\centering
-%	\missingfigure{figs not done in R}
-%%	\begin{subfigure}{0.5\textwidth}
-%%		\centering
-%%		\includegraphics[width=0.75\linewidth]{"Figures/Results_DSR/Stochastic/G d&w Today F"}
-%%		\subcaption{Segment F}
-%%		\label{sub:TWandH_F}
-%%	\end{subfigure}%
-%%	\begin{subfigure}{0.5\textwidth}
-%%		\centering
-%%		\includegraphics[width=0.75\linewidth]{"Figures/Results_DSR/Stochastic/G d&w Today G"}
-%%		\subcaption{Segment G}
-%%		\label{sub:TWandH_G}
-%%	\end{subfigure}
-%	\caption[River segment flow depth and top width results comparison.]{River segment flow depth and top width results comparison.}
-%	\label{fig:TWandH_DSR}
-%\end{figure}
-
-%Goodness-of-fit is not an analysis performed on the analysis presented in Figures \ref{fig:TWandH_USR} and \ref{fig:TWandH_DSR}.  Analysis is restricted to verifying that the stochastic mean time-series flow depth and calculated top width are within acceptable ranges.  Flow depth values should be between \SIrange{0.15}{1.5}{\meter} (\SIrange{0.5}{5}{\foot}).  Top width values should be within the ranges surveyed.  All figures show that this is true.
-
 The time-series plots of all four stochastic geometric parameters for each study region river section segment is presented in Figures \ref{fig:GeoTS_US} and \ref{fig:GeoTS_DS} for the USR and DSR, respectively.  The black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values as defined by the stochastic model 2.5th percentile time-series and the stochastic model 97.5th percentile time-series.  The red dashed line in the flow depth portion of the figure indicates the reported flow depth values.  It is plotted under the stochastic model mean time-series line and as such is only visible when either the stochastic model mean time-series value was not calculated due to missing data or when the two values deviate.
 
-% Example figure option
-%\begin{figure}[htbp]
-%\centering
-%	\includegraphics[width=6in]{"Figures/Results_USR/Stochastic/G TS A"}
-%	\caption[Stochastic geometric parameter time-series.]{Stochastic geometric parameter time-series.  This is an example figure presenting the results for river segment A in the USR.  Additional figures for the other USR and DSR river segments are provided in the appendix noted in the text.  The black lines indicate the 1-D stochastic mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.  The red dashed line in the flow depth portion of the figure indicates the reported flow depth values.}
-%	\label{fig:GeoTS}
-%\end{figure}
-
+\subfiguretop
 \begin{landscape}
 	\begin{figure}
-		\begin{subfigure}{0.9\textwidth}
+		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=0.9\textwidth]{"Figures/Results_USR/Stochastic/G TS A"}
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/G TS A"}
 			\subcaption{Segment A}		
 			\label{sub:GeoTS_A}
 		\end{subfigure}%
-		\begin{subfigure}{0.9\textwidth}
+		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=0.9\textwidth]{"Figures/Results_USR/Stochastic/G TS B"}
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/G TS B"}
 			\subcaption{Segment B}
 			\label{sub:GeoTS_B}
 		\end{subfigure}
@@ -610,20 +534,18 @@ The time-series plots of all four stochastic geometric parameters for each study
 	\end{figure}
 \end{landscape}
 
-\renewcommand{\thefigure}{\arabic{section}.\arabic{figure} (Cont)}
-\addtocounter{figure}{-1}
-
+\subfiguremid
 \begin{landscape}
 	\begin{figure}
-		\begin{subfigure}{0.9\textwidth}
+		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=0.9\textwidth]{"Figures/Results_USR/Stochastic/G TS C"}
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/G TS C"}
 			\subcaption{Segment C}
 			\label{sub:GeoTS_C}	
 		\end{subfigure}%
-		\begin{subfigure}{0.9\textwidth}
+		\begin{subfigure}{0.7\textwidth}
 			\centering			
-			\includegraphics[width=0.9\textwidth]{"Figures/Results_USR/Stochastic/G TS D"}
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/G TS D"}
 			\subcaption{Segment D}
 			\label{sub:GeoTS_D}
 		\end{subfigure}
@@ -631,14 +553,12 @@ The time-series plots of all four stochastic geometric parameters for each study
 	\end{figure}
 \end{landscape}
 
-\renewcommand{\thefigure}{\arabic{section}.\arabic{figure} (Cont)}
-\addtocounter{figure}{-1}
-
+\subfiguremid
 \begin{landscape}
 	\begin{figure}
-		\begin{subfigure}{0.9\textwidth}
+		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=0.9\textwidth]{"Figures/Results_USR/Stochastic/G TS E"}
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/G TS E"}
 			\subcaption{Segment E}
 			\label{sub:GeoTS_E}	
 		\end{subfigure}
@@ -646,9 +566,7 @@ The time-series plots of all four stochastic geometric parameters for each study
 	\end{figure}
 \end{landscape}
 
-\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
-\addtocounter{figure}{0}
-
+\subfiguretop
 \begin{landscape}
 	\begin{figure}
 			\missingfigure{figs not done in R}
@@ -669,130 +587,242 @@ The time-series plots of all four stochastic geometric parameters for each study
 	\end{figure}
 \end{landscape}
 
-Tables \ref{tab:SegmentSurfaceArea_A} to \ref{tab:SegmentSurfaceArea_E} and Tables \ref{tab:SegmentSurfaceArea_F} and \ref{tab:SegmentSurfaceArea_G} present the river segment average daily surface area deterministic model time-series and stochastic model summary statistic time-series results for the USR and DSR, respectively.  Summary results for river segment average daily flow depth and river segment average daily top width are not included as they are not direct precursors to the final model results.  The surface area is directly used for precipitation and evaporation calculations.
-
-\begin{table}[htbp]
-\centering
-\caption[USR river segment A surface area deterministic and stochastic model numerical results.]{USR river segment A surface area deterministic and stochastic model numerical results.  Values are in hectares (acres).}
-\label{tab:SegmentSurfaceArea_A}
-	\input{"Tables/tableAreaA.txt"}
-\end{table}
-
-\begin{table}[htbp]
-	\centering
-	\caption[USR river segment B surface area deterministic and stochastic model numerical results.]{USR river segment B surface area deterministic and stochastic model numerical results.  Values are in hectares (acres).}
-	\label{tab:SegmentSurfaceArea_B}
-		\input{"Tables/tableAreaB.txt"}
-\end{table}
-
-\begin{table}[htbp]
-	\centering
-	\caption[USR river segment C surface area deterministic and stochastic model numerical results.]{USR river segment C surface area deterministic and stochastic model numerical results.  Values are in hectares (acres).}
-	\label{tab:SegmentSurfaceArea_C}
-	\input{"Tables/tableAreaC.txt"}
-\end{table}
-
-\begin{table}[htbp]
-	\centering
-	\caption[USR river segment D surface area deterministic and stochastic model numerical results.]{USR river segment D surface area deterministic and stochastic model numerical results.  Values are in hectares (acres).}
-	\label{tab:SegmentSurfaceArea_D}
-	\input{"Tables/tableAreaD.txt"}
-\end{table}
-
-\begin{table}[htbp]
-	\centering
-	\caption[USR river segment E surface area deterministic and stochastic model numerical results.]{USR river segment E surface area deterministic and stochastic model numerical results.  Values are in hectares (acres).}
-	\label{tab:SegmentSurfaceArea_E}
-	\input{"Tables/tableAreaE.txt"}
-\end{table}
-
 Figures \ref{fig:GeoTS_US} and \ref{fig:GeoTS_DS} were analyzed to verify that direct correlations existed between the flow depth and the calculated geometric parameters.  Top width and surface area should increase and decrease in proportion with the increase and decrease in flow depth.  Volume changes are based on two flow depth values and do not have a direct correlation to the flow depth displayed in the figure.  All of the river sections show the correct correlations between flow depth and the calculated river geometric parameters.
 
+Tables \ref{tab:SegmentSurfaceArea_USR} and \ref{tab:SegmentSurfaceArea_DSR} present the river segment average daily surface area deterministic model time-series and stochastic model summary statistic time-series results for the USR and DSR, respectively.  Summary results for river segment average daily flow depth and river segment average daily top width are not included as they are not direct precursors to the final model results.  The surface area is directly used for precipitation and evaporation calculations.
 
-%\emph{VI - present river segment results}\\
-%The average river top with, surface area, and volume change values were compared between the deterministic and 1-D stochastic mean time-series models and are reported in table \ref{tab:WAVResults} for both the USR and DSR.  This table is presented in the same fashion as previous tables in this chapter.  Flow depth, which is an input variable, is discussed and presented in section \ref{sec:InStreamData}.
-%
-%\begin{table}[htbp]
-%  \centering
-%  \caption[Stochastic and deterministic model river geometry statistics.]{Stochastic and deterministic model river geometry statistics.  Average river segment top width ($Tw$) is given in \si{\meter}.  Average river segment surface area ($As$) is given in \si{\hectare}.  River segment volume change between time steps ($V$) is given in \si{\hectare\meter}.}
-%  \label{tab:WAVResults}
-%    \begin{tabular}{l|ccc|ccc|c}
-%   \toprule
-%    \multirow{2}[0]{*}{Variable} & \multicolumn{3}{c}{Deterministic} & \multicolumn{3}{c}{Stochastic Mean} & \% Diff\\\cline{2-4} \cline{5-7}
-%    & 2.5\% & Mean & 97.5\% & 2.5\% & Mean & 97.5\% & Mean\\
-%    \midrule
-%    \midrule
-%	$Tw_{A}$ (m)&	42.97&	51.28&	60.56&	17.1&	52.64&	89.34&	2.65\\         
-%	$Tw_{B}$&		40.84&	48.59&	58.37&	16.52&	50.43&	86.7&	3.79\\         
-%	$Tw_{C}$&		40.08&	47.92&	56.36&	14.49&	48.91&	84.84&	2.07\\         
-%	$Tw_{D}$&		39.93&	48.23&	60.05&	14.69&	49.05&	85.99&	1.7\\          
-%	$Tw_{E}$&		42.97&	50.97&	59.8&	16.32&	51.39&	88.17&	0.824\\        
-%	$Tw_{F}$&		8.4&	13.26&	31&	6.513&	18.55&	41.09&	39.9\\             
-%	$Tw_{G}$&		19.06&	23.95&	36.21&	11.71&	27.49&	46.54&	14.8\\         
-%	\midrule        
-%	$As_{A}$ (ha)&	53.94&	64.37&	76.02&	21.46&	66.08&	112.1&	2.66\\         
-%	$As_{B}$&		15.78&	18.77&	22.54&	6.381&	19.48&	33.49&	3.78\\         
-%	$As_{C}$&		151&	182.4&	227.1&	55.57&	185.5&	325.2&	1.7\\          
-%	$As_{D}$&		151&	182.4&	227.1&	55.57&	185.5&	325.2&	1.7\\          
-%	$As_{E}$&		61.55&	73&	85.65&	23.38&	73.61&	126.3&	0.836\\            
-%	$As_{F}$&		31.63&	49.92&	116.8&	24.53&	69.85&	154.8&	39.9\\         
-%	$As_{G}$&		47.54&	59.75&	90.31&	29.21&	68.59&	116.1&	14.8\\         
-%	\midrule        
-%	$V_{A}$ (ha m)&	-9.535&	0.01075&	11.59&	-13.07&	0.01142&	14.23&	6.23\\ 
-%	$V_{B}$&		-2.395&	-0.01&	2.672&	-3.236&	-0.005911&	3.472&	-40.9\\    
-%	$V_{C}$&		-38.88&	-0.1476&	50.93&	-46.96&	-0.126&	54.02&	-14.6\\    
-%	$V_{D}$&		-38.88&	-0.1476&	50.93&	-46.96&	-0.126&	54.02&	-14.6\\    
-%	$V_{E}$&		-9.254&	-0.008378&	12.9&	-13.42&	-0.008277&	15.09&	-1.21\\
-%	$V_{F}$&		-6.872&	-0.08825&	6.359&	-13&	-0.1035&	12.55&	17.3\\ 
-%	$V_{G}$&		-3.528&	-0.00924&	4.122&	-9.494&	-0.009359&	9.611&	1.29\\ 
-%    \bottomrule
-%    \end{tabular}
-%\end{table}
-%
-%The values in these tables are analyzed for goodness-of-fit by observation of the percent difference column.  Values should be low, indicating that the deterministic model is not only a sub-set of the 1-D stochastic mean values, but represent the expected value with relatively high certainty.  In all cases, presented in the table, this is true.
-%
-%The deterministic and stochastic water balance models each consist of three major components.  The flow component is the sum of all surface flows, the storage component is the sum of all storage changes, and the atmospheric component is the precipitation gains less the evaporation losses.
-%
+\subtabletop
+\begin{table}[htbp]
+	\centering
+	\caption[USR river segment surface area deterministic and stochastic model numerical results.]{USR river segment surface area deterministic and stochastic model numerical results.  Values are in hectares (\si{\hectare}) with values in parentheses in acres (\si{\acre}).}
+	\label{tab:SegmentSurfaceArea_USR}
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{USR river segment A}
+		\input{"Tables/tableAreaA.txt"}
+	\end{subtable}
+	
+	\par\bigskip
+	\par\bigskip
+	
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{USR river segment B}
+		\input{"Tables/tableAreaB.txt"}
+	\end{subtable}
+\end{table}
+
+\subtablemid
+\begin{table}[htbp]
+	\centering
+	\caption{USR river segment surface area deterministic and stochastic model numerical results.}
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{USR river segment C}
+		\input{"Tables/tableAreaC.txt"}
+	\end{subtable}
+	
+	\par\bigskip
+	\par\bigskip
+	
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{USR river segment D}
+		\input{"Tables/tableAreaD.txt"}
+	\end{subtable}
+\end{table}
+
+\subtablemid
+\begin{table}[htbp]
+	\centering
+	\caption{USR river segment surface area deterministic and stochastic model numerical results.}
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{USR river segment E}
+		\input{"Tables/tableAreaE.txt"}
+	\end{subtable}
+\end{table}
+
+\subtabletop
+\begin{table}[htbp]
+	\centering
+	\caption[DSR river segment surface area deterministic and stochastic model numerical results.]{DSR river segment surface area deterministic and stochastic model numerical results.  Values are in hectares (\si{\hectare}) with values in parentheses in acres (\si{\acre}).}
+	\label{tab:SegmentSurfaceArea_DSR}
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{DSR river segment F}
+%		\input{"Tables/tableAreaF.txt"}
+	\end{subtable}
+	
+	\par\bigskip
+	\par\bigskip
+	
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{DSR river segment G}
+%		\input{"Tables/tableAreaG.txt"}
+	\end{subtable}
+\end{table}
+
+Every one of these tables shows that the stochastic model tends to underestimate the river segment water surface area by approximately 38\% in the USR and XX\% in the DSR.  The correlation values indicate that the deterministic model time-series and stochastic model mean time-series are highly correlated.  The corresponding correlation scatter-plots show that the relationships are linear.  This is due to the way the river section average daily top width was estimated for the deterministic models.  Since $ \beta_1 $ and $ \beta_2 $ are drawn from distributions and the deterministic model requires that none of the input values are variable, the most likely values from the respective distributions were chosen as the fixed values.  The $ \beta $ values from both study reaches are not normal, therefore the most likely value is not the mean and the values are not evenly distributed on either side of the likely value.  The skewness of the $ \beta $ values is represented in the stochastic model.  Calibrating the deterministic models to find the $ \beta $ values that approximate the stochastic model defeats the purpose of the deterministic model, which is to estimate the most likely values.  Sensitivity analysis which is discussed later, will show whether or not the river section average daily surface area values are significant enough to warrant the effort required to calibrate them to the stochastic model.
+
+Tables \ref{tab:SegmentVolumeChange_USR} and \ref{tab:SegmentVolumeChange_DSR} present the river segment average daily surface area deterministic model time-series and stochastic model summary statistic time-series results for the USR and DSR, respectively.  Summary results for river segment average daily flow depth and river segment average daily top width are not included as they are not direct precursors to the final model results.  The surface area is directly used for precipitation and evaporation calculations.
+
+\subtabletop
+\begin{table}[htbp]
+	\centering
+	\caption[USR river segment volume change deterministic and stochastic model numerical results.]{USR river segment volume change deterministic and stochastic model numerical results.  Values are in hectare-meters (\si{\hectare\meter}) and the values in parentheses are in acres (\si{\acre}).}
+	\label{tab:SegmentVolumeChange_USR}
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{USR river segment A}
+		\input{"Tables/tableVolumeA.txt"}
+	\end{subtable}
+	
+	\tablevspace
+		
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{USR river segment B}
+		\input{"Tables/tableVolumeB.txt"}
+	\end{subtable}
+\end{table}	
+
+\subtablemid
+\begin{table}[htbp]
+	\centering
+	\caption{USR river segment volume change deterministic and stochastic model numerical results.}
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{USR river segment C}
+		\input{"Tables/tableVolumeC.txt"}
+	\end{subtable}
+
+	\par\bigskip
+	\par\bigskip
+	
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{USR river segment D}
+		\input{"Tables/tableVolumeD.txt"}
+	\end{subtable}
+\end{table}
+
+\subtablemid
+\begin{table}[htbp]
+	\centering
+	\caption{USR river segment volume change deterministic and stochastic model numerical results.}
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{USR river segment E}
+		\input{"Tables/tableVolumeE.txt"}
+	\end{subtable}
+\end{table}
+
+\subtabletop
+\begin{table}[htbp]
+	\centering
+	\caption[DSR river segment volume change deterministic and stochastic model numerical results.]{DSR river segment volume change deterministic and stochastic model numerical results.  Values are in hectare-meters (\si{\hectare\meter}) and the values in parentheses are in acres (\si{\acre}).}
+	\label{tab:SegmentVolumeChange_DSR}
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{DSR river segment F}
+%		\input{"Tables/tableVolumeF.txt"}
+	\end{subtable}
+	
+	\par\bigskip
+	\par\bigskip
+	
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{DSR river segment G}
+%		\input{"Tables/tableVolumeG.txt"}
+	\end{subtable}
+\end{table}	
+
+The mean of the deterministic model time-series and the mean of the stochastic model mean time-series calculated average daily river segment water volume change are much closer to each other as reported in Tables \ref{tab:SegmentVolumeChange_USR} and \ref{tab:SegmentVolumeChange_DSR}.  The stochastic model mean time-series underestimates the deterministic model time-series values by approximately 47\%.  The difference between the two models in terms of water volume is quite small, less than \SI{1}{\hectare\meter}.  The Pearson correlation values and their associated scatter-plots indicate that the results are strongly linearly related.  The effects of uncertainty on river segment average river daily water volume change is much smaller than the effect on surface area.  As with the surface area results, the significant portion of the difference between the deterministic model time-series and the stochastic model mean time-series is due to the estimation of the most likely values of $ \beta_1 $ and $ \beta_2 $ used in the deterministic models.  At this point, adjusting or calibrating these values such that the results of the deterministic and stochastic models are more closely aligned seems unnecessary.
+
+Figure \ref{fig:USRWaterStore} and \ref{fig:DSRWaterStore} presents the river reach average daily river water storage change deterministic model time-series for the USR.  The left-hand figure is the deterministic model time-series.  The right-hand figure is the stochastic model results with the black line representing the calculated stochastic model mean time-series and the blue band representing the space between the stochastic model 97.5th percentile time-series and the stochastic model 2.5th percentile time-series.  The minimum and maximum range of values is not presented in this figure.
+
+\begin{figure}[htbp]
+\centering
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/Deterministic/Balance Water - storage"}
+		\subcaption{Deterministic Model.}
+		\label{sub:USRWaterStoreD}
+	\end{subfigure}%
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\missingfigure{}
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/Stochastic/Balance Water - storage"}
+		\subcaption{Stochastic Model.}
+		\label{sub:USRWaterStoreS}
+	\end{subfigure}
+	\caption[USR Arkansas River water storage change contribution to the water model.]{USR Arkansas River water storage change contribution to the water model.}
+	\label{fig:USRWaterStore}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\missingfigure{}
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Deterministic/Balance Water - storage"}
+		\subcaption{Deterministic Model.}
+	\end{subfigure}%
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\missingfigure{}
+		%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Stochastic/Balance Water - storage"}
+		\subcaption{Stochastic Model.}
+	\end{subfigure}
+	\caption[USR Arkansas River water storage change contribution to the water model.]{USR Arkansas River water storage change contribution to the water model.}
+	\label{fig:DSRWaterStore}
+\end{figure}
+
+Table xx presents the deterministic model time-series summary statistics and the summary statistics for each of the stochastic model summary statistics time-series for the river reach average daily water storage change in the USR and DSR.
+
+\begin{table}[htbp]
+	\centering
+	\begin{subtable}{\textwidth}
+		\centering
+%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Stochastic/Balance Water - storage"}
+		\subcaption{USR river reach average daily water storage change.}
+	\end{subtable}
+	\par\bigskip
+	\par\bigskip
+	\begin{subtable}{\textwidth}
+		\centering
+		%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Stochastic/Balance Water - storage"}
+		\subcaption{USR river reach average daily water storage change.}
+	\end{subtable}
+	\caption[caption]{caption}
+	\label{label}
+\end{table}
+
+
+
+
+
+
+The figures show that there is a definite seasonal variation in the storage component.  Stored water changes are smallest during the cold months and are increasingly larger during the growing season.  This pattern is caused by irrigation practices in the Lower Arkansas River Basin (LARV).  Stored irrigation water is released from reservoirs upstream of the LARV during the irrigation season as demands require.  During the winter, there is very little to no irrigation occurring.  This, combined with the low precipitation and no additional flow from snow-pack runoff, allow flows in the Arkansas R. to reach base flow level when the river is at a natural equilibrium.
+
+This pattern is not as pronounced in the DSR.  This is most likely due to required flow rates being maintained at the Colorado-Kansas border.  With the constant required flow, John Martin Reservoir releases only enough water to meet the required flow rate.  This creates a flow regime that is nearly constant through most of the DSR. 
+
+Deviations are noted during peak irrigation season.  These additional volume changes are most likely due to irrigation flows returning to the Arkansas R. from fields irrigated from canal systems that procure and store water upstream of John Martin Reservoir.  The Fort Lyon Storage Canal and Fort Lyon Canal are two examples of canal systems that perform this function.  Water removed from the USR, stored, and added to the DSR is not included in this study.
+
+\clearpage
+
+
+
+
+
 %Values and figures presented in this section are the storage component sub-set of the complete water balance model results.  The analyses in this section are restricted to performing a reasonability check on the results.  Results in this section are to be compared with results from the other model sub-sections from both the USR and DSR models to determine if results are acceptable.  Unacceptable results would indicate an error in the computational code or an underlying assumption.
 %
 %Figures \ref{fig:USRWaterStore} and \ref{fig:DSRWaterStore} present the sum of all river segment water storage changes in the USR and DSR, respectively, as time-series plots.  The left and right sub-figures present the deterministic and stochastic time-series, respectively.  The black line in the stochastic figures is the 1-D stochastic mean results with the blue band indicating the 95\% CIR.  Values in these figures and associated tables indicate the volume of water stored in the respective reach in units of \si{\cubic\meter\per\second\per\kilo\meter}.  Standardizing the results to present values in units of storage per unit length allows for comparisons to be made between the two study reaches and between water balance model components.  Positive values indicate that the reach's storage volume increase. 
-%
-%\begin{figure}[htbp]
-%\centering
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DUSR/Balance Water - storage"}
-%		\caption{Deterministic Model.}
-%		\label{sub:USRWaterStoreD}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/Balance Water - storage"}
-%		\caption{Stochastic Model.}
-%		\label{sub:USRWaterStoreS}
-%	\end{subfigure}
-%	\caption[Time series of the USR Arkansas R. water storage change contribution to the water model.]{Time series of the USR Arkansas R. water storage change contribution to the water model.}
-%	\label{fig:USRWaterStore}
-%\end{figure}
-%
-%\begin{figure}[htbp]
-%\centering
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DDSR/Balance Water - storage"}
-%		\caption{Deterministic Model.}
-%		\label{sub:DSRWaterStoreD}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Balance Water - storage"}
-%		\caption{Stochastic Model.}
-%		\label{sub:DSRWaterStoreS}
-%	\end{subfigure}
-%	\caption[Time series of the DSR Arkansas R. water storage change contribution to the water model.]{Time series of the DSR Arkansas R. water storage change contribution to the water model.}
-%	\label{fig:DSRWaterStore}
-%\end{figure}
-%
+
+
 %The figures show that there is a definite seasonal variation in the storage component.  Stored water changes are smallest during the cold months and are increasingly larger during the growing season.  This pattern is caused by irrigation practices in the Lower Arkansas River Basin (LARV).  Stored irrigation water is released from reservoirs upstream of the LARV during the irrigation season as demands require.  During the winter, there is very little to no irrigation occurring.  This, combined with the low precipitation and no additional flow from snow-pack runoff, allow flows in the Arkansas R. to reach base flow level when the river is at a natural equilibrium.
 %
 %This pattern is not as pronounced in the DSR.  This is most likely due to required flow rates being maintained at the Colorado-Kansas border.  With the constant required flow, John Martin Reservoir releases only enough water to meet the required flow rate.  This creates a flow regime that is nearly constant through most of the DSR. 
