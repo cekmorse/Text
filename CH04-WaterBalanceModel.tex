@@ -6,8 +6,6 @@
 \section{Water Balance Model Applied to the LARV}
 \label{sec:AppliedWaterModel}
 
-\subsection*{Water Balance Model Equation.}
-%\emph{II - Justify use of equation}\\
 The purpose of the water balance model is to determine the volume of unaccounted for water in each reach.  We begin with a basic water balance model as describe in most hydrology texts --- \parencite{wanielista1997}.
 \begin{equation}
 	\textnormal{change in storage = inputs - outputs} \nonumber
@@ -77,21 +75,18 @@ Spatial variability is the difference in the true value at different points when
 Almost all of the data was obtained from outside agencies and was not collected by the research team.  These agencies have data uncertainty ranges that account for all parameter uncertainties.  These uncertainties are expressed in accordance with the ISO Guide to Expression of Uncertainty in Measurement (GUM) \parencite{gum2008}.  While the GUM classifies uncertainty as either "Type A" or "Type B", the all of the data included in this thesis has uncertainty evaluations described as "Type B".  Type B evaluations usually use standard deviations and assumed probability distributions obtained from scientific judgment, available information, and possible variability of a measurement.
 
 The data originators have provided uncertainty ranges which include instrument measurement random error and uncertainties due to temporal variations of the measured location.  The root mean square method is used to estimate the uncertainty related to measurement of water quantity and water quality values \parencite{harmel2007, gum2008}.  \textcite{harmel2007} describe this measurement uncertainty as the “probably error range”, and quantify upper and lower uncertainty boundaries for measured data points as the following when attempting to specify an expected range of expected values.
-
 \begin{align}
 	\sigma^2 = \left( \frac{O_i-UO_{i}(l)}{3.9} \right)^2  &  \phantom{xxxxxxxx} or  & 	\sigma^2 = \left( \frac{UO_{i}(u)-O_i}{3.9} \right)^2 \label{eq:uncertainty1}
 \end{align}
-
 \begin{tabular}{r p{5in}}
 	Where:\\
 	$ \sigma^2 $ = & variance about measured data value $ O_i $.\\
 	$ O_i $ = & measured value.\\
 	$ UO_i $ = & upper $ (u) $ and lower $ (l) $ uncertainty boundaries.\\
-	$ 3.9 $ = & number of standard deviations accounting for $ >99.99 $\% of a normal probability distribution\\
+	$ 3.9 $ = & number of standard deviations accounting for $ >99.99 $\% of a normal probability distribution
 \end{tabular}\\
 
 The data collected for this thesis is assumed to represent the mean of a normal distribution of possible values.  The upper and lower bounds of the distributions are given as either a percent or value deviation from the mean.  Equation \ref{eq:uncertainty1} is re-written from the definition found in \textcite{harmel2007} to that found in equation \ref{eq:uncertainty2}.
-
 \begin{align}
 	\sigma^2 = \left( \frac{\mu - (\mu - \mu p)}{3.9} \right)^2  &  \phantom{wordsssssss} or \phantom{s}  & 	\sigma^2 = \left( \frac{(\mu + \mu p) - \mu}{3.9} \right)^2 \label{eq:uncertainty2}
 \end{align}
@@ -103,7 +98,6 @@ The data collected for this thesis is assumed to represent the mean of a normal 
 \end{tabular}\\
 
 Both of these equations in \ref{eq:uncertainty2} simplify to equation \ref{eq:uncertainty3}.  The standard deviation is shown as the calculated result due to the requirements of the modeling software.
-
 \begin{equation}
 \sigma = \frac{\mu p}{3.9}
 \label{eq:uncertainty3}
@@ -114,14 +108,12 @@ When the upper and lower bounds are defined as a fixed value deviation from the 
 \begin{align}
 	\sigma^2 = \left( \frac{\mu - (\mu - v)}{3.9} \right)^2  &  \phantom{wordsssssss} or \phantom{s}  & 	\sigma^2 = \left( \frac{(\mu + v) - \mu}{3.9} \right)^2 \label{eq:uncertainty4}
 \end{align}
-
 \begin{tabular}{r p{5in}}
 	Where:\\
 	$ v $ = & the reported value deviation from $ \mu $.\\
 \end{tabular}\\
 
 In this case, both equations in \ref{eq:uncertainty4} simplify to:
-
 \begin{equation}
 \sigma = \frac{v}{3.9}
 \label{eq:uncertainty5}
@@ -132,11 +124,10 @@ The difference between a model's calculated or estimated value and the reported 
 Non-parametric distribution models are used as an aid for analyzing uni-variate data sets.  Specifically, kernel density estimates (KDE) are used in conjunction with histograms to assist in visual analysis of the data.  Figure \ref{fig:ExampleDistAnalysis} is an example of a random sample of one of the input data sets used in this thesis.  The curve is the KDE.  The short vertical lines between the histogram and the x-axis, called a rug, depict the data values.  This figure adequately displays the resulting differences between histograms and KDE.  KDEs can more accurately depict data groupings that are lost in histogram bins.  The histogram leads us to believe that the data has a strong tendency to be near zero, wile the KDE shows that the majority of the data is between 0-20.  Histograms can more accurately depict extremes or cut-off values.  In the figure, there are no values less than zero.  The histogram clearly shows this while the KDE shows that there are values less than zero.  Both histograms and KDE are used throughout this thesis to assist in the description of distributions.  A rug is also presented with the histogram whenever the quantity of data allows for adequate data presentation.  A rug is not included when the data set is too large to allow for discreet identification of data values.
 
 \begin{figure}[htbp]
-\begin{center}
+\centering
 	\includegraphics[width=6in]{"Figures/Example KDE"}
 	\caption[Example kernel density estimate.]{Example kernel density estimate.  The data is a random sample of an input variable used in this thesis.  The curve depicts the kernel density estimate.  The short vertical lines between the histogram and the x-axis, called a rug, depict the data values.}
 	\label{fig:ExampleDistAnalysis}
-\end{center}
 \end{figure}
 
 Determining which parametric distribution best fits the uni-variate residual distribution requires the use of both the graphical and statistical tools.  For each residual distribution, probable parametric distributions types were chosen for testing against the residual distribution.  For each of these parametric distribution types, a best fit was generated using the maximum likely-hood estimator  (MLE) method.  These MLE results were then analyzed using Kolmogorov-Smirnov (K-S),  Cramer-von Mises (CvM), and Anderson-Darling (A-D) goodness-of-fit tests to determine which distribution type best fit the uni-variate residual distribution.  All three tests are non-parametric tests of continious uni-variate probability distributions.  The K-S and CvM tests calculate the difference between the empirical cumulative density function (ECDF) of the test data and the cumulative density function (CDF) of the tested reference distribution.  The K-S and CvM tests use different algorithms to perform the calculation.  Each of the goodness-of-fit tests has their own strength and weaknesses and as such, graphical tools are used to confirm or refute the statistical test results \parencite{delignette2014, venables2002, DAgostino1986}.
@@ -147,12 +138,10 @@ Determining which parametric distribution best fits the uni-variate residual dis
 
 %\emph{0 - define the equation and variables}
 River reach estimated stored water volume changes $( \frac{\Delta S}{\Delta t} ) $ from equation \ref{eq:water1} are the sum of the river segment stored water volume changes for each reach (Equation \ref{eq:storage1}).  The storage change for each segment is calculated independent of adjacent segments.
-
 \begin{equation}
 	\label{eq:storage1}
 	\frac{\Delta S}{\Delta t} = \sum \frac{\Delta S_i}{\Delta t}
 \end{equation}
-
 \begin{tabular}{rl}
 Where:\\
 $\Delta S$ = & Water storage change in the river reach.\\
@@ -174,16 +163,14 @@ River reach volume changes are calculated between two consecutive time steps.  R
 \end{tabular}\\
 
 Figure \ref{fig:segment model} shows the difference between a simplified example of a natural channel and the modeled channel.  Although the river is variable in width and depth along its entire lengths, it  is modeled as a trapezoidal prism with a constant length and with a cross-section that does not vary with respect to location.  It was reasoned that this simplistic model would best approximate the average channel shape along the entire reach.  The channel water surface elevation is assumed to be constant through each segment.  This assumption is not true in nature, but we are not concerned with the water surface elevation, but with the flow depth.  We are assuming that the flow depth remains relatively constant through a river segment.  This assumes that all gains and losses to the river are accounted for either through flow gains and losses, evaporation, precipitation, or unaccounted for gains and losses as shown in equation \ref{eq:water1}.
-
 \begin{figure}[htbp]
-	\begin{center}
+	\centering
 		\includegraphics[width=6.5in]{"Figures/LineDiagram/PlanProfile"}
 		\caption[River Segment Model.]{River Segment Model.}
 		\label{fig:segment model}
-	\end{center}
 \end{figure}
 
-Segment lengths, as reported in Table \ref{tab:SegmentLength}, are sufficiently short such that any surges due to irrigation canal gates changes, precipitation events, or other events pass through the segment in less than a day.  The total travel time is approximately 2-3 days and 1-2 days in the USR and DSR, respectively, based on USGS reported average stream velocity measurements taken in conjunction with stream gauge calibrations.  River segment length ($L_i$) was measured to the nearest \SI{0.1}{\kilo\meter} using publicly available satellite imagery, USGS hydrography data, and geographical information system (GIS) software.  River segment length was calculated as the length of the thalweg between the segment endpoints.  When the USGS thalweg did not follow along the river channel as shown in the satellite imagery, a new thalweg was drawn.  Rough validation of these measurements was performed in the field by comparing the GIS calculated length of adjacent roadways to the actual driven distance as reported by a vehicle odometer.  River lengths are assumed to be constant throughout the study time frame.  Individual and combined variations in the channel path along a river segment were assumed to be negligible.
+Segment lengths, as reported in Table \ref{tab:SegmentLength}, are sufficiently short such that any surges due to irrigation canal gates changes, precipitation events, or other events pass through the segment in less than a day.  The total travel time is approximately 2-3 days and 1-2 days in the USR and DSR, respectively, based on USGS reported average stream velocity measurements taken in conjunction with stream gauge calibrations.  River segment length ($L_i$) was measured to the nearest \SI{0.1}{\kilo\meter} using publicly available satellite imagery, USGS hydrography data, and geographical information system (GIS) software.  River segment length was calculated as the length of the thalweg between the segment endpoints.  When the USGS thalweg did not follow along the river channel as shown in the satellite imagery, a new thalweg was drawn.  Rough validation of these measurements was performed in the field by comparing the GIS calculated length of adjacent roadways to the actual driven distance as reported by a vehicle odometer.  River lengths are assumed to be constant throughout the study time frame.  Individual and combined variations in the channel path along a river segment were assumed to be negligible.\\
 
 \begin{table}[htbp]
 	\centering
@@ -203,25 +190,22 @@ Segment lengths, as reported in Table \ref{tab:SegmentLength}, are sufficiently 
 		\multirow{2}{*}{DSR} & F       & 37.6             & 23.4            \\
 		& G       & 24.9             & 15.5           \\
 		\bottomrule
-	\end{tabular}
+	\end{tabular}\\
 \end{table}
 
 River segment cross-sectional area change $\left( \frac{\Delta A_i}{\Delta t} \right) $ calculation is based on the trapezoidal area that approximates the difference between the cross-sectional area at two different flow depths as depicted in Figures \ref{fig:XSArea}, \ref{fig:XSTrapezoid} and in equation \ref{eq:XSArea}.  While the cross sectional area difference isn't exactly a trapezoid, the difference for small differences in gauge height is insignificant.  
 
 \begin{figure}[htbp]
-\begin{center}
+	\centering
 	\includegraphics[width=6in]{Figures/LineDiagram/XSection}
 	\caption[Average river segment cross-section area change.]{Average river segment cross-section area change.}
 	\label{fig:XSArea}
-\end{center}
 \end{figure}
-
 \begin{figure}
-	\begin{center}
+	\centering
 		\includegraphics[width=6.5in]{"Figures/LineDiagram/Trapezoid"}
 		\caption[River cross-section area change diagram.]{River cross-section area change diagram.}
 		\label{fig:XSTrapezoid}
-	\end{center}
 \end{figure}
 
 \begin{align}
@@ -242,7 +226,6 @@ River segment cross-sectional area change $\left( \frac{\Delta A_i}{\Delta t} \r
 Figure \ref{fig:XSArea} shows a simplified river cross section at a stream gauge location.  As previously discussed, stream gauges do not hold the channel bottom as their datum.  They have an arbitrarily fixed datum that does not move unless reset by the gauge owner.  The difference between the stream gauge datum and the channel bottom is corrected using a constant correction factor calculated from the river survey.  The gauge datum does not have a known marker where the elevation could be directly measured.  Instead, the surveyed water surface elevation was recorded at the gauge location on both sides of the channel.  The flow depth value was calculated by finding the difference between the surveyed average water surface elevation and the surveyed channel bottom elevation.  The flow depth was then compared to the stream gauge height reported for the same date and time as when the water surface elevation was surveyed.  The difference between the reported value and the average of the surveyed values was taken as the correction factor for the gauge.  This procedure was repeated for each gauge.
 
 Flow depth values as reported by the USGS and CDWR are measured values with an associated probability range as calculated in equation \ref{eq:uncertainty3}.  The uncertainties are applied as shown in equation \ref{eq:herror1}.  A correction factor ($ C_{i} $) is applied to each reported gauge depth to correct for the difference between the gauge datum and the channel bottom as measured during the channel cross-section survey.  Two separate uncertainties are applied.  $ \varepsilon_{h1} $ is the uncertainty distribution as described by the gauge owner.  This uncertainty is reported by both the USGS and CDWR as being normally distributed with extreme values at \SI{0.01}[$\pm$]{\foot} (\SI{0.003}[$ \pm $]{\meter}) \parencite{USGSPL89}.  The second uncertainty term, $ \varepsilon_{h2} $, is the result of personal observation of the river channel along its entire length.  This term describes the variability in flow depth.  It was observed that the channel depth did not vary greatly along most of its length.  There were particular areas where there were deeper pools, but these areas were noted to be more prone to ponding during low flow.  It is assumed that the average effective flow depth only varies within a normal distribution with limits of \SI{0.076}[$ \pm $]{\meter} (\SI{0.25}[$ \pm $]{\foot}).  There is the possibility that $\varepsilon_{h1}$ could cause the storage change between the time steps to change from a storage gain to a storage loss, or vise versa.  This is acceptable as it is within the measurement limits of the instruments.  Once $h+\varepsilon_{h1}$ has been calculated for the two successive time steps, the relationship between the two time steps is fixed.  If the river segment flow depth rises between time steps after this calculation, then that relationship must continue throughout the rest of the volume change calculation.  To facilitate this, it is assumed that $\varepsilon_{h2}$ does not vary significantly within the study time frame and does not vary within a realization.  The Arkansas River channel is sufficiently stable between consecutive days that this assumption is valid.  A new $\varepsilon_{h2}$ is drawn for each realization and remains constant for all time steps within the study time frame.
-
 \begin{equation}
 	y_{i,t}=h_{i,t}+C_{i}+\varepsilon_{h1}+\varepsilon_{h2}
 	\label{eq:herror1}
@@ -257,7 +240,6 @@ Flow depth values as reported by the USGS and CDWR are measured values with an a
 \end{tabular}\\
 
 Since the two uncertainty terms are both normal and additive to flow depth, they were added to produce a new normal distribution with mean equal to the sum of the means of the two distributions and standard deviation equal to the sum of the standard deviations of the two distributions.  This additional step was taken to improve model calculation speed and to reduce the possible error of producing a total flow depth error that would cause a flow depth outside of the accepted range of \SIrange{0.153}{1.53}{\meter} (\SIrange{0.5}{5}{\foot}).  The uncertainty distributions $ \varepsilon_{h1} $ and $ \varepsilon_{h2} $ are not dependent on location, therefore all flow depth calculations draw from the same distribution.  The normal distribution resulting from the addition of the $ \varepsilon_{h1} $ and $ \varepsilon_{h2} $ has a mean of zero and standard deviation of \SI{0.00707}{\meter} (\SI{0.02032}{\foot}) (Equation \ref{eq:herror2}).  
-
 \begin{equation}
 	y_{i,t}=h_{i,t}+C_{i}+\mathcal{N} \left( \mu=0m, \sigma=0.00707m \right)
 	\label{eq:herror2}
@@ -322,7 +304,7 @@ River top width $ \left( Tw \right)  $ is calculated using equation \ref{eq:Tw1}
 		&						& 13& 52.68 & 1.1850 & 5.757\\
 		&						& 14& 24.18 & 0.4764 & 0.9259\\
 		\bottomrule
-	\end{tabular}
+	\end{tabular}\\
 \end{table}
 
 Non-linear regression models were used only when the specific model form, determined from known physical or geometrical relationships, was non-linear.  R-squared values were not used to determine goodness-of-fit for non-linear regression models since they can have valid R-squared values that are negative or greater than one \parencite{spiess2010} and as such are outside of the boundary for comparing linear models.  Pseudo or modified r-squared calculations are available, yet these computations result in values that are comparable to the r-squared value for linear models, but have slightly different interpretations \todo{reference}.  Since non-linear regression models were used only when specific model forms could be predetermined, there was no need to compare different model forms estimating the same result.
@@ -331,11 +313,10 @@ Goodness-of-fit for non-linear regressions used in this thesis are purely for in
 
 The results of the top width equation for each cross-section, generated through non-linear regression, was compared to the observed results to visually compare the goodness-of-fit for each cross-section.  Figure \ref{fig:exampleTwVsH} is an example
 \begin{figure}[htbp]
-	\begin{center}
-		\includegraphics[width=6in]{"Figures/Results_USR/Stochastic/Survey Tw vs H-Section 1"}
-		\caption[Example Flow Depth vs. River Top Width Relationship.]{Example Flow Depth vs. River Top Width Relationship.  The non-linear best fit line of the form in Equation \ref{eq:Tw1} is red.  The values are the two non-linear regression fitting parameters ($\beta_1$ and $\beta_2$) and the residual standard error for the fitting equation ($\sigma$).  Similar figures for all cross-sections are found in the appendix.}
-		\label{fig:exampleTwVsH}
-	\end{center}
+	\centering
+	\includegraphics[width=6in]{"Figures/Results_USR/Stochastic/Survey Tw vs H-Section 1"}
+	\caption[Example Flow Depth vs. River Top Width Relationship.]{Example Flow Depth vs. River Top Width Relationship.  The non-linear best fit line of the form in Equation \ref{eq:Tw1} is red.  The values are the two non-linear regression fitting parameters ($\beta_1$ and $\beta_2$) and the residual standard error for the fitting equation ($\sigma$).  Similar figures for all cross-sections are found in the appendix.}
+	\label{fig:exampleTwVsH}
 \end{figure}
 
 \begin{table}[htbp]
@@ -358,52 +339,12 @@ The results of the top width equation for each cross-section, generated through 
 		\multicolumn{5}{l}{{\footnotesize * Distribution fitting parameters.  For logistic, p1=location }}\\
 		\multicolumn{5}{l}{\footnotesize{and p2=scale.  For log-normal, p1=mean of the log scale }}\\
 		\multicolumn{5}{l}{\footnotesize{and p2=standard dev. of the log scale}}\\
-	\end{tabular}
+	\end{tabular}\\
 \end{table}
 
-%\textsc{A - define non-linear regression used to estimate $\beta_1$ and $\beta_2$}\\
 Values $\beta_1$ and $\beta_2$ are drawn from probability distributions.  Calculated flow depth and river top width data pairs were used to determine the distributions from which $\beta_1$ and $\beta_2$ in equation \ref{eq:Tw1} were drawn.  These distributions were developed using non-linear, least-squares regression.  Values below \SI{0.15}{\meter} (\SI{0.5}{\foot}) were removed from the regression analysis.  Flow values below this depth are not common and it was determined that these points would not allow for an accurate representation of the flow depth to river top width relationship for the range of known flow depths.  Values above \SI{1.52}{\meter} (\SI{5.0}{\foot}) were also removed from the regression analysis.  Flow depths above this depth are above the banks of the primary river channel and are within the inner flood plain.  Table \ref{tab:alphabetavals} gives the resulting $\beta_1$ and $\beta_2$ values for each surveyed cross-section.  Figure \ref{fig:exampleTwVsH} is an example of the surveyed flow depth and river top width relationships and the derived non-linear relationship for cross-section 1 in river segment A of the USR.  Similar relationship plots for the other surveyed cross-sections are found in the appendix. 
-%\ref{App:TwVsH}.  
 
 Figure \ref{fig:B1B2} shows the distributions of $\beta_1$ and $\beta_2$ values and the various best-fit distributions in both the USR and DSR.  Logistic, normal, exponential, Weibull, and log-normal distributions were fitted to the data.  Vertical tick marks in the x-axis margin are at the data values.  Kernel density estimations were used as an alternative means to graphically represent the data density.  
-
-%  Keep this, just in case.
-
-% The K-S goodness-of-fit statistics, presented in table \ref{tab:B1B2 distribution results}, were calculated for the fitted distributions and known data.
-%\begin{table}[htbp]
-%	\centering
-%	\caption[River $\beta_1$ and $\beta_2$ distribution test results.]{River $\beta_1$ and $\beta_2$ distribution test results.}
-%	\label{tab:B1B2 distribution results}
-%	\begin{tabular}{clc}
-%		\toprule
-%		Fitting parameter &Distribution & K-S Statistic\\
-%		\toprule
-%		\multirow{5}{*}{USR $\beta_1$} & Logistic & 0.1211\\
-%		& Normal & 		0.2092\\
-%		& Exponential & 0.3178\\
-%		& Weibull & 	1.0000\\
-%		& Log-normal & 	0.1236\\
-%		\midrule
-%		\multirow{5}{*}{USR $\beta_2$} & Logistic & 0.1837\\
-%		& Normal & 		0.2040\\
-%		& Exponential & 0.1379\\
-%		& Weibull & 	0.3412\\
-%		& Log-normal & 	0.1570\\
-%		\midrule
-%		\multirow{5}{*}{DSR $\beta_1$} & Logistic & 0.1999\\
-%		& Normal & 		0.2258\\
-%		& Exponential & 0.5134\\
-%		& Weibull & 	1.0000\\
-%		& Log-normal & 	0.2086\\
-%		\midrule
-%		\multirow{5}{*}{DSR $\beta_2$} & Logistic & 0.1657\\
-%		& Normal & 		0.1839\\
-%		& Exponential & 0.2391\\
-%		& Weibull & 	0.4326\\
-%		& Log-normal & 	0.1486\\
-%		\bottomrule
-%	\end{tabular}
-%\end{table}
 
 \begin{figure}[htbp]
 \centering
@@ -430,7 +371,7 @@ Figure \ref{fig:B1B2} shows the distributions of $\beta_1$ and $\beta_2$ values 
 	\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Stochastic/DSR B2 Dist"}
 	\caption{DSR $\beta_2$}
 	\label{sub b2}
-\end{subfigure}
+\end{subfigure}\\
 \caption[$Tw$ Versus $h$ Fitting Parameter $\beta_1$ and $\beta_2$ Distributions.]{$Tw$ Versus $h$ Fitting Parameter $\beta_1$ and $\beta_2$ Distributions.  The black dashed line is a kernel density plot representing a histogram where the bin size approaches zero.  The colored curves are the best fit for the particular distribution type.  Vertical tick marks in the x-axis are at the data values.}
 \label{fig:B1B2}
 \end{figure}
@@ -452,7 +393,7 @@ Residuals from the non-linear regression analyses were combined into a single da
 	\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Stochastic/DSR AB Error Dist"}
 	\caption{DSR Residuals}
 	\label{sub b2}
-\end{subfigure}
+\end{subfigure}\\
 \caption[$Tw$ Versus $H$ Residuals Distribution.]{$Tw$ versus $H$ Residuals Distribution.  The black dashed line is a kernel density plot representing a histogram where the bin size approaches zero.  The colored curves are the best fit for the particular distribution type.  Vertical tick marks in the x-axis are at the data values.}
 \label{fig:B1B2 Error}
 \end{figure}
@@ -495,7 +436,7 @@ Table \ref{tab:ExStochResultsTable} also includes the deterministic time-series 
 		2.5th Percentile	& j			& k			& l \\
 		\bottomrule
 		\multicolumn{4}{l}{Pearson Correlation = m}
-	\end{tabular}
+	\end{tabular}\\
 \end{table}
 
 One goal of stochastic modeling is to have a deterministic model that resides within the stochastic.  If the deterministic model isn’t a possible realization of the stochastic model, then there are significant stochastic model issues that need to be addressed.  Ideally, the stochastic model mean time-series at each time step should be close to the deterministic model at that same time step.  To determine if this relationship is true, the Pearson correlation between the stochastic model mean time-series and the deterministic model was calculated and is included at the bottom of Table \ref{tab:ExStochResultsTable}.  Calculating the Pearson correlation requires assuming the two compared data sets are continuous and are linearly related.  All input values and results in this thesis are continuous, either from zero to $ +\inf $ or between $ \pm \inf $.
@@ -520,15 +461,15 @@ The time-series plots of all four stochastic geometric parameters for each study
 		\begin{subfigure}{0.7\textwidth}
 			\centering
 			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/G TS A"}
-			\subcaption{Segment A}		
+			\subcaption*{Segment A}		
 			\label{sub:GeoTS_A}
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
 			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/G TS B"}
-			\subcaption{Segment B}
+			\subcaption*{Segment B}
 			\label{sub:GeoTS_B}
-		\end{subfigure}
+		\end{subfigure}\\
 	\caption[USR stochastic geometric parameter time-series.]{USR stochastic geometric parameter time-series. The black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.  The red dashed line in the flow depth portion of the figure indicates the reported flow depth values.}
 	\label{fig:GeoTS_US}
 	\end{figure}
@@ -540,15 +481,15 @@ The time-series plots of all four stochastic geometric parameters for each study
 		\begin{subfigure}{0.7\textwidth}
 			\centering
 			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/G TS C"}
-			\subcaption{Segment C}
+			\subcaption*{Segment C}
 			\label{sub:GeoTS_C}	
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering			
 			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/G TS D"}
-			\subcaption{Segment D}
+			\subcaption*{Segment D}
 			\label{sub:GeoTS_D}
-		\end{subfigure}
+		\end{subfigure}\\
 		\caption{Stochastic geometric parameter time-series.}
 	\end{figure}
 \end{landscape}
@@ -559,9 +500,9 @@ The time-series plots of all four stochastic geometric parameters for each study
 		\begin{subfigure}{0.7\textwidth}
 			\centering
 			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/G TS E"}
-			\subcaption{Segment E}
+			\subcaption*{Segment E}
 			\label{sub:GeoTS_E}	
-		\end{subfigure}
+		\end{subfigure}\\
 		\caption{Stochastic geometric parameter time-series.}
 	\end{figure}
 \end{landscape}
@@ -573,13 +514,13 @@ The time-series plots of all four stochastic geometric parameters for each study
 %		\begin{subfigure}{0.9\textwidth}
 %			\centering
 %			\includegraphics[width=0.9\textwidth]{"Figures/Results_DSR/Stochastic/G TS F"}
-%			\subcaption{Segment F}		
+%			\subcaption*{Segment F}		
 %			\label{sub:GeoTS_F}
 %		\end{subfigure}%
 %		\begin{subfigure}{0.9\textwidth}
 %			\centering
 %			\includegraphics[width=0.9\textwidth]{"Figures/Results_DSR/Stochastic/G TS G"}
-%			\subcaption{Segment G}
+%			\subcaption*{Segment G}
 %			\label{sub:GeoTS_G}
 %		\end{subfigure}
 		\caption[DSR stochastic geometric parameter time-series.]{DSR stochastic geometric parameter time-series. The black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.  The red dashed line in the flow depth portion of the figure indicates the reported flow depth values.}
@@ -600,16 +541,13 @@ Tables \ref{tab:SegmentSurfaceArea_USR} and \ref{tab:SegmentSurfaceArea_DSR} pre
 		\centering
 		\subcaption*{USR river segment A}
 		\input{"Tables/tableAreaA.txt"}
-	\end{subtable}
-	
-	\par\bigskip
-	\par\bigskip
-	
+	\end{subtable}\\
+	\tablevspace
 	\begin{subtable}{\textwidth}
 		\centering
 		\subcaption*{USR river segment B}
 		\input{"Tables/tableAreaB.txt"}
-	\end{subtable}
+	\end{subtable}\\
 \end{table}
 
 \subtablemid
@@ -620,16 +558,13 @@ Tables \ref{tab:SegmentSurfaceArea_USR} and \ref{tab:SegmentSurfaceArea_DSR} pre
 		\centering
 		\subcaption*{USR river segment C}
 		\input{"Tables/tableAreaC.txt"}
-	\end{subtable}
-	
-	\par\bigskip
-	\par\bigskip
-	
+	\end{subtable}\\
+	\tablevspace
 	\begin{subtable}{\textwidth}
 		\centering
 		\subcaption*{USR river segment D}
 		\input{"Tables/tableAreaD.txt"}
-	\end{subtable}
+	\end{subtable}\\
 \end{table}
 
 \subtablemid
@@ -640,7 +575,7 @@ Tables \ref{tab:SegmentSurfaceArea_USR} and \ref{tab:SegmentSurfaceArea_DSR} pre
 		\centering
 		\subcaption*{USR river segment E}
 		\input{"Tables/tableAreaE.txt"}
-	\end{subtable}
+	\end{subtable}\\
 \end{table}
 
 \subtabletop
@@ -652,22 +587,19 @@ Tables \ref{tab:SegmentSurfaceArea_USR} and \ref{tab:SegmentSurfaceArea_DSR} pre
 		\centering
 		\subcaption*{DSR river segment F}
 %		\input{"Tables/tableAreaF.txt"}
-	\end{subtable}
-	
-	\par\bigskip
-	\par\bigskip
-	
+	\end{subtable}\\
+	\tablevspace
 	\begin{subtable}{\textwidth}
 		\centering
 		\subcaption*{DSR river segment G}
 %		\input{"Tables/tableAreaG.txt"}
-	\end{subtable}
+	\end{subtable}\\
 \end{table}
 
 Every one of these tables shows that the stochastic model tends to underestimate the river segment water surface area by approximately 38\% in the USR and XX\% in the DSR.  The correlation values indicate that the deterministic model time-series and stochastic model mean time-series are highly correlated.  The corresponding correlation scatter-plots show that the relationships are linear.  This is due to the way the river section average daily top width was estimated for the deterministic models.  Since $ \beta_1 $ and $ \beta_2 $ are drawn from distributions and the deterministic model requires that none of the input values are variable, the most likely values from the respective distributions were chosen as the fixed values.  The $ \beta $ values from both study reaches are not normal, therefore the most likely value is not the mean and the values are not evenly distributed on either side of the likely value.  The skewness of the $ \beta $ values is represented in the stochastic model.  Calibrating the deterministic models to find the $ \beta $ values that approximate the stochastic model defeats the purpose of the deterministic model, which is to estimate the most likely values.  Sensitivity analysis which is discussed later, will show whether or not the river section average daily surface area values are significant enough to warrant the effort required to calibrate them to the stochastic model.
 
 Tables \ref{tab:SegmentVolumeChange_USR} and \ref{tab:SegmentVolumeChange_DSR} present the river segment average daily surface area deterministic model time-series and stochastic model summary statistic time-series results for the USR and DSR, respectively.  Summary results for river segment average daily flow depth and river segment average daily top width are not included as they are not direct precursors to the final model results.  The surface area is directly used for precipitation and evaporation calculations.
-
+\\
 \subtabletop
 \begin{table}[htbp]
 	\centering
@@ -677,17 +609,14 @@ Tables \ref{tab:SegmentVolumeChange_USR} and \ref{tab:SegmentVolumeChange_DSR} p
 		\centering
 		\subcaption*{USR river segment A}
 		\input{"Tables/tableVolumeA.txt"}
-	\end{subtable}
-	
+	\end{subtable}\\
 	\tablevspace
-		
 	\begin{subtable}{\textwidth}
 		\centering
 		\subcaption*{USR river segment B}
 		\input{"Tables/tableVolumeB.txt"}
-	\end{subtable}
+	\end{subtable}\\
 \end{table}	
-
 \subtablemid
 \begin{table}[htbp]
 	\centering
@@ -696,18 +625,14 @@ Tables \ref{tab:SegmentVolumeChange_USR} and \ref{tab:SegmentVolumeChange_DSR} p
 		\centering
 		\subcaption*{USR river segment C}
 		\input{"Tables/tableVolumeC.txt"}
-	\end{subtable}
-
-	\par\bigskip
-	\par\bigskip
-	
+	\end{subtable}\\
+	\tablevspace
 	\begin{subtable}{\textwidth}
 		\centering
 		\subcaption*{USR river segment D}
 		\input{"Tables/tableVolumeD.txt"}
-	\end{subtable}
+	\end{subtable}\\
 \end{table}
-
 \subtablemid
 \begin{table}[htbp]
 	\centering
@@ -716,7 +641,7 @@ Tables \ref{tab:SegmentVolumeChange_USR} and \ref{tab:SegmentVolumeChange_DSR} p
 		\centering
 		\subcaption*{USR river segment E}
 		\input{"Tables/tableVolumeE.txt"}
-	\end{subtable}
+	\end{subtable}\\
 \end{table}
 
 \subtabletop
@@ -728,16 +653,13 @@ Tables \ref{tab:SegmentVolumeChange_USR} and \ref{tab:SegmentVolumeChange_DSR} p
 		\centering
 		\subcaption*{DSR river segment F}
 %		\input{"Tables/tableVolumeF.txt"}
-	\end{subtable}
-	
-	\par\bigskip
-	\par\bigskip
-	
+	\end{subtable}\\
+	\tablevspace	
 	\begin{subtable}{\textwidth}
 		\centering
 		\subcaption*{DSR river segment G}
 %		\input{"Tables/tableVolumeG.txt"}
-	\end{subtable}
+	\end{subtable}\\
 \end{table}	
 
 The mean of the deterministic model time-series and the mean of the stochastic model mean time-series calculated average daily river segment water volume change are much closer to each other as reported in Tables \ref{tab:SegmentVolumeChange_USR} and \ref{tab:SegmentVolumeChange_DSR}.  The stochastic model mean time-series underestimates the deterministic model time-series values by approximately 47\%.  The difference between the two models in terms of water volume is quite small, less than \SI{1}{\hectare\meter}.  The Pearson correlation values and their associated scatter-plots indicate that the results are strongly linearly related.  The effects of uncertainty on river segment average river daily water volume change is much smaller than the effect on surface area.  As with the surface area results, the significant portion of the difference between the deterministic model time-series and the stochastic model mean time-series is due to the estimation of the most likely values of $ \beta_1 $ and $ \beta_2 $ used in the deterministic models.  At this point, adjusting or calibrating these values such that the results of the deterministic and stochastic models are more closely aligned seems unnecessary.
@@ -749,16 +671,16 @@ Figure \ref{fig:USRWaterStore} and \ref{fig:DSRWaterStore} presents the river re
 	\begin{subfigure}{0.5\textwidth}
 		\centering
 		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/Deterministic/Balance Water - storage"}
-		\subcaption{Deterministic Model.}
+		\subcaption*{Deterministic Model.}
 		\label{sub:USRWaterStoreD}
-	\end{subfigure}%
+	\end{subfigure}\\%
 	\begin{subfigure}{0.5\textwidth}
 		\centering
 		\missingfigure{}
 %		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/Stochastic/Balance Water - storage"}
-		\subcaption{Stochastic Model.}
+		\subcaption*{Stochastic Model.}
 		\label{sub:USRWaterStoreS}
-	\end{subfigure}
+	\end{subfigure}\\
 	\caption[USR Arkansas River water storage change contribution to the water model.]{USR Arkansas River water storage change contribution to the water model.}
 	\label{fig:USRWaterStore}
 \end{figure}
@@ -769,205 +691,168 @@ Figure \ref{fig:USRWaterStore} and \ref{fig:DSRWaterStore} presents the river re
 		\centering
 		\missingfigure{}
 %		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Deterministic/Balance Water - storage"}
-		\subcaption{Deterministic Model.}
-	\end{subfigure}%
+		\subcaption*{Deterministic Model.}
+	\end{subfigure}\\%
 	\begin{subfigure}{0.5\textwidth}
 		\centering
 		\missingfigure{}
 		%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Stochastic/Balance Water - storage"}
-		\subcaption{Stochastic Model.}
-	\end{subfigure}
-	\caption[USR Arkansas River water storage change contribution to the water model.]{USR Arkansas River water storage change contribution to the water model.}
+		\subcaption*{Stochastic Model.}
+	\end{subfigure}\\
+	\caption[DSR Arkansas River water storage change contribution to the water model.]{DSR Arkansas River water storage change contribution to the water model.}
 	\label{fig:DSRWaterStore}
 \end{figure}
 
 Table xx presents the deterministic model time-series summary statistics and the summary statistics for each of the stochastic model summary statistics time-series for the river reach average daily water storage change in the USR and DSR.
-
+\\
 \begin{table}[htbp]
 	\centering
+		\caption[River reach average daily stored water volume change.]{River reach average daily stored water volume change.  Values in hectare-meters (\si{\hectare\meter}) and values in parentheses in acre-feet (\si{\acre\foot})}
+		\label{label}
 	\begin{subtable}{\textwidth}
 		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Stochastic/Balance Water - storage"}
-		\subcaption{USR river reach average daily water storage change.}
-	\end{subtable}
-	\par\bigskip
-	\par\bigskip
+		\subcaption*{USR river reach average daily water storage change.}
+		\input{"Tables/USRVolume.txt"}
+	\end{subtable}\\
+	\tablevspace
 	\begin{subtable}{\textwidth}
 		\centering
 		%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Stochastic/Balance Water - storage"}
-		\subcaption{USR river reach average daily water storage change.}
-	\end{subtable}
-	\caption[caption]{caption}
-	\label{label}
+		\subcaption*{DSR river reach average daily water storage change.}
+	\end{subtable}\\
+\end{table}
+
+The figures show that there is a definite seasonal variation in the storage component.  Stored water changes are smallest during the cold months and are increasingly larger during the growing season.  This pattern is caused by irrigation practices in the Lower Arkansas River Basin (LARV).  Stored irrigation water is released from reservoirs upstream of the LARV during the irrigation season as demands require.  During the winter, there is very little to no irrigation occurring.  This, combined with the low precipitation and no additional flow from snow-pack runoff, allow flows in the Arkansas River to reach base flow level when the river is at a natural equilibrium.
+
+This pattern is not as pronounced in the DSR.  This is most likely due to required flow rates being maintained at the Colorado-Kansas border.  With the constant required flow, John Martin Reservoir releases only enough water to meet the required flow rate.  This creates a flow regime that is nearly constant through most of the DSR. 
+
+Deviations are noted during peak irrigation season.  These additional volume changes are most likely due to irrigation flows returning to the Arkansas River from fields irrigated from canal systems that procure and store water upstream of John Martin Reservoir.  The Fort Lyon Storage Canal and Fort Lyon Canal are two examples of canal systems that perform this function.  Water removed from the USR, stored, and added to the DSR is not included in this study.
+
+The distribution of all realizations within each time step was analyzed to determine a distribution type.  This analysis was performed to determine if the assumption that the deterministic model results were representative of the stochastic model.   Testing was performed by comparing K-S statistics for the best fit normal, log-normal, logistic, exponential, gamma, and Weibull distributions.  In the USR, 97\% of all storage component time steps best fit a normal distribution and 3\% best fit a gamma distribution.  In the DSR, 99.5\% best fit a normal distribution and 0.5\% best fit a gamma distribution.  This indicates that for both the USR and DSR, the distributions across the realizations are normal.
+
+The mean of the percent difference between the deterministic model time-series and stochastic model mean time-series is very low.  This indicates that the deterministic model is representative of the stochastic model expected value.  The high percent differences at the 2.5th and 97.5th percentile indicate that there is still a large range of uncertainty contained within the stochastic model that the deterministic model cannot replicate.  The deterministic model can be used to determine how changes can affect a reach over a span of time, but using it to estimate values for specific time steps is unwise as the differences noted at individual time steps is too large to account for.
+\clearpage
+
+\section{Gauged Stream Flows and Diverted Canal Flows}
+\label{sec:StreamFlows}
+
+Equation \ref{eq:water1} contains the portion contained in equation \ref{eq:flow1} that describes the sum of all accountable surface water flows entering and leaving a defined reach.  These flows include only the gauged river main stem flows, tributary stream flows, and diverted canal flows.  Most flows are reported as average daily flow rate.  These flow rates, which are measured every 15 minutes, are calculated from the respective gauge's measured instantaneous stage height using stage-discharge tables.  The only exception is with the average daily flow rate reported for the La Junta waste water treatment plant where the average daily flow is converted from the total daily discharge, reported in million gallons per day (mgd).
+
+\begin{equation}
+\label{eq:flow1}
+\sum Q_{Total} = \left( Q_{out,DS} + \sum Q_{out} - Q_{in,US} - \sum Q_{in} \right) 
+\end{equation}
+\begin{tabular}{r L{5.5in}}
+	Where: & \\
+	$ Q_{Total} = $ & sum of average daily flow rates in the study region.\\
+	$ Q_{in} = $ & flow entering the study reach from a tributary.\\
+	$ Q_{out} = $ & flow leaving the study reach to an irrigation canal.\\
+	$ Q_{in,US} = $ & flow entering the study reach in the main stem of the river at the upstream end of the reach.\\
+	$ Q_{out,DS} = $ & flow leaving the study reach in the main stem of the river at the downstream end of the reach.\\
+\end{tabular}\\
+
+Equation \ref{eq:flow1} is expanded as follows to contain all of the measured flows entering or leaving the main stem of the Arkansas River within the USR boundaries.  The subscript for each flow in equation \ref{eq:USRFlow} is the CDWR symbol for a particular gauge site.  See the map in Figure \ref{USRSample} for the gauge locations in the USR.  The flows in this equation are ordered by location along the main stem of the river, from upstream to downstream.
+\begin{align}
+	\label{eq:USRFlow}
+	\sum Q_{Total} = &~Q_{ARKCATCO} - Q_{HOLCANCO} - Q_{RFDMANCO} - Q_{FLSCANCO} \\
+	\nonumber & + Q_{RFDRETCO} + Q_{TIMSWICO} - Q_{FLYCANCO} + Q_{CANSWKCO} \\ 
+	\nonumber & - Q_{CONDITCO} + Q_{HRC194CO} - Q_{ARKLASCO}
+\end{align}
+Where each subscript is defined as the flow through the gauge described in Table \ref{tab:USRFlow}.  In this table, each of the flow variables in equation \ref{eq:USRFlow}, designated by its CDWR gauge name, is grouped by the type of flow using the variables used in equation \ref{eq:flow1}.
+
+\begin{table}[htbp]
+	\centering
+	\caption[Description of USR stream flow variables.]{Description of USR stream flow variables.  The CDWR gauge name is the USR model variable sub-script.  The variable group is the category to which the flow belongs.}
+	\label{tab:USRFlow}
+	\begin{tabular}{c c p{3.5in}}
+		\toprule
+		CDWR Gauge & Variable & \multirow{2}{*}{Description}\\
+		Name				& Group & \\
+		\toprule
+		$ ARKCATCO $ & $ Q_{in,US} $ & Arkansas River below the Catlin Canal diversion.\\ 
+		$ HOLCANCO $ & $ Q_{out} $ & Holbrook Canal \\
+		$ RFDMANCO $ & $ Q_{out} $ & Rocky Ford Canal\\
+		$ FLSCANCO $ & $ Q_{out} $ & Fort Lyon Storage Canal\\
+		$ RFDRETCO $ & $ Q_{in} $ & Rocky Ford Return Ditch\\
+		$ TIMSWICO $ & $ Q_{in} $ & Timpas Creek\\
+		$ FLYCANCO $ & $ Q_{out} $ & Fort Lyon Canal\\
+		$ CANSWKCO $ & $ Q_{in} $ & Crooked Arroyo\\
+		$ CONDITCO $ & $ Q_{out} $ & Consolidated Ditch (Jones Ditch)\\
+		$ HRC194CO $ & $ Q_{in} $ & Horse Creek at Colorado Highway 194\\
+		$ ARKLASCO $ & $ Q_{out,DS} $ & Arkansas River in Las Animas, Colorado\\
+		\bottomrule
+	\end{tabular}\\
+\end{table}
+
+For the DSR, equation \ref{eq:flow1} is expanded as follows to contain all of the measured flows entering or leaving the main stem of the Arkansas River within its boundaries.  The subscript for each flow in equation \ref{eq:DSRFlow} is the CDWR symbol for a particular gauge site.  See the map in Figure \ref{DSRSample} for the gauge locations in the DSR.  The flows in this equation are ordered by location along the main stem of the river, from upstream to downstream.
+\begin{align}
+	\label{eq:DSRFlow}
+	\sum Q_{Total} = &~Q_{ARKLAMCO} + Q_{BIGLAMCO} - Q_{BUFDITCO} + Q_{WILDHOCO} \\
+	\nonumber & - Q_{FRODITKS} - Q_{ARKCOOKS}
+\end{align}
+Where each subscript is defined as the flow through the gauge described in Table \ref{tab:DSRFlow}.  In this table, each of the flow variables in equation \ref{eq:DSRFlow}, designated by its CDWR gauge name, is grouped by the type of flow using the variables used in equation \ref{eq:water1}.\\
+
+\begin{table}[htbp]
+	\centering
+	\caption[Description of DSR stream flow variables.]{Description of DSR stream flow variables.  The CDWR gauge name is the DSR model variable sub-script.  The variable group is the category to which the flow belongs.}
+	\label{tab:DSRFlow}
+	\begin{tabular}{c c p{3.5in}}
+		\toprule
+		CDWR Gauge & Variable & \multirow{2}{*}{Description}\\
+		Name				& Group & \\
+		\toprule
+		$ ARKLAMCO $ & $ Q_{in,US} $ & Arkansas River in Lamar, Colorado\\ 
+		$ BIGLAMCO $ & $ Q_{in} $ & Big Sandy Creek \\
+		$ BUFDITCO $ & $ Q_{out} $ & Buffalo Ditch\\
+		$ WILDHOCO $ & $ Q_{in} $ & Wild Horse Creek\\
+		$ FRODITKS $ & $ Q_{out} $ & Frontier Ditch\\
+		$ ARKCOOKS $ & $ Q_{out,DS} $ & Arkansas River in Coolidge, Kansas\\
+		\bottomrule
+	\end{tabular}\\
+\end{table}
+
+Equations \ref{eq:USRFlow} and \ref{eq:DSRFlow} constitute the surface water flow portion of \ref{eq:flow1} for the USR and DSR deterministic models, respectively.  As with the other portions of the water balance models, converting these to be used in the stochastic models requires the addition of uncertainty terms.
+\begin{equation}
+	\label{eq:flow1error}
+	Q_{stochastic} = Q_{reported} + \varepsilon_{Q_{reported}}
+\end{equation}
+\begin{tabular}{r L{5.5in}}
+	Where:\\
+	$ Q_{stochastic} $& = flow rate through a gauge used in the stochastic model.\\
+	$ Q_{reported}  $ & = flow rate through a gauge as reported by the USGS or CDWR.\\
+	$ \varepsilon_{Q_{reported}} $ &= reported gauge uncertainty for a specific stream gauge.\\
+\end{tabular}\\
+
+Using Equation \ref{eq:flow1error} with very low flow values may result in negative flow rates.  Therefore, $Q_{stochastic}$ was calculated using a truncated normal distribution where the minimum allowed value was \SI{0}{\cubic\meter\per\second} (\SI{0}{\cubic\foot\per\second}), the maximum allowed value was 1.25 times the maximum reported value for the specific stream gauge, and the mean value was the reported flow rate value.  Truncation was performed using an algorithm within the statistical software that used re-sampling and replacement.  Other methods were available, but they were deemed to be less reliable.
+
+Stream flow data is provided as described in Section \ref{sec:data collected by other sources}  The USGS provides three specific uncertainty distributions for average daily stream flow data which are described in every annual water data report \parencite{USGS2006NWIS, USGS2007NWIS, USGS2008NWIS, USGS2009NWIS, USGS2010NWIS, USGS2011NWIS, USGS2012NWIS}.  The USGS calls these uncertainty distributions "ratings of accuracy".  These ratings are "excellent", "good", and "fair".  The "excellent" rating indicates that "the daily discharges are within 5 percent of the true value".  The distributions expand to 10\% and 15\% for "good" and "fair" ratings, respectively.  There is a fourth rating used on some average daily stream flow data gathered in the LARV; "poor".  This rating is not specific as it states that the values are more than 15\% of the true value.  For this thesis, we have assumed that the "poor" rating indicates that 95 percent of the values are within 20 percent of the true value.  These ratings are as shown in Table \ref{tab:USGSError} which was extracted from a USGS annual water data report.
+
+\begin{table}[htbp]
+	\caption[USGS Measured Field Parameter Accuracy Rating Table.]{USGS Measured Field Parameter Accuracy Rating Table.  This table was taken from the USGS annual water data report. }
+	\label{tab:USGSError}
+	\includegraphics[width=6in]{"Figures/USGS_error_table"}
 \end{table}
 
 
 
 
 
-
-The figures show that there is a definite seasonal variation in the storage component.  Stored water changes are smallest during the cold months and are increasingly larger during the growing season.  This pattern is caused by irrigation practices in the Lower Arkansas River Basin (LARV).  Stored irrigation water is released from reservoirs upstream of the LARV during the irrigation season as demands require.  During the winter, there is very little to no irrigation occurring.  This, combined with the low precipitation and no additional flow from snow-pack runoff, allow flows in the Arkansas R. to reach base flow level when the river is at a natural equilibrium.
-
-This pattern is not as pronounced in the DSR.  This is most likely due to required flow rates being maintained at the Colorado-Kansas border.  With the constant required flow, John Martin Reservoir releases only enough water to meet the required flow rate.  This creates a flow regime that is nearly constant through most of the DSR. 
-
-Deviations are noted during peak irrigation season.  These additional volume changes are most likely due to irrigation flows returning to the Arkansas R. from fields irrigated from canal systems that procure and store water upstream of John Martin Reservoir.  The Fort Lyon Storage Canal and Fort Lyon Canal are two examples of canal systems that perform this function.  Water removed from the USR, stored, and added to the DSR is not included in this study.
-
-\clearpage
-
-
-
-
-
-%Values and figures presented in this section are the storage component sub-set of the complete water balance model results.  The analyses in this section are restricted to performing a reasonability check on the results.  Results in this section are to be compared with results from the other model sub-sections from both the USR and DSR models to determine if results are acceptable.  Unacceptable results would indicate an error in the computational code or an underlying assumption.
-%
 %Figures \ref{fig:USRWaterStore} and \ref{fig:DSRWaterStore} present the sum of all river segment water storage changes in the USR and DSR, respectively, as time-series plots.  The left and right sub-figures present the deterministic and stochastic time-series, respectively.  The black line in the stochastic figures is the 1-D stochastic mean results with the blue band indicating the 95\% CIR.  Values in these figures and associated tables indicate the volume of water stored in the respective reach in units of \si{\cubic\meter\per\second\per\kilo\meter}.  Standardizing the results to present values in units of storage per unit length allows for comparisons to be made between the two study reaches and between water balance model components.  Positive values indicate that the reach's storage volume increase. 
 
-
-%The figures show that there is a definite seasonal variation in the storage component.  Stored water changes are smallest during the cold months and are increasingly larger during the growing season.  This pattern is caused by irrigation practices in the Lower Arkansas River Basin (LARV).  Stored irrigation water is released from reservoirs upstream of the LARV during the irrigation season as demands require.  During the winter, there is very little to no irrigation occurring.  This, combined with the low precipitation and no additional flow from snow-pack runoff, allow flows in the Arkansas R. to reach base flow level when the river is at a natural equilibrium.
+%
+%The figures show that there is a definite seasonal variation in the storage component.  Stored water changes are smallest during the cold months and are increasingly larger during the growing season.  This pattern is caused by irrigation practices in the Lower Arkansas River Basin (LARV).  Stored irrigation water is released from reservoirs upstream of the LARV during the irrigation season as demands require.  During the winter, there is very little to no irrigation occurring.  This, combined with the low precipitation and no additional flow from snow-pack runoff, allow flows in the Arkansas River to reach base flow level when the river is at a natural equilibrium.
 %
 %This pattern is not as pronounced in the DSR.  This is most likely due to required flow rates being maintained at the Colorado-Kansas border.  With the constant required flow, John Martin Reservoir releases only enough water to meet the required flow rate.  This creates a flow regime that is nearly constant through most of the DSR. 
 %
-%Deviations are noted during peak irrigation season.  These additional volume changes are most likely due to irrigation flows returning to the Arkansas R. from fields irrigated from canal systems that procure and store water upstream of John Martin Reservoir.  The Fort Lyon Storage Canal and Fort Lyon Canal are two examples of canal systems that perform this function.  Water removed from the USR, stored, and added to the DSR is not included in this study.
+%Deviations are noted during peak irrigation season.  These additional volume changes are most likely due to irrigation flows returning to the Arkansas River from fields irrigated from canal systems that procure and store water upstream of John Martin Reservoir.  The Fort Lyon Storage Canal and Fort Lyon Canal are two examples of canal systems that perform this function.  Water removed from the USR, stored, and added to the DSR is not included in this study.
 %
 %The distribution of all realizations within each time step was analyzed to determine a distribution type.  This analysis was performed to determine if the assumption that the deterministic model results were representative of the stochastic model.   Testing was performed by comparing K-S statistics for the best fit normal, log-normal, logistic, exponential, gamma, and Weibull distributions.  In the USR, 97\% of all storage component time steps best fit a normal distribution and 3\% best fit a gamma distribution.  In the DSR, 99.5\% best fit a normal distribution and 0.5\% best fit a gamma distribution.  This indicates that for both the USR and DSR, the distributions across the realizations are normal.
 %
 %Tables \ref{tab:USRWaterStore} and \ref{tab:DSRWaterStore} presents summary statistics of the deterministic and stochastic storage component changes.  Values are presented in units of \si{\cubic\meter\per\second\per\kilo\meter}.   These tables show the mean, 2.5th, and 97.5th percentile of the deterministic model and the same statistics applied to the three 1-D stochastic models.  This additional set of statistics from the 1-D stochastic 2.5th and 95.5th percentile models provide a better understanding of the extremes of the calculated values.  As before, comparison between the deterministic and stochastic models should be limited to the comparing the deterministic model to the 1-D stochastic mean model.  Also included in these two tables is the percent difference between the deterministic model and the 1-D stochastic mean model.  The mean, 2.5th, and 97.5th percentile values were calculated from the percent difference of the 1-D stochastic mean model from the deterministic model at each time step.  These values show the range of the variance from the deterministic model.
 %
-%\begin{table}[htbp]
-%\centering
-%\caption[USR Arkansas R. water storage change contribution to the water model.]{USR Arkansas R. water storage change contribution to the water model.  All values are in units of \si{\cubic\meter\per\second\per\kilo\meter}.}
-%\label{tab:USRWaterStore}
-%\begin{tabular}{c|ccc}
-%	\toprule
-%	Model& 2.5\% & Mean & 97.5\% \\
-%	\midrule
-%	\midrule
-%	Deterministic&		-0.08763&	-0.0002462&	0.1047\\
-%	\midrule				
-%	Stochastic 2.5\%&	-0.1485&	-0.04056&	0.04926\\
-%	Stochastic Mean&	-0.08959&	0.0002286&	0.1119\\ 
-%	Stochastic 97.5\%&	-0.04075&	0.04078&	0.1771\\ 
-%	\midrule                                        
-%	\% Diff. Means &	-25.1&	76.69&	44.82      \\
-%	\bottomrule
-%\end{tabular}
-%\end{table}
+
 %
-%\begin{table}[htbp]
-%\centering
-%\caption[DSR Arkansas R. water storage change contribution to the water model.]{DSR Arkansas R. water storage change contribution to the water model.  All values are in units of \si{\cubic\meter\per\second\per\kilo\meter}.}
-%\label{tab:DSRWaterStore}
-%\begin{tabular}{c|ccc}
-%	\toprule
-%	Model& 2.5\% & Mean & 97.5\% \\
-%	\midrule
-%	\midrule
-%	Deterministic    &	-0.01154&	0.00007389&	0.0121\\
-%	\midrule                                               
-%	Stochastic 2.5\% &	-0.03297&	-0.01365&	-0.001217\\
-%	Stochastic Mean  &	-0.014&	0.00008216&	0.01488\\      
-%	Stochastic 97.5\%&	0.0009825&	0.01381&	0.03462\\  
-%	\midrule                                               
-%	\% Diff. Means&		-164.2&	9.438&	177.1\\
-%	\bottomrule
-%\end{tabular}
-%\end{table}
-%
-%The mean of the percent difference between the deterministic and 1-D stochastic mean models is very low.  This indicates that the deterministic model is representative of the stochastic model expected value.  The high percent differences at the 2.5th and 97.5th percentile indicate that there is still a large range of uncertainty contained within the stochastic model that the deterministic model cannot replicate.  The deterministic model can be used to determine how changes can affect a reach over a span of time, but using it to estimate values for specific time steps is unwise as the differences noted at individual time steps is too large to account for.
-%
-%\emph{VII - present river reach results}\\
-%
-%The deterministic and stochastic water balance models each consist of three major components.  The flow component is the sum of all surface flows, the storage component is the sum of all storage changes, and the atmospheric component is the precipitation gains less the evaporation losses.
-%
-%Values and figures presented in this section are the storage component sub-set of the complete water balance model results.  The analyses in this section are restricted to performing a reasonability check on the results.  Results in this section are to be compared with results from the other model sub-sections from both the USR and DSR models to determine if results are acceptable.  Unacceptable results would indicate an error in the computational code or an underlying assumption.
-%
-%Figures \ref{fig:USRWaterStore} and \ref{fig:DSRWaterStore} present the sum of all river segment water storage changes in the USR and DSR, respectively, as time-series plots.  The left and right sub-figures present the deterministic and stochastic time-series, respectively.  The black line in the stochastic figures is the 1-D stochastic mean results with the blue band indicating the 95\% CIR.  Values in these figures and associated tables indicate the volume of water stored in the respective reach in units of \si{\cubic\meter\per\second\per\kilo\meter}.  Standardizing the results to present values in units of storage per unit length allows for comparisons to be made between the two study reaches and between water balance model components.  Positive values indicate that the reach's storage volume increase. 
-%
-%\begin{figure}[htbp]
-%\centering
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DUSR/Balance Water - storage"}
-%		\caption{Deterministic Model.}
-%		\label{sub:USRWaterStoreD}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/Balance Water - storage"}
-%		\caption{Stochastic Model.}
-%		\label{sub:USRWaterStoreS}
-%	\end{subfigure}
-%	\caption[Time series of the USR Arkansas R. water storage change contribution to the water model.]{Time series of the USR Arkansas R. water storage change contribution to the water model.}
-%	\label{fig:USRWaterStore}
-%\end{figure}
-%
-%\begin{figure}[htbp]
-%\centering
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DDSR/Balance Water - storage"}
-%		\caption{Deterministic Model.}
-%		\label{sub:DSRWaterStoreD}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Balance Water - storage"}
-%		\caption{Stochastic Model.}
-%		\label{sub:DSRWaterStoreS}
-%	\end{subfigure}
-%	\caption[Time series of the DSR Arkansas R. water storage change contribution to the water model.]{Time series of the DSR Arkansas R. water storage change contribution to the water model.}
-%	\label{fig:DSRWaterStore}
-%\end{figure}
-%
-%The figures show that there is a definite seasonal variation in the storage component.  Stored water changes are smallest during the cold months and are increasingly larger during the growing season.  This pattern is caused by irrigation practices in the Lower Arkansas River Basin (LARV).  Stored irrigation water is released from reservoirs upstream of the LARV during the irrigation season as demands require.  During the winter, there is very little to no irrigation occurring.  This, combined with the low precipitation and no additional flow from snow-pack runoff, allow flows in the Arkansas R. to reach base flow level when the river is at a natural equilibrium.
-%
-%This pattern is not as pronounced in the DSR.  This is most likely due to required flow rates being maintained at the Colorado-Kansas border.  With the constant required flow, John Martin Reservoir releases only enough water to meet the required flow rate.  This creates a flow regime that is nearly constant through most of the DSR. 
-%
-%Deviations are noted during peak irrigation season.  These additional volume changes are most likely due to irrigation flows returning to the Arkansas R. from fields irrigated from canal systems that procure and store water upstream of John Martin Reservoir.  The Fort Lyon Storage Canal and Fort Lyon Canal are two examples of canal systems that perform this function.  Water removed from the USR, stored, and added to the DSR is not included in this study.
-%
-%The distribution of all realizations within each time step was analyzed to determine a distribution type.  This analysis was performed to determine if the assumption that the deterministic model results were representative of the stochastic model.   Testing was performed by comparing K-S statistics for the best fit normal, log-normal, logistic, exponential, gamma, and Weibull distributions.  In the USR, 97\% of all storage component time steps best fit a normal distribution and 3\% best fit a gamma distribution.  In the DSR, 99.5\% best fit a normal distribution and 0.5\% best fit a gamma distribution.  This indicates that for both the USR and DSR, the distributions across the realizations are normal.
-%
-%Tables \ref{tab:USRWaterStore} and \ref{tab:DSRWaterStore} presents summary statistics of the deterministic and stochastic storage component changes.  Values are presented in units of \si{\cubic\meter\per\second\per\kilo\meter}.   These tables show the mean, 2.5th, and 97.5th percentile of the deterministic model and the same statistics applied to the three 1-D stochastic models.  This additional set of statistics from the 1-D stochastic 2.5th and 95.5th percentile models provide a better understanding of the extremes of the calculated values.  As before, comparison between the deterministic and stochastic models should be limited to the comparing the deterministic model to the 1-D stochastic mean model.  Also included in these two tables is the percent difference between the deterministic model and the 1-D stochastic mean model.  The mean, 2.5th, and 97.5th percentile values were calculated from the percent difference of the 1-D stochastic mean model from the deterministic model at each time step.  These values show the range of the variance from the deterministic model.
-%
-%\begin{table}[htbp]
-%\centering
-%\caption[USR Arkansas R. water storage change contribution to the water model.]{USR Arkansas R. water storage change contribution to the water model.  All values are in units of \si{\cubic\meter\per\second\per\kilo\meter}.}
-%\label{tab:USRWaterStore}
-%\begin{tabular}{c|ccc}
-%	\toprule
-%	Model& 2.5\% & Mean & 97.5\% \\
-%	\midrule
-%	\midrule
-%	Deterministic&		-0.08763&	-0.0002462&	0.1047\\
-%	\midrule				
-%	Stochastic 2.5\%&	-0.1485&	-0.04056&	0.04926\\
-%	Stochastic Mean&	-0.08959&	0.0002286&	0.1119\\ 
-%	Stochastic 97.5\%&	-0.04075&	0.04078&	0.1771\\ 
-%	\midrule                                        
-%	\% Diff. Means &	-25.1&	76.69&	44.82      \\
-%	\bottomrule
-%\end{tabular}
-%\end{table}
-%
-%\begin{table}[htbp]
-%\centering
-%\caption[DSR Arkansas R. water storage change contribution to the water model.]{DSR Arkansas R. water storage change contribution to the water model.  All values are in units of \si{\cubic\meter\per\second\per\kilo\meter}.}
-%\label{tab:DSRWaterStore}
-%\begin{tabular}{c|ccc}
-%	\toprule
-%	Model& 2.5\% & Mean & 97.5\% \\
-%	\midrule
-%	\midrule
-%	Deterministic    &	-0.01154&	0.00007389&	0.0121\\
-%	\midrule                                               
-%	Stochastic 2.5\% &	-0.03297&	-0.01365&	-0.001217\\
-%	Stochastic Mean  &	-0.014&	0.00008216&	0.01488\\      
-%	Stochastic 97.5\%&	0.0009825&	0.01381&	0.03462\\  
-%	\midrule                                               
-%	\% Diff. Means&		-164.2&	9.438&	177.1\\
-%	\bottomrule
-%\end{tabular}
-%\end{table}
+
 %
 %The mean of the percent difference between the deterministic and 1-D stochastic mean models is very low.  This indicates that the deterministic model is representative of the stochastic model expected value.  The high percent differences at the 2.5th and 97.5th percentile indicate that there is still a large range of uncertainty contained within the stochastic model that the deterministic model cannot replicate.  The deterministic model can be used to determine how changes can affect a reach over a span of time, but using it to estimate values for specific time steps is unwise as the differences noted at individual time steps is too large to account for.
 %
@@ -980,10 +865,7 @@ Deviations are noted during peak irrigation season.  These additional volume cha
 %\emph{I - define the variables}\\
 %
 %\emph{II - define the reported flow rate uncertainty distributions}\\
-%The U.S. Geological Survey (USGS) and the Colorado Department of Water Resources (CDWR) provides data for stream flow, water temperature, and specific conductance measurements required for the mass balance analysis.  Each data set they provide has its own uncertainty distribution.  The USGS has a standardized methodology to characterize the uncertainty with specific data sets.  This methodology was adopted by the Colorado Department of Water Resources.
-%
-%Stream flow data is provided in either 15-minute increments or average daily flow format, where average daily flow is the average of all of the 15-minute increment measurements taken during a calendar day.  The USGS provides three specific uncertainty distributions for average daily stream flow data which are described in every annual water data report \parencite{USGS2006NWIS, USGS2007NWIS, USGS2008NWIS, USGS2009NWIS, USGS2010NWIS, USGS2011NWIS, USGS2012NWIS}.  The USGS calls these uncertainty distributions "ratings of accuracy".  These ratings are "excellent", "good", and "fair".  The "excellent" rating indicates that "95 percent of the daily discharges are within 5 percent of the true value".  The distributions expand to 10\% and 15\% for "good" and "fair" ratings, respectively.  There is a fourth rating used on some average daily stream flow data gathered in the LARV; "poor".  This rating is not specific as it states that 95 percent of the values are more than 15\% of the true value.  For this thesis, we have assumed that the "poor" rating indicates that 95 percent of the values are within 20 percent of the true value.
-%
+
 %Average daily stream flow is calculated using equation \ref{eq:flow and error1}.   
 %\begin{equation}
 %\label{eq:flow and error1}
@@ -996,8 +878,7 @@ Deviations are noted during peak irrigation season.  These additional volume cha
 %$\varepsilon_Q$ =& flow rate error.\\
 %\end{tabular}\\
 %
-%Using this equation with very low flow values may result in negative flow rates.  Therefore, $\bar{Q}$ was calculated using a truncated normal distribution where the minimum allowed value was \SI{0}{\cubic\meter\per\second}, the maximum allowed value was 1.25 times the maximum reported value for the specific stream gauge, and the mean value was the reported flow rate value.  Truncation was performed using an algorithm within the statistical software that used re-sampling and replacement.  Other methods were available, but they were deemed to be less reliable.
-%
+
 %Water temperature and specific conductance data is also collected concurrently with the 15-minute increment stream flow measurements.  These two data sets also have ratings assigned to them using the terms "excellent", "good", "fair", and "poor".  The quantity of values within these distributions is not specifically described as for the stream flow data.  Since the uncertainty ratings use the same terms, we assume that these ratings encompass 95 percent of the values, just like the stream flow data.  The range of the ratings are dependent on the parameter being measured and are based on a combination of instrument fouling and calibration drift for the specific instrument.  Table \ref{tab:USGSRatings} is extracted from a USGS Annual Water Data Report and describes the ranges assigned to each of the measured parameters and accuracy ratings.
 %\begin{table}[htbp]
 %\begin{center}
@@ -1334,7 +1215,7 @@ Deviations are noted during peak irrigation season.  These additional volume cha
 %	\label{fig:DSRWaterFlow}
 %\end{figure}
 %
-%The figures show that there is a definite seasonal variation in the flow component.  The surface water flow balance changes from being a losing system to a gaining system during the irrigation season.  This pattern is caused by irrigation practices in the Lower Arkansas River Basin (LARV).  Excess irrigation water applied to fields runs off into tributaries which feed into the Arkansas R.
+%The figures show that there is a definite seasonal variation in the flow component.  The surface water flow balance changes from being a losing system to a gaining system during the irrigation season.  This pattern is caused by irrigation practices in the Lower Arkansas River Basin (LARV).  Excess irrigation water applied to fields runs off into tributaries which feed into the Arkansas River
 %
 %The figures also show that the river is discharging more water than it receives.  In the USR, this matches the general observed trend where the upstream end of the reaches receives more water than the downstream ends discharges.  This does not match the observed trend in the DSR where the flows at the upstream end appear to be less than or equal to the flows at the downstream end.  In the DSR, this mismatch between the observed phenomenon and the measured values indicates that another process is a significant contributor to the flow regime.  Since the two reaches are in the same environment, it is reasonable to assume that the same phenomenon is present in the USR.  It is suspected that groundwater from the riparian aquifer is the unaccounted for source in both the USR and DSR.
 %
@@ -1394,7 +1275,7 @@ Deviations are noted during peak irrigation season.  These additional volume cha
 %
 %\emph{I - define relationship between total E and ET(ref)}\\
 %
-%$ET_{ref}$ and precipitation were calculated with respect to the surface of the Arkansas R.  Storm runoff, evaporation from bank evaporation, and evapotranspiration from plant life within the river channel were not included in the calculation.  Storm runoff is difficult to estimate on a regional basis for a non-uniform rainfall event.  It was assumed that for the vast majority of rainfall events, surface runoff into the river would be negligible.  Evaporative losses from bank evaporation were neglected because this evaporation is outside of the study boundary.  While there are areas where vegetation is within the river's boundaries, transpiration losses are neglected because their magnitude and effect on the study region are not known.  All three of these neglected quantities are included in the unaccounted for flow definition in section
+%$ET_{ref}$ and precipitation were calculated with respect to the surface of the Arkansas River  Storm runoff, evaporation from bank evaporation, and evapotranspiration from plant life within the river channel were not included in the calculation.  Storm runoff is difficult to estimate on a regional basis for a non-uniform rainfall event.  It was assumed that for the vast majority of rainfall events, surface runoff into the river would be negligible.  Evaporative losses from bank evaporation were neglected because this evaporation is outside of the study boundary.  While there are areas where vegetation is within the river's boundaries, transpiration losses are neglected because their magnitude and effect on the study region are not known.  All three of these neglected quantities are included in the unaccounted for flow definition in section
 %
 %CoAgMet uses the ASCE EWRI tall crop reference equation to calculate $ET_{ref}$ from weather data.  This equation is identical to the FAO Penman-Montieth equation \parencite{walter2000asce,FAO56}:
 %\begin{equation}
@@ -1607,7 +1488,7 @@ Deviations are noted during peak irrigation season.  These additional volume cha
 %
 %\emph{VI - define relationship between P measured and P realized}\\
 %
-%Precipitation in the study regions is not well defined.  An assumption was made that precipitation was not uniformly distributed over either study region.  Reports from field technicians, conversation with local residents, and personal experience indicate that most storms during the summer were isolated and relatively small.  It was not known by the end of this study whether weather radar data was available or could be used to more accurately estimate rainfall onto the Arkansas R. water surface.  It was assumed that, at best, 50\% of any rain event would add water directly to the river.
+%Precipitation in the study regions is not well defined.  An assumption was made that precipitation was not uniformly distributed over either study region.  Reports from field technicians, conversation with local residents, and personal experience indicate that most storms during the summer were isolated and relatively small.  It was not known by the end of this study whether weather radar data was available or could be used to more accurately estimate rainfall onto the Arkansas River water surface.  It was assumed that, at best, 50\% of any rain event would add water directly to the river.
 %
 %Precipitation, minimum daily relative humidity, and wind speed data error provided through the CoAgMet system was based solely on instrument accuracy.  Instrument accuracy was reported as $\pm1\%$ for precipitation, $\pm2\%$ for minimum daily relative humidity, and $\pm0.5~m \cdot s^{-1}$ for wind speed.  These values are based on the typical instruments installed at the various locations.  Sensors vary somewhat between observation sites due to equipemnt replacement.  Colorado Climate Network personnel have stated that replacement equipment either meets or exceeds the equipment on a typical observation site.  The uncertainty distributions for these three weather measurements was assumed to be normal with 95\% of the values within the reported range of the true value (coagmet website).  Additional sources of uncertainty regarding these values are included in the preliminary results reported by Dr.\ Ch\'{a}vez.
 %
@@ -1732,7 +1613,7 @@ Deviations are noted during peak irrigation season.  These additional volume cha
 %		\caption{Stochastic Model.}
 %		\label{sub:USRWaterS}
 %	\end{subfigure}
-%	\caption[Time series of the USR Arkansas R. unaccounted for water flow.]{Time series of the USR Arkansas R. unaccounted for water flow.  Positive values indicate a gain to the river reach.}
+%	\caption[Time series of the USR Arkansas River unaccounted for water flow.]{Time series of the USR Arkansas River unaccounted for water flow.  Positive values indicate a gain to the river reach.}
 %	\label{fig:USRWater}
 %\end{figure}
 %
@@ -1750,11 +1631,11 @@ Deviations are noted during peak irrigation season.  These additional volume cha
 %		\caption{Stochastic Model.}
 %		\label{sub:DSRWaterS}
 %	\end{subfigure}
-%	\caption[Time series of the DSR Arkansas R. unaccounted for water flow.]{Time series of the DSR Arkansas R. unaccounted for water flow.  Positive values indicate a gain to the river reach.}
+%	\caption[Time series of the DSR Arkansas River unaccounted for water flow.]{Time series of the DSR Arkansas River unaccounted for water flow.  Positive values indicate a gain to the river reach.}
 %	\label{fig:DSRWater}
 %\end{figure}
 %
-%As anticipated with the study reach intermediate results, the model results indicate that there is seasonable variability with the transport of selenium.  The figures show that the USR and DSR receive a significant quantity of water from unaccounted for sources.  There is a very short period during midyear where the unaccounted for flows are a sink for water being lost from the Arkansas R.
+%As anticipated with the study reach intermediate results, the model results indicate that there is seasonable variability with the transport of selenium.  The figures show that the USR and DSR receive a significant quantity of water from unaccounted for sources.  There is a very short period during midyear where the unaccounted for flows are a sink for water being lost from the Arkansas River
 %
 %The distribution of all realizations within each time step was analyzed to determine a distribution type.  This analysis was performed to determine if the assumption that the deterministic model results were representative of the stochastic model.   Testing was performed by comparing K-S statistics for the best fit normal, log-normal, logistic, exponential, gamma, and Weibull distributions.  In the USR, 92\% of all storage component time steps best fit a normal distribution and 8\% best fit a gamma distribution.  In the DSR, 66\% best fit a normal distribution and 33\% best fit a gamma distribution.  This indicates that for both the USR and DSR, the distributions across the realizations are normal.  The DSR water balance model does show some significant skewness due to the relatively large percentage of time steps that best fit a gamma distribution.
 %
@@ -1832,7 +1713,7 @@ Deviations are noted during peak irrigation season.  These additional volume cha
 %		\caption{Combined Contributions.}
 %		\label{sub:USRWComb}
 %	\end{subfigure}
-%	\caption[Time series of the major USR Arkansas R. contributions to the water model.]{Time series of the major USR Arkansas R. contributions to the water model.}
+%	\caption[Time series of the major USR Arkansas River contributions to the water model.]{Time series of the major USR Arkansas River contributions to the water model.}
 %	\label{fig:USRWaterContrib}
 %\end{figure}
 %
@@ -1856,7 +1737,7 @@ Deviations are noted during peak irrigation season.  These additional volume cha
 %		\caption{Combined Contributions.}
 %		\label{sub:USRMComb}
 %	\end{subfigure}
-%	\caption[Time series of the major USR Arkansas R. contributions to the mass balance model.]{Time series of the major USR Arkansas R. contributions to the mass balance model.}
+%	\caption[Time series of the major USR Arkansas River contributions to the mass balance model.]{Time series of the major USR Arkansas River contributions to the mass balance model.}
 %	\label{fig:USRMassContrib}
 %\end{figure}
 %
@@ -1918,7 +1799,7 @@ Deviations are noted during peak irrigation season.  These additional volume cha
 %		\caption{Combined Contributions.}
 %		\label{sub:DSRWComb}
 %	\end{subfigure}
-%	\caption[Time series of the major DSR Arkansas R. contributions to the water model.]{Time series of the major DSR Arkansas R. contributions to the water model.}
+%	\caption[Time series of the major DSR Arkansas River contributions to the water model.]{Time series of the major DSR Arkansas River contributions to the water model.}
 %	\label{fig:DSRWaterContrib}
 %\end{figure}
 %
@@ -1942,7 +1823,7 @@ Deviations are noted during peak irrigation season.  These additional volume cha
 %		\caption{Combined Contributions.}
 %		\label{sub:DSRMComb}
 %	\end{subfigure}
-%	\caption[Time series of the major USR Arkansas R. contributions to the mass balance model.]{Time series of the major USR Arkansas R. contributions to the mass balance model.}
+%	\caption[Time series of the major USR Arkansas River contributions to the mass balance model.]{Time series of the major USR Arkansas River contributions to the mass balance model.}
 %	\label{fig:DSRMassContrib}
 %\end{figure}
 %
@@ -2037,11 +1918,7 @@ Deviations are noted during peak irrigation season.  These additional volume cha
 %
 %The difference between the study regions is nearly negligible when looking at the mass balance models.  these models have mean values that are nearly identical.  This allows us to conclude that the selenium dissolution and transport processes that are active in the USR are equal or approximately equal in magnitude to those in the DSR.
 
-\begin{table}[htbp]
-	\caption[USGS Measured Field Parameter Accuracy Rating Table.]{USGS Measured Field Parameter Accuracy Rating Table.  This table was taken from the USGS annual water data report. }
-	\label{tab:USGSError}
-	\includegraphics[width=6in]{"Figures/USGS_error_table"}
-\end{table}
+
 
 \clearpage{}
 \end{linenumbers}

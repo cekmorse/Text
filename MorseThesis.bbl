@@ -265,6 +265,147 @@
       \field{year}{2010}
       \field{pages}{6}
     \endentry
+    \entry{USGS2006NWIS}{online}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{c331da575c7eb6f801042d5153adc8a3}
+      \strng{fullhash}{c331da575c7eb6f801042d5153adc8a3}
+      \field{sortinit}{U}
+      \field{labelyear}{2006}
+      \field{datelabelsource}{}
+      \field{labeltitle}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{title}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{year}{2006}
+      \verb{url}
+      \verb http://waterdata.usgs.gov/nwis/
+      \endverb
+    \endentry
+    \entry{USGS2007NWIS}{online}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {U.S.Geological Society}%
+      }
+      \strng{namehash}{c331da575c7eb6f801042d5153adc8a3}
+      \strng{fullhash}{c331da575c7eb6f801042d5153adc8a3}
+      \field{sortinit}{U}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{}
+      \field{labeltitle}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{howpublished}{Internet}
+      \field{title}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{year}{2007}
+      \verb{url}
+      \verb http://waterdata.usgs.gov/nwis/
+      \endverb
+    \endentry
+    \entry{USGS2008NWIS}{online}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {U.S.Geological Society}%
+      }
+      \strng{namehash}{c331da575c7eb6f801042d5153adc8a3}
+      \strng{fullhash}{c331da575c7eb6f801042d5153adc8a3}
+      \field{sortinit}{U}
+      \field{labelyear}{2008}
+      \field{datelabelsource}{}
+      \field{labeltitle}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{howpublished}{Internet}
+      \field{title}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{year}{2008}
+      \verb{url}
+      \verb http://waterdata.usgs.gov/nwis/
+      \endverb
+    \endentry
+    \entry{USGS2009NWIS}{online}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{c331da575c7eb6f801042d5153adc8a3}
+      \strng{fullhash}{c331da575c7eb6f801042d5153adc8a3}
+      \field{sortinit}{U}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labeltitle}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{title}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{year}{2009}
+      \verb{url}
+      \verb http://waterdata.usgs.gov/nwis/
+      \endverb
+    \endentry
+    \entry{USGS2010NWIS}{online}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{c331da575c7eb6f801042d5153adc8a3}
+      \strng{fullhash}{c331da575c7eb6f801042d5153adc8a3}
+      \field{sortinit}{U}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labeltitle}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{title}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{year}{2010}
+      \verb{url}
+      \verb http://waterdata.usgs.gov/nwis/
+      \endverb
+    \endentry
+    \entry{USGS2011NWIS}{online}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{c331da575c7eb6f801042d5153adc8a3}
+      \strng{fullhash}{c331da575c7eb6f801042d5153adc8a3}
+      \field{sortinit}{U}
+      \field{labelyear}{2011}
+      \field{datelabelsource}{}
+      \field{labeltitle}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{title}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{year}{2011}
+      \verb{url}
+      \verb http://waterdata.usgs.gov/nwis/
+      \endverb
+    \endentry
+    \entry{USGS2012NWIS}{online}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=c331da575c7eb6f801042d5153adc8a3}{USGS}{U\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{c331da575c7eb6f801042d5153adc8a3}
+      \strng{fullhash}{c331da575c7eb6f801042d5153adc8a3}
+      \field{sortinit}{U}
+      \field{labelyear}{2012}
+      \field{datelabelsource}{}
+      \field{labeltitle}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{title}{National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://waterdata.usgs.gov/nwis/
+      \endverb
+    \endentry
     \entry{venables2002}{book}{}
       \name{labelname}{2}{}{%
         {{uniquename=0,hash=f11cb9dda63c04a0bc541123c6fe17fe}{Venables}{V\bibinitperiod}{William\bibnamedelima N}{W\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%

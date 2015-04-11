@@ -1984,6 +1984,13 @@
     <bcf:citekey order="14">Buhman2002</bcf:citekey>
     <bcf:citekey order="14">Gates1996</bcf:citekey>
     <bcf:citekey order="15">spiess2010</bcf:citekey>
+    <bcf:citekey order="16">USGS2006NWIS</bcf:citekey>
+    <bcf:citekey order="16">USGS2007NWIS</bcf:citekey>
+    <bcf:citekey order="16">USGS2008NWIS</bcf:citekey>
+    <bcf:citekey order="16">USGS2009NWIS</bcf:citekey>
+    <bcf:citekey order="16">USGS2010NWIS</bcf:citekey>
+    <bcf:citekey order="16">USGS2011NWIS</bcf:citekey>
+    <bcf:citekey order="16">USGS2012NWIS</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="nyt">
   <bcf:sorting>

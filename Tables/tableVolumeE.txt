@@ -1,4 +1,4 @@
-\begin{tabular}{C{1.25in} C{1.4in} C{1.4in} C{1.4in}} 
+\begin{tabular}{C{1.2in} C{1.5in} C{1.5in} C{1.5in}} 
 \toprule 
 \multicolumn{4}{l}{\textbf{Deterministic Model Time Series}} \\ 
 & 2.5th & \multirow{2}{*}{Mean} & 97.5th \\ 
