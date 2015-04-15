@@ -470,7 +470,7 @@ The time-series plots of all four stochastic geometric parameters for each study
 			\subcaption*{Segment B}
 			\label{sub:GeoTS_B}
 		\end{subfigure}\\
-	\caption[USR stochastic geometric parameter time-series.]{USR stochastic geometric parameter time-series. The black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.  The red dashed line in the flow depth portion of the figure indicates the reported flow depth values.}
+	\caption[USR and DSR stochastic geometric parameter time-series.]{USR and DSR stochastic geometric parameter time-series. The black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.  The red dashed line in the flow depth portion of the figure indicates the reported flow depth values.}
 	\label{fig:GeoTS_US}
 	\end{figure}
 \end{landscape}
@@ -490,7 +490,7 @@ The time-series plots of all four stochastic geometric parameters for each study
 			\subcaption*{Segment D}
 			\label{sub:GeoTS_D}
 		\end{subfigure}\\
-		\caption{Stochastic geometric parameter time-series.}
+		\caption{USR and DSR stochastic geometric parameter time-series.}
 	\end{figure}
 \end{landscape}
 
@@ -503,7 +503,7 @@ The time-series plots of all four stochastic geometric parameters for each study
 			\subcaption*{Segment E}
 			\label{sub:GeoTS_E}	
 		\end{subfigure}\\
-		\caption{Stochastic geometric parameter time-series.}
+		\caption{USR and DSR stochastic geometric parameter time-series.}
 	\end{figure}
 \end{landscape}
 
@@ -677,7 +677,7 @@ Figure \ref{fig:USRWaterStore} and \ref{fig:DSRWaterStore} presents the river re
 	\begin{subfigure}{0.5\textwidth}
 		\centering
 		\missingfigure{}
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/Stochastic/Balance Water - storage"}
+		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/Stochastic/Balance Water - storage"}
 		\subcaption*{Stochastic Model.}
 		\label{sub:USRWaterStoreS}
 	\end{subfigure}\\
@@ -764,7 +764,7 @@ Where each subscript is defined as the flow through the gauge described in Table
 	\centering
 	\caption[Description of USR stream flow variables.]{Description of USR stream flow variables.  The CDWR gauge name is the USR model variable sub-script.  The variable group is the category to which the flow belongs.}
 	\label{tab:USRFlow}
-	\begin{tabular}{c c p{3.5in}}
+	\begin{tabular}{c C{1in} p{3.5in}}
 		\toprule
 		CDWR Gauge & Variable & \multirow{2}{*}{Description}\\
 		Name				& Group & \\
@@ -790,13 +790,13 @@ For the DSR, equation \ref{eq:flow1} is expanded as follows to contain all of th
 	\sum Q_{Total} = &~Q_{ARKLAMCO} + Q_{BIGLAMCO} - Q_{BUFDITCO} + Q_{WILDHOCO} \\
 	\nonumber & - Q_{FRODITKS} - Q_{ARKCOOKS}
 \end{align}
-Where each subscript is defined as the flow through the gauge described in Table \ref{tab:DSRFlow}.  In this table, each of the flow variables in equation \ref{eq:DSRFlow}, designated by its CDWR gauge name, is grouped by the type of flow using the variables used in equation \ref{eq:water1}.\\
+Where each subscript is defined as the flow through the gauge described in Table \ref{tab:DSRFlow}.  In this table, each of the flow variables in equation \ref{eq:DSRFlow}, designated by its CDWR gauge name, is grouped by the type of flow using the variables used in equation \ref{eq:water1}.
 
 \begin{table}[htbp]
 	\centering
 	\caption[Description of DSR stream flow variables.]{Description of DSR stream flow variables.  The CDWR gauge name is the DSR model variable sub-script.  The variable group is the category to which the flow belongs.}
 	\label{tab:DSRFlow}
-	\begin{tabular}{c c p{3.5in}}
+	\begin{tabular}{c C{1in} p{3.5in}}
 		\toprule
 		CDWR Gauge & Variable & \multirow{2}{*}{Description}\\
 		Name				& Group & \\
@@ -825,12 +825,373 @@ Equations \ref{eq:USRFlow} and \ref{eq:DSRFlow} constitute the surface water flo
 
 Using Equation \ref{eq:flow1error} with very low flow values may result in negative flow rates.  Therefore, $Q_{stochastic}$ was calculated using a truncated normal distribution where the minimum allowed value was \SI{0}{\cubic\meter\per\second} (\SI{0}{\cubic\foot\per\second}), the maximum allowed value was 1.25 times the maximum reported value for the specific stream gauge, and the mean value was the reported flow rate value.  Truncation was performed using an algorithm within the statistical software that used re-sampling and replacement.  Other methods were available, but they were deemed to be less reliable.
 
-Stream flow data is provided as described in Section \ref{sec:data collected by other sources}  The USGS provides three specific uncertainty distributions for average daily stream flow data which are described in every annual water data report \parencite{USGS2006NWIS, USGS2007NWIS, USGS2008NWIS, USGS2009NWIS, USGS2010NWIS, USGS2011NWIS, USGS2012NWIS}.  The USGS calls these uncertainty distributions "ratings of accuracy".  These ratings are "excellent", "good", and "fair".  The "excellent" rating indicates that "the daily discharges are within 5 percent of the true value".  The distributions expand to 10\% and 15\% for "good" and "fair" ratings, respectively.  There is a fourth rating used on some average daily stream flow data gathered in the LARV; "poor".  This rating is not specific as it states that the values are more than 15\% of the true value.  For this thesis, we have assumed that the "poor" rating indicates that 95 percent of the values are within 20 percent of the true value.  These ratings are as shown in Table \ref{tab:USGSError} which was extracted from a USGS annual water data report.
+Stream flow data is provided as described in Section \ref{sec:data collected by other sources}  The USGS provides three specific uncertainty distributions for average daily stream flow data which are described in every annual water data report \parencite{USGS2006NWIS, USGS2007NWIS, USGS2008NWIS, USGS2009NWIS, USGS2010NWIS, USGS2011NWIS, USGS2012NWIS}.  The USGS calls these uncertainty distributions "ratings of accuracy".  These ratings are "excellent", "good", and "fair".  The "excellent" rating indicates that "the daily discharges are within 5 percent of the true value".  The distributions expand to 10\% and 15\% for "good" and "fair" ratings, respectively.  There is a fourth rating used on some average daily stream flow data gathered in the LARV; "poor".  This rating is not specific as it states that the values are more than 15\% of the true value.  For this thesis, we have refined the "poor" rating definition such that 95 percent of the values are within 20 percent of the true value.  These ratings are as shown in Table \ref{tab:USGSError} which was extracted from a USGS annual water data report.
 
 \begin{table}[htbp]
 	\caption[USGS Measured Field Parameter Accuracy Rating Table.]{USGS Measured Field Parameter Accuracy Rating Table.  This table was taken from the USGS annual water data report. }
 	\label{tab:USGSError}
 	\includegraphics[width=6in]{"Figures/USGS_error_table"}
+\end{table}
+
+Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic and deterministic model results for each of the stream flow variables used in USR and DSR models, respectively.  Each pair of figures presents the deterministic model results on the left and the stochastic model results on the right.  The deterministic model figures show the flow rates as reported by the CDWR and USGS.  The stochastic model figures present the stochastic model mean time series and the band bounded by the stochastic model 2.5th percentile time-series and the stochastic model 97.5th percentile time-series.  These figures present results from each of the stream gauge in CDWR stream gauge name alphabetical order.
+
+\subfiguretop
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ Q_{ARKCATCO} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Q U163"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q U163"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption[USR deterministic and stochastic model time-series.]{USR deterministic and stochastic model time-series.  The deterministic model time-series presents the data reported by the CDWR and USGS gauges.  In the stochastic model time-series, the black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.  Results are presented in CDWR stream gauge name alphabetical order.}
+		\label{fig:GaugeFlow_US}
+	\end{figure}
+\end{landscape}
+\subfiguremid
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ Q_{ARKLASCO} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Q U201"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q U201"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption{USR deterministic and stochastic model time-series.}
+	\end{figure}
+\end{landscape}
+\subfiguremid
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ Q_{CANSWKCO} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Q CAN"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q CAN"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption{USR deterministic and stochastic model time-series.}
+	\end{figure}
+\end{landscape}
+\subfiguremid
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ Q_{CONDITCO} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Q CON"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q CON"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption{USR deterministic and stochastic model time-series.}
+	\end{figure}
+\end{landscape}
+\subfiguremid
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ Q_{FLSCANCO} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Q FLS"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q FLS"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption{USR deterministic and stochastic model time-series.}
+	\end{figure}
+\end{landscape}
+\subfiguremid
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ Q_{FLYCANCO} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Q FLY"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q FLY"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption{USR deterministic and stochastic model time-series.}
+	\end{figure}
+\end{landscape}
+\subfiguremid
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ Q_{HOLCANCO} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Q HOL"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q HOL"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption{USR deterministic and stochastic model time-series.}
+	\end{figure}
+\end{landscape}
+\subfiguremid
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ Q_{HRC194CO} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Q HRC"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q HRC"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption{USR deterministic and stochastic model time-series.}
+	\end{figure}
+\end{landscape}
+\subfiguremid
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ Q_{RFDMANCO} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Q RFD"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q RFD"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption{USR deterministic and stochastic model time-series.}
+	\end{figure}
+\end{landscape}
+\subfiguremid
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ Q_{RFDRETCO} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Q RFR"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q RFR"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption{USR deterministic and stochastic model time-series.}
+	\end{figure}
+\end{landscape}
+\subfiguremid
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ Q_{TIMSWICO} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Q TIM"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q TIM"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption{USR deterministic and stochastic model time-series.}
+	\end{figure}
+\end{landscape}
+\subfiguremid
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ Q_{LaJuntaWWTP} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Q WTP"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q WTP"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption{USR deterministic and stochastic model time-series.}
+	\end{figure}
+\end{landscape}
+
+
+
+\subfiguretop
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ Q_{CANSWKCO} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+%			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Deterministic/Q CAN"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+%			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Stochastic/Q CAN"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption[DSR deterministic and stochastic model time-series.]{DSR deterministic and stochastic model time-series.  The deterministic model time-series presents the data reported by the CDWR and USGS gauges.  In the stochastic model time-series, the black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.  Results are presented in CDWR stream gauge name alphabetical order.}
+		\label{fig:GaugeFlow_DS}
+	\end{figure}
+\end{landscape}
+\subfiguremid
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ Q_{LaJuntaWWTP} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+%			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Deterministic/Q WTP"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+%			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Stochastic/Q WTP"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption{DSR deterministic and stochastic model time-series.}
+	\end{figure}
+\end{landscape}
+
+Both figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} show that the stochastic model mean time-series of each of the calculated stochastic model flow rates does not deviate significantly from the deterministic model time-series.  Tables \ref{tab:GaugeFlow_US} and \ref{tab:GaugeFlow_DS} present the numeric results associated with each of the figures.
+
+\subtabletop
+\begin{table}[htbp]
+	\centering
+	\caption[USR deterministic and stochastic model time-series average daily flow rate numeric results.]{USR deterministic and stochastic model time-series average daily flow rate numeric results.  Results are presented in CDWR stream gauge name alphabetical order.}
+	\label{tab:GaugeFlow_US}
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{ARKCATCO}
+		\input{"Tables/USR_qIN.txt"}
+	\end{subtable}\\
+	\tablevspace
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{ARKLASCO}
+		\input{"Tables/USR_qOUT.txt"}
+	\end{subtable}\\
+\end{table}
+\subtablemid
+\begin{table}[htbp]
+	\centering
+	\centering
+	\caption{USR deterministic and stochastic model time-series average daily flow rate numeric results.}
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{CANSWKCO}
+		\input{"Tables/USR_qCAN.txt"}
+	\end{subtable}\\
+	\tablevspace
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{CONDITCO}
+		\input{"Tables/USR_qCON.txt"}
+	\end{subtable}\\
+\end{table}	
+\subtablemid
+\begin{table}[htbp]
+	\centering
+	\caption{USR deterministic and stochastic model time-series average daily flow rate numeric results.}
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{FLSCANCO}
+		\input{"Tables/USR_qFLS.txt"}
+	\end{subtable}\\
+	\tablevspace
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{FLYCANCO}
+		\input{"Tables/USR_qFLY.txt"}
+	\end{subtable}\\
+\end{table}
+\subtablemid
+\begin{table}[htbp]
+	\centering
+	\caption{USR deterministic and stochastic model time-series average daily flow rate numeric results.}
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{HOLCANCO}
+		\input{"Tables/USR_qHOL.txt"}
+	\end{subtable}\\
+	\tablevspace
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{HRC194CO}
+		\input{"Tables/USR_qHRC.txt"}
+	\end{subtable}\\
+\end{table}
+\subtablemid
+\begin{table}[htbp]
+	\centering
+	\caption{USR deterministic and stochastic model time-series average daily flow rate numeric results.}
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{RFDMANCO}
+		\input{"Tables/USR_qRFD.txt"}
+	\end{subtable}\\
+	\tablevspace
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{RFDRETCO}
+		\input{"Tables/USR_qRFR.txt"}
+	\end{subtable}\\
+\end{table}
+\subtablemid
+\begin{table}[htbp]
+	\centering
+	\caption{USR deterministic and stochastic model time-series average daily flow rate numeric results.}
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{TIMSWICO}
+		\input{"Tables/USR_qTIM.txt"}
+	\end{subtable}\\
+	\tablevspace
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{LaJunta WWTP}
+		\input{"Tables/USR_qWTP.txt"}
+	\end{subtable}\\
 \end{table}
 
 

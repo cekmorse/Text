@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  10 APR 2015 07:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  15 APR 2015 14:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1874,6 +1874,21 @@ Package pdftex.def Info: "Figures/Results_USR/Deterministic/Balance Water - sto
 rage".pdf used on input line 673.
 (pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
 
+
+! LaTeX Error: File `"Figures/Results_USR/Stochastic/Balance Water - storage"' 
+not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.680 ..._USR/Stochastic/Balance Water - storage"}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.jpeg,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 (./Tables/USRVolume.txt)
 Underfull \vbox (badness 2846) has occurred while \output is active []
 
@@ -1909,35 +1924,346 @@ LaTeX Warning: Reference `DSRSample' on page 47 undefined on input line 787.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [47]
-Underfull \hbox (badness 10000) in paragraph at lines 792--794
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 818--825
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [48]
+[48]
 
 LaTeX Warning: Reference `sec:data collected by other sources' on page 49 undef
-ined on input line 830.
+ined on input line 828.
 
+<"Figures/USGS_error_table".pdf, id=595, 531.18451pt x 359.9046pt>
+File: "Figures/USGS_error_table".pdf Graphic file (type pdf)
+
+<use "Figures/USGS_error_table".pdf>
+Package pdftex.def Info: "Figures/USGS_error_table".pdf used on input line 833.
+
+(pdftex.def)             Requested size: 433.62pt x 293.81116pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [49]
-<"Figures/USGS_error_table".pdf, id=607, 531.18451pt x 359.9046pt>
-File: "Figures/USGS_error_table".pdf Graphic file (type pdf)
+[50 <./Figures/USGS_error_table.pdf>]
+<"Figures/Results_USR/Deterministic/Q U163".pdf, id=624, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Deterministic/Q U163".pdf Graphic file (type pdf)
 
-<use "Figures/USGS_error_table".pdf>
-Package pdftex.def Info: "Figures/USGS_error_table".pdf used on input line 835.
+<use "Figures/Results_USR/Deterministic/Q U163".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Deterministic/Q U163".pdf used on
+ input line 845.
+(pdftex.def)             Requested size: 328.82706pt x 328.84004pt.
 
-(pdftex.def)             Requested size: 433.62pt x 293.81116pt.
- [50 <./Figures/USGS_error_table.pdf>])
+<"Figures/Results_USR/Stochastic/Q U163".pdf, id=625, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Q U163".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Q U163".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Q U163".pdf used on in
+put line 850.
+(pdftex.def)             Requested size: 328.82706pt x 328.84004pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 842--852
+ []$$[]$ 
+ []
+
+
+LaTeX Warning: Text page 51 contains only floats.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [51
+
+ <./Figures/Results_USR/Deterministic/Q U163.pdf> <./Figures/Results_USR/Stocha
+stic/Q U163.pdf>]
+<"Figures/Results_USR/Deterministic/Q U201".pdf, id=645, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Deterministic/Q U201".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Deterministic/Q U201".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Deterministic/Q U201".pdf used on
+ input line 864.
+(pdftex.def)             Requested size: 328.82706pt x 328.84004pt.
+
+<"Figures/Results_USR/Stochastic/Q U201".pdf, id=646, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Q U201".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Q U201".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Q U201".pdf used on in
+put line 869.
+(pdftex.def)             Requested size: 328.82706pt x 328.84004pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 861--871
+ []$$[]$ 
+ []
+
+[52 <./Figures/Results_USR/Deterministic/Q U201.pdf> <./Figures/Results_USR/Sto
+chastic/Q U201.pdf>]
+<"Figures/Results_USR/Deterministic/Q CAN".pdf, id=667, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Deterministic/Q CAN".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Deterministic/Q CAN".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Deterministic/Q CAN".pdf used on 
+input line 882.
+(pdftex.def)             Requested size: 328.82706pt x 328.84004pt.
+
+<"Figures/Results_USR/Stochastic/Q CAN".pdf, id=668, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Q CAN".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Q CAN".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Q CAN".pdf used on inp
+ut line 887.
+(pdftex.def)             Requested size: 328.82706pt x 328.84004pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 879--889
+ []$$[]$ 
+ []
+
+[53 <./Figures/Results_USR/Deterministic/Q CAN.pdf> <./Figures/Results_USR/Stoc
+hastic/Q CAN.pdf>]
+<"Figures/Results_USR/Deterministic/Q CON".pdf, id=690, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Deterministic/Q CON".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Deterministic/Q CON".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Deterministic/Q CON".pdf used on 
+input line 900.
+(pdftex.def)             Requested size: 328.82706pt x 328.84004pt.
+
+<"Figures/Results_USR/Stochastic/Q CON".pdf, id=691, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Q CON".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Q CON".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Q CON".pdf used on inp
+ut line 905.
+(pdftex.def)             Requested size: 328.82706pt x 328.84004pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 897--907
+ []$$[]$ 
+ []
+
+[54 <./Figures/Results_USR/Deterministic/Q CON.pdf> <./Figures/Results_USR/Stoc
+hastic/Q CON.pdf>]
+<"Figures/Results_USR/Deterministic/Q FLS".pdf, id=712, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Deterministic/Q FLS".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Deterministic/Q FLS".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Deterministic/Q FLS".pdf used on 
+input line 918.
+(pdftex.def)             Requested size: 328.82706pt x 328.84004pt.
+
+<"Figures/Results_USR/Stochastic/Q FLS".pdf, id=713, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Q FLS".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Q FLS".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Q FLS".pdf used on inp
+ut line 923.
+(pdftex.def)             Requested size: 328.82706pt x 328.84004pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 915--925
+ []$$[]$ 
+ []
+
+[55 <./Figures/Results_USR/Deterministic/Q FLS.pdf> <./Figures/Results_USR/Stoc
+hastic/Q FLS.pdf>]
+<"Figures/Results_USR/Deterministic/Q FLY".pdf, id=735, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Deterministic/Q FLY".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Deterministic/Q FLY".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Deterministic/Q FLY".pdf used on 
+input line 936.
+(pdftex.def)             Requested size: 328.82706pt x 328.84004pt.
+
+<"Figures/Results_USR/Stochastic/Q FLY".pdf, id=736, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Q FLY".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Q FLY".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Q FLY".pdf used on inp
+ut line 941.
+(pdftex.def)             Requested size: 328.82706pt x 328.84004pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 933--943
+ []$$[]$ 
+ []
+
+[56 <./Figures/Results_USR/Deterministic/Q FLY.pdf> <./Figures/Results_USR/Stoc
+hastic/Q FLY.pdf>]
+<"Figures/Results_USR/Deterministic/Q HOL".pdf, id=757, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Deterministic/Q HOL".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Deterministic/Q HOL".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Deterministic/Q HOL".pdf used on 
+input line 954.
+(pdftex.def)             Requested size: 328.82706pt x 328.84004pt.
+
+<"Figures/Results_USR/Stochastic/Q HOL".pdf, id=758, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Q HOL".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Q HOL".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Q HOL".pdf used on inp
+ut line 959.
+(pdftex.def)             Requested size: 328.82706pt x 328.84004pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 951--961
+ []$$[]$ 
+ []
+
+[57 <./Figures/Results_USR/Deterministic/Q HOL.pdf> <./Figures/Results_USR/Stoc
+hastic/Q HOL.pdf>]
+<"Figures/Results_USR/Deterministic/Q HRC".pdf, id=779, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Deterministic/Q HRC".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Deterministic/Q HRC".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Deterministic/Q HRC".pdf used on 
+input line 972.
+(pdftex.def)             Requested size: 328.82706pt x 328.84004pt.
+
+<"Figures/Results_USR/Stochastic/Q HRC".pdf, id=780, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Q HRC".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Q HRC".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Q HRC".pdf used on inp
+ut line 977.
+(pdftex.def)             Requested size: 328.82706pt x 328.84004pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 969--979
+ []$$[]$ 
+ []
+
+[58 <./Figures/Results_USR/Deterministic/Q HRC.pdf> <./Figures/Results_USR/Stoc
+hastic/Q HRC.pdf>]
+<"Figures/Results_USR/Deterministic/Q RFD".pdf, id=801, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Deterministic/Q RFD".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Deterministic/Q RFD".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Deterministic/Q RFD".pdf used on 
+input line 990.
+(pdftex.def)             Requested size: 328.82706pt x 328.84004pt.
+
+<"Figures/Results_USR/Stochastic/Q RFD".pdf, id=802, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Q RFD".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Q RFD".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Q RFD".pdf used on inp
+ut line 995.
+(pdftex.def)             Requested size: 328.82706pt x 328.84004pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 987--997
+ []$$[]$ 
+ []
+
+[59 <./Figures/Results_USR/Deterministic/Q RFD.pdf> <./Figures/Results_USR/Stoc
+hastic/Q RFD.pdf>]
+<"Figures/Results_USR/Deterministic/Q RFR".pdf, id=824, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Deterministic/Q RFR".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Deterministic/Q RFR".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Deterministic/Q RFR".pdf used on 
+input line 1008.
+(pdftex.def)             Requested size: 328.82706pt x 328.84004pt.
+
+<"Figures/Results_USR/Stochastic/Q RFR".pdf, id=825, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Q RFR".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Q RFR".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Q RFR".pdf used on inp
+ut line 1013.
+(pdftex.def)             Requested size: 328.82706pt x 328.84004pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1005--1015
+ []$$[]$ 
+ []
+
+[60 <./Figures/Results_USR/Deterministic/Q RFR.pdf> <./Figures/Results_USR/Stoc
+hastic/Q RFR.pdf>]
+<"Figures/Results_USR/Deterministic/Q TIM".pdf, id=846, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Deterministic/Q TIM".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Deterministic/Q TIM".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Deterministic/Q TIM".pdf used on 
+input line 1026.
+(pdftex.def)             Requested size: 328.82706pt x 328.84004pt.
+
+<"Figures/Results_USR/Stochastic/Q TIM".pdf, id=847, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Q TIM".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Q TIM".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Q TIM".pdf used on inp
+ut line 1031.
+(pdftex.def)             Requested size: 328.82706pt x 328.84004pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1023--1033
+ []$$[]$ 
+ []
+
+[61 <./Figures/Results_USR/Deterministic/Q TIM.pdf> <./Figures/Results_USR/Stoc
+hastic/Q TIM.pdf>]
+<"Figures/Results_USR/Deterministic/Q WTP".pdf, id=869, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Deterministic/Q WTP".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Deterministic/Q WTP".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Deterministic/Q WTP".pdf used on 
+input line 1044.
+(pdftex.def)             Requested size: 328.82706pt x 328.84004pt.
+
+<"Figures/Results_USR/Stochastic/Q WTP".pdf, id=870, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Q WTP".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Q WTP".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Q WTP".pdf used on inp
+ut line 1049.
+(pdftex.def)             Requested size: 328.82706pt x 328.84004pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1041--1051
+ []$$[]$ 
+ []
+
+[62 <./Figures/Results_USR/Deterministic/Q WTP.pdf> <./Figures/Results_USR/Stoc
+hastic/Q WTP.pdf>]
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1062--1072
+ []$$[]$ 
+ []
+
+[63]
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1081--1091
+ []$$[]$ 
+ []
+
+[64]
+
+LaTeX Warning: Reference `tab:GaugeFlow_DS' on page 65 undefined on input line 
+1096.
+
+(./Tables/USR_qIN.txt) (./Tables/USR_qOUT.txt) (./Tables/USR_qCAN.txt)
+(./Tables/USR_qCON.txt) (./Tables/USR_qFLS.txt) (./Tables/USR_qFLY.txt)
+(./Tables/USR_qHOL.txt) (./Tables/USR_qHRC.txt) (./Tables/USR_qRFD.txt)
+(./Tables/USR_qRFR.txt) (./Tables/USR_qTIM.txt) (./Tables/USR_qWTP.txt)
+[65
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+] [66] [67] [68] [69] [70])
 References
 
 Overfull \hbox (7.16972pt too wide) in paragraph at lines 50--50
@@ -1946,21 +2272,21 @@ Overfull \hbox (7.16972pt too wide) in paragraph at lines 50--50
 4875. 
  []
 
-[51
+[71
 
 
 
 
 
 
-] [52] [53]
+] [72] [73]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 76.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 76.
  (./MorseThesis.aux (./CH04-WaterBalanceModel.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 76.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 76.
 Package rerunfilecheck Info: File `MorseThesis.out' has not changed.
-(rerunfilecheck)             Checksum: 856884476ABEE4260F76AADF24F76C13;578.
+(rerunfilecheck)             Checksum: 3CA6592C3BA4C8C37D34E51D54F013F0;578.
 
 
 LaTeX Warning: There were undefined references.
@@ -1974,13 +2300,13 @@ Package logreq Info: Writing requests to 'MorseThesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33505 strings out of 493117
- 652000 string characters out of 6135433
- 1072993 words of memory out of 5000000
- 36121 multiletter control sequences out of 15000+600000
+ 33700 strings out of 493117
+ 658022 string characters out of 6135433
+ 1081333 words of memory out of 5000000
+ 36223 multiletter control sequences out of 15000+600000
  15748 words of font info for 62 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 66i,16n,77p,10408b,1603s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,16n,77p,10440b,1603s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
@@ -1999,10 +2325,10 @@ ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
 4/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on MorseThesis.pdf (53 pages, 3823876 bytes).
+Output written on MorseThesis.pdf (73 pages, 4274096 bytes).
 PDF statistics:
- 735 PDF objects out of 1000 (max. 8388607)
- 601 compressed objects within 7 object streams
- 134 named destinations out of 1000 (max. 500000)
- 169 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1058 PDF objects out of 1200 (max. 8388607)
+ 854 compressed objects within 9 object streams
+ 174 named destinations out of 1000 (max. 500000)
+ 289 words of extra memory for PDF output out of 10000 (max. 10000000)
 

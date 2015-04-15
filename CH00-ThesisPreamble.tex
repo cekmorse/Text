@@ -1,98 +1,73 @@
 % This is the preamble document that contains the author editable preferences for creating a Thesis.  The thesis class document (csuthesis.cls) is required for this to work properly.  Make sure you make a backup and have reference documents before making changes to the class document.  Minor changes can make the final document ususable.
 
-% Packages %
-% package description in comments
-% refer to package documentation for more info
-% comment out (don't delete) packages you don't want to use or don't need
+% ----- Packages -----
+	% package description in comments.  Refer to package documentation for more info.  Comment out (don't delete) packages you don't want to use or don't need
 
-% Specifies file encoding, specifically for the bibliography.
+	% Specifies file encoding, specifically for the bibliography.
 %\usepackage[utf8]{inputenc}
-
-% specify the main language of the document
+	% specify the main language of the document
 \usepackage[american]{babel}  
-
-% allows for landscape orientation of figures
+	% allows for landscape orientation of figures
 \usepackage{pdflscape} 
-
-% enhanced support for graphics.  Image scaling, etc.
+	% enhanced support for graphics.  Image scaling, etc.
 \usepackage{graphicx} 
-
-% create tabular cells spanning multiple rows (row-wise merge in a column)
+	% create tabular cells spanning multiple rows (row-wise merge in a column)
 \usepackage{multirow}
-
-% produces figures which text can flow around floats.
+	% produces figures which text can flow around floats.
 %\usepackage{wrapfig} 
-
-% adds line numbers.  Sometimes helps reviewers.
+	% adds line numbers.  Sometimes helps reviewers.
 \usepackage[pagewise, modulo]{lineno}
-
-% extends math symbols.  includes registered and copyright symbols.
+	% extends math symbols.  includes registered and copyright symbols.
 \usepackage{amssymb} 
-
-% attach files to document.  Easier to manage multiple chapter, sections, etc.
+	% attach files to document.  Easier to manage multiple chapter, sections, etc.
 \usepackage{attachfile} 
-
-% helps with spacing.  Need this for Table of Contents.
+	% helps with spacing.  Need this for Table of Contents.
 \usepackage[parfill]{parskip} 
-
-% fairly simple method to add units to values.  Consistent standardized useage
+	% fairly simple method to add units to values.  Consistent standardized useage
 \usepackage{siunitx} 
-
-% publication quality tables.  Longtable allows for tables to span multiple pages
+	% publication quality tables.  Longtable allows for tables to span multiple pages
 \usepackage{booktabs, longtable} 
-
-% add appendicies to document.
+	% add appendicies to document.
 \usepackage[toc,page]{appendix} 
-
-% extends implementation of the array and tabular environments
+	% extends implementation of the array and tabular environments
 \usepackage{array} 
-
-% customize captions in float environments
+	% customize captions in float environments
 \usepackage{caption} 
-
-% caption sub figures in a figure
+	% caption sub figures in a figure
 \usepackage{subcaption} 
-
-% support for setting spacing between lines in a document
+	% support for setting spacing between lines in a document
 \usepackage{setspace} 
-
-% allows for starting a command (especially a float) after the next page break.
+	% allows for starting a command (especially a float) after the next page break.
 \usepackage{afterpage} 
-
-% fancier tables.  allows text wrapping in a cell
+	% fancier tables.  allows text wrapping in a cell
 \usepackage{tabularx}
-
-% better smart quotes.  Especially usefull for humanities
+	% better smart quotes.  Especially usefull for humanities
 \usepackage{csquotes}
 
 % Bibliography
-
-% Old bibliography package. only use if you have to
+	% Old bibliography package. only use if you have to
 %\usepackage{natbib} 
-
-%  Highly recommended that the newer biblatex package is used.
+	%  Highly recommended that the newer biblatex package is used.
+	%  If you get an error that the Bibliograph won't generate, find the folder that contains the offending file (read the error log) and delete it.  Then, re-run the Bibliobraphy
 \usepackage[style=authoryear-comp, bibencoding=utf8, url=true, backend=biber]{biblatex} %bibencoding=utf8
 \addbibresource{BibRef.bib}
-
 %  -----  End packages  -----  
 
+
 %  -----  Margins and spacing  -----  
-
-% use if you want more room for rh margin notes.
+	% use if you want more room for rh margin notes.
 \usepackage[top=1in,bottom=1in,left=0.5in,right=1.5in]{geometry}  
-
-% Use this when you're ready for final(ish) production
+	% Use this when you're ready for final(ish) production
 %\usepackage[top=1in,bottom=1in,left=1in,right=1in]{geometry}  
 \makeatletter
 
-% highlighted margin notes for 'todo' items
+	% highlighted margin notes for 'todo' items
 \usepackage[textwidth=1in]{todonotes}
-
-% make todo notes single spaced
+	% make todo notes single spaced
 \renewcommand{\todo}[2][]{\@todo[caption={#2}, #1]{\begin{spacing}{0.5}#2\end{spacing}}}
 \makeatother
 
-%  'draft' header and today's date.  Remove for production
+	%  'draft' header and today's date.  Remove for production
 %\usepackage{fancyhdr}
 %\pagestyle{fancy}
 %\renewcommand{\headrulewidth}{0pt}
@@ -100,22 +75,17 @@
 %\chead{--- DRAFT ---} 
 %\rhead{\today}
 
-% page number location
+	% page number location
 \footskip 0.5in 
-
-% line spacing.  1.95 works better than 2
+	% line spacing.  1.95 works better than 2
 \setstretch{1.95} 
-
-%spacing above+below a figure/table that has text above and below it
+	%spacing above+below a figure/table that has text above and below it
 \setlength{\intextsep}{12pt plus 2pt minus 2pt} 
-
-%spacing below/above a figure or table at the top/bottom of a page.
+	%spacing below/above a figure or table at the top/bottom of a page.
 \setlength{\textfloatsep}{12pt plus 2pt minus 2pt}
-
-% change the bibliography title.  Works Cited, Bibliography,  'Stuff I Read'
+	% change the bibliography title.  Works Cited, Bibliography,  'Stuff I Read'
 \renewcommand{\bibname}{References} 
-
-% This is to typeset the bibliography title in the older bibtex packages.  Don't mess with this.
+	% This is to typeset the bibliography title in the older bibtex packages.  Don't mess with this.
 %\renewcommand{\bibsection}{  
 %	\ifsmallcapsok
 %	\centering {\large \scshape \bibname}
@@ -124,22 +94,24 @@
 %	\fi
 %	\addcontentsline{toc}{chapter}{\bibname}}
 %\setlength{\bibsep}{0mm plus .5\baselineskip}
-
 %  -----  End margins and spacing  -----  
 
+
 %  -----  Preferences  -----  
-
-% location of the graphics files.  Recommend a single folder for all images
+	% location of the graphics files.  Recommend a single folder for all images
 \graphicspath{ {./Figures/} }
-
-% the file extensions for graphics used in this document
+	% the file extensions for graphics used in this document
 \DeclareGraphicsExtensions{.pdf,.png,.jpg,.jpeg}  
 \captionsetup{margin=10pt, font=small, labelfont=bf} % figure and table captions.
-%%% end preferences
 
-%%% Custom commands
-\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}  % simplify scientific notation
-\DeclareSIUnit\inch{in}  %units not included in package{siunitx}
+%  -----  End Preferences  -----  
+
+
+% ----- Custom commands -----
+	% simplify scientific notation
+\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}  
+	%units not included in package{siunitx}
+\DeclareSIUnit\inch{in}  
 \DeclareSIUnit\foot{ft}
 \DeclareSIUnit\mile{mi}
 \DeclareSIUnit\acre{ac}
@@ -147,7 +119,8 @@
 \DeclareSIUnit\year{yr}
 \DeclareSIUnit\micron{micron}
 \DeclareSIUnit\cfs{cfs}
-\def\fese2{$FeSe_2$}  % macro definitions.  I used these to simplify frequently used chemical compounds.
+	% macro definitions.  I used these to simplify frequently used chemical compounds.
+\def\fese2{$FeSe_2$}  
 \def\dox{$O_{2}\,$}
 \def\elemental{$Se^0$}
 \def\nitrate{$NO_3^{2-}$}
@@ -159,9 +132,11 @@
 \def\Wstorage{$ \frac{\Delta S}{\Delta t} $}
 \def\todoc{\todo{cite}}
 \def\todoe{\todo{eq}}
-\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}} % help define table column widths when required
+	% help define table column widths when required
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}} 
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+	% tools to help with figure and table numbering when using sub-table(or figures) that span more than one page.
 \def\subtabletop{
 	\renewcommand{\thetable}{\arabic{section}.\arabic{table}}
 	\addtocounter{table}{0}

@@ -3,14 +3,14 @@
 \multicolumn{4}{l}{\textbf{Deterministic Model Time Series}} \\ 
 & 2.5th & \multirow{2}{*}{Mean} & 97.5th \\ 
 & Percentile & & Percentile \\ \cmidrule(r{.5em}l){2-4} 
-& 0.000635 (0.00515) & -0.00777 (-0.063) &-0.0156 (-0.126) \\ 
+& -0.0156 (-1.09) & -0.00777 (-0.544) &0.000635 (0.0445) \\ 
 \toprule 
 \multicolumn{4}{l}{\textbf{Stochastic Model Summary Statistics Time Series}} \\ 
 & 2.5th      & \multirow{2}{*}{Mean} & 97.5th \\ 
 & Percentile & & Percentile \\ \cmidrule(r{.5em}l){2-4} 
-97.5th Percentile & -0.00525 (-0.0426) & -0.00256 (-0.0208) & 0.000885 (0.00717) \\
-Mean & -0.00936 (-0.0759) & -0.00473 (-0.0383) & 0.000397 (0.00322) \\
-2.5th Percentile & -0.0131 (-0.106) & -0.00691 (-0.056) & 1.96e-05 (0.000159) \\ 
+97.5th Percentile & -0.00525 (-0.368) & -0.00256 (-0.179) & 0.000885 (0.062) \\
+Mean & -0.00936 (-0.656) & -0.00473 (-0.331) & 0.000397 (0.0278) \\
+2.5th Percentile & -0.0131 (-0.918) & -0.00691 (-0.484) & 1.96e-05 (0.00137) \\ 
 \bottomrule 
-\multicolumn{4}{l}{Pearson Correlation = 0.998 } 
+\multicolumn{4}{l}{Pearson Correlation = 0.9975 } 
 \end{tabular} \\
