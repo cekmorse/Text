@@ -1,0 +1,19 @@
+\begin{tabular}{C{1.2in} C{1.5in} C{1.5in} C{1.5in}} 
+\toprule 
+\multicolumn{4}{l}{\textbf{Deterministic Model Time Series}} \\ 
+\\ 
+& 2.5th & \multirow{2}{*}{Mean} & 97.5th \\ 
+& Percentile & & Percentile \\ \cmidrule(r{.5em}l){2-4} 
+& 3.07 & 10.5 &13.6 \\ 
+\\ 
+\toprule 
+\multicolumn{4}{l}{\textbf{Stochastic Model Summary Statistics Time Series}} \\ 
+\\ 
+Time & 2.5th      & \multirow{2}{*}{Mean} & 97.5th \\ 
+Series & Percentile & & Percentile \\ \cmidrule(r{.5em}l){1-4} 
+97.5th Percentile & 8.53 & 15.5 & 18.6 \\
+Mean & 4.35 & 10.6 & 13.6 \\
+2.5th Percentile & 2.21 & 6.02 & 8.69 \\ 
+\multicolumn{4}{l}{Pearson Correlation = 0.9971 } \\ 
+\bottomrule 
+\end{tabular} \\

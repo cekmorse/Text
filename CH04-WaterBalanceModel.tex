@@ -162,6 +162,18 @@ River reach volume changes are calculated between two consecutive time steps.  R
 	$\frac{\Delta A_i}{\Delta t} $ &= Segment cross-section area change.\\
 \end{tabular}\\
 
+For the USR, Equation \ref{eq:storage1} includes the storage volume changes from all five segments of the USR as shown in Equation \ref{eq:waterVolume_US1}.  Equation \ref{eq:waterVolume_US2} shows the expanded form following Equation \ref{eq:volumesimple}.
+\begin{align}
+	\frac{\Delta S_{USR}}{\Delta t} & = \frac{\Delta S_{A}}{\Delta t} + \frac{\Delta S_{B}}{\Delta t} + \frac{\Delta S_{C}}{\Delta t} + \frac{\Delta S_{D}}{\Delta t} + \frac{\Delta S_{E}}{\Delta t} \label{eq:waterVolume_US1} \\
+	& = L_A \cdot \frac{\Delta A_{A}}{\Delta t} + L_B \cdot \frac{\Delta A_{B}}{\Delta t} + L_C \cdot \frac{\Delta A_{C}}{\Delta t} + L_D \cdot \frac{\Delta A_{D}}{\Delta t} + L_E \cdot \frac{\Delta A_{E}}{\Delta t} \label{eq:waterVolume_US2}
+\end{align}
+
+For the DSR, Equation \ref{eq:storage1} includes the storage volume changes from the two segments of the DSR as shown in Equation \ref{eq:waterVolume_DS1}.  Equation \ref{eq:waterVolume_DS2} shows the expanded form following Equation \ref{eq:volumesimple}.
+\begin{align}
+	\frac{\Delta S_{DSR}}{\Delta t} & = \frac{\Delta S_{F}}{\Delta t} + \frac{\Delta S_{G}}{\Delta t} \label{eq:waterVolume_DS1} \\
+	& = L_F \cdot \frac{\Delta A_{F}}{\Delta t} + L_G \cdot \frac{\Delta A_{G}}{\Delta t} \label{eq:waterVolume_DS2}
+\end{align}
+
 Figure \ref{fig:segment model} shows the difference between a simplified example of a natural channel and the modeled channel.  Although the river is variable in width and depth along its entire lengths, it  is modeled as a trapezoidal prism with a constant length and with a cross-section that does not vary with respect to location.  It was reasoned that this simplistic model would best approximate the average channel shape along the entire reach.  The channel water surface elevation is assumed to be constant through each segment.  This assumption is not true in nature, but we are not concerned with the water surface elevation, but with the flow depth.  We are assuming that the flow depth remains relatively constant through a river segment.  This assumes that all gains and losses to the river are accounted for either through flow gains and losses, evaporation, precipitation, or unaccounted for gains and losses as shown in equation \ref{eq:water1}.
 \begin{figure}[htbp]
 	\centering
@@ -307,7 +319,7 @@ River top width $ \left( Tw \right)  $ is calculated using equation \ref{eq:Tw1}
 	\end{tabular}\\
 \end{table}
 
-Non-linear regression models were used only when the specific model form, determined from known physical or geometrical relationships, was non-linear.  R-squared values were not used to determine goodness-of-fit for non-linear regression models since they can have valid R-squared values that are negative or greater than one \parencite{spiess2010} and as such are outside of the boundary for comparing linear models.  Pseudo or modified r-squared calculations are available, yet these computations result in values that are comparable to the r-squared value for linear models, but have slightly different interpretations \todo{reference}.  Since non-linear regression models were used only when specific model forms could be predetermined, there was no need to compare different model forms estimating the same result.
+Non-linear regression models were used only when the specific model form, determined from known physical or geometrical relationships, was non-linear.  R-squared values were not used to determine goodness-of-fit for non-linear regression models since they can have valid R-squared values that are negative or greater than one \parencite{spiess2010} and as such are outside of the boundary for comparing linear models.  Pseudo or modified r-squared calculations are available, yet these computations result in values that are comparable to the r-squared value for linear models, but have slightly different interpretations.  Since non-linear regression models were used only when specific model forms could be predetermined, there was no need to compare different model forms estimating the same result.
 
 Goodness-of-fit for non-linear regressions used in this thesis are purely for informational purposes.  Since all non-linear models were based on known relationships, goodness-of-fit values only serve to show how well the data fits the model.  In order to define non-linear regression model goodness-of-fit, the root mean squared error (RMSE) value was calculated.  The RMSE represents the standard deviation of the differences between the predicted and observed values.  The RMSE is scale dependent as the units are the same as the observed value.  The RMSE is also known as the standard deviation.  This would cause an issue if models for different observed value units and scales were compared against each other.  In this study, non-linear regression models are only used to estimate the cross-sectional width of a river segment and to estimate the selenium concentration at one location.  Since all cross-section analyses use the same measurement units, this allows us to compare the residual errors associated with the various cross sections without needing to consider scale or units.
 
@@ -510,19 +522,18 @@ The time-series plots of all four stochastic geometric parameters for each study
 \subfiguretop
 \begin{landscape}
 	\begin{figure}
-			\missingfigure{figs not done in R}
-%		\begin{subfigure}{0.9\textwidth}
-%			\centering
-%			\includegraphics[width=0.9\textwidth]{"Figures/Results_DSR/Stochastic/G TS F"}
-%			\subcaption*{Segment F}		
-%			\label{sub:GeoTS_F}
-%		\end{subfigure}%
-%		\begin{subfigure}{0.9\textwidth}
-%			\centering
-%			\includegraphics[width=0.9\textwidth]{"Figures/Results_DSR/Stochastic/G TS G"}
-%			\subcaption*{Segment G}
-%			\label{sub:GeoTS_G}
-%		\end{subfigure}
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=0.9\textwidth]{"Figures/Results_DSR/Stochastic/G TS F"}
+			\subcaption*{Segment F}		
+			\label{sub:GeoTS_F}
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=0.9\textwidth]{"Figures/Results_DSR/Stochastic/G TS G"}
+			\subcaption*{Segment G}
+			\label{sub:GeoTS_G}
+		\end{subfigure}
 		\caption[DSR stochastic geometric parameter time-series.]{DSR stochastic geometric parameter time-series. The black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.  The red dashed line in the flow depth portion of the figure indicates the reported flow depth values.}
 		\label{fig:GeoTS_DS}
 	\end{figure}
@@ -642,6 +653,7 @@ Tables \ref{tab:SegmentVolumeChange_USR} and \ref{tab:SegmentVolumeChange_DSR} p
 		\subcaption*{USR river segment E}
 		\input{"Tables/tableVolumeE.txt"}
 	\end{subtable}\\
+	\tablevspace
 \end{table}
 
 \subtabletop
@@ -652,19 +664,19 @@ Tables \ref{tab:SegmentVolumeChange_USR} and \ref{tab:SegmentVolumeChange_DSR} p
 	\begin{subtable}{\textwidth}
 		\centering
 		\subcaption*{DSR river segment F}
-%		\input{"Tables/tableVolumeF.txt"}
+		\input{"Tables/G volF.txt"}
 	\end{subtable}\\
 	\tablevspace	
 	\begin{subtable}{\textwidth}
 		\centering
 		\subcaption*{DSR river segment G}
-%		\input{"Tables/tableVolumeG.txt"}
+		\input{"Tables/G volG.txt"}
 	\end{subtable}\\
 \end{table}	
 
 The mean of the deterministic model time-series and the mean of the stochastic model mean time-series calculated average daily river segment water volume change are much closer to each other as reported in Tables \ref{tab:SegmentVolumeChange_USR} and \ref{tab:SegmentVolumeChange_DSR}.  The stochastic model mean time-series underestimates the deterministic model time-series values by approximately 47\%.  The difference between the two models in terms of water volume is quite small, less than \SI{1}{\hectare\meter}.  The Pearson correlation values and their associated scatter-plots indicate that the results are strongly linearly related.  The effects of uncertainty on river segment average river daily water volume change is much smaller than the effect on surface area.  As with the surface area results, the significant portion of the difference between the deterministic model time-series and the stochastic model mean time-series is due to the estimation of the most likely values of $ \beta_1 $ and $ \beta_2 $ used in the deterministic models.  At this point, adjusting or calibrating these values such that the results of the deterministic and stochastic models are more closely aligned seems unnecessary.
 
-Figure \ref{fig:USRWaterStore} and \ref{fig:DSRWaterStore} presents the river reach average daily river water storage change deterministic model time-series for the USR.  The left-hand figure is the deterministic model time-series.  The right-hand figure is the stochastic model results with the black line representing the calculated stochastic model mean time-series and the blue band representing the space between the stochastic model 97.5th percentile time-series and the stochastic model 2.5th percentile time-series.  The minimum and maximum range of values is not presented in this figure.
+Figure \ref{fig:USRWaterStore} and \ref{fig:DSRWaterStore} presents the river reach average daily river water storage change deterministic model time-series for the USR and DSR, respectively, as calculated using Equation \ref{eq:storage1}.  The left-hand figure is the deterministic model time-series.  The right-hand figure is the stochastic model results with the black line representing the calculated stochastic model mean time-series and the blue band representing the space between the stochastic model 97.5th percentile time-series and the stochastic model 2.5th percentile time-series.  The minimum and maximum range of values is not presented in this figure.
 
 \begin{figure}[htbp]
 \centering
@@ -673,10 +685,9 @@ Figure \ref{fig:USRWaterStore} and \ref{fig:DSRWaterStore} presents the river re
 		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/Deterministic/Balance Water - storage"}
 		\subcaption*{Deterministic Model.}
 		\label{sub:USRWaterStoreD}
-	\end{subfigure}\\%
+	\end{subfigure}%
 	\begin{subfigure}{0.5\textwidth}
 		\centering
-		\missingfigure{}
 		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/Stochastic/Balance Water - storage"}
 		\subcaption*{Stochastic Model.}
 		\label{sub:USRWaterStoreS}
@@ -689,37 +700,34 @@ Figure \ref{fig:USRWaterStore} and \ref{fig:DSRWaterStore} presents the river re
 	\centering
 	\begin{subfigure}{0.5\textwidth}
 		\centering
-		\missingfigure{}
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Deterministic/Balance Water - storage"}
+		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Deterministic/Balance Water - storage"}
 		\subcaption*{Deterministic Model.}
-	\end{subfigure}\\%
+	\end{subfigure}%
 	\begin{subfigure}{0.5\textwidth}
 		\centering
-		\missingfigure{}
-		%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Stochastic/Balance Water - storage"}
+		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Stochastic/Balance Water - storage"}
 		\subcaption*{Stochastic Model.}
 	\end{subfigure}\\
 	\caption[DSR Arkansas River water storage change contribution to the water model.]{DSR Arkansas River water storage change contribution to the water model.}
 	\label{fig:DSRWaterStore}
 \end{figure}
 
-Table xx presents the deterministic model time-series summary statistics and the summary statistics for each of the stochastic model summary statistics time-series for the river reach average daily water storage change in the USR and DSR.
-\\
+Tables xx presents the deterministic model time-series summary statistics and the summary statistics for each of the stochastic model summary statistics time-series for the river reach average daily water storage change in the USR and DSR.
+
 \begin{table}[htbp]
 	\centering
-		\caption[River reach average daily stored water volume change.]{River reach average daily stored water volume change.  Values in hectare-meters (\si{\hectare\meter}) and values in parentheses in acre-feet (\si{\acre\foot})}
-		\label{label}
-	\begin{subtable}{\textwidth}
-		\centering
-		\subcaption*{USR river reach average daily water storage change.}
-		\input{"Tables/USRVolume.txt"}
-	\end{subtable}\\
+	\caption[USR river reach average daily stored water volume change.]{USR river reach average daily stored water volume change.  Values in hectare-meters (\si{\hectare\meter\per\kilo\meter}) and values in parentheses in acre-feet (\si{\acre\foot\per\mile})}
+	\label{tab:waterStorage-US}
+	\subcaption*{ $\displaystyle\frac{\Delta S_{DSR}}{\Delta t} $ }
+	\input{"Tables/USRVolume.txt"}
+\end{table}
 	\tablevspace
-	\begin{subtable}{\textwidth}
-		\centering
-		%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Stochastic/Balance Water - storage"}
-		\subcaption*{DSR river reach average daily water storage change.}
-	\end{subtable}\\
+\begin{table}[htbp]
+	\centering
+	\caption[DSR river reach average daily stored water volume change.]{DSR river reach average daily stored water volume change.  Values in hectare-meters (\si{\hectare\meter\per\kilo\meter}) and values in parentheses in acre-feet (\si{\acre\foot\per\mile})}
+	\label{tab:waterStorage-DS}
+	\subcaption*{ $\displaystyle\frac{\Delta S_{USR}}{\Delta t} $ }
+	\input{"Tables/DSRVolume.txt"}
 \end{table}
 
 The figures show that there is a definite seasonal variation in the storage component.  Stored water changes are smallest during the cold months and are increasingly larger during the growing season.  This pattern is caused by irrigation practices in the Lower Arkansas River Basin (LARV).  Stored irrigation water is released from reservoirs upstream of the LARV during the irrigation season as demands require.  During the winter, there is very little to no irrigation occurring.  This, combined with the low precipitation and no additional flow from snow-pack runoff, allow flows in the Arkansas River to reach base flow level when the river is at a natural equilibrium.
@@ -754,7 +762,7 @@ Equation \ref{eq:water1} contains the portion contained in equation \ref{eq:flow
 Equation \ref{eq:flow1} is expanded as follows to contain all of the measured flows entering or leaving the main stem of the Arkansas River within the USR boundaries.  The subscript for each flow in equation \ref{eq:USRFlow} is the CDWR symbol for a particular gauge site.  See the map in Figure \ref{USRSample} for the gauge locations in the USR.  The flows in this equation are ordered by location along the main stem of the river, from upstream to downstream.
 \begin{align}
 	\label{eq:USRFlow}
-	\sum Q_{Total} = &~Q_{ARKCATCO} - Q_{HOLCANCO} - Q_{RFDMANCO} - Q_{FLSCANCO} \\
+	\sum Q_{Total,USR} = &~Q_{ARKCATCO} - Q_{HOLCANCO} - Q_{RFDMANCO} - Q_{FLSCANCO} \\
 	\nonumber & + Q_{RFDRETCO} + Q_{TIMSWICO} - Q_{FLYCANCO} + Q_{CANSWKCO} \\ 
 	\nonumber & - Q_{CONDITCO} + Q_{HRC194CO} - Q_{ARKLASCO}
 \end{align}
@@ -787,7 +795,7 @@ Where each subscript is defined as the flow through the gauge described in Table
 For the DSR, equation \ref{eq:flow1} is expanded as follows to contain all of the measured flows entering or leaving the main stem of the Arkansas River within its boundaries.  The subscript for each flow in equation \ref{eq:DSRFlow} is the CDWR symbol for a particular gauge site.  See the map in Figure \ref{DSRSample} for the gauge locations in the DSR.  The flows in this equation are ordered by location along the main stem of the river, from upstream to downstream.
 \begin{align}
 	\label{eq:DSRFlow}
-	\sum Q_{Total} = &~Q_{ARKLAMCO} + Q_{BIGLAMCO} - Q_{BUFDITCO} + Q_{WILDHOCO} \\
+	\sum Q_{Total,DSR} = &~Q_{ARKLAMCO} + Q_{BIGLAMCO} - Q_{BUFDITCO} + Q_{WILDHOCO} \\
 	\nonumber & - Q_{FRODITKS} - Q_{ARKCOOKS}
 \end{align}
 Where each subscript is defined as the flow through the gauge described in Table \ref{tab:DSRFlow}.  In this table, each of the flow variables in equation \ref{eq:DSRFlow}, designated by its CDWR gauge name, is grouped by the type of flow using the variables used in equation \ref{eq:water1}.
@@ -850,7 +858,7 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q U163"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
-		\caption[USR deterministic and stochastic model time-series.]{USR deterministic and stochastic model time-series.  The deterministic model time-series presents the data reported by the CDWR and USGS gauges.  In the stochastic model time-series, the black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.  Results are presented in CDWR stream gauge name alphabetical order.}
+		\caption[USR deterministic and stochastic model time-series average daily flow rate.]{USR deterministic and stochastic model time-series average daily flow rate.  The deterministic model time-series presents the data reported by the CDWR and USGS gauges.  In the stochastic model time-series, the black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.  Results are presented in CDWR stream gauge name alphabetical order.}
 		\label{fig:GaugeFlow_US}
 	\end{figure}
 \end{landscape}
@@ -869,7 +877,7 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q U201"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
-		\caption{USR deterministic and stochastic model time-series.}
+		\caption{USR deterministic and stochastic model time-series average daily flow rate.}
 	\end{figure}
 \end{landscape}
 \subfiguremid
@@ -887,7 +895,7 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q CAN"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
-		\caption{USR deterministic and stochastic model time-series.}
+		\caption{USR deterministic and stochastic model time-series average daily flow rate.}
 	\end{figure}
 \end{landscape}
 \subfiguremid
@@ -905,7 +913,7 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q CON"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
-		\caption{USR deterministic and stochastic model time-series.}
+		\caption{USR deterministic and stochastic model time-series average daily flow rate.}
 	\end{figure}
 \end{landscape}
 \subfiguremid
@@ -923,7 +931,7 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q FLS"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
-		\caption{USR deterministic and stochastic model time-series.}
+		\caption{USR deterministic and stochastic model time-series average daily flow rate.}
 	\end{figure}
 \end{landscape}
 \subfiguremid
@@ -941,7 +949,7 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q FLY"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
-		\caption{USR deterministic and stochastic model time-series.}
+		\caption{USR deterministic and stochastic model time-series average daily flow rate.}
 	\end{figure}
 \end{landscape}
 \subfiguremid
@@ -959,7 +967,7 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q HOL"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
-		\caption{USR deterministic and stochastic model time-series.}
+		\caption{USR deterministic and stochastic model time-series average daily flow rate.}
 	\end{figure}
 \end{landscape}
 \subfiguremid
@@ -977,7 +985,7 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q HRC"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
-		\caption{USR deterministic and stochastic model time-series.}
+		\caption{USR deterministic and stochastic model time-series average daily flow rate.}
 	\end{figure}
 \end{landscape}
 \subfiguremid
@@ -995,7 +1003,7 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q RFD"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
-		\caption{USR deterministic and stochastic model time-series.}
+		\caption{USR deterministic and stochastic model time-series average daily flow rate.}
 	\end{figure}
 \end{landscape}
 \subfiguremid
@@ -1013,7 +1021,7 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q RFR"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
-		\caption{USR deterministic and stochastic model time-series.}
+		\caption{USR deterministic and stochastic model time-series average daily flow rate.}
 	\end{figure}
 \end{landscape}
 \subfiguremid
@@ -1031,7 +1039,7 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q TIM"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
-		\caption{USR deterministic and stochastic model time-series.}
+		\caption{USR deterministic and stochastic model time-series average daily flow rate.}
 	\end{figure}
 \end{landscape}
 \subfiguremid
@@ -1049,7 +1057,7 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q WTP"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
-		\caption{USR deterministic and stochastic model time-series.}
+		\caption{USR deterministic and stochastic model time-series average daily flow rate.}
 	\end{figure}
 \end{landscape}
 
@@ -1059,18 +1067,18 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 \begin{landscape}
 	\begin{figure}
 		\centering
-		$ Q_{CANSWKCO} $
+		$ Q_{ARKLASCO} $
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-%			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Deterministic/Q CAN"}
+			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Deterministic/Q in"}
 			\subcaption*{Deterministic}		
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-%			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Stochastic/Q CAN"}
+			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Stochastic/Q in"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
-		\caption[DSR deterministic and stochastic model time-series.]{DSR deterministic and stochastic model time-series.  The deterministic model time-series presents the data reported by the CDWR and USGS gauges.  In the stochastic model time-series, the black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.  Results are presented in CDWR stream gauge name alphabetical order.}
+		\caption[DSR deterministic and stochastic model time-series average daily flow rate.]{DSR deterministic and stochastic model time-series average daily flow rate.  The deterministic model time-series presents the data reported by the CDWR and USGS gauges.  In the stochastic model time-series, the black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.  Results are presented in CDWR stream gauge name alphabetical order.}
 		\label{fig:GaugeFlow_DS}
 	\end{figure}
 \end{landscape}
@@ -1078,22 +1086,94 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 \begin{landscape}
 	\begin{figure}
 		\centering
-		$ Q_{LaJuntaWWTP} $
+		$ Q_{ARKCOOKS} $
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-%			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Deterministic/Q WTP"}
+			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Deterministic/Q out"}
 			\subcaption*{Deterministic}		
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-%			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Stochastic/Q WTP"}
+			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Stochastic/Q out"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
-		\caption{DSR deterministic and stochastic model time-series.}
+		\caption{DSR deterministic and stochastic model time-series average daily flow rate.}
+	\end{figure}
+\end{landscape}
+\subfiguremid
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ Q_{BIGLAMCO} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Deterministic/Q BIG"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Stochastic/Q BIG"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption{DSR deterministic and stochastic model time-series average daily flow rate.}
+	\end{figure}
+\end{landscape}
+\subfiguremid
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ Q_{BUFDITCO} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Deterministic/Q BUF"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Stochastic/Q BUF"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption{DSR deterministic and stochastic model time-series average daily flow rate.}
+	\end{figure}
+\end{landscape}
+\subfiguremid
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ Q_{FRODITKS} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Deterministic/Q FRO"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Stochastic/Q FRO"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption{DSR deterministic and stochastic model time-series average daily flow rate.}
+	\end{figure}
+\end{landscape}
+\subfiguremid
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ Q_{WILDHOCO} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Deterministic/Q WIL"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Stochastic/Q WIL"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption{DSR deterministic and stochastic model time-series average daily flow rate.}
 	\end{figure}
 \end{landscape}
 
-Both figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} show that the stochastic model mean time-series of each of the calculated stochastic model flow rates does not deviate significantly from the deterministic model time-series.  Tables \ref{tab:GaugeFlow_US} and \ref{tab:GaugeFlow_DS} present the numeric results associated with each of the figures.
+Both figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} show that the stochastic model mean time-series of each of the calculated stochastic model flow rates does not deviate significantly from the deterministic model time-series.  Tables \ref{tab:GaugeFlow_US} and \ref{tab:GaugeFlow_DS} present the numeric results associated with each of the figures.  These tables show that the deterministic model time series and stochastic mean time series are essentially identical.  The 2.5th percentile, mean, and 97.5th percentile of the two models are identical or nearly identical for all flow rates.  The Pearson Correlation values for the two models are 1 or very nearly 1 for all cases.  These results show that for the average daily flow rate, the deterministic model is representative of the stochastic model
 
 \subtabletop
 \begin{table}[htbp]
@@ -1102,30 +1182,29 @@ Both figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} show that the sto
 	\label{tab:GaugeFlow_US}
 	\begin{subtable}{\textwidth}
 		\centering
-		\subcaption*{ARKCATCO}
+		\subcaption*{$ Q_{ARKCATCO} $}
 		\input{"Tables/USR_qIN.txt"}
 	\end{subtable}\\
 	\tablevspace
 	\begin{subtable}{\textwidth}
 		\centering
-		\subcaption*{ARKLASCO}
+		\subcaption*{$ Q_{ARKLASCO} $}
 		\input{"Tables/USR_qOUT.txt"}
 	\end{subtable}\\
 \end{table}
 \subtablemid
 \begin{table}[htbp]
 	\centering
-	\centering
 	\caption{USR deterministic and stochastic model time-series average daily flow rate numeric results.}
 	\begin{subtable}{\textwidth}
 		\centering
-		\subcaption*{CANSWKCO}
+		\subcaption*{$ Q_{CANSWKCO} $}
 		\input{"Tables/USR_qCAN.txt"}
 	\end{subtable}\\
 	\tablevspace
 	\begin{subtable}{\textwidth}
 		\centering
-		\subcaption*{CONDITCO}
+		\subcaption*{$ Q_{CONDITCO} $}
 		\input{"Tables/USR_qCON.txt"}
 	\end{subtable}\\
 \end{table}	
@@ -1135,13 +1214,13 @@ Both figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} show that the sto
 	\caption{USR deterministic and stochastic model time-series average daily flow rate numeric results.}
 	\begin{subtable}{\textwidth}
 		\centering
-		\subcaption*{FLSCANCO}
+		\subcaption*{$ Q_{FLSCANCO} $}
 		\input{"Tables/USR_qFLS.txt"}
 	\end{subtable}\\
 	\tablevspace
 	\begin{subtable}{\textwidth}
 		\centering
-		\subcaption*{FLYCANCO}
+		\subcaption*{$ Q_{FLYCANCO} $}
 		\input{"Tables/USR_qFLY.txt"}
 	\end{subtable}\\
 \end{table}
@@ -1151,13 +1230,13 @@ Both figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} show that the sto
 	\caption{USR deterministic and stochastic model time-series average daily flow rate numeric results.}
 	\begin{subtable}{\textwidth}
 		\centering
-		\subcaption*{HOLCANCO}
+		\subcaption*{$ Q_{HOLCANCO} $}
 		\input{"Tables/USR_qHOL.txt"}
 	\end{subtable}\\
 	\tablevspace
 	\begin{subtable}{\textwidth}
 		\centering
-		\subcaption*{HRC194CO}
+		\subcaption*{$ Q_{HRC194CO} $}
 		\input{"Tables/USR_qHRC.txt"}
 	\end{subtable}\\
 \end{table}
@@ -1167,13 +1246,13 @@ Both figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} show that the sto
 	\caption{USR deterministic and stochastic model time-series average daily flow rate numeric results.}
 	\begin{subtable}{\textwidth}
 		\centering
-		\subcaption*{RFDMANCO}
+		\subcaption*{$ Q_{RFDMANCO} $}
 		\input{"Tables/USR_qRFD.txt"}
 	\end{subtable}\\
 	\tablevspace
 	\begin{subtable}{\textwidth}
 		\centering
-		\subcaption*{RFDRETCO}
+		\subcaption*{$ Q_{RFDRETCO} $}
 		\input{"Tables/USR_qRFR.txt"}
 	\end{subtable}\\
 \end{table}
@@ -1183,22 +1262,126 @@ Both figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} show that the sto
 	\caption{USR deterministic and stochastic model time-series average daily flow rate numeric results.}
 	\begin{subtable}{\textwidth}
 		\centering
-		\subcaption*{TIMSWICO}
+		\subcaption*{$ Q_{TIMSWICO} $}
 		\input{"Tables/USR_qTIM.txt"}
 	\end{subtable}\\
 	\tablevspace
 	\begin{subtable}{\textwidth}
 		\centering
-		\subcaption*{LaJunta WWTP}
+		\subcaption*{$ Q_{LaJunta WWTP} $}
 		\input{"Tables/USR_qWTP.txt"}
 	\end{subtable}\\
 \end{table}
 
+\subtabletop
+\begin{table}[htbp]
+	\centering
+	\caption[DSR deterministic and stochastic model time-series average daily flow rate numeric results.]{DSR deterministic and stochastic model time-series average daily flow rate numeric results.  Results are presented in CDWR stream gauge name alphabetical order.}
+	\label{tab:GaugeFlow_DS}
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{$ Q_{ARKLAMCO} $}
+		\input{"Tables/DSR_qIN.txt"}
+	\end{subtable}\\
+	\tablevspace
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{$ Q_{ARKCOOKS} $}
+		\input{"Tables/DSR_qOUT.txt"}
+	\end{subtable}\\
+\end{table}
+\subtablemid
+\begin{table}[htbp]
+	\centering
+	\caption{DSR deterministic and stochastic model time-series average daily flow rate numeric results.}
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{$ Q_{BIGLAMCO} $}
+		\input{"Tables/DSR_qBIG.txt"}
+	\end{subtable}\\
+	\tablevspace
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{$ Q_{BUFDITCO} $}
+		\input{"Tables/DSR_qBUF.txt"}
+	\end{subtable}\\
+\end{table}
+\subtablemid
+\begin{table}[htbp]
+	\centering
+	\caption{DSR deterministic and stochastic model time-series average daily flow rate numeric results.}
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{$ Q_{WILDHOCO} $}
+		\input{"Tables/DSR_qWIL.txt"}
+	\end{subtable}\\
+	\tablevspace
+	\begin{subtable}{\textwidth}
+		\centering
+		\subcaption*{$ Q_{FRODITKS} $}
+		\input{"Tables/DSR_qFRO.txt"}
+	\end{subtable}\\
+\end{table}
+\clearpage
+Average daily flow rates are not grouped and calculated by river segment.  Figures \ref{fig:reachFlow_US} and \ref{fig:reachFlow_DS} and Tables \ref{tab:reachFlow_US} and \ref{tab:reachFlow_DS}present the results of the flow portion of the water balance model calculated as shown in Equations \ref{eq:USRFlow} and \ref{eq:DSRFlow} for the USR and DSR, respectively.  Figures \ref{fig:reachFlow_US} and \ref{fig:reachFlow_DS} show the sum of the deterministic model flow rates in the left figure.  The right figure shows the sum of the stochastic model flow rates.  As with the other stochastic model figures, the black line depicts the stochastic model mean time series and the blue region depicts the range of values between the stochastic model 97.5th percentile time series and the stochastic model 2.5th percentile time series.  Values outside of this range are not included in the figures.  The figures and associated tables are presented in units of \si{\cubic\meter\per\second\per\kilo\meter} (\si{\cfs\per\mile}).  Standardizing the results to present values in units of storage per unit length allows for comparisons to be made between the two study reaches and between water balance model components.  Positive values indicate that the respective reach gains water due to gauged surface water flows.
 
+\subfiguretop
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ \displaystyle \sum Q_{Total,USR} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Balance Water - flow"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Balance Water - flow"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption[USR deterministic and stochastic model time-series reach flow rates.]{USR deterministic and stochastic model time-series reach flow rates.  In the stochastic model time-series, the black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.}
+		\label{fig:reachFlow_US}
+	\end{figure}
+\end{landscape}
+\subfiguretop
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ \displaystyle \sum Q_{Total,DSR} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Deterministic/Balance Water - flow"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Stochastic/Balance Water - flow"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption[DSR deterministic and stochastic model time-series reach flow rates.]{DSR deterministic and stochastic model time-series reach flow rates.  In the stochastic model time-series, the black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.}
+		\label{fig:reachFlow_DS}
+	\end{figure}
+\end{landscape}
 
+\subtabletop
+\begin{table}[htbp]
+	\centering
+	\caption[USR deterministic and stochastic model time-series reach total average daily flow rate numeric results.]{USR deterministic and stochastic model reach total time-series average daily flow rate numeric results.  Flow rates are presented in units of \si{\cubic\meter\per\second\per\kilo\meter} (\si{\cfs\per\mile}).}
+	\label{tab:reachFlow_US}
+	\subcaption*{$\displaystyle \sum Q_{Total,USR} $}
+	\input{"Tables/USRFlow.txt"}
+\end{table}
+\subtabletop
+\tablevspace
+\begin{table}[htbp]
+	\centering
+	\caption[DSR deterministic and stochastic model time-series reach total average daily flow rate numeric results.]{DSR deterministic and stochastic model reach total time-series average daily flow rate numeric results.  Flow rates are presented in units of \si{\cubic\meter\per\second\per\kilo\meter} (\si{\cfs\per\mile}).}
+	\label{tab:reachFlow_DS}
+	\subcaption*{$\displaystyle \sum Q_{Total,DSR} $}
+	\input{"Tables/DSRFlow.txt"}
+\end{table}
 
-
-%Figures \ref{fig:USRWaterStore} and \ref{fig:DSRWaterStore} present the sum of all river segment water storage changes in the USR and DSR, respectively, as time-series plots.  The left and right sub-figures present the deterministic and stochastic time-series, respectively.  The black line in the stochastic figures is the 1-D stochastic mean results with the blue band indicating the 95\% CIR.  Values in these figures and associated tables indicate the volume of water stored in the respective reach in units of \si{\cubic\meter\per\second\per\kilo\meter}.  Standardizing the results to present values in units of storage per unit length allows for comparisons to be made between the two study reaches and between water balance model components.  Positive values indicate that the reach's storage volume increase. 
 
 %
 %The figures show that there is a definite seasonal variation in the storage component.  Stored water changes are smallest during the cold months and are increasingly larger during the growing season.  This pattern is caused by irrigation practices in the Lower Arkansas River Basin (LARV).  Stored irrigation water is released from reservoirs upstream of the LARV during the irrigation season as demands require.  During the winter, there is very little to no irrigation occurring.  This, combined with the low precipitation and no additional flow from snow-pack runoff, allow flows in the Arkansas River to reach base flow level when the river is at a natural equilibrium.
