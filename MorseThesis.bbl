@@ -19,6 +19,60 @@
 
 \refsection{0}
   \sortlist{entry}{nyt}
+    \entry{Allen2011}{article}{}
+      \name{labelname}{4}{uniquelist=3}{%
+        {{uniquename=2,hash=a1f8ecedc339346aa73023401be45d78}{Allen}{A\bibinitperiod}{Richard\bibnamedelima G.}{R\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=709c1cdc971abe9488c842551d6adb7d}{Pereira}{P\bibinitperiod}{Luis\bibnamedelima S.}{L\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=7efaa6192189c029e8efb9788972a329}{Howell}{H\bibinitperiod}{Terry\bibnamedelima A.}{T\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=072059eed00232ab4ac71d5cfd2b2a6a}{Jensen}{J\bibinitperiod}{Marvin\bibnamedelima E.}{M\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{uniquelist=3}{%
+        {{uniquename=2,hash=a1f8ecedc339346aa73023401be45d78}{Allen}{A\bibinitperiod}{Richard\bibnamedelima G.}{R\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=709c1cdc971abe9488c842551d6adb7d}{Pereira}{P\bibinitperiod}{Luis\bibnamedelima S.}{L\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=7efaa6192189c029e8efb9788972a329}{Howell}{H\bibinitperiod}{Terry\bibnamedelima A.}{T\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=072059eed00232ab4ac71d5cfd2b2a6a}{Jensen}{J\bibinitperiod}{Marvin\bibnamedelima E.}{M\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a180bb1ca707dd8ef28b31164f58c4b9}
+      \strng{fullhash}{6c94ad3e19c9d8db743b491409bbe26e}
+      \field{sortinit}{A}
+      \field{labelyear}{2011}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Evapotranspiration information reporting: I. Factors governing measurement accuracy}
+      \field{issn}{0378-3774}
+      \field{journaltitle}{Agricultural Water Management}
+      \field{number}{6}
+      \field{title}{Evapotranspiration information reporting: I. Factors governing measurement accuracy}
+      \field{volume}{98}
+      \field{year}{2011}
+      \field{pages}{899\bibrangedash 920}
+    \endentry
+    \entry{FAO56}{book}{}
+      \name{labelname}{4}{uniquelist=3}{%
+        {{uniquename=2,hash=a1f8ecedc339346aa73023401be45d78}{Allen}{A\bibinitperiod}{Richard\bibnamedelima G.}{R\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=709c1cdc971abe9488c842551d6adb7d}{Pereira}{P\bibinitperiod}{Luis\bibnamedelima S.}{L\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9d528b5787f56cc335c3cc3ac9a996dd}{Raes}{R\bibinitperiod}{Dirk}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=320c6e39898db73a6e775795c847f07f}{Smith}{S\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{uniquelist=3}{%
+        {{uniquename=2,hash=a1f8ecedc339346aa73023401be45d78}{Allen}{A\bibinitperiod}{Richard\bibnamedelima G.}{R\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=709c1cdc971abe9488c842551d6adb7d}{Pereira}{P\bibinitperiod}{Luis\bibnamedelima S.}{L\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9d528b5787f56cc335c3cc3ac9a996dd}{Raes}{R\bibinitperiod}{Dirk}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=320c6e39898db73a6e775795c847f07f}{Smith}{S\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{2}{%
+        {Food}%
+        {Agriculture Organization of the United Nations}%
+      }
+      \strng{namehash}{88207128afefb33a7e18f8eaebbea950}
+      \strng{fullhash}{c7e6c4f6634a5c3ba7e8e507f0946d5a}
+      \field{sortinit}{A}
+      \field{labelyear}{1988}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Crop Evapotranspiration - guideguide for computing crop water requirements}
+      \field{series}{FAO Irrigation and Drainage Paper No. 56}
+      \field{title}{Crop Evapotranspiration - guideguide for computing crop water requirements}
+      \field{year}{1988}
+    \endentry
     \entry{Buhman2002}{article}{}
       \name{labelname}{3}{}{%
         {{uniquename=0,hash=6ff40ee93680c7995f34d4ac9a3856ec}{Buhman}{B\bibinitperiod}{Daniel\bibnamedelima L.}{D\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
@@ -453,6 +507,43 @@
       \field{volume}{11}
       \field{year}{1975}
       \field{pages}{827\bibrangedash 838}
+    \endentry
+    \entry{walter2000asce}{inproceedings}{}
+      \true{morelabelname}
+      \name{labelname}{10}{}{%
+        {{uniquename=0,hash=f7756235c453d162ab057e21c23a497a}{Walter}{W\bibinitperiod}{Ivan\bibnamedelima A}{I\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=2,hash=309bab14ffa71f83d199d3bd30dc0804}{Allen}{A\bibinitperiod}{Richard\bibnamedelima G}{R\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=3ca95a4de8dc8a89a7c3f7a0bd2311f4}{Elliott}{E\bibinitperiod}{Ronald}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b043da7068fc868697541ee507ac55b9}{Jensen}{J\bibinitperiod}{ME}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=c438efd78af257616f5a32a25e8ad59b}{Itenfisu}{I\bibinitperiod}{D}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d9c2c9af2f5a92db2b40ba607bd9e599}{Mecham}{M\bibinitperiod}{B}{B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=a54c710973763d3934b85a792825c0bd}{Howell}{H\bibinitperiod}{TA}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=032573b6c362c9e58cdf6497783f7cfd}{Snyder}{S\bibinitperiod}{R}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4729a261378d835b1c7fbde98d5f1407}{Brown}{B\bibinitperiod}{P}{P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=91baf4a69b7513514eeb0c4627c0b63f}{Echings}{E\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \true{moreauthor}
+      \name{author}{10}{}{%
+        {{uniquename=0,hash=f7756235c453d162ab057e21c23a497a}{Walter}{W\bibinitperiod}{Ivan\bibnamedelima A}{I\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=2,hash=309bab14ffa71f83d199d3bd30dc0804}{Allen}{A\bibinitperiod}{Richard\bibnamedelima G}{R\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=3ca95a4de8dc8a89a7c3f7a0bd2311f4}{Elliott}{E\bibinitperiod}{Ronald}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b043da7068fc868697541ee507ac55b9}{Jensen}{J\bibinitperiod}{ME}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=c438efd78af257616f5a32a25e8ad59b}{Itenfisu}{I\bibinitperiod}{D}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d9c2c9af2f5a92db2b40ba607bd9e599}{Mecham}{M\bibinitperiod}{B}{B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=a54c710973763d3934b85a792825c0bd}{Howell}{H\bibinitperiod}{TA}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=032573b6c362c9e58cdf6497783f7cfd}{Snyder}{S\bibinitperiod}{R}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4729a261378d835b1c7fbde98d5f1407}{Brown}{B\bibinitperiod}{P}{P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=91baf4a69b7513514eeb0c4627c0b63f}{Echings}{E\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b80d40764d8fe246eec0c03e766eb633}
+      \strng{fullhash}{3b3a63b669b11526f7e64581a67e70ea}
+      \field{sortinit}{W}
+      \field{labelyear}{2000}
+      \field{datelabelsource}{}
+      \field{labeltitle}{ASCE's standardized reference evapotranspiration equation}
+      \field{booktitle}{Proc. of the Watershed Management 2000 Conference, June}
+      \field{title}{ASCE's standardized reference evapotranspiration equation}
+      \field{year}{2000}
     \endentry
     \entry{wanielista1997}{book}{}
       \true{morelabelname}

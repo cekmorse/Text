@@ -1,0 +1,11 @@
+\begin{tabular}{cccc} 
+\toprule 
+Model Portion  & 2.5\% & Mean & 97.5\% \\ 
+\toprule 
+$ \displaystyle \frac{\Delta S}{\Delta t} $ & 2.05	& 12.7	& 28.7 \\ 
+\\ 
+$ \displaystyle \sum Q_{Total} $	& 67  & 83.6	& 94.7 \\ 
+\\ 
+$ \displaystyle Q_{Atm} $  & 1.96  & 3.68	& 6.94 \\ 
+\bottomrule 
+\end{tabular}

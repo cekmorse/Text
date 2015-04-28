@@ -16,8 +16,7 @@ Adding the variables, both known and unknown, present in the LARV we have the fo
 \label{eq:water1}
 	\frac{\Delta S}{\Delta t} = Q_{in,US} + \sum Q_{in} + P + R + B - Q_{out,DS} - \sum Q_{out} - E - T - F 
 \end{equation}
-\begin{longtable}{rl}
-%\begin{tabularx}{6in}{rX}
+\begin{longtable}{r p{5.5in}}
 	Where: \\
 	$\frac{\Delta S}{\Delta t}$ =&Stored volume change between time steps.\\
 	$ Q_{in,US} $ = & Flow in the river entering the study reach at the upstream end.\\
@@ -34,13 +33,14 @@ Adding the variables, both known and unknown, present in the LARV we have the fo
 \end{longtable}
 
 If we combine the terms that are unknown or unmeasured, we arrive at the following equation:
-\begin{equation}\label{eq:water01}
+\begin{equation}
+	\label{eq:water01}
 	\frac{\Delta S}{\Delta t} = Q_{in,US} + \sum Q_{in} + P - Q_{out,DS} - \sum Q_{out} - E + Q_{NPS}
 \end{equation}
-\begin{tabularx}{6in}{rX}
+\begin{tabular}{r p{5.5in}}
 	Where: \\
-	\Qnps = & The sum of gains from non-point sources and losses to non-point sinks $ \left( Q_{NPS} = R + B - T - F + Q_{U,in} - Q_{U,out}\right) $.\\ 
-\end{tabularx}\\
+	\Qnps = & The sum of gains from non-point sources and losses to non-point sinks $ \left( Q_{UNPS} = R + B - T - F + Q_{U,in} - Q_{U,out}\right) $.\\ 
+\end{tabular}\\
 
 %\emph{III - define $Q_U$ constituents}\\
 There is no reasonable method for differentiating the components of \Qnps, therefore the abbreviation NPS in this thesis refers to both non-point sources and non-point sinks.   \Qnps includes the non-point source gains from groundwater sources($ B $), non-point source losses to groundwater sinks {}$ F $), transpiration losses from plants in the river channel ($ T $), and gains from precipitation runoff from adjacent land ($ R $).  Additionally, this term includes ungauged flows leaving and entering the river.  Ungauged gains to the river ($ Q_{U,in} $) are suspected to be primarily in the form of irrigation drainage from adjacent farmland.  Other sources could be due to errors in underestimating flows entering the river or overestimating flows leaving the river.  Ungauged losses from the river ($ Q_{U,out} $) are suspected to be primarily in the form of minor or unauthorized withdrawals from the river channel.  Of the ungauged flows, irrigation drainage from adjacent farmlands is assumed to be the largest contributor.
@@ -49,9 +49,24 @@ The two groundwater components of \Qnps are suspected of being the largest compo
 
 
 Re-arranging equation \eqref{eq:water01} to solve for the unknown values produces equation \ref{water02}.  Due to the nearly identical method of calculating flow ($ Q $) and it's associated error and uncertainty, these terms were associated with each other.  Likewise, the precipitation ($ P $) and evaporation ($ E $) terms were associated with each other.
-\begin{equation}\
-Q_{UNPS} = \left( Q_{out,DS} + \sum Q_{out} - Q_{in,US} - \sum Q_{in} \right) - \frac{\Delta S}{\Delta t} - \left( P + E \right)\\ \label{water02}
+\begin{equation}
+	\label{eq:water2}
+	Q_{UNPS} = \left( Q_{out,DS} + \sum Q_{out} - Q_{in,US} - \sum Q_{in} \right) + \frac{\Delta S}{\Delta t} - \left( P + E \right)\\ 
 \end{equation}
+
+This model is further simplified to Equation XX which combines terms that are calculated using similar methods to facilitate discussion.
+\begin{equation}
+	\label{eq:water3}
+	Q_{UNPS} = \frac{\Delta S}{\Delta t} - \sum Q_{Total} - \sum Q_{Atm}\\ 
+\end{equation}
+\begin{tabular}{r p{5.5in}}
+	Where:&\\
+	$ \displaystyle \frac{\Delta S}{\Delta t} $ = & Reach storage change per time-step.\\
+	$ \displaystyle \sum Q_{Total} $ = & $ Q_{in,DS} + \sum Q_{in} - Q_{out,US} - \sum Q_{out} $ = Sum of flows added and removed \\
+		& from the reach per time-step. \\
+	$ Q_{Atm} $ = & $ P - E $ = The sum of precipitation gains and evaporation losses, per time \\
+		& step.\\
+\end{tabular}\\
 
 A time step of one day was established for all models calculated in this thesis.  Most of the data from agencies is readily available in average daily format.  While most of the data could also be obtained in hourly or quarter-hourly format, it was assumed that the additional information would not improve model accuracy.
 
@@ -78,7 +93,7 @@ The data originators have provided uncertainty ranges which include instrument m
 \begin{align}
 	\sigma^2 = \left( \frac{O_i-UO_{i}(l)}{3.9} \right)^2  &  \phantom{xxxxxxxx} or  & 	\sigma^2 = \left( \frac{UO_{i}(u)-O_i}{3.9} \right)^2 \label{eq:uncertainty1}
 \end{align}
-\begin{tabular}{r p{5in}}
+\begin{tabular}{r p{5.5in}}
 	Where:\\
 	$ \sigma^2 $ = & variance about measured data value $ O_i $.\\
 	$ O_i $ = & measured value.\\
@@ -91,7 +106,7 @@ The data collected for this thesis is assumed to represent the mean of a normal 
 	\sigma^2 = \left( \frac{\mu - (\mu - \mu p)}{3.9} \right)^2  &  \phantom{wordsssssss} or \phantom{s}  & 	\sigma^2 = \left( \frac{(\mu + \mu p) - \mu}{3.9} \right)^2 \label{eq:uncertainty2}
 \end{align}
 
-\begin{tabular}{r p{5in}}
+\begin{tabular}{r p{5.5in}}
 	Where:\\
 	$ \mu $ = & the reported value (assumed to be the mean).\\
 	$ p $ = & the reported percent deviation from $ \mu $.\\
@@ -108,7 +123,7 @@ When the upper and lower bounds are defined as a fixed value deviation from the 
 \begin{align}
 	\sigma^2 = \left( \frac{\mu - (\mu - v)}{3.9} \right)^2  &  \phantom{wordsssssss} or \phantom{s}  & 	\sigma^2 = \left( \frac{(\mu + v) - \mu}{3.9} \right)^2 \label{eq:uncertainty4}
 \end{align}
-\begin{tabular}{r p{5in}}
+\begin{tabular}{r p{5.5in}}
 	Where:\\
 	$ v $ = & the reported value deviation from $ \mu $.\\
 \end{tabular}\\
@@ -142,7 +157,7 @@ River reach estimated stored water volume changes $( \frac{\Delta S}{\Delta t} )
 	\label{eq:storage1}
 	\frac{\Delta S}{\Delta t} = \sum \frac{\Delta S_i}{\Delta t}
 \end{equation}
-\begin{tabular}{rl}
+\begin{tabular}{r p{5.5in}}
 Where:\\
 $\Delta S$ = & Water storage change in the river reach.\\
 $\Delta S_i$ = & Water storage change in river segment $ i $.\\
@@ -155,11 +170,11 @@ River reach volume changes are calculated between two consecutive time steps.  R
 	\frac{\Delta S_i}{\Delta t}=L_i \cdot \frac{\Delta A_i}{\Delta t}
 	\label{eq:volumesimple}
 \end{equation}
-\begin{tabular}{r l}
+\begin{tabular}{r p{5.5in}}
 	Where:&\\
-	$\frac{\Delta S_i}{\Delta t}$ & = Segment storage change.\\
+	$\displaystyle \frac{\Delta S_i}{\Delta t}$ & = Segment storage change.\\
 	$L_i$ & = Segment length.\\
-	$\frac{\Delta A_i}{\Delta t} $ &= Segment cross-section area change.\\
+	$\displaystyle \frac{\Delta A_i}{\Delta t} $ &= Segment cross-section area change.\\
 \end{tabular}\\
 
 For the USR, Equation \ref{eq:storage1} includes the storage volume changes from all five segments of the USR as shown in Equation \ref{eq:waterVolume_US1}.  Equation \ref{eq:waterVolume_US2} shows the expanded form following Equation \ref{eq:volumesimple}.
@@ -224,11 +239,11 @@ River segment cross-sectional area change $\left( \frac{\Delta A_i}{\Delta t} \r
 	\frac{\Delta A_i}{\Delta t}= & \overline{Tw}\cdot \Delta y \nonumber \\
 	\frac{\Delta A_i}{\Delta t} = & \frac{Tw_t + Tw_{t-1}}{2} \cdot \left( y_{t-1} - y_t \right) \label{eq:XSArea}
 \end{align}
-\begin{tabular}{rl}
+\begin{tabular}{r p{5.5in}}
 	Where: & \\
 	$_t$ = & Current time step. \\
 	$_{t-1}$ = & Previous time step. \\
-	$\frac{\Delta A_i}{\Delta t}$ = & Cross-section area change at river section $ i $ between time steps.\\
+	$\displaystyle \frac{\Delta A_i}{\Delta t}$ = & Cross-section area change at river section $ i $ between time steps.\\
 	$\overline{Tw}$ = & Average river top width.\\
 	$\Delta y$ = & Change in flow depth from the previous time step. \\
 	$Tw$ = & River top width. \\
@@ -242,7 +257,7 @@ Flow depth values as reported by the USGS and CDWR are measured values with an a
 	y_{i,t}=h_{i,t}+C_{i}+\varepsilon_{h1}+\varepsilon_{h2}
 	\label{eq:herror1}
 \end{equation}
-\begin{tabular}{rl}
+\begin{tabular}{r p{5.5in}}
 	Where: & \\
 	$y_{i,t}$  & = Section $ i $ modeled average daily flow depth at time $ t $.\\
 	$h_{i,t}$  & = Section $ i $ reported average daily river gauge height at time $ t $.\\
@@ -472,13 +487,13 @@ The time-series plots of all four stochastic geometric parameters for each study
 	\begin{figure}
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/G TS A"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/G TS A"}
 			\subcaption*{Segment A}		
 			\label{sub:GeoTS_A}
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/G TS B"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/G TS B"}
 			\subcaption*{Segment B}
 			\label{sub:GeoTS_B}
 		\end{subfigure}\\
@@ -492,13 +507,13 @@ The time-series plots of all four stochastic geometric parameters for each study
 	\begin{figure}
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/G TS C"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/G TS C"}
 			\subcaption*{Segment C}
 			\label{sub:GeoTS_C}	
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering			
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/G TS D"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/G TS D"}
 			\subcaption*{Segment D}
 			\label{sub:GeoTS_D}
 		\end{subfigure}\\
@@ -511,7 +526,7 @@ The time-series plots of all four stochastic geometric parameters for each study
 	\begin{figure}
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/G TS E"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/G TS E"}
 			\subcaption*{Segment E}
 			\label{sub:GeoTS_E}	
 		\end{subfigure}\\
@@ -736,10 +751,10 @@ This pattern is not as pronounced in the DSR.  This is most likely due to requir
 
 Deviations are noted during peak irrigation season.  These additional volume changes are most likely due to irrigation flows returning to the Arkansas River from fields irrigated from canal systems that procure and store water upstream of John Martin Reservoir.  The Fort Lyon Storage Canal and Fort Lyon Canal are two examples of canal systems that perform this function.  Water removed from the USR, stored, and added to the DSR is not included in this study.
 
-The distribution of all realizations within each time step was analyzed to determine a distribution type.  This analysis was performed to determine if the assumption that the deterministic model results were representative of the stochastic model.   Testing was performed by comparing K-S statistics for the best fit normal, log-normal, logistic, exponential, gamma, and Weibull distributions.  In the USR, 97\% of all storage component time steps best fit a normal distribution and 3\% best fit a gamma distribution.  In the DSR, 99.5\% best fit a normal distribution and 0.5\% best fit a gamma distribution.  This indicates that for both the USR and DSR, the distributions across the realizations are normal.
-
+The distribution of all realizations within each time step was analyzed to determine a distribution type.  This analysis was performed to determine if the assumption that the deterministic model results were representative of the stochastic model.   Testing was performed by comparing K-S statistics for the best fit normal and logistic distributions.  Log-normal, logistic, exponential, gamma, and Weibull distributions were considered, but were not included in this analysis since they do not support the full range of possible values, $ (-\infty, +\infty) $.  The non-included distributions could have been scaled and shifted, but they are still limited in the range of possible values.  In the USR and the DSR, all of the river water volume storage change stochastic model time steps are best fit by a logistic distribution.
+  
 The mean of the percent difference between the deterministic model time-series and stochastic model mean time-series is very low.  This indicates that the deterministic model is representative of the stochastic model expected value.  The high percent differences at the 2.5th and 97.5th percentile indicate that there is still a large range of uncertainty contained within the stochastic model that the deterministic model cannot replicate.  The deterministic model can be used to determine how changes can affect a reach over a span of time, but using it to estimate values for specific time steps is unwise as the differences noted at individual time steps is too large to account for.
-\clearpage
+\clearpage{}
 
 \section{Gauged Stream Flows and Diverted Canal Flows}
 \label{sec:StreamFlows}
@@ -750,7 +765,7 @@ Equation \ref{eq:water1} contains the portion contained in equation \ref{eq:flow
 \label{eq:flow1}
 \sum Q_{Total} = \left( Q_{out,DS} + \sum Q_{out} - Q_{in,US} - \sum Q_{in} \right) 
 \end{equation}
-\begin{tabular}{r L{5.5in}}
+\begin{tabular}{r p{5.5in}}
 	Where: & \\
 	$ Q_{Total} = $ & sum of average daily flow rates in the study region.\\
 	$ Q_{in} = $ & flow entering the study reach from a tributary.\\
@@ -824,7 +839,7 @@ Equations \ref{eq:USRFlow} and \ref{eq:DSRFlow} constitute the surface water flo
 	\label{eq:flow1error}
 	Q_{stochastic} = Q_{reported} + \varepsilon_{Q_{reported}}
 \end{equation}
-\begin{tabular}{r L{5.5in}}
+\begin{tabular}{r p{5.5in}}
 	Where:\\
 	$ Q_{stochastic} $& = flow rate through a gauge used in the stochastic model.\\
 	$ Q_{reported}  $ & = flow rate through a gauge as reported by the USGS or CDWR.\\
@@ -841,7 +856,7 @@ Stream flow data is provided as described in Section \ref{sec:data collected by 
 	\includegraphics[width=6in]{"Figures/USGS_error_table"}
 \end{table}
 
-Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic and deterministic model results for each of the stream flow variables used in USR and DSR models, respectively.  Each pair of figures presents the deterministic model results on the left and the stochastic model results on the right.  The deterministic model figures show the flow rates as reported by the CDWR and USGS.  The stochastic model figures present the stochastic model mean time series and the band bounded by the stochastic model 2.5th percentile time-series and the stochastic model 97.5th percentile time-series.  These figures present results from each of the stream gauge in CDWR stream gauge name alphabetical order.
+Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic and deterministic model results for each of the stream flow variables used in USR and DSR models, respectively.  Each pair of figures presents the deterministic model results on the left and the stochastic model results on the right.  The deterministic model figures show the flow rates as reported by the CDWR and USGS.  The stochastic model figures present the stochastic model mean time-series and the band bounded by the stochastic model 2.5th percentile time-series and the stochastic model 97.5th percentile time-series.  These figures present results from each of the stream gauge in CDWR stream gauge name alphabetical order.
 
 \subfiguretop
 \begin{landscape}
@@ -850,12 +865,12 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 		$ Q_{ARKCATCO} $
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Q U163"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Deterministic/Q U163"}
 			\subcaption*{Deterministic}		
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q U163"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/Q U163"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
 		\caption[USR deterministic and stochastic model time-series average daily flow rate.]{USR deterministic and stochastic model time-series average daily flow rate.  The deterministic model time-series presents the data reported by the CDWR and USGS gauges.  In the stochastic model time-series, the black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.  Results are presented in CDWR stream gauge name alphabetical order.}
@@ -869,12 +884,12 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 		$ Q_{ARKLASCO} $
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Q U201"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Deterministic/Q U201"}
 			\subcaption*{Deterministic}		
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q U201"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/Q U201"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
 		\caption{USR deterministic and stochastic model time-series average daily flow rate.}
@@ -887,12 +902,12 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 		$ Q_{CANSWKCO} $
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Q CAN"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Deterministic/Q CAN"}
 			\subcaption*{Deterministic}		
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q CAN"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/Q CAN"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
 		\caption{USR deterministic and stochastic model time-series average daily flow rate.}
@@ -905,12 +920,12 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 		$ Q_{CONDITCO} $
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Q CON"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Deterministic/Q CON"}
 			\subcaption*{Deterministic}		
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q CON"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/Q CON"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
 		\caption{USR deterministic and stochastic model time-series average daily flow rate.}
@@ -923,12 +938,12 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 		$ Q_{FLSCANCO} $
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Q FLS"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Deterministic/Q FLS"}
 			\subcaption*{Deterministic}		
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q FLS"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/Q FLS"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
 		\caption{USR deterministic and stochastic model time-series average daily flow rate.}
@@ -941,12 +956,12 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 		$ Q_{FLYCANCO} $
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Q FLY"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Deterministic/Q FLY"}
 			\subcaption*{Deterministic}		
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q FLY"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/Q FLY"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
 		\caption{USR deterministic and stochastic model time-series average daily flow rate.}
@@ -959,12 +974,12 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 		$ Q_{HOLCANCO} $
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Q HOL"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Deterministic/Q HOL"}
 			\subcaption*{Deterministic}		
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q HOL"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/Q HOL"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
 		\caption{USR deterministic and stochastic model time-series average daily flow rate.}
@@ -977,12 +992,12 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 		$ Q_{HRC194CO} $
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Q HRC"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Deterministic/Q HRC"}
 			\subcaption*{Deterministic}		
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q HRC"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/Q HRC"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
 		\caption{USR deterministic and stochastic model time-series average daily flow rate.}
@@ -995,12 +1010,12 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 		$ Q_{RFDMANCO} $
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Q RFD"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Deterministic/Q RFD"}
 			\subcaption*{Deterministic}		
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q RFD"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/Q RFD"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
 		\caption{USR deterministic and stochastic model time-series average daily flow rate.}
@@ -1013,12 +1028,12 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 		$ Q_{RFDRETCO} $
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Q RFR"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Deterministic/Q RFR"}
 			\subcaption*{Deterministic}		
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q RFR"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/Q RFR"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
 		\caption{USR deterministic and stochastic model time-series average daily flow rate.}
@@ -1031,12 +1046,12 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 		$ Q_{TIMSWICO} $
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Q TIM"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Deterministic/Q TIM"}
 			\subcaption*{Deterministic}		
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q TIM"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/Q TIM"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
 		\caption{USR deterministic and stochastic model time-series average daily flow rate.}
@@ -1049,12 +1064,12 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 		$ Q_{LaJuntaWWTP} $
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Q WTP"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Deterministic/Q WTP"}
 			\subcaption*{Deterministic}		
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Q WTP"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/Q WTP"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
 		\caption{USR deterministic and stochastic model time-series average daily flow rate.}
@@ -1070,12 +1085,12 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 		$ Q_{ARKLASCO} $
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Deterministic/Q in"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Deterministic/Q in"}
 			\subcaption*{Deterministic}		
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Stochastic/Q in"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Stochastic/Q in"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
 		\caption[DSR deterministic and stochastic model time-series average daily flow rate.]{DSR deterministic and stochastic model time-series average daily flow rate.  The deterministic model time-series presents the data reported by the CDWR and USGS gauges.  In the stochastic model time-series, the black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.  Results are presented in CDWR stream gauge name alphabetical order.}
@@ -1089,12 +1104,12 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 		$ Q_{ARKCOOKS} $
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Deterministic/Q out"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Deterministic/Q out"}
 			\subcaption*{Deterministic}		
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Stochastic/Q out"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Stochastic/Q out"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
 		\caption{DSR deterministic and stochastic model time-series average daily flow rate.}
@@ -1107,12 +1122,12 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 		$ Q_{BIGLAMCO} $
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Deterministic/Q BIG"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Deterministic/Q BIG"}
 			\subcaption*{Deterministic}		
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Stochastic/Q BIG"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Stochastic/Q BIG"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
 		\caption{DSR deterministic and stochastic model time-series average daily flow rate.}
@@ -1125,12 +1140,12 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 		$ Q_{BUFDITCO} $
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Deterministic/Q BUF"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Deterministic/Q BUF"}
 			\subcaption*{Deterministic}		
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Stochastic/Q BUF"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Stochastic/Q BUF"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
 		\caption{DSR deterministic and stochastic model time-series average daily flow rate.}
@@ -1143,12 +1158,12 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 		$ Q_{FRODITKS} $
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Deterministic/Q FRO"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Deterministic/Q FRO"}
 			\subcaption*{Deterministic}		
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Stochastic/Q FRO"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Stochastic/Q FRO"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
 		\caption{DSR deterministic and stochastic model time-series average daily flow rate.}
@@ -1161,19 +1176,19 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 		$ Q_{WILDHOCO} $
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Deterministic/Q WIL"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Deterministic/Q WIL"}
 			\subcaption*{Deterministic}		
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Stochastic/Q WIL"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Stochastic/Q WIL"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
 		\caption{DSR deterministic and stochastic model time-series average daily flow rate.}
 	\end{figure}
 \end{landscape}
 
-Both figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} show that the stochastic model mean time-series of each of the calculated stochastic model flow rates does not deviate significantly from the deterministic model time-series.  Tables \ref{tab:GaugeFlow_US} and \ref{tab:GaugeFlow_DS} present the numeric results associated with each of the figures.  These tables show that the deterministic model time series and stochastic mean time series are essentially identical.  The 2.5th percentile, mean, and 97.5th percentile of the two models are identical or nearly identical for all flow rates.  The Pearson Correlation values for the two models are 1 or very nearly 1 for all cases.  These results show that for the average daily flow rate, the deterministic model is representative of the stochastic model
+Both figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} show that the stochastic model mean time-series of each of the calculated stochastic model flow rates does not deviate significantly from the deterministic model time-series.  Tables \ref{tab:GaugeFlow_US} and \ref{tab:GaugeFlow_DS} present the numeric results associated with each of the figures.  These tables show that the deterministic model time-series and stochastic mean time-series are essentially identical.  The 2.5th percentile, mean, and 97.5th percentile of the two models are identical or nearly identical for all flow rates.  The Pearson Correlation values for the two models are 1 or very nearly 1 for all cases.  These results show that for the average daily flow rate, the deterministic model is representative of the stochastic model
 
 \subtabletop
 \begin{table}[htbp]
@@ -1323,7 +1338,7 @@ Both figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} show that the sto
 	\end{subtable}\\
 \end{table}
 \clearpage
-Average daily flow rates are not grouped and calculated by river segment.  Figures \ref{fig:reachFlow_US} and \ref{fig:reachFlow_DS} and Tables \ref{tab:reachFlow_US} and \ref{tab:reachFlow_DS}present the results of the flow portion of the water balance model calculated as shown in Equations \ref{eq:USRFlow} and \ref{eq:DSRFlow} for the USR and DSR, respectively.  Figures \ref{fig:reachFlow_US} and \ref{fig:reachFlow_DS} show the sum of the deterministic model flow rates in the left figure.  The right figure shows the sum of the stochastic model flow rates.  As with the other stochastic model figures, the black line depicts the stochastic model mean time series and the blue region depicts the range of values between the stochastic model 97.5th percentile time series and the stochastic model 2.5th percentile time series.  Values outside of this range are not included in the figures.  The figures and associated tables are presented in units of \si{\cubic\meter\per\second\per\kilo\meter} (\si{\cfs\per\mile}).  Standardizing the results to present values in units of storage per unit length allows for comparisons to be made between the two study reaches and between water balance model components.  Positive values indicate that the respective reach gains water due to gauged surface water flows.
+Average daily flow rates are not grouped and calculated by river segment.  Figures \ref{fig:reachFlow_US} and \ref{fig:reachFlow_DS} and Tables \ref{tab:reachFlow_US} and \ref{tab:reachFlow_DS}present the results of the flow portion of the water balance model calculated as shown in Equations \ref{eq:USRFlow} and \ref{eq:DSRFlow} for the USR and DSR, respectively.  Figures \ref{fig:reachFlow_US} and \ref{fig:reachFlow_DS} show the sum of the deterministic model flow rates in the left figure.  The right figure shows the sum of the stochastic model flow rates.  As with the other stochastic model figures, the black line depicts the stochastic model mean time-series and the blue region depicts the range of values between the stochastic model 97.5th percentile time-series and the stochastic model 2.5th percentile time-series.  Values outside of this range are not included in the figures.  The figures and associated tables are presented in units of \si{\cubic\meter\per\second\per\kilo\meter} (\si{\cfs\per\mile}).  Standardizing the results to present values in units of storage per unit length allows for comparisons to be made between the two study reaches and between water balance model components.  Positive values indicate that the respective reach gains water due to gauged surface water flows.
 
 \subfiguretop
 \begin{landscape}
@@ -1332,12 +1347,12 @@ Average daily flow rates are not grouped and calculated by river segment.  Figur
 		$ \displaystyle \sum Q_{Total,USR} $
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Deterministic/Balance Water - flow"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Deterministic/Balance Water - flow"}
 			\subcaption*{Deterministic}		
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_USR/Stochastic/Balance Water - flow"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/Balance Water - flow"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
 		\caption[USR deterministic and stochastic model time-series reach flow rates.]{USR deterministic and stochastic model time-series reach flow rates.  In the stochastic model time-series, the black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.}
@@ -1351,12 +1366,12 @@ Average daily flow rates are not grouped and calculated by river segment.  Figur
 		$ \displaystyle \sum Q_{Total,DSR} $
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Deterministic/Balance Water - flow"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Deterministic/Balance Water - flow"}
 			\subcaption*{Deterministic}		
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
-			\includegraphics[width=\textwidth]{"Figures/Results_DSR/Stochastic/Balance Water - flow"}
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Stochastic/Balance Water - flow"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
 		\caption[DSR deterministic and stochastic model time-series reach flow rates.]{DSR deterministic and stochastic model time-series reach flow rates.  In the stochastic model time-series, the black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.}
@@ -1372,7 +1387,6 @@ Average daily flow rates are not grouped and calculated by river segment.  Figur
 	\subcaption*{$\displaystyle \sum Q_{Total,USR} $}
 	\input{"Tables/USRFlow.txt"}
 \end{table}
-\subtabletop
 \tablevspace
 \begin{table}[htbp]
 	\centering
@@ -1382,1087 +1396,449 @@ Average daily flow rates are not grouped and calculated by river segment.  Figur
 	\input{"Tables/DSRFlow.txt"}
 \end{table}
 
+The individual gauged flow rate figures and the reach calculated sum of gauged flow rate figures show that there is a definite seasonal variation in the flow rates.  This is as expected since the LARV water supply is highly dependent on irrigation waters provided by reservoir releases.  The values in the reach tables show that the stochastic model mean time-series closely follows the deterministic model time-series.  The summary statistics of the two models and the Pearson Correlation between the two models are nearly identical.  This shows that the gauge flow portion of the deterministic water balance model is a very good representation of the stochastic model.  
 
-%
-%The figures show that there is a definite seasonal variation in the storage component.  Stored water changes are smallest during the cold months and are increasingly larger during the growing season.  This pattern is caused by irrigation practices in the Lower Arkansas River Basin (LARV).  Stored irrigation water is released from reservoirs upstream of the LARV during the irrigation season as demands require.  During the winter, there is very little to no irrigation occurring.  This, combined with the low precipitation and no additional flow from snow-pack runoff, allow flows in the Arkansas River to reach base flow level when the river is at a natural equilibrium.
-%
-%This pattern is not as pronounced in the DSR.  This is most likely due to required flow rates being maintained at the Colorado-Kansas border.  With the constant required flow, John Martin Reservoir releases only enough water to meet the required flow rate.  This creates a flow regime that is nearly constant through most of the DSR. 
-%
-%Deviations are noted during peak irrigation season.  These additional volume changes are most likely due to irrigation flows returning to the Arkansas River from fields irrigated from canal systems that procure and store water upstream of John Martin Reservoir.  The Fort Lyon Storage Canal and Fort Lyon Canal are two examples of canal systems that perform this function.  Water removed from the USR, stored, and added to the DSR is not included in this study.
-%
-%The distribution of all realizations within each time step was analyzed to determine a distribution type.  This analysis was performed to determine if the assumption that the deterministic model results were representative of the stochastic model.   Testing was performed by comparing K-S statistics for the best fit normal, log-normal, logistic, exponential, gamma, and Weibull distributions.  In the USR, 97\% of all storage component time steps best fit a normal distribution and 3\% best fit a gamma distribution.  In the DSR, 99.5\% best fit a normal distribution and 0.5\% best fit a gamma distribution.  This indicates that for both the USR and DSR, the distributions across the realizations are normal.
-%
-%Tables \ref{tab:USRWaterStore} and \ref{tab:DSRWaterStore} presents summary statistics of the deterministic and stochastic storage component changes.  Values are presented in units of \si{\cubic\meter\per\second\per\kilo\meter}.   These tables show the mean, 2.5th, and 97.5th percentile of the deterministic model and the same statistics applied to the three 1-D stochastic models.  This additional set of statistics from the 1-D stochastic 2.5th and 95.5th percentile models provide a better understanding of the extremes of the calculated values.  As before, comparison between the deterministic and stochastic models should be limited to the comparing the deterministic model to the 1-D stochastic mean model.  Also included in these two tables is the percent difference between the deterministic model and the 1-D stochastic mean model.  The mean, 2.5th, and 97.5th percentile values were calculated from the percent difference of the 1-D stochastic mean model from the deterministic model at each time step.  These values show the range of the variance from the deterministic model.
-%
+Each of the time-steps of this portion of the USR stochastic model were analyzed to determine the best fit distribution using K-S analysis.  Of the tested possible distribution shapes, all of the time steps had logistic distributions.  Visual analysis of the relationship between the date and the best fit distribution did not yield any significance.  Similarly, visual analysis of the relationship between the resultant flow rate and the best fit distribution did not yield any significance. 
 
-%
+The DSR stochastic model underwent the same analysis.  Of the tested possible distribution shapes, 98.3\% of the time-steps were best fit by logistic distributions.  The remaining 1.7\% were best fit by normal distributions.  Visual analysis of the comparison between the time-step date and the best fit distribution showed that all of the normally distributed time-steps are at the beginning of the study time frame.   Visual analysis of the comparison between the region volume change and the best fit distribution revealed that the few time-steps that were normally distributed, were characterized as low magnitude storage loss time-steps.
 
-%
-%The mean of the percent difference between the deterministic and 1-D stochastic mean models is very low.  This indicates that the deterministic model is representative of the stochastic model expected value.  The high percent differences at the 2.5th and 97.5th percentile indicate that there is still a large range of uncertainty contained within the stochastic model that the deterministic model cannot replicate.  The deterministic model can be used to determine how changes can affect a reach over a span of time, but using it to estimate values for specific time steps is unwise as the differences noted at individual time steps is too large to account for.
-%
-%\emph{VIII - analysis and comments on segment and reach results}\\
-%
-%\clearpage{}
-%\section{Gauged Stream Flows and Diverted Canal Flows}
-%\label{sec:GaugedFlows}
-%
-%\emph{I - define the variables}\\
-%
-%\emph{II - define the reported flow rate uncertainty distributions}\\
+The reach flow summary time-series figures (\ref{fig:GaugeFlow_US} and\ref{fig:GaugeFlow_US}) show that there is a definite seasonal variation in the flow component.  The surface water flow balance changes from being a losing system to a gaining system during the irrigation season.  This pattern is caused by irrigation practices in the Lower Arkansas River Basin (LARV).  Excess irrigation water applied to fields runs off into tributaries which feed into the Arkansas River
 
-%Average daily stream flow is calculated using equation \ref{eq:flow and error1}.   
-%\begin{equation}
-%\label{eq:flow and error1}
-%	\bar{Q}=\bar{Q}_{reported}+\varepsilon_Q
-%\end{equation}
-%\begin{tabular}{r l}
-%Where:&\\
-%$\bar{Q}$ =& estimated probable flow rate,\\
-%$\bar{Q}_{reported}$ =& reported flow rate,\\
-%$\varepsilon_Q$ =& flow rate error.\\
-%\end{tabular}\\
-%
+The figures also show that the river is discharging more water than it receives.  In the USR, this matches the general observed trend where the upstream end of the reaches receives more water than the downstream ends discharges.  This does not match the observed trend in the DSR where the flows at the upstream end appear to be less than or equal to the flows at the downstream end.  In the DSR, this mismatch between the observed phenomenon and the measured values indicates that another process is a significant contributor to the flow regime.  Since the two reaches are in the same environment, it is reasonable to assume that the same phenomenon is present in the USR.  It is suspected that groundwater from the riparian aquifer is the unaccounted for source in both the USR and DSR.
 
-%Water temperature and specific conductance data is also collected concurrently with the 15-minute increment stream flow measurements.  These two data sets also have ratings assigned to them using the terms "excellent", "good", "fair", and "poor".  The quantity of values within these distributions is not specifically described as for the stream flow data.  Since the uncertainty ratings use the same terms, we assume that these ratings encompass 95 percent of the values, just like the stream flow data.  The range of the ratings are dependent on the parameter being measured and are based on a combination of instrument fouling and calibration drift for the specific instrument.  Table \ref{tab:USGSRatings} is extracted from a USGS Annual Water Data Report and describes the ranges assigned to each of the measured parameters and accuracy ratings.
-%\begin{table}[htbp]
-%\begin{center}
-%	\caption[USGS Ratings of Accuracy Table.]{USGS Ratings of Accuracy Table.  Extracted from a USGS Annual Water Data Report.}
-%	\label{tab:USGSRatings}
-%	\includegraphics[width=6in]{"Figures/USGS_error_table"}
-%\end{center}
-%\end{table}
-%
-%While not specifically stated by the USGS or the CDWR, the ratings described are assumed to be normally distributed.  The accuracy rating descriptions provided by the USGS do not allow for straight forward creation of a normal distribution using the mean and standard deviation.  The mean of the distribution is assumed to be the measured value.  To determine the standard deviation, we begin by assuming that the "95\% of the values" is centrally located.  This means that the distribution encompasses the range between the 2.5th and 97.5th percentile on a normal distribution.  Since the measured value is assumed to be the mean, the distribution encompasses a range between $0.025\cdot \mu$ and $1.975 \cdot \mu$.  A quick examination of a Z-score table shows that this equates to a range of Z-scores between -1.96 and 1.96.  Starting with the Z-score equation, \ref{eq:Zscore}:
-%\begin{equation}
-%	\label{eq:Zscore}
-%	Z=\frac{x-\mu}{\sigma}
-%\end{equation}
-%\begin{tabular}{r l}
-%Where:&\\
-%$Z$ = & Z-score\\
-%$x$ = & measured value\\
-%$\mu$ = & distribution mean\\
-%$\sigma$ = & distribution standard deviation\\
-%\end{tabular}\\
-%
-%Substituting the $Z$, $x$, and $\mu$ values where $x$ is the deviation of $\mu$ at the 97.5th percentile and solving for $\sigma$:
-%\begin{align}
-%	\nonumber 3=&\frac{x-\mu}{\sigma}\\
-%	\sigma=&\frac{x-\mu}{1.96}
-%\end{align}
-%
-%The same solution is found when using values for the 2.5th percentile.  Defining $x$ for a distribution range expressed as an absolute value, as in the case of temperature, results in equation \ref{eq:Zscore4} where $\mu+v$ is the maximum possible value and $v$ is the maximum difference from the mean value.  
-%\begin{equation}
-%	\label{eq:Zscore4}
-%	\sigma=\frac{(\mu+v)-\mu}{1.96}=\frac{v}{1.96}
-%\end{equation}
-%
-%When defined for a distribution rage expressed as a percentage of the reported value, equation \ref{eq:Zscore5} is the result where $\mu(1+p)$ is the maximum possible value and $p$ is the maximum decimal percent difference from the mean value.
-%\begin{equation}
-%	\label{eq:Zscore5}
-%	\sigma=\frac{\mu(1+p)-mu}{1.96}=\frac{\mu \cdot p}{1.96}
-%\end{equation}
-%
-%This procedure provides a standard method for setting the parameters of the uncertainty distributions associated with a specified measurements provided by the USGS and the CDWR.
-%
-%Reported stream flow depth measurements reflect the average daily stream depth at the gauge sites.  The USGS and CDWR adhere to the same standard whereby stream flow depth measurements are within  \SI{\pm 0.003}{\meter} (\SI{\pm 0.01}{\foot}).  It is assumed that this error range describes the 95\% central inter-percentile range of a normal distribution.
-%
-%Values and figures presented in this section are the results from calculations described in chapter \ref{chap:models and uncertainty}.  The purpose of this analysis is to determine how well the values generated for the stochastic models fit the reported values used in the deterministic models.
-%
-%Figure \ref{fig:ExampleDensity} is an example of the plots used to perform visual analysis of the stochastic model input variables.  This figure presents the distribution of the flow values at ARKCATCO, the USR upstream stream gauge.  The reported values are depicted by the histogram and the black kernel density estimate (KDE) curve.  The red curve depicts the KDE of the 1-D stochastic mean time-series values.  This figure shows how the 1-D stochastic model mean values compare to the deterministic model values.  Similar figures for all variables are presented in appendix \ref{App:VarDensity}.
-%
-%\begin{figure}[htbp]
-%\centering
-%	\includegraphics[width=6in]{"Figures/Results_USR/V density qin"}
-%	\caption[Deterministic and stochastic model input variable distributions.]{Deterministic and stochastic model input variable distributions.  This is an example figure presenting the results for the variable $Q_{ARKCATCO}$.  Additional figures for the other USR and DSR input variables are provided in the appendix noted in the text.  The histogram and the black KDE present the deterministic model input variable values.  The red dashed KDE presents the distribution of the 1-D stochastic mean time-series distribution.}
-%	\label{fig:ExampleDensity}
-%\end{figure}
-%
-%Goodness-of-fit is measured by visual comparison of the 1-D stochastic model and deterministic model KDE curves and the mean of the distributions.  Ideally, the 1-D stochastic mean model distribution and mean should be near the deterministic model distribution and mean.  All of the input variables used in the USR water balance and mass balance models meet this idealism.
-%
-%The distribution of the differences between the generated values and the expected values was another evaluation performed.  An example of these analyses is shown in figure \ref{fig:ExampleDifference}.  This figure shows data from the analysis of the variable $Q_{ARKCATCO}$.  Histograms are not presented in these figures for clarity.  The KDE in figure \ref{sub:diff} is the distribution of the difference between the deterministic and 1-D stochastic mean time-series.  Figure \ref{sub:pdiff} is the percent difference between the two time-series.  The solid vertical line is at the mean of the distribution and the dashed vertical lines are at the 2.5th and 97.5th percentile of the distribution.  This range corresponds to the 95\% CIR.  Figures for all variables similar to figure \ref{fig:ExamplePDifference} are presented in appendix \ref{App:VarPDiff}.
-%
-%\begin{figure}[htbp]
-%\centering
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/V dev diff qin"}
-%		\caption{Difference Distribution}
-%		\label{sub:diff}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/V dev pdiff qin"}
-%		\caption{Percent Difference Distribution}
-%		\label{sub:pdiff}
-%	\end{subfigure}
-%	\caption[Difference and percent difference between the stochastic and deterministic model input variables.]{Difference and percent difference between the stochastic and deterministic model input variables.  This is an example figure presenting the results for the variable $Q_{ARKCATCO}$.  Additional figures for the other USR and DSR input variables are provided in the appendix noted in the text.}
-%	\label{fig:ExampleDifference}
-%\end{figure}
-%
-%As with the previous figures, goodness-of-fit is measured by visual analysis.  The differences and percent differences should be mostly contained within the boundaries defined by the vertical dashed lines.  All input variables fit reasonably within the set limits.
-%
-%The generated stochastic values were also compared against the expected values on a time step by time step basis.  The difference and percent difference were calculated between the 1-D stochastic mean time-series and the expected value for a given time step.  The largest and smallest differences and percent differences were graphed and are presented as shown on the example figures, \ref{fig:ExampleMinMaxDiff} and \ref{fig:ExampleMinMaxPDiff}, respectively.  Similar figures for all input variables are found in appendix \ref{App:VarMinMaxDiff}.  These figures show data from the analysis of the variable $Q_{ARKCATCO}$.  Both figures show two graphs.  The upper graph shows the highest difference or percent difference.  The lower graph shows the lowest difference or percent difference.  Each graph in each figure shows only one time step.  The time steps were chosen by their status as the highest or lowest difference or percent difference.  Intermediate time steps were not investigated.  The existence of similarities between the time of the chosen time steps was not investigated.  All of the presented graphs show the KDE of the 1-D stochastic mean time-series values for the investigated time step in units of the investigated variable.  The black vertical line shows the mean of the distribution and the red vertical line shows the expected value for the investigated time step.  The reported differences are given in units of the investigated variable for both the difference and percent difference investigations.  
-%
-%\begin{figure}[htbp]
-%\centering
-%	\includegraphics[width=6in]{"Figures/Results_USR/V min-max diff qin"}
-%	\caption[Highest and lowest difference between the input variable stochastic distribution and the expected value.]{Highest and lowest difference between the input variable stochastic distribution and the expected value.  This is an example figure presenting the results for the variable $Q_{ARKCATCO}$.  Additional figures for the other USR and DSR input variables are provided in the appendix noted in the text.  The lowest difference is presented in the top graph and the highest difference is presented in the bottom graph.}
-%	\label{fig:ExampleMinMaxDiff}
-%\end{figure}
-%
-%\begin{figure}[htbp]
-%\centering
-%	\includegraphics[width=6in]{"Figures/Results_USR/V min-max pdiff qin"}
-%	\caption[Highest and lowest percent difference between the input variable stochastic distribution and the expected value.]{Highest and lowest percent difference between the input variable stochastic distribution and the expected value.  This is an example figure presenting the results for the variable $Q_{ARKCATCO}$.  Additional figures for the other USR and DSR input variables are provided in the appendix noted in the text.  The lowest difference is presented in the top graph and the highest difference is presented in the bottom graph.}
-%	\label{fig:ExampleMinMaxPDiff}
-%\end{figure}
-%
-%Goodness-of-fit for this pair of figure types is defined by both the distribution of the differences and percent differences and the difference between the mean of the distribution and the expected value.  These figures represent the extreme range of the differences.  Even at the extremes, the differences are acceptable.
-%
-%The input variable values were compared between the deterministic and stochastic models and are reported in tables \ref{tab:USRVarResults} and \ref{tab:DSRVarResults} for the USR and DSR, respectively.  The mean, 2.5th, and 97.5th percentile were calculated from the deterministic model input variable values.  As previously discussed, the 1-D stochastic mean time-series values are assumed to approximate the deterministic model values.  The mean, 2.5th, and 97.5th percentile were calculated from the 1-D stochastic mean time-series and are reported in the same tables.  Also included in the tables is a column that presents the percent difference between the mean of the 1-D stochastic mean time-series values and the deterministic time-series values.  
-%
-%\begin{table}[htbp]
-%\centering
-%\caption[USR deterministic and stochastic model input variable analysis results.]{USR deterministic and stochastic model input variable analysis results.  Stochastic mean values are calculated as the mean of the realizations for each time step.  All values are in units corresponding to the input variables as reported in table \ref{tab:USRvars}.}
-%\label{tab:USRVarResults}
-%    \begin{tabular}{l|ccc|ccc|c}
-%    \toprule
-%    \multirow{2}[0]{*}{Variable} & \multicolumn{3}{c}{Deterministic} & \multicolumn{3}{c}{Stochastic Mean} & \% Diff\\\cline{2-4} \cline{5-7}
-%    & 2.5\% & Mean & 97.5\% & 2.5\% & Mean & 97.5\% & Mean\\
-%    \midrule
-%    \midrule
-%	$Q_{ARKCATCO}$&		1.699&	15.29&	53.66&	1.681&	15.29&	53.5&	0\\                            
-%	$Q_{CANSWKCO}$&		0.0538&	0.4575&	1.189&	0.05265&	0.4574&	1.214&	-0.0219\\                  
-%	$Q_{CONDITCO}$&		0&	1.251&	3.531&	0&	1.251&	3.555&	0\\                                    
-%	$Q_{FLSCANCO}$&		0&	2.542&	11.77&	0&	2.543&	12.35&	0.0393\\                               
-%	$Q_{FLYCANCO}$&		0&	8.501&	26.18&	0&	8.501&	26.43&	0\\                                    
-%	$Q_{HOLCANCO}$&		0&	1.962&	9.838&	0&	1.962&	10&	0\\                                        
-%	$Q_{HRC194CO}$&		0.09345&	0.2906&	0.8778&	0.08812&	0.2906&	0.8963&	0\\                    
-%	$Q_{RFDMANCO}$&		0&	0.9073&	1.669&	0&	0.9073&	1.826&	0\\                                    
-%	$Q_{RFDRETCO}$&		0&	0.4271&	0.7592&	0&	0.4271&	0.8641&	0\\                                    
-%	$Q_{TIMSWICO}$&		0.3681&	1.864&	4.163&	0.3435&	1.864&	4.258&	0\\                            
-%	$Q_{La Junta WWTP}$&0.05421&	0.08081&	0.1245&	0.05097&	0.08081&	0.1287&	0\\            
-%	$Q_{ARKLASCO}$&		0.9061&	7.136&	26.75&	0.9069&	7.136&	26.76&	0\\                            
-%	$EC_{ARKCATCO}$&	0.4893&	1.026&	1.58&	0.4882&	1.026&	1.59&	0\\                            
-%	$EC_{ARKLASCO}$&	0.8772&	1.894&	2.79&	0.8636&	1.894&	2.796&	0\\                            
-%	$T_{ARKCATCO}$&		0.193&	12.86&	25.1&	0.2768&	12.86&	25.14&	0\\                            
-%	$T_{ARKLASCO}$&		0.5075&	13.4&	25.95&	0.4622&	13.4&	25.99&	0\\                            
-%	$h_{A}$&			0.2286&	0.566&	1.155&	0.2168&	0.5663&	1.159&	0.053\\                        
-%	$h_{B}$&			0.1798&	0.4473&	0.9707&	0.1958&	0.4805&	0.9495&	7.42\\                         
-%	$h_{C}$&			0.1646&	0.4175&	0.823&	0.1649&	0.4205&	0.8352&	0.719\\                        
-%	$h_{D}$&			0.1615&	0.4461&	1.11&	0.1656&	0.4489&	1.11&	0.628\\                        
-%	$h_{E}$&			0.2286&	0.5433&	1.088&	0.2233&	0.5435&	1.091&	0.0368\\                       
-%	$ET_{Ref}$&			0.001103&	0.00571&	0.01169&	0.0009105&	0.005712&	0.01176&	0.035\\
-%	$P$&				0&	0.000832&	0.007963&	0&	0.000832&	0.008015&	0\\                    
-%	$RH_{Min}$&			7.1&	27.67&	74.52&	6.917&	27.67&	74.85&	0\\                            
-%	$U_{2}$&			0.9731&	2.265&	5.29&	0.8067&	2.265&	5.328&	0\\                            
-%    \bottomrule
-%    \end{tabular}
-%\end{table}
-%
-%\begin{table}[htbp]
-%  \centering
-%  \caption[DSR deterministic and stochastic model input variable analysis results.]{DSR deterministic and stochastic model input variable analysis results.  Stochastic mean values are calculated as the mean of the realizations for each time step.  All values are in units corresponding to the input variables as reported in table \ref{tab:DSRvars}.}
-%  \label{tab:DSRVarResults}
-%    \begin{tabular}{l|ccc|ccc|c}
-%    \toprule
-%    \multirow{2}[0]{*}{Variable} & \multicolumn{3}{c}{Deterministic} & \multicolumn{3}{c}{Stochastic Mean} & \% Diff\\\cline{2-4} \cline{5-7}
-%    & 2.5\% & Mean & 97.5\% & 2.5\% & Mean & 97.5\% & Mean\\
-%    \midrule
-%    \midrule
-%	$Q_{ARKLASCO}$&	0.2209&	2.104&	19.37&	0.2092&	2.104&	19.74&	0\\                             
-%	$Q_{BIGLAMCO}$&	0.1416&	0.3618&	0.7362&	0.135&	0.3618&	0.7643&	0\\                             
-%	$Q_{BUFDITCO}$&	0&	0.9934&	2.142&	0&	0.9961&	2.278&	0.272\\                                 
-%	$Q_{FRODITKS}$&	0&	0.3186&	0.9911&	0&	0.3185&	1.047&	-0.0314\\                               
-%	$Q_{WILDHOCO}$&	0&	0.1982&	1.388&	0&	0.1982&	1.388&	0\\                                     
-%	$Q_{ARKCOOKS}$&	1.614&	4.286&	17.53&	1.571&	4.286&	17.47&	0\\                             
-%	$EC_{ARKJMRCO}$&1.19&	1.924&	2.39&	1.171&	1.924&	2.645&	0\\                             
-%	$EC_{ARKCOOKS}$&1.98&	3.799&	4.39&	1.926&	3.799&	4.616&	0\\                             
-%	$T_{ARKJMRCO}$&	0.1&	12.85&	25.3&	0.3172&	12.86&	25.37&	0.0778\\                        
-%	$T_{ARKCOOKS}$&	1.593&	13.6&	25.42&	1.585&	13.6&	25.45&	0\\                             
-%	$h_{F}$&		0.1556&	0.3475&	1.158&	0.1563&	0.3576&	1.172&	2.91\\                          
-%	$h{_G}$&		0.548&	0.787&	1.469&	0.5264&	0.7865&	1.465&	-0.0635\\                       
-%	$ET_{Ref}$&		0.00108&	0.006347&	0.01398&	0.0009319&	0.006349&	0.01406&	0.0315\\
-%	$P$&			0&	0.0009441&	0.009805&	0&	0.0009441&	0.009889&	0\\                     
-%	$RH_{Min}$&		6.886&	26.67&	64.78&	6.706&	26.67&	65.05&	0\\                             
-%	$U_{2}$&		1.493&	3.289&	6.96&	1.384&	3.289&	7.036&	0\\                             
-%    \bottomrule
-%    \end{tabular}
-%\end{table}
-%
-%Goodness-of-fit is measured by visual comparison of the 1-D stochastic model and deterministic model KDE curves and the mean of the distributions.  Ideally, the 1-D stochastic mean model distribution and mean should be near the deterministic model distribution and mean.  All of the input variables used in the USR water balance and mass balance models meet this idealism.
-%
-%The input variable analyses contained in this section show that the realized values calculated for the stochastic model are realistic.  They also show that the deterministic model input values represent the expected value of the stochastic model input variable values.
-%\emph{III - present $Q$ results for each source/sink}\\
-%
-%\emph{IV - present river segment results}\\
-%
-%\emph{V - present river reach results}\\
-%
-%Values and figures presented in this section are the results from calculations performed as described in sections \ref{sec:River Volume Change} and all other precursor calculations.  The primary purpose of this analysis was to determine if the computational code and assumptions used to generate the stochastic distributions of evaporation and precipitation were performed correctly.  
-%
-%Figures \ref{fig:USREvap} and\ref{fig:DSREvap} show the deterministic and stochastic model time-series of evaporation in the USR and DSR respectively.  The left and right sub-figures present the deterministic and stochastic models of evaporation, respectively.  In the stochastic sub-figure, the black line is the 1-D stochastic mean time-series and the blue band is the 97.5\% CIR.
-%
-%\begin{figure}[htbp]
-%\centering
-%	\begin{subfigure}{0.5\textwidth}
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DUSR/A Evap"}
-%		\caption{Deterministic Model.}
-%		\label{sub:USREvapD}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/A Evap"}
-%		\caption{Stochastic Model.}
-%		\label{sub:USREvapS}
-%	\end{subfigure}
-%	\caption[USR deterministic and stochastic time-series of evaporation.]{USR deterministic and stochastic time-series of evaporation.}
-%	\label{fig:USREvap}
-%\end{figure}
-%
-%\begin{figure}[htbp]
-%\centering
-%	\begin{subfigure}{0.5\textwidth}
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DDSR/A Evap"}
-%		\caption{Deterministic Model.}
-%		\label{sub:DSREvapD}	
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/A Evap"}
-%		\caption{Stochastic Model.}
-%		\label{sub:DSREvapS}
-%	\end{subfigure}
-%	\caption[DSR deterministic and stochastic time-series of evaporation.]{DSR deterministic and stochastic time-series of evaporation.}
-%	\label{fig:DSREvap}
-%\end{figure}
-%
-%Figures \ref{fig:USRPrecip} and\ref{fig:DSRPrecip} show the deterministic and stochastic model time-series of precipitation in the USR and DSR respectively.  The left and right sub-figures present the deterministic and stochastic models of evaporation, respectively.  In the stochastic sub-figure, the black line is the 1-D stochastic mean time-series and the blue band is the 97.5\% CIR.  
-%
-%\begin{figure}[htbp]
-%\centering
-%	\begin{subfigure}{0.5\textwidth}
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DUSR/A Precip"}
-%		\caption{Deterministic Model.}
-%		\label{sub:USRPrecipD}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/A Precip"}
-%		\caption{Stochastic Model.}
-%		\label{sub:USRPrecipS}
-%	\end{subfigure}
-%	\caption[USR deterministic and stochastic time-series of precipitation.]{USR deterministic and stochastic time-series of precipitation.}
-%	\label{fig:USRPrecip}
-%\end{figure}
-%
-%Figure \ref{fig:DSRPrecip} shows the deterministic and stochastic model time-series of precipitation in the USR.  Values are presented in units of mm.  These figures are presented in the same fashion as other deterministic and stochastic time-series figures in this chapter
-%
-%\begin{figure}[htbp]
-%\centering
-%	\begin{subfigure}{0.5\textwidth}
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DDSR/A Precip"}
-%		\caption{Deterministic Model.}
-%		\label{sub:DSRPrecipD}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/A Precip"}
-%		\caption{Stochastic Model.}
-%		\label{sub:DSRPrecipS}
-%	\end{subfigure}
-%	\caption[DSR deterministic and stochastic time-series of precipitation.]{DSR deterministic and stochastic time-series of precipitation.}
-%	\label{fig:DSRPrecip}
-%\end{figure}
-%
-%The blue band in both precipitation figures is very small and is nearly indistinguishable from the 1-D stochastic mean values.  This is another indication that the precipitation measurement uncertainty is very small.  A cyclical pattern is easily noted when observing the evaporation and precipitation values in both the USR and DSR.  We note that both daily total evaporation and precipitation are higher during warmer months and lower during cold months.  The cyclical nature of the daily evaporation agrees with common knowledge where evaporation rates are higher with higher average temperatures.  The cyclical nature of the daily precipitation agrees with climate analyses by the National Weather Service which state that most of the precipitation in the LARV occurs with thunder storms during the warmer months.
-%
-%It is interesting to note that during the 4 year time span calculated in this study annual average evaporation rates appear to increase and annual average precipitation rates appear to decrease.  The time frame of this study is too short to conclude anything about the long term climate of the region.  This observation may be useful when observing other results produced in this study.
-%
-%Tables \ref{tab:USRAtmResults} and \ref{tab:DSRAtmResults} present summary statistics of the evaporation and the precursor values and precipitation for the USR and DSR, respectively.
-%
-%\begin{table}[htbp]
-%  \centering
-%  \caption[USR evaporation and precipitation results.]{USR evaporation and precipitation results.  $ET_{Ref}$, evaporation, and precipitation values are presented in units of \si{mm}.  $K_w$ values are unitless.}
-%  \label{tab:USRAtmResults}
-%    \begin{tabular}{l|ccc|ccc|c}
-%    \toprule
-%    \multirow{2}[0]{*}{Variable} & \multicolumn{3}{c}{Deterministic} & \multicolumn{3}{c}{Stochastic Mean} & \% Diff\\\cline{2-4} \cline{5-7}
-%    & 2.5\% & Mean & 97.5\% & 2.5\% & Mean & 97.5\% & Mean\\
-%    \midrule
-%    \midrule
-%	$ET_{Ref}$ (mm)&	1.103	&5.71	&11.69	&0.9105	&5.712	&11.76	&0.035	\\
-%	$K_{w}$&	0.9564	&1.002	&1.056	&0.9557	&1.002	&1.057	&0	\\
-%	Evap. $(E)$ (mm)&	1.164	&5.701	&11.42	&0.948	&5.703	&11.55	&0.0351	\\
-%	Precip. $(P)$ (mm)&	0	&0.832	&7.963	&0	&0.832	&8.015	&0	\\
-%    \bottomrule
-%    \end{tabular}
-%\end{table}
-%
-%\begin{table}[htbp]
-%  \centering
-%  \caption[DSR evaporation and precipitation results.]{DSR evaporation and precipitation results.  $ET_{Ref}$, evaporation, and precipitation values are presented in units of \si{mm}.  $K_w$ values are unitless.}
-%  \label{tab:DSRAtmResults}
-%    \begin{tabular}{l|ccc|ccc|c}
-%    \toprule
-%    \multirow{2}[0]{*}{Variable} & \multicolumn{3}{c}{Deterministic} & \multicolumn{3}{c}{Stochastic Mean} & \% Diff\\\cline{2-4} \cline{5-7}
-%    & 2.5\% & Mean & 97.5\% & 2.5\% & Mean & 97.5\% & Mean\\
-%    \midrule
-%    \midrule
-%	$ET_{Ref}$&	1.080	&6.347	&13.98	&0.9319	&6.349	&14.06	&0.0315	\\
-%	$K_{w}$&	0.9412	&0.9892	&1.038	&0.9408	&0.9892	&1.039	&0	\\
-%	Evap. $(E)$&	1.134	&6.257	&13.65	&0.9585	&6.259	&13.66	&0.032	\\
-%	Precip. $(P)$&	0	&0.9441	&9.805	&0	&0.9441	&9.889	&0	\\
-%    \bottomrule
-%    \end{tabular}
-%\end{table}
-%\clearpage
-%
-%The percent difference of the mean of the 1-D stochastic mean values and the mean of the deterministic values is very low for all evaporation and precipitation input, intermediate, and final values in both the USR and DSR.  This indicates that the deterministic model accurately represents the expected value of the stochastic model.
-%
-%The deterministic and stochastic water balance models each consist of three major components.  The flow component is the sum of all surface flows, the storage component is the sum of all storage changes, and the atmospheric component is the precipitation gains less the evaporation losses.
-%
-%Values and figures presented in this section are the flow component sub-set of the complete water balance model results.  The analyses in this section are restricted to performing a reasonability check on the results.  Results in this section are to be compared with results from the other sub-sections from both the USR and DSR models to determine if results are acceptable.  Unacceptable results would indicate an error in the computational code or an underlying assumption.
-%
-%Figures \ref{fig:USRWaterFlow} and \ref{fig:DSRWaterFlow} present the sum of all surface flows in the USR and DSR, respectively, as time-series plots.  The left and right sub-figures present the deterministic and stochastic time-series, respectively.  The black line in the stochastic figures is the 1-D stochastic mean results with the blue band indicating the 95\% CIR.  Values in these figures and associated tables indicate the volume of water moving in and out of the respective reach in units of \si{\cubic\meter\per\second\per\kilo\meter}.  Standardizing the results to present values in units of storage per unit length allows for comparisons to be made between the two study reache and between water balance model components.  Positive values indicate that the reach gained water during the given time step.
-%
-%\begin{figure}[htbp]
-%\centering
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DUSR/Balance Water - flow"}
-%		\caption{Deterministic Model.}
-%		\label{sub:USRWaterFlowD}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/Balance Water - flow"}
-%		\caption{Stochastic Model.}
-%		\label{sub:USRWaterFlowS}
-%	\end{subfigure}
-%	\caption[USR Arkansas River deterministic and stochastic surface water flow balance time-series.]{USR Arkansas River deterministic and stochastic surface water flow balance time-series.}
-%	\label{fig:USRWaterFlow}
-%\end{figure}
-%
-%\begin{figure}[htbp]
-%\centering
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DDSR/Balance Water - flow"}
-%		\caption{Deterministic Model.}
-%		\label{sub:DSRWaterFlowD}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Balance Water - flow"}
-%		\caption{Stochastic Model.}
-%		\label{sub:DSRWaterFlowS}
-%	\end{subfigure}
-%		\caption[DSR Arkansas River deterministic and stochastic surface water flow balance time-series.]{DSR Arkansas River deterministic and stochastic surface water flow balance time-series.}
-%	\label{fig:DSRWaterFlow}
-%\end{figure}
-%
-%The figures show that there is a definite seasonal variation in the flow component.  The surface water flow balance changes from being a losing system to a gaining system during the irrigation season.  This pattern is caused by irrigation practices in the Lower Arkansas River Basin (LARV).  Excess irrigation water applied to fields runs off into tributaries which feed into the Arkansas River
-%
-%The figures also show that the river is discharging more water than it receives.  In the USR, this matches the general observed trend where the upstream end of the reaches receives more water than the downstream ends discharges.  This does not match the observed trend in the DSR where the flows at the upstream end appear to be less than or equal to the flows at the downstream end.  In the DSR, this mismatch between the observed phenomenon and the measured values indicates that another process is a significant contributor to the flow regime.  Since the two reaches are in the same environment, it is reasonable to assume that the same phenomenon is present in the USR.  It is suspected that groundwater from the riparian aquifer is the unaccounted for source in both the USR and DSR.
-%
-%There is less uncertainty associated with the flow component than with the storage component.  This is likely due to the use of more tightly defined uncertainties for the flow component.  There is more uncertainty associated with the USR flow component than with the DSR.  This is likely due to the higher number of variables used to calculate the USR flow component.
-%
-%The distribution of all realizations within each time step was analyzed to determine a distribution type.  This analysis was performed to determine if the assumption that the deterministic model results were representative of the stochastic model.   Testing was performed by comparing K-S statistics for the best fit normal, log-normal, logistic, exponential, gamma, and Weibull distributions.  In the USR and the DSR, 100\% of all flow component time steps best fit a normal distribution. This indicates that for both the USR and DSR, the distributions across the realizations are normal. 
-%
-%Tables \ref{tab:USRWaterFlow} and \ref{tab:DSRWaterFlow} presents summary statistics of the deterministic and stochastic flow component.  Values are presented in units of \si{\cubic\meter\per\second\per\kilo\meter}.   These tables show the mean, 2.5th, and 97.5th percentile of the deterministic model and the same statistics applied to the three 1-D stochastic models.  This additional set of statistics from the 1-D stochastic 2.5th and 95.5th percentile models provide a better understanding of the extremes of the calculated values.  As before, comparison between the deterministic and stochastic models should be limited to the comparing the deterministic model to the 1-D stochastic mean model.  Also included in these two tables is the percent difference between the deterministic model and the 1-D stochastic mean model.  The mean, 2.5th, and 97.5th percentile values were calculated from the percent difference of the 1-D stochastic mean model from the deterministic model at each time step.  These values show the range of the variance from the deterministic model.
-%
-%\begin{table}[htbp]
-%\centering
-%\caption[USR tributary and irrigation canal contribution to the water balance model.]{USR tributary and irrigation canal contribution to the water balance model.  All values are in units of \si{\cubic\meter\per\second\per\kilo\meter}.}
-%\label{tab:USRWaterFlow}
-%\begin{tabular}{c|ccc}
-%	\toprule
-%	Model& 2.5\% & Mean & 97.5\% \\
-%	\midrule
-%	\midrule
-%	Deterministic    & -0.1736&	-0.03952&	0.07513\\
-%	\midrule
-%	Stochastic 2.5\% &  -0.2481&	-0.07086&	0.02988\\
-%	Stochastic Mean  &  -0.1733&	-0.03952&	0.07502\\
-%	Stochastic 97.5\%&  -0.112&	-0.008186&	0.1351\\     
-%	\midrule
-%	\% Diff. Means &	-2.713&	0.9486&	2.385\\
-%	\bottomrule
-%\end{tabular}
-%\end{table}
-%
-%\begin{table}[htbp]
-%\centering
-%\caption[DSR tributary and irrigation canal contribution to the water balance model.]{DSR tributary and irrigation canal contribution to the water balance model.  All values are in units of \si{\cubic\meter\per\second\per\kilo\meter}.}
-%\label{tab:DSRWaterFlow}
-%\begin{tabular}{c|ccc}
-%	\toprule
-%	Model& 2.5\% & Mean & 97.5\% \\
-%	\midrule
-%	\midrule
-%	Deterministic    & -0.06635&	-0.02955&	0.01146\\
-%	\midrule                                            
-%	Stochastic 2.5\% & -0.07775	&-0.03799	&-0.01559\\
-%	Stochastic Mean  & -0.06638	&-0.02957	&0.01099 \\
-%	Stochastic 97.5\%& -0.05697	&-0.02116	&0.04833 \\
-%	\midrule                                            
-%	\% Diff. Means &	 -0.7374&	0.3264&	0.4883\\
-%	\bottomrule
-%\end{tabular}
-%\end{table}
-%
-%The mean of the percent difference between the deterministic and 1-D stochastic mean models is very low.  This indicates that the deterministic model is representative of the stochastic model expected value.  The low percent differences at the 2.5th and 97.5th percentile indicate that there is very little uncertainty that the deterministic model cannot estimate.  The deterministic model can be used to determine how changes can affect a reach over a span of time and can be used to estimate values for specific time steps.
-%
-%\emph{VI - analysis and comments on segment and reach results}\\
-%
-%\clearpage{}
-%\section{Atmospheric Contributions to Flow Balance}
-%\label{sec:AtmosphericContributions}
-%
-%\emph{I - define relationship between total E and ET(ref)}\\
-%
-%$ET_{ref}$ and precipitation were calculated with respect to the surface of the Arkansas River  Storm runoff, evaporation from bank evaporation, and evapotranspiration from plant life within the river channel were not included in the calculation.  Storm runoff is difficult to estimate on a regional basis for a non-uniform rainfall event.  It was assumed that for the vast majority of rainfall events, surface runoff into the river would be negligible.  Evaporative losses from bank evaporation were neglected because this evaporation is outside of the study boundary.  While there are areas where vegetation is within the river's boundaries, transpiration losses are neglected because their magnitude and effect on the study region are not known.  All three of these neglected quantities are included in the unaccounted for flow definition in section
-%
-%CoAgMet uses the ASCE EWRI tall crop reference equation to calculate $ET_{ref}$ from weather data.  This equation is identical to the FAO Penman-Montieth equation \parencite{walter2000asce,FAO56}:
-%\begin{equation}
-%\label{eq:ET}
-%	ET_{ref}=\frac{0.408\Delta(R_n-G)+\gamma\frac{C_n}{T+273}u_2(e_s-e_a)}{\Delta+\gamma(1+0.34u_2)}
-%\end{equation}
-%\begin{tabular}{rl}
-%Where: &\\
-%$ET_{ref}$ =&standardized reference crop evapotranspiration for short or tall surfaces \\
-%&(\si{\milli\meter\per\day}),\\
-%$R_n$ =&calculated net radiation at the crop surface (\si{\mega\joule\per\meter\squared\per\day}),\\
-%$G$ =&soil heat flux density at the soil surface (\si{\mega\joule\per\meter\squared\per\day}),\\
-%$T$ =&mean daily air temperature at 1.5 to 2.5 meter height (\si{\degreeCelsius}),\\
-%$u_2$ =&mean daily wind speed at 2 meter height (\si{\meter\per\second}),\\
-%$e_s$ =&saturation vapor pressure at 1.5 to 2.5 meter height (\si{\kilo\pascal}), calculated as the \\
-%&average of saturation vapor pressure at minimum and maximum air temperature,\\
-%$e_a$ =&mean actual vapor pressure at 1.5 to 2.5 meter height (\si{\kilo\pascal}),\\
-%$\Delta$ =&slope of the saturation vapor pressure-temperature curve (\si{\kilo\pascal\per\degreeCelsius}),\\
-%$\gamma$ =&psychrometric constant (\si{\kilo\pascal\per\degreeCelsius}),\\
-%$c_n$ =&numerator constant that changes with reference type \\
-%&(\si{\kelvin\milli\meter\second\cubed\per\mega\gram\per\day}),\\
-%$C_d$ =&denominator constant that changes with reference type (\si{\second\per\meter}).\\
-%\multicolumn{2}{l}{Units for the 0.408 coefficient are in \si{\meter\squared\per\mega\joule}}\\
-%\end{tabular}\\
-%
-%\emph{II - define how to convert reported ET(ref) to Evap}\\
-%
-%Precipitation and evaporation values are derived from $ET_{Ref}$ and daily precipitation depth values were obtained from CoAgMet as described in section \ref{sec:data collected by other sources}.  Regional average $ET_{Ref}$ values were converted to estimated river surface evaporative loss values through the use of a variable open water evaporation coefficient as described in section \ref{sec:uncertainty of atmospheric data} .  This depth of evaporation value is then multiplied by the sum of the calculated study region river reach surface areas, as calculated in section \ref{sec:RiverGeometry}, to produce the estimated total evaporative loss for each region's river section.  Regional average depth of precipitation values are multiplied by the sum of the calculated study region river section surface areas to obtain the volume of water added to the river section due to precipitation.  This value was modified by a factor of 0.5 to reflect the estimated average storm coverage for the region as discussed in section \ref{sec:uncertainty of atmospheric data}. The atmospheric contribution to the models is taken as the sum of the modified precipitation and evaporation values with the assumption that all precipitation values are positive and all evaporation values are negative as shown in equation \ref{eq:qbal6}.
-%
-%\begin{equation}
-%	Q_{Atmosphere} = 0.5 \cdot \overline{P} \cdot \sum A_{Surface} - K_{wt} \cdot \overline{ET_{Ref}} \cdot \sum A_{Surface}
-%	\label{eq:qbal6}
-%\end{equation}
-%Where\\
-%\begin{tabular}{rl}
-%$Q_{Atmosphere} =$&Total water volume gained (+) or lost (-) due to atmospheric contributions \\
-%&for a study region river section. Values calculated and presented as average daily flow rates. $(volume \cdot time^{-1})$\\
-%$\overline{P} =$&Regional average precipitation taken as the mean of the reporting regional\\
-%&rain gauges. $(depth)$\\
-%$K_{wt} =$& Open water coefficient for the tall $ET_{Ref}$ equation.\\
-%$\overline{ET_{Ref}} =$&Regional average $ET_{Ref}$ taken as the mean of the reporting\\
-%&regional reference ET gauges.  $(depth)$\\
-%$\sum A_{Surface}=$&Sum of calculated reach surface areas within a study region river \\
-%&section.  $(area)$\\
-%\end{tabular}\\
-%
-%The open water coefficient, $K_w$, is used to convert $ET_ref$ to evaporation from open water using equation \ref{eq:ETcoef}.  The Food and Agriculture Organization of the United Nations (FAO) has an extensive set of crop coefficients including coefficients for open water for use on the FAO Penman-Montieth (FAO PM) equation.  
-%\begin{equation}
-%\label{eq:ETcoef}
-%E=K_w \cdot ET_{ref}
-%\end{equation}
-%\begin{tabular}{r l}
-%Where:&\\
-%$E$ = & Evaporation\\
-%$K_w$ = & Open water coefficient\\
-%$ET_{ref}$ = & ASCE EWRI Standardized Reference Evapotranspiration Equation, Tall value\\
-%\end{tabular}\\
-%
-%$K_w$ was developed for the short reference crop $ET_ref$ equation.  Use of crop coefficients developed for the short crop reference equation with the tall crop (alfalfa) reference equation is prohibited  \parencite{FAO56, Allen2011}.  Equation \ref{eq:ET Kconversion} is used to convert crop coefficients for use between the two ET reference equation results \parencite{FAO56}
-%\begin{equation}
-%\label{eq:ET Kconversion}
-%	K_{w}=K_\mathsf{ratio} \cdot K_{wt}
-%\end{equation}
-%\begin{tabular}{r l}
-%Where:&\\
-%$K_{w}$ =& short crop based crop coefficient, \\
-%$K_\mathsf{ratio}$ =& conversion factor, calculated using equation \ref{eq:ET Kratio}\\
-%$K_{wt}$ =& tall crop based crop coefficient.\\
-%\end{tabular}\\
-%
-%\begin{equation}
-%\label{eq:ET Kratio}
-%	K_\mathsf{ratio}=K_{w}+[0.04(u_2-2)-0.004(RH_{min}-45)] \left(\frac{h}{3} \right)^{0.3}
-%\end{equation}
-%\begin{tabular}{r l}
-%Where:&\\
-%$h$ =& 0.5 meters as the standard height for the tall crop reference.
-%\end{tabular}\\
-%
-%There is no reported error associated with the use of equations \ref{eq:ET Kconversion} or \ref{eq:ET Kratio}.  However, there are known uncertainties in the reported minimum daily relative humidity and average daily wind speed.  Both relative humidity and wind speed uncertainties are based on equipment uncertainty and do not include any other sources of uncertainty which are included in the preliminary results by Dr.\ Ch\'{a}vez.  Measurement uncertainties based on equipment are assumed to be normally distributed with 95\% of the reported values within the range reported by the instrument manufacturer.
-%
-%A preliminary analysis of this method resulted in $K_\mathsf{ratio}$ values shows a mean value of 1.097 and a standard deviation of 0.049.  The $K_\mathsf{ratio}$ values are best fit by a logistic distribution with a location parameter of 1.099 and a scale parameter of 0.0266.  Using the FAO $K_{ws}$ value of 1.05 results in an average $K_{wt}$ value of 0.95 using equation \ref{eq:ET Kconversion}.  Jensen suggests using $K_{ws}=1.10$ based on data from Alamosa, Colorado, which results in an average $K_{wt}$ value of 1.00.
-%
-%This seems to suggest that unlike the short crop $ET_{ref}$ equation, the tall crop $ET_{ref}$ over estimates evaporation from a shallow water body.  This seems plausible as surface area is a significant factor in determining evaporation.  A mature, 0.5 meter tall alfalfa crop has a large leaf area which could plausibly exceed the equivalent surface area of open water.
-%
-%\textsc{A - define uncertainty distribution of ET(ref) as per Dr. Chavez}\\
-%
-%Unlike the in stream data, atmospheric data obtained from CoAgMet does not have publicly defined uncertainty distributions.  At the time this thesis, a study headed by Dr.\ Jos\'{e} L.\ Ch\'{a}vez at Colorado State University was underway to evaluate the American Society of Civil Engineers Environmental and Water Resources Institute (ASCE EWRI) standardized alfalfa ET reference Penman-Montieth equation (ASCE-ET equation) with relation to lysimetric data in Colorado.  Preliminary findings provided by Dr. Ch\'{a}vez indicate an average daily reference ET mean bias error of $-0.47~mm \cdot day^{-1}$ with a variability of $\pm 0.98~mm \cdot day^{-1}$ when compared to lysimetric data.  The bias error indicates that the reported $ET_{ref}$ underestimates the actual ET.  The measurement variability is reported as the Root Mean Square Error (RMSE), or standard deviation, of the measurement.
-%
-%\textsc{B - define uncertainty distributions of additional variables for converting ET(ref) to Evap}\\
-%
-%Precipitation, minimum daily relative humidity, and wind speed data error provided through the CoAgMet system was based solely on instrument accuracy.  Instrument accuracy was reported as $\pm1\%$ for precipitation, $\pm2\%$ for minimum daily relative humidity, and $\pm0.5~m \cdot s^{-1}$ for wind speed.  These values are based on the typical instruments installed at the various locations.  Sensors vary somewhat between observation sites due to equipment replacement.  Colorado Climate Network personnel have stated that replacement equipment either meets or exceeds the equipment on a typical observation site.  The uncertainty distributions for these three weather measurements was assumed to be normal with 95\% of the values within the reported range of the true value (CoAgMet website).  Additional sources of uncertainty regarding these values are included in the preliminary results reported by Dr.\ Ch\'{a}vez.
-%
-%\emph{III - define river surface area}\\
-%
-%The river surface area is used to for determining evaporation loss and direct gains from precipitation in the water balance models.  River volume change and river surface area are calculated from a common methodology. 
-%
-%Water evaporation volume is dependent on the available surface area in contact with the atmosphere.  Surface area ($As$) is estimated for each river segment using equation \ref{eq:surfacearea}.  The river model is the same used for the volume change calculation, depicted in figure \ref{fig:segment model}.  As with the river volume change, the length of each segment is treated as a constant and the top width for each segment is calculated using equation \ref{eq:ARcomplete}.  The $Tw_{t=i}$ used for surface area calculations is the same value for river section volume change.  No new calculation is performed to obtain $Tw_{t=1}$ for surface area calculations.  It was reasoned that since the volume is based on a calculated $Tw$, then the surface area should use the same value to maintain continuity.  If a different set of fitting parameters and error terms are drawn from their respective distributions, then a significantly different $Tw$ could be calculated for volume and surface area.  This would add an additional error to the final stochastic models that could not be quantified.
-%
-%\begin{equation}
-%	As_x= Tw_{x,t=i} \cdot L_x
-%	\label{eq:surfacearea}
-%\end{equation}
-%\begin{tabular}{rl}
-%	Where: & \\
-%	$As_x$ = & River section surface area.\\
-%	$Tw_{x,t=i}$ = & River section top width.\\
-%	$L_x$ = & River section length.\\
-%\end{tabular}
-%
-%\textsc{A - state use of $Tw$ from water storage calculations}\\
-%
-%\textsc{B - state use of uncertainty calculated in water storage calculations}\\
-%
-%\emph{IV - present river segment Evap results}\\
-%
-%\emph{V - present river reach Evap results}\\
-%
-%The deterministic and stochastic water balance models each consist of three major components.  The flow component is the sum of all surface flows, the storage component is the sum of all storage changes, and the atmospheric component is the precipitation gains less the evaporation losses.
-%
-%Values and figures presented in this section are the atmospheric component sub-set of the complete water balance model results.  The analyses in this section are restricted to performing a reasonability check on the results.  Results in this section are to be compared with results from the other sub-sections from both the USR and DSR models to determine if results are acceptable.  Unacceptable results would indicate an error in the computational code or an underlying assumption.
-%
-%Figures \ref{fig:USRWaterAtm} and \ref{fig:DSRWaterAtm} present the precipitation gains less the evaporation losses in the USR and DSR, respectively, as time-series plots.  The left and right sub-figures present the deterministic and stochastic time-series, respectively.  The black line in the stochastic figures is the 1-D stochastic mean results with the blue band indicating the 95\% CIR.  Values in these figures and associated tables indicate the volume of water change due to precipitation gains and evaporation losses in units of \si{\cubic\meter\per\second\per\kilo\meter}.  Standardizing the results allows for comparisons to be made between the two study reaches and between water balance model components.  Positive values indicate that the reach gained water during the given time step.
-%
-%\begin{figure}[htbp]
-%\centering
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DUSR/Balance Water - atm"}
-%		\caption{Deterministic Model.}
-%		\label{sub:USRWaterAtmD}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/Balance Water - atm"}
-%		\caption{Stochastic Model.}
-%		\label{sub:USRWaterAtmS}
-%	\end{subfigure}
-%	\caption[USR Arkansas River deterministic and stochastic evaporation and precipitation balance time-series.]{USR Arkansas River deterministic and stochastic evaporation and precipitation balance time-series.}
-%	\label{fig:USRWaterAtm}
-%\end{figure}
-%
-%\begin{figure}[htbp]
-%\centering
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DDSR/Balance Water - atm"}
-%		\caption{Deterministic Model.}
-%		\label{sub:DSRWaterAtmD}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Balance Water - atm"}
-%		\caption{Stochastic Model.}
-%		\label{sub:DSRWaterAtmS}
-%	\end{subfigure}
-%		\caption[DSR Arkansas River deterministic and stochastic evaporation and precipitation balance time-series.]{DSR Arkansas River deterministic and stochastic evaporation and precipitation balance time-series.}
-%	\label{fig:DSRWaterAtm}
-%\end{figure}
-%
-%The figures show that there is a definite seasonal variation in the atmospheric component balance.  This temporal relationship follows the same pattern identified with the evaporation and precipitation time-series values.  Losses are higher during the warmer months and lower during the colder months.  It should be noted that while the figures for the USR and DSR have the same pattern, the magnitude of the losses is very different.  This is due to the differences in river geometry.  The USR is wider therefore losing more water to evaporation than in the DSR.
-%
-%There figures appear to show that uncertainty with the atmospheric component is nearly equal to uncertainty with the storage component.  This isn't true as the storage component is orders of magnitude larger than the atmospheric component.  The low uncertainty associated with the atmospheric component is due to the efforts by Dr. Cha\'{a}vez and others to characterize evaporation and precipitation uncertainty.
-%
-%The distribution of all realizations within each time step was analyzed to determine a distribution type.  This analysis was performed to determine if the assumption that the deterministic model results were representative of the stochastic model.  Testing was performed by comparing K-S statistics for the best fit normal, log-normal, logistic, exponential, gamma, and Weibull distributions.  In the USR and the DSR, 100\% of all atmospheric component time steps best fit a normal distribution. This indicates that for both the USR and DSR, the distributions across the realizations are normal. 
-%
-%Tables \ref{tab:USRWaterAtm} and \ref{tab:DSRWaterAtm} presents summary statistics of the deterministic and stochastic atmospheric component.  Values are presented in units of \si{\cubic\meter\per\second\per\kilo\meter}.   These tables show the mean, 2.5th, and 97.5th percentile of the deterministic model and the same statistics applied to the three 1-D stochastic models.  This additional set of statistics from the 1-D stochastic 2.5th and 95.5th percentile models provide a better understanding of the extremes of the calculated values.  As before, comparison between the deterministic and stochastic models should be limited to the comparing the deterministic model to the 1-D stochastic mean model.  Also included in these two tables is the percent difference between the deterministic model and the 1-D stochastic mean model.  The mean, 2.5th, and 97.5th percentile values were calculated from the percent difference of the 1-D stochastic mean model from the deterministic model at each time step.  These values show the range of the variance from the deterministic model.
-%
-%\begin{table}[htbp]
-%\centering
-%\caption[USR atmospheric contribution to the water balance model.]{USR atmospheric contribution to the water balance model.  All values are in units of \si{\cubic\meter\per\second\per\kilo\meter}. }
-%\label{tab:USRWaterAtm}
-%\begin{tabular}{c|ccc}
-%	\toprule
-%	Model& 2.5\% & Mean & 97.5\% \\
-%	\midrule
-%	\midrule
-%	Deterministic    &	-0.007423&	-0.0037267&	0.0003115\\
-%	\midrule                                               
-%	Stochastic 2.5\% &	-0.0101&	-0.005403&	-0.0001784\\
-%	Stochastic Mean  &	-0.007541&	-0.003822&	0.0003791\\ 
-%	Stochastic 97.5\%&	-0.004907&	-0.002321&	0.001046\\  
-%	\midrule                                               
-%	\% Diff. Means&		-3.354&	-1.458&	-0.9734\\
-%	\bottomrule
-%\end{tabular}
-%\end{table}
-%
-%\begin{table}[htbp]
-%\centering
-%\caption[DSR atmospheric contribution to the water balance model.]{DSR atmospheric contribution to the water balance model.  All values are in units of \si{\cubic\meter\per\second\per\kilo\meter}.}
-%\label{tab:DSRWaterAtm}
-%\begin{tabular}{c|ccc}
-%	\toprule
-%	Model& 2.5\% & Mean & 97.5\% \\
-%	\midrule
-%	\midrule
-%	Deterministic    &	-0.002837&	-0.0008244&	0.00001137\\
-%	\midrule                                              
-%	Stochastic 2.5\% &	-0.004348&	-0.001562&	-0.0001332\\
-%	Stochastic Mean  &	-0.003025&	-0.001006&	0.00001013\\
-%	Stochastic 97.5\%&	-0.001813&	-0.0005516&	0.0001749\\ 
-%	\midrule                                              
-%	\% Diff. Means&		-41.32&	-28.64&	-6.203\\
-%	\bottomrule
-%\end{tabular}
-%\end{table}
-%
-%The mean of the percent difference between the deterministic and 1-D stochastic mean models is low.  This indicates that the deterministic model is representative of the stochastic model expected value.  The low percent differences at the 2.5th and 97.5th percentile indicate that there is very little uncertainty that the deterministic model cannot estimate.  The deterministic model can be used to determine how changes can affect a reach over a span of time and can be used to estimate values for specific time steps.
-%
-%\emph{VI - define relationship between P measured and P realized}\\
-%
-%Precipitation in the study regions is not well defined.  An assumption was made that precipitation was not uniformly distributed over either study region.  Reports from field technicians, conversation with local residents, and personal experience indicate that most storms during the summer were isolated and relatively small.  It was not known by the end of this study whether weather radar data was available or could be used to more accurately estimate rainfall onto the Arkansas River water surface.  It was assumed that, at best, 50\% of any rain event would add water directly to the river.
-%
-%Precipitation, minimum daily relative humidity, and wind speed data error provided through the CoAgMet system was based solely on instrument accuracy.  Instrument accuracy was reported as $\pm1\%$ for precipitation, $\pm2\%$ for minimum daily relative humidity, and $\pm0.5~m \cdot s^{-1}$ for wind speed.  These values are based on the typical instruments installed at the various locations.  Sensors vary somewhat between observation sites due to equipemnt replacement.  Colorado Climate Network personnel have stated that replacement equipment either meets or exceeds the equipment on a typical observation site.  The uncertainty distributions for these three weather measurements was assumed to be normal with 95\% of the values within the reported range of the true value (coagmet website).  Additional sources of uncertainty regarding these values are included in the preliminary results reported by Dr.\ Ch\'{a}vez.
-%
-%\emph{VII - define uncertainty of measured P values}\\
-%
-%\emph{VIII - present river segment P values}\\
-%
-%\emph{IX - present river reach P values}\\
-%
-%\emph{X - present river segment Q results}\\
-%
-%\emph{XI - present river reach Q results}\\
-%
-%\emph{XII - analysis and comments on segment reach results}\\
-%
-%\clearpage{}
-%\section{Results of Calculated Unaccounted for Return Flows}
-%\label{sec:WaterModelResults}
-%Comparing deterministic and stochastic model must be performed and described with great care.  Deterministic models of time-series events are one-dimensional models (1-D) as they vary only with respect to time.  These results are calculated as a vector with each position in the vector representing a specific time step.  Stochastic models are two-dimensional (2-D); they vary with time depending on the realized input variables.  These results are calculated as a matrix with each row representing a specific time step and each column representing a specific realization.  Each time step in the deterministic models correspond to the same time step in the stochastic models.
-%
-%Results from the deterministic time-series models are graphically presented as time-series with one value for each time step.  Simplified results are also presented.  The mean, 2.5th, and 97.5th percentile of the time-series values are calculated.  The 2.5th and 97.5th percentile represent the upper and lower bounds of the 95th central inter-percentile range (CIR).  The mean value represents the most likely value throughout the entire study period. Most of the input variables fit a normal distribution, therefore using the mean as the expected value is acceptable.  Deviations from this case will be discussed.
-%
-%Results from the stochastic time-series models are graphically presented as a time-series.  The stochastic models have more than one possible realized value or result for each time step.  This presents a problem when comparing the deterministic and stochastic models.  To solve this issue, the mean, 2.5th, and 97.5th percentile are calculated for each time step.  This provides three 1-D time-series representations of the stochastic model.  The 1-D stochastic mean time-series represents the most likely values for each time step.  The 2.5th and 97.5th percentile 1-D time-series represent the upper and lower bounds of the 95th inter-percentile range.  When plotted together they provide the most likely value and the range of probable values.
-%
-%As with the deterministic model, summary statistics are generated to describe the 1-D stochastic mean time-series model.  The mean, 2.5th, and 97.5th percentile are calculated and compared to the equivalent values from the deterministic model.  This method of comparing the various deterministic and stochastic values and results is dependent on the distribution of values within each time step of the stochastic model.  If the values are normal or near normally distributed, then this analysis will be valid.  Deviations from the normal distribution will be discussed.
-%
-%\emph{I - present river segment Q results}\\
-%
-%All intermediate and final results are calculated in \si{\cubic\meter\per\second}.  Intermediate and final results are presented as the flow rate divided by the study region length, giving units of \si{\cubic\meter\per\second\per\kilo\meter}.  This allows the two study regions to be compared on equal footing since their lengths are significantly different.  Input variables were converted to SI units before any other calculations were performed.  Each of the preceding equations includes at least one error term which shall be discussed in the following chapters.
-%
-%Values and figures presented in this section are the results from calculations performed as described in chapter \ref{chap:Model Development} and all other precursor calculations.  The primary purpose of this analysis was to determine if the computational code and assumptions used to generate the stochastic distributions of dissolved selenium river mass transport changes due to surface water flows were performed correctly.
-%
-%All selenium mass transport rates in the surface waters are calculated as positive values regardless of whether they discharge to or receive selenium from the main stem of the river.  Figure \ref{fig:ExampleSeFlux} is an example figure that shows the deterministic and stochastic time-series of the mass transport at each calculation point.  This particular figure presents data for the upstream end of the USR.  Two sub-figures are provided.  Sub-figure a is the deterministic model time-series and sub-figure b is the stochastic model time-series.  The line is the mean of the realizations and the blue band is the 97.5th CIR.  Similar figures were created for all segments in both study region river reaches and are presented in appendix \ref{App:SeF-S}.
-%
-%Results in these figures and associated tables are presented in units of \si{\kilo\gram\per\day\per\kilo\meter}.  Standardizing values to mass storage per unit length allows for comparison between all river segments in both study reaches.  This also allows for comparison between the mass storage change components and the mass transport components of the mass balance models.
-%
-%\begin{figure}[htbp]
-%\centering
-%	\begin{subfigure}{0.5\textwidth}
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DUSR/f U163"}
-%		\caption{Deterministic Model.}
-%		\label{sub:ExampleDSeFlux}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/f U163"}
-%		\caption{Stochastic Model.}
-%		\label{sub:ExampleSSeFlux}
-%	\end{subfigure}
-%	\caption[River surface water deterministic and stochastic dissolved selenium mass transport time-series.]{River surface water deterministic and stochastic dissolved selenium mass transport time-series.  This is an example figure presenting the results for the upstream end of the USR.  Additional figures for the other USR and DSR calculated points are provided in the appendix noted in the text.  For sub-figure b, the line is the mean of the realizations and the blue band is the 97.5th CIR.}
-%	\label{fig:ExampleSeFlux}
-%\end{figure}
-%
-%Comparing the sub-figures provides for a visual goodness-of-fit analysis between the deterministic and stochastic models.  All USR mass transport stochastic models agree with the deterministic models.  It should be noted that there is quite a fair amount of uncertainty associated with the values calculated for the stochastic model.  This is the compounding of uncertainties from the multiple input variables.  This is as expected for a complex multi-variate model.
-%
-%These figures all show a cyclical nature to selenium transport.  This is due to the variability of flow rates and concentrations through a year.  Some figures, especially those for the upstream and downstream end of the study regions, seem to show a double cycle within a calendar year.  The cause of this phenomenon is unknown.
-%
-%The calculated selenium surface transport values for each calculated tributary and canal were compared between the deterministic and stochastic models and are reported in tables \ref{tab:USRGaugeSeFlow} and \ref{tab:DSRGaugeSeFlow} for the USR and DSR, respectively.  All selenium surface transport values in the figures and tables are presented in units of \si{\kilo\gram\per\day\per\kilo\meter}. 
-%
-%\begin{table}[htbp]
-%\centering
-%\caption[USR stream gauge point selenium surface transport rates.]{USR stream gauge point selenium surface transport rates.  Stochastic mean values are calculated as the mean of the realizations for each time step.  All values are in \si{\kilo\gram\per\day\per\kilo\meter}.}
-%\label{tab:USRGaugeSeFlow}
-%    \begin{tabular}{l|ccc|ccc|c}
-%    \toprule
-%    \multirow{2}[0]{*}{Variable} & \multicolumn{3}{c}{Deterministic} & \multicolumn{3}{c}{Stochastic Mean} & \% Diff\\\cline{2-4} \cline{5-7}
-%    & 2.5\% & Mean & 97.5\% & 2.5\% & Mean & 97.5\% & Mean\\
-%    \midrule
-%    \midrule
-%	$\dot{M}_{Inlet}$&	1.871	&9.561	&22.77	&1.84	&9.569	&22.94	&0.0837	\\
-%	$\dot{M}_{CANSWKCO}$&	0.06308	&0.4108	&1.193	&0.06259	&0.4133	&1.262	&0.609	\\
-%	$\dot{M}_{CONDITCO}$&	0	&0.9395	&2.168	&0	&0.9339	&2.324	&-0.596	\\
-%	$\dot{M}_{FLSCANCO}$&	0	&2.853	&12.21	&0	&2.839	&12.7	&-0.491	\\
-%	$\dot{M}_{FLYCANCO}$&	0	&5.567	&18.42	&0	&5.53	&18.63	&-0.665	\\
-%	$\dot{M}_{HOLCANCO}$&	0	&1.025	&5.012	&0	&1.021	&5.073	&-0.39	\\
-%	$\dot{M}_{HRC194CO}$&	0.1514	&0.3085	&0.5055	&0.1412	&0.3097	&0.5597	&0.389	\\
-%	$\dot{M}_{RFDCANCO}$&	0	&0.3087	&0.7616	&0	&0.3098	&0.81	&0.356	\\
-%	$\dot{M}_{RFDRETCO}$&	0	&0.3087	&0.7616	&0	&0.3098	&0.81	&0.356	\\
-%	$\dot{M}_{TIMSWICO}$&	0.5702	&1.174	&2.115	&0.5358	&1.256	&2.456	&6.98	\\
-%	$\dot{M}_{La Junta WWTP}$&	0.07535	&0.1427	&0.2695	&0.05031	&0.1407	&0.2993	&-1.4	\\
-%	$\dot{M}_{Outlet}$&	1.027	&5.203	&10.29	&0.9957	&5.236	&11.21	&0.634	\\
-%	\bottomrule
-%	\end{tabular}
-%\end{table}
-%	
-%\begin{table}[htbp]
-%\centering
-%\caption[DSR river section selenium gains and losses from surface flows.]{DSR river section selenium gains and losses from surface flows  All values are in \si{\kilo\gram\per\day\per\kilo\meter}.  Mean values are presented for each category.}
-%\label{tab:DSRGaugeSeFlow}
-%	\begin{tabular}{l|ccc|ccc|c}
-%	\toprule
-%    \multirow{2}[0]{*}{Variable} & \multicolumn{3}{c}{Deterministic} & \multicolumn{3}{c}{Stochastic Mean} & \% Diff\\\cline{2-4} \cline{5-7}
-%    & 2.5\% & Mean & 97.5\% & 2.5\% & Mean & 97.5\% & Mean\\
-%    \midrule
-%    \midrule
-%	$\dot{M}_{Inlet}$&	0.1971	&1.024	&5.571	&0.16	&1.191	&8.256	&16.3	\\
-%	$\dot{M}_{BIGLAMCO}$&	0.242	&0.5302	&0.841	&0.2041	&0.5436	&1.061	&2.53	\\
-%	$\dot{M}_{BUFDITCO}$&	0	&0.916	&1.95	&0	&0.9211	&2.206	&0.557	\\
-%	$\dot{M}_{FRODITKS}$&	0	&0.358	&1.142	&0	&0.3615	&1.342	&0.978	\\
-%	$\dot{M}_{WILDHOCO}$&	0	&0.2849	&2.465	&0	&0.2878	&2.507	&1.02	\\
-%	$\dot{M}_{Outlet}$&	2.035	&5.069	&16.39	&1.656	&5.117	&17.64	&0.947	\\
-%	\bottomrule
-%	\end{tabular}
-%\end{table}
-%
-%Both of these tables show that the difference between the deterministic models mean and the 1-D stochastic mean models are quite low.  This indicates that the deterministic model is representative of the stochastic model. 
-%
-%\emph{II - prsent river reach Q results}\\
-%
-%Figures \ref{fig:DUSRFlow} and \ref{fig:USRFlow} depict the final results for the USR water balance model.  They show the calculated average daily water flow rate between the aquifer and the river channel for the deterministic and stochastic models, respectively.  The blue band in figure \ref{fig:} depicts the 95\% CIR for the calculated time steps.  Positive values indicate that water is moving into the river channel.
-%
-%\begin{figure}[htbp]
-%\centering
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DUSR/Balance Water"}
-%		\caption{Deterministic Model.}
-%		\label{sub:USRWaterD}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/Balance Water"}
-%		\caption{Stochastic Model.}
-%		\label{sub:USRWaterS}
-%	\end{subfigure}
-%	\caption[Time series of the USR Arkansas River unaccounted for water flow.]{Time series of the USR Arkansas River unaccounted for water flow.  Positive values indicate a gain to the river reach.}
-%	\label{fig:USRWater}
-%\end{figure}
-%
-%\begin{figure}[htbp]
-%\centering
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DDSR/Balance Water"}
-%		\caption{Deterministic Model.}
-%		\label{sub:DSRWaterD}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Balance Water"}
-%		\caption{Stochastic Model.}
-%		\label{sub:DSRWaterS}
-%	\end{subfigure}
-%	\caption[Time series of the DSR Arkansas River unaccounted for water flow.]{Time series of the DSR Arkansas River unaccounted for water flow.  Positive values indicate a gain to the river reach.}
-%	\label{fig:DSRWater}
-%\end{figure}
-%
-%As anticipated with the study reach intermediate results, the model results indicate that there is seasonable variability with the transport of selenium.  The figures show that the USR and DSR receive a significant quantity of water from unaccounted for sources.  There is a very short period during midyear where the unaccounted for flows are a sink for water being lost from the Arkansas River
-%
-%The distribution of all realizations within each time step was analyzed to determine a distribution type.  This analysis was performed to determine if the assumption that the deterministic model results were representative of the stochastic model.   Testing was performed by comparing K-S statistics for the best fit normal, log-normal, logistic, exponential, gamma, and Weibull distributions.  In the USR, 92\% of all storage component time steps best fit a normal distribution and 8\% best fit a gamma distribution.  In the DSR, 66\% best fit a normal distribution and 33\% best fit a gamma distribution.  This indicates that for both the USR and DSR, the distributions across the realizations are normal.  The DSR water balance model does show some significant skewness due to the relatively large percentage of time steps that best fit a gamma distribution.
-%
-%Tables \ref{tab:USRFlow} and \ref{tab:DSRFlow} presents summary statistics of the deterministic and stochastic storage component changes.  Values are presented in units of \si{\cubic\meter\per\second\per\kilo\meter}.   These tables show the mean, 2.5th, and 97.5th percentile of the deterministic model and the same statistics applied to the three 1-D stochastic models.  This additional set of statistics from the 1-D stochastic 2.5th and 95.5th percentile models provide a better understanding of the extremes of the calculated values.  As before, comparison between the deterministic and stochastic models should be limited to the comparing the deterministic model to the 1-D stochastic mean model.  Also included in these two tables is the percent difference between the deterministic model and the 1-D stochastic mean model.  The mean, 2.5th, and 97.5th percentile values were calculated from the percent difference of the 1-D stochastic mean model from the deterministic model at each time step.  These values show the range of the variance from the deterministic model.
-%
-%\begin{table}[htbp]
-%\centering
-%\caption[USR river section unaccounted for flow.]{USR river section unaccounted for flow.  All values are in \si{\cubic\meter\per\second\per\kilo\meter}.  Positive values indicate a gain to the river reach.}
-%\label{tab:USRFlow}
-%\begin{tabular}{c|ccc}
-%	\toprule
-%	Model& 2.5\% & Mean & 97.5\% \\
-%	\midrule
-%	\midrule
-%	Deterministic&		-0.04002&	0.04944&	0.1762\\
-%	\midrule			                               
-%	Stochastic 2.5\%&	-0.1122&	-0.008835&	0.09072\\
-%	Stochastic Mean&	-0.04047&	0.05&	0.1794\\     
-%	Stochastic 97.5\%&	0.02927&	0.109&	0.272\\      
-%	\midrule                                           
-%	\% Diff. Means &	-23.26&	-5.656&	11.55 \\
-%	\bottomrule
-%\end{tabular}
-%\end{table}
-%
-%\begin{table}[htbp]
-%\centering
-%\caption[DSR river section unaccounted for flow.]{DSR river section unaccounted for flow.  All values are in \si{\cubic\meter\per\second\per\kilo\meter}.  Positive values indicate a gain to the river reach.}
-%\label{tab:DSRFlow}
-%\begin{tabular}{c|ccc}
-%	\toprule
-%	Model& 2.5\% & Mean & 97.5\% \\
-%	\midrule
-%	\midrule
-%	Deterministic&		-0.01974&	0.02993&	0.06909\\
-%	\midrule			                                
-%	Stochastic 2.5\%&	-0.06068&	0.01223&	0.04919\\
-%	Stochastic Mean&	-0.01746&	0.03012&	0.06729\\
-%	Stochastic 97.5\%&	0.02265&	0.04817&	0.08884\\
-%	\midrule                                            
-%	\% Diff. Means &	-8.243&	-0.3074&	7.571\\
-%	\bottomrule
-%\end{tabular}
-%\end{table}
-%
-%The mean of the percent difference between the deterministic and 1-D stochastic mean models is very low.  This indicates that the deterministic model is representative of the stochastic model expected value.  The moderate percent differences at the 2.5th and 97.5th percentile indicate that there is still a significant range of uncertainty contained within the stochastic model that the deterministic model cannot replicate.  The deterministic model can be used to determine how changes can affect a reach over a span of time, but using it to estimate values for specific time steps is only acceptable if the tolerance for this uncertainty is acceptable.
-%
-%\emph{III - analysis and comments on segment and reach results}\\
-%
-%Figure \ref{fig:USRWaterContrib} and \ref{fig:USRMassContrib} present the model results as fractions of the components of the USR water balance and selenium mass balance, respectively.  Values are presented as percent of the total.  Total values are calculated as the sum of the respective constituent components.  The combined sub-figure combines the other sub-figures as a overlapping comparison.  The mass balance model does not contain an atmospheric component.
-%
-%\begin{figure}[htbp]
-%\centering
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/M Water Contrib 1"}
-%		\caption{Surface Water Portion.}
-%		\label{sub:USRWSurf}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/M Water Contrib 3"}
-%		\caption{Storage Change Portion.}
-%		\label{sub:USRWStore}
-%	\end{subfigure}
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/M Water Contrib 2"}
-%		\caption{Preip. \& Evap. Portion.}
-%		\label{sub:USRWAtm}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/M Water Contrib 4"}
-%		\caption{Combined Contributions.}
-%		\label{sub:USRWComb}
-%	\end{subfigure}
-%	\caption[Time series of the major USR Arkansas River contributions to the water model.]{Time series of the major USR Arkansas River contributions to the water model.}
-%	\label{fig:USRWaterContrib}
-%\end{figure}
-%
-%\begin{figure}[htbp]
-%\centering
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/M Mass Contrib 1"}
-%		\caption{Surface Water Portion.}
-%		\label{sub:USRMSurf}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/M Mass Contrib 2"}
-%		\caption{Storage Change Portion.}
-%		\label{sub:USRMStore}
-%	\end{subfigure}
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/M Mass Contrib 3"}
-%		\caption{Combined Contributions.}
-%		\label{sub:USRMComb}
-%	\end{subfigure}
-%	\caption[Time series of the major USR Arkansas River contributions to the mass balance model.]{Time series of the major USR Arkansas River contributions to the mass balance model.}
-%	\label{fig:USRMassContrib}
-%\end{figure}
-%
-%With both figures, the respective flow or flux component is the more significant contributor to the respective models.  This graphical presentation shows that it is unreasonable to assume that water storage and mass storage changes can be neglected.  The atmospheric component of the water balance model, while less significant, cannot be neglected either.  The percent contribution is fairly low but not insignificant.
-%
-%Table \ref{tab:USRImpact} presents the percent contribution distributions for each major model component.  The values presented are from the 1-D stochastic mean model with the mean, 2.5th, and 97.5th percentile taken from this time-series.  This table shows that the respective contribution fractions have a large variation.  The storage component and flow components are nearly equal contributors to the water balance model.  This isn't the case with the mass balance model where the selenium transport component accounts for the majority of the model.  The water balance atmospheric component, while small, is still significant enough to warrant its inclusion in the model.
-%
-%\begin{table}[htbp]
-%\centering
-%\caption[Major Portion Contributions to the USR Models.]{Major Portion Contributions to the USR Models.}
-%\label{tab:USRImpact}
-%\begin{tabular}{c|ccc}
-%	\multicolumn{4}{c}{Water Balance Model} \\
-%	\toprule
-%	Model Portion	& 2.5\% & Mean & 97.5\% \\
-%	\midrule
-%	\midrule
-%	Storage		& 8.7	&34.5	&64.1\\
-%	Flow		& 29.3	&59.6	&85.3\\
-%	Atmosperic 	& 2.7	&5.91	&13.8\\
-%	\bottomrule
-%	\multicolumn{4}{c}{} \\
-%	\multicolumn{4}{c}{Mass Balance Model} \\
-%	\toprule
-%	Model Portion	& 2.5\% & Mean & 97.5\% \\
-%	\midrule
-%	\midrule
-%	Se Storage		& 5.6	&27.7	&58.6\\
-%	Se Transport	& 41.4	&72.3	&94.4  \\
-%	\bottomrule
-%\end{tabular}
-%\end{table}
-%
-%Figure \ref{fig:DSRWaterContrib} and \ref{fig:DSRMassContrib} present the model results as fractions of the components of the DSR water balance and selenium mass balance, respectively.  Values are presented as percent of the total.  Total values are calculated as the sum of the respective constituent components.  The combined sub-figure combines the other sub-figures as a overlapping comparison.  The mass balance model does not contain an atmospheric component.
-%
-%\begin{figure}[htbp]
-%\centering
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/M Water Contrib 1"}
-%		\caption{Surface Water Portion.}
-%		\label{sub:DSRWSurf}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/M Water Contrib 3"}
-%		\caption{Storage Change Portion.}
-%		\label{sub:DSRWStore}
-%	\end{subfigure}
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/M Water Contrib 2"}
-%		\caption{Preip. \& Evap. Portion.}
-%		\label{sub:DSRWAtm}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/M Water Contrib 4"}
-%		\caption{Combined Contributions.}
-%		\label{sub:DSRWComb}
-%	\end{subfigure}
-%	\caption[Time series of the major DSR Arkansas River contributions to the water model.]{Time series of the major DSR Arkansas River contributions to the water model.}
-%	\label{fig:DSRWaterContrib}
-%\end{figure}
-%
-%\begin{figure}[htbp]
-%\centering
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/M Mass Contrib 1"}
-%		\caption{Surface Water Portion.}
-%		\label{sub:DSRMSurf}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/M Mass Contrib 2"}
-%		\caption{Storage Change Portion.}
-%		\label{sub:DSRMStore}
-%	\end{subfigure}
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/M Mass Contrib 3"}
-%		\caption{Combined Contributions.}
-%		\label{sub:DSRMComb}
-%	\end{subfigure}
-%	\caption[Time series of the major USR Arkansas River contributions to the mass balance model.]{Time series of the major USR Arkansas River contributions to the mass balance model.}
-%	\label{fig:DSRMassContrib}
-%\end{figure}
-%
-%The DSR figures show same pattern as with the USR results.  Water storage component, mass storage component, and water model atmospheric components are significant, but not negligible.  The flow and flux component contribution fractions are larger when compared to the USR fractions.  This shows that river size and geometry is an important factor.  Studies which investigate wider river should consider adding storage change components to their models.  The USR and DSR are different in length, but final calculations were performed to standardize the results with respect to a unit length of river reach.
-%
-%\begin{table}[htbp]
-%\centering
-%\caption[Major Portion Contributions to the DSR Models.]{Major Portion Contributions to the DSR Models.}
-%\label{tab:DSRImpact}
-%\begin{tabular}{c|ccc}
-%	\multicolumn{4}{c}{Water Balance Model} \\
-%	\toprule
-%	Model Portion	& 2.5\% & Mean & 97.5\% \\
-%	\midrule
-%	\midrule
-%	Storage Change		& 1.5	&16.1	&38.5\\
-%	Surface Flow		& 58	&80.8	&95.8\\
-%	Precip. \& Evap. 	& 1.39	&3.02	&6.53\\
-%	\bottomrule
-%	\multicolumn{4}{c}{} \\
-%	\multicolumn{4}{c}{Mass Balance Model} \\
-%	\toprule
-%	Model Portion	& 2.5\% & Mean & 97.5\% \\
-%	\midrule
-%	\midrule
-%	Storage Change		& 1.27	&13.3	&37.5\\
-%	Surface Flow		& 62.5	&86.7	&98.7\\
-%	\bottomrule
-%\end{tabular}
-%\end{table}
-%\clearpage
-%
-%The typical method for calculating a river water balance includes negating daily storage change and negating the effects of evaporation and precipitation.  This study assumed that these assumptions were false for the LARB and included major portions of the total effort to calculating daily changes in storage and the daily effects of evaporation and precipitation.  Tables \ref{tab:USRNegate} and \ref{tab:DSRNegate} present the percent difference when major components of the USR and DSR models are negated, respectively.  The values are presented as percent change from the complete model.  Calculations were performed by calculating the models without the neglected components and comparing the time-series with the complete model.  The values presented are the 1-D stochastic mean of the calculated percent difference.
-%
-%\begin{table}[htbp]
-%\centering
-%\caption[Effects of Negating Major Portions of the USR Models.]{Effects of Negating Major Portions of the USR Models.  Values are percent change from complete model.}
-%\label{tab:USRNegate}
-%\begin{tabular}{c|ccc}
-%	\multicolumn{4}{c}{Water Balance Model} \\
-%	\toprule
-%	Portion Negated	& 2.5\% & Mean & 97.5\% \\
-%	\midrule
-%	\midrule
-%	Storage&			-650&	-9.61&	637\\
-%	Atmos.&				-83.1&	-7.73&	72.5\\
-%	Storage \& Atmos.&	-645&	-17.3&	618\\
-%	\bottomrule
-%	\multicolumn{4}{c}{} \\
-%	\multicolumn{4}{c}{Mass Balance Model} \\
-%	\toprule
-%	Portion Negated	& 2.5\% & Mean & 97.5\% \\
-%	\midrule
-%	\midrule
-%	Se Storage&			-350&	33.2&	360\\
-%	\bottomrule
-%\end{tabular}
-%\end{table}
-%
-%\begin{table}[htbp]
-%\centering
-%\caption[Effects of Negating Major Portions of the DSR Models.]{Effects of Negating Major Portions of the DSR Models.  Values are percent change from complete model.}
-%\label{tab:DSRNegate}
-%\begin{tabular}{c|ccc}
-%	\multicolumn{4}{c}{Water Balance Model} \\
-%	\toprule
-%	Portion Negated	& 2.5\% & Mean & 97.5\% \\
-%	\midrule
-%	\midrule
-%	Storage&			-66.6&	12.3&	145\\
-%	Atmos.&				-18.4&	-0.437&	13.4\\
-%	Storage \& Atmos.&	-70.5&	11.9&	141\\
-%	\bottomrule
-%	\multicolumn{4}{c}{} \\
-%	\multicolumn{4}{c}{Mass Balance Model} \\
-%	\toprule
-%	Portion Negated	& 2.5\% & Mean & 97.5\% \\
-%	\midrule
-%	\midrule
-%	Storage& 			-51.9&	8.91&	82.9\\
-%	\bottomrule
-%\end{tabular}
-%\end{table}
-%
-%Neglecting the storage change component of the USR mass balance causes the largest change.  Neglecting the atmospheric component would result in much smaller, but significant variations.  In the DSR, only the atmospheric component is small enough that it could, but shouldn't be neglected.  The mean difference calculated when the DSR atmospheric component is neglected is small, but the extremes calculated as the 2.5th and 97.5th percentile are not insignificant.  The major difference between the USR and DSR reaches is the average annual top width.  The DSR passes much lower flows which translates to lower flow depths and smaller river top widths.  Top width values are the major contributors to the atmospheric component.
-%
-%Comparing the USR and DSR water balance model results shows that the unaccounted for flow are approximately equal between the study regions.  Since the major assumption is that the unaccounted for flows are primarily groundwater flows, then we compare the two results as if they are groundwater flows.  
-%
-%This is directly observable in the DSR where the flow rate at the upstream end of the reach is visibly typically less than or equal to the flow rate at the downstream end.  It has also been observed that there are flows present at the upstream end of the DSR when John Martin Reservoir, which is approximately 16 km (10 mi) upstream, is not actively discharging water to the river.  There are no points along the river between the reservoir and the upstream end of the DSR where water is discharged into the river channel.  The water passing the upstream end of the DSR must be coming from groundwater sources.
-%
-%Groundwater flows that are within an order of magnitude of each other are within acceptable limits.  Groundwater flow rates are calculated as the product of the soil permeability and the head difference between two points.  The major variation occurs with the conductivity of soils.  Nearly identical sandy soils, such as those found in the LARB can have permeability values that are an order of magnitude different.  This is evidenced by tables of permeability of typical soils found in many groundwater texts.
-%
-%The difference between the study regions is nearly negligible when looking at the mass balance models.  these models have mean values that are nearly identical.  This allows us to conclude that the selenium dissolution and transport processes that are active in the USR are equal or approximately equal in magnitude to those in the DSR.
+The reach flow summary time-series summary statistics tables (\ref{tab:GaugeFlow_US} and \ref{tab:GaugeFlow_DS}) show that the deterministic model is very similar to the stochastic model mean time-series.  The similarity between the table values and the high Pearson Correlation lead to the determination that the deterministic model is representative of the stochastic model expected value.  
 
 
+\section{Atmospheric Contributions to the Water Balance Models}
+Atmospheric effects on the river within the USR and DSR is limited to evaporation and precipitation as shown in Equation \ref{eq:atm1}.
+\begin{align}
+	\label{eq:atm1}
+	\sum Q_{Atm}&=P-E\\
+		\label{eq:atm2}
+		& = P \cdot \sum A_i - E \cdot \sum A_i
+\end{align}
+\begin{tabular}{r p{5in}}
+	Where:& \\
+	$ \displaystyle \sum Q_{Atm} $ = & Total effects of precipitation and evaporation on the flow balance model, expressed as a the change in volume per time-step.\\ 
+	$ P $ = & Reported total daily precipitation.\\
+	$ E $ = & Calculated total daily evaporation.\\
+	$ \displaystyle \sum A_i  $ = & Sum of the river reach segment surface areas as previously calculated. \\
+\end{tabular}\\
+
+This equation is the form used earlier in this thesis.  While it is the traditional form, it assumes that $ P $ and $ E $ are expressed as flow.  This is not the usual case.  Both $ P $ and $ E $ are usually expressed in units of depth per time-step.  Multiplying these values by the affected surface area results in a volume change per time-step (Equation \ref{eq:atm3}).  This may be more appropriately labeled as the change in storage due to atmospheric effects per time-step $ \displaystyle \left( \frac{\Delta S_{Atm}}{\Delta t} \right) $.  This is a philosophical argument, and the decision was made to refer to the atmospheric effects as shown in Equation \ref{eq:atm3}.
+
+Evaporation from natural water bodies is not directly measured. At best, evaporation pans when used appropriately, are used to estimate evaporation from nearby natural bodies.  Yet, even these require the use of a calibrated coefficient before the data is relatively reliable.  For this thesis, evaporation data was gathered and treated as discussed in Section \ref{sec:data collected by other sources}.  This data was provided as the total daily reference evapo-transpiration $ \left( ET_{ref} \right) $ as calculated using the ASCE EWRI tall crop reference equation.  This equation is identical to the Food and Agriculture Organization of the United Nations (FAO) Penman-Montieth equation \parencite{walter2000asce,FAO56} and is calculated as follows with variables in appropriate SI units:
+\begin{equation}
+\label{eq:ET}
+	ET_{ref}=\frac{0.408\Delta(R_n-G)+\gamma \displaystyle \frac{C_n}{T+273}u_2(e_s-e_a)}{\Delta+\gamma(1+0.34u_2)}
+\end{equation}
+\begin{tabular}{r p{5.5in}}
+Where: &\\
+$ET_{ref}$ =&standardized reference crop evapotranspiration for short or tall surfaces. \\
+$R_n$ =&calculated net radiation at the crop surface. \\
+$G$ =&soil heat flux density at the soil surface. \\
+$T$ =&mean daily air temperature at 1.5 to 2.5 meter height. \\
+$u_2$ =&mean daily wind speed at 2 meter height. \\
+$e_s$ =&saturation vapor pressure at 1.5 to 2.5 meter height, calculated as the
+average of saturation vapor pressure at minimum and maximum air temperature. \\
+$e_a$ =&mean actual vapor pressure at 1.5 to 2.5 meter height . \\
+$\Delta$ =&slope of the saturation vapor pressure-temperature curve. \\
+$\gamma$ =&psychrometric constant . \\
+$c_n$ =&numerator constant that changes with reference type. \\
+$C_d$ =&denominator constant that changes with reference type. \\
+\end{tabular}\\
+
+This equation is quite complex and it was determined that independent calculation would not be of any benefit.  This equation also does not provide the necessary value of $ E $, but of  $ ET_{ref} $, which is a reference value that describes the total of the evaporation $ (E) $ and transpiration $ (T) $ from a reference crop under ideal conditions.  Converting $ ET_{ref} $ into $ E $ requires the use of conversion equations found in FAO56.  The open water coefficient, $K_w$, is used to perform this conversion.  The FAO has an extensive set of crop coefficients including coefficients for open water for use on the FAO Penman-Montieth (FAO PM) equation.  
+\begin{equation}
+\label{eq:ETcoef}
+E=K_w \cdot ET_{ref}
+\end{equation}
+\begin{tabular}{r p{5.5in}}
+Where:&\\
+$E$ = & Evaporation\\
+$K_w$ = & Open water coefficient\\
+$ET_{ref}$ = & ASCE EWRI Standardized Reference Evapotranspiration Equation, tall crop equation.\\
+\end{tabular}\\
+
+The FAO developed the $K_w$ values for the short reference crop $ET_ref$ equation.  Use of crop coefficients developed for the short crop reference equation with the tall crop (alfalfa) reference equation is prohibited  \parencite{FAO56, Allen2011}.  Equation \ref{eq:ET Kconversion} is used to convert crop coefficients for use between the two ET reference equation results \parencite{FAO56}.
+\begin{equation}
+\label{eq:ET Kconversion}
+	K_{w}=K_\mathsf{ratio} \cdot K_{wt}
+\end{equation}
+\begin{tabular}{r p{5.5in}}
+Where:&\\
+$K_\mathsf{ratio}$ =& conversion factor, calculated using equation \ref{eq:ET Kratio}\\
+$K_{ws}$ =& short crop based crop coefficient, \\
+$K_{wt}$ =& tall crop based crop coefficient.\\
+\end{tabular}\\
+
+\begin{equation}
+\label{eq:ET Kratio}
+	K_\mathsf{ratio}=K_{ws}+[0.04(u_2-2)-0.004(RH_{min}-45)] \left(\frac{h}{3} \right)^{0.3}
+\end{equation}
+\begin{tabular}{r l}
+Where:&\\
+$h$ =& 0.5 meters as the standard height for the tall crop reference.
+\end{tabular}\\
+
+There is no reported error associated with the use of equations \ref{eq:ET Kconversion} or \ref{eq:ET Kratio}.  However, there are known uncertainties in the reported minimum daily relative humidity and average daily wind speed.  Both relative humidity and wind speed uncertainties are based on equipment uncertainty and do not include any other sources of uncertainty.  Precipitation, minimum daily relative humidity, and wind speed data error provided through the CoAgMet system was based solely on instrument accuracy and was reported as $\pm1\%$ for precipitation, $\pm2\%$ for minimum daily relative humidity, and $\pm0.5~m \cdot s^{-1}$ for wind speed.  These values are based on the typical instruments installed at the various locations.  Sensors vary somewhat between observation sites due to equipment replacement.  Colorado Climate Network personnel have stated that replacement equipment either meets or exceeds the equipment on a typical observation site.  The uncertainty distributions for these three weather measurements was assumed to be normal with 95\% of the values within the reported range of the true value.
+
+A preliminary analysis of this method resulted in $K_\mathsf{ratio}$ values shows a mean value of 1.097 and a standard deviation of 0.049.  The $K_\mathsf{ratio}$ values are best fit by a logistic distribution with a location parameter of 1.099 and a scale parameter of 0.0266.  Using the FAO $K_{ws}$ value of 1.05 results in an average $K_{wt}$ value of 0.95 using equation \ref{eq:ET Kconversion}.  Jensen suggests using $K_{ws}=1.10$ based on data from Alamosa, Colorado, which results in an average $K_{wt}$ value of 1.00.
+
+This seems to suggest that unlike the short crop $ET_{ref}$ equation, the tall crop $ET_{ref}$ over estimates evaporation from a shallow water body.  This seems plausible as surface area is a significant factor in determining evaporation.  A mature, 0.5 meter tall alfalfa crop has a large leaf area which could plausibly exceed the equivalent surface area of open water.  
+
+Atmospheric data obtained from CoAgMet does not have publicly defined uncertainty distributions.  At the time this thesis, a study headed by Dr.\ Jos\'{e} L.\ Ch\'{a}vez at Colorado State University was underway to evaluate the ASCE EWRI standardized alfalfa ET reference Penman-Montieth equation with relation to lysimetric data in Colorado.  Preliminary findings provided by Dr. Ch\'{a}vez indicate an average daily reference ET mean bias error of $-0.47~mm \cdot day^{-1}$ with a variability of $\pm 0.98~mm \cdot day^{-1}$ when compared to lysimetric data.  The bias error indicates that the reported $ET_{ref}$ underestimates the actual ET.  The measurement variability is reported as the root mean square error (RMSE), or standard deviation, of the measurement.
+
+Figures \ref{fig:reachEvap_US} and \ref{fig:reachEvap_DS} show the deterministic and stochastic model time-series of evaporation in \si{\milli\meter} for the USR and DSR respectively.  Tables \ref{tab:reachEvap_US} and \ref{tab:reachEvap_DS} present the associated summary statistics for the deterministic time-series and the summary statistics for the three calculated stochastic model time-series.
+
+\subfiguretop
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ \displaystyle \overline{E}_{USR} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Deterministic/A Evap"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/A Evap"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption[USR deterministic and stochastic model time-series total estimated evaporation.]{USR deterministic and stochastic model time-series total estimated evaporation.  In the stochastic model time-series, the black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.}
+		\label{fig:reachEvap_US}
+	\end{figure}
+\end{landscape}
+\subfiguretop
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ \displaystyle \overline{E}_{DSR} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Deterministic/A Evap"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Stochastic/A Evap"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption[DSR deterministic and stochastic model time-series total estimated evaporation.]{DSR deterministic and stochastic model time-series total estimated evaporation.  In the stochastic model time-series, the black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.}
+		\label{fig:reachEvap_DS}
+	\end{figure}
+\end{landscape}
+
+\subtabletop
+\begin{table}[htbp]
+	\centering
+	\caption[USR deterministic and stochastic model time-series total estimated evaporation numeric results.]{USR deterministic and stochastic model time-series total estimated evaporation numeric results.  Total daily evaporation rates are presented in units of \si{\milli\meter} (\si{\inch}).}
+	\label{tab:reachEvap_US}
+	\subcaption*{$\displaystyle \overline{E}_{USR} $}
+	\input{"Tables/USR Evap.txt"}
+\end{table}
+\tablevspace
+\begin{table}[htbp]
+	\centering
+	\caption[DSR deterministic and stochastic model time-series total estimated evaporation numeric results.]{DSR deterministic and stochastic model time-series total estimated evaporation numeric results.  Total daily evaporation rates are presented in units of \si{\milli\meter} (\si{\inch}).}
+	\label{tab:reachEvap_DS}
+	\subcaption*{$\displaystyle \overline{E}_{DSR} $}
+	\input{"Tables/DSR Evap.txt"}
+\end{table}
+
+Precipitation in the study regions is not well defined.  An assumption was made that precipitation was not uniformly distributed over either study region.  Reports from field technicians, conversation with local residents, and personal experience indicate that most storms during the summer were isolated and relatively small.  It was not known by the end of this study whether weather radar data was available or could be used to more accurately estimate rainfall onto the Arkansas River water surface.  It was assumed that, at best, 50\% of any rain event would add water directly to the river.  The reported precipitation depth value was modified by a factor of 0.5 to reflect the estimated average storm coverage for the region.  The atmospheric contribution to the models is taken as the sum of the modified precipitation and evaporation values with the assumption that all precipitation values are positive and all evaporation values are negative as shown in equation \ref{eq:atm4}.
+
+\begin{equation}
+\sum Q_{Atm} = 0.5 \cdot \overline{P} \cdot \sum A_{i} - K_{wt} \cdot \overline{ET_{Ref}} \cdot \sum A_{i}
+\label{eq:atm4}
+\end{equation}
+Where\\
+\begin{tabular}{r p{5.5in}}
+	$Q_{Atm} =$&Total water volume gained (+) or lost (-) due to atmospheric contributions for a study region river section. Values calculated and presented as average daily flow rates.\\
+	$\overline{P} =$&Regional average precipitation taken as the mean of the reporting regional rain gauges.\\
+	$K_{wt} =$& Open water coefficient for the tall $ET_{Ref}$ equation.\\
+	$\overline{ET_{ref}} =$&Regional average $ET_{Ref}$ taken as the mean of the reporting regional reference ET gauges.\\
+	$\sum A_{i}=$&Sum of calculated reach surface areas within a study region river section. \\
+\end{tabular}\\
+
+Figures \ref{fig:reachPrecip_US} and \ref{fig:reachPrecip_DS} show the deterministic and stochastic model time-series of precipitation depth in \si{\milli\meter} for the USR and DSR respectively.  Tables \ref{tab:reachPrecip_US} and \ref{tab:reachPrecip_DS} present the associated summary statistics for the deterministic time-series and the summary statistics for the three calculated stochastic model time-series.
+
+\subfiguretop
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ \displaystyle \overline{P}_{USR} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Deterministic/A Precip"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/A Precip"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption[USR deterministic and stochastic model time-series total estimated precipitation.]{USR deterministic and stochastic model time-series total estimated precipitation.  In the stochastic model time-series, the black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.}
+		\label{fig:reachPrecip_US}
+	\end{figure}
+\end{landscape}
+\subfiguretop
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ \displaystyle \overline{P}_{DSR} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Deterministic/A Precip"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Stochastic/A Precip"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption[DSR deterministic and stochastic model time-series total estimated precipitation.]{DSR deterministic and stochastic model time-series total estimated precipitation.  In the stochastic model time-series, the black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.}
+		\label{fig:reachPrecip_DS}
+	\end{figure}
+\end{landscape}
+
+\subtabletop
+\begin{table}[htbp]
+	\centering
+	\caption[USR deterministic and stochastic model time-series total estimated precipitation numeric results.]{USR deterministic and stochastic model time-series total estimated precipitation numeric results.  Total daily precipitation  rates are presented in units of \si{\milli\meter} (\si{\inch}).}
+	\label{tab:reachPrecip_US}
+	\subcaption*{$\displaystyle \overline{P}_{USR} $}
+	\input{"Tables/USR Precip.txt"}
+\end{table}
+\tablevspace
+\begin{table}[htbp]
+	\centering
+	\caption[DSR deterministic and stochastic model time-series total estimated precipitation numeric results.]{DSR deterministic and stochastic model time-series total estimated precipitation numeric results.    Total daily precipitation  rates are presented in units of \si{\milli\meter} (\si{\inch}).}
+	\label{tab:reachPrecip_DS}
+	\subcaption*{$\displaystyle \overline{P}_{DSR} $}
+	\input{"Tables/DSR Precip.txt"}
+\end{table}
+
+The blue band in both $ P $ figures, which depicts the 95th CIR, is very small and is nearly indistinguishable from the stochastic mean time-series values.  This indicates that the $ P $ measurement uncertainty is very small.  A cyclical pattern is easily noted when observing the $ E $ and $ P $ values in both the USR and DSR.  We note that both daily total $ E $ and $ P $ are higher during warmer months and lower during cold months.  The cyclical nature of the daily $ E $ agrees with common knowledge where evaporation rates are higher as average temperatures rise.  The cyclical nature of the daily precipitation agrees with climate analyses by the National Weather Service which state that most of the precipitation in the LARV occurs with thunder storms during the warmer months.
+
+It is interesting to note that during the 4 year time span calculated in this study annual average evaporation rates appear to increase and annual average precipitation rates appear to decrease.  The time frame of this study is too short to conclude anything about the long term climate of the region.  This observation may be useful when observing other results produced in this study.
+
+The difference between the deterministic model time-series and the stochastic model mean time-series summary statistics as noted in the tables is very low for the $ E $ and $ P $ values in both the USR and DSR.  This, and the very high Pearson Correlation values, indicate that the deterministic model accurately represents the expected value of the stochastic model.
+
+The value $ \displaystyle \sum A_i  $, as used in equation \ref{eq:atm4}, is the reach average daily surface area as previously calculated for the deterministic and stochastic models.  These surface area values are calculated based on the calculated river top width values used to calculate the river volume change.  No changes were made to the previous river geometry calculations before being used to estimate total precipitation gains to and evaporative losses from the river.
+
+Total reach atmospheric contribution gains and losses in units of \si{\cubic\meter\per\second\per\kilo\meter} are presented in Figures \ref{fig:reachAtm_US} and \ref{fig:reachAtm_DS} for the USR and DSR, respectively  These figures show the volume of water gained or lost for each day scaled by the length of the respective reach for comparative purposes.  For the USR and DSR, respectively, tables \ref{tab:reachAtm_US} and \ref{tab:reachAtm_DS} present the deterministic model time-series summary statistics and the summary statistics for the stochastic model mean time-series, the stochastic model 97.5th percentile time-series, and the stochastic model 2.5th percentile time-series.
+
+\subfiguretop
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ \displaystyle \sum Q_{Atm,USR} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Deterministic/Balance Water - atm"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/Balance Water - atm"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption[USR deterministic and stochastic model time-series total estimated atmospheric contribution to the water balance model.]{USR deterministic and stochastic model time-series total estimated atmospheric contribution to the water balance model.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.}
+		\label{fig:reachAtm_US}
+	\end{figure}
+\end{landscape}
+\subfiguretop
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ \displaystyle \sum Q_{Atm,DSR} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Deterministic/Balance Water - atm"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Stochastic/Balance Water - atm"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption[DSR deterministic and stochastic model time-series total estimated atmospheric contribution to the water balance model.]{DSR deterministic and stochastic model time-series total estimated atmospheric contribution to the water balance model.  In the stochastic model time-series, the black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.}
+		\label{fig:reachAtm_DS}
+	\end{figure}
+\end{landscape}
+
+\subtabletop
+\begin{table}[htbp]
+	\centering
+	\caption[USR deterministic and stochastic model time-series total estimated atmospheric contribution to the water balance model numeric results.]{USR deterministic and stochastic model time-series total estimated atmospheric contribution to the water balance model numeric results.  Total daily contribution is presented in units of \si{\cubic\meter\per\second\per\kilo\meter} (\si{\cfs\per\mile}).}
+	\label{tab:reachAtm_US}
+	\subcaption*{$ \displaystyle \sum Q_{Atm,USR} $}
+	\input{"Tables/USRAtm.txt"}
+\end{table}
+\tablevspace
+\begin{table}[htbp]
+	\centering
+	\caption[DSR deterministic and stochastic model time-series total estimated atmospheric contribution to the water balance model numeric results.]{DSR deterministic and stochastic model time-series total estimated atmospheric contribution to the water balance model numeric results.  Total daily contribution is presented in units of \si{\cubic\meter\per\second\per\kilo\meter} (\si{\cfs\per\mile}).}
+	\label{tab:reachAtm_DS}
+	\subcaption*{$ \displaystyle \sum Q_{Atm,DSR} $}
+	\input{"Tables/DSRAtm.txt"}
+\end{table}
+
+The blue bands in Figures \ref{fig:reachAtm_US} and \ref{fig:reachAtm_DS}, which depict the 95th CIR, appear much wider than those shown in the respective $ P $ and $ E $ figures.  This is entirely due to scaling as the volume of water in this calculation is small.  The differences between the mean of the deterministic model time-series and the mean of the stochastic model mean time-series is larger than the differences noted in the $ P $ and $ E $ tables.  This is due to the uncertainty in calculating the average daily river reach surface area.  While the percent differences between the summary statistics of the deterministic model time-series and the summary statistics of the stochastic model mean time-series are fairly large, that is due to the low magnitude of the values.  The difference between the two sets of values, when expressed as flow rates, is quite small.  While the percent difference in the USR between the mean of the two time-series is approximately 40\%, the magnitude of the difference is approximately \SI{3}{\liter\per\second} over a \si{\kilo\meter} of river length.  This is a very small value and is not significant to the total model.  
+
+The figures show that there is a definite seasonal variation in the atmospheric component balance.  This temporal relationship follows the same pattern identified with the evaporation and precipitation time-series values.  Losses are higher during the warmer months and lower during the colder months.  It should be noted that while the figures for the USR and DSR have the same pattern, the magnitude of the losses is very different.  This is due to the differences in river geometry.  The USR is wider therefore losing more water to evaporation than in the DSR.
+
+There figures appear to show that uncertainty with the atmospheric component is nearly equal to uncertainty with the storage component.  This isn't true as the storage component is orders of magnitude larger than the atmospheric component.  The low uncertainty associated with the atmospheric component is due to the efforts by Dr. Cha\'{a}vez and others to characterize evaporation and precipitation uncertainty.
+
+The distribution of all realizations within each time step was analyzed to determine a distribution type.  This analysis was performed to determine if the assumption that the deterministic model results were representative of the stochastic model.  Testing was performed by comparing K-S statistics for the best fit normal, log-normal, logistic, exponential, gamma, and Weibull distributions.  In the USR and the DSR, 100\% of all atmospheric component time steps best fit a normal distribution. This indicates that for both the USR and DSR, the distributions across the realizations are normal. 
+\clearpage{}
+
+\section{Results of Calculated Unaccounted for Return Flows}
+\label{sec:WaterModelResults}
+
+The unaccounted for, non-point discharges and return flows are calculated from Equation \ref{eq:water3}.  All portions of this equation are described in previous sections.  Figures \ref{fig:reachWater_US} and \ref{fig:reachWater_DS} show the deterministic and stochastic model time-series for the USR and DSR, respectively.  The blue band in the stochastic model time-series depicts the 95th CIR.  For the USR and DSR respectively, tables \ref{tab:reachWater_US} and \ref{tab:reachWater_DS} present the deterministic model time-series summary statistics and the summary statistics for each of the three calculated stochastic model summary statistics time-series.
+
+\subfiguretop
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ \displaystyle \sum Q_{UNPS, USR} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Deterministic/Balance Water"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/Balance Water"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption[USR deterministic and stochastic model time-series total estimated unaccounted for non-point water gains and losses.]{USR deterministic and stochastic model time-series total estimated unaccounted for non-point water gains and losses.  In the stochastic model time-series, the black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.}
+		\label{fig:reachWater_US}
+	\end{figure}
+\end{landscape}
+\subfiguretop
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ \displaystyle \sum Q_{UNPS,DSR} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Deterministic/Balance Water"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Stochastic/Balance Water"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption[DSR deterministic and stochastic model time-series total estimated unaccounted for non-point water gains and losses.]{DSR deterministic and stochastic model time-series total estimated unaccounted for non-point water gains and losses.  In the stochastic model time-series, the black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.}
+		\label{fig:reachWater_DS}
+	\end{figure}
+\end{landscape}
+
+\subtabletop
+\begin{table}[htbp]
+	\centering
+	\caption[USR deterministic and stochastic model time-series total estimated unaccounted for non-point water gains and losses numeric results.]{USR deterministic and stochastic model time-series total estimated unaccounted for non-point water gains and losses numeric results.  Total daily contribution is presented in units of \si{\cubic\meter\per\second\per\kilo\meter} (\si{\cfs\per\mile}).}
+	\label{tab:reachWater_US}
+	\subcaption*{$ \displaystyle \sum Q_{UNPS,USR} $}
+	\input{"Tables/USR_UNPS.txt"}
+\end{table}
+\tablevspace
+\begin{table}[htbp]
+	\centering
+	\caption[DSR deterministic and stochastic model time-series total estimated unaccounted for non-point water gains and losses numeric results.]{DSR deterministic and stochastic model time-series total estimated unaccounted for non-point water gains and losses numeric results.  Total daily contribution is presented in units of \si{\cubic\meter\per\second\per\kilo\meter} (\si{\cfs\per\mile}).}
+	\label{tab:reachWater_DS}
+	\subcaption*{$ \displaystyle \sum Q_{UNPS,DSR} $}
+	\input{"Tables/DSR_UNPS.txt"}
+\end{table}
+
+The difference and percent difference between the mean of the deterministic model time-series and the mean of the stochastic model mean time-series are low.  The same cannot be said of the differences between the 95th CIR values for the two time-series as they are significantly different.  This difference is due to the $ \beta_1 $ and $ \beta_2 $ values picked to represent the most likely values for the deterministic model river top width calculations.  The total stochastic model, which includes the 95th CIR, does include all of the values in the deterministic model time-series.  This indicates that the deterministic model is a possible realization of the stochastic model.  The differences between the deterministic model time-series and the stochastic model mean time series indicate that the deterministic model represents the stochastic model fairly well for average conditions, over-estimates for high return flow conditions, and underestimates for low return flow or during discharge conditions.  This deviation between the deterministic model time series and stochastic model mean time-series is also reflected in the Pearson Correlation values.  These values are quite high and should be acceptable for most applications.  Further calibration of the deterministic model river geometry values may be justified if they are found to be significant to the model as a whole during sensitivity analysis.
+
+Figures \ref{fig:USRWaterContrib} and \ref{fig:DSRWaterContrib} present the deterministic model results as fractions of the components of the USR and DSR water balance, respectively.  Values are presented as percent of the total.  Total values are calculated as the sum of the respective constituent components.  The combined sub-figure combines the other sub-figures as a overlapping comparison.  
+
+\begin{figure}[htbp]
+\centering
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/M Water Contrib 1"}
+		\caption{Surface Water Portion.}
+	\end{subfigure}%
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/M Water Contrib 3"}
+		\caption{Storage Change Portion.}
+	\end{subfigure}
+	\tablevspace
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/M Water Contrib 2"}
+		\caption{Preip. \& Evap. Portion.}
+	\end{subfigure}%
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/M Water Contrib 4"}
+		\caption{Combined Contributions.}
+	\end{subfigure}
+	\caption[Time series of the major USR Arkansas River contributions to the water model.]{Time series of the major USR Arkansas River contributions to the water model.}
+	\label{fig:USRWaterContrib}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Stochastic/M Water Contrib 1"}
+		\caption{Surface Water Portion.}
+	\end{subfigure}%
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Stochastic/M Water Contrib 3"}
+		\caption{Storage Change Portion.}
+	\end{subfigure}
+	\tablevspace
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Stochastic/M Water Contrib 2"}
+		\caption{Preip. \& Evap. Portion.}
+	\end{subfigure}%
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Stochastic/M Water Contrib 4"}
+		\caption{Combined Contributions.}
+	\end{subfigure}
+	\caption[Time series of the major DSR Arkansas River contributions to the water model.]{Time series of the major DSR Arkansas River contributions to the water model.}
+	\label{fig:DSRWaterContrib}
+\end{figure}
+
+These figures show that the surface flow component of the water balance model $ \displaystyle \left( \sum Q_{Total} \right) $ is the most significant portion in both the USR and DSR.  They also show that the storage component $ \displaystyle \left( \frac{\Delta S}{\Delta t} \right) $, is more significant in the USR than the DSR.  In both study regions, the atmospheric component, which is composed of the sum of precipitation and evaporation $ \displaystyle \left( \sum Q_{Atm} \right) $, although a minor portion of their respective models, cannot be considered insignificant and therefore, cannot be removed from the model without significantly effecting the results.  These figures also seem to show an inverse relationship between the contribution of the flow portion and the contributions of the storage and atmospheric portions.  The mechanism of this relationship is not understood at this time.
+
+\begin{table}[htbp]
+	\centering
+	\caption[Major Portion Contributions to the USR Models.]{Major Portion Contributions to the USR Models.}
+	\label{tab:USRContrib}
+	\input{"Tables/USR W Contrib.txt"}
+\end{table}
+\tablevspace
+\begin{table}[htbp]
+	\centering
+	\caption[Major Portion Contributions to the DSR Models.]{Major Portion Contributions to the DSR Models.}
+	\label{tab:DSRContrib}
+	\input{"Tables/DSR W Contrib.txt"}
+\end{table}
+
+The typical method for calculating a river water balance includes negating daily storage change and the effects of evaporation and precipitation.  This study assumed that these assumptions were false for the LARV and included major portions of the total effort to calculating daily changes in storage and the daily effects of evaporation and precipitation.  Neglecting the storage change component of the USR mass balance causes the largest change.  Neglecting the atmospheric component would result in much smaller, but significant variations.  In the DSR, only the atmospheric component is small enough that it could, but shouldn't be neglected.  The mean difference calculated when the DSR atmospheric component is neglected is small, but the extremes calculated as the 2.5th and 97.5th percentile are not insignificant.  The major difference between the USR and DSR reaches is the average annual top width.  The DSR passes much lower flows which translates to lower flow depths and smaller river top widths.  Top width values are the major contributors to the atmospheric component.
+
+Comparing the USR and DSR water balance model results shows that the unaccounted for flow are approximately equal between the study regions.  Since the major assumption is that the unaccounted for flows are primarily groundwater flows, then we compare the two results as if they are groundwater flows.  
+
+This is directly observable in the DSR where the flow rate at the upstream end of the reach is visibly typically less than or equal to the flow rate at the downstream end.  It has also been observed that there are flows present at the upstream end of the DSR when John Martin Reservoir, which is approximately 16 km (10 mi) upstream, is not actively discharging water to the river.  There are no points along the river between the reservoir and the upstream end of the DSR where water is discharged into the river channel.  The water passing the upstream end of the DSR must be coming from groundwater sources.
+
+Groundwater flows that are within an order of magnitude of each other are within acceptable limits.  Groundwater flow rates are calculated as the product of the soil permeability and the head difference between two points.  The major variation occurs with the conductivity of soils.  Nearly identical sandy soils, such as those found in the LARB can have permeability values that are an order of magnitude different.  This is evidenced by tables of permeability of typical soils found in many groundwater texts.
+
+The difference between the study regions is nearly negligible when looking at the mass balance models.  these models have mean values that are nearly identical.  This allows us to conclude that the selenium dissolution and transport processes that are active in the USR are equal or approximately equal in magnitude to those in the DSR.
 
 \clearpage{}
 \end{linenumbers}
