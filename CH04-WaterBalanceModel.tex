@@ -1,3 +1,6 @@
+% !TeX root = CH04-WaterBalanceModel.tex
+% !TeX spellcheck = en_US
+% !TeX encoding = UTF-8
 \renewcommand{\thechapter}{4}
 \chapter{Evaluation of NPS Return Flow to the River Using a Water Balance Model}
 \label{chap:WaterBalanceModel}
@@ -14,32 +17,35 @@ The purpose of the water balance model is to determine the volume of unaccounted
 Adding the variables, both known and unknown, present in the LARV we have the following equation:
 \begin{equation}
 \label{eq:water1}
-	\frac{\Delta S}{\Delta t} = Q_{in,US} + \sum Q_{in} + P + R + B - Q_{out,DS} - \sum Q_{out} - E - T - F 
+	\frac{\Delta S}{\Delta t} = Q_{in,US} + \sum Q_{in} + P + R + B - Q_{out,DS} - \sum Q_{out} - E - T - F + X
 \end{equation}
 \begin{longtable}{r p{5.5in}}
 	Where: \\
-	$\frac{\Delta S}{\Delta t}$ =&Stored volume change between time steps.\\
+	$\displaystyle \frac{\Delta S}{\Delta t}$ =&Stored volume change between time steps.\\
 	$ Q_{in,US} $ = & Flow in the river entering the study reach at the upstream end.\\
-	$ \sum Q_{in} $ = & Flow gained by the river from tributaries and other gauged sources.\\
+	$ \displaystyle \sum Q_{in} $ = & Flow gained by the river from tributaries and other gauged sources.\\
 	$ P $ = & Volume of water gained to the river due to precipitation falling directly on the river's surface.\\
 	$ R $ = & Volume of water gained to the river due to precipitation runoff from adjacent land. \\
 	$ B $ = & Volume of water gained to the river due to subsurface flow. \\
 	$ Q_{out,DS} $ = & Flow in the river leaving the study reach at the downstream end.\\
-	$ \sum Q_{out} $ & Flow lost from the river to canals and other gauged sinks.\\
+	$ \displaystyle \sum Q_{out} $ & Flow lost from the river to canals and other gauged sinks.\\
 	$ E $ = & Volume of water lost from the river due to direct evaporation from the water's surface.\\
 	$ T $ = & Volume of water lost from the river due to plant transpiration.\\
 	$ F $ = & Volume of water lost from the river due to infiltration into the subsurface flow.\\
-%\end{tabularx}
+	$ X $ = & Water volume gains and losses to/from unknown sources and sinks.\\
 \end{longtable}
+
+The inclusion of the $ X $ term signifies one of two types of unknown values addressed in this thesis.  There are known unknowns, which are directly addressed and unknown unknowns.  Known unknowns are those values or terms which are known to exist, but the magnitude and sign of their effect is unknown and/or immeasurable.  Unknown  unknowns are those values or terms which we do not know exist.  Their existence and effect on a system are yet to be discovered.  We assume with the current state of chemistry and physics, that the $ X $ term is insignificant.  However, we cannot discount it from our analysis.
 
 If we combine the terms that are unknown or unmeasured, we arrive at the following equation:
 \begin{equation}
 	\label{eq:water01}
-	\frac{\Delta S}{\Delta t} = Q_{in,US} + \sum Q_{in} + P - Q_{out,DS} - \sum Q_{out} - E + Q_{NPS}
+	\frac{\Delta S}{\Delta t} = Q_{in,US} + \sum Q_{in} + P - Q_{out,DS} - \sum Q_{out} - E + Q_{UNPS}
 \end{equation}
 \begin{tabular}{r p{5.5in}}
 	Where: \\
-	\Qnps = & The sum of gains from non-point sources and losses to non-point sinks $ \left( Q_{UNPS} = R + B - T - F + Q_{U,in} - Q_{U,out}\right) $.\\ 
+	\Qnps = & The sum of gains from non-point sources and losses to non-point sinks \\
+		= &$ Q_{UNPS} = R + B - T - F + Q_{U,in} - Q_{U,out} +X $.\\ 
 \end{tabular}\\
 
 %\emph{III - define $Q_U$ constituents}\\
@@ -47,14 +53,13 @@ There is no reasonable method for differentiating the components of \Qnps, there
 
 The two groundwater components of \Qnps are suspected of being the largest components of \Qnps.  Water transfer between the aquifer and river happens continually whereas $ Q_{U,in} $, $ Q_{U,out} $, $ R $, and $ T $ are not continuous.  $ Q_{U,in} $ and $ Q_{U,out} $ only occur periodically when individuals actively withdraw from the river or allow irrigation runoff to return to the river.  $ R $ only occurs during rain events.  Within the LARV, most rainwater is captured in irrigation canals.  Only precipitation falling in the riparian zone is likely to reach the river.  $ T $ only occurs during growing season.  This value is also only considering the transpiration happening within the river channel and does not include the riparian zone.  Any losses due to transpiration in the riparian zone are first considered river losses to the aquifer ($ F $).
 
-
 Re-arranging equation \eqref{eq:water01} to solve for the unknown values produces equation \ref{water02}.  Due to the nearly identical method of calculating flow ($ Q $) and it's associated error and uncertainty, these terms were associated with each other.  Likewise, the precipitation ($ P $) and evaporation ($ E $) terms were associated with each other.
 \begin{equation}
 	\label{eq:water2}
 	Q_{UNPS} = \left( Q_{out,DS} + \sum Q_{out} - Q_{in,US} - \sum Q_{in} \right) + \frac{\Delta S}{\Delta t} - \left( P + E \right)\\ 
 \end{equation}
 
-This model is further simplified to Equation XX which combines terms that are calculated using similar methods to facilitate discussion.
+This model is further simplified to Equation \ref{eq:water3} which combines terms that are calculated using similar methods to facilitate discussion.
 \begin{equation}
 	\label{eq:water3}
 	Q_{UNPS} = \frac{\Delta S}{\Delta t} - \sum Q_{Total} - \sum Q_{Atm}\\ 
@@ -379,25 +384,21 @@ Figure \ref{fig:B1B2} shows the distributions of $\beta_1$ and $\beta_2$ values 
 	\centering
 	\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/Stochastic/USR B1 Dist"}
 	\caption{USR $\beta_1$}
-	\label{sub b1}
 \end{subfigure}%
 \begin{subfigure}{0.5\textwidth}
 	\centering
 	\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/Stochastic/USR B2 Dist"}
 	\caption{USR $\beta_2$}
-	\label{sub b2}
 \end{subfigure}
 \begin{subfigure}{0.5\textwidth}
 	\centering
 	\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Stochastic/DSR B1 Dist"}
 	\caption{DSR $\beta_1$}
-	\label{sub b1}
 \end{subfigure}%
 \begin{subfigure}{0.5\textwidth}
 	\centering
 	\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Stochastic/DSR B2 Dist"}
 	\caption{DSR $\beta_2$}
-	\label{sub b2}
 \end{subfigure}\\
 \caption[$Tw$ Versus $h$ Fitting Parameter $\beta_1$ and $\beta_2$ Distributions.]{$Tw$ Versus $h$ Fitting Parameter $\beta_1$ and $\beta_2$ Distributions.  The black dashed line is a kernel density plot representing a histogram where the bin size approaches zero.  The colored curves are the best fit for the particular distribution type.  Vertical tick marks in the x-axis are at the data values.}
 \label{fig:B1B2}
@@ -413,13 +414,11 @@ Residuals from the non-linear regression analyses were combined into a single da
 	\centering
 	\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/Stochastic/USR AB Error Dist"}
 	\caption{USR Residuals}
-	\label{sub b1}
 \end{subfigure}%
 \begin{subfigure}{0.5\textwidth}
 	\centering
 	\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Stochastic/DSR AB Error Dist"}
 	\caption{DSR Residuals}
-	\label{sub b2}
 \end{subfigure}\\
 \caption[$Tw$ Versus $H$ Residuals Distribution.]{$Tw$ versus $H$ Residuals Distribution.  The black dashed line is a kernel density plot representing a histogram where the bin size approaches zero.  The colored curves are the best fit for the particular distribution type.  Vertical tick marks in the x-axis are at the data values.}
 \label{fig:B1B2 Error}
@@ -779,7 +778,7 @@ Equation \ref{eq:flow1} is expanded as follows to contain all of the measured fl
 	\label{eq:USRFlow}
 	\sum Q_{Total,USR} = &~Q_{ARKCATCO} - Q_{HOLCANCO} - Q_{RFDMANCO} - Q_{FLSCANCO} \\
 	\nonumber & + Q_{RFDRETCO} + Q_{TIMSWICO} - Q_{FLYCANCO} + Q_{CANSWKCO} \\ 
-	\nonumber & - Q_{CONDITCO} + Q_{HRC194CO} - Q_{ARKLASCO}
+	\nonumber & + Q_{LAJWWTP} - Q_{CONDITCO} + Q_{HRC194CO} - Q_{ARKLASCO}
 \end{align}
 Where each subscript is defined as the flow through the gauge described in Table \ref{tab:USRFlow}.  In this table, each of the flow variables in equation \ref{eq:USRFlow}, designated by its CDWR gauge name, is grouped by the type of flow using the variables used in equation \ref{eq:flow1}.
 
@@ -800,6 +799,7 @@ Where each subscript is defined as the flow through the gauge described in Table
 		$ TIMSWICO $ & $ Q_{in} $ & Timpas Creek\\
 		$ FLYCANCO $ & $ Q_{out} $ & Fort Lyon Canal\\
 		$ CANSWKCO $ & $ Q_{in} $ & Crooked Arroyo\\
+		$ LAJWWTP $ & $ Q_{in} $ & Discharge from the La Junta WWTP\\
 		$ CONDITCO $ & $ Q_{out} $ & Consolidated Ditch (Jones Ditch)\\
 		$ HRC194CO $ & $ Q_{in} $ & Horse Creek at Colorado Highway 194\\
 		$ ARKLASCO $ & $ Q_{out,DS} $ & Arkansas River in Las Animas, Colorado\\
@@ -998,6 +998,24 @@ Figures \ref{fig:GaugeFlow_US} and \ref{fig:GaugeFlow_DS} present the stochastic
 		\begin{subfigure}{0.7\textwidth}
 			\centering
 			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/Q HRC"}
+			\subcaption*{Stochastic}
+		\end{subfigure}\\
+		\caption{USR deterministic and stochastic model time-series average daily flow rate.}
+	\end{figure}
+\end{landscape}
+\subfiguremid
+\begin{landscape}
+	\begin{figure}
+		\centering
+		$ Q_{LAJWWTP} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Deterministic/Q WTP"}
+			\subcaption*{Deterministic}		
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/Q WTP"}
 			\subcaption*{Stochastic}
 		\end{subfigure}\\
 		\caption{USR deterministic and stochastic model time-series average daily flow rate.}

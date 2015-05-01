@@ -1,0 +1,9 @@
+\begin{tabular}{c c c c c} 
+\toprule  
+River Segment & & US Concentration & & DS Concentration\\
+Symbol & & Symbol & & Symbol\\
+\toprule 
+$ \displaystyle \frac{\Delta S_F}{\Delta t} $ & & $ C_{D101C} $ & & $ C_{D104C} $\\ \\
+$ \displaystyle \frac{\Delta S_G}{\Delta t} $ & & $ C_{D104C} $ & & $ C_{D106C} $\\
+\bottomrule
+\end{tabular} \\

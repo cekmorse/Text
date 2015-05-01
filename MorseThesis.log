@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  27 APR 2015 23:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  30 APR 2015 22:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1340,32 +1340,7 @@ Package biblatex Info: ... file 'english.lbx' found.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2013/11/25 v2.8a biblatex localization (PK/JW/AB)
 ))
-(./MorseThesis.aux (./CH04-WaterBalanceModel.aux
-
-LaTeX Warning: Label `sub b1' multiply defined.
-
-
-LaTeX Warning: Label `sub@sub b1' multiply defined.
-
-
-LaTeX Warning: Label `sub b2' multiply defined.
-
-
-LaTeX Warning: Label `sub@sub b2' multiply defined.
-
-
-LaTeX Warning: Label `sub b1' multiply defined.
-
-
-LaTeX Warning: Label `sub@sub b1' multiply defined.
-
-
-LaTeX Warning: Label `sub b2' multiply defined.
-
-
-LaTeX Warning: Label `sub@sub b2' multiply defined.
-
-))
+(./MorseThesis.aux (./CH05-MassBalanceModel.aux))
 \openout1 = `MorseThesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -1383,7 +1358,8 @@ LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Try loading font information for U+msa on input line 14.
- (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 14.
@@ -1497,87 +1473,96 @@ Package biblatex Info: Reference segment=0 on input line 14.
 ABD: EveryShipout initializing macros
 \c__siunitx_mathsf_int=\count418
 \c__siunitx_mathtt_int=\count419
-\openout2 = `CH04-WaterBalanceModel.aux'.
+\openout2 = `CH05-MassBalanceModel.aux'.
 
- (./CH04-WaterBalanceModel.tex
-Chapter 4
-[1
+ (./CH05-MassBalanceModel.tex
+Chapter 5
 
-
-
-
-
-
-
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}pdfTeX wa
-rning (ext4): destination with the same identifier (name{equation.1.1.1}) has b
-een already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.33 \end{longtable}
-                    ]
-Underfull \hbox (badness 10000) in paragraph at lines 39--44
+Underfull \hbox (badness 10000) in paragraph at lines 16--23
 
  []
 
 
-Underfull \vbox (badness 2343) has occurred while \output is active []
+LaTeX Warning: Reference `eq:water1' on page 1 undefined on input line 24.
+
+
+LaTeX Warning: Reference `chap:WaterBalanceModel' on page 1 undefined on input 
+line 24.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
+
+
+
+
+
+
+
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
+Underfull \hbox (badness 10000) in paragraph at lines 60--66
 
-LaTeX Warning: Reference `water02' on page 3 undefined on input line 51.
-
-
-Overfull \hbox (10.37875pt too wide) in paragraph at lines 61--70
-[] 
  []
 
+[3]
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--70
+LaTeX Warning: Reference `sec:RiverStorageChange' on page 4 undefined on input 
+line 73.
+
+
+LaTeX Warning: Reference `sec:RiverStorageGeometry' on page 4 undefined on inpu
+t line 84.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--86
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3]
-[4]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5
+ [4
 
 ]
-[6]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ú in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ù in font cmr12!
+[5]
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--103
-
- []
+LaTeX Warning: Reference `map:USRSample' on page 6 undefined on input line 96.
 
 
+LaTeX Warning: Reference `map:DSRSample' on page 6 undefined on input line 96.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
-Overfull \hbox (20.74239pt too wide) in paragraph at lines 109--114
-[][] 
- []
+
+LaTeX Warning: Reference `map:DSRSample' on page 8 undefined on input line 183.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--114
 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 6542) has occurred while \output is active []
 
  [8]
-Underfull \hbox (badness 10000) in paragraph at lines 125--130
+
+LaTeX Warning: Reference `chap:data collection' on page 9 undefined on input li
+ne 187.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--198
 
  []
 
@@ -1585,1435 +1570,1642 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--130
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9]
-<"Figures/Example KDE".pdf, id=129, 433.62pt x 433.62pt>
-File: "Figures/Example KDE".pdf Graphic file (type pdf)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<use "Figures/Example KDE".pdf>
-Package pdftex.def Info: "Figures/Example KDE".pdf used on input line 143.
-(pdftex.def)             Requested size: 433.62pt x 433.63878pt.
+ [10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \vbox (badness 4832) has occurred while \output is active []
+ [11]
+[12]
+<"Figures/Results_USR/Stochastic/Conc Model Full PairsU163".pdf, id=114, 433.62
+pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model Full PairsU163".pdf Graphic fi
+le (type pdf)
 
- [10 <./Figures/Example KDE.pdf>] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 159--166
+<use "Figures/Results_USR/Stochastic/Conc Model Full PairsU163".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model Full PairsU
+163".pdf used on input line 226.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
 
+<"Figures/Results_USR/Stochastic/Conc Model Full PairsU201".pdf, id=115, 433.62
+pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model Full PairsU201".pdf Graphic fi
+le (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Conc Model Full PairsU201".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model Full PairsU
+201".pdf used on input line 231.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 224--233
+ []$[]$$[]$ 
  []
 
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 234.
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--179
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+) [13 <./Figures/Results_USR/Stochastic/Conc Model Full PairsU163.pdf> <./Figur
+es/Results_USR/Stochastic/Conc Model Full PairsU201.pdf>]
+<"Figures/Results_USR/Stochastic/Conc Model Full PairsU167".pdf, id=135, 433.62
+pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model Full PairsU167".pdf Graphic fi
+le (type pdf)
 
- []
+<use "Figures/Results_USR/Stochastic/Conc Model Full PairsU167".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model Full PairsU
+167".pdf used on input line 243.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [12
-
-]
-<"Figures/LineDiagram/PlanProfile".pdf, id=174, 355.25221pt x 212.4186pt>
-File: "Figures/LineDiagram/PlanProfile".pdf Graphic file (type pdf)
-
-<use "Figures/LineDiagram/PlanProfile".pdf>
-Package pdftex.def Info: "Figures/LineDiagram/PlanProfile".pdf used on input li
-ne 195.
-(pdftex.def)             Requested size: 469.75499pt x 280.88281pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14 <./Figures/LineDiagram/PlanProfile.pdf>]
-<Figures/LineDiagram/XSection.pdf, id=200, 393.75677pt x 159.73964pt>
-File: Figures/LineDiagram/XSection.pdf Graphic file (type pdf)
-
-<use Figures/LineDiagram/XSection.pdf>
-Package pdftex.def Info: Figures/LineDiagram/XSection.pdf used on input line 22
-7.
-(pdftex.def)             Requested size: 433.62pt x 175.91154pt.
-
-<"Figures/LineDiagram/Trapezoid".pdf, id=201, 388.67432pt x 144.14966pt>
-File: "Figures/LineDiagram/Trapezoid".pdf Graphic file (type pdf)
-
-<use "Figures/LineDiagram/Trapezoid".pdf>
-Package pdftex.def Info: "Figures/LineDiagram/Trapezoid".pdf used on input line
- 233.
-(pdftex.def)             Requested size: 469.75499pt x 174.22804pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [15 <./Figures/LineDiagram/XSection.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 241--252
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16 <./Figures/LineDiagram/Trapezoid.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [17]
-Underfull \hbox (badness 10000) in paragraph at lines 259--268
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 275.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19]
-Underfull \hbox (badness 10000) in paragraph at lines 280--288
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [20]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21]
-<"Figures/Results_USR/Stochastic/Survey Tw vs H-Section 1".pdf, id=297, 433.62p
+<"Figures/Results_USR/Stochastic/Conc Model Full PairsCAN".pdf, id=136, 433.62p
 t x 433.62pt>
-File: "Figures/Results_USR/Stochastic/Survey Tw vs H-Section 1".pdf Graphic fil
+File: "Figures/Results_USR/Stochastic/Conc Model Full PairsCAN".pdf Graphic fil
 e (type pdf)
 
-<use "Figures/Results_USR/Stochastic/Survey Tw vs H-Section 1".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/Survey Tw vs H-Section
- 1".pdf used on input line 344.
-(pdftex.def)             Requested size: 433.62pt x 433.63878pt.
+<use "Figures/Results_USR/Stochastic/Conc Model Full PairsCAN".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model Full PairsC
+AN".pdf used on input line 248.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 241--250
+ []$[]$$[]$ 
+ []
+
+[14 <./Figures/Results_USR/Stochastic/Conc Model Full PairsU167.pdf> <./Figures
+/Results_USR/Stochastic/Conc Model Full PairsCAN.pdf>]
+<"Figures/Results_USR/Stochastic/Conc Model Full PairsTIM".pdf, id=155, 433.62p
+t x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model Full PairsTIM".pdf Graphic fil
+e (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Conc Model Full PairsTIM".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model Full PairsT
+IM".pdf used on input line 259.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_USR/Stochastic/Conc Model Full PairsHRC".pdf, id=156, 433.62p
+t x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model Full PairsHRC".pdf Graphic fil
+e (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Conc Model Full PairsHRC".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model Full PairsH
+RC".pdf used on input line 264.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 257--266
+ []$[]$$[]$ 
+ []
+
+[15 <./Figures/Results_USR/Stochastic/Conc Model Full PairsTIM.pdf> <./Figures/
+Results_USR/Stochastic/Conc Model Full PairsHRC.pdf>]
+<"Figures/Results_USR/Stochastic/Conc Model Full PairsUDIV".pdf, id=174, 433.62
+pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model Full PairsUDIV".pdf Graphic fi
+le (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Conc Model Full PairsUDIV".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model Full PairsU
+DIV".pdf used on input line 275.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_USR/Stochastic/Conc Model Full PairsWTP".pdf, id=175, 433.62p
+t x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model Full PairsWTP".pdf Graphic fil
+e (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Conc Model Full PairsWTP".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model Full PairsW
+TP".pdf used on input line 280.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 273--282
+ []$[]$$[]$ 
+ []
+
+[16 <./Figures/Results_USR/Stochastic/Conc Model Full PairsUDIV.pdf> <./Figures
+/Results_USR/Stochastic/Conc Model Full PairsWTP.pdf>]
+File: "Figures/Results_USR/Stochastic/Conc Model Full PairsU163".pdf Graphic fi
+le (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Conc Model Full PairsU163".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model Full PairsU
+163".pdf used on input line 294.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+File: "Figures/Results_USR/Stochastic/Conc Model Full PairsU201".pdf Graphic fi
+le (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Conc Model Full PairsU201".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model Full PairsU
+201".pdf used on input line 299.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 292--301
+ []$[]$$[]$ 
+ []
+
+[17]
+<"Figures/Results_DSR/Stochastic/Conc Model Full PairsD101C".pdf, id=198, 433.6
+2pt x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/Conc Model Full PairsD101C".pdf Graphic f
+ile (type pdf)
+
+<use "Figures/Results_DSR/Stochastic/Conc Model Full PairsD101C".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Conc Model Full PairsD
+101C".pdf used on input line 311.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_DSR/Stochastic/Conc Model Full PairsD106C".pdf, id=199, 433.6
+2pt x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/Conc Model Full PairsD106C".pdf Graphic f
+ile (type pdf)
+
+<use "Figures/Results_DSR/Stochastic/Conc Model Full PairsD106C".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Conc Model Full PairsD
+106C".pdf used on input line 316.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 309--318
+ []$[]$$[]$ 
+ []
+
+[18 <./Figures/Results_DSR/Stochastic/Conc Model Full PairsD101C.pdf> <./Figure
+s/Results_DSR/Stochastic/Conc Model Full PairsD106C.pdf>]
+<"Figures/Results_DSR/Stochastic/Conc Model Full PairsBIG".pdf, id=217, 433.62p
+t x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/Conc Model Full PairsBIG".pdf Graphic fil
+e (type pdf)
+
+<use "Figures/Results_DSR/Stochastic/Conc Model Full PairsBIG".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Conc Model Full PairsB
+IG".pdf used on input line 327.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_DSR/Stochastic/Conc Model Full PairsWIL".pdf, id=218, 433.62p
+t x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/Conc Model Full PairsWIL".pdf Graphic fil
+e (type pdf)
+
+<use "Figures/Results_DSR/Stochastic/Conc Model Full PairsWIL".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Conc Model Full PairsW
+IL".pdf used on input line 332.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 325--334
+ []$[]$$[]$ 
+ []
+
+[19 <./Figures/Results_DSR/Stochastic/Conc Model Full PairsBIG.pdf> <./Figures/
+Results_DSR/Stochastic/Conc Model Full PairsWIL.pdf>]
+<"Figures/Results_DSR/Stochastic/Conc Model Full PairsDDIV".pdf, id=237, 433.62
+pt x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/Conc Model Full PairsDDIV".pdf Graphic fi
+le (type pdf)
+
+<use "Figures/Results_DSR/Stochastic/Conc Model Full PairsDDIV".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Conc Model Full PairsD
+DIV".pdf used on input line 343.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+ [20 <./Figures/Results_DSR/Stochastic/Conc Model Full PairsDDIV.pdf>]
+
+LaTeX Warning: Reference `fig:ExampleFullPairs' on page 21 undefined on input l
+ine 437.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [22]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23 <./Figures/Results_USR/Stochastic/Survey Tw vs H-Section 1.pdf>]
-<"Figures/Results_USR/Stochastic/USR B1 Dist".pdf, id=321, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Stochastic/USR B1 Dist".pdf Graphic file (type pdf)
-<use "Figures/Results_USR/Stochastic/USR B1 Dist".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/USR B1 Dist".pdf used 
-on input line 380.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_USR/Stochastic/USR B2 Dist".pdf, id=322, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Stochastic/USR B2 Dist".pdf Graphic file (type pdf)
-<use "Figures/Results_USR/Stochastic/USR B2 Dist".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/USR B2 Dist".pdf used 
-on input line 386.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DSR/Stochastic/DSR B1 Dist".pdf, id=323, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/Stochastic/DSR B1 Dist".pdf Graphic file (type pdf)
-<use "Figures/Results_DSR/Stochastic/DSR B1 Dist".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Stochastic/DSR B1 Dist".pdf used 
-on input line 392.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DSR/Stochastic/DSR B2 Dist".pdf, id=324, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/Stochastic/DSR B2 Dist".pdf Graphic file (type pdf)
-<use "Figures/Results_DSR/Stochastic/DSR B2 Dist".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Stochastic/DSR B2 Dist".pdf used 
-on input line 398.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_USR/Stochastic/USR AB Error Dist".pdf, id=327, 433.62pt x 433
-.62pt>
-File: "Figures/Results_USR/Stochastic/USR AB Error Dist".pdf Graphic file (type
- pdf)
- <use "Figures/Results_USR/Stochastic/USR AB Error Dist".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/USR AB Error Dist".pdf
- used on input line 414.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DSR/Stochastic/DSR AB Error Dist".pdf, id=328, 433.62pt x 433
-.62pt>
-File: "Figures/Results_DSR/Stochastic/DSR AB Error Dist".pdf Graphic file (type
- pdf)
- <use "Figures/Results_DSR/Stochastic/DSR AB Error Dist".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Stochastic/DSR AB Error Dist".pdf
- used on input line 420.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
+ [23]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3679) has occurred while \output is active []
 
- [25 <./Figures/Results_USR/Stochastic/USR B1 Dist.pdf> <./Figures/Results_USR/
-Stochastic/USR B2 Dist.pdf> <./Figures/Results_DSR/Stochastic/DSR B1 Dist.pdf> 
-<./Figures/Results_DSR/Stochastic/DSR B2 Dist.pdf>]
-Underfull \vbox (badness 3333) has occurred while \output is active []
+ [25]
+[26]
+<"Figures/Results_USR/Stochastic/Conc Model lm-fit U163".pdf, id=293, 433.62pt 
+x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model lm-fit U163".pdf Graphic file 
+(type pdf)
+ <use "Figures/Results_USR/Stochastic/Conc Model lm-fit U163".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model lm-fit U163
+".pdf used on input line 553.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
 
- [26 <./Figures/Results_USR/Stochastic/USR AB Error Dist.pdf> <./Figures/Result
-s_DSR/Stochastic/DSR AB Error Dist.pdf>]
-<"Figures/LineDiagram/TSDescription".pdf, id=383, 505.89pt x 505.89pt>
-File: "Figures/LineDiagram/TSDescription".pdf Graphic file (type pdf)
+<"Figures/Results_USR/Stochastic/Conc Model lm-fit U201".pdf, id=294, 433.62pt 
+x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model lm-fit U201".pdf Graphic file 
+(type pdf)
+ <use "Figures/Results_USR/Stochastic/Conc Model lm-fit U201".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model lm-fit U201
+".pdf used on input line 558.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
 
-<use "Figures/LineDiagram/TSDescription".pdf>
-Package pdftex.def Info: "Figures/LineDiagram/TSDescription".pdf used on input 
-line 436.
-(pdftex.def)             Requested size: 422.77663pt x 422.7833pt.
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 551--560
+ []$[]$$[]$ 
+ []
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[27 <./Figures/Results_USR/Stochastic/Conc Model lm-fit U163.pdf> <./Figures/Re
+sults_USR/Stochastic/Conc Model lm-fit U201.pdf>]
+<"Figures/Results_USR/Stochastic/Conc Model lm-fit U167".pdf, id=311, 433.62pt 
+x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model lm-fit U167".pdf Graphic file 
+(type pdf)
+ <use "Figures/Results_USR/Stochastic/Conc Model lm-fit U167".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model lm-fit U167
+".pdf used on input line 571.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
 
- [27]
-Underfull \vbox (badness 3343) has occurred while \output is active []
+<"Figures/Results_USR/Stochastic/Conc Model lm-fit CAN".pdf, id=312, 433.62pt x
+ 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model lm-fit CAN".pdf Graphic file (
+type pdf)
+ <use "Figures/Results_USR/Stochastic/Conc Model lm-fit CAN".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model lm-fit CAN"
+.pdf used on input line 576.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
 
- [28 <./Figures/LineDiagram/TSDescription.pdf>]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 569--578
+ []$[]$$[]$ 
+ []
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[28 <./Figures/Results_USR/Stochastic/Conc Model lm-fit U167.pdf> <./Figures/Re
+sults_USR/Stochastic/Conc Model lm-fit CAN.pdf>]
+<"Figures/Results_USR/Stochastic/Conc Model lm-fit TIM".pdf, id=330, 433.62pt x
+ 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model lm-fit TIM".pdf Graphic file (
+type pdf)
+ <use "Figures/Results_USR/Stochastic/Conc Model lm-fit TIM".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model lm-fit TIM"
+.pdf used on input line 588.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
 
- [29]
-<"Figures/Results_USR/Stochastic/S-D Comparison-M Mass Flow".pdf, id=406, 433.6
-2pt x 433.62pt>
-File: "Figures/Results_USR/Stochastic/S-D Comparison-M Mass Flow".pdf Graphic f
-ile (type pdf)
+<"Figures/Results_USR/Stochastic/Conc Model lm-fit HRC".pdf, id=331, 433.62pt x
+ 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model lm-fit HRC".pdf Graphic file (
+type pdf)
+ <use "Figures/Results_USR/Stochastic/Conc Model lm-fit HRC".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model lm-fit HRC"
+.pdf used on input line 593.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
 
-<use "Figures/Results_USR/Stochastic/S-D Comparison-M Mass Flow".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/S-D Comparison-M Mass 
-Flow".pdf used on input line 475.
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 586--595
+ []$[]$$[]$ 
+ []
+
+[29 <./Figures/Results_USR/Stochastic/Conc Model lm-fit TIM.pdf> <./Figures/Res
+ults_USR/Stochastic/Conc Model lm-fit HRC.pdf>]
+<"Figures/Results_USR/Stochastic/Conc Model lm-fit UDIV".pdf, id=349, 433.62pt 
+x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model lm-fit UDIV".pdf Graphic file 
+(type pdf)
+ <use "Figures/Results_USR/Stochastic/Conc Model lm-fit UDIV".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model lm-fit UDIV
+".pdf used on input line 605.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+[30 <./Figures/Results_USR/Stochastic/Conc Model lm-fit UDIV.pdf>]
+<"Figures/Results_DSR/Stochastic/Conc Model lm-fit D101C".pdf, id=361, 433.62pt
+ x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/Conc Model lm-fit D101C".pdf Graphic file
+ (type pdf)
+
+<use "Figures/Results_DSR/Stochastic/Conc Model lm-fit D101C".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Conc Model lm-fit D101
+C".pdf used on input line 617.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_DSR/Stochastic/Conc Model lm-fit D106C".pdf, id=362, 433.62pt
+ x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/Conc Model lm-fit D106C".pdf Graphic file
+ (type pdf)
+
+<use "Figures/Results_DSR/Stochastic/Conc Model lm-fit D106C".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Conc Model lm-fit D106
+C".pdf used on input line 622.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 615--624
+ []$[]$$[]$ 
+ []
+
+[31 <./Figures/Results_DSR/Stochastic/Conc Model lm-fit D101C.pdf> <./Figures/R
+esults_DSR/Stochastic/Conc Model lm-fit D106C.pdf>]
+<"Figures/Results_DSR/Stochastic/Conc Model lm-fit BIG".pdf, id=380, 433.62pt x
+ 433.62pt>
+File: "Figures/Results_DSR/Stochastic/Conc Model lm-fit BIG".pdf Graphic file (
+type pdf)
+ <use "Figures/Results_DSR/Stochastic/Conc Model lm-fit BIG".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Conc Model lm-fit BIG"
+.pdf used on input line 635.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_DSR/Stochastic/Conc Model lm-fit WIL".pdf, id=381, 433.62pt x
+ 433.62pt>
+File: "Figures/Results_DSR/Stochastic/Conc Model lm-fit WIL".pdf Graphic file (
+type pdf)
+ <use "Figures/Results_DSR/Stochastic/Conc Model lm-fit WIL".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Conc Model lm-fit WIL"
+.pdf used on input line 640.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 633--642
+ []$[]$$[]$ 
+ []
+
+[32 <./Figures/Results_DSR/Stochastic/Conc Model lm-fit BIG.pdf> <./Figures/Res
+ults_DSR/Stochastic/Conc Model lm-fit WIL.pdf>]
+<"Figures/Results_DSR/Stochastic/Conc Model lm-fit DDIV".pdf, id=399, 433.62pt 
+x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/Conc Model lm-fit DDIV".pdf Graphic file 
+(type pdf)
+ <use "Figures/Results_DSR/Stochastic/Conc Model lm-fit DDIV".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Conc Model lm-fit DDIV
+".pdf used on input line 652.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+[33 <./Figures/Results_DSR/Stochastic/Conc Model lm-fit DDIV.pdf>]
+<"Figures/Results_USR/Stochastic/Conc Model lm-fit WTP".pdf, id=413, 433.62pt x
+ 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model lm-fit WTP".pdf Graphic file (
+type pdf)
+ <use "Figures/Results_USR/Stochastic/Conc Model lm-fit WTP".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model lm-fit WTP"
+.pdf used on input line 664.
 (pdftex.def)             Requested size: 422.77663pt x 422.80096pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[34
 
- [30]
-[31 <./Figures/Results_USR/Stochastic/S-D Comparison-M Mass Flow.pdf>] [32
 
-]
-<"Figures/Results_USR/Stochastic/G TS A".pdf, id=433, 433.62pt x 505.89pt>
-File: "Figures/Results_USR/Stochastic/G TS A".pdf Graphic file (type pdf)
 
-<use "Figures/Results_USR/Stochastic/G TS A".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/G TS A".pdf used on in
-put line 490.
-(pdftex.def)             Requested size: 295.94234pt x 345.28203pt.
 
-<"Figures/Results_USR/Stochastic/G TS B".pdf, id=434, 433.62pt x 505.89pt>
-File: "Figures/Results_USR/Stochastic/G TS B".pdf Graphic file (type pdf)
 
-<use "Figures/Results_USR/Stochastic/G TS B".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/G TS B".pdf used on in
-put line 496.
-(pdftex.def)             Requested size: 295.94234pt x 345.28203pt.
 
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 488--499
+
+
+
+
+
+
+
+
+] [35 <./Figures/Results_USR/Stochastic/Conc Model lm-fit WTP.pdf>]
+<"Figures/Results_USR/Stochastic/Conc Model pred v meas U163".pdf, id=434, 433.
+62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model pred v meas U163".pdf Graphic 
+file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Conc Model pred v meas U163".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model pred v meas
+ U163".pdf used on input line 676.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_USR/Stochastic/Conc Model pred v meas U201".pdf, id=435, 433.
+62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model pred v meas U201".pdf Graphic 
+file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Conc Model pred v meas U201".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model pred v meas
+ U201".pdf used on input line 681.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 674--683
  []$[]$$[]$ 
  []
 
-[33 <./Figures/Results_USR/Stochastic/G TS A.pdf> <./Figures/Results_USR/Stocha
-stic/G TS B.pdf>]
-<"Figures/Results_USR/Stochastic/G TS C".pdf, id=459, 433.62pt x 505.89pt>
-File: "Figures/Results_USR/Stochastic/G TS C".pdf Graphic file (type pdf)
+[36 <./Figures/Results_USR/Stochastic/Conc Model pred v meas U163.pdf> <./Figur
+es/Results_USR/Stochastic/Conc Model pred v meas U201.pdf>]
+<"Figures/Results_USR/Stochastic/Conc Model pred v meas U167".pdf, id=454, 433.
+62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model pred v meas U167".pdf Graphic 
+file (type pdf)
 
-<use "Figures/Results_USR/Stochastic/G TS C".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/G TS C".pdf used on in
-put line 510.
-(pdftex.def)             Requested size: 295.94234pt x 345.28203pt.
+<use "Figures/Results_USR/Stochastic/Conc Model pred v meas U167".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model pred v meas
+ U167".pdf used on input line 694.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
 
-<"Figures/Results_USR/Stochastic/G TS D".pdf, id=460, 433.62pt x 505.89pt>
-File: "Figures/Results_USR/Stochastic/G TS D".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Stochastic/G TS D".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/G TS D".pdf used on in
-put line 516.
-(pdftex.def)             Requested size: 295.94234pt x 345.28203pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 508--519
- []$[]$$[]$ 
- []
-
-[34 <./Figures/Results_USR/Stochastic/G TS C.pdf> <./Figures/Results_USR/Stocha
-stic/G TS D.pdf>]
-<"Figures/Results_USR/Stochastic/G TS E".pdf, id=486, 433.62pt x 505.89pt>
-File: "Figures/Results_USR/Stochastic/G TS E".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Stochastic/G TS E".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/G TS E".pdf used on in
-put line 529.
-(pdftex.def)             Requested size: 295.94234pt x 345.28203pt.
- [35 <./Figures/Results_USR/Stochastic/G TS E.pdf>]
-<"Figures/Results_DSR/Stochastic/G TS F".pdf, id=502, 433.62pt x 505.89pt>
-File: "Figures/Results_DSR/Stochastic/G TS F".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/Stochastic/G TS F".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Stochastic/G TS F".pdf used on in
-put line 542.
-(pdftex.def)             Requested size: 295.94234pt x 345.28203pt.
-
-<"Figures/Results_DSR/Stochastic/G TS G".pdf, id=503, 433.62pt x 505.89pt>
-File: "Figures/Results_DSR/Stochastic/G TS G".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/Stochastic/G TS G".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Stochastic/G TS G".pdf used on in
-put line 548.
-(pdftex.def)             Requested size: 295.94234pt x 345.28203pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 540--552
- []$[]$$[]$ 
- []
-
-[36 <./Figures/Results_DSR/Stochastic/G TS F.pdf> <./Figures/Results_DSR/Stocha
-stic/G TS G.pdf>] (./Tables/tableAreaA.txt) (./Tables/tableAreaB.txt)
-(./Tables/tableAreaC.txt) (./Tables/tableAreaD.txt) (./Tables/tableAreaE.txt)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [37
-
-
-
-
-
-
-
-
-]
-(./Tables/tableVolumeA.txt) (./Tables/tableVolumeB.txt)
-(./Tables/tableVolumeC.txt) (./Tables/tableVolumeD.txt)
-(./Tables/tableVolumeE.txt) [38] [39] (./Tables/G volF.txt)
-(./Tables/G volG.txt)
-Underfull \vbox (badness 1270) has occurred while \output is active []
-
- [40]
-[41]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [42]
-<"Figures/Results_USR/Deterministic/Balance Water - storage".pdf, id=572, 433.6
+<"Figures/Results_USR/Stochastic/Conc Model pred v meas CAN".pdf, id=455, 433.6
 2pt x 433.62pt>
-File: "Figures/Results_USR/Deterministic/Balance Water - storage".pdf Graphic f
+File: "Figures/Results_USR/Stochastic/Conc Model pred v meas CAN".pdf Graphic f
 ile (type pdf)
 
-<use "Figures/Results_USR/Deterministic/Balance Water - storage".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Deterministic/Balance Water - sto
-rage".pdf used on input line 700.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
+<use "Figures/Results_USR/Stochastic/Conc Model pred v meas CAN".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model pred v meas
+ CAN".pdf used on input line 699.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
 
-<"Figures/Results_USR/Stochastic/Balance Water - storage".pdf, id=573, 433.62pt
- x 433.62pt>
-File: "Figures/Results_USR/Stochastic/Balance Water - storage".pdf Graphic file
- (type pdf)
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 692--701
+ []$[]$$[]$ 
+ []
 
-<use "Figures/Results_USR/Stochastic/Balance Water - storage".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/Balance Water - storag
-e".pdf used on input line 706.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DSR/Deterministic/Balance Water - storage".pdf, id=574, 433.6
+[37 <./Figures/Results_USR/Stochastic/Conc Model pred v meas U167.pdf> <./Figur
+es/Results_USR/Stochastic/Conc Model pred v meas CAN.pdf>]
+<"Figures/Results_USR/Stochastic/Conc Model pred v meas TIM".pdf, id=476, 433.6
 2pt x 433.62pt>
-File: "Figures/Results_DSR/Deterministic/Balance Water - storage".pdf Graphic f
+File: "Figures/Results_USR/Stochastic/Conc Model pred v meas TIM".pdf Graphic f
 ile (type pdf)
 
-<use "Figures/Results_DSR/Deterministic/Balance Water - storage".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Deterministic/Balance Water - sto
-rage".pdf used on input line 718.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
+<use "Figures/Results_USR/Stochastic/Conc Model pred v meas TIM".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model pred v meas
+ TIM".pdf used on input line 711.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
 
-<"Figures/Results_DSR/Stochastic/Balance Water - storage".pdf, id=575, 433.62pt
+<"Figures/Results_USR/Stochastic/Conc Model pred v meas HRC".pdf, id=477, 433.6
+2pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model pred v meas HRC".pdf Graphic f
+ile (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Conc Model pred v meas HRC".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model pred v meas
+ HRC".pdf used on input line 716.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 709--718
+ []$[]$$[]$ 
+ []
+
+[38 <./Figures/Results_USR/Stochastic/Conc Model pred v meas TIM.pdf> <./Figure
+s/Results_USR/Stochastic/Conc Model pred v meas HRC.pdf>]
+<"Figures/Results_USR/Stochastic/Conc Model pred v meas UDIV".pdf, id=497, 433.
+62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model pred v meas UDIV".pdf Graphic 
+file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Conc Model pred v meas UDIV".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model pred v meas
+ UDIV".pdf used on input line 728.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_USR/Stochastic/Conc Model pred v meas WTP".pdf, id=498, 433.6
+2pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model pred v meas WTP".pdf Graphic f
+ile (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Conc Model pred v meas WTP".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model pred v meas
+ WTP".pdf used on input line 733.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 726--735
+ []$[]$$[]$ 
+ []
+
+[39 <./Figures/Results_USR/Stochastic/Conc Model pred v meas UDIV.pdf> <./Figur
+es/Results_USR/Stochastic/Conc Model pred v meas WTP.pdf>]
+<"Figures/Results_DSR/Stochastic/Conc Model pred v meas D101C".pdf, id=518, 433
+.62pt x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/Conc Model pred v meas D101C".pdf Graphic
+ file (type pdf)
+
+<use "Figures/Results_DSR/Stochastic/Conc Model pred v meas D101C".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Conc Model pred v meas
+ D101C".pdf used on input line 745.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_DSR/Stochastic/Conc Model pred v meas D106C".pdf, id=519, 433
+.62pt x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/Conc Model pred v meas D106C".pdf Graphic
+ file (type pdf)
+
+<use "Figures/Results_DSR/Stochastic/Conc Model pred v meas D106C".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Conc Model pred v meas
+ D106C".pdf used on input line 750.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 743--752
+ []$[]$$[]$ 
+ []
+
+[40 <./Figures/Results_DSR/Stochastic/Conc Model pred v meas D101C.pdf> <./Figu
+res/Results_DSR/Stochastic/Conc Model pred v meas D106C.pdf>]
+<"Figures/Results_DSR/Stochastic/Conc Model pred v meas BIG".pdf, id=539, 433.6
+2pt x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/Conc Model pred v meas BIG".pdf Graphic f
+ile (type pdf)
+
+<use "Figures/Results_DSR/Stochastic/Conc Model pred v meas BIG".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Conc Model pred v meas
+ BIG".pdf used on input line 763.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_DSR/Stochastic/Conc Model pred v meas WIL".pdf, id=540, 433.6
+2pt x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/Conc Model pred v meas WIL".pdf Graphic f
+ile (type pdf)
+
+<use "Figures/Results_DSR/Stochastic/Conc Model pred v meas WIL".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Conc Model pred v meas
+ WIL".pdf used on input line 768.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 761--770
+ []$[]$$[]$ 
+ []
+
+[41 <./Figures/Results_DSR/Stochastic/Conc Model pred v meas BIG.pdf> <./Figure
+s/Results_DSR/Stochastic/Conc Model pred v meas WIL.pdf>]
+<"Figures/Results_DSR/Stochastic/Conc Model pred v meas DDIV".pdf, id=561, 433.
+62pt x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/Conc Model pred v meas DDIV".pdf Graphic 
+file (type pdf)
+
+<use "Figures/Results_DSR/Stochastic/Conc Model pred v meas DDIV".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Conc Model pred v meas
+ DDIV".pdf used on input line 780.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+ [42 <./Figures/Results_DSR/Stochastic/Conc Model pred v meas DDIV.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 792--799
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
+[44]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45]
+[46]
+<"Figures/Results_USR/Stochastic/Conc Model res-fit U163".pdf, id=606, 433.62pt
  x 433.62pt>
-File: "Figures/Results_DSR/Stochastic/Balance Water - storage".pdf Graphic file
+File: "Figures/Results_USR/Stochastic/Conc Model res-fit U163".pdf Graphic file
  (type pdf)
 
-<use "Figures/Results_DSR/Stochastic/Balance Water - storage".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Balance Water - storag
-e".pdf used on input line 723.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-
-Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
-(caption)                outside box or environment on input line 736.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 736.
-See the caption package documentation for explanation.
-
-(./Tables/USRVolume.txt)
-
-Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
-(caption)                outside box or environment on input line 744.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 744.
-See the caption package documentation for explanation.
-
-(./Tables/DSRVolume.txt) [43] [44]
-Underfull \vbox (badness 2608) has occurred while \output is active []
-
- [45 <./Figures/Results_USR/Deterministic/Balance Water - storage.pdf> <./Figur
-es/Results_USR/Stochastic/Balance Water - storage.pdf> <./Figures/Results_DSR/D
-eterministic/Balance Water - storage.pdf> <./Figures/Results_DSR/Stochastic/Bal
-ance Water - storage.pdf>] [46] [47]
-Underfull \hbox (badness 10000) in paragraph at lines 767--776
-
- []
-
-
-LaTeX Warning: Reference `USRSample' on page 48 undefined on input line 777.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [48
-
-]
-
-LaTeX Warning: Reference `DSRSample' on page 49 undefined on input line 810.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [49]
-Underfull \hbox (badness 10000) in paragraph at lines 841--848
-
- []
-
-
-Underfull \vbox (badness 2213) has occurred while \output is active []
-
- [50]
-
-LaTeX Warning: Reference `sec:data collected by other sources' on page 51 undef
-ined on input line 851.
-
-<"Figures/USGS_error_table".pdf, id=675, 531.18451pt x 359.9046pt>
-File: "Figures/USGS_error_table".pdf Graphic file (type pdf)
-
-<use "Figures/USGS_error_table".pdf>
-Package pdftex.def Info: "Figures/USGS_error_table".pdf used on input line 856.
-
-(pdftex.def)             Requested size: 433.62pt x 293.81116pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [51]
-[52 <./Figures/USGS_error_table.pdf>]
-<"Figures/Results_USR/Deterministic/Q U163".pdf, id=704, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Deterministic/Q U163".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Deterministic/Q U163".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Deterministic/Q U163".pdf used on
- input line 868.
+<use "Figures/Results_USR/Stochastic/Conc Model res-fit U163".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model res-fit U16
+3".pdf used on input line 912.
 (pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
 
-<"Figures/Results_USR/Stochastic/Q U163".pdf, id=705, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Stochastic/Q U163".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Stochastic/Q U163".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/Q U163".pdf used on in
-put line 873.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 865--875
- []$$[]$ 
- []
-
-[53 <./Figures/Results_USR/Deterministic/Q U163.pdf> <./Figures/Results_USR/Sto
-chastic/Q U163.pdf>]
-<"Figures/Results_USR/Deterministic/Q U201".pdf, id=725, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Deterministic/Q U201".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Deterministic/Q U201".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Deterministic/Q U201".pdf used on
- input line 887.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-<"Figures/Results_USR/Stochastic/Q U201".pdf, id=726, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Stochastic/Q U201".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Stochastic/Q U201".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/Q U201".pdf used on in
-put line 892.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 884--894
- []$$[]$ 
- []
-
-[54 <./Figures/Results_USR/Deterministic/Q U201.pdf> <./Figures/Results_USR/Sto
-chastic/Q U201.pdf>]
-<"Figures/Results_USR/Deterministic/Q CAN".pdf, id=747, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Deterministic/Q CAN".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Deterministic/Q CAN".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Deterministic/Q CAN".pdf used on 
-input line 905.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-<"Figures/Results_USR/Stochastic/Q CAN".pdf, id=748, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Stochastic/Q CAN".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Stochastic/Q CAN".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/Q CAN".pdf used on inp
-ut line 910.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 902--912
- []$$[]$ 
- []
-
-[55 <./Figures/Results_USR/Deterministic/Q CAN.pdf> <./Figures/Results_USR/Stoc
-hastic/Q CAN.pdf>]
-<"Figures/Results_USR/Deterministic/Q CON".pdf, id=770, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Deterministic/Q CON".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Deterministic/Q CON".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Deterministic/Q CON".pdf used on 
-input line 923.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-<"Figures/Results_USR/Stochastic/Q CON".pdf, id=771, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Stochastic/Q CON".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Stochastic/Q CON".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/Q CON".pdf used on inp
-ut line 928.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 920--930
- []$$[]$ 
- []
-
-[56 <./Figures/Results_USR/Deterministic/Q CON.pdf> <./Figures/Results_USR/Stoc
-hastic/Q CON.pdf>]
-<"Figures/Results_USR/Deterministic/Q FLS".pdf, id=792, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Deterministic/Q FLS".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Deterministic/Q FLS".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Deterministic/Q FLS".pdf used on 
-input line 941.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-<"Figures/Results_USR/Stochastic/Q FLS".pdf, id=793, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Stochastic/Q FLS".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Stochastic/Q FLS".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/Q FLS".pdf used on inp
-ut line 946.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 938--948
- []$$[]$ 
- []
-
-[57 <./Figures/Results_USR/Deterministic/Q FLS.pdf> <./Figures/Results_USR/Stoc
-hastic/Q FLS.pdf>]
-<"Figures/Results_USR/Deterministic/Q FLY".pdf, id=815, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Deterministic/Q FLY".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Deterministic/Q FLY".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Deterministic/Q FLY".pdf used on 
-input line 959.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-<"Figures/Results_USR/Stochastic/Q FLY".pdf, id=816, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Stochastic/Q FLY".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Stochastic/Q FLY".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/Q FLY".pdf used on inp
-ut line 964.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 956--966
- []$$[]$ 
- []
-
-[58 <./Figures/Results_USR/Deterministic/Q FLY.pdf> <./Figures/Results_USR/Stoc
-hastic/Q FLY.pdf>]
-<"Figures/Results_USR/Deterministic/Q HOL".pdf, id=837, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Deterministic/Q HOL".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Deterministic/Q HOL".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Deterministic/Q HOL".pdf used on 
-input line 977.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-<"Figures/Results_USR/Stochastic/Q HOL".pdf, id=838, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Stochastic/Q HOL".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Stochastic/Q HOL".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/Q HOL".pdf used on inp
-ut line 982.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 974--984
- []$$[]$ 
- []
-
-[59 <./Figures/Results_USR/Deterministic/Q HOL.pdf> <./Figures/Results_USR/Stoc
-hastic/Q HOL.pdf>]
-<"Figures/Results_USR/Deterministic/Q HRC".pdf, id=859, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Deterministic/Q HRC".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Deterministic/Q HRC".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Deterministic/Q HRC".pdf used on 
-input line 995.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-<"Figures/Results_USR/Stochastic/Q HRC".pdf, id=860, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Stochastic/Q HRC".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Stochastic/Q HRC".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/Q HRC".pdf used on inp
-ut line 1000.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 992--1002
- []$$[]$ 
- []
-
-[60 <./Figures/Results_USR/Deterministic/Q HRC.pdf> <./Figures/Results_USR/Stoc
-hastic/Q HRC.pdf>]
-<"Figures/Results_USR/Deterministic/Q RFD".pdf, id=881, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Deterministic/Q RFD".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Deterministic/Q RFD".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Deterministic/Q RFD".pdf used on 
-input line 1013.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-<"Figures/Results_USR/Stochastic/Q RFD".pdf, id=882, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Stochastic/Q RFD".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Stochastic/Q RFD".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/Q RFD".pdf used on inp
-ut line 1018.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 1010--1020
- []$$[]$ 
- []
-
-[61 <./Figures/Results_USR/Deterministic/Q RFD.pdf> <./Figures/Results_USR/Stoc
-hastic/Q RFD.pdf>]
-<"Figures/Results_USR/Deterministic/Q RFR".pdf, id=904, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Deterministic/Q RFR".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Deterministic/Q RFR".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Deterministic/Q RFR".pdf used on 
-input line 1031.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-<"Figures/Results_USR/Stochastic/Q RFR".pdf, id=905, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Stochastic/Q RFR".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Stochastic/Q RFR".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/Q RFR".pdf used on inp
-ut line 1036.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 1028--1038
- []$$[]$ 
- []
-
-[62 <./Figures/Results_USR/Deterministic/Q RFR.pdf> <./Figures/Results_USR/Stoc
-hastic/Q RFR.pdf>]
-<"Figures/Results_USR/Deterministic/Q TIM".pdf, id=926, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Deterministic/Q TIM".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Deterministic/Q TIM".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Deterministic/Q TIM".pdf used on 
-input line 1049.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-<"Figures/Results_USR/Stochastic/Q TIM".pdf, id=927, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Stochastic/Q TIM".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Stochastic/Q TIM".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/Q TIM".pdf used on inp
-ut line 1054.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 1046--1056
- []$$[]$ 
- []
-
-[63 <./Figures/Results_USR/Deterministic/Q TIM.pdf> <./Figures/Results_USR/Stoc
-hastic/Q TIM.pdf>]
-<"Figures/Results_USR/Deterministic/Q WTP".pdf, id=949, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Deterministic/Q WTP".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Deterministic/Q WTP".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Deterministic/Q WTP".pdf used on 
-input line 1067.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-<"Figures/Results_USR/Stochastic/Q WTP".pdf, id=950, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Stochastic/Q WTP".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Stochastic/Q WTP".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/Q WTP".pdf used on inp
-ut line 1072.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 1064--1074
- []$$[]$ 
- []
-
-[64 <./Figures/Results_USR/Deterministic/Q WTP.pdf> <./Figures/Results_USR/Stoc
-hastic/Q WTP.pdf>]
-<"Figures/Results_DSR/Deterministic/Q in".pdf, id=971, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/Deterministic/Q in".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/Deterministic/Q in".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Deterministic/Q in".pdf used on i
-nput line 1088.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-<"Figures/Results_DSR/Stochastic/Q in".pdf, id=972, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/Stochastic/Q in".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/Stochastic/Q in".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Q in".pdf used on inpu
-t line 1093.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 1085--1095
- []$$[]$ 
- []
-
-[65 <./Figures/Results_DSR/Deterministic/Q in.pdf> <./Figures/Results_DSR/Stoch
-astic/Q in.pdf>]
-<"Figures/Results_DSR/Deterministic/Q out".pdf, id=992, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/Deterministic/Q out".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/Deterministic/Q out".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Deterministic/Q out".pdf used on 
-input line 1107.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-<"Figures/Results_DSR/Stochastic/Q out".pdf, id=993, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/Stochastic/Q out".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/Stochastic/Q out".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Q out".pdf used on inp
-ut line 1112.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 1104--1114
- []$$[]$ 
- []
-
-[66 <./Figures/Results_DSR/Deterministic/Q out.pdf> <./Figures/Results_DSR/Stoc
-hastic/Q out.pdf>]
-<"Figures/Results_DSR/Deterministic/Q BIG".pdf, id=1014, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/Deterministic/Q BIG".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/Deterministic/Q BIG".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Deterministic/Q BIG".pdf used on 
-input line 1125.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-<"Figures/Results_DSR/Stochastic/Q BIG".pdf, id=1015, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/Stochastic/Q BIG".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/Stochastic/Q BIG".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Q BIG".pdf used on inp
-ut line 1130.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 1122--1132
- []$$[]$ 
- []
-
-[67 <./Figures/Results_DSR/Deterministic/Q BIG.pdf> <./Figures/Results_DSR/Stoc
-hastic/Q BIG.pdf>]
-<"Figures/Results_DSR/Deterministic/Q BUF".pdf, id=1037, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/Deterministic/Q BUF".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/Deterministic/Q BUF".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Deterministic/Q BUF".pdf used on 
-input line 1143.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-<"Figures/Results_DSR/Stochastic/Q BUF".pdf, id=1038, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/Stochastic/Q BUF".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/Stochastic/Q BUF".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Q BUF".pdf used on inp
-ut line 1148.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 1140--1150
- []$$[]$ 
- []
-
-[68 <./Figures/Results_DSR/Deterministic/Q BUF.pdf> <./Figures/Results_DSR/Stoc
-hastic/Q BUF.pdf>]
-<"Figures/Results_DSR/Deterministic/Q FRO".pdf, id=1059, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/Deterministic/Q FRO".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/Deterministic/Q FRO".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Deterministic/Q FRO".pdf used on 
-input line 1161.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-<"Figures/Results_DSR/Stochastic/Q FRO".pdf, id=1060, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/Stochastic/Q FRO".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/Stochastic/Q FRO".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Q FRO".pdf used on inp
-ut line 1166.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 1158--1168
- []$$[]$ 
- []
-
-[69 <./Figures/Results_DSR/Deterministic/Q FRO.pdf> <./Figures/Results_DSR/Stoc
-hastic/Q FRO.pdf>]
-<"Figures/Results_DSR/Deterministic/Q WIL".pdf, id=1082, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/Deterministic/Q WIL".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/Deterministic/Q WIL".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Deterministic/Q WIL".pdf used on 
-input line 1179.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-<"Figures/Results_DSR/Stochastic/Q WIL".pdf, id=1083, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/Stochastic/Q WIL".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/Stochastic/Q WIL".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Q WIL".pdf used on inp
-ut line 1184.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 1176--1186
- []$$[]$ 
- []
-
-[70 <./Figures/Results_DSR/Deterministic/Q WIL.pdf> <./Figures/Results_DSR/Stoc
-hastic/Q WIL.pdf>] (./Tables/USR_qIN.txt) (./Tables/USR_qOUT.txt)
-(./Tables/USR_qCAN.txt) (./Tables/USR_qCON.txt) (./Tables/USR_qFLS.txt)
-(./Tables/USR_qFLY.txt) (./Tables/USR_qHOL.txt) (./Tables/USR_qHRC.txt)
-(./Tables/USR_qRFD.txt) (./Tables/USR_qRFR.txt) (./Tables/USR_qTIM.txt)
-(./Tables/USR_qWTP.txt) (./Tables/DSR_qIN.txt) (./Tables/DSR_qOUT.txt)
-(./Tables/DSR_qBIG.txt) (./Tables/DSR_qBUF.txt) (./Tables/DSR_qWIL.txt)
-(./Tables/DSR_qFRO.txt) [71
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-] [72] [73] [74] [75] [76] [77] [78] [79] [80]
-[81
-
-]
-<"Figures/Results_USR/Deterministic/Balance Water - flow".pdf, id=1175, 433.62p
-t x 433.62pt>
-File: "Figures/Results_USR/Deterministic/Balance Water - flow".pdf Graphic file
- (type pdf)
-
-<use "Figures/Results_USR/Deterministic/Balance Water - flow".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Deterministic/Balance Water - flo
-w".pdf used on input line 1350.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-<"Figures/Results_USR/Stochastic/Balance Water - flow".pdf, id=1176, 433.62pt x
- 433.62pt>
-File: "Figures/Results_USR/Stochastic/Balance Water - flow".pdf Graphic file (t
-ype pdf)
- <use "Figures/Results_USR/Stochastic/Balance Water - flow".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/Balance Water - flow".
-pdf used on input line 1355.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 1347--1357
- []$$[]$ 
- []
-
-[82 <./Figures/Results_USR/Deterministic/Balance Water - flow.pdf> <./Figures/R
-esults_USR/Stochastic/Balance Water - flow.pdf>]
-<"Figures/Results_DSR/Deterministic/Balance Water - flow".pdf, id=1196, 433.62p
-t x 433.62pt>
-File: "Figures/Results_DSR/Deterministic/Balance Water - flow".pdf Graphic file
- (type pdf)
-
-<use "Figures/Results_DSR/Deterministic/Balance Water - flow".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Deterministic/Balance Water - flo
-w".pdf used on input line 1369.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-<"Figures/Results_DSR/Stochastic/Balance Water - flow".pdf, id=1197, 433.62pt x
- 433.62pt>
-File: "Figures/Results_DSR/Stochastic/Balance Water - flow".pdf Graphic file (t
-ype pdf)
- <use "Figures/Results_DSR/Stochastic/Balance Water - flow".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Balance Water - flow".
-pdf used on input line 1374.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 1366--1376
- []$$[]$ 
- []
-
-[83 <./Figures/Results_DSR/Deterministic/Balance Water - flow.pdf> <./Figures/R
-esults_DSR/Stochastic/Balance Water - flow.pdf>]
-
-Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
-(caption)                outside box or environment on input line 1387.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1387.
-See the caption package documentation for explanation.
-
-(./Tables/USRFlow.txt)
-
-Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
-(caption)                outside box or environment on input line 1395.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1395.
-See the caption package documentation for explanation.
-
-(./Tables/DSRFlow.txt)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [84
-
-
-
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [85]
-Underfull \hbox (badness 10000) in paragraph at lines 1419--1427
-
- []
-
-[86]
-
-LaTeX Warning: Reference `eq:atm3' on page 87 undefined on input line 1428.
-
-
-LaTeX Warning: Reference `eq:atm3' on page 87 undefined on input line 1428.
-
-
-LaTeX Warning: Reference `sec:data collected by other sources' on page 87 undef
-ined on input line 1430.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [87]
-Underfull \hbox (badness 10000) in paragraph at lines 1434--1450
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [88]
-Underfull \hbox (badness 10000) in paragraph at lines 1455--1462
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1467--1474
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1478--1483
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [89]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [90]
-[91]
-<"Figures/Results_USR/Deterministic/A Evap".pdf, id=1284, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Deterministic/A Evap".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Deterministic/A Evap".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Deterministic/A Evap".pdf used on
- input line 1501.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-<"Figures/Results_USR/Stochastic/A Evap".pdf, id=1285, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Stochastic/A Evap".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Stochastic/A Evap".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/A Evap".pdf used on in
-put line 1506.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 1498--1508
- []$$[]$ 
- []
-
-[92 <./Figures/Results_USR/Deterministic/A Evap.pdf> <./Figures/Results_USR/Sto
-chastic/A Evap.pdf>]
-<"Figures/Results_DSR/Deterministic/A Evap".pdf, id=1303, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/Deterministic/A Evap".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/Deterministic/A Evap".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Deterministic/A Evap".pdf used on
- input line 1520.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-<"Figures/Results_DSR/Stochastic/A Evap".pdf, id=1304, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/Stochastic/A Evap".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/Stochastic/A Evap".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Stochastic/A Evap".pdf used on in
-put line 1525.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 1517--1527
- []$$[]$ 
- []
-
-[93 <./Figures/Results_DSR/Deterministic/A Evap.pdf> <./Figures/Results_DSR/Sto
-chastic/A Evap.pdf>]
-
-Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
-(caption)                outside box or environment on input line 1538.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1538.
-See the caption package documentation for explanation.
-
-(./Tables/USR Evap.txt)
-
-Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
-(caption)                outside box or environment on input line 1546.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1546.
-See the caption package documentation for explanation.
-
-(./Tables/DSR Evap.txt)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [94
-
-
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 1555--1564
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [95]
-[96]
-<"Figures/Results_USR/Deterministic/A Precip".pdf, id=1345, 433.62pt x 433.62pt
->
-File: "Figures/Results_USR/Deterministic/A Precip".pdf Graphic file (type pdf)
- <use "Figures/Results_USR/Deterministic/A Precip".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Deterministic/A Precip".pdf used 
-on input line 1574.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-<"Figures/Results_USR/Stochastic/A Precip".pdf, id=1346, 433.62pt x 433.62pt>
-File: "Figures/Results_USR/Stochastic/A Precip".pdf Graphic file (type pdf)
-
-<use "Figures/Results_USR/Stochastic/A Precip".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/A Precip".pdf used on 
-input line 1579.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 1571--1581
- []$$[]$ 
- []
-
-[97 <./Figures/Results_USR/Deterministic/A Precip.pdf> <./Figures/Results_USR/S
-tochastic/A Precip.pdf>]
-<"Figures/Results_DSR/Deterministic/A Precip".pdf, id=1365, 433.62pt x 433.62pt
->
-File: "Figures/Results_DSR/Deterministic/A Precip".pdf Graphic file (type pdf)
- <use "Figures/Results_DSR/Deterministic/A Precip".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Deterministic/A Precip".pdf used 
-on input line 1593.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-<"Figures/Results_DSR/Stochastic/A Precip".pdf, id=1366, 433.62pt x 433.62pt>
-File: "Figures/Results_DSR/Stochastic/A Precip".pdf Graphic file (type pdf)
-
-<use "Figures/Results_DSR/Stochastic/A Precip".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Stochastic/A Precip".pdf used on 
-input line 1598.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 1590--1600
- []$$[]$ 
- []
-
-[98 <./Figures/Results_DSR/Deterministic/A Precip.pdf> <./Figures/Results_DSR/S
-tochastic/A Precip.pdf>]
-
-Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
-(caption)                outside box or environment on input line 1611.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1611.
-See the caption package documentation for explanation.
-
-(./Tables/USR Precip.txt)
-
-Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
-(caption)                outside box or environment on input line 1619.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1619.
-See the caption package documentation for explanation.
-
-(./Tables/DSR Precip.txt)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [99
-
-
-
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [100]
-[101]
-<"Figures/Results_USR/Deterministic/Balance Water - atm".pdf, id=1405, 433.62pt
+<"Figures/Results_USR/Stochastic/Conc Model res-fit U201".pdf, id=607, 433.62pt
  x 433.62pt>
-File: "Figures/Results_USR/Deterministic/Balance Water - atm".pdf Graphic file 
+File: "Figures/Results_USR/Stochastic/Conc Model res-fit U201".pdf Graphic file
+ (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Conc Model res-fit U201".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model res-fit U20
+1".pdf used on input line 917.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 910--919
+ []$[]$$[]$ 
+ []
+
+[47 <./Figures/Results_USR/Stochastic/Conc Model res-fit U163.pdf> <./Figures/R
+esults_USR/Stochastic/Conc Model res-fit U201.pdf>]
+<"Figures/Results_USR/Stochastic/Conc Model res-fit U167".pdf, id=626, 433.62pt
+ x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model res-fit U167".pdf Graphic file
+ (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Conc Model res-fit U167".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model res-fit U16
+7".pdf used on input line 930.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_USR/Stochastic/Conc Model res-fit CAN".pdf, id=627, 433.62pt 
+x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model res-fit CAN".pdf Graphic file 
 (type pdf)
- <use "Figures/Results_USR/Deterministic/Balance Water - atm".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Deterministic/Balance Water - atm
-".pdf used on input line 1640.
+ <use "Figures/Results_USR/Stochastic/Conc Model res-fit CAN".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model res-fit CAN
+".pdf used on input line 935.
 (pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
 
-<"Figures/Results_USR/Stochastic/Balance Water - atm".pdf, id=1406, 433.62pt x 
-433.62pt>
-File: "Figures/Results_USR/Stochastic/Balance Water - atm".pdf Graphic file (ty
-pe pdf)
- <use "Figures/Results_USR/Stochastic/Balance Water - atm".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/Balance Water - atm".p
-df used on input line 1645.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 1637--1647
- []$$[]$ 
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 928--937
+ []$[]$$[]$ 
  []
 
-[102 <./Figures/Results_USR/Deterministic/Balance Water - atm.pdf> <./Figures/R
-esults_USR/Stochastic/Balance Water - atm.pdf>]
-<"Figures/Results_DSR/Deterministic/Balance Water - atm".pdf, id=1426, 433.62pt
- x 433.62pt>
-File: "Figures/Results_DSR/Deterministic/Balance Water - atm".pdf Graphic file 
+[48 <./Figures/Results_USR/Stochastic/Conc Model res-fit U167.pdf> <./Figures/R
+esults_USR/Stochastic/Conc Model res-fit CAN.pdf>]
+<"Figures/Results_USR/Stochastic/Conc Model res-fit TIM".pdf, id=647, 433.62pt 
+x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model res-fit TIM".pdf Graphic file 
 (type pdf)
- <use "Figures/Results_DSR/Deterministic/Balance Water - atm".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Deterministic/Balance Water - atm
-".pdf used on input line 1659.
+ <use "Figures/Results_USR/Stochastic/Conc Model res-fit TIM".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model res-fit TIM
+".pdf used on input line 947.
 (pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
 
-<"Figures/Results_DSR/Stochastic/Balance Water - atm".pdf, id=1427, 433.62pt x 
-433.62pt>
-File: "Figures/Results_DSR/Stochastic/Balance Water - atm".pdf Graphic file (ty
-pe pdf)
- <use "Figures/Results_DSR/Stochastic/Balance Water - atm".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Balance Water - atm".p
-df used on input line 1664.
+<"Figures/Results_USR/Stochastic/Conc Model res-fit HRC".pdf, id=648, 433.62pt 
+x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model res-fit HRC".pdf Graphic file 
+(type pdf)
+ <use "Figures/Results_USR/Stochastic/Conc Model res-fit HRC".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model res-fit HRC
+".pdf used on input line 952.
 (pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
 
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 1656--1666
- []$$[]$ 
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 945--954
+ []$[]$$[]$ 
  []
 
-[103 <./Figures/Results_DSR/Deterministic/Balance Water - atm.pdf> <./Figures/R
-esults_DSR/Stochastic/Balance Water - atm.pdf>]
+[49 <./Figures/Results_USR/Stochastic/Conc Model res-fit TIM.pdf> <./Figures/Re
+sults_USR/Stochastic/Conc Model res-fit HRC.pdf>]
+<"Figures/Results_USR/Stochastic/Conc Model res-fit UDIV".pdf, id=669, 433.62pt
+ x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model res-fit UDIV".pdf Graphic file
+ (type pdf)
 
-Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
-(caption)                outside box or environment on input line 1677.
-See the caption package documentation for explanation.
+<use "Figures/Results_USR/Stochastic/Conc Model res-fit UDIV".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model res-fit UDI
+V".pdf used on input line 964.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_USR/Stochastic/Conc Model res-fit WTP".pdf, id=670, 433.62pt 
+x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model res-fit WTP".pdf Graphic file 
+(type pdf)
+ <use "Figures/Results_USR/Stochastic/Conc Model res-fit WTP".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model res-fit WTP
+".pdf used on input line 969.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 962--971
+ []$[]$$[]$ 
+ []
+
+[50 <./Figures/Results_USR/Stochastic/Conc Model res-fit UDIV.pdf> <./Figures/R
+esults_USR/Stochastic/Conc Model res-fit WTP.pdf>]
+<"Figures/Results_DSR/Stochastic/Conc Model res-fit D101C".pdf, id=691, 433.62p
+t x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/Conc Model res-fit D101C".pdf Graphic fil
+e (type pdf)
+
+<use "Figures/Results_DSR/Stochastic/Conc Model res-fit D101C".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Conc Model res-fit D10
+1C".pdf used on input line 981.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_DSR/Stochastic/Conc Model res-fit D106C".pdf, id=692, 433.62p
+t x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/Conc Model res-fit D106C".pdf Graphic fil
+e (type pdf)
+
+<use "Figures/Results_DSR/Stochastic/Conc Model res-fit D106C".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Conc Model res-fit D10
+6C".pdf used on input line 986.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 979--988
+ []$[]$$[]$ 
+ []
+
+[51 <./Figures/Results_DSR/Stochastic/Conc Model res-fit D101C.pdf> <./Figures/
+Results_DSR/Stochastic/Conc Model res-fit D106C.pdf>]
+<"Figures/Results_DSR/Stochastic/Conc Model res-fit BIG".pdf, id=712, 433.62pt 
+x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/Conc Model res-fit BIG".pdf Graphic file 
+(type pdf)
+ <use "Figures/Results_DSR/Stochastic/Conc Model res-fit BIG".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Conc Model res-fit BIG
+".pdf used on input line 999.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_DSR/Stochastic/Conc Model res-fit WIL".pdf, id=713, 433.62pt 
+x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/Conc Model res-fit WIL".pdf Graphic file 
+(type pdf)
+ <use "Figures/Results_DSR/Stochastic/Conc Model res-fit WIL".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Conc Model res-fit WIL
+".pdf used on input line 1004.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 997--1006
+ []$[]$$[]$ 
+ []
+
+[52 <./Figures/Results_DSR/Stochastic/Conc Model res-fit BIG.pdf> <./Figures/Re
+sults_DSR/Stochastic/Conc Model res-fit WIL.pdf>]
+<"Figures/Results_DSR/Stochastic/Conc Model res-fit DDIV".pdf, id=733, 433.62pt
+ x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/Conc Model res-fit DDIV".pdf Graphic file
+ (type pdf)
+
+<use "Figures/Results_DSR/Stochastic/Conc Model res-fit DDIV".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Conc Model res-fit DDI
+V".pdf used on input line 1016.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+ [53 <./Figures/Results_DSR/Stochastic/Conc Model res-fit DDIV.pdf>] [54
 
 
-Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1677.
-See the caption package documentation for explanation.
-
-(./Tables/USRAtm.txt)
-
-Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
-(caption)                outside box or environment on input line 1685.
-See the caption package documentation for explanation.
 
 
-Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1685.
-See the caption package documentation for explanation.
 
-(./Tables/DSRAtm.txt) [104
+
+
+
+
+
 
 
 
 
 ]
+<"Figures/Results_USR/Stochastic/Conc Model ResDist U163".pdf, id=754, 433.62pt
+ x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model ResDist U163".pdf Graphic file
+ (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Conc Model ResDist U163".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model ResDist U16
+3".pdf used on input line 1035.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_USR/Stochastic/Conc Model ResDist U201".pdf, id=755, 433.62pt
+ x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model ResDist U201".pdf Graphic file
+ (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Conc Model ResDist U201".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model ResDist U20
+1".pdf used on input line 1040.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1033--1042
+ []$[]$$[]$ 
+ []
+
+[55 <./Figures/Results_USR/Stochastic/Conc Model ResDist U163.pdf> <./Figures/R
+esults_USR/Stochastic/Conc Model ResDist U201.pdf>]
+<"Figures/Results_USR/Stochastic/Conc Model ResDist U167".pdf, id=773, 433.62pt
+ x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model ResDist U167".pdf Graphic file
+ (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Conc Model ResDist U167".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model ResDist U16
+7".pdf used on input line 1053.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_USR/Stochastic/Conc Model ResDist CAN".pdf, id=774, 433.62pt 
+x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model ResDist CAN".pdf Graphic file 
+(type pdf)
+ <use "Figures/Results_USR/Stochastic/Conc Model ResDist CAN".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model ResDist CAN
+".pdf used on input line 1058.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1051--1060
+ []$[]$$[]$ 
+ []
+
+[56 <./Figures/Results_USR/Stochastic/Conc Model ResDist U167.pdf> <./Figures/R
+esults_USR/Stochastic/Conc Model ResDist CAN.pdf>]
+<"Figures/Results_USR/Stochastic/Conc Model ResDist TIM".pdf, id=792, 433.62pt 
+x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model ResDist TIM".pdf Graphic file 
+(type pdf)
+ <use "Figures/Results_USR/Stochastic/Conc Model ResDist TIM".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model ResDist TIM
+".pdf used on input line 1070.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_USR/Stochastic/Conc Model ResDist HRC".pdf, id=793, 433.62pt 
+x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model ResDist HRC".pdf Graphic file 
+(type pdf)
+ <use "Figures/Results_USR/Stochastic/Conc Model ResDist HRC".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model ResDist HRC
+".pdf used on input line 1075.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1068--1077
+ []$[]$$[]$ 
+ []
+
+[57 <./Figures/Results_USR/Stochastic/Conc Model ResDist TIM.pdf> <./Figures/Re
+sults_USR/Stochastic/Conc Model ResDist HRC.pdf>]
+<"Figures/Results_USR/Stochastic/Conc Model ResDist UDIV".pdf, id=811, 433.62pt
+ x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model ResDist UDIV".pdf Graphic file
+ (type pdf)
+
+<use "Figures/Results_USR/Stochastic/Conc Model ResDist UDIV".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model ResDist UDI
+V".pdf used on input line 1087.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_USR/Stochastic/Conc Model ResDist WTP".pdf, id=812, 433.62pt 
+x 433.62pt>
+File: "Figures/Results_USR/Stochastic/Conc Model ResDist WTP".pdf Graphic file 
+(type pdf)
+ <use "Figures/Results_USR/Stochastic/Conc Model ResDist WTP".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/Conc Model ResDist WTP
+".pdf used on input line 1092.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1085--1094
+ []$[]$$[]$ 
+ []
+
+[58 <./Figures/Results_USR/Stochastic/Conc Model ResDist UDIV.pdf> <./Figures/R
+esults_USR/Stochastic/Conc Model ResDist WTP.pdf>]
+<"Figures/Results_DSR/Stochastic/Conc Model ResDist D101C".pdf, id=831, 433.62p
+t x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/Conc Model ResDist D101C".pdf Graphic fil
+e (type pdf)
+
+<use "Figures/Results_DSR/Stochastic/Conc Model ResDist D101C".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Conc Model ResDist D10
+1C".pdf used on input line 1104.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_DSR/Stochastic/Conc Model ResDist D106C".pdf, id=832, 433.62p
+t x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/Conc Model ResDist D106C".pdf Graphic fil
+e (type pdf)
+
+<use "Figures/Results_DSR/Stochastic/Conc Model ResDist D106C".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Conc Model ResDist D10
+6C".pdf used on input line 1109.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1102--1111
+ []$[]$$[]$ 
+ []
+
+[59 <./Figures/Results_DSR/Stochastic/Conc Model ResDist D101C.pdf> <./Figures/
+Results_DSR/Stochastic/Conc Model ResDist D106C.pdf>]
+<"Figures/Results_DSR/Stochastic/Conc Model ResDist BIG".pdf, id=849, 433.62pt 
+x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/Conc Model ResDist BIG".pdf Graphic file 
+(type pdf)
+ <use "Figures/Results_DSR/Stochastic/Conc Model ResDist BIG".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Conc Model ResDist BIG
+".pdf used on input line 1122.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_DSR/Stochastic/Conc Model ResDist WIL".pdf, id=850, 433.62pt 
+x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/Conc Model ResDist WIL".pdf Graphic file 
+(type pdf)
+ <use "Figures/Results_DSR/Stochastic/Conc Model ResDist WIL".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Conc Model ResDist WIL
+".pdf used on input line 1127.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1120--1129
+ []$[]$$[]$ 
+ []
+
+[60 <./Figures/Results_DSR/Stochastic/Conc Model ResDist BIG.pdf> <./Figures/Re
+sults_DSR/Stochastic/Conc Model ResDist WIL.pdf>]
+<"Figures/Results_DSR/Stochastic/Conc Model ResDist DDIV".pdf, id=868, 433.62pt
+ x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/Conc Model ResDist DDIV".pdf Graphic file
+ (type pdf)
+
+<use "Figures/Results_DSR/Stochastic/Conc Model ResDist DDIV".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Conc Model ResDist DDI
+V".pdf used on input line 1139.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+ [61 <./Figures/Results_DSR/Stochastic/Conc Model ResDist DDIV.pdf>]
+<"Figures/Results_USR/Stochastic/c BOX Measure CSe".pdf, id=882, 433.62pt x 433
+.62pt>
+File: "Figures/Results_USR/Stochastic/c BOX Measure CSe".pdf Graphic file (type
+ pdf)
+ <use "Figures/Results_USR/Stochastic/c BOX Measure CSe".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/c BOX Measure CSe".pdf
+ used on input line 1155.
+(pdftex.def)             Requested size: 433.62pt x 433.63878pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [62
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
+<"Figures/Results_USR/Stochastic/c BOX Estimated CSe".pdf, id=890, 433.62pt x 4
+33.62pt>
+File: "Figures/Results_USR/Stochastic/c BOX Estimated CSe".pdf Graphic file (ty
+pe pdf)
+ <use "Figures/Results_USR/Stochastic/c BOX Estimated CSe".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/c BOX Estimated CSe".p
+df used on input line 1164.
+(pdftex.def)             Requested size: 433.62pt x 433.63878pt.
+
+<"Figures/Results_DSR/Stochastic/c BOX Measure CSe".pdf, id=893, 433.62pt x 433
+.62pt>
+File: "Figures/Results_DSR/Stochastic/c BOX Measure CSe".pdf Graphic file (type
+ pdf)
+ <use "Figures/Results_DSR/Stochastic/c BOX Measure CSe".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/c BOX Measure CSe".pdf
+ used on input line 1173.
+(pdftex.def)             Requested size: 433.62pt x 433.63878pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [63 <./Figures/Results_USR/Stochastic/c BOX Measure CSe.pdf>]
+<"Figures/Results_DSR/Stochastic/c BOX Estimated CSe".pdf, id=910, 433.62pt x 4
+33.62pt>
+File: "Figures/Results_DSR/Stochastic/c BOX Estimated CSe".pdf Graphic file (ty
+pe pdf)
+ <use "Figures/Results_DSR/Stochastic/c BOX Estimated CSe".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/c BOX Estimated CSe".p
+df used on input line 1182.
+(pdftex.def)             Requested size: 433.62pt x 433.63878pt.
+
+
+LaTeX Warning: Reference `tab:USRlocinfo' on page 64 undefined on input line 11
+86.
+
+
+LaTeX Warning: Reference `tab:DSRlocinfo' on page 64 undefined on input line 11
+86.
+
+
+LaTeX Warning: Reference `chap:study regions' on page 64 undefined on input lin
+e 1186.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [64 <./Figures/Results_USR/Stochastic/c BOX Estimated CSe.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [65 <./Figures/Results_DSR/Stochastic/c BOX Measure CSe.pdf>]
+Underfull \vbox (badness 2680) has occurred while \output is active []
+
+ [66 <./Figures/Results_DSR/Stochastic/c BOX Estimated CSe.pdf>] [67]
+<"Figures/Results_USR/Stochastic/c d&s est U163".pdf, id=964, 433.62pt x 433.62
+pt>
+File: "Figures/Results_USR/Stochastic/c d&s est U163".pdf Graphic file (type pd
+f)
+ <use "Figures/Results_USR/Stochastic/c d&s est U163".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/c d&s est U163".pdf us
+ed on input line 1199.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_USR/Stochastic/c d&s est U201".pdf, id=965, 433.62pt x 433.62
+pt>
+File: "Figures/Results_USR/Stochastic/c d&s est U201".pdf Graphic file (type pd
+f)
+ <use "Figures/Results_USR/Stochastic/c d&s est U201".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/c d&s est U201".pdf us
+ed on input line 1204.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1197--1206
+ []$[]$$[]$ 
+ []
+
+[68 <./Figures/Results_USR/Stochastic/c d&s est U163.pdf> <./Figures/Results_US
+R/Stochastic/c d&s est U201.pdf>]
+<"Figures/Results_USR/Stochastic/c d&s est CAN".pdf, id=982, 433.62pt x 433.62p
+t>
+File: "Figures/Results_USR/Stochastic/c d&s est CAN".pdf Graphic file (type pdf
+)
+ <use "Figures/Results_USR/Stochastic/c d&s est CAN".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/c d&s est CAN".pdf use
+d on input line 1217.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_USR/Stochastic/c d&s est CON".pdf, id=983, 433.62pt x 433.62p
+t>
+File: "Figures/Results_USR/Stochastic/c d&s est CON".pdf Graphic file (type pdf
+)
+ <use "Figures/Results_USR/Stochastic/c d&s est CON".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/c d&s est CON".pdf use
+d on input line 1222.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1215--1224
+ []$[]$$[]$ 
+ []
+
+[69 <./Figures/Results_USR/Stochastic/c d&s est CAN.pdf> <./Figures/Results_USR
+/Stochastic/c d&s est CON.pdf>]
+<"Figures/Results_USR/Stochastic/c d&s est FLS".pdf, id=1001, 433.62pt x 433.62
+pt>
+File: "Figures/Results_USR/Stochastic/c d&s est FLS".pdf Graphic file (type pdf
+)
+ <use "Figures/Results_USR/Stochastic/c d&s est FLS".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/c d&s est FLS".pdf use
+d on input line 1234.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_USR/Stochastic/c d&s est FLY".pdf, id=1002, 433.62pt x 433.62
+pt>
+File: "Figures/Results_USR/Stochastic/c d&s est FLY".pdf Graphic file (type pdf
+)
+ <use "Figures/Results_USR/Stochastic/c d&s est FLY".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/c d&s est FLY".pdf use
+d on input line 1239.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1232--1241
+ []$[]$$[]$ 
+ []
+
+[70 <./Figures/Results_USR/Stochastic/c d&s est FLS.pdf> <./Figures/Results_USR
+/Stochastic/c d&s est FLY.pdf>]
+<"Figures/Results_USR/Stochastic/c d&s est HOL".pdf, id=1020, 433.62pt x 433.62
+pt>
+File: "Figures/Results_USR/Stochastic/c d&s est HOL".pdf Graphic file (type pdf
+)
+ <use "Figures/Results_USR/Stochastic/c d&s est HOL".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/c d&s est HOL".pdf use
+d on input line 1251.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_USR/Stochastic/c d&s est HRC".pdf, id=1021, 433.62pt x 433.62
+pt>
+File: "Figures/Results_USR/Stochastic/c d&s est HRC".pdf Graphic file (type pdf
+)
+ <use "Figures/Results_USR/Stochastic/c d&s est HRC".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/c d&s est HRC".pdf use
+d on input line 1256.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1249--1258
+ []$[]$$[]$ 
+ []
+
+[71 <./Figures/Results_USR/Stochastic/c d&s est HOL.pdf> <./Figures/Results_USR
+/Stochastic/c d&s est HRC.pdf>]
+<"Figures/Results_USR/Stochastic/c d&s est RFD".pdf, id=1039, 433.62pt x 433.62
+pt>
+File: "Figures/Results_USR/Stochastic/c d&s est RFD".pdf Graphic file (type pdf
+)
+ <use "Figures/Results_USR/Stochastic/c d&s est RFD".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/c d&s est RFD".pdf use
+d on input line 1268.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_USR/Stochastic/c d&s est TIM".pdf, id=1040, 433.62pt x 433.62
+pt>
+File: "Figures/Results_USR/Stochastic/c d&s est TIM".pdf Graphic file (type pdf
+)
+ <use "Figures/Results_USR/Stochastic/c d&s est TIM".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/c d&s est TIM".pdf use
+d on input line 1273.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1266--1275
+ []$[]$$[]$ 
+ []
+
+[72 <./Figures/Results_USR/Stochastic/c d&s est RFD.pdf> <./Figures/Results_USR
+/Stochastic/c d&s est TIM.pdf>]
+<"Figures/Results_DSR/Stochastic/c d&s est D101C".pdf, id=1058, 433.62pt x 433.
+62pt>
+File: "Figures/Results_DSR/Stochastic/c d&s est D101C".pdf Graphic file (type p
+df)
+ <use "Figures/Results_DSR/Stochastic/c d&s est D101C".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/c d&s est D101C".pdf u
+sed on input line 1299.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_DSR/Stochastic/c d&s est D106C".pdf, id=1059, 433.62pt x 433.
+62pt>
+File: "Figures/Results_DSR/Stochastic/c d&s est D106C".pdf Graphic file (type p
+df)
+ <use "Figures/Results_DSR/Stochastic/c d&s est D106C".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/c d&s est D106C".pdf u
+sed on input line 1304.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1297--1306
+ []$[]$$[]$ 
+ []
+
+[73 <./Figures/Results_DSR/Stochastic/c d&s est D101C.pdf> <./Figures/Results_D
+SR/Stochastic/c d&s est D106C.pdf>]
+<"Figures/Results_DSR/Stochastic/c d&s est BIG".pdf, id=1077, 433.62pt x 433.62
+pt>
+File: "Figures/Results_DSR/Stochastic/c d&s est BIG".pdf Graphic file (type pdf
+)
+ <use "Figures/Results_DSR/Stochastic/c d&s est BIG".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/c d&s est BIG".pdf use
+d on input line 1317.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_DSR/Stochastic/c d&s est BUF".pdf, id=1078, 433.62pt x 433.62
+pt>
+File: "Figures/Results_DSR/Stochastic/c d&s est BUF".pdf Graphic file (type pdf
+)
+ <use "Figures/Results_DSR/Stochastic/c d&s est BUF".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/c d&s est BUF".pdf use
+d on input line 1322.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1315--1324
+ []$[]$$[]$ 
+ []
+
+[74 <./Figures/Results_DSR/Stochastic/c d&s est BIG.pdf> <./Figures/Results_DSR
+/Stochastic/c d&s est BUF.pdf>]
+<"Figures/Results_DSR/Stochastic/c d&s est WIL".pdf, id=1097, 433.62pt x 433.62
+pt>
+File: "Figures/Results_DSR/Stochastic/c d&s est WIL".pdf Graphic file (type pdf
+)
+ <use "Figures/Results_DSR/Stochastic/c d&s est WIL".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/c d&s est WIL".pdf use
+d on input line 1334.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+ [75 <./Figures/Results_DSR/Stochastic/c d&s est WIL.pdf>] [76
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
+<"Figures/Results_USR/Deterministic/c TS U163".pdf, id=1117, 433.62pt x 433.62p
+t>
+File: "Figures/Results_USR/Deterministic/c TS U163".pdf Graphic file (type pdf)
+
+ <use "Figures/Results_USR/Deterministic/c TS U163".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Deterministic/c TS U163".pdf used
+ on input line 1352.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_USR/Stochastic/c TS U163".pdf, id=1118, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/c TS U163".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/c TS U163".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/c TS U163".pdf used on
+ input line 1357.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1349--1360
+ []$$[]$ 
+ []
+
+[77 <./Figures/Results_USR/Deterministic/c TS U163.pdf> <./Figures/Results_USR/
+Stochastic/c TS U163.pdf>]
+<"Figures/Results_USR/Deterministic/c TS U201".pdf, id=1138, 433.62pt x 433.62p
+t>
+File: "Figures/Results_USR/Deterministic/c TS U201".pdf Graphic file (type pdf)
+
+ <use "Figures/Results_USR/Deterministic/c TS U201".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Deterministic/c TS U201".pdf used
+ on input line 1371.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_USR/Stochastic/c TS U201".pdf, id=1139, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/c TS U201".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/c TS U201".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/c TS U201".pdf used on
+ input line 1376.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1368--1379
+ []$$[]$ 
+ []
+
+[78 <./Figures/Results_USR/Deterministic/c TS U201.pdf> <./Figures/Results_USR/
+Stochastic/c TS U201.pdf>]
+<"Figures/Results_USR/Deterministic/c TS CAN".pdf, id=1160, 433.62pt x 433.62pt
+>
+File: "Figures/Results_USR/Deterministic/c TS CAN".pdf Graphic file (type pdf)
+ <use "Figures/Results_USR/Deterministic/c TS CAN".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Deterministic/c TS CAN".pdf used 
+on input line 1389.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_USR/Stochastic/c TS CAN".pdf, id=1161, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/c TS CAN".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/c TS CAN".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/c TS CAN".pdf used on 
+input line 1394.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1386--1397
+ []$$[]$ 
+ []
+
+[79 <./Figures/Results_USR/Deterministic/c TS CAN.pdf> <./Figures/Results_USR/S
+tochastic/c TS CAN.pdf>]
+<"Figures/Results_USR/Deterministic/c TS CON".pdf, id=1183, 433.62pt x 433.62pt
+>
+File: "Figures/Results_USR/Deterministic/c TS CON".pdf Graphic file (type pdf)
+ <use "Figures/Results_USR/Deterministic/c TS CON".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Deterministic/c TS CON".pdf used 
+on input line 1407.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_USR/Stochastic/c TS CON".pdf, id=1184, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/c TS CON".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/c TS CON".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/c TS CON".pdf used on 
+input line 1412.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1404--1415
+ []$$[]$ 
+ []
+
+[80 <./Figures/Results_USR/Deterministic/c TS CON.pdf> <./Figures/Results_USR/S
+tochastic/c TS CON.pdf>]
+<"Figures/Results_USR/Deterministic/c TS FLS".pdf, id=1205, 433.62pt x 433.62pt
+>
+File: "Figures/Results_USR/Deterministic/c TS FLS".pdf Graphic file (type pdf)
+ <use "Figures/Results_USR/Deterministic/c TS FLS".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Deterministic/c TS FLS".pdf used 
+on input line 1425.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_USR/Stochastic/c TS FLS".pdf, id=1206, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/c TS FLS".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/c TS FLS".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/c TS FLS".pdf used on 
+input line 1430.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1422--1433
+ []$$[]$ 
+ []
+
+[81 <./Figures/Results_USR/Deterministic/c TS FLS.pdf> <./Figures/Results_USR/S
+tochastic/c TS FLS.pdf>]
+<"Figures/Results_USR/Deterministic/c TS FLY".pdf, id=1228, 433.62pt x 433.62pt
+>
+File: "Figures/Results_USR/Deterministic/c TS FLY".pdf Graphic file (type pdf)
+ <use "Figures/Results_USR/Deterministic/c TS FLY".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Deterministic/c TS FLY".pdf used 
+on input line 1443.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_USR/Stochastic/c TS FLY".pdf, id=1229, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/c TS FLY".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/c TS FLY".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/c TS FLY".pdf used on 
+input line 1448.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1440--1451
+ []$$[]$ 
+ []
+
+[82 <./Figures/Results_USR/Deterministic/c TS FLY.pdf> <./Figures/Results_USR/S
+tochastic/c TS FLY.pdf>]
+<"Figures/Results_USR/Deterministic/c TS HOL".pdf, id=1250, 433.62pt x 433.62pt
+>
+File: "Figures/Results_USR/Deterministic/c TS HOL".pdf Graphic file (type pdf)
+ <use "Figures/Results_USR/Deterministic/c TS HOL".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Deterministic/c TS HOL".pdf used 
+on input line 1461.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_USR/Stochastic/c TS HOL".pdf, id=1251, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/c TS HOL".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/c TS HOL".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/c TS HOL".pdf used on 
+input line 1466.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1458--1469
+ []$$[]$ 
+ []
+
+[83 <./Figures/Results_USR/Deterministic/c TS HOL.pdf> <./Figures/Results_USR/S
+tochastic/c TS HOL.pdf>]
+<"Figures/Results_USR/Deterministic/c TS HRC".pdf, id=1272, 433.62pt x 433.62pt
+>
+File: "Figures/Results_USR/Deterministic/c TS HRC".pdf Graphic file (type pdf)
+ <use "Figures/Results_USR/Deterministic/c TS HRC".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Deterministic/c TS HRC".pdf used 
+on input line 1479.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_USR/Stochastic/c TS HRC".pdf, id=1273, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/c TS HRC".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/c TS HRC".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/c TS HRC".pdf used on 
+input line 1484.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1476--1487
+ []$$[]$ 
+ []
+
+[84 <./Figures/Results_USR/Deterministic/c TS HRC.pdf> <./Figures/Results_USR/S
+tochastic/c TS HRC.pdf>]
+<"Figures/Results_USR/Deterministic/c TS RFD".pdf, id=1294, 433.62pt x 433.62pt
+>
+File: "Figures/Results_USR/Deterministic/c TS RFD".pdf Graphic file (type pdf)
+ <use "Figures/Results_USR/Deterministic/c TS RFD".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Deterministic/c TS RFD".pdf used 
+on input line 1497.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_USR/Stochastic/c TS RFD".pdf, id=1295, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/c TS RFD".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/c TS RFD".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/c TS RFD".pdf used on 
+input line 1502.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1494--1505
+ []$$[]$ 
+ []
+
+[85 <./Figures/Results_USR/Deterministic/c TS RFD.pdf> <./Figures/Results_USR/S
+tochastic/c TS RFD.pdf>]
+<"Figures/Results_USR/Deterministic/c TS TIM".pdf, id=1317, 433.62pt x 433.62pt
+>
+File: "Figures/Results_USR/Deterministic/c TS TIM".pdf Graphic file (type pdf)
+ <use "Figures/Results_USR/Deterministic/c TS TIM".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Deterministic/c TS TIM".pdf used 
+on input line 1515.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_USR/Stochastic/c TS TIM".pdf, id=1318, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/c TS TIM".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/c TS TIM".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/c TS TIM".pdf used on 
+input line 1520.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1512--1523
+ []$$[]$ 
+ []
+
+[86 <./Figures/Results_USR/Deterministic/c TS TIM.pdf> <./Figures/Results_USR/S
+tochastic/c TS TIM.pdf>]
+<"Figures/Results_DSR/Deterministic/c TS D101C".pdf, id=1339, 433.62pt x 433.62
+pt>
+File: "Figures/Results_DSR/Deterministic/c TS D101C".pdf Graphic file (type pdf
+)
+ <use "Figures/Results_DSR/Deterministic/c TS D101C".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Deterministic/c TS D101C".pdf use
+d on input line 1552.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_DSR/Stochastic/c TS D101C".pdf, id=1340, 433.62pt x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/c TS D101C".pdf Graphic file (type pdf)
+<use "Figures/Results_DSR/Stochastic/c TS D101C".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/c TS D101C".pdf used o
+n input line 1557.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1549--1560
+ []$$[]$ 
+ []
+
+[87 <./Figures/Results_DSR/Deterministic/c TS D101C.pdf> <./Figures/Results_DSR
+/Stochastic/c TS D101C.pdf>]
+<"Figures/Results_DSR/Deterministic/c TS D106C".pdf, id=1361, 433.62pt x 433.62
+pt>
+File: "Figures/Results_DSR/Deterministic/c TS D106C".pdf Graphic file (type pdf
+)
+ <use "Figures/Results_DSR/Deterministic/c TS D106C".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Deterministic/c TS D106C".pdf use
+d on input line 1571.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_DSR/Stochastic/c TS D106C".pdf, id=1362, 433.62pt x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/c TS D106C".pdf Graphic file (type pdf)
+<use "Figures/Results_DSR/Stochastic/c TS D106C".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/c TS D106C".pdf used o
+n input line 1576.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1568--1579
+ []$$[]$ 
+ []
+
+[88 <./Figures/Results_DSR/Deterministic/c TS D106C.pdf> <./Figures/Results_DSR
+/Stochastic/c TS D106C.pdf>]
+<"Figures/Results_DSR/Deterministic/c TS BIG".pdf, id=1383, 433.62pt x 433.62pt
+>
+File: "Figures/Results_DSR/Deterministic/c TS BIG".pdf Graphic file (type pdf)
+ <use "Figures/Results_DSR/Deterministic/c TS BIG".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Deterministic/c TS BIG".pdf used 
+on input line 1589.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_DSR/Stochastic/c TS BIG".pdf, id=1384, 433.62pt x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/c TS BIG".pdf Graphic file (type pdf)
+
+<use "Figures/Results_DSR/Stochastic/c TS BIG".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/c TS BIG".pdf used on 
+input line 1594.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1586--1597
+ []$$[]$ 
+ []
+
+[89 <./Figures/Results_DSR/Deterministic/c TS BIG.pdf> <./Figures/Results_DSR/S
+tochastic/c TS BIG.pdf>]
+<"Figures/Results_DSR/Deterministic/c TS BUF".pdf, id=1405, 433.62pt x 433.62pt
+>
+File: "Figures/Results_DSR/Deterministic/c TS BUF".pdf Graphic file (type pdf)
+ <use "Figures/Results_DSR/Deterministic/c TS BUF".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Deterministic/c TS BUF".pdf used 
+on input line 1607.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_DSR/Stochastic/c TS BUF".pdf, id=1406, 433.62pt x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/c TS BUF".pdf Graphic file (type pdf)
+
+<use "Figures/Results_DSR/Stochastic/c TS BUF".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/c TS BUF".pdf used on 
+input line 1612.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1604--1615
+ []$$[]$ 
+ []
+
+[90 <./Figures/Results_DSR/Deterministic/c TS BUF.pdf> <./Figures/Results_DSR/S
+tochastic/c TS BUF.pdf>]
+<"Figures/Results_DSR/Deterministic/c TS WIL".pdf, id=1427, 433.62pt x 433.62pt
+>
+File: "Figures/Results_DSR/Deterministic/c TS WIL".pdf Graphic file (type pdf)
+ <use "Figures/Results_DSR/Deterministic/c TS WIL".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Deterministic/c TS WIL".pdf used 
+on input line 1625.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+<"Figures/Results_DSR/Stochastic/c TS WIL".pdf, id=1428, 433.62pt x 433.62pt>
+File: "Figures/Results_DSR/Stochastic/c TS WIL".pdf Graphic file (type pdf)
+
+<use "Figures/Results_DSR/Stochastic/c TS WIL".pdf>
+Package pdftex.def Info: "Figures/Results_DSR/Stochastic/c TS WIL".pdf used on 
+input line 1630.
+(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
+
+Overfull \hbox (7.2241pt too wide) in paragraph at lines 1622--1633
+ []$$[]$ 
+ []
+
+[91 <./Figures/Results_DSR/Deterministic/c TS WIL.pdf> <./Figures/Results_DSR/S
+tochastic/c TS WIL.pdf>] (./Tables/c U163.txt) (./Tables/c U201.txt)
+(./Tables/c CAN.txt) (./Tables/c CON.txt) (./Tables/c FLS.txt)
+(./Tables/c FLY.txt) (./Tables/c HOL.txt) (./Tables/c HRC.txt)
+(./Tables/c RFD.txt) (./Tables/c TIM.txt) (./Tables/c WTP.txt)
+(./Tables/c D101C.txt) (./Tables/c D106C.txt) (./Tables/c BIG.txt)
+(./Tables/c BUF.txt) (./Tables/c WIL.txt) [92
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+] [93] [94] [95] [96] [97]
+[98] [99] [100] [101]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [102
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [103]
+
+LaTeX Warning: Reference `fig:CSeError' on page 104 undefined on input line 181
+2.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [104]
+<"Figures/Results_USR/Stochastic/CSe Error".pdf, id=1517, 433.62pt x 433.62pt>
+File: "Figures/Results_USR/Stochastic/CSe Error".pdf Graphic file (type pdf)
+
+<use "Figures/Results_USR/Stochastic/CSe Error".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/CSe Error".pdf used on
+ input line 1817.
+(pdftex.def)             Requested size: 433.62pt x 433.63878pt.
+
+<"Figures/Results_USR/Stochastic/CSe Error Scatter".pdf, id=1519, 433.62pt x 43
+3.62pt>
+File: "Figures/Results_USR/Stochastic/CSe Error Scatter".pdf Graphic file (type
+ pdf)
+ <use "Figures/Results_USR/Stochastic/CSe Error Scatter".pdf>
+Package pdftex.def Info: "Figures/Results_USR/Stochastic/CSe Error Scatter".pdf
+ used on input line 1827.
+(pdftex.def)             Requested size: 433.62pt x 433.63878pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [105]
-[106] [107
-
-]
-<"Figures/Results_USR/Deterministic/Balance Water".pdf, id=1476, 433.62pt x 433
-.62pt>
-File: "Figures/Results_USR/Deterministic/Balance Water".pdf Graphic file (type 
-pdf)
- <use "Figures/Results_USR/Deterministic/Balance Water".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Deterministic/Balance Water".pdf 
-used on input line 1710.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-<"Figures/Results_USR/Stochastic/Balance Water".pdf, id=1477, 433.62pt x 433.62
-pt>
-File: "Figures/Results_USR/Stochastic/Balance Water".pdf Graphic file (type pdf
-)
- <use "Figures/Results_USR/Stochastic/Balance Water".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/Balance Water".pdf use
-d on input line 1715.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 1707--1717
- []$$[]$ 
- []
-
-[108 <./Figures/Results_USR/Deterministic/Balance Water.pdf> <./Figures/Results
-_USR/Stochastic/Balance Water.pdf>]
-<"Figures/Results_DSR/Deterministic/Balance Water".pdf, id=1497, 433.62pt x 433
-.62pt>
-File: "Figures/Results_DSR/Deterministic/Balance Water".pdf Graphic file (type 
-pdf)
- <use "Figures/Results_DSR/Deterministic/Balance Water".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Deterministic/Balance Water".pdf 
-used on input line 1729.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-<"Figures/Results_DSR/Stochastic/Balance Water".pdf, id=1498, 433.62pt x 433.62
-pt>
-File: "Figures/Results_DSR/Stochastic/Balance Water".pdf Graphic file (type pdf
-)
- <use "Figures/Results_DSR/Stochastic/Balance Water".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Stochastic/Balance Water".pdf use
-d on input line 1734.
-(pdftex.def)             Requested size: 295.94234pt x 295.95604pt.
-
-Overfull \hbox (7.2241pt too wide) in paragraph at lines 1726--1736
- []$$[]$ 
- []
-
-[109 <./Figures/Results_DSR/Deterministic/Balance Water.pdf> <./Figures/Results
-_DSR/Stochastic/Balance Water.pdf>]
-
-Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
-(caption)                outside box or environment on input line 1747.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1747.
-See the caption package documentation for explanation.
-
-(./Tables/USR_UNPS.txt)
-
-Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
-(caption)                outside box or environment on input line 1755.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1755.
-See the caption package documentation for explanation.
-
-(./Tables/DSR_UNPS.txt) [110
-
-
-
-
-]
-<"Figures/Results_USR/Stochastic/M Water Contrib 1".pdf, id=1525, 433.62pt x 43
-3.62pt>
-File: "Figures/Results_USR/Stochastic/M Water Contrib 1".pdf Graphic file (type
- pdf)
- <use "Figures/Results_USR/Stochastic/M Water Contrib 1".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/M Water Contrib 1".pdf
- used on input line 1767.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_USR/Stochastic/M Water Contrib 3".pdf, id=1526, 433.62pt x 43
-3.62pt>
-File: "Figures/Results_USR/Stochastic/M Water Contrib 3".pdf Graphic file (type
- pdf)
- <use "Figures/Results_USR/Stochastic/M Water Contrib 3".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/M Water Contrib 3".pdf
- used on input line 1772.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_USR/Stochastic/M Water Contrib 2".pdf, id=1527, 433.62pt x 43
-3.62pt>
-File: "Figures/Results_USR/Stochastic/M Water Contrib 2".pdf Graphic file (type
- pdf)
- <use "Figures/Results_USR/Stochastic/M Water Contrib 2".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/M Water Contrib 2".pdf
- used on input line 1778.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_USR/Stochastic/M Water Contrib 4".pdf, id=1528, 433.62pt x 43
-3.62pt>
-File: "Figures/Results_USR/Stochastic/M Water Contrib 4".pdf Graphic file (type
- pdf)
- <use "Figures/Results_USR/Stochastic/M Water Contrib 4".pdf>
-Package pdftex.def Info: "Figures/Results_USR/Stochastic/M Water Contrib 4".pdf
- used on input line 1783.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DSR/Stochastic/M Water Contrib 1".pdf, id=1529, 433.62pt x 43
-3.62pt>
-File: "Figures/Results_DSR/Stochastic/M Water Contrib 1".pdf Graphic file (type
- pdf)
- <use "Figures/Results_DSR/Stochastic/M Water Contrib 1".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Stochastic/M Water Contrib 1".pdf
- used on input line 1794.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DSR/Stochastic/M Water Contrib 3".pdf, id=1530, 433.62pt x 43
-3.62pt>
-File: "Figures/Results_DSR/Stochastic/M Water Contrib 3".pdf Graphic file (type
- pdf)
- <use "Figures/Results_DSR/Stochastic/M Water Contrib 3".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Stochastic/M Water Contrib 3".pdf
- used on input line 1799.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DSR/Stochastic/M Water Contrib 2".pdf, id=1531, 433.62pt x 43
-3.62pt>
-File: "Figures/Results_DSR/Stochastic/M Water Contrib 2".pdf Graphic file (type
- pdf)
- <use "Figures/Results_DSR/Stochastic/M Water Contrib 2".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Stochastic/M Water Contrib 2".pdf
- used on input line 1805.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-<"Figures/Results_DSR/Stochastic/M Water Contrib 4".pdf, id=1532, 433.62pt x 43
-3.62pt>
-File: "Figures/Results_DSR/Stochastic/M Water Contrib 4".pdf Graphic file (type
- pdf)
- <use "Figures/Results_DSR/Stochastic/M Water Contrib 4".pdf>
-Package pdftex.def Info: "Figures/Results_DSR/Stochastic/M Water Contrib 4".pdf
- used on input line 1810.
-(pdftex.def)             Requested size: 211.3883pt x 211.39055pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [111]
-
-Package lineno Warning: Linenumber reference failed, 
-(lineno)                rerun to get it right.
-
-(./Tables/USR W Contrib.txt) (./Tables/DSR W Contrib.txt) [112 <./Figures/Resul
-ts_USR/Stochastic/M Water Contrib 1.pdf> <./Figures/Results_USR/Stochastic/M Wa
-ter Contrib 3.pdf> <./Figures/Results_USR/Stochastic/M Water Contrib 2.pdf> <./
-Figures/Results_USR/Stochastic/M Water Contrib 4.pdf>]
-Underfull \vbox (badness 5161) has occurred while \output is active []
-
- [113 <./Figures/Results_DSR/Stochastic/M Water Contrib 1.pdf> <./Figures/Resul
-ts_DSR/Stochastic/M Water Contrib 3.pdf> <./Figures/Results_DSR/Stochastic/M Wa
-ter Contrib 2.pdf> <./Figures/Results_DSR/Stochastic/M Water Contrib 4.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [114]
-[115])
+[106 <./Figures/Results_USR/Stochastic/CSe Error.pdf>] [107 <./Figures/Results_
+USR/Stochastic/CSe Error Scatter.pdf>])
 References
-
-Overfull \hbox (7.16972pt too wide) in paragraph at lines 50--50
-\OT1/cmr/m/it/12 tis-tics: a Se-ries of Text-books and Mono-graphs, Vol. 68)\OT
-1/cmr/m/n/12 . 1st ed. Dekker. \OT1/cmr/m/sc/12 isbn\OT1/cmr/m/n/12 : 978082477
-4875. 
- []
-
-[116
+[108
 
 
 
 
 
 
-] [117] [118]
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 76.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 76.
- (./MorseThesis.aux (./CH04-WaterBalanceModel.aux))
+ (./MorseThesis.aux (./CH05-MassBalanceModel.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 76.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 76.
-Package rerunfilecheck Info: File `MorseThesis.out' has not changed.
-(rerunfilecheck)             Checksum: F6262F0556EB5ABB4F06460BD473612E;783.
 
+
+Package rerunfilecheck Warning: File `MorseThesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `MorseThesis.out':
+(rerunfilecheck)             Before: 025DFA3CF44F54A7BEDCF8EFB7B7795B;326
+(rerunfilecheck)             After:  1123E5A2139E7E0525F451950BD4CB95;326.
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 76.
 
@@ -3025,35 +3217,40 @@ Package logreq Info: Writing requests to 'MorseThesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34126 strings out of 493117
- 671078 string characters out of 6135433
- 1128700 words of memory out of 5000000
- 36480 multiletter control sequences out of 15000+600000
- 15748 words of font info for 62 fonts, out of 8000000 for 9000
+ 33902 strings out of 493117
+ 676729 string characters out of 6135433
+ 1108526 words of memory out of 5000000
+ 36343 multiletter control sequences out of 15000+600000
+ 17367 words of font info for 68 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 66i,16n,77p,10440b,1604s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
-/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
-al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
-/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
-4/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on MorseThesis.pdf (118 pages, 5092529 bytes).
+ 66i,15n,77p,10440b,1468s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{chapter*.89} has been referenced but does not exi
+st, replaced by a fixed one
+
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on MorseThesis.pdf (108 pages, 1724567 bytes).
 PDF statistics:
- 1768 PDF objects out of 2073 (max. 8388607)
- 1423 compressed objects within 15 object streams
- 267 named destinations out of 1000 (max. 500000)
- 530 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1661 PDF objects out of 1728 (max. 8388607)
+ 1287 compressed objects within 13 object streams
+ 211 named destinations out of 1000 (max. 500000)
+ 625 words of extra memory for PDF output out of 10000 (max. 10000000)
 
