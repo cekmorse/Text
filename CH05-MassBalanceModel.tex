@@ -9,7 +9,7 @@
 \section{Mass Balance Model Applied to the LARV}
 \label{sec:AppliedMassModel}
 
-The purpose of the mass balance model in this thesis is to determine the mass of unaccounted for dissolved selenium being transported into and out of the the study reaches in the LARV.  The mass transport is called the mass loading, where mass loading refers to mass entering the river channel and mass unloading refers to mass leaving the river channel.  The basic concept of the mass balance lies in Equation \ref{eq:mbal01}.
+The purpose of the mass balance model in this thesis is to determine the mass of unaccounted for dissolved selenium being transported into and out of the the study reaches in the LARV.  The mass transport is called the mass loading, where mass loading refers to mass entering the river channel and mass unloading refers to mass leaving the river channel.  The basic concept of the mass balance lies in Equation \ref{eq:mbal01}.  This equation is generalized for any dissolved or suspended constituent.  All references to loadings ($ L $) in this thesis is specific to selenium.
 \begin{equation}
 	\label{eq:mbal01}
 	L=Q \cdot C
@@ -1989,10 +1989,13 @@ Figures \ref{fig:massSegmentStoreChange_USR} and \ref{fig:massSegmentStoreChange
 		\caption{USR river segment deterministic and stochastic dissolved selenium mass storage change time series.}
 	\end{figure}
 \end{landscape}
+\subfiguretop
 
 Comparing the sub-figures provides for a visual goodness-of-fit analysis between the deterministic and stochastic models.  All USR river segment stochastic models agree with the deterministic models.  It should be noted that there is quite a fair amount of uncertainty associated with the values calculated for the stochastic model.  This is the compounding of uncertainties from the multiple input variables.  This is as expected for a complex multi-variate model.
 
 The calculated selenium storage change values for each reach were compared between the deterministic and stochastic models and are reported in tables \ref{tab:massSegmentStoreChange_USR} and \ref{tab:massSegmentStoreChange_DSR} for the USR and DSR, respectively.  All selenium storage change values in the figures and tables are presented in units of \si{\kilo\gram\per\day\per\kilo\meter}.  This table is presented in a similar fashion to other comparison tables in this chapter.
+
+These tables show that the deviation between the deterministic model time-series and the stochastic model mean time-series is low, but higher than the values calculated for the individual input variables.  This is most likely indicative of the compounding of input variable uncertainties.  The percent deviation between the models for segment B in the USR is deceptive.  Both the deterministic model time-series mean value and the stochastic model mean time-series mean value are near zero.  This causes any deviation to appear large.
 
 \subtabletop
 \begin{table}[htbp]
@@ -2058,130 +2061,98 @@ The calculated selenium storage change values for each reach were compared betwe
 	\end{subtable}\\
 \end{table}
 
+\clearpage{}
 
-
-
-%This table shows that the deviation between the deterministic and 1-D stochastic mean models is low, but higher than the values calculated for the individual input variables.  This is most likely indicative of the compounding of input variable uncertainties.  The percent deviation between the models for segment B in the USR is deceptive.  Both the deterministic model mean value and the 1-D stochastic mean model mean value are near zero.  This causes any deviation to appear large.
-%
 %\textsc{B - present river reach results}\\
-%
-%The deterministic and stochastic mass balance models each consist of two major components.  The selenium transport component is the sum of all selenium mass transport and the selenium storage component is the sum of all river segment mass storage changes.  Mass transport is the mass that is transported in or out of the river reach by tributaries or canals, respectively.  Unlike the water balance model, the atmospheric model is not included.  As discussed earlier, there is insufficient evidence to support any calculations used to estimate selenium loss to the atmosphere.
-%
-%Values and figures presented in this section are the selenium storage component sub-set of the complete mass model results.  The analyses in this section are restricted to performing a reasonability check on the results.  Results in this section are to be compared with results from the other sub-sections from both the USR and DSR models to determine if results are acceptable.  Unacceptable results would indicate an error in the computational code or an underlying assumption.
-%
-%Figures \ref{fig:USRMassStore} and \ref{fig:DSRMassStore} present the selenium storage component results in the USR and DSR, respectively, as time series plots.  The left and right sub-figures present the deterministic and stochastic time series, respectively.  The black line in the stochastic figures is the 1-D stochastic mean results with the blue band indicating the 95\% CIR.  Values in these figures and associated tables are in units of \si{\kilo\gram\per\day\per\kilo\meter}.  Standardizing the results allows for comparisons to be made between the two study reaches and between mass balance model components.  Positive values indicate that the reach gained selenium during the given time step.
-%
-%\begin{figure}[htbp]
-%\centering
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DUSR/Balance Mass - Storage"}
-%		\caption{Deterministic Model.}
-%		\label{sub:USRMassStoreD}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_USR/Balance Mass - Storage"}
-%		\caption{Stochastic Model.}
-%		\label{sub:USRMassStoreS}
-%	\end{subfigure}
-%	\caption[USR Arkansas River deterministic and stochastic stored mass change time series.]{USR Arkansas River deterministic and stochastic stored mass change time series.}
-%	\label{fig:USRMassStore}
-%\end{figure}
-%
-%\begin{figure}[htbp]
-%\centering
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DDSR/Balance Mass - Storage"}
-%		\caption{Deterministic Model.}
-%		\label{sub:DSRMassStoreD}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\textwidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{"Figures/Results_DSR/Balance Mass - Storage"}
-%		\caption{Stochastic Model.}
-%		\label{sub:DSRMassStoreS}
-%	\end{subfigure}
-%		\caption[DSR Arkansas River deterministic and stochastic stored mass change time series.]{DSR Arkansas River deterministic and stochastic stored mass change time series.}
-%	\label{fig:DSRMassStore}
-%\end{figure}
-%
-%The figures show that there is a definite seasonal variation in the selenium storage component.  This temporal relationship follows the same pattern identified with the water balance model storage component.  There is a very strong visual relationship between the water balance model flow component and the mass balance model selenium transport component.  This is to be expected since the water balance storage component is the prime contributor to the mass balance selenium storage component.
-%
-%These figures show that uncertainty with the selenium storage component is very large.  This is to be expected since the mass balance models contain all of the uncertainty from the water balance model and the selenium concentration estimation linear models.
-%
-%The distribution of all realizations within each time step was analyzed to determine a distribution type.  This analysis was performed to determine if the assumption that the deterministic model results were representative of the stochastic model.  Testing was performed by comparing K-S statistics for the best fit normal, log-normal, logistic, exponential, gamma, and Weibull distributions.  In the USR 94\% of all atmospheric component time steps best fit a normal distribution, with the other 6\% best fit by a gamma distribution.  In the DSR 99\% of all atmospheric component time steps best fit a normal distribution, with the other 1\% best fit by a gamma distribution.  This indicates that for both the USR and DSR, the distributions across the realizations are normal with some slight skewness. 
-%
-%Tables \ref{tab:USRSeStore} and \ref{tab:DSRSeStore} presents summary statistics of the deterministic and stochastic atmospheric component.  Values are presented in units of \si{\cubic\meter\per\second\per\kilo\meter}.   These tables show the mean, 2.5th, and 97.5th percentile of the deterministic model and the same statistics applied to the three 1-D stochastic models.  This additional set of statistics from the 1-D stochastic 2.5th and 95.5th percentile models provide a better understanding of the extremes of the calculated values.  As before, comparison between the deterministic and stochastic models should be limited to the comparing the deterministic model to the 1-D stochastic mean model.  Also included in these two tables is the percent difference between the deterministic model and the 1-D stochastic mean model.  The mean, 2.5th, and 97.5th percentile values were calculated from the percent difference of the 1-D stochastic mean model from the deterministic model at each time step.  These values show the range of the variance from the deterministic model.
-%
-%\begin{table}[htbp]
-%\centering
-%\caption[USR river section deterministic and stochastic model selenium storage changes.]{USR river section deterministic and stochastic model selenium storage changes.  All values are in \si{\kilo\gram\per\day\per\kilo\meter}.}
-%\label{tab:USRSeStore}
-%\begin{tabular}{c|ccc}
-%	\toprule
-%	Model& 2.5\% & Mean & 97.5\% \\
-%	\midrule
-%	\midrule
-%	Deterministic    &	-0.05792&	-0.0006277&	0.07671\\
-%	\midrule                                            
-%	Stochastic 2.5\% &	-0.1006&	-0.03036&	0.0348\\ 
-%	Stochastic Mean  &	-0.05719&	-0.0001518&	0.07788\\
-%	Stochastic 97.5\%&	-0.02281&	0.02978&	0.13\\   
-%	\midrule                                            
-%	\% Diff. Means&		-27.83&	-0.4654&	45.78\\
-%	\bottomrule
-%\end{tabular}
-%\end{table}
-%
-%\begin{table}[htbp]
-%\centering
-%\caption[DSR river section deterministic and stochastic model selenium storage changes.]{DSR river section deterministic and stochastic model selenium storage changes.  Values are in units of \si{\kilo\gram\per\day\per\kilo\meter}.}
-%\label{tab:DSRSeStore}
-%\begin{tabular}{c|ccc}
-%	\toprule
-%	Model& 2.5\% & Mean & 97.5\% \\
-%	\midrule
-%	\midrule
-%	Deterministic    &	-0.01058&	-0.0001905&	0.01124\\
-%	\midrule                                              
-%	Stochastic 2.5\% &	-0.02972&	-0.01362&	0.0001171\\
-%	Stochastic Mean  &	-0.01272&	-0.0001761&	0.01265\\  
-%	Stochastic 97.5\%&	0.0008917&	0.01324&	0.03121\\  
-%	\midrule                                              
-%	\% Diff. Means&		-139.8&	-9.668&	139.6\\
-%	\bottomrule
-%\end{tabular}
-%\end{table}
-%
-%The mean of the percent difference between the deterministic and 1-D stochastic mean models is low, but not insignificant.  This indicates that the deterministic model is fairly representative of the stochastic model expected value.  The high percent differences at the 2.5th and 97.5th percentile indicate that there is still a large range of uncertainty contained within the stochastic model that the deterministic model cannot replicate.  The deterministic model can be used to determine how changes can affect a reach over a span of time, but using it to estimate values for specific time steps is unwise as the differences noted at individual time steps is too large to account for.
-%
+
+Figures \ref{fig:massStoreChange_USR} and \ref{fig:massStoreChange_DSR} are the time-series of the deterministic and stochastic river reach selenium mass storage changes for the USR and DSR, respectively.  The black line in the stochastic sub-figure is the mean for each time step.  The blue band encompasses the 95\% CIR for each time step.  Values in these figures and associated tables are in units of \si{\kilo\gram\per\day\per\kilo\meter}.  Standardizing the results allows for comparisons to be made between the two study reaches and between mass balance model components.  Positive values indicate that the reach gained selenium during the given time step.
+
+\subfiguretop
+\begin{landscape}
+	\begin{figure}
+		$ \displaystyle \frac{\Delta S_{M}}{\Delta t} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Deterministic/Balance Mass - Storage"}
+			\caption{Deterministic Model.}
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/Balance Mass - Storage"}
+			\caption{Stochastic Model.}
+		\end{subfigure}
+		\caption[USR river reach deterministic and stochastic dissolved selenium mass storage change time series.]{USR river reach deterministic and stochastic dissolved selenium mass storage change time series.  For the stochastic model, the line is the mean of the realizations and the blue band is the 97.5th CIR.}
+		\label{fig:massStoreChange_USR}
+	\end{figure}
+\end{landscape}
+
+\subfiguretop
+\begin{landscape}
+	\begin{figure}
+		$ \displaystyle \frac{\Delta S_{M}}{\Delta t} $
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Deterministic/Balance Mass - Storage"}
+			\caption{Deterministic Model.}
+		\end{subfigure}%
+		\begin{subfigure}{0.7\textwidth}
+			\centering
+			\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Stochastic/Balance Mass - Storage"}
+			\caption{Stochastic Model.}
+		\end{subfigure}
+		\caption[DSR river reach deterministic and stochastic dissolved selenium mass storage change time series.]{DSR river reach deterministic and stochastic dissolved selenium mass storage change time series.  For the stochastic model, the line is the mean of the realizations and the blue band is the 97.5th CIR.}
+		\label{fig:massStoreChange_DSR}
+	\end{figure}
+\end{landscape}
+\subfiguretop
+
+Figures \ref{fig:massStoreChange_USR} and \ref{fig:massStoreChange_DSR} show that there is a definite seasonal variation in the selenium storage component.  This temporal relationship follows the same pattern identified with the water balance model storage component.  There is a very strong visual relationship between the water balance model flow component and the mass balance model selenium transport component.  This is to be expected since the water balance storage component is the prime contributor to the mass balance selenium storage component.  These figures also show that uncertainty with the selenium storage component is very large.  This is to be expected since the mass balance models contain all of the uncertainty from the water balance model and the selenium concentration estimation linear models.
+
+The distribution of all realizations within each time step was analyzed to determine a distribution type.  This analysis was performed to determine if the assumption that the deterministic model results were representative of the stochastic model.  Testing was performed by comparing K-S statistics for the best fit normal, log-normal, logistic, exponential, gamma, and Weibull distributions.  In the USR \todo{do calcs}  In the DSR \todo{do calcs}.  This indicates that for both the USR and DSR, the distributions across the realizations are normal with some slight skewness. 
+
+Tables \ref{tab:massStoreChange_USR} and \ref{tab:massStoreChange_DSR} present the summary statistics for the deterministic model time-series and the three stochastic model summary statistics time-series for the USR and DSR, respectively.  All values in these tables are in units of \si{\kilo\gram\per\day\per\kilo\meter}
+
+\subtabletop
+\begin{table}[htbp]
+	\centering
+	\caption[USR river reach deterministic and stochastic dissolved selenium mass storage change time series summary statistics.]{USR river reach deterministic and stochastic dissolved selenium mass storage change time series summary statistics.  Values are in units of \si{\kilo\gram\per\day\per\kilo\meter}.}
+	\label{tab:massStoreChange_USR}
+	\input{"Tables/USRMassStore.txt"}
+\end{table}
+\tablevspace
+\subtabletop
+\begin{table}[htbp]
+	\centering
+	\caption[DSR river reach deterministic and stochastic dissolved selenium mass storage change time series summary statistics.]{DSR river reach deterministic and stochastic dissolved selenium mass storage change time series summary statistics.  Values are in units of \si{\kilo\gram\per\day\per\kilo\meter}.}
+	\label{tab:massStoreChange_DSR}
+	\input{"Tables/DSRMassStore.txt"}
+\end{table}
+
+The mean of the percent difference between the deterministic and 1-D stochastic mean models is low, but not insignificant.  This indicates that the deterministic model is fairly representative of the stochastic model expected value.  The high percent differences at the 2.5th and 97.5th percentile indicate that there is still a large range of uncertainty contained within the stochastic model that the deterministic model cannot replicate.  The deterministic model can be used to determine how changes can affect a reach over a span of time, but using it to estimate values for specific time steps is unwise as the differences noted at individual time steps is too large to account for.
+
+
 %\textsc{C - analysis and comments on river segment and reach results}
-%
-%\clearpage{}
-%\section{Mass Transport in Gauged Streams and Diverted Canals}
-%\label{sec:MassTransport}
-%
+
+\clearpage{}
+\section{Mass Transport in Gauged Streams and Diverted Canals}
+\label{sec:MassTransport}
+
 %\emph{I - define the realtionship between $Q_{Surface}$ and $L_{Surface}$}\\
-%
-%The combined river section selenium surface transport rate $(\dot{M}_{Surface})$ is calculated as shown in equation \ref{eq:mbal3}.  Selenium surface transport rate values for individual stream gauges are calculated as positive values regardless of whether they discharge to or receive water from the main stem of the river.
-%
-%\begin{equation}
-%\dot{M}_{Surface}=\dot{M}_{inlet}-\dot{M}_{outlet}+\dot{M}_{Tributaries}-\dot{M}_{Canals}
-%\label{eq:mbal3}
-%\end{equation}
-%\begin{tabular}{rl}
-%$\dot{M}_{inlet}$ =& Selenium surface transport across the study region upstream \\
-%&inlet $(mass \cdot time^{-1})$\\
-%$\dot{M}_{outlet}$ =& Selenium surface transport across the study region downstream\\ 
-%&outlet $(mass \cdot time^{-1})$\\
-%$\dot{M}_{Tributaries}$ =& Selenium surface transport from tributaries to the river main\\
-%&stem $(mass \cdot time^{-1})$\\
-%$\dot{M}_{Canals}$ =& Selenium surface transport from the river main stem to\\
-%&canals $(mass \cdot time^{-1})$\\
-%\end{tabular}\\
-%
+
+The combined river section selenium surface transport rate $(L_{Surface})$ is calculated as shown in Equation \ref{eq:mFlow01} which contains all portions of the mass balance model that transport selenium in and out of the river channel through a flow gauge.  This equation is a part of Equation \ref{eq:mbal04}.  Selenium surface transport rates for individual stream gauges are calculated as positive values regardless of whether they discharge to or receive water from the main stem of the river. 
+
+\begin{equation}
+	\sum L_{Surface} = \left( L_{out,DS} + \sum L_{out} - L_{in,US} - \sum L_{in} \right)
+\label{eq:mFlow01}
+\end{equation}
+\begin{tabular}{r p{5.25in}}
+	$ \sum L_{Surface} $ = & Sum of all loadings transported in gauged surface waters.\\
+	$ L_{out,DS} $ = & Loading being discharged at the downstream end of the reach. \\
+	$ \sum L_{out} $ = & Sum of oadings being discharged through the reach irrigation canals.\\
+	$ L_{in,US} $ = & Loading being received at the upstream end of the reach. \\
+	$ \sum L_{in} $ = & Sum of loadings being received through the reach tributaries.\\
+\end{tabular}\\
+
 %\emph{II - state which solute concentration models are used with which gauged flows}\\
 %
 %\emph{III - present source/sink results}\\

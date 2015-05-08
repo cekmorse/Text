@@ -3,23 +3,11 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
 \select@language {american}
-\contentsline {chapter}{\tocchapter {Chapter}{2}{Study Regions}}{1}{chapter.1}
-\contentsline {section}{\tocsection {}{2.1}{Overview of the Lower Arkansas River Valley in Colorado}}{1}{section.1.1}
-\contentsline {subsection}{\tocsubsection {}{}{Regional Geology of the LARV.}}{1}{section*.1}
-\contentsline {subsection}{\tocsubsection {}{}{Regional Climate and Hydrology of the LARV}}{3}{section*.3}
-\contentsline {subsection}{\tocsubsection {}{}{Anthropogenic Factors for the LARB Study Regions.}}{4}{section*.5}
-\contentsline {section}{\tocsection {}{2.2}{Upstream Study Reach and Surrounding Region}}{9}{section.1.2}
-\contentsline {section}{\tocsection {}{2.3}{Downstream Study Reach and Surrounding Region}}{14}{section.1.3}
-\contentsline {chapter}{\tocchapter {Chapter}{3}{Data Collection and Compilation}}{18}{chapter.2}
-\contentsline {section}{\tocsection {}{3.1}{Water Quality Data Collection}}{18}{section.2.1}
-\contentsline {section}{\tocsection {}{3.2}{River Cross-Section Geometry Survey}}{32}{section.2.2}
-\contentsline {section}{\tocsection {}{3.3}{Data Compiled from Other Sources}}{42}{section.2.3}
-\contentsline {chapter}{\tocchapter {Chapter}{4}{Evaluation of NPS Return Flow to the River Using a Water Balance Model}}{57}{chapter.3}
-\contentsline {section}{\tocsection {}{4.1}{Water Balance Model Applied to the LARV}}{57}{section.3.1}
-\contentsline {section}{\tocsection {}{4.2}{Stochastic and Deterministic Models}}{61}{section.3.2}
-\contentsline {section}{\tocsection {}{4.3}{Error and Uncertainty.}}{62}{section.3.3}
-\contentsline {section}{\tocsection {}{4.4}{River Storage Change}}{68}{section.3.4}
-\contentsline {section}{\tocsection {}{4.5}{Gauged Stream Flows and Diverted Canal Flows}}{104}{section.3.5}
-\contentsline {section}{\tocsection {}{4.6}{Atmospheric Contributions to the Water Balance Models}}{143}{section.3.6}
-\contentsline {section}{\tocsection {}{4.7}{Results of Calculated Unaccounted for Return Flows}}{164}{section.3.7}
-\contentsline {chapter}{\tocchapter {\chaptername }{}{References}}{173}{chapter*.126}
+\contentsline {chapter}{\tocchapter {Chapter}{5}{Evaluation of NPS Selenium Loading to the River Using a Mass Balance Model}}{1}{chapter.1}
+\contentsline {section}{\tocsection {}{5.1}{Mass Balance Model Applied to the LARV}}{1}{section.1.1}
+\contentsline {section}{\tocsection {}{5.2}{Mass Storage Change}}{4}{section.1.2}
+\contentsline {subsection}{\tocsubsection {}{5.2.1}{Solute Concentration Models}}{6}{subsection.1.2.1}
+\contentsline {subsection}{\tocsubsection {}{5.2.2}{Uncertainty of Lab Selenium Concentration Values}}{102}{subsection.1.2.2}
+\contentsline {subsection}{\tocsubsection {}{5.2.3}{Mass Storage Change Results}}{109}{subsection.1.2.3}
+\contentsline {section}{\tocsection {}{5.3}{Mass Transport in Gauged Streams and Diverted Canals}}{128}{section.1.3}
+\contentsline {chapter}{\tocchapter {\chaptername }{}{References}}{129}{chapter*.106}
