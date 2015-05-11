@@ -62,15 +62,15 @@ Re-arranging equation \eqref{eq:water01} to solve for the unknown values produce
 This model is further simplified to Equation \ref{eq:water3} which combines terms that are calculated using similar methods to facilitate discussion.
 \begin{equation}
 	\label{eq:water3}
-	Q_{UNPS} = \frac{\Delta S}{\Delta t} - \sum Q_{Total} - \sum Q_{Atm}\\ 
+	Q_{UNPS} = \frac{\Delta S}{\Delta t} - \sum Q_{Surface} - \sum Q_{Atm}\\ 
 \end{equation}
 \begin{tabular}{r p{5.5in}}
 	Where:&\\
 	$ \displaystyle \frac{\Delta S}{\Delta t} $ = & Reach storage change per time-step.\\
-	$ \displaystyle \sum Q_{Total} $ = & $ Q_{in,DS} + \sum Q_{in} - Q_{out,US} - \sum Q_{out} $ = Sum of flows added and removed \\
-		& from the reach per time-step. \\
-	$ Q_{Atm} $ = & $ P - E $ = The sum of precipitation gains and evaporation losses, per time \\
-		& step.\\
+	$ \displaystyle \sum Q_{Surface} $ = & Sum of flows added and removed from the reach per time-step. \\
+		= & $ Q_{in,DS} + \sum Q_{in} - Q_{out,US} - \sum Q_{out} $\\
+	$ Q_{Atm} $ = & The sum of precipitation gains and evaporation losses, per time step.\\
+		= & $ P - E $\\
 \end{tabular}\\
 
 A time step of one day was established for all models calculated in this thesis.  Most of the data from agencies is readily available in average daily format.  While most of the data could also be obtained in hourly or quarter-hourly format, it was assumed that the additional information would not improve model accuracy.
@@ -632,13 +632,13 @@ Tables \ref{tab:SegmentVolumeChange_USR} and \ref{tab:SegmentVolumeChange_DSR} p
 	\label{tab:SegmentVolumeChange_USR}
 	\begin{subtable}{\textwidth}
 		\centering
-		\subcaption*{USR river segment A}
+		\subcaption*{ $\displaystyle\frac{\Delta S_{A}}{\Delta t} $ }
 		\input{"Tables/tableVolumeA.txt"}
 	\end{subtable}\\
 	\tablevspace
 	\begin{subtable}{\textwidth}
 		\centering
-		\subcaption*{USR river segment B}
+		\subcaption*{ $\displaystyle\frac{\Delta S_{B}}{\Delta t} $ }
 		\input{"Tables/tableVolumeB.txt"}
 	\end{subtable}\\
 \end{table}	
@@ -648,13 +648,13 @@ Tables \ref{tab:SegmentVolumeChange_USR} and \ref{tab:SegmentVolumeChange_DSR} p
 	\caption{USR river segment volume change deterministic and stochastic model numerical results.}
 	\begin{subtable}{\textwidth}
 		\centering
-		\subcaption*{USR river segment C}
+		\subcaption*{ $\displaystyle\frac{\Delta S_{C}}{\Delta t} $ }
 		\input{"Tables/tableVolumeC.txt"}
 	\end{subtable}\\
 	\tablevspace
 	\begin{subtable}{\textwidth}
 		\centering
-		\subcaption*{USR river segment D}
+		\subcaption*{ $\displaystyle\frac{\Delta S_{D}}{\Delta t} $ }
 		\input{"Tables/tableVolumeD.txt"}
 	\end{subtable}\\
 \end{table}
@@ -664,7 +664,7 @@ Tables \ref{tab:SegmentVolumeChange_USR} and \ref{tab:SegmentVolumeChange_DSR} p
 	\caption{USR river segment volume change deterministic and stochastic model numerical results.}
 	\begin{subtable}{\textwidth}
 		\centering
-		\subcaption*{USR river segment E}
+		\subcaption*{ $\displaystyle\frac{\Delta S_{E}}{\Delta t} $ }
 		\input{"Tables/tableVolumeE.txt"}
 	\end{subtable}\\
 	\tablevspace
@@ -677,13 +677,13 @@ Tables \ref{tab:SegmentVolumeChange_USR} and \ref{tab:SegmentVolumeChange_DSR} p
 	\label{tab:SegmentVolumeChange_DSR}
 	\begin{subtable}{\textwidth}
 		\centering
-		\subcaption*{DSR river segment F}
+		\subcaption*{ $\displaystyle\frac{\Delta S_{F}}{\Delta t} $ }
 		\input{"Tables/G volF.txt"}
 	\end{subtable}\\
 	\tablevspace	
 	\begin{subtable}{\textwidth}
 		\centering
-		\subcaption*{DSR river segment G}
+		\subcaption*{ $\displaystyle\frac{\Delta S_{G}}{\Delta t} $ }
 		\input{"Tables/G volG.txt"}
 	\end{subtable}\\
 \end{table}	
@@ -762,11 +762,11 @@ Equation \ref{eq:water1} contains the portion contained in equation \ref{eq:flow
 
 \begin{equation}
 \label{eq:flow1}
-\sum Q_{Total} = \left( Q_{out,DS} + \sum Q_{out} - Q_{in,US} - \sum Q_{in} \right) 
+\sum Q_{Surface} = \left( Q_{out,DS} + \sum Q_{out} - Q_{in,US} - \sum Q_{in} \right) 
 \end{equation}
 \begin{tabular}{r p{5.5in}}
 	Where: & \\
-	$ Q_{Total} = $ & sum of average daily flow rates in the study region.\\
+	$ Q_{Surface} = $ & sum of average daily flow rates in the study region.\\
 	$ Q_{in} = $ & flow entering the study reach from a tributary.\\
 	$ Q_{out} = $ & flow leaving the study reach to an irrigation canal.\\
 	$ Q_{in,US} = $ & flow entering the study reach in the main stem of the river at the upstream end of the reach.\\
@@ -776,7 +776,7 @@ Equation \ref{eq:water1} contains the portion contained in equation \ref{eq:flow
 Equation \ref{eq:flow1} is expanded as follows to contain all of the measured flows entering or leaving the main stem of the Arkansas River within the USR boundaries.  The subscript for each flow in equation \ref{eq:USRFlow} is the CDWR symbol for a particular gauge site.  See the map in Figure \ref{USRSample} for the gauge locations in the USR.  The flows in this equation are ordered by location along the main stem of the river, from upstream to downstream.
 \begin{align}
 	\label{eq:USRFlow}
-	\sum Q_{Total,USR} = &~Q_{ARKCATCO} - Q_{HOLCANCO} - Q_{RFDMANCO} - Q_{FLSCANCO} \\
+	\sum Q_{Surface,USR} = &~Q_{ARKCATCO} - Q_{HOLCANCO} - Q_{RFDMANCO} - Q_{FLSCANCO} \\
 	\nonumber & + Q_{RFDRETCO} + Q_{TIMSWICO} - Q_{FLYCANCO} + Q_{CANSWKCO} \\ 
 	\nonumber & + Q_{LAJWWTP} - Q_{CONDITCO} + Q_{HRC194CO} - Q_{ARKLASCO}
 \end{align}
@@ -810,7 +810,7 @@ Where each subscript is defined as the flow through the gauge described in Table
 For the DSR, equation \ref{eq:flow1} is expanded as follows to contain all of the measured flows entering or leaving the main stem of the Arkansas River within its boundaries.  The subscript for each flow in equation \ref{eq:DSRFlow} is the CDWR symbol for a particular gauge site.  See the map in Figure \ref{DSRSample} for the gauge locations in the DSR.  The flows in this equation are ordered by location along the main stem of the river, from upstream to downstream.
 \begin{align}
 	\label{eq:DSRFlow}
-	\sum Q_{Total,DSR} = &~Q_{ARKLAMCO} + Q_{BIGLAMCO} - Q_{BUFDITCO} + Q_{WILDHOCO} \\
+	\sum Q_{Surface,DSR} = &~Q_{ARKLAMCO} + Q_{BIGLAMCO} - Q_{BUFDITCO} + Q_{WILDHOCO} \\
 	\nonumber & - Q_{FRODITKS} - Q_{ARKCOOKS}
 \end{align}
 Where each subscript is defined as the flow through the gauge described in Table \ref{tab:DSRFlow}.  In this table, each of the flow variables in equation \ref{eq:DSRFlow}, designated by its CDWR gauge name, is grouped by the type of flow using the variables used in equation \ref{eq:water1}.
@@ -1362,7 +1362,7 @@ Average daily flow rates are not grouped and calculated by river segment.  Figur
 \begin{landscape}
 	\begin{figure}
 		\centering
-		$ \displaystyle \sum Q_{Total,USR} $
+		$ \displaystyle \sum Q_{Surface,USR} $
 		\begin{subfigure}{0.7\textwidth}
 			\centering
 			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Deterministic/Balance Water - flow"}
@@ -1381,7 +1381,7 @@ Average daily flow rates are not grouped and calculated by river segment.  Figur
 \begin{landscape}
 	\begin{figure}
 		\centering
-		$ \displaystyle \sum Q_{Total,DSR} $
+		$ \displaystyle \sum Q_{Surface,DSR} $
 		\begin{subfigure}{0.7\textwidth}
 			\centering
 			\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Deterministic/Balance Water - flow"}
@@ -1402,7 +1402,7 @@ Average daily flow rates are not grouped and calculated by river segment.  Figur
 	\centering
 	\caption[USR deterministic and stochastic model time-series reach total average daily flow rate numeric results.]{USR deterministic and stochastic model reach total time-series average daily flow rate numeric results.  Flow rates are presented in units of \si{\cubic\meter\per\second\per\kilo\meter} (\si{\cfs\per\mile}).}
 	\label{tab:reachFlow_US}
-	\subcaption*{$\displaystyle \sum Q_{Total,USR} $}
+	\subcaption*{$\displaystyle \sum Q_{Surface,USR} $}
 	\input{"Tables/USRFlow.txt"}
 \end{table}
 \tablevspace
@@ -1410,7 +1410,7 @@ Average daily flow rates are not grouped and calculated by river segment.  Figur
 	\centering
 	\caption[DSR deterministic and stochastic model time-series reach total average daily flow rate numeric results.]{DSR deterministic and stochastic model reach total time-series average daily flow rate numeric results.  Flow rates are presented in units of \si{\cubic\meter\per\second\per\kilo\meter} (\si{\cfs\per\mile}).}
 	\label{tab:reachFlow_DS}
-	\subcaption*{$\displaystyle \sum Q_{Total,DSR} $}
+	\subcaption*{$\displaystyle \sum Q_{Surface,DSR} $}
 	\input{"Tables/DSRFlow.txt"}
 \end{table}
 
@@ -1832,7 +1832,7 @@ Figures \ref{fig:USRWaterContrib} and \ref{fig:DSRWaterContrib} present the dete
 	\label{fig:DSRWaterContrib}
 \end{figure}
 
-These figures show that the surface flow component of the water balance model $ \displaystyle \left( \sum Q_{Total} \right) $ is the most significant portion in both the USR and DSR.  They also show that the storage component $ \displaystyle \left( \frac{\Delta S}{\Delta t} \right) $, is more significant in the USR than the DSR.  In both study regions, the atmospheric component, which is composed of the sum of precipitation and evaporation $ \displaystyle \left( \sum Q_{Atm} \right) $, although a minor portion of their respective models, cannot be considered insignificant and therefore, cannot be removed from the model without significantly effecting the results.  These figures also seem to show an inverse relationship between the contribution of the flow portion and the contributions of the storage and atmospheric portions.  The mechanism of this relationship is not understood at this time.
+These figures show that the surface flow component of the water balance model $ \displaystyle \left( \sum Q_{Surface} \right) $ is the most significant portion in both the USR and DSR.  They also show that the storage component $ \displaystyle \left( \frac{\Delta S}{\Delta t} \right) $, is more significant in the USR than the DSR.  In both study regions, the atmospheric component, which is composed of the sum of precipitation and evaporation $ \displaystyle \left( \sum Q_{Atm} \right) $, although a minor portion of their respective models, cannot be considered insignificant and therefore, cannot be removed from the model without significantly effecting the results.  These figures also seem to show an inverse relationship between the contribution of the flow portion and the contributions of the storage and atmospheric portions.  The mechanism of this relationship is not understood at this time.
 
 \begin{table}[htbp]
 	\centering
