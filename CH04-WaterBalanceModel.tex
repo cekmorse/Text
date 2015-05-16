@@ -204,6 +204,8 @@ Figure \ref{fig:segment model} shows the difference between a simplified example
 
 Segment lengths, as reported in Table \ref{tab:SegmentLength}, are sufficiently short such that any surges due to irrigation canal gates changes, precipitation events, or other events pass through the segment in less than a day.  The total travel time is approximately 2-3 days and 1-2 days in the USR and DSR, respectively, based on USGS reported average stream velocity measurements taken in conjunction with stream gauge calibrations.  River segment length ($L_i$) was measured to the nearest \SI{0.1}{\kilo\meter} using publicly available satellite imagery, USGS hydrography data, and geographical information system (GIS) software.  River segment length was calculated as the length of the thalweg between the segment endpoints.  When the USGS thalweg did not follow along the river channel as shown in the satellite imagery, a new thalweg was drawn.  Rough validation of these measurements was performed in the field by comparing the GIS calculated length of adjacent roadways to the actual driven distance as reported by a vehicle odometer.  River lengths are assumed to be constant throughout the study time frame.  Individual and combined variations in the channel path along a river segment were assumed to be negligible.\\
 
+\setcounter{table}{0}
+\subtabletop
 \begin{table}[htbp]
 	\centering
 	\caption[River Segment Lengths.]{River Segment Lengths.}
@@ -488,19 +490,16 @@ The time-series plots of all four stochastic geometric parameters for each study
 			\centering
 			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/G TS A"}
 			\subcaption*{Segment A}		
-			\label{sub:GeoTS_A}
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
 			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/G TS B"}
 			\subcaption*{Segment B}
-			\label{sub:GeoTS_B}
 		\end{subfigure}\\
 	\caption[USR and DSR stochastic geometric parameter time-series.]{USR and DSR stochastic geometric parameter time-series. The black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.  The red dashed line in the flow depth portion of the figure indicates the reported flow depth values.}
 	\label{fig:GeoTS_US}
 	\end{figure}
 \end{landscape}
-
 \subfiguremid
 \begin{landscape}
 	\begin{figure}
@@ -508,18 +507,15 @@ The time-series plots of all four stochastic geometric parameters for each study
 			\centering
 			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/G TS C"}
 			\subcaption*{Segment C}
-			\label{sub:GeoTS_C}	
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering			
 			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/G TS D"}
 			\subcaption*{Segment D}
-			\label{sub:GeoTS_D}
 		\end{subfigure}\\
-		\caption{USR and DSR stochastic geometric parameter time-series.}
+		\caption[]{USR and DSR stochastic geometric parameter time-series.}
 	\end{figure}
 \end{landscape}
-
 \subfiguremid
 \begin{landscape}
 	\begin{figure}
@@ -527,9 +523,8 @@ The time-series plots of all four stochastic geometric parameters for each study
 			\centering
 			\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/G TS E"}
 			\subcaption*{Segment E}
-			\label{sub:GeoTS_E}	
 		\end{subfigure}\\
-		\caption{USR and DSR stochastic geometric parameter time-series.}
+		\caption[]{USR and DSR stochastic geometric parameter time-series.}
 	\end{figure}
 \end{landscape}
 
@@ -540,13 +535,11 @@ The time-series plots of all four stochastic geometric parameters for each study
 			\centering
 			\includegraphics[width=0.9\textwidth]{"Figures/Results_DSR/Stochastic/G TS F"}
 			\subcaption*{Segment F}		
-			\label{sub:GeoTS_F}
 		\end{subfigure}%
 		\begin{subfigure}{0.7\textwidth}
 			\centering
 			\includegraphics[width=0.9\textwidth]{"Figures/Results_DSR/Stochastic/G TS G"}
 			\subcaption*{Segment G}
-			\label{sub:GeoTS_G}
 		\end{subfigure}
 		\caption[DSR stochastic geometric parameter time-series.]{DSR stochastic geometric parameter time-series. The black lines indicate the stochastic model mean time-series.  The blue band indicates the 95\% central inter-percentile range (CIR) of the stochastic values.  The red dashed line in the flow depth portion of the figure indicates the reported flow depth values.}
 		\label{fig:GeoTS_DS}
@@ -574,7 +567,6 @@ Tables \ref{tab:SegmentSurfaceArea_USR} and \ref{tab:SegmentSurfaceArea_DSR} pre
 		\input{"Tables/tableAreaB.txt"}
 	\end{subtable}\\
 \end{table}
-
 \subtablemid
 \begin{table}[htbp]
 	\centering
@@ -591,7 +583,6 @@ Tables \ref{tab:SegmentSurfaceArea_USR} and \ref{tab:SegmentSurfaceArea_DSR} pre
 		\input{"Tables/tableAreaD.txt"}
 	\end{subtable}\\
 \end{table}
-
 \subtablemid
 \begin{table}[htbp]
 	\centering
@@ -611,13 +602,13 @@ Tables \ref{tab:SegmentSurfaceArea_USR} and \ref{tab:SegmentSurfaceArea_DSR} pre
 	\begin{subtable}{\textwidth}
 		\centering
 		\subcaption*{DSR river segment F}
-%		\input{"Tables/tableAreaF.txt"}
+		\input{"Tables/tableAreaF.txt"}
 	\end{subtable}\\
 	\tablevspace
 	\begin{subtable}{\textwidth}
 		\centering
 		\subcaption*{DSR river segment G}
-%		\input{"Tables/tableAreaG.txt"}
+		\input{"Tables/tableAreaG.txt"}
 	\end{subtable}\\
 \end{table}
 
@@ -732,7 +723,7 @@ Tables xx presents the deterministic model time-series summary statistics and th
 	\centering
 	\caption[USR river reach average daily stored water volume change.]{USR river reach average daily stored water volume change.  Values in hectare-meters (\si{\hectare\meter\per\kilo\meter}) and values in parentheses in acre-feet (\si{\acre\foot\per\mile})}
 	\label{tab:waterStorage-US}
-	\subcaption*{ $\displaystyle\frac{\Delta S_{DSR}}{\Delta t} $ }
+	\subcaption*{ $\displaystyle\frac{\Delta S_{USR}}{\Delta t} $ }
 	\input{"Tables/USRVolume.txt"}
 \end{table}
 	\tablevspace
@@ -740,7 +731,7 @@ Tables xx presents the deterministic model time-series summary statistics and th
 	\centering
 	\caption[DSR river reach average daily stored water volume change.]{DSR river reach average daily stored water volume change.  Values in hectare-meters (\si{\hectare\meter\per\kilo\meter}) and values in parentheses in acre-feet (\si{\acre\foot\per\mile})}
 	\label{tab:waterStorage-DS}
-	\subcaption*{ $\displaystyle\frac{\Delta S_{USR}}{\Delta t} $ }
+	\subcaption*{ $\displaystyle\frac{\Delta S_{DSR}}{\Delta t} $ }
 	\input{"Tables/DSRVolume.txt"}
 \end{table}
 

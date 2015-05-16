@@ -93,6 +93,8 @@ One of the purposes of this thesis is to determine the selenium loading and unlo
 
 All concentrations discussed in this thesis refer only to dissolved selenium concentration.  Therefore, the typical method of denoting concentration with the aqueous species in the subscript (i.e. $ C_{Se} $) is not going to be used in this thesis.  Instead, subscripts are being reserved to designate the location within a study region for which the concentration is used.  As such, Tables \ref{tab:concFlowStoreRelationship_USR} and \ref{tab:concFlowStoreRelationship_DSR} shows the symbolic relationship between the various gauged flow and  river segment storage changes and their associated dissolved selenium concentration for the USR and DSR, respectively.  The concentration symbols use subscripts that designate the sample location as noted in Figures \ref{map:USRSample} and \ref{map:DSRSample}.
 
+\setcounter{table}{0}
+\subtabletop
 \begin{table}[htbp]
 	\centering
 	\caption[USR gauged flow and river segment storage change symbolic relationship with dissolved selenium concentrations. ]{USR gauged flow and river segment storage change symbolic relationship with dissolved selenium concentrations.}
@@ -2653,7 +2655,7 @@ Figures \ref{fig:massReachTrans_USR} and \ref{fig:massReachTrans_DSR} show the $
 
 Figures \ref{fig:massReachTrans_USR} and \ref{fig:massReachTrans_DSR} show that there is a definite seasonal variation $ \sum L_{Surface} $ in both the USR and DSR.  This is to be expected since $ \sum L_{Surface} $ is the sum of the individual surface water loadings.  These figures show also that the total mass loading in the USR is significantly larger than in the DSR.
 
-The distribution of all realizations within each time step was analyzed to determine a distribution type.  This analysis was performed to determine if the assumption that the deterministic model results were representative of the stochastic model.  Testing was performed by comparing K-S statistics for the best fit normal, log-normal, logistic, exponential, gamma, and Weibull distributions.  In the USR \todo{do calcs}.  In the DSR \todo{do calcs}.  This indicates that for both the USR and DSR, the distributions across the realizations are normal. 
+The distribution of all realizations within each time step was analyzed to determine a distribution type.  This analysis was performed to determine if the assumption that the deterministic model results were representative of the stochastic model.  Testing was performed by comparing K-S statistics for the best fit normal, log-normal, logistic, exponential, gamma, and Weibull distributions.  In the USR, 69.9\% of the time-steps were normally distributed and 30.1\% were best fit by a logistic distribution.  In the DSR 4.39\% of the time-steps were normally distributed and 95.6\% were best fit by a logistic distribution.  This indicates that the DSR stochastic model distribution within the time-steps more heavily favor the tails than in the USR. 
 
 Tables \ref{tab:massReachTrans_USR} and \ref{tab:massReachTrans_DSR} present the summary statistics for the deterministic model time-series and the three stochastic model summary statistics time-series for the results presented in Figures \ref{fig:massReachTrans_USR} \ref{fig:massReachTrans_USR} which are for the USR and DSR, respectively.  All values in these tables are in units of \si{\kilo\gram\per\day\per\kilo\meter}
 
@@ -2724,7 +2726,7 @@ Figures \ref{fig:USRMass} and \ref{fig:DSRMass} depict the final results for the
 
 As anticipated with the study reach intermediate results, Figures \ref{fig:USRMass} and \ref{fig:DSRMass} indicate that there is seasonable variability with the transport of selenium.  The figures show that the USR and DSR receive a significant quantity of selenium from unaccounted for sources.  There is a very short period during midyear where the unaccounted for selenium transport flows are a sink for mass being lost from the Arkansas River in the USR.  The DSR nearly always receives water from unaccounted for non-point sources throughout the year.
 
-The distribution of all realizations within each time step was analyzed to determine a distribution type.  This analysis was performed to determine if the assumption that the deterministic model results were representative of the stochastic model.   Testing was performed by comparing K-S statistics for the best distribution using the same methodology used previously.  In the USR, \todo{do calcs}.  In the DSR, \todo{do calcs}.  This indicates that for both the USR and DSR, the distributions across the realizations are normal.  
+The distribution of all realizations within each time step was analyzed to determine a distribution type.  This analysis was performed to determine if the assumption that the deterministic model results were representative of the stochastic model.   Testing was performed by comparing K-S statistics for the best distribution using the same methodology used previously.  In the USR, 72.6\% of the time-steps are normally distributed and 27.4\% are best fit by a logistic distribution.  In the DSR, 12.7\% of the time-steps are normally distributed and 87.3\% are best fit by a logistic distribution.  This indicates that the values within each time-step for the DSR stochastic mass loading model are more heavily weighted toward the tails than in the USR stochastic mass loading model.
 
 Tables \ref{tab:USRMass} and \ref{tab:DSRMass} presents summary statistics of the deterministic and stochastic unaccounted for mass balance models.  Values are presented in units of \si{\kilo\gram\per\day\per\kilo\meter}.  These tables present the mean, 97.5th percentile, and 2.5th percentile for the deterministic model time series and the mean, 97.5th percentile, and 2.5th percentile for each of the stochastic model summary statistics time series.
 
@@ -2745,11 +2747,17 @@ Tables \ref{tab:USRMass} and \ref{tab:DSRMass} presents summary statistics of th
 	\input{"Tables/DSRMass_UNPS.txt"}
 \end{table}
 
-%\emph{III - analysis and comments on river segment and reach results}\\
-
 Tables \ref{tab:USRMass} and \ref{tab:DSRMass} show that the deterministic model time series is representative of the stochastic model mean time series.  The mean value of the two time series are similar and the values 95\% CIR of the two time-series, although different, are similar enough to call the deterministic model a reasonable representation of the stochastic model.  Both the figures and tables indicate that the USR and DSR are gaining selenium from unaccounted for non-point sources.  The exact location of these sources is not known, but considering the low magnitude of the observed, but unaccounted for flows, the assumption can be made that the majority of these unaccounted for loadings are from the riparian aquifer.
 
-The estimated average daily selenium loading concentration from unaccounted for sources was compared to the selenium concentration values collected from riparian wells near the river.  The estimated average daily selenium loading concentration values were caluclated by converting Equation \ref{eq:mbal01} to solve for the concentration.  The calculation was performed for each time step and summary statistics were calculated.  An appropriate conversion factor was used to convert the resultant average daily concentration values to \si{\micro\g\per\liter}
+Comparing the USR and DSR mass loading model results shows that the unaccounted for flow are relatively equal between the study regions.  The results show that the DSR receives 38.3\% more selenium from unaccounted for sources than the USR.  This difference is roughly \SI{0.0263}{\kilo\g\per\day\per\kilo\m} (\SI{0.058}{\pound\per\day\per\mile}) which isn't very large considering the magnitude of the values. When these results are applied to both regions, the difference is magnified.  The USR and DSR receive approximately \SI{5.52}{\kilo\g\day} (\SI{7.59}{\pound\per\day}) and \SI{5.12}{\kilo\g\day} (\SI{7.04}{\pound\per\day}), respectively.  Given that the Arkansas River in the DSR is approximately 37\% shorter than in the USR we can take an initial guess that the selenium concentration in the DSR unaccounted for mass loading is higher than in the USR.
+
+This guess is directly observable in the DSR where the flow rate at the upstream end of the reach is visibly typically less than or equal to the flow rate at the downstream end.  It has also been observed that there are flows present at the upstream end of the DSR when John Martin Reservoir, which is approximately 16 km (10 mi) upstream, is not actively discharging water to the river.  There are no points along the river between the reservoir and the upstream end of the DSR where water is discharged into the river channel.  The water passing the upstream end of the DSR must be coming from groundwater sources.
+
+The difference between the study region mass loading model results is low.  This allows us to conclude that the selenium dissolution and transport processes that are active in the USR are equal or approximately equal in magnitude to those in the DSR.
+
+%\emph{III - analysis and comments on river segment and reach results}\\
+
+The estimated average daily selenium loading concentration from unaccounted for sources was compared to the selenium concentration values collected from riparian wells near the river.  The estimated average daily selenium loading concentration values were caluclated by converting Equation \ref{eq:mbal01} to solve for the concentration.  The calculation was performed for each time step and summary statistics were calculated.  An appropriate conversion factor was used to convert the resultant average daily concentration values to \si{\micro\g\per\liter}.
 
 Figures \ref{fig:USRConc} and \ref{fig:DSRConc} present the estimated average daily selenium loading concentration model for the USR and DSR, respectively.  The left sub-figure is the results of the deterministic model time series and the right sub-figure is the result of the stochastic model.  The black line in the stochastic model is the mean of all realizations for each time step.  The blue band is the 2.5th and 97.5th percentile for each time step.  Positive concentrations indicate the concentration entering the river channel.  The absolute value of the negative concentrations in these two figures is the concentration that is leaving the river channel.
 
@@ -2792,7 +2800,7 @@ Tables \ref{fig:USRConc} and \ref{fig:DSRConc} present the summary statistics fo
 \subtabletop
 \begin{table}[htbp]
 	\centering
-	\caption[USR deterministic and stochastic dissolved selenium unaccounted for loading time-series results tables.]{USR deterministic and stochastic dissolved selenium unaccounted for loading time-series results tables.  Values are in units of \si{\kilo\gram\per\day\per\kilo\meter}.}
+	\caption[USR deterministic and stochastic dissolved selenium unaccounted for loading calculated concentration time-series results tables.]{USR deterministic and stochastic dissolved selenium unaccounted for loading calculated concentration time-series results tables.  Values are in units of \si{\kilo\gram\per\day\per\kilo\meter}.}
 	\label{tab:USRConc}
 	\subcaption*{$ \displaystyle C_{UNPS,USR} $}
 	\input{"Tables/USR_C_UNPS.txt"}
@@ -2800,7 +2808,7 @@ Tables \ref{fig:USRConc} and \ref{fig:DSRConc} present the summary statistics fo
 \end{table}
 \begin{table}[htbp]
 	\centering
-	\caption[DSR deterministic and stochastic dissolved selenium unaccounted for loading time-series results tables.]{DSR deterministic and stochastic dissolved selenium unaccounted for loading time-series results tables.  Values are in units of \si{\kilo\gram\per\day\per\kilo\meter}.}
+	\caption[DSR deterministic and stochastic dissolved selenium unaccounted for loading calculated concentration time-series results tables.]{DSR deterministic and stochastic dissolved selenium unaccounted for loading calculated concentration time-series results tables.  Values are in units of \si{\kilo\gram\per\day\per\kilo\meter}.}
 	\label{tab:DSRConc}
 	\subcaption*{$ \displaystyle C_{UNPS,DSR} $}
 	\input{"Tables/DSR_C_UNPS.txt"}
@@ -2808,6 +2816,75 @@ Tables \ref{fig:USRConc} and \ref{fig:DSRConc} present the summary statistics fo
 
 
 We can only speculate on the source of the higher dissolved selenium concentration.  Discussions with others familiar with the LARB selenium issue have added to the pool of possible sources.  There is the possibility that John Martin Reservoir may be a combined source and sink.  Selenium may be dissolved from the USR, concentrated within the reservoir through evaporation of water, and discharged at a higher concentration to the DSR.  This has a couple problems as the reservoir is normally not discharging water to the DSR.  There is the possibility that the concentrated solution may be seeping through the ground under the dam and into the DSR riparian aquifer.  Another possibility is that the higher concentration may be a cumulative effect of evaporation as water moves down the LARB from the USR to the DSR.  Some have even speculated that sediment transport may play a significant role.  Others have suggested that the bedrock beneath the riparian aquifer, which is the ultimate source of selenium in the LARB, may be more rich in selenium in the DSR than the USR.
+
+
+
+
+Figures \ref{fig:USRMassContrib} and \ref{fig:DSRMassContrib} present the deterministic model results as fractions of the components of the USR and DSR water balance, respectively.  Values are presented as percent of the total.  Total values are calculated as the sum of the respective constituent components.  The combined sub-figure combines the other sub-figures as a overlapping comparison.  
+
+\begin{figure}[htbp]
+	\centering
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/M Mass Contrib 1"}
+		\caption{Surface Water Portion.}
+	\end{subfigure}%
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/M Mass Contrib 2"}
+		\caption{Storage Change Portion.}
+	\end{subfigure}
+	\tablevspace
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\tableCustomSize]{"Figures/Results_USR/Stochastic/M Mass Contrib 3"}
+		\caption{Combined Contributions.}
+	\end{subfigure}
+	\caption[Time series of the major USR Arkansas River contributions to the mass loading model.]{Time series of the major USR Arkansas River contributions to the mass loading model.}
+	\label{fig:USRMassContrib}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Stochastic/M Mass Contrib 1"}
+		\caption{Surface Water Portion.}
+	\end{subfigure}%
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Stochastic/M Mass Contrib 2"}
+		\caption{Storage Change Portion.}
+	\end{subfigure}
+	\tablevspace
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\tableCustomSize]{"Figures/Results_DSR/Stochastic/M Mass Contrib 3"}
+		\caption{Combined Contributions.}
+	\end{subfigure}
+	\caption[Time series of the major DSR Arkansas River contributions to the mass loading model.]{Time series of the major DSR Arkansas River contributions to the mass loading model.}
+	\label{fig:DSRMassContrib}
+\end{figure}
+
+These figures show that the surface flow component of the water balance model $ \displaystyle \left( \sum Q_{Surface} \right) $ is the most significant portion in both the USR and DSR.  They also show that the storage component $ \displaystyle \left( \frac{\Delta S}{\Delta t} \right) $, is more significant in the USR than the DSR.  Both figures show that the storage change component of the mass loading model cannot be ignored and must be included.  These figures also seem to show an inverse relationship between the contribution of the flow portion and the contributions of the storage.  The mechanism of this relationship is not understood at this time.
+
+Tables \ref{tab:USRContrib} and \ref{tab:DSRContrib} present the numerical results associated with the contribution analysis.  These tables show that the mass storage change component of the mass loading model is more significant in the USR than in the DSR.  Since water volume change is one of the two components of this value, we can compare this to field observations of the flow rates in the DSR.  These flow rates are relatively constant throughout the year.  Most likely due to flow regulation from John Martin Reservoir such that flow rates into Kansas comply with court mandated minimums.
+
+\begin{table}[htbp]
+	\centering
+	\caption[Major portion contributions to the USR mass loading models.]{Major portion contributions to the USR mass loading models.}
+	\label{tab:USRContrib}
+	\input{"Tables/USR M Contrib.txt"}
+\end{table}
+\tablevspace
+\begin{table}[htbp]
+	\centering
+	\caption[Major portion contributions to the DSR mass loading models.]{Major portion contributions to the DSR mass loading models.}
+	\label{tab:DSRContrib}
+	\input{"Tables/DSR M Contrib.txt"}
+\end{table}
+
+The typical method for calculating a river mass loading includes negating daily storage changes.  This study assumed that these assumptions were false for the LARV and included major portions of the total effort to calculating daily changes in storage.  Neglecting the storage change component of the USR mass loading balance causes a large change in the resultant unaccounted for mass loading values and should not be neglected.
 
 \clearpage{}
 \end{linenumbers}

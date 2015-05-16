@@ -49,7 +49,7 @@
 %\usepackage{natbib} 
 	%  Highly recommended that the newer biblatex package is used.
 	%  If you get an error that the Bibliograph won't generate, find the folder that contains the offending file (read the error log) and delete it.  Then, re-run the Bibliobraphy
-\usepackage[style=authoryear-comp, bibencoding=utf8, url=true, backend=biber]{biblatex} %bibencoding=utf8
+\usepackage[style=authoryear-icomp, bibencoding=utf8, url=true, backend=biber]{biblatex} %bibencoding=utf8
 \addbibresource{BibRef.bib}
 %  -----  End packages  -----  
 
@@ -119,39 +119,47 @@
 \DeclareSIUnit\year{yr}
 \DeclareSIUnit\micron{micron}
 \DeclareSIUnit\cfs{cfs}
+\DeclareSIUnit\pound{lb}
 	% macro definitions.  I used these to simplify frequently used chemical compounds.
-\def\fese2{$FeSe_2$}  
-\def\dox{$O_{2}\,$}
-\def\elemental{$Se^0$}
-\def\nitrate{$NO_3^{2-}$}
-\def\phosphate{$PO_4^{3-}$}
-\def\selenate{$SeO_4^{2-}$}
-\def\selenite{$SeO_3^{2-}$}
-\def\sulfate{$SO_4^{2-}$}
-\def\Qnps{$ Q_{UNPS} $}
+\def\fese2{$FeSe_2\ $}  
+\def\dox{$O_{2}\ $}
+\def\elemental{$Se^0\ $}
+\def\nitrate{$NO_3^{2-}\ $}
+\def\phosphate{$PO_4^{3-}\ $}
+\def\selenate{$SeO_4^{2-}\ $}
+\def\selenite{$SeO_3^{2-}\ $}
+\def\sulfate{$SO_4^{2-}\ $}
+\def\Qnps{$ Q_{UNPS}\ $}
+\def\Se{$ Se\ $}
+
 \def\Wstorage{$ \frac{\Delta S}{\Delta t} $}
 \def\todoc{\todo{cite}}
 \def\todoe{\todo{eq}}
+\def\mgl{\micro\g\per\L}
 	% help define table column widths when required
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}} 
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 	% tools to help with figure and table numbering when using sub-table(or figures) that span more than one page.
 \def\subtabletop{
-	\renewcommand{\thetable}{\arabic{section}.\arabic{table}}
+	\renewcommand{\thetable}{\thechapter.\arabic{table}}
 	\addtocounter{table}{0}
+	\captionsetup[table]{list=yes}
 }
 \def\subtablemid{
-	\renewcommand{\thetable}{\arabic{section}.\arabic{table} (Cont)}
+	\renewcommand{\thetable}{\thechapter.\arabic{table} (Cont)}
 	\addtocounter{table}{-1}
+	\captionsetup[table]{list=no}
 }
 \def\subfiguretop{
-	\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+	\renewcommand{\thefigure}{\thechapter.\arabic{figure}}
 	\addtocounter{figure}{0}
+	\captionsetup[figure]{list=yes}
 }
 \def\subfiguremid{
-	\renewcommand{\thefigure}{\arabic{section}.\arabic{figure} (Cont)}
+	\renewcommand{\thefigure}{\thechapter.\arabic{figure} (Cont)}
 	\addtocounter{figure}{-1}
+	\captionsetup[figure]{list=no}
 }
 \def\tablevspace{
 	\setlength{\bigskipamount}{36pt plus 2pt minus 2pt}

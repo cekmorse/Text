@@ -1,0 +1,9 @@
+\begin{tabular}{cccc} 
+\toprule 
+Model Portion  & 2.5\% & Mean & 97.5\% \\ 
+\toprule 
+$ \displaystyle \frac{\Delta S_M}{\Delta t} $ & 8.43  & 28.8  & 55.7 \\ 
+\\ 
+$ \displaystyle \sum L_{Surface} $	& 44.3  & 71.2	& 91.6 \\ 
+\bottomrule 
+\end{tabular}

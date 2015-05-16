@@ -4,7 +4,7 @@ Model Portion  & 2.5\% & Mean & 97.5\% \\
 \toprule 
 $ \displaystyle \frac{\Delta S}{\Delta t} $ & 11.4  & 33.6	& 55.5 \\ 
 \\ 
-$ \displaystyle \sum Q_{Total} $	& 37.3  & 59	& 80.8 \\ 
+$ \displaystyle \sum Q_{Surface} $	& 37.3  & 59	& 80.8 \\ 
 \\ 
 $ \displaystyle Q_{Atm} $  & 3.85  & 7.39	& 14 \\ 
 \bottomrule 
