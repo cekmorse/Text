@@ -11,7 +11,7 @@
 \\ 
 Time & 2.5th      & \multirow{2}{*}{Mean} & 97.5th \\ 
 Series & Percentile & & Percentile \\ \cmidrule(r{.5em}l){1-4} 
-97.5th Percentile & 1.78 (62.9) & 16.1 (569) & 56.4 (1990) \\
+97.5th Percentile & 1.78 (62.9) & 16.1 (569) & 56.3 (1990) \\
 Mean & 1.7 (60) & 15.3 (540) & 53.6 (1890) \\
 2.5th Percentile & 1.61 (56.9) & 14.5 (512) & 51 (1800) \\ 
 \multicolumn{4}{l}{Pearson Correlation = 1 } \\ 

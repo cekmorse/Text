@@ -4,16 +4,16 @@
 \\ 
 & 2.5th & \multirow{2}{*}{Mean} & 97.5th \\ 
 & Percentile & & Percentile \\ \cmidrule(r{.5em}l){2-4} 
-& -3.53 (-28.6) & -0.00924 (-0.0749) &4.12 (33.4) \\ 
+& -0.00353 (-0.0286) & -9.24e-06 (-7.49e-05) &0.00412 (0.0334) \\ 
 \\ 
 \toprule 
 \multicolumn{4}{l}{\textbf{Stochastic Model Summary Statistics Time Series}} \\ 
 \\ 
 Time & 2.5th      & \multirow{2}{*}{Mean} & 97.5th \\ 
 Series & Percentile & & Percentile \\ \cmidrule(r{.5em}l){1-4} 
-97.5th Percentile & 0.0845 (0.685) & 4.64 (37.6) & 10.9 (88.4) \\
-Mean & -4.29 (-34.8) & -0.0109 (-0.0884) & 5.1 (41.3) \\
-2.5th Percentile & -10.4 (-84.3) & -4.7 (-38.1) & 0.3 (2.43) \\ 
+97.5th Percentile & 0.11 (0.892) & 4.67 (37.9) & 11.2 (90.8) \\
+Mean & -4.3 (-34.9) & -0.0107 (-0.0867) & 5.08 (41.2) \\
+2.5th Percentile & -10.4 (-84.3) & -4.72 (-38.3) & 0.268 (2.17) \\ 
 \multicolumn{4}{l}{Pearson Correlation = 0.9986 } \\ 
 \bottomrule 
 \end{tabular} \\

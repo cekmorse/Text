@@ -11,9 +11,9 @@
 \\ 
 Time & 2.5th      & \multirow{2}{*}{Mean} & 97.5th \\ 
 Series & Percentile & & Percentile \\ \cmidrule(r{.5em}l){1-4} 
-97.5th Percentile & 8.09 & 28.7 & 75.5 \\
+97.5th Percentile & 8.12 & 28.7 & 75.5 \\
 Mean & 7.1 & 27.7 & 74.5 \\
-2.5th Percentile & 6.07 & 26.7 & 73.5 \\ 
+2.5th Percentile & 6.08 & 26.7 & 73.5 \\ 
 \multicolumn{4}{l}{Pearson Correlation = 1 } \\ 
 \bottomrule 
 \end{tabular} \\

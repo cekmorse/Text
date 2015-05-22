@@ -11,9 +11,9 @@
 \\ 
 Time & 2.5th      & \multirow{2}{*}{Mean} & 97.5th \\ 
 Series & Percentile & & Percentile \\ \cmidrule(r{.5em}l){1-4} 
-97.5th Percentile & -0.142 (-8.07) & -0.0238 (-1.35) & 0.103 (5.85) \\
-Mean & -0.174 (-9.89) & -0.0395 (-2.24) & 0.0752 (4.27) \\
-2.5th Percentile & -0.211 (-12) & -0.0553 (-3.14) & 0.0517 (2.94) \\ 
+97.5th Percentile & -0.141 (-8.01) & -0.0238 (-1.35) & 0.103 (5.85) \\
+Mean & -0.174 (-9.89) & -0.0395 (-2.24) & 0.0751 (4.27) \\
+2.5th Percentile & -0.211 (-12) & -0.0553 (-3.14) & 0.0509 (2.89) \\ 
 \multicolumn{4}{l}{Pearson Correlation = 1 } \\ 
 \bottomrule 
 \end{tabular} \\
