@@ -49,7 +49,8 @@
 %\usepackage{natbib} 
 	%  Highly recommended that the newer biblatex package is used.
 	%  If you get an error that the Bibliograph won't generate, find the folder that contains the offending file (read the error log) and delete it.  Then, re-run the Bibliobraphy
-\usepackage[style=authoryear-icomp, bibencoding=utf8, url=true, backend=biber]{biblatex} %bibencoding=utf8
+\usepackage[maxcitenames=2, style=authoryear-icomp, bibencoding=utf8, url=true, backend=biber]{biblatex} %bibencoding=utf8
+\renewcommand*{\nameyeardelim}{\addcomma\space}
 \addbibresource{BibRef.bib}
 %  -----  End packages  -----  
 
