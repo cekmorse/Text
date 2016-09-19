@@ -57,16 +57,16 @@
 
 %  -----  Margins and spacing  -----  
 	% use if you want more room for rh margin notes.
-\usepackage[top=1in,bottom=1in,left=0.5in,right=1.5in]{geometry}  
+\usepackage[top=1in,bottom=1in,left=1in,right=1in]{geometry}  
 	% Use this when you're ready for final(ish) production
 %\usepackage[top=1in,bottom=1in,left=1in,right=1in]{geometry}  
 \makeatletter
 
 	% highlighted margin notes for 'todo' items
-\usepackage[textwidth=1in]{todonotes}
+%\usepackage[textwidth=1in]{todonotes}
 	% make todo notes single spaced
-\renewcommand{\todo}[2][]{\@todo[caption={#2}, #1]{\begin{spacing}{0.5}#2\end{spacing}}}
-\makeatother
+%\renewcommand{\todo}[2][]{\@todo[caption={#2}, #1]{\begin{spacing}{0.5}#2\end{spacing}}}
+%\makeatother
 
 	%  'draft' header and today's date.  Remove for production
 %\usepackage{fancyhdr}
@@ -109,8 +109,6 @@
 
 
 % ----- Custom commands -----
-	% simplify scientific notation
-\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}  
 	%units not included in package{siunitx}
 \DeclareSIUnit\inch{in}  
 \DeclareSIUnit\foot{ft}
@@ -121,6 +119,10 @@
 \DeclareSIUnit\micron{micron}
 \DeclareSIUnit\cfs{cfs}
 \DeclareSIUnit\pound{lb}
+
+	% simplify scientific notation
+\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}  
+
 	% macro definitions.  I used these to simplify frequently used chemical compounds.
 \def\fese2{$FeSe_2\ $}  
 \def\dox{$O_{2}\ $}
