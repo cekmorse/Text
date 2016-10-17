@@ -43,6 +43,11 @@
 \usepackage{tabularx}
 	% better smart quotes.  Especially usefull for humanities
 \usepackage{csquotes}
+	% filler text for testing
+\usepackage{lipsum}
+   % Verbatim input.  Allow for direct input of .txt files into .tex
+%\usepackage[dvipsnames]{xcolor}
+\usepackage{fancyvrb}
 
 % Bibliography
 	% Old bibliography package. only use if you have to
@@ -170,4 +175,21 @@
 	\setlength{\bigskipamount}{12pt plus 2pt minus 2pt}
 }
 \def\tableCustomSize{0.9\textwidth}
+
+    % redefine \VerbatimInput
+%\RecustomVerbatimCommand{\VerbatimInput}{VerbatimInput}%
+%{
+%	fontsize=\footnotesize,
+%	%
+%	frame=lines,  					% top and bottom rule only
+%	framesep=2em, 				% separation between frame and text
+%	rulecolor=\color{Gray},
+%	%
+%	label=\fbox{\color{Black}data.txt},
+%	labelposition=topline,
+%	%
+%	commandchars=\|\(\),		% escape character and argument delimiters for
+%                      						% commands within the verbatim
+%    commentchar=*        		% comment character
+%}
 %  -----  End Custom Commands  -----  

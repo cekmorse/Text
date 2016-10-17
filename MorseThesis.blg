@@ -1,16 +1,16 @@
 [0] Config.pm:354> INFO - This is Biber 2.6
 [0] Config.pm:357> INFO - Logfile is 'MorseThesis.blg'
-[33] biber-darwin:302> INFO - === Mon Sep 19, 2016, 16:55:56
-[52] Biber.pm:359> INFO - Reading 'MorseThesis.bcf'
-[143] Biber.pm:823> INFO - Found 108 citekeys in bib section 0
-[154] Biber.pm:3658> INFO - Processing section 0
-[166] Biber.pm:3828> INFO - Looking for bibtex format file 'BibRef.bib' for section 0
-[176] bibtex.pm:1425> INFO - Decoding LaTeX character macros into UTF-8
-[185] bibtex.pm:1282> INFO - Found BibTeX data source 'BibRef.bib'
-[654] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[654] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[654] Biber.pm:3487> INFO - Sorting list 'nyt/global/' of type 'entry' with scheme 'nyt' and locale 'en-US'
-[654] Biber.pm:3493> INFO - No sort tailoring available for locale 'en-US'
-[749] bbl.pm:597> INFO - Writing 'MorseThesis.bbl' with encoding 'ascii'
-[749] bbl.pm:598> INFO - Converting UTF-8 to TeX macros on output to .bbl
-[823] bbl.pm:701> INFO - Output to MorseThesis.bbl
+[41] biber-darwin:302> INFO - === Thu Sep 22, 2016, 12:19:07
+[62] Biber.pm:359> INFO - Reading 'MorseThesis.bcf'
+[166] Biber.pm:823> INFO - Found 6 citekeys in bib section 0
+[178] Biber.pm:3658> INFO - Processing section 0
+[190] Biber.pm:3828> INFO - Looking for bibtex format file 'BibRef.bib' for section 0
+[203] bibtex.pm:1425> INFO - Decoding LaTeX character macros into UTF-8
+[213] bibtex.pm:1282> INFO - Found BibTeX data source 'BibRef.bib'
+[259] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[259] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[259] Biber.pm:3487> INFO - Sorting list 'nyt/global/' of type 'entry' with scheme 'nyt' and locale 'en-US'
+[259] Biber.pm:3493> INFO - No sort tailoring available for locale 'en-US'
+[265] bbl.pm:597> INFO - Writing 'MorseThesis.bbl' with encoding 'ascii'
+[265] bbl.pm:598> INFO - Converting UTF-8 to TeX macros on output to .bbl
+[270] bbl.pm:701> INFO - Output to MorseThesis.bbl

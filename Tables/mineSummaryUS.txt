@@ -1,0 +1,56 @@
+      q.in            ec.in             t.in           q.HOL           q.RFD       
+ Min.   : 4.531   Min.   :0.4560   Min.   : 3.56   Min.   :0.000   Min.   :0.0000  
+ 1st Qu.: 9.118   1st Qu.:0.7400   1st Qu.: 9.17   1st Qu.:0.000   1st Qu.:0.9497  
+ Median :14.045   Median :0.8445   Median :16.10   Median :4.327   Median :1.4617  
+ Mean   :19.157   Mean   :0.9143   Mean   :15.64   Mean   :2.635   Mean   :1.1813  
+ 3rd Qu.:18.094   3rd Qu.:1.0588   3rd Qu.:22.10   3rd Qu.:4.526   3rd Qu.:1.5141  
+ Max.   :65.412   Max.   :1.5000   Max.   :25.10   Max.   :7.373   Max.   :1.6330  
+                  NA's   :3                                                        
+     q.FLS            q.RFR            q.TIM            q.FLY            q.CAN       
+ Min.   : 0.000   Min.   :0.0000   Min.   :0.4814   Min.   : 0.000   Min.   :0.1048  
+ 1st Qu.: 0.000   1st Qu.:0.3596   1st Qu.:1.7840   1st Qu.: 4.697   1st Qu.:0.3398  
+ Median : 0.000   Median :0.7391   Median :1.9822   Median : 8.422   Median :0.4814  
+ Mean   : 1.592   Mean   :0.5712   Mean   :2.4156   Mean   :10.252   Mean   :0.4762  
+ 3rd Qu.: 0.000   3rd Qu.:0.7481   3rd Qu.:3.1715   3rd Qu.:12.090   3rd Qu.:0.6230  
+ Max.   :11.383   Max.   :0.7578   Max.   :4.6440   Max.   :29.780   Max.   :0.9061  
+                                                                                     
+     q.CON           q.HRC            q.WTP             q.out            ec.out     
+ Min.   :0.000   Min.   :0.1019   Min.   :0.05520   Min.   : 1.359   Min.   :0.931  
+ 1st Qu.:1.400   1st Qu.:0.1529   1st Qu.:0.07185   1st Qu.: 3.455   1st Qu.:1.155  
+ Median :1.760   Median :0.4248   Median :0.08368   Median : 8.891   Median :1.445  
+ Mean   :1.692   Mean   :0.3919   Mean   :0.08490   Mean   : 9.843   Mean   :1.675  
+ 3rd Qu.:2.304   3rd Qu.:0.5380   3rd Qu.:0.10077   3rd Qu.:13.394   3rd Qu.:2.385  
+ Max.   :3.468   Max.   :0.7929   Max.   :0.13275   Max.   :22.540   Max.   :2.710  
+                                                                     NA's   :1      
+     t.out            da.0             dc.0              dd.0             de.0       
+ Min.   : 4.25   Min.   :0.3078   Min.   :0.08534   Min.   :0.1433   Min.   :0.2835  
+ 1st Qu.: 9.60   1st Qu.:0.4663   1st Qu.:0.25908   1st Qu.:0.2804   1st Qu.:0.4328  
+ Median :17.55   Median :0.5852   Median :0.36881   Median :0.5486   Median :0.6553  
+ Mean   :16.51   Mean   :0.6239   Mean   :0.38874   Mean   :0.5545   Mean   :0.6396  
+ 3rd Qu.:24.10   3rd Qu.:0.6401   3rd Qu.:0.47549   3rd Qu.:0.7315   3rd Qu.:0.7864  
+ Max.   :25.25   Max.   :1.2619   Max.   :0.83210   Max.   :1.2314   Max.   :1.0028  
+                                                                                     
+       p                   et               RHmin              u2            se.CAT      
+ Min.   :0.0000000   Min.   :0.001270   Min.   : 9.567   Min.   :1.054   Min.   : 5.360  
+ 1st Qu.:0.0000000   1st Qu.:0.002879   1st Qu.:18.333   1st Qu.:1.439   1st Qu.: 5.695  
+ Median :0.0000000   Median :0.006096   Median :25.267   Median :1.961   Median : 7.780  
+ Mean   :0.0006708   Mean   :0.005816   Mean   :27.667   Mean   :2.210   Mean   : 9.009  
+ 3rd Qu.:0.0001693   3rd Qu.:0.007620   3rd Qu.:37.367   3rd Qu.:2.462   3rd Qu.:10.400  
+ Max.   :0.0073660   Max.   :0.010583   Max.   :64.867   Max.   :4.229   Max.   :16.900  
+                                                                         NA's   :2       
+     se.HOL           se.RFD           se.FLS           se.TIM          se.FLY     
+ Min.   : 3.630   Min.   : 3.870   Min.   : 3.760   Min.   : 8.54   Min.   : 3.84  
+ 1st Qu.: 5.580   1st Qu.: 6.662   1st Qu.: 6.400   1st Qu.:10.40   1st Qu.: 6.30  
+ Median : 7.170   Median : 8.170   Median : 7.570   Median :12.20   Median : 7.89  
+ Mean   : 7.876   Mean   : 8.426   Mean   : 8.497   Mean   :12.85   Mean   : 9.13  
+ 3rd Qu.:10.200   3rd Qu.:10.100   3rd Qu.:11.400   3rd Qu.:13.80   3rd Qu.:11.00  
+ Max.   :13.900   Max.   :13.300   Max.   :14.200   Max.   :21.40   Max.   :16.10  
+                  NA's   :1                                                        
+     se.CAN          se.LAS      
+ Min.   : 7.75   Min.   : 5.180  
+ 1st Qu.: 9.37   1st Qu.: 7.830  
+ Median :10.20   Median : 9.160  
+ Mean   :11.23   Mean   : 9.536  
+ 3rd Qu.:12.60   3rd Qu.:12.000  
+ Max.   :19.60   Max.   :14.000  
+                                 
