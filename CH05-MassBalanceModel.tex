@@ -89,7 +89,7 @@ The stored water volume change is significantly larger than the average concentr
 
 \subsection{Solute Concentration Models}
 
-One of the purposes of this thesis is to determine the selenium loading and unloading rate from unaccounted for sources/sinks.  Elemental selenium does not exist in an aqueous form.  The two dominant aqueous species are selenate and selnite.  Of these two, selenate is the most dominant to the extent that in most cases, selenite is immeasureable.  Therefore, throughout this thesis, selenate is used as the surrogate for all aqueous selenium species.  References in this thesis to dissolved selenium and aqueous selenium are in fact discussing aqueous selenate.  
+One of the purposes of this thesis is to determine the selenium loading and unloading rate from unaccounted for sources/sinks.  Elemental selenium does not exist in an aqueous form.  The two dominant aqueous species are selenate and selenite.  Of these two, selenate is the most dominant to the extent that in most cases, selenite is immeasurable.  Therefore, throughout this thesis, selenate is used as the surrogate for all aqueous selenium species.  References in this thesis to dissolved selenium and aqueous selenium are in fact discussing aqueous selenate.  
 
 All concentrations discussed in this thesis refer only to dissolved selenium concentration.  Therefore, the typical method of denoting concentration with the aqueous species in the subscript (i.e. $ C_{Se} $) is not going to be used in this thesis.  Instead, subscripts are being reserved to designate the location within a study region for which the concentration is used.  As such, Tables \ref{tab:concFlowStoreRelationship_USR} and \ref{tab:concFlowStoreRelationship_DSR} shows the symbolic relationship between the various gauged flow and  river segment storage changes and their associated dissolved selenium concentration for the USR and DSR, respectively.  The concentration symbols use subscripts that designate the sample location as noted in Figures \ref{map:USRSample} and \ref{map:DSRSample}.
 
@@ -434,7 +434,7 @@ Tables \ref{tab:USRInitialRegression} and \ref{tab:DSRInitialRegression} present
 \end{tabular}
 \end{table}
 
-Selenium concentration at the La Junta WWTP was not able to be sufficiently estimated using linear models.  The La Junta water distribution system receives most of its water from wells.  It was not known which aquifer supplied the city.  It was assumed that the shallow river riparian aquifer was the city's water source as there are no known deep aquifers in the area.  It was also assumed that the water treatment plant processes and waste water treatment plant processes could change the selenium concentration.  The average daily flow produced by the plant is the only variable available to estimate selenium concentrations.  Visual analysis of the scatter plot similar to Figure \ref{fig:ExampleFullPairs} showed that the relationship between the plant discharge rate and selenium concentration could not be easily defined.  A non-linear model was used with the power function described in Table \ref{tab:USRInitialRegression}.  This model produced fairly reasonable results.  Better results could be obtained if average daily EC values of the plant discharge were available.
+Selenium concentration at the La Junta WWTP was not able to be sufficiently estimated using linear models.  The La Junta water distribution system receives most of its water from wells.  It was not known which aquifer supplied the city.  It was assumed that the shallow river riparian aquifer was the city's water source as there are no known deep aquifers in the area.  It was also assumed that the water treatment plant processes and waste water treatment plant processes could change the selenium concentration.  The average daily flow produced by the plant is the only variable available to estimate selenium concentrations.  Visual analysis of the scatter plot similar to Figure \ref{fig:concFullPairs_US} showed that the relationship between the plant discharge rate and selenium concentration could not be easily defined.  A non-linear model was used with the power function described in Table \ref{tab:USRInitialRegression}.  This model produced fairly reasonable results.  Better results could be obtained if average daily EC values of the plant discharge were available.
 
 Tables \ref{tab:USRFinalRegression} and \ref{tab:DSRFinalRegression} present the final, reduced regression equations with coefficients resulting from the regression analysis.
 
@@ -1183,7 +1183,7 @@ Figure \ref{fig:BoxCDSR} is a box plot of the measured dissolved selenium concen
 	\caption[Calculated Dissolved Selenium Concentrations in the DSR.]{Calculated Dissolved Selenium Concentrations in the DSR.}
 	\label{fig:BoxCDSR}
 \end{figure}
-These four figures (\ref{fig:BoxMUSR} to \ref{fig:BoxCDSR}) compare the measured dissolved selenium concentration values with the estimated values.  These figures are used along with tables \ref{tab:USRlocinfo} and \ref{tab:DSRlocinfo} in chapter \ref{chap:study regions} to make this comparison.  Study region sample locations along the Arkansas R. are not necessarily located at the same places where calculated dissolved selenium concentrations are required.
+These four figures (\ref{fig:BoxMUSR} to \ref{fig:BoxCDSR}) compare the measured dissolved selenium concentration values with the estimated values.  These figures are used along with the sample locations in chapter \ref{chap:study regions} to make this comparison.  Study region sample locations along the Arkansas R. are not necessarily located at the same places where calculated dissolved selenium concentrations are required.
 
 In all cases but one, the graphs support the statement that the calculated selenium concentration values are representative of the actual recorded values.  Timpas Creek (TIMSWICO) in the USR appears to be the only exception.  Here it appears that the calculated dissolved selenium concentrations are far lower than the measured values.  
 
@@ -1815,7 +1815,7 @@ Figure \ref{fig:CSe uncertainty scatter} shows the 'A' and 'B' samples plotted a
 	\end{center}
 \end{figure}
 
-The percent difference between the reported lab values and the mean duplicates was best fit with a logistic distribution.  The logistic distribution had a location parameter of -0.067 and a scale parameter of 1.807.  This comparison and distribution combination was chosen because it had the best fit when compared to others using Kolmogorov-Smirnov, Cramer-von Mises, and Anderson-Darling goodness-of-fit test statistics.  The duplicate samples had a mean difference from the mean of their respective 'A' and 'B' samples of 0\% with a standard deviation of 4.16\%.  This corresponds to 95\% of the data within $\pm$10\% of the reported value
+The percent difference between the reported lab values and the mean duplicates was best fit with a logistic distribution.  The logistic distribution had a location parameter of -0.067 and a scale parameter of 1.807.  This comparison and distribution combination was chosen because it had the best fit when compared to others using Kolmogorov-Smirnov, Cramer-von Mises, and Anderson-Darling goodness-of-fit test statistics.  The duplicate samples had a mean difference from the mean of their respective 'A' and 'B' samples of \SI{0}{\percent} with a standard deviation of \SI{4.16}{\percent}.  This corresponds to 95\% of the data within \sipm{10}{\percent} of the reported value
 
 Calculated dissolved selenium concentrations at specific sites were constrained to fit between one-half of the minimum historically reported value and 1-1/2 of the maximum historically reported value.  This range should allow for dissolved selenium concentration variations that are comparable to the values reported from the field samples.  The range allowed for variation beyond the reported concentration range to allow for the possibility that concentrations beyond the range may possibly have existed at some time.
 
@@ -1839,7 +1839,7 @@ Visual analysis seems to indicate that using the percent difference distribution
     \end{tabular}%
 \end{table}%
 
-Given these results, the total field sampling and lab error distribution is described by a logistic distribution with a location parameter of -0.06693 and a scale parameter of 1.807.  The combined field sampling and lab error is bounded such that 95\% of the distribution lies in the range of approximately $\pm$6.6\% of the expected value.
+Given these results, the total field sampling and lab error distribution is described by a logistic distribution with a location parameter of -0.06693 and a scale parameter of 1.807.  The combined field sampling and lab error is bounded such that \SI{95}{\percent} of the distribution lies in the range of approximately \sipm{6.6}{\percent} of the expected value.
 
 The combined field sampling and lab error is calculated independently from the selenium concentration estimation error previously described.  The estimated selenium concentration, without the estimation estimation, is taken as the expected value for the combined field sampling and lab error. 
 
@@ -2868,19 +2868,19 @@ Figures \ref{fig:USRMassContrib} and \ref{fig:DSRMassContrib} present the determ
 
 These figures show that the surface flow component of the water balance model $ \displaystyle \left( \sum Q_{Surface} \right) $ is the most significant portion in both the USR and DSR.  They also show that the storage component $ \displaystyle \left( \frac{\Delta S}{\Delta t} \right) $, is more significant in the USR than the DSR.  Both figures show that the storage change component of the mass loading model cannot be ignored and must be included.  These figures also seem to show an inverse relationship between the contribution of the flow portion and the contributions of the storage.  The mechanism of this relationship is not understood at this time.
 
-Tables \ref{tab:USRContrib} and \ref{tab:DSRContrib} present the numerical results associated with the contribution analysis.  These tables show that the mass storage change component of the mass loading model is more significant in the USR than in the DSR.  Since water volume change is one of the two components of this value, we can compare this to field observations of the flow rates in the DSR.  These flow rates are relatively constant throughout the year.  Most likely due to flow regulation from John Martin Reservoir such that flow rates into Kansas comply with court mandated minimums.
+Tables \ref{tab:USRMassContrib} and \ref{tab:DSRMassContrib} present the numerical results associated with the contribution analysis.  These tables show that the mass storage change component of the mass loading model is more significant in the USR than in the DSR.  Since water volume change is one of the two components of this value, we can compare this to field observations of the flow rates in the DSR.  These flow rates are relatively constant throughout the year.  Most likely due to flow regulation from John Martin Reservoir such that flow rates into Kansas comply with court mandated minimums.
 
 \begin{table}[htbp]
 	\centering
 	\caption[Major portion contributions to the USR mass loading models.]{Major portion contributions to the USR mass loading models.}
-	\label{tab:USRContrib}
+	\label{tab:USRMassContrib}
 	\input{"Tables/USR M Contrib.txt"}
 \end{table}
 \tablevspace
 \begin{table}[htbp]
 	\centering
 	\caption[Major portion contributions to the DSR mass loading models.]{Major portion contributions to the DSR mass loading models.}
-	\label{tab:DSRContrib}
+	\label{tab:DSRMassContrib}
 	\input{"Tables/DSR M Contrib.txt"}
 \end{table}
 

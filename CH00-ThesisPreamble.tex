@@ -112,9 +112,11 @@
 	% simplify scientific notation
 \providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}  
 	%units not included in package{siunitx}
+\newcommand{\sipm}[2]{$\pm$\SI{#1}{#2}}
 \DeclareSIUnit\inch{in}  
 \DeclareSIUnit\foot{ft}
 \DeclareSIUnit\mile{mi}
+\DeclareSIUnit\meter{m}
 \DeclareSIUnit\acre{ac}
 \DeclareSIUnit\gallon{gal}
 \DeclareSIUnit\year{yr}
